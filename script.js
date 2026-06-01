@@ -1,4 +1,5 @@
 const GALLERY_MANIFEST_PATH = "art/manifest.json";
+const MANIFEST_CACHE_BUSTER = Date.now().toString(36);
 const fallbackArtworks = [
   "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22",
   "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
@@ -80,7 +81,8 @@ async function loadArtwork(id) {
 }
 
 async function loadArtworkIds() {
-  const response = await fetch(GALLERY_MANIFEST_PATH);
+  const manifestUrl = `${GALLERY_MANIFEST_PATH}?v=${MANIFEST_CACHE_BUSTER}`;
+  const response = await fetch(manifestUrl, { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error("Could not load art manifest.");

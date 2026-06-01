@@ -1,4 +1,5 @@
 const GALLERY_MANIFEST_PATH = "art/manifest.json";
+const MANIFEST_CACHE_BUSTER = Date.now().toString(36);
 const SHOP_VARIANTS = {
   print: {
     label: "Art print",
@@ -151,7 +152,8 @@ function recordSearchText(record) {
 }
 
 async function fetchArtworkIds() {
-  const response = await fetch(GALLERY_MANIFEST_PATH);
+  const manifestUrl = `${GALLERY_MANIFEST_PATH}?v=${MANIFEST_CACHE_BUSTER}`;
+  const response = await fetch(manifestUrl, { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error("Unable to load art manifest.");
