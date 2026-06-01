@@ -84,8 +84,13 @@ const galleryArtworkIds = [
 const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
 const galleryCount = document.querySelector("#galleryCount");
+const gallerySearch = document.querySelector("#gallerySearch");
+const galleryPagination = document.querySelector("#galleryPagination");
 
+const PAGE_SIZE = 24;
 let galleryRecords = [];
+let filteredRecords = [];
+let currentPage = 1;
 let selectedId = "";
 
 function compactId(id) {
@@ -94,6 +99,19 @@ function compactId(id) {
 
 function uniqueColors(pixels = []) {
   return [...new Set(pixels.map((pixel) => pixel.color).filter(Boolean))];
+}
+
+function recordSearchText(record) {
+  return [
+    record.id,
+    record.title,
+    record.seed,
+    record.reasoning,
+    ...uniqueColors(record.pixels)
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 }
 
 async function fetchArtwork(id) {
@@ -181,14 +199,11 @@ function renderInspector(record) {
   const paletteLabel = document.createElement("h3");
   paletteLabel.textContent = "Palette";
 
-  const jsonLabel = document.createElement("h3");
-  jsonLabel.textContent = "JSON record";
-
-  const rawJson = document.createElement("pre");
-  rawJson.className = "json-record";
-  const code = document.createElement("code");
-  code.textContent = JSON.stringify(record, null, 2);
-  rawJson.appendChild(code);
+  const jsonLink = document.createElement("a");
+  jsonLink.className = "button secondary inspector-download";
+  jsonLink.href = `art/${record.id}.json`;
+  jsonLink.download = `${record.id}.json`;
+  jsonLink.textContent = "Download JSON";
 
   content.append(
     eyebrow,
@@ -199,8 +214,7 @@ function renderInspector(record) {
     reasoning,
     paletteLabel,
     renderSwatches(colors),
-    jsonLabel,
-    rawJson
+    jsonLink
   );
 
   frame.append(image, content);
@@ -241,14 +255,92 @@ function renderCard(record, index) {
   return card;
 }
 
+function renderPagination(totalPages) {
+  galleryPagination.replaceChildren();
+
+  if (totalPages <= 1) {
+    return;
+  }
+
+  const previous = document.createElement("button");
+  previous.type = "button";
+  previous.textContent = "Previous";
+  previous.disabled = currentPage === 1;
+  previous.addEventListener("click", () => {
+    currentPage -= 1;
+    renderCurrentPage();
+  });
+
+  const status = document.createElement("span");
+  status.textContent = `Page ${currentPage} of ${totalPages}`;
+
+  const next = document.createElement("button");
+  next.type = "button";
+  next.textContent = "Next";
+  next.disabled = currentPage === totalPages;
+  next.addEventListener("click", () => {
+    currentPage += 1;
+    renderCurrentPage();
+  });
+
+  galleryPagination.append(previous, status, next);
+}
+
+function renderCurrentPage() {
+  const totalPages = Math.max(1, Math.ceil(filteredRecords.length / PAGE_SIZE));
+  currentPage = Math.min(Math.max(currentPage, 1), totalPages);
+
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageRecords = filteredRecords.slice(start, start + PAGE_SIZE);
+  const query = gallerySearch.value.trim();
+
+  galleryCount.textContent = query
+    ? `${filteredRecords.length} of ${galleryRecords.length} artworks`
+    : `${galleryRecords.length} artworks`;
+
+  if (pageRecords.length === 0) {
+    artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
+    galleryPagination.replaceChildren();
+    artInspector.innerHTML = `<p class="gallery-empty">Choose a square from the grid.</p>`;
+    selectedId = "";
+    return;
+  }
+
+  artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
+  renderPagination(totalPages);
+
+  if (!pageRecords.some((record) => record.id === selectedId)) {
+    renderInspector(pageRecords[0]);
+  } else {
+    document.querySelectorAll(".gallery-card").forEach((card) => {
+      const isSelected = card.dataset.id === selectedId;
+      card.classList.toggle("is-selected", isSelected);
+      card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+    });
+  }
+}
+
+function applySearch() {
+  const terms = gallerySearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  filteredRecords = terms.length
+    ? galleryRecords.filter((record) => terms.every((term) => record.searchText.includes(term)))
+    : galleryRecords;
+  currentPage = 1;
+  renderCurrentPage();
+}
+
 async function renderGallery() {
   galleryCount.textContent = "Loading";
 
-  galleryRecords = await Promise.all(galleryArtworkIds.map(fetchArtwork));
-  galleryCount.textContent = `${galleryRecords.length} artworks`;
-  artGrid.replaceChildren(...galleryRecords.map(renderCard));
-  renderInspector(galleryRecords[0]);
+  galleryRecords = (await Promise.all(galleryArtworkIds.map(fetchArtwork))).map((record) => ({
+    ...record,
+    searchText: recordSearchText(record)
+  }));
+  filteredRecords = galleryRecords;
+  renderCurrentPage();
 }
+
+gallerySearch.addEventListener("input", applySearch);
 
 renderGallery().catch((error) => {
   galleryCount.textContent = "Error";

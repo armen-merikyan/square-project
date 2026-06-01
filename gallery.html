@@ -31,7 +31,7 @@
           <h1>Gallery of generated square worlds.</h1>
         </div>
         <p>
-          Select an image to inspect the artwork, its source JSON, color language, and generation
+          Select an image to inspect the artwork, its source record, color language, and generation
           reasoning as a curated record.
         </p>
       </section>
@@ -45,7 +45,17 @@
             </div>
             <output id="galleryCount" aria-live="polite">Loading</output>
           </div>
+          <label class="gallery-search">
+            <span>Search by text</span>
+            <input
+              id="gallerySearch"
+              type="search"
+              placeholder="Title, seed, reasoning, color, or id"
+              autocomplete="off"
+            >
+          </label>
           <div class="art-grid" id="artGrid" aria-live="polite"></div>
+          <nav class="pagination" id="galleryPagination" aria-label="Gallery pagination"></nav>
         </div>
 
         <aside class="art-inspector" id="artInspector" aria-live="polite">
