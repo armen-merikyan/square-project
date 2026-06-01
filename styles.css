@@ -583,16 +583,11 @@ footer p {
 }
 
 .gallery-workspace {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.54fr);
-  align-items: start;
-  gap: clamp(18px, 3vw, 34px);
   padding: clamp(22px, 4vw, 44px) clamp(18px, 4vw, 56px) clamp(56px, 7vw, 88px);
   background: #f4f4f1;
 }
 
-.gallery-panel,
-.art-inspector {
+.gallery-panel {
   min-width: 0;
 }
 
@@ -705,11 +700,6 @@ footer p {
   font-weight: 800;
 }
 
-.art-inspector {
-  position: sticky;
-  top: 92px;
-}
-
 .gallery-empty {
   margin: 0;
   border: 1px solid var(--line);
@@ -719,7 +709,25 @@ footer p {
   color: var(--muted);
 }
 
+.art-inspector {
+  width: min(1120px, calc(100vw - 32px));
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.art-inspector::backdrop {
+  background: rgba(21, 21, 21, 0.62);
+  backdrop-filter: blur(6px);
+}
+
 .inspector-frame {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
   overflow: hidden;
   border: 1px solid rgba(21, 21, 21, 0.16);
   border-radius: 8px;
@@ -727,14 +735,26 @@ footer p {
   box-shadow: var(--shadow);
 }
 
+.inspector-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  min-height: 38px;
+  border-color: rgba(21, 21, 21, 0.18);
+  background: #fff;
+  color: var(--ink);
+}
+
 .inspector-frame > img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
-  border-bottom: 1px solid rgba(21, 21, 21, 0.12);
+  height: 100%;
+  min-height: min(70vh, 620px);
+  border-right: 1px solid rgba(21, 21, 21, 0.12);
   background: #fff;
   image-rendering: pixelated;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .inspector-content {
@@ -831,8 +851,7 @@ footer p {
   .hero,
   .intro,
   .data-section,
-  .gallery-hero,
-  .gallery-workspace {
+  .gallery-hero {
     grid-template-columns: 1fr;
   }
 
@@ -848,9 +867,16 @@ footer p {
     justify-self: start;
   }
 
-  .art-inspector {
-    position: static;
-    order: -1;
+  .inspector-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .inspector-frame > img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1;
+    border-right: 0;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.12);
   }
 
   .section-heading {

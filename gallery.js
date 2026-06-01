@@ -92,6 +92,7 @@ let galleryRecords = [];
 let filteredRecords = [];
 let currentPage = 1;
 let selectedId = "";
+let previousFocus = null;
 
 function compactId(id) {
   return `${id.slice(0, 10)}...${id.slice(-8)}`;
@@ -150,8 +151,15 @@ function renderSwatches(colors) {
   return swatches;
 }
 
+function closeInspector() {
+  if (artInspector.open) {
+    artInspector.close();
+  }
+}
+
 function renderInspector(record) {
   selectedId = record.id;
+  previousFocus = document.activeElement;
   const colors = uniqueColors(record.pixels);
   const width = record.size?.width || 8;
   const height = record.size?.height || 8;
@@ -160,6 +168,13 @@ function renderInspector(record) {
 
   const frame = document.createElement("div");
   frame.className = "inspector-frame";
+
+  const closeButton = document.createElement("button");
+  closeButton.className = "inspector-close";
+  closeButton.type = "button";
+  closeButton.setAttribute("aria-label", "Close artwork details");
+  closeButton.textContent = "Close";
+  closeButton.addEventListener("click", closeInspector);
 
   const image = document.createElement("img");
   image.src = `art/${record.id}.svg`;
@@ -217,8 +232,12 @@ function renderInspector(record) {
     jsonLink
   );
 
-  frame.append(image, content);
+  frame.append(closeButton, image, content);
   artInspector.appendChild(frame);
+
+  if (!artInspector.open) {
+    artInspector.showModal();
+  }
 
   document.querySelectorAll(".gallery-card").forEach((card) => {
     const isSelected = card.dataset.id === selectedId;
@@ -301,7 +320,7 @@ function renderCurrentPage() {
   if (pageRecords.length === 0) {
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
     galleryPagination.replaceChildren();
-    artInspector.innerHTML = `<p class="gallery-empty">Choose a square from the grid.</p>`;
+    closeInspector();
     selectedId = "";
     return;
   }
@@ -309,15 +328,11 @@ function renderCurrentPage() {
   artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
   renderPagination(totalPages);
 
-  if (!pageRecords.some((record) => record.id === selectedId)) {
-    renderInspector(pageRecords[0]);
-  } else {
-    document.querySelectorAll(".gallery-card").forEach((card) => {
-      const isSelected = card.dataset.id === selectedId;
-      card.classList.toggle("is-selected", isSelected);
-      card.setAttribute("aria-pressed", isSelected ? "true" : "false");
-    });
-  }
+  document.querySelectorAll(".gallery-card").forEach((card) => {
+    const isSelected = card.dataset.id === selectedId;
+    card.classList.toggle("is-selected", isSelected);
+    card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+  });
 }
 
 function applySearch() {
@@ -341,6 +356,19 @@ async function renderGallery() {
 }
 
 gallerySearch.addEventListener("input", applySearch);
+
+artInspector.addEventListener("click", (event) => {
+  if (event.target === artInspector) {
+    closeInspector();
+  }
+});
+
+artInspector.addEventListener("close", () => {
+  if (previousFocus) {
+    previousFocus.focus();
+    previousFocus = null;
+  }
+});
 
 renderGallery().catch((error) => {
   galleryCount.textContent = "Error";
