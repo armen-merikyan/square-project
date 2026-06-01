@@ -28,6 +28,18 @@ python3 scripts/dev_server.py
 
 Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
 
+## Stripe Checkout
+
+The gallery inspector lets customers order either an 8x8 print or the same print in the black upsimples 8x8 frame. Use two reusable Stripe Products/Prices in production, not one product per artwork:
+
+```env
+STRIPE_SECRET_KEY=sk_test_your-stripe-secret-key-here
+STRIPE_PRINT_PRICE_ID=price_your-reusable-8x8-print-price
+STRIPE_FRAMED_PRINT_PRICE_ID=price_your-reusable-8x8-framed-print-price
+```
+
+The checkout API sends the selected artwork ID, title, size, fulfillment type, and frame choice as Stripe Checkout Session and PaymentIntent metadata. If the reusable Stripe price IDs are not configured, the local server falls back to `PRINT_AMOUNT_CENTS` and `FRAMED_PRINT_AMOUNT_CENTS` and creates an inline Checkout line item.
+
 ## Local Art Job GUI
 
 Run the separate local art job server when you want a basic browser UI for generator scripts:

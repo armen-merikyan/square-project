@@ -174,6 +174,35 @@ def build_generate_command(payload: dict[str, Any]) -> list[str]:
     return command
 
 
+def build_git_publish_command() -> list[str]:
+    message = "Publish local management server changes"
+    body = (
+        "Asked: make the management server Push to GitHub action commit "
+        "pending changes with an explanatory comment and push on the current branch."
+    )
+    done = (
+        "Done: staged all pending worktree changes, created a commit when "
+        "changes were present, and pushed the current branch to origin."
+    )
+    script = "\n".join(
+        [
+            "set -eu",
+            'branch="$(git branch --show-current)"',
+            'if [ -z "$branch" ]; then echo "No current branch to push."; exit 1; fi',
+            'echo "Staging all pending changes..."',
+            "git add -A",
+            "if git diff --cached --quiet; then",
+            '  echo "No staged changes to commit."',
+            "else",
+            f"  git commit -m {json.dumps(message)} -m {json.dumps(body)} -m {json.dumps(done)}",
+            "fi",
+            'echo "Pushing $branch to origin..."',
+            'git push origin "$branch"',
+        ]
+    )
+    return ["/bin/sh", "-c", script]
+
+
 def load_seed_library() -> dict[str, Any]:
     try:
         library = json.loads(SEED_LIBRARY_PATH.read_text(encoding="utf-8"))
@@ -306,7 +335,7 @@ class ArtJobHandler(BaseHTTPRequestHandler):
                 self.send_json({"job": job.public()}, HTTPStatus.CREATED)
                 return
             if parsed.path == "/api/jobs/git-push":
-                command = ["git", "push"]
+                command = build_git_publish_command()
                 job = start_job("git-push", command)
                 self.send_json({"job": job.public()}, HTTPStatus.CREATED)
                 return
