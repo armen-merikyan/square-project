@@ -1,0 +1,399 @@
+{
+  "id": "42baa33490b26f2bbcff549e16c8a8a6a8ac4ec2b79643845dd6cbcfc510579f",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 12; target batch count 200",
+  "title": "Ascent and Descent",
+  "reasoning": "The emotional tone reflects a tug-of-war between the feelings of envy and gratitude, encapsulated in the upward and downward motion of the pixels. The palette of burnt orange, dark red, charcoal, and gold invokes warmth but balances it with dark complexity, representing rich emotions. The primary contrast occurs between the warm central colors and the softer edges that create a sense of quietness while being surrounded by heavier tones. This tension echoes the themes from the seed, demonstrating the dualities of rising hopes and falling fears, formulated into an abstract narrative of emotional experience rather than literal imagery.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C85D20"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#A45D2B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#573A34"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7C4D24"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D6C665"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#7D4E13"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B36A2F"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFF6C3"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#7B4D43"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D0A262"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D3B44A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B87A2B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A17D58"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#BA8E42"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D37E4E"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#8B3E2A"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B45A33"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#C3813E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F2A11F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#E09B32"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C99B7D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#9A5F3B"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#473828"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C88F6A"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#DF861D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#6B4B44"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#A7851D"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#E59F36"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#AB5F3B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E49A5F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A27041"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F6D38B"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#855E4C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C55C3A"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B5733E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2D2D2D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#BC8E35"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7A4E4D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#D46D35"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5D4F3D"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E5CE77"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E3B24D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#6A4D3B"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D26A55"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#7F745D"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D59430"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C3903E"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#EDD86C"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D6A65D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#BF8B1F"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#8C4A23"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A17449"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D47638"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#7D7221"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F2B440"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#5D3F32"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#5E446E"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D8C0AF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D4AC66"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#A99D6D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#651F22"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E09F7B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F6E4A1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#6B5B54"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "envy": "rain",
+      "gratitude": "target"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "filled_square",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "42baa33490b26f2bbcff549e16c8a8a6a8ac4ec2b79643845dd6cbcfc510579f",
+  "pixelHash": "42baa33490b26f2bbcff549e16c8a8a6a8ac4ec2b79643845dd6cbcfc510579f",
+  "jsonFile": "42baa33490b26f2bbcff549e16c8a8a6a8ac4ec2b79643845dd6cbcfc510579f.json",
+  "svgFile": "42baa33490b26f2bbcff549e16c8a8a6a8ac4ec2b79643845dd6cbcfc510579f.svg",
+  "createdAt": "2026-06-01T22:26:23.460019+00:00"
+}

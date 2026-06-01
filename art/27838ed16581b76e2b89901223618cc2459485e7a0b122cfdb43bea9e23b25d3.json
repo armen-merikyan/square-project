@@ -1,0 +1,399 @@
+{
+  "id": "27838ed16581b76e2b89901223618cc2459485e7a0b122cfdb43bea9e23b25d3",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 9; target batch count 200",
+  "title": "Tension in the Void",
+  "reasoning": "This artwork captures the emotional dichotomy of envy and gratitude through contrasting colors and patterns. The palette of deep black, dark violet, soft gold, and pale green reflects fear and hope, creating tension. The central area features a dense cluster of soft gold and pale green, symbolizing gratitude and the warmth it brings, while the surrounding pixels of dark violet and black convey the coldness of envy. The interplay of stripes and grid patterns creates a visual argument, with the soft edges echoing the gentle push-pull of emotions. The piece leaves ample negative space, embodying the emptiness of an unfulfilled desire and the hope that lingers to fill it.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#6A0A3E"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "drip",
+    "patterns": {
+      "envy": "stripes",
+      "gratitude": "grid"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "27838ed16581b76e2b89901223618cc2459485e7a0b122cfdb43bea9e23b25d3",
+  "pixelHash": "27838ed16581b76e2b89901223618cc2459485e7a0b122cfdb43bea9e23b25d3",
+  "jsonFile": "27838ed16581b76e2b89901223618cc2459485e7a0b122cfdb43bea9e23b25d3.json",
+  "svgFile": "27838ed16581b76e2b89901223618cc2459485e7a0b122cfdb43bea9e23b25d3.svg",
+  "createdAt": "2026-06-01T22:26:28.166965+00:00"
+}

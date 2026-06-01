@@ -1,0 +1,399 @@
+{
+  "id": "0fb2a0ab5f2407f8cd04c3f0afed2699d60ae90a796044c0c0729493eec2ce5c",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 124; target batch count 200",
+  "title": "Echoes of Emotion",
+  "reasoning": "This piece embodies the tension between envy and gratitude through a contrasting palette of warm pink and muted maroon against cool gray. The layout follows a central focus, symbolizing the inner struggle, surrounded by jittery patterns that represent noise and disruption. The placement of colors creates uneven pressure that ebbs from the center outward, suggesting rising emotions that collide with quieter moments, encapsulating the complexity of the emotional landscape inspired by the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#7F4C9C"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#C9B3D2"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#C5433B"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F1E0E8"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#B6A5AB"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#939AA2"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#4B3D45"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#DD6E59"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E2B2C1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFD2D9"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B8404B"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#AD4E5B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#E4C3D1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#A2C2CE"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7E7B81"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#5B4E55"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F3B8CA"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#AA5A61"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#DA7A87"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D1C7CE"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#1D1A20"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4B5A63"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#6A4B4B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C1F0F4"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#E8C7D0"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D6B7B2"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F1ACD6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#4E3E44"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B1C0C7"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F8E3ED"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6F2837"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#BDBCC8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#BF689A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C2A4AE"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#D58491"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F4B6D8"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#EA8983"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8B7D99"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#3D4B55"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C1B6C5"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D69DA6"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#A64560"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F4C5D6"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#CD5388"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#D2BAC4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B4E1E0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#706058"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#964B4F"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#E0A0B5"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#DAB1C0"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D3F1F9"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#E8B9CB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F59CAD"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C0A4A8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3F3E4D"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B0BEC2"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F1C2D3"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D0A6B8"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F7B8D3"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#7F6A78"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#5A3D48"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E9C8D1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4E5B66"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B5C9D4"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "envy": "flame",
+      "gratitude": "stripes"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "wave",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0fb2a0ab5f2407f8cd04c3f0afed2699d60ae90a796044c0c0729493eec2ce5c",
+  "pixelHash": "0fb2a0ab5f2407f8cd04c3f0afed2699d60ae90a796044c0c0729493eec2ce5c",
+  "jsonFile": "0fb2a0ab5f2407f8cd04c3f0afed2699d60ae90a796044c0c0729493eec2ce5c.json",
+  "svgFile": "0fb2a0ab5f2407f8cd04c3f0afed2699d60ae90a796044c0c0729493eec2ce5c.svg",
+  "createdAt": "2026-06-01T22:27:29.032196+00:00"
+}

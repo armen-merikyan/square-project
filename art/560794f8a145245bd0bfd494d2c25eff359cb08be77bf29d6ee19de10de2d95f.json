@@ -1,0 +1,399 @@
+{
+  "id": "560794f8a145245bd0bfd494d2c25eff359cb08be77bf29d6ee19de10de2d95f",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 66; target batch count 200",
+  "title": "Push and Pull Within Silence",
+  "reasoning": "This work captures the emotional tension between envy and gratitude. The selected palette of electric blue, lime, and magenta creates stark contrasts that symbolize envy\u2019s vibrant intensity against gratitude's softer notes. The arrangement features a maze pattern on the left, suggesting envy\u2019s complexity, while a raindrop pattern emerges toward the center, embodying gratitude\u2019s more gentle essence. The soft edges of the palette create an overall feeling of fluidity, yet the interplay of dense areas against lighter spaces captures the friction between rising and falling emotions. Negative space is utilized to symbolically represent \u2018empty room\u2019 and reflects the moments of stillness amidst deep feelings, aligning with the abstract qualities derived from the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#39FF14"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#39FF14"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#39FF14"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#39FF14"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#39FF14"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#39FF14"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#39FF14"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#39FF14"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#39FF14"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#39FF14"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#39FF14"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#39FF14"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#EEE8AA"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFF8DC"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFF8DC"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#39FF14"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#39FF14"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#39FF14"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#39FF14"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#39FF14"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#39FF14"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#39FF14"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#39FF14"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#39FF14"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "envy": "maze",
+      "gratitude": "rain"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "560794f8a145245bd0bfd494d2c25eff359cb08be77bf29d6ee19de10de2d95f",
+  "pixelHash": "560794f8a145245bd0bfd494d2c25eff359cb08be77bf29d6ee19de10de2d95f",
+  "jsonFile": "560794f8a145245bd0bfd494d2c25eff359cb08be77bf29d6ee19de10de2d95f.json",
+  "svgFile": "560794f8a145245bd0bfd494d2c25eff359cb08be77bf29d6ee19de10de2d95f.svg",
+  "createdAt": "2026-06-01T22:26:54.384935+00:00"
+}

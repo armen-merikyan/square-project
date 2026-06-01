@@ -1,0 +1,399 @@
+{
+  "id": "4bd5f767b3623084dd1adf55070a48136bb4f733fc498cc97009dae591696406",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 140; target batch count 200",
+  "title": "Tension & Release",
+  "reasoning": "This artwork explores the emotional duality between envy and gratitude through opposing color placements and patterns. The palette of burnt orange, dark red, charcoal, and gold symbolizes both warmth and intensity, reflecting the undercurrents of these emotions. The layout features a significant amount of negative space suggesting an empty room, which amplifies the tension felt towards the conflicting emotions. Envy is represented through a maze-like pattern in dark red, while gratitude flows outward in a ring pattern with burnt orange accents, creating a vivid contrast. The soft edges throughout allow for a blending of feelings, while a few broken pixels introduce an element of imperfection, emblematic of disruption. The noise against cracks signifies moments of interruption, enhancing the layers of thoughtfulness and density in the piece.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4B3C36"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#4E1A14"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#CDAA30"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#3A2E24"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5C4B40"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F4C2A1"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E4C97D"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#2E2A22"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#6A4A3B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFB74D"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#BA2D19"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C0A4E1"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#ED6D48"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#472D25"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#746757"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#BC8B46"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1B2EDB"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6C3C27"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#442C23"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#E2B84C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F6A600"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#5D417D"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#947454"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#DE6A39"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#342D27"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FDE4B9"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E23373"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#9B5452"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#BB9B3C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#D8822B"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#3E7D5D"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#4D3B3C"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#191A1D"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FADA52"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E75630"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#BF9475"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C46030"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B3C7E6"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#7D685D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A86B45"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#5C2C2F"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFDBBF"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B68E3B"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#4A2F26"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#5C4436"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C83A31"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFC84A"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#6A4B48"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#A5350C"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#333C3D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D37B31"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BA3D24"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#AE845C"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#2E272C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FF828D"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#4C4F4B"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#4F353F"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D6A046"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#B9713E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C9C49E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4D7D5A"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#5C6B66"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#5F4E4B"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#3D3E3A"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "envy": "maze",
+      "gratitude": "ring"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "flame",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "4bd5f767b3623084dd1adf55070a48136bb4f733fc498cc97009dae591696406",
+  "pixelHash": "4bd5f767b3623084dd1adf55070a48136bb4f733fc498cc97009dae591696406",
+  "jsonFile": "4bd5f767b3623084dd1adf55070a48136bb4f733fc498cc97009dae591696406.json",
+  "svgFile": "4bd5f767b3623084dd1adf55070a48136bb4f733fc498cc97009dae591696406.svg",
+  "createdAt": "2026-06-01T22:27:32.805753+00:00"
+}

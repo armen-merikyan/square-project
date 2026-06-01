@@ -1,0 +1,399 @@
+{
+  "id": "4b415eb16d32634039dc26080a347ac3a7806d721996129216a85d4ec21c0243",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 112; target batch count 200",
+  "title": "Tension of Emotions",
+  "reasoning": "The emotional tone contrasts envy and gratitude, embodying a sense of rising and falling through pixel placement. The palette, featuring lime for lightness and electric blue for depth, creates tension. The center is dense with darker shades representing fear, while the lighter edges hint at gratitude. The collision happens at the center, where black meets vibrant colors, suggesting struggle and hope. The seed's metaphorical tear is echoed through carefully placed broken pixels, allowing for negative space around the central themes.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#0000FF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#0000FF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#666666"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#666666"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#888888"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#0000FF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#00FF00"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#00FF00"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#00FF00"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#0000FF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#0000FF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#555555"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "wave_vertical",
+    "patterns": {
+      "envy": "crack",
+      "gratitude": "spark"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "tear",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "4b415eb16d32634039dc26080a347ac3a7806d721996129216a85d4ec21c0243",
+  "pixelHash": "4b415eb16d32634039dc26080a347ac3a7806d721996129216a85d4ec21c0243",
+  "jsonFile": "4b415eb16d32634039dc26080a347ac3a7806d721996129216a85d4ec21c0243.json",
+  "svgFile": "4b415eb16d32634039dc26080a347ac3a7806d721996129216a85d4ec21c0243.svg",
+  "createdAt": "2026-06-01T22:27:16.527703+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "69bdc5497eb5b260a53e39edba94ad33f0945810859cb946c83b9cd8dec2f636",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 6; target batch count 200",
+  "title": "Inner Echoes",
+  "reasoning": "The composition reflects a duality of emotion, contrasting envy and gratitude through a palette of yellow, orange, deep blue, and muted purple. The warm tones symbolize gratitude (yellow and orange), while the cooler, darker tones signify envy (deep blue and purple). The edges feature a thick outline to create a feeling of containment, resonating with both softness and pressure. The layout is almost a mirror, with intentional disruptions that symbolize the chaos of emotion \u2013 delicate 'cracks' versus dense 'pressure' echoing the tensions described in the seed. The collisions of color and patterns evoke a sense of rising hope against the pull of fear, creating a delicate balance of visual noise and clarity.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB300"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFB300"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFB300"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFB300"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000080"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFB300"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#000080"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFB300"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFB300"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFB300"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000080"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000080"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFB300"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFB300"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFB300"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000080"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFB300"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#000080"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFB300"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7A00B9"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000080"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "envy": "split_screen",
+      "gratitude": "crack"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "69bdc5497eb5b260a53e39edba94ad33f0945810859cb946c83b9cd8dec2f636",
+  "pixelHash": "69bdc5497eb5b260a53e39edba94ad33f0945810859cb946c83b9cd8dec2f636",
+  "jsonFile": "69bdc5497eb5b260a53e39edba94ad33f0945810859cb946c83b9cd8dec2f636.json",
+  "svgFile": "69bdc5497eb5b260a53e39edba94ad33f0945810859cb946c83b9cd8dec2f636.svg",
+  "createdAt": "2026-06-01T22:26:21.616641+00:00"
+}

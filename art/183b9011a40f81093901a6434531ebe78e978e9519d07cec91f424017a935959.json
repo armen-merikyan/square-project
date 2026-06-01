@@ -1,0 +1,399 @@
+{
+  "id": "183b9011a40f81093901a6434531ebe78e978e9519d07cec91f424017a935959",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 81; target batch count 200",
+  "title": "Echoes of Emotion",
+  "reasoning": "This artwork captures the tension between envy and gratitude using an asymmetrical flow that draws the viewer's eye from the edges inward. The chosen palette of sepia, tan, dust gray, and faded blue reflects a spectrum of emotions\u2014faded warmth representing gratitude contrasted against deeper muted tones suggesting envy. The collision occurs in the central area, where fragmented patterns from broken dots and cracks evoke a sense of imperfection and emotional complexity. The 10% negative space reinforces the feeling of an empty room, further enhancing the contrast between presence and absence. This arrangement conveys a story of rising hope battling against the weight of fear, encapsulating the essence of the seed text in an abstract manner.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#B0A99F"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#BDC2B6"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#C8D0D3"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D5E0E5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#E6E1E8"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D1CFCB"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#BCBEBF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D9DBD5"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E3CBA3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F0D8B5"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#DAE4E8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F6E4D0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D7C3AB"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#C9C0B3"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A6A49D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#BFBDA7"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E5D7BA"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#D0D5E1"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#B1C3D8"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A5B3BF"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A0B3B8"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#9FB6B8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C1D3D0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E7E6C7"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#C9B4A6"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D8C7B0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E4D4CD"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#E7D4AA"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#CAC3DA"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B1B1B3"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A3A6AB"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#76878D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#DBD3A8"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F7ECD4"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F1D4D0"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#EDD4C4"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B5C8D0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#BACDD5"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#8FB2B8"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#AEB1CC"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C6B8AB"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D6C7BA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EAE8D2"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#DBEDD5"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#BCDBB4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B7A6A1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#8F9EA2"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#ABCCC6"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D1CEBE"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#CFE1DB"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#B0D1CC"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B3E1E5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E1E2E0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F0F4E3"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E1D1D9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#EBE3CE"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#E4D3C7"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#C6B7A5"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#B0A497"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D1C3B0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#CACBA1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B2C5B3"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#A5B5A2"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#C5CAAC"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "envy": "broken_dots",
+      "gratitude": "crack"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "single_vs_many",
+    "shapeSeed": "seed",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "183b9011a40f81093901a6434531ebe78e978e9519d07cec91f424017a935959",
+  "pixelHash": "183b9011a40f81093901a6434531ebe78e978e9519d07cec91f424017a935959",
+  "jsonFile": "183b9011a40f81093901a6434531ebe78e978e9519d07cec91f424017a935959.json",
+  "svgFile": "183b9011a40f81093901a6434531ebe78e978e9519d07cec91f424017a935959.svg",
+  "createdAt": "2026-06-01T22:27:04.521606+00:00"
+}

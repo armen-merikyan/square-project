@@ -1,0 +1,399 @@
+{
+  "id": "ae653bab5e3942012c5f8ad9ee96f743854af404c3a714c9ddd6284a7d528981",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 119; target batch count 200",
+  "title": "Symmetry in Disarray",
+  "reasoning": "This piece captures the tension between envy and gratitude, illustrating how these emotions inhabit a shared space in our psyche. The dark tones (reds and blacks) represent envy, creating a dense, claustrophobic feel in the top half, while the soft, pale blue and white colors evoke a sense of gratitude and openness in the lower half. The asymmetrical pattern creates an interruption; dark colors bleed into the lighter areas, emphasizing the struggle between these conflicting feelings. The broken pixels introduce imperfections, symbolizing the chaos and noise arising from the emotional conflicts represented in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2B0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3B0000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B0000"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#5B0000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#9A0000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#AB0000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#CE0000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D70000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2E2E2E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#6E6E6E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#7C7C7C"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#8C8C8C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#9C9C9C"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#ACACAC"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#E5E5E5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E1E1E1"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D8D8D8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A0C4DB"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#9BC3D9"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#92BFD6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#88BCD3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7FB3D0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#74A9CE"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#68A3CC"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#54A1CB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#A0C4DB"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#9BC3D9"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#92BFD6"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#88BCD3"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#7FB3D0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#74A9CE"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#68A3CC"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#54A1CB"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E5E5E5"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E1E1E1"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D8D8D8"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2E2E2E"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6E6E6E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#7C7C7C"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#8C8C8C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#9C9C9C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#ACACAC"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#2B0000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#3B0000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#4B0000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#5B0000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#9A0000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#AB0000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#CE0000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D70000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "envy": "mirror",
+      "gratitude": "checker"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ae653bab5e3942012c5f8ad9ee96f743854af404c3a714c9ddd6284a7d528981",
+  "pixelHash": "ae653bab5e3942012c5f8ad9ee96f743854af404c3a714c9ddd6284a7d528981",
+  "jsonFile": "ae653bab5e3942012c5f8ad9ee96f743854af404c3a714c9ddd6284a7d528981.json",
+  "svgFile": "ae653bab5e3942012c5f8ad9ee96f743854af404c3a714c9ddd6284a7d528981.svg",
+  "createdAt": "2026-06-01T22:27:25.035678+00:00"
+}

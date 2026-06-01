@@ -1,0 +1,399 @@
+{
+  "id": "28c0ebcb978ec10b757e43c9fe79a97efe7445ccc7b16d696eebe2fdcf68ef04",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 194; target batch count 200",
+  "title": "Tension Between Light and Weight",
+  "reasoning": "This piece captures the emotional tension between envy, characterized by darker hues, and gratitude, represented by lighter shades. The palette of black, dark violet, soft gold, and pale green illustrates the clash of heavy emotions against lighter, hopeful feelings. The layout displays a mirror broken pattern, where the left and right edges almost reflect each other but contain intentional broken pixels, suggesting discord. The flow from left to right allows the eye to experience a gradual shift from darker to softer colors, reflecting the complexity of transitioning feelings. The dominant contrast occurs between the dense dark sections and lighter, airy spaces, accentuating the push and pull of the concepts underlying the seed text.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#221F3B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#381E6B"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#522C91"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#612864"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#763D72"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F4EB9D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#381E6B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#522C91"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#763D72"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#EFF0E8"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E6F3D2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#221F3B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#381E6B"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#522C91"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#763D72"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#F7F89B"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#F8F99B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E3F4B0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#AAB0A2"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#CDE5D7"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E3F4B0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C4B35A"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#EFEB84"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#BDE1C6"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#AFC5AD"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D8F2B2"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FEF7DA"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A0C8A6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C0DC9D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F5EE96"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#788C7E"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#BCB674"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#E7E3B0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "envy": "mirror",
+      "gratitude": "crosshatch"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "pair_of_pixels",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "28c0ebcb978ec10b757e43c9fe79a97efe7445ccc7b16d696eebe2fdcf68ef04",
+  "pixelHash": "28c0ebcb978ec10b757e43c9fe79a97efe7445ccc7b16d696eebe2fdcf68ef04",
+  "jsonFile": "28c0ebcb978ec10b757e43c9fe79a97efe7445ccc7b16d696eebe2fdcf68ef04.json",
+  "svgFile": "28c0ebcb978ec10b757e43c9fe79a97efe7445ccc7b16d696eebe2fdcf68ef04.svg",
+  "createdAt": "2026-06-01T22:28:00.955030+00:00"
+}

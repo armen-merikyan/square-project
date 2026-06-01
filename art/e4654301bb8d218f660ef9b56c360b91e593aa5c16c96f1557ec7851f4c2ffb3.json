@@ -1,0 +1,399 @@
+{
+  "id": "e4654301bb8d218f660ef9b56c360b91e593aa5c16c96f1557ec7851f4c2ffb3",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 57; target batch count 200",
+  "title": "Echo of Emotions",
+  "reasoning": "This artwork explores the emotional dialectic between envy and gratitude, employing a contrasting palette of deep reds and pale blues to reflect tension and hope. The chosen colors move like rising tension towards the central area, creating a sense of collision amidst empty spaces bordering the edges. The grid and split-screen patterns represent the structured nature of envy against the more flowing energy of gratitude, while the soft edges introduce a sense of vulnerability. Broken pixels are scattered, embodying the imperfection within those emotions, inviting the viewer to explore the nuanced narrative of struggle and resolution.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D32E2E"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#5C9BC3"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#5C9BC3"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "scatter",
+    "patterns": {
+      "envy": "grid",
+      "gratitude": "split_screen"
+    },
+    "edgeStyle": "hard_edges",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "heart_fragment",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "e4654301bb8d218f660ef9b56c360b91e593aa5c16c96f1557ec7851f4c2ffb3",
+  "pixelHash": "e4654301bb8d218f660ef9b56c360b91e593aa5c16c96f1557ec7851f4c2ffb3",
+  "jsonFile": "e4654301bb8d218f660ef9b56c360b91e593aa5c16c96f1557ec7851f4c2ffb3.json",
+  "svgFile": "e4654301bb8d218f660ef9b56c360b91e593aa5c16c96f1557ec7851f4c2ffb3.svg",
+  "createdAt": "2026-06-01T22:26:47.895053+00:00"
+}

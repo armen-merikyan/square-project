@@ -1,0 +1,399 @@
+{
+  "id": "6ab88a2af3894083395d11fa5947341e47909a13f4a6129089b6b06a2829f5d5",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 145; target batch count 200",
+  "title": "Echo of Emotions",
+  "reasoning": "This pixel art captures the tension between envy and gratitude through a contrast of dark and light colors. The palette mainly consists of navy and black juxtaposed against softer shades of dim cyan and white, representing the heaviness of envy against the lightness of gratitude. The composition flows downward, suggesting an unsettling rain of emotions, with clusters of darker tones placed towards the edges, creating a sense of pressure and forming a central void that symbolizes an empty room. This negative space evokes feelings of longing and introspection, while broken pixels disrupt the symmetry, hinting at the imperfections in emotional experiences.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#003F7F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#005FAF"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#007FCF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#009FEF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#00DFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#003F7F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#005FAF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#007FCF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#009FEF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#00DFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#004F7F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#006F9F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#008FBF"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#00AFCF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#00CFEF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#00EFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#002F4F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#005F7F"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#007FAF"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#009FCF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#00DFFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#000E30"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#003F7F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#005FAF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#007FCF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#009FEF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#00DFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#002F4F"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#004F7F"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#007FAF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#008FAF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#007FCF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#006F9F"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#002F4F"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#004F7F"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#006F9F"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#007FCF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#001E2F"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#004F7F"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#005FAF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#007FCF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#009FEF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00AFCF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#E0E0E0"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "envy": "noise",
+      "gratitude": "broken_dots"
+    },
+    "edgeStyle": "center_heavy",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "tear",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "6ab88a2af3894083395d11fa5947341e47909a13f4a6129089b6b06a2829f5d5",
+  "pixelHash": "6ab88a2af3894083395d11fa5947341e47909a13f4a6129089b6b06a2829f5d5",
+  "jsonFile": "6ab88a2af3894083395d11fa5947341e47909a13f4a6129089b6b06a2829f5d5.json",
+  "svgFile": "6ab88a2af3894083395d11fa5947341e47909a13f4a6129089b6b06a2829f5d5.svg",
+  "createdAt": "2026-06-01T22:27:38.043067+00:00"
+}

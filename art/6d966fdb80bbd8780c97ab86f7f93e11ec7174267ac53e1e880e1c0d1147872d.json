@@ -1,0 +1,399 @@
+{
+  "id": "6d966fdb80bbd8780c97ab86f7f93e11ec7174267ac53e1e880e1c0d1147872d",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 67; target batch count 200",
+  "title": "Tension of Presence",
+  "reasoning": "The emotional tone reflects the duality of envy and gratitude. The color palette of yellow, orange, deep blue, and muted purple embodies contrasting warmth and coldness. The central area has a dense arrangement, symbolizing pressure and noise of emotion, while the cooler outer edges give a sense of quiet and reflection. The use of broken pixels introduces imperfection, emphasizing the unresolved tension between rising hope (gratitude) and falling despair (envy). This juxtaposition creates emotional collisions and flows, embodying an inner struggle.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFAA33"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF6600"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF3300"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#9933FF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#AA66FF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#CC99FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#CC66FF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF9933"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF6666"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF3366"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#AA33CC"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#AA66CC"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#AA99CC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#DD99CC"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFDDAA"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFD100"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF8855"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF5544"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#AA33AA"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#AA66AA"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#CC99AA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#CCBBAA"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFEDAA"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFDD77"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFBA00"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7744FF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#8866FF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A38BFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#BB88FF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFEEDD"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFE5AA"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFE98C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFEC55"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#CCDD33"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#AAEE88"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#99CC99"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E6E6FF"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D1D1ED"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B8B8CC"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A1A1A1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#8C8C8C"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BFBFBF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#CFCFCF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#99A5B5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#88B2C7"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#77C4D4"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#B3D4EC"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#C2D2E4"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D1D1DF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#B2B2B3"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#A4A4A0"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#96A69B"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#88B3D8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#7BB8E9"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#5F9BCD"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4FA8DC"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#3F7DAC"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "envy": "ring",
+      "gratitude": "maze"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "6d966fdb80bbd8780c97ab86f7f93e11ec7174267ac53e1e880e1c0d1147872d",
+  "pixelHash": "6d966fdb80bbd8780c97ab86f7f93e11ec7174267ac53e1e880e1c0d1147872d",
+  "jsonFile": "6d966fdb80bbd8780c97ab86f7f93e11ec7174267ac53e1e880e1c0d1147872d.json",
+  "svgFile": "6d966fdb80bbd8780c97ab86f7f93e11ec7174267ac53e1e880e1c0d1147872d.svg",
+  "createdAt": "2026-06-01T22:26:55.583990+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "68f25c8c135fba04c0ffbcfca20e17b1605a8abd0ac03392384d29274f138e1d",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 52; target batch count 200",
+  "title": "Rise and Fall of Emotion",
+  "reasoning": "The emotional tone is set around the conflict between envy and gratitude, contrasting the sensation of rising aspirations against the descending weight of discontent. The palette combines varying shades of pink, red, gray, and dark maroon to evoke the intensity of emotions\u2014pink representing gratitude and softness, while dark red and maroon indicate envy and tension. The arrangement follows a zigzag flow, with noise on one side (representing envy) contrasted by a radial pattern of soft edges (grattitude) on the other. This creates a dynamic dialogue between dense clusters of color that suggest pressure and interruption. The use of broken pixels adds a layer of imperfection, enhancing the emotional complexity of the piece, while maintaining a negative space that symbolizes internal conflict and empty rooms. The central shape around the arrow aims to echo the movement of emotions, capturing the upward aspirations clashing with downward pulls in a visually striking way.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#E31A1C"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F0B4D8"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#BF3C5A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D6E6F2"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6B0F2E"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D1393C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F8C4C6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#B02B3A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#EB9EAB"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFFBFB"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C6B6C7"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#796675"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4F2629"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A3CBD7"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D2DCE0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#BC3D50"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFDDDE"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#EF8385"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#EAF8FA"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#95354D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFECD2"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B9ADAE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#D9D3E0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A74E4F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFB74D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F74949"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F0A9C6"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#54272E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E6C8C0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D6D2D4"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E56C6D"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B6A4A3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFE7C4"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F1A7B7"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#9E7B7D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4A314B"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#CDE6F2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7A7B7C"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#DF2935"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F9B8C5"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EFC1E1"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#732F34"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#756672"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#EFF5E0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A9D2E9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F6FDFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#DC818B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#882B26"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C9D4D5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B9D0DE"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#2A232E"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E1E0EF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#CFB6C3"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B1101A"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#AE4E71"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F9BEF4"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#CC7B80"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B0504E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#B16788"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FCF0E0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#C3B6CC"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "envy": "noise",
+      "gratitude": "radial"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "centered_vs_off_center",
+    "shapeSeed": "arrow",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "68f25c8c135fba04c0ffbcfca20e17b1605a8abd0ac03392384d29274f138e1d",
+  "pixelHash": "68f25c8c135fba04c0ffbcfca20e17b1605a8abd0ac03392384d29274f138e1d",
+  "jsonFile": "68f25c8c135fba04c0ffbcfca20e17b1605a8abd0ac03392384d29274f138e1d.json",
+  "svgFile": "68f25c8c135fba04c0ffbcfca20e17b1605a8abd0ac03392384d29274f138e1d.svg",
+  "createdAt": "2026-06-01T22:26:47.021346+00:00"
+}

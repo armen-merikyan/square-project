@@ -1,0 +1,399 @@
+{
+  "id": "df25c007f5a1bd60f9b4f3faebd224922533e33ea60d07b12481b93ff4d4a2c0",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 20; target batch count 200",
+  "title": "Tension Between Heights",
+  "reasoning": "This piece evokes the emotional struggle between envy and gratitude through a gradual gradient of dark to light colors, reflecting the tension between heavy feelings and the lightness of hope. The choice of colors\u2014from black to dim cyan\u2014underscores the depths of feelings, while the arrangement mimics a rising flow, suggesting movement toward resolution. The edges are softened to enhance the sense of echo and interruption, maintaining a quiet yet charged emotional space overall. The visual narrative highlights the push and pull of opposing feelings, creating a dynamic balance throughout the composition.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0D1B2A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1B2631"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A4E69"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#A0A69D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#0D1B2A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#4A4E69"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A0A69D"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1B2631"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#4A4E69"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A0A69D"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#661A1A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFD60A"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A0A69D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4A4E69"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFF6E5"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFD60A"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4A4E69"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#3D5A8C"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#A0A69D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFF6E5"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#3D5A8C"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3B0D00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F3F1D7"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F1F0E2"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#2B2D42"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F9ED69"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D9BF77"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F7B7A3"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F1F0E2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D9BF77"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#2B2D42"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "envy": "frame",
+      "gratitude": "radial"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "df25c007f5a1bd60f9b4f3faebd224922533e33ea60d07b12481b93ff4d4a2c0",
+  "pixelHash": "df25c007f5a1bd60f9b4f3faebd224922533e33ea60d07b12481b93ff4d4a2c0",
+  "jsonFile": "df25c007f5a1bd60f9b4f3faebd224922533e33ea60d07b12481b93ff4d4a2c0.json",
+  "svgFile": "df25c007f5a1bd60f9b4f3faebd224922533e33ea60d07b12481b93ff4d4a2c0.svg",
+  "createdAt": "2026-06-01T22:26:22.091497+00:00"
+}

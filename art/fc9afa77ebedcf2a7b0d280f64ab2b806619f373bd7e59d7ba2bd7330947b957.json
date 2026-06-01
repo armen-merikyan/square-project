@@ -1,0 +1,399 @@
+{
+  "id": "fc9afa77ebedcf2a7b0d280f64ab2b806619f373bd7e59d7ba2bd7330947b957",
+  "seed": "envy vs gratitude; center_vs_edges; empty_room; outside_inward; noise against crack; soft_edges; rising_vs_falling; tear; fear_hope | abstract variation request 13; target batch count 200",
+  "title": "Contrasting Currents",
+  "reasoning": "The emotional tone contrasts feelings of envy and gratitude, embodied through a palette that balances muted sepia and tan shades with soft blue notes. The main collision occurs at the center, where warm colors suggest envy, while the outer edges with cool blues evoke gratitude. The layout follows an 'argument_grid,' creating tension between the central pattern inspired by 'rain' and the surrounding 'teeth' structure. The inclusion of broken pixels contributes to the imperfection and depth of the emotional experience, enhancing the sense of a noisy internal struggle. Negative space is used to symbolize unresolved feelings, maintaining an abstract quality throughout.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#7D4B37"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#C0A079"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#9F8973"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#E7D4B5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#7E4E9D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D8C4C7"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B2B055"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F0EBF4"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#A66D49"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E8C291"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D6D2CC"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A1D6ED"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#8F6EAA"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#C4B9BD"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#AAA9C4"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#EAE7B7"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#583022"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#BA9F8E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#7A5B3F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#F0E5D6"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#95384F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#DABFC2"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C7E1E4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F1F6E8"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A06537"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D6B38E"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#4A3B3C"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D2C3B7"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F6F0E0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#373B20"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#686E67"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFF3"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#7E6583"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#E5E1D2"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B9C4A8"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A07E63"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#8E751D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#DFD8D8"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E1B107"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F0F4E4"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#432E26"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C8A06D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFCC69"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E2D6C0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#ACE2CD"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#33B5CA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A4C2D4"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F8DCD0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#323638"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D09F78"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C9A98D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#8D5791"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#4E2714"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D8B5C5"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#8F8BBD"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#DDFCD1"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#4B3B30"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E6CBBC"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#DEE7DA"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#A7D5E1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFBCB3"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#DE9D6C"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#605C59"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#DFDFA8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "envy": "rain",
+      "gratitude": "teeth"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "fc9afa77ebedcf2a7b0d280f64ab2b806619f373bd7e59d7ba2bd7330947b957",
+  "pixelHash": "fc9afa77ebedcf2a7b0d280f64ab2b806619f373bd7e59d7ba2bd7330947b957",
+  "jsonFile": "fc9afa77ebedcf2a7b0d280f64ab2b806619f373bd7e59d7ba2bd7330947b957.json",
+  "svgFile": "fc9afa77ebedcf2a7b0d280f64ab2b806619f373bd7e59d7ba2bd7330947b957.svg",
+  "createdAt": "2026-06-01T22:26:23.792807+00:00"
+}
