@@ -32,6 +32,7 @@ from xml.sax.saxutils import escape
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ART_DIR = PROJECT_ROOT / "art"
+MANIFEST_PATH = ART_DIR / "manifest.json"
 ENV_PATH = PROJECT_ROOT / ".env"
 SEED_LIBRARY_PATH = PROJECT_ROOT / "scripts" / "seed.json"
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
@@ -152,6 +153,7 @@ def main() -> int:
                         return 1
 
     print(f"Generated {created} unique artwork{'s' if created != 1 else ''}.", flush=True)
+    write_gallery_manifest(ART_DIR, MANIFEST_PATH)
     return 0
 
 
@@ -210,6 +212,21 @@ def generate_one(
     print(f"Created {json_path.relative_to(PROJECT_ROOT)}", flush=True)
     print(f"Created {svg_path.relative_to(PROJECT_ROOT)}", flush=True)
     return True
+
+
+def write_gallery_manifest(art_dir: Path, manifest_path: Path) -> None:
+    json_ids = {path.stem for path in art_dir.glob("*.json") if path.name != manifest_path.name}
+    svg_ids = {path.stem for path in art_dir.glob("*.svg")}
+    artwork_ids = sorted(json_ids & svg_ids)
+    manifest = {
+        "artworkIds": artwork_ids,
+        "count": len(artwork_ids),
+    }
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(
+        f"Updated {manifest_path.relative_to(PROJECT_ROOT)} with {len(artwork_ids)} artworks.",
+        flush=True,
+    )
 
 
 def load_env(path: Path) -> dict[str, str]:
