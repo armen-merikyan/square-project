@@ -318,19 +318,23 @@ def build_stripe_checkout_payload(root: Path, payload: dict, origin: str) -> dic
     amount = int(os.environ.get(variant_config["amount_env"], variant_config["default_amount"]))
     product_name = f"Square Project {variant_config['label']}"
     product_description = f"{title}. Artwork ID {artwork_id}."
-    artwork_url = f"{origin}/art/{urllib.parse.quote(artwork_id)}.svg"
 
     checkout_payload.update({
         "line_items[0][price_data][currency]": "usd",
         "line_items[0][price_data][unit_amount]": str(amount),
         "line_items[0][price_data][product_data][name]": product_name,
         "line_items[0][price_data][product_data][description]": product_description[:500],
-        "line_items[0][price_data][product_data][images][0]": artwork_url,
         "line_items[0][price_data][product_data][metadata][artwork_id]": metadata["artwork_id"],
         "line_items[0][price_data][product_data][metadata][fulfillment_type]": metadata["fulfillment_type"],
         "line_items[0][price_data][product_data][metadata][size]": metadata["size"],
         "line_items[0][price_data][product_data][metadata][frame]": metadata["frame"],
     })
+
+    if not origin.startswith("http://127.0.0.1") and not origin.startswith("http://localhost"):
+        checkout_payload["line_items[0][price_data][product_data][images][0]"] = (
+            f"{origin}/art/{urllib.parse.quote(artwork_id)}.svg"
+        )
+
     return checkout_payload
 
 
