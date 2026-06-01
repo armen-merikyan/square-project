@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Square Project | Digital Square Art</title>
+    <meta
+      name="description"
+      content="Square Project is a digital art collection built from unique pixel squares, including the signature 8 by 8 square format."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Square Project home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Square Project</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#process">Process</a>
+        <a href="#data">Pixel Data</a>
+        <a href="#identity">Identity</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">World's largest square art collection</p>
+          <h1>Digital square worlds, built one pixel at a time.</h1>
+          <p>
+            Square Project is an art collection of digital squares. The most popular format is
+            the 8 by 8 pixel square: a tiny grid where every position, color, and instruction
+            becomes part of the artwork.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#process">Explore the process</a>
+            <a class="button secondary" href="#preview">View a square</a>
+          </div>
+        </div>
+
+        <div class="pixel-stage" id="preview" aria-label="Generated 8 by 8 pixel square preview">
+          <div class="pixel-toolbar">
+            <span id="squareId">SQ-08-0001</span>
+            <button id="regenerateButton" type="button">New Square</button>
+          </div>
+          <div class="pixel-grid" id="pixelGrid"></div>
+          <dl class="square-meta">
+            <div>
+              <dt>Format</dt>
+              <dd>8 x 8 pixels</dd>
+            </div>
+            <div>
+              <dt>Cells</dt>
+              <dd>64 positions</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Unique</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="intro">
+        <h2>What This Website Is</h2>
+        <p>
+          This website explains and presents Square Project: a digital art project focused on
+          square compositions, pixel grids, and collectible miniature visual worlds. Each image is
+          created from structured instructions instead of being treated as a random picture.
+        </p>
+      </section>
+
+      <section class="process" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">Creation process</p>
+          <h2>From prompt to verified square</h2>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>Ask for structured data</h3>
+            <p>
+              The project asks an LLM for a clear pixel plan: each pixel position, its color, and
+              the instruction behind the visual arrangement.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Map every position</h3>
+            <p>
+              The square is built from coordinate-based data, so every cell in the grid has an
+              intentional place and color value.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Check uniqueness</h3>
+            <p>
+              Software compares the image and pixel arrangement against the collection to make
+              sure the square is not a duplicate.
+            </p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Build and identify</h3>
+            <p>
+              After validation, the artwork is rendered from its instructions and assigned an ID
+              so it can be tracked as part of the collection.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="data-section" id="data">
+        <div>
+          <p class="eyebrow">Structured pixel data</p>
+          <h2>Each square is more than an image file.</h2>
+          <p>
+            A square can be represented as data: grid size, coordinates, color values, generation
+            notes, uniqueness checks, and a permanent collection ID. That structure makes the
+            artwork reproducible, searchable, and verifiable.
+          </p>
+        </div>
+        <pre aria-label="Example structured pixel data"><code>{
+  "id": "SQ-08-0001",
+  "size": "8x8",
+  "pixels": [
+    { "x": 0, "y": 0, "color": "#111827" },
+    { "x": 1, "y": 0, "color": "#f97316" },
+    { "x": 2, "y": 0, "color": "#22c55e" }
+  ],
+  "verifiedUnique": true
+}</code></pre>
+      </section>
+
+      <section class="identity" id="identity">
+        <p class="eyebrow">Collection identity</p>
+        <h2>Every square gets a record.</h2>
+        <div class="identity-grid">
+          <div>
+            <strong>Instruction</strong>
+            <p>The source concept and rules used to create the pixel layout.</p>
+          </div>
+          <div>
+            <strong>Arrangement</strong>
+            <p>The exact position and color of every pixel in the square.</p>
+          </div>
+          <div>
+            <strong>Verification</strong>
+            <p>A uniqueness check against existing square images and pixel data.</p>
+          </div>
+          <div>
+            <strong>ID</strong>
+            <p>A collection identifier that connects the final image to its structured record.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Square Project. Digital squares, pixel worlds, and collectible 8 by 8 art.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
