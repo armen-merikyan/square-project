@@ -1,0 +1,403 @@
+{
+  "id": "a72c91be28fd5066facc99588992d2b7f7c21fb1560895e4e7892384e8a1d769",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 136; target batch count 200",
+  "title": "Symmetrical Disruption",
+  "reasoning": "This artwork captures the tension between confusion and clarity, employing a palette of pink, red, gray, and dark maroon to evoke emotional resonance. The contrasting colors create a dialogue of warmth and coldness, suggesting both comfort and disruption. The pattern reflects a 'mirror_broken' layout where symmetrical elements are offset by broken pixels to illustrate instability. The dominant dark hues are punctuated by vibrant colors in the center, indicating a nexus of clarity surrounded by chaos. The pixel bleed style enhances this sense of disturbance, as edges appear jagged and in transition, symbolizing the difficulty of maintaining balance between the sharper moments of clarity and the fuzziness of confusion.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3C0031"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#A31F29"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#EE6E6D"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#3C0031"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#B3A0A0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#74303A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#BB2222"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A31F29"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A31526"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A31F29"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#3C0031"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#BB2222"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3C0031"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#A31F29"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B3A0A0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#A31F29"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#BB2222"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3C0031"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#BB2222"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BB2222"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#BB2222"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3C0031"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FB9A9A"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#BB2222"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#A31F29"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#3C0031"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#E4B3B3"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FB9A9A"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "broken grid",
+        "overlapping paths"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "confusion": "stairs",
+      "clarity": "grid"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "corner_block",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a72c91be28fd5066facc99588992d2b7f7c21fb1560895e4e7892384e8a1d769",
+  "pixelHash": "a72c91be28fd5066facc99588992d2b7f7c21fb1560895e4e7892384e8a1d769",
+  "jsonFile": "a72c91be28fd5066facc99588992d2b7f7c21fb1560895e4e7892384e8a1d769.json",
+  "svgFile": "a72c91be28fd5066facc99588992d2b7f7c21fb1560895e4e7892384e8a1d769.svg",
+  "createdAt": "2026-06-01T10:31:41.208129+00:00"
+}

@@ -1,0 +1,403 @@
+{
+  "id": "ba0d4346fda352c1461cd4c1be84a97700bf4d28b8d8c6dd9045023d03c2a70e",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 37; target batch count 200",
+  "title": "Chaos vs Order",
+  "reasoning": "The emotional tone here reflects a tension between confusion and clarity, illustrated through a stark contrast of a dark, dense center that scatters outward with lighter shades. The chosen palette of navy, black, and a single white emphasizes the feeling of isolation against a backdrop of complexity. This represents the dense pressure of confusion at the center, fighting against the clarity of the edges. The jagged disruptions of broken pixels suggest interruption, while the consistent but varied patterns of color suggest movement and flow, echoing the idea of falling pixels. The collision between darker tones and the abrupt lighter inputs creates a striking visual conflict, capturing the essence of the seed's themes.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#00274D"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1B2C3A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#2B3D4E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#0E0E0E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#112233"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#3C4F66"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#2F3A51"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#4B627F"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1C0D1A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3E3A4A"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#944D2B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F4F4F4"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D5C8C0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#2F2424"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6A6D77"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#9B6F56"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7E2A2D"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B0B1B0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D5C3A8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C5C5C2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#2A2D34"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#2E0C0B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#3B3B3B"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#0B1E37"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#0E1E29"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#4A464F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#7D9B8E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E0E1E3"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3B3F33"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4F4D35"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#5D5F49"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6C1D1A"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F7F7F5"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#0C0F10"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#004D4D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#006C6C"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#30302A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1C1F23"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#53585C"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#848B8F"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#ADBBBA"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C8C8C8"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E3E2E2"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F7F5F1"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2E2E29"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#6F4242"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#8F7F7D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B3B8BF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D7C4B1"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D9D9D5"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D4D4D0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#25282C"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#3C3D4D"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#69756E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#3C5E5D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#ADB5B9"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D1D3D5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFA"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F7F7F7"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "broken grid",
+        "overlapping paths",
+        "false symmetry"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "confusion": "flame",
+      "clarity": "split_screen"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "flame",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ba0d4346fda352c1461cd4c1be84a97700bf4d28b8d8c6dd9045023d03c2a70e",
+  "pixelHash": "ba0d4346fda352c1461cd4c1be84a97700bf4d28b8d8c6dd9045023d03c2a70e",
+  "jsonFile": "ba0d4346fda352c1461cd4c1be84a97700bf4d28b8d8c6dd9045023d03c2a70e.json",
+  "svgFile": "ba0d4346fda352c1461cd4c1be84a97700bf4d28b8d8c6dd9045023d03c2a70e.svg",
+  "createdAt": "2026-06-01T10:28:24.940050+00:00"
+}

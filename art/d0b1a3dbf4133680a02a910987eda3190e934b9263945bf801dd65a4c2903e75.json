@@ -1,0 +1,403 @@
+{
+  "id": "d0b1a3dbf4133680a02a910987eda3190e934b9263945bf801dd65a4c2903e75",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 143; target batch count 200",
+  "title": "Dissonance of Form",
+  "reasoning": "This artwork embodies the tension between confusion and clarity through varied patterns and color application. The palette of dark red, burnt orange, charcoal, and gold suggests both the warmth of clarity and the threat of confusion. The dominant grid pattern represents the chaos, while the central radial pattern seeks clarity, creating a lively contrast. Broken pixels are scattered to reflect disruption, enhancing the feeling of a corrupted symmetry. The artwork aims to mirror the emotional state suggested by the seed \u2014 a struggle to find clarity amidst confusion, framed by a thick outline for a sense of containment.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2B0A00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#CC6A00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#DA4A00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#AA3700"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#2A0B00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#462B00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#7C3D00"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#AA6600"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#391C00"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#5E3100"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#5E4200"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#7C5800"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B97700"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#C3B500"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D1D200"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D9D300"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#5C4E3B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#7A6D5A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#B4A79F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A10D00"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#EA8B00"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#F7C700"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFE6AA"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3A2D29"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#4F3E38"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#9FA6A2"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D2D7D0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#6B4C37"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#DEB190"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E6C6A0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F7F3D5"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#191B1E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#2E2D2B"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#5C5C5D"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#898C8E"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#BCB7AF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#E6E0D6"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFF0CE"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F9F8EE"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#292B2C"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#505254"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#898C91"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#B3B1B0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#CDCDCC"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E3E7E3"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F6F8F5"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FAFDFD"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#221C20"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#E7D1B9"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#BDB0A2"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6B5B52"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C1B3A3"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D4CFC6"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#DFDFDE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#080808"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#191A1B"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#2C2D32"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#4C4E4F"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#757678"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A0A4A6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D5D8D9"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F2F4F6"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "broken grid",
+        "false symmetry",
+        "overlapping paths"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "confusion": "grid",
+      "clarity": "radial"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "tiny_plus",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d0b1a3dbf4133680a02a910987eda3190e934b9263945bf801dd65a4c2903e75",
+  "pixelHash": "d0b1a3dbf4133680a02a910987eda3190e934b9263945bf801dd65a4c2903e75",
+  "jsonFile": "d0b1a3dbf4133680a02a910987eda3190e934b9263945bf801dd65a4c2903e75.json",
+  "svgFile": "d0b1a3dbf4133680a02a910987eda3190e934b9263945bf801dd65a4c2903e75.svg",
+  "createdAt": "2026-06-01T10:32:02.184160+00:00"
+}

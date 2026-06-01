@@ -1,0 +1,403 @@
+{
+  "id": "e5e1a37914dede0dfc7e4277e4af56cb5cccf88712607767187b55c16885aa7b",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 108; target batch count 200",
+  "title": "Echoes of Order",
+  "reasoning": "This composition explores the emotional juxtaposition of confusion versus clarity. It employs a palette of navy, black, dim cyan, and a hint of white, resonating with the themes of loneliness and signal amidst noise. The contrast arises primarily between the densely packed areas (navy and black) that evoke confusion, and the scattered lighter shades that suggest clarity. The flow of the pixel arrangement is downward, resembling falling pixels, enhancing the theme of descent from clarity to confusion. The broken pixels introduce imperfection, underscoring the tension between the stark order of the palette and the organic chaos of their arrangement. This tension is accentuated by thin outlines, which articulate the boundaries of chaos in a fundamentally structured environment. Therefore, the arrangement captures a rhythmic balance between layered density and quiet space, portraying the intricate dance between clarity and confusion.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3C557B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3C557B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#3C557B"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#3C557B"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#3C557B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3C557B"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#3C3C97"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#1C1C97"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#3B3B95"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4C4C4C"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#3C3C97"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "broken grid",
+        "overlapping paths",
+        "false symmetry"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "confusion": "spark",
+      "clarity": "split_screen"
+    },
+    "edgeStyle": "thin_outline",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "e5e1a37914dede0dfc7e4277e4af56cb5cccf88712607767187b55c16885aa7b",
+  "pixelHash": "e5e1a37914dede0dfc7e4277e4af56cb5cccf88712607767187b55c16885aa7b",
+  "jsonFile": "e5e1a37914dede0dfc7e4277e4af56cb5cccf88712607767187b55c16885aa7b.json",
+  "svgFile": "e5e1a37914dede0dfc7e4277e4af56cb5cccf88712607767187b55c16885aa7b.svg",
+  "createdAt": "2026-06-01T10:30:45.486068+00:00"
+}

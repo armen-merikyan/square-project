@@ -1,0 +1,403 @@
+{
+  "id": "9dfc0704f151b8bb4ce3092461addd544e9555ccf31f84dd640b32578490d6bc",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 66; target batch count 200",
+  "title": "Contrast Between Calm and Chaos",
+  "reasoning": "This artwork captures the emotional tension between confusion and clarity, using a palette of deep reds, stark blacks, and subtle blues to represent rage and calm. The contrasting dark hues at the edges create a feeling of confinement while pale blues emerge like fragmented thoughts towards the center, suggesting clarity fighting through chaos. The layout follows a rising flow, with the dense clusters at the bottom revealing a movement toward upward release, echoing the struggle between machine emotion and organic chaos. Broken pixels disrupt the symmetry, amplifying the unevenness of the emotional landscape.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF9999"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#333333"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#444444"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF3333"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#66CCFF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#999999"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#CC0000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#0044FF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF6060"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#99CCFF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#777777"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF8888"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#66AAFF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#777777"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#555555"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#33CCFF"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#999999"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#00AAFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#999999"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#555555"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#66CCFF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#777777"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#333333"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "broken grid",
+        "overlapping paths",
+        "false symmetry"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "bottom_to_top",
+    "patterns": {
+      "confusion": "target",
+      "clarity": "mirror"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "star",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9dfc0704f151b8bb4ce3092461addd544e9555ccf31f84dd640b32578490d6bc",
+  "pixelHash": "9dfc0704f151b8bb4ce3092461addd544e9555ccf31f84dd640b32578490d6bc",
+  "jsonFile": "9dfc0704f151b8bb4ce3092461addd544e9555ccf31f84dd640b32578490d6bc.json",
+  "svgFile": "9dfc0704f151b8bb4ce3092461addd544e9555ccf31f84dd640b32578490d6bc.svg",
+  "createdAt": "2026-06-01T10:29:18.840472+00:00"
+}

@@ -1,0 +1,403 @@
+{
+  "id": "174016c0fcc16d4dac2b2ffc906b4fa1de24b7c5067761dd14ba63b6c6fc5eb0",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 28; target batch count 200",
+  "title": "Echo of Asymmetry",
+  "reasoning": "The emotional tone of this piece reflects a battle between clarity and confusion, translating into a visual language that embodies both structured chaos and moments of stillness. The palette of navy, black, white, and dim cyan was chosen for its stark contrasts, evoking a feeling of isolation yet hinting at clarity within confusion. The predominant use of black against the dim cyan provides depth, while scattered whites create an illusion of falling pixels, visually representing the seed's theme of 'falling pixels' and disruption. The arrangement features jagged edges which emphasize the uneven nature of the emotional landscape, showing how clarity can emerge from a broken grid. The use of broken pixels introduces imperfection, enhancing the feelings of confusion and creating tension between solidity and fragmentation. Overall, the abrupt disruptions in color and contrast embody a narrative of oscillating emotions\u2014poised between calm clarity and overwhelming disarray.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0A1A3D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1F2A69"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2E3C99"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4B5DCC"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6E7FFC"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B2C3E2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#1E2F49"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#2B496A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#2D537A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#526BAA"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#798ED1"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A4B7E7"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D0DFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#232323"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#293D57"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#378BD7"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#43A2E0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#3CA7DB"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#1B8CB8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0D99C4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#62D8E5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#212121"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#263049"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#3E5A9D"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A1C7E9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#5E9BC9"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#2CB2D6"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#80E0F0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B7FFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#0F0F0F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#02054B"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#3F293F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#7FA1B3"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#5AB7E0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7F9BBD"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A7C0D0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5B2E6F"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#1B1B1B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1F2B33"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#1D515D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A4C8D3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#5C8B9D"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#8FCED1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F1F6FB"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E65BCE"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#05050A"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#0F2936"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6B7C86"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#9FB9C9"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C0D5E0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D9D5DF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#5A94A6"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0B0B0B"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#171717"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#4C5C6F"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#5E7988"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#7BA0B6"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A3C6D6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#E4EAEC"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FF0000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "broken grid",
+        "overlapping paths"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "spiral_clockwise",
+    "patterns": {
+      "confusion": "crack",
+      "clarity": "broken_dots"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "square_frame",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "174016c0fcc16d4dac2b2ffc906b4fa1de24b7c5067761dd14ba63b6c6fc5eb0",
+  "pixelHash": "174016c0fcc16d4dac2b2ffc906b4fa1de24b7c5067761dd14ba63b6c6fc5eb0",
+  "jsonFile": "174016c0fcc16d4dac2b2ffc906b4fa1de24b7c5067761dd14ba63b6c6fc5eb0.json",
+  "svgFile": "174016c0fcc16d4dac2b2ffc906b4fa1de24b7c5067761dd14ba63b6c6fc5eb0.svg",
+  "createdAt": "2026-06-01T10:28:06.199920+00:00"
+}

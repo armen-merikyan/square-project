@@ -309,6 +309,25 @@ function formatShopStatus(message, tone = "neutral") {
   return { message, tone };
 }
 
+async function readCheckoutResponse(response) {
+  const contentType = response.headers.get("content-type") || "";
+
+  if (contentType.includes("application/json")) {
+    return response.json();
+  }
+
+  const responseText = await response.text();
+  const isHtmlResponse = responseText.trim().startsWith("<");
+
+  if (isHtmlResponse || response.status === 404) {
+    throw new Error(
+      "Checkout API is unavailable. Run the local dev server or deploy a backend route for /api/create-checkout-session."
+    );
+  }
+
+  throw new Error("Checkout returned an unexpected response.");
+}
+
 async function startCheckout(record, variant, status) {
   status.textContent = "Opening secure checkout.";
   status.dataset.tone = "neutral";
@@ -317,6 +336,7 @@ async function startCheckout(record, variant, status) {
     const response = await fetch("/api/create-checkout-session", {
       method: "POST",
       headers: {
+        "Accept": "application/json",
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
@@ -324,7 +344,7 @@ async function startCheckout(record, variant, status) {
         variant
       })
     });
-    const payload = await response.json();
+    const payload = await readCheckoutResponse(response);
 
     if (!response.ok) {
       throw new Error(payload.error || "Checkout could not be started.");

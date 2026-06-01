@@ -1,0 +1,403 @@
+{
+  "id": "ee15c4db98654f951e961d532a59a2fccea077b4bc7f8057e1037debb5a932df",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 140; target batch count 200",
+  "title": "Echoes of Symmetry",
+  "reasoning": "This piece uses a dual emotional tone of confusion and clarity, embodied through contrasting patterns. The palette of navy, black, white, and dim cyan evokes loneliness but also sharp clarity, symbolizing the tension between chaotic overlapping paths and structured maze designs. The main collision occurs in the center where darker shadows clash with brighter whites, suggesting the pull between feeling lost and finding clarity in the chaos. The broken pixels create intentional disruptions that align with the seed's themes, enhancing the sense of confusion while maintaining a stark, structured flow.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2E2E2E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5B5B5B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#232323"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#353535"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#484848"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#606060"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#737373"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#282828"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#343434"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#5C5C5C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A1A1A1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#DBDBDB"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#121212"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#262626"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#404040"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#606060"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#323232"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#484848"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#606060"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8C8C8C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#202020"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#2B2B2B"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B1B1B1"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D5D5D5"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FAFAFA"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#757575"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#484848"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#6E6E6E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#8E8E8E"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "overlapping paths",
+        "broken grid"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "bottom_to_top",
+    "patterns": {
+      "confusion": "spark",
+      "clarity": "maze"
+    },
+    "edgeStyle": "right_weighted",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "arrow",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ee15c4db98654f951e961d532a59a2fccea077b4bc7f8057e1037debb5a932df",
+  "pixelHash": "ee15c4db98654f951e961d532a59a2fccea077b4bc7f8057e1037debb5a932df",
+  "jsonFile": "ee15c4db98654f951e961d532a59a2fccea077b4bc7f8057e1037debb5a932df.json",
+  "svgFile": "ee15c4db98654f951e961d532a59a2fccea077b4bc7f8057e1037debb5a932df.svg",
+  "createdAt": "2026-06-01T10:31:51.925214+00:00"
+}

@@ -1,0 +1,403 @@
+{
+  "id": "af3499c12172e08662ea50d4c55e48f3faa7f4d3cf84f983de2b625525af5e6f",
+  "seed": "confusion vs clarity; center_vs_edges; falling_pixels; center_outward; teeth against broken_dots; thick_outline; full_vs_hollow; half_square; machine_emotion | abstract variation request 141; target batch count 200",
+  "title": "Symmetrical Disarray",
+  "reasoning": "This piece explores the tension between clarity and confusion through the use of a restricted color palette featuring deep blacks and dark violets against soft golds and pale greens. The conflict depicted here arises from the broken mirror layout, where the left and right halves share a common theme but introduce deliberate inconsistencies. The contrasting colors reflect emotional struggles: the darkness suggests confusion while soft hues represent moments of clarity. The arrangement flows outward from the center, creating a sensation of chaotic expansion, while jagged patterns punctuate the linear structure, evoking a sense of imperfection. This collection conveys the push and pull of clarity contrasted against chaos, fluidly resonating with the abstract seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#2C2A3A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B3C7A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7E6169"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#BFB73D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#B2CE5A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B6E7E9"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#2A292A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3C3551"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#693C60"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#935D90"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B4BF89"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D4D74E"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E5F2B1"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#B0D9C9"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3B2938"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#592E52"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7B498A"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#BA863D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4CBE92"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D94A00"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C3C3C3"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#191B1D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#232D3A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#502F42"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F5A46F"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B1D2B3"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#ADBED0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E7D5A1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D6C3D7"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4C2F3E"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#752D3C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#8D5B7F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#AB3E3E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#CCF1C0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A2E1D4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F6F1D4"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#6A4D44"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D02632"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E8BF2D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#6CA788"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#1B9F9A"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B4E0D5"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#8498B7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#545051"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#7C548D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D2A057"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E4DB79"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D1F4DE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FCFCFC"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#22283C"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#79708C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#8C5E88"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D8BA2F"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A4D1D6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#C3A697"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F6F6F6"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "overlapping paths",
+        "broken grid"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "confusion": "spark",
+      "clarity": "stripes"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "tear",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "af3499c12172e08662ea50d4c55e48f3faa7f4d3cf84f983de2b625525af5e6f",
+  "pixelHash": "af3499c12172e08662ea50d4c55e48f3faa7f4d3cf84f983de2b625525af5e6f",
+  "jsonFile": "af3499c12172e08662ea50d4c55e48f3faa7f4d3cf84f983de2b625525af5e6f.json",
+  "svgFile": "af3499c12172e08662ea50d4c55e48f3faa7f4d3cf84f983de2b625525af5e6f.svg",
+  "createdAt": "2026-06-01T10:31:55.079863+00:00"
+}
