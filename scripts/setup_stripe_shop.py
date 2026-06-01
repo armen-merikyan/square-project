@@ -43,7 +43,13 @@ def is_real_stripe_id(value: str, prefix: str) -> bool:
 
 
 def is_real_payment_link(value: str) -> bool:
-    return value.startswith("https://buy.stripe.com/") and "your-" not in value
+    parsed = urllib.parse.urlparse(value)
+    return (
+        parsed.scheme == "https"
+        and parsed.netloc.startswith("buy.")
+        and bool(parsed.path.strip("/"))
+        and "your-" not in value
+    )
 
 
 def load_env() -> None:
@@ -198,7 +204,7 @@ def main() -> None:
     if not secret_key:
         raise SystemExit(
             "For this static site, add STRIPE_PRINT_PAYMENT_LINK and "
-            "STRIPE_FRAMED_PAYMENT_LINK buy.stripe.com URLs to .env, then rerun this script. "
+            "STRIPE_FRAMED_PAYMENT_LINK Stripe Payment Link URLs to .env, then rerun this script. "
             "STRIPE_SECRET_KEY is only needed if you want this script to create Stripe links."
         )
 
