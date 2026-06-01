@@ -14,6 +14,7 @@ const dots = document.querySelector("#carouselDots");
 const counter = document.querySelector("#carouselCounter");
 const nextButton = document.querySelector("#nextArtwork");
 const prevButton = document.querySelector("#prevArtwork");
+const DOT_RANGE = 2;
 
 let activeIndex = 0;
 let autoAdvanceId;
@@ -36,6 +37,19 @@ function shortestOffset(index) {
       : rawOffset;
 
   return wrappedOffset;
+}
+
+function visibleDotIndexes() {
+  if (artworks.length <= (DOT_RANGE * 2) + 1) {
+    return artworks.map((_, index) => index);
+  }
+
+  const indexes = [];
+  for (let offset = -DOT_RANGE; offset <= DOT_RANGE; offset += 1) {
+    indexes.push(normalizeIndex(activeIndex + offset));
+  }
+
+  return indexes;
 }
 
 function shortId(id) {
@@ -147,25 +161,33 @@ async function renderCarousel() {
 
     coverflow.appendChild(slide);
 
-    const dot = document.createElement("button");
-    dot.className = "carousel-dot";
-    dot.type = "button";
-    dot.setAttribute("aria-label", `Show artwork ${index + 1}`);
-    dot.addEventListener("click", () => {
-      advanceTo(index);
-      restartAutoAdvance();
-    });
-    dots.appendChild(dot);
   });
 
   setActive(0);
   startAutoAdvance();
 }
 
+function renderDots() {
+  dots.replaceChildren();
+
+  visibleDotIndexes().forEach((dotIndex) => {
+    const dot = document.createElement("button");
+    dot.className = "carousel-dot";
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Show artwork ${dotIndex + 1}`);
+    dot.classList.toggle("is-active", dotIndex === activeIndex);
+    dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
+    dot.addEventListener("click", () => {
+      advanceTo(dotIndex);
+      restartAutoAdvance();
+    });
+    dots.appendChild(dot);
+  });
+}
+
 function setActive(index) {
   activeIndex = normalizeIndex(index);
   const slides = [...coverflow.children];
-  const dotButtons = [...dots.children];
 
   slides.forEach((slide, slideIndex) => {
     const offset = shortestOffset(slideIndex);
@@ -182,11 +204,7 @@ function setActive(index) {
     slide.classList.toggle("is-hidden", hidden);
   });
 
-  dotButtons.forEach((dot, dotIndex) => {
-    dot.classList.toggle("is-active", dotIndex === activeIndex);
-    dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
-  });
-
+  renderDots();
   counter.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(artworks.length).padStart(2, "0")}`;
 }
 

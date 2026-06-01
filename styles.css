@@ -335,6 +335,8 @@ button:hover {
 }
 
 .carousel-controls {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
   min-height: 46px;
 }
 
@@ -351,7 +353,9 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   gap: 8px;
+  overflow: hidden;
 }
 
 .carousel-dot {
