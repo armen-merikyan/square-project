@@ -1242,6 +1242,40 @@ footer p {
   white-space: nowrap;
 }
 
+.gallery-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 16px;
+}
+
+.gallery-stats div {
+  min-width: 0;
+  border: 1px solid rgba(21, 21, 21, 0.12);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(21, 21, 21, 0.04);
+}
+
+.gallery-stats dt {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.gallery-stats dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
 .gallery-controls {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
@@ -2113,6 +2147,10 @@ body.has-open-inspector {
   .gallery-toolbar {
     align-items: start;
     flex-direction: column;
+  }
+
+  .gallery-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .gallery-loading-heading,
