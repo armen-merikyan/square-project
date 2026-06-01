@@ -38,17 +38,6 @@
     </header>
 
     <main>
-      <section class="gallery-hero">
-        <div>
-          <p class="eyebrow">Complete collection</p>
-          <h1>Gallery of generated square worlds.</h1>
-        </div>
-        <p>
-          Select an image to inspect the artwork, its source record, color language, and generation
-          reasoning as a curated record.
-        </p>
-      </section>
-
       <section class="gallery-workspace" aria-label="Artwork gallery">
         <aside class="gallery-filters" id="galleryFilters" aria-label="Gallery filters">
           <div class="filter-heading">
@@ -77,8 +66,8 @@
         <div class="gallery-panel">
           <div class="gallery-toolbar">
             <div>
-              <p class="eyebrow">Artwork index</p>
-              <h2>All squares</h2>
+              <p class="eyebrow">Collection browser</p>
+              <h1>Gallery</h1>
             </div>
             <div class="gallery-toolbar-actions">
               <button
@@ -93,19 +82,21 @@
               <output id="galleryCount" aria-live="polite">Loading</output>
             </div>
           </div>
-          <label class="gallery-search">
-            <span>Search by text</span>
-            <input
-              id="gallerySearch"
-              type="search"
-              placeholder="Title, seed, reasoning, or id"
-              autocomplete="off"
-            >
-          </label>
-          <label class="gallery-category">
-            <span>Category</span>
-            <select id="galleryCategory" aria-label="Gallery category"></select>
-          </label>
+          <div class="gallery-controls">
+            <label class="gallery-search">
+              <span>Search by text</span>
+              <input
+                id="gallerySearch"
+                type="search"
+                placeholder="Title, seed, reasoning, or id"
+                autocomplete="off"
+              >
+            </label>
+            <label class="gallery-category">
+              <span>Category</span>
+              <select id="galleryCategory" aria-label="Gallery category"></select>
+            </label>
+          </div>
           <div
             class="gallery-loading"
             id="galleryLoading"

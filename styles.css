@@ -955,38 +955,15 @@ footer p {
   text-underline-offset: 4px;
 }
 
-.gallery-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-  gap: clamp(28px, 5vw, 80px);
-  padding: clamp(42px, 7vw, 86px) clamp(18px, 4vw, 56px);
-  border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(249, 115, 22, 0.12), transparent 34%),
-    linear-gradient(315deg, rgba(37, 99, 235, 0.12), transparent 38%),
-    var(--paper);
-}
-
-.gallery-hero h1 {
-  max-width: 940px;
-  font-size: clamp(2.9rem, 7.4vw, 6.8rem);
-}
-
-.gallery-hero > p {
-  align-self: end;
-  max-width: 560px;
-  margin: 0;
-  color: var(--muted);
-  font-size: clamp(1.1rem, 2vw, 1.45rem);
-}
-
 .gallery-workspace {
   display: grid;
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
   align-items: start;
   gap: clamp(18px, 3vw, 30px);
-  padding: clamp(22px, 4vw, 44px) clamp(18px, 4vw, 56px) clamp(56px, 7vw, 88px);
-  background: #f4f4f1;
+  min-height: calc(100vh - 72px);
+  padding: clamp(18px, 3vw, 34px) clamp(18px, 4vw, 56px) clamp(56px, 7vw, 88px);
+  border-top: 1px solid rgba(21, 21, 21, 0.08);
+  background: #f6f6f3;
 }
 
 .gallery-workspace.filters-hidden {
@@ -1218,11 +1195,18 @@ footer p {
   align-items: end;
   justify-content: space-between;
   gap: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(21, 21, 21, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(21, 21, 21, 0.05);
 }
 
-.gallery-toolbar h2 {
-  font-size: clamp(1.8rem, 4vw, 3.2rem);
+.gallery-toolbar h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  line-height: 0.95;
 }
 
 .gallery-toolbar-actions {
@@ -1258,11 +1242,18 @@ footer p {
   white-space: nowrap;
 }
 
+.gallery-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
 .gallery-search,
 .gallery-category {
   display: grid;
   gap: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 900;
@@ -1947,13 +1938,18 @@ body.has-open-inspector {
   .hero,
   .intro,
   .data-section,
-  .gallery-hero,
-  .gallery-workspace {
+  .gallery-workspace,
+  .gallery-controls {
     grid-template-columns: 1fr;
   }
 
   .gallery-filters {
+    order: 2;
     position: static;
+  }
+
+  .gallery-panel {
+    order: 1;
   }
 
   .color-filter-list {
@@ -1997,6 +1993,7 @@ body.has-open-inspector {
   .identity-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
 }
 
 @media (max-width: 620px) {

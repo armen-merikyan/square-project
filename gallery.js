@@ -52,6 +52,7 @@ const galleryLoadingPercent = document.querySelector("#galleryLoadingPercent");
 const galleryLoadingProgress = document.querySelector("#galleryLoadingProgress");
 const galleryLoadingStep = document.querySelector("#galleryLoadingStep");
 const galleryLoadingTime = document.querySelector("#galleryLoadingTime");
+const galleryStats = document.querySelector("#galleryStats");
 const colorFilterList = document.querySelector("#colorFilterList");
 const clearColorFilters = document.querySelector("#clearColorFilters");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
@@ -135,6 +136,52 @@ function setColorFiltersVisible(visible, shouldSave = true) {
 
 function compactId(id) {
   return `${id.slice(0, 4)}...${id.slice(-4)}`;
+}
+
+function formatStatNumber(value) {
+  return Number.isFinite(value)
+    ? new Intl.NumberFormat("en-US").format(value)
+    : "...";
+}
+
+function collectionColorFamilyTotal(manifest) {
+  const totals = manifest?.indexes?.colorBucketTotals;
+
+  if (!totals || typeof totals !== "object") {
+    return NaN;
+  }
+
+  const broadestThreshold = Object.keys(totals)
+    .map(Number)
+    .filter(Number.isFinite)
+    .sort((a, b) => b - a)[0];
+
+  return Number.isFinite(broadestThreshold) ? totals[String(broadestThreshold)] : NaN;
+}
+
+function renderCollectionStats(manifest, artworkIds) {
+  if (!galleryStats) {
+    return;
+  }
+
+  const artworkCount = Number.isFinite(manifest?.count) ? manifest.count : artworkIds.length;
+  const exactColors = manifest?.indexes?.colorBucketTotals?.["0"];
+  const colorFamilies = collectionColorFamilyTotal(manifest);
+  const pixelCells = artworkCount * 64;
+  const stats = {
+    artworks: artworkCount,
+    colors: exactColors,
+    families: colorFamilies,
+    pixels: pixelCells
+  };
+
+  Object.entries(stats).forEach(([key, value]) => {
+    const stat = galleryStats.querySelector(`[data-stat="${key}"]`);
+
+    if (stat) {
+      stat.textContent = formatStatNumber(value);
+    }
+  });
 }
 
 function uniqueColors(pixels = []) {
@@ -1407,6 +1454,7 @@ async function renderGallery() {
   }
 
   galleryTotalCount = artworkIds.length;
+  renderCollectionStats(manifest, artworkIds);
   galleryCategories = !Array.isArray(manifest) && Array.isArray(manifest.categories)
     ? manifest.categories
     : [];
