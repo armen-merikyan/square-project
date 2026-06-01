@@ -424,12 +424,16 @@ function checkoutReference(record, variant, frameType = "") {
   return reference.slice(0, 200);
 }
 
-function paymentLinkForVariant(variant, record = null) {
+function paymentLinkForVariant(variant, record = null, frameType = selectedFrameType) {
   const variantConfig = SHOP_VARIANTS[variant];
   const artworkLinks = record && PAYMENT_LINKS.artworks && PAYMENT_LINKS.artworks[record.id];
   const artworkLink = artworkLinks && artworkLinks[variant];
 
-  if (artworkLink) {
+  if (variant === "framed" && artworkLink && typeof artworkLink === "object") {
+    return (artworkLink[frameType] || artworkLink[selectedFrameType] || "").trim();
+  }
+
+  if (typeof artworkLink === "string") {
     return artworkLink.trim();
   }
 
@@ -437,7 +441,7 @@ function paymentLinkForVariant(variant, record = null) {
 }
 
 function paymentLinkUrl(record, variant, frameType = selectedFrameType) {
-  const url = new URL(paymentLinkForVariant(variant, record));
+  const url = new URL(paymentLinkForVariant(variant, record, frameType));
   url.searchParams.set("client_reference_id", checkoutReference(record, variant, frameType));
   url.searchParams.set("utm_source", "square_project");
   url.searchParams.set("utm_medium", "gallery");
@@ -446,14 +450,14 @@ function paymentLinkUrl(record, variant, frameType = selectedFrameType) {
   return url.toString();
 }
 
-function checkoutStatusForVariant(variant, record = null) {
-  return paymentLinkForVariant(variant, record)
+function checkoutStatusForVariant(variant, record = null, frameType = selectedFrameType) {
+  return paymentLinkForVariant(variant, record, frameType)
     ? "Ready for Stripe payment link."
     : "Payment link is not configured.";
 }
 
-function checkoutToneForVariant(variant, record = null) {
-  return paymentLinkForVariant(variant, record) ? "neutral" : "error";
+function checkoutToneForVariant(variant, record = null, frameType = selectedFrameType) {
+  return paymentLinkForVariant(variant, record, frameType) ? "neutral" : "error";
 }
 
 function startCheckout(record, variant, frameType, status) {
@@ -466,7 +470,7 @@ function startCheckout(record, variant, frameType, status) {
   }
 
   try {
-    if (!paymentLinkForVariant(variant, record)) {
+    if (!paymentLinkForVariant(variant, record, frameType)) {
       throw new Error("Payment link is not configured.");
     }
 
@@ -530,8 +534,9 @@ function renderOrderPanel(record, preview) {
       frameButtons.querySelectorAll(".frame-type-option").forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.frameType === frameType));
       });
-      status.textContent = checkoutStatusForVariant(selectedShopVariant, record);
-      status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record);
+      status.textContent = checkoutStatusForVariant(selectedShopVariant, record, frameType);
+      status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record, frameType);
+      checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant, record, frameType);
     });
     frameButtons.appendChild(frameButton);
   });
@@ -564,9 +569,9 @@ function renderOrderPanel(record, preview) {
         button.setAttribute("aria-pressed", String(button.dataset.variant === variant));
       });
       checkoutButton.textContent = SHOP_VARIANTS[variant].button;
-      status.textContent = checkoutStatusForVariant(variant, record);
-      status.dataset.tone = checkoutToneForVariant(variant, record);
-      checkoutButton.disabled = !paymentLinkForVariant(variant, record);
+      status.textContent = checkoutStatusForVariant(variant, record, selectedFrameType);
+      status.dataset.tone = checkoutToneForVariant(variant, record, selectedFrameType);
+      checkoutButton.disabled = !paymentLinkForVariant(variant, record, selectedFrameType);
     });
     options.appendChild(option);
   });
@@ -575,12 +580,12 @@ function renderOrderPanel(record, preview) {
   checkoutButton.className = "button primary checkout-button";
   checkoutButton.type = "button";
   checkoutButton.textContent = SHOP_VARIANTS[selectedShopVariant].button;
-  checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant, record);
+  checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant, record, selectedFrameType);
 
   const status = document.createElement("p");
   status.className = "checkout-status";
-  status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record);
-  status.textContent = checkoutStatusForVariant(selectedShopVariant, record);
+  status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record, selectedFrameType);
+  status.textContent = checkoutStatusForVariant(selectedShopVariant, record, selectedFrameType);
 
   checkoutButton.addEventListener(
     "click",

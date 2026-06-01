@@ -54,10 +54,11 @@ python3 scripts/setup_stripe_shop.py
 ```
 
 `STRIPE_SECRET_KEY` is optional. If it is set, the helper creates or reuses the
-Stripe catalog through the Stripe API. The API mode creates one Stripe product
-per artwork, attaches the artwork SVG URL and metadata (`art_id`, title, seed,
-colors, JSON URL), creates separate print and framed prices, and writes a
-per-artwork payment-link map to `payment-links.js`.
+Stripe catalog through the Stripe API. The API mode creates a print product per
+artwork and framed products per artwork/frame color, attaches the correct image
+URL and metadata (`art_id`, title, seed, colors, JSON URL, frame color), creates
+matching prices and payment links, and writes a per-artwork payment-link map to
+`payment-links.js`.
 
 ```env
 STRIPE_SECRET_KEY=sk_test_...
@@ -66,6 +67,14 @@ STRIPE_SITE_URL=https://mysquareart.com
 
 For API testing against a smaller batch, set `STRIPE_ARTWORK_LIMIT=10`.
 
+If Stripe needs the framed preview image URLs to be publicly available before
+catalog creation, generate only the preview assets first, deploy them, then run
+the full Stripe setup:
+
+```bash
+STRIPE_PREVIEWS_ONLY=true python3 scripts/setup_stripe_shop.py
+```
+
 Run the local dev server for link testing:
 
 ```bash
@@ -73,15 +82,17 @@ python3 scripts/dev_server.py
 ```
 
 The gallery prefers `payment-links.js` entries in the form
-`artworks[art_id].print` and `artworks[art_id].framed`, then falls back to the
-legacy top-level reusable links. It appends a Stripe `client_reference_id` to
-every payment link in the format
+`artworks[art_id].print` and `artworks[art_id].framed[frame_color]`, then falls
+back to older `artworks[art_id].framed` string links and finally the legacy
+top-level reusable links. It appends a Stripe `client_reference_id` to every
+payment link in the format
 `art_<art_id>_variant_<print|framed>_frame_<color|none>`, for example
 `art_9005ff...634a_variant_framed_frame_black`.
 
-Framed Stripe links include a required `frame_color` dropdown with black, white,
-natural, brown, and gold options. The static site controls the price by choosing
-the art-only or framed payment link before sending the customer to Stripe.
+Framed Stripe links are split by frame color, so the customer chooses the frame
+once on the gallery page. The setup script writes matching framed preview SVGs
+to `stripe-previews/` and sends those URLs to Stripe as the framed product
+images.
 
 ## Local Art Job GUI
 

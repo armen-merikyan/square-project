@@ -8,6 +8,7 @@ import os
 import ssl
 import urllib.parse
 import urllib.request
+from html import escape
 from pathlib import Path
 from urllib.error import HTTPError
 
@@ -21,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / ".env"
 PAYMENT_LINKS_PATH = ROOT / "payment-links.js"
 ART_DIR = ROOT / "art"
+STRIPE_PREVIEW_DIR = ROOT / "stripe-previews"
 MANIFEST_PATH = ART_DIR / "manifest.json"
 STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
 DEFAULT_SITE_URL = "https://mysquareart.com"
@@ -50,10 +52,10 @@ VARIANTS = {
         "nickname": "Square Project 12x12 Framed Print",
         "label": "12x12 framed print",
         "amount": 3900,
-        "lookup_key_template": "square_project_art_{art_id}_framed",
+        "lookup_key_template": "square_project_art_{art_id}_framed_{frame_color}",
         "env_key": "STRIPE_FRAMED_PRICE_ID",
         "payment_link_env_key": "STRIPE_FRAMED_PAYMENT_LINK",
-        "payment_link_lookup_key_template": "square_project_art_{art_id}_framed_payment_link",
+        "payment_link_lookup_key_template": "square_project_art_{art_id}_framed_{frame_color}_payment_link",
         "metadata": {
             "variant": "framed",
             "image_area": "8x8",
@@ -123,6 +125,10 @@ def update_env(updates: dict[str, str]) -> None:
 
 def site_url() -> str:
     return clean_env_value(os.environ.get("STRIPE_SITE_URL", DEFAULT_SITE_URL)).rstrip("/")
+
+
+def enabled_env_flag(key: str) -> bool:
+    return clean_env_value(os.environ.get(key, "")).lower() in {"1", "true", "yes", "on"}
 
 
 def update_payment_links_js(payment_config: dict) -> None:
@@ -286,6 +292,7 @@ def artwork_record(art_id: str) -> dict:
         "title": str(record.get("title") or f"Square Project {art_id[:8]}"),
         "seed": str(record.get("seed") or ""),
         "reasoning": str(record.get("reasoning") or ""),
+        "pixels": pixels,
         "colors": colors,
         "image_url": f"{site_url()}/art/{art_id}.svg",
         "json_url": f"{site_url()}/art/{art_id}.json",
@@ -300,7 +307,58 @@ def metadata_fields(prefix: str, metadata: dict[str, str]) -> dict[str, str]:
     return {f"{prefix}[{key}]": stripe_metadata_value(value) for key, value in metadata.items()}
 
 
-def art_metadata(art: dict, variant: str | None = None) -> dict[str, str]:
+def framed_preview_path(art_id: str, frame_color: str) -> Path:
+    return STRIPE_PREVIEW_DIR / f"{art_id}_{frame_color}.svg"
+
+
+def framed_preview_url(art_id: str, frame_color: str) -> str:
+    return f"{site_url()}/stripe-previews/{art_id}_{frame_color}.svg"
+
+
+def write_framed_preview_svg(art: dict, frame_color: str) -> None:
+    STRIPE_PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
+
+    stage_size = 1500
+    art_offset = 250
+    art_size = 1000
+    cell_size = art_size / 8
+    frame_url = f"{site_url()}/frames/{frame_color}.jpg"
+    rects = [
+        f'<rect x="{art_offset + int(pixel.get("x", 0)) * cell_size:g}" '
+        f'y="{art_offset + int(pixel.get("y", 0)) * cell_size:g}" '
+        f'width="{cell_size:g}" height="{cell_size:g}" '
+        f'fill="{escape(str(pixel.get("color", "#FFFFFF")))}" />'
+        for pixel in art["pixels"]
+        if isinstance(pixel, dict)
+    ]
+    title = escape(f'{art["title"]} in {FRAME_COLORS[frame_color]} frame')
+    desc = escape(f'Square Project artwork previewed in a {FRAME_COLORS[frame_color].lower()} frame.')
+
+    framed_preview_path(art["id"], frame_color).write_text(
+        "\n".join([
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{stage_size}" height="{stage_size}" viewBox="0 0 {stage_size} {stage_size}" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">',
+            f'  <title id="title">{title}</title>',
+            f'  <desc id="desc">{desc}</desc>',
+            f'  <image href="{escape(frame_url)}" x="0" y="0" width="{stage_size}" height="{stage_size}" preserveAspectRatio="xMidYMid meet" />',
+            f'  <rect x="{art_offset}" y="{art_offset}" width="{art_size}" height="{art_size}" fill="#FFFFFF" />',
+            *[f"  {rect}" for rect in rects],
+            f'  <rect x="{art_offset}" y="{art_offset}" width="{art_size}" height="{art_size}" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="3" />',
+            "</svg>",
+            "",
+        ]),
+        encoding="utf-8",
+    )
+
+
+def image_url_for_variant(art: dict, variant: str | None = None, frame_color: str | None = None) -> str:
+    if variant == "framed" and frame_color:
+        return framed_preview_url(art["id"], frame_color)
+
+    return art["image_url"]
+
+
+def art_metadata(art: dict, variant: str | None = None, frame_color: str | None = None) -> dict[str, str]:
+    image_url = image_url_for_variant(art, variant, frame_color)
     metadata = {
         "metadata[app]": stripe_metadata_value("square_project"),
         "metadata[kind]": stripe_metadata_value("artwork"),
@@ -309,31 +367,46 @@ def art_metadata(art: dict, variant: str | None = None) -> dict[str, str]:
         "metadata[art_title]": stripe_metadata_value(art["title"]),
         "metadata[art_seed]": stripe_metadata_value(art["seed"]),
         "metadata[art_colors]": stripe_metadata_value(",".join(art["colors"])),
-        "metadata[art_image_url]": stripe_metadata_value(art["image_url"]),
+        "metadata[art_image_url]": stripe_metadata_value(image_url),
         "metadata[art_json_url]": stripe_metadata_value(art["json_url"]),
     }
 
     if variant:
         metadata["metadata[variant]"] = stripe_metadata_value(variant)
 
+    if frame_color:
+        metadata["metadata[frame_color]"] = stripe_metadata_value(frame_color)
+        metadata["metadata[frame_color_label]"] = stripe_metadata_value(FRAME_COLORS.get(frame_color, frame_color))
+
     return metadata
 
 
-def product_fields(art: dict) -> dict[str, str]:
+def product_fields(art: dict, variant: str | None = None, frame_color: str | None = None) -> dict[str, str]:
     description = art["reasoning"][:480] or f"Square Project artwork {art['id']}."
+    name = art["title"][:250]
+
+    if variant == "framed" and frame_color:
+        name = f'{art["title"]} - {FRAME_COLORS[frame_color]} frame'[:250]
+
     return {
-        "name": art["title"][:250],
+        "name": name,
         "description": description,
-        "images[0]": art["image_url"],
-        **art_metadata(art),
+        "images[0]": image_url_for_variant(art, variant, frame_color),
+        **art_metadata(art, variant, frame_color),
     }
 
 
-def update_product_metadata(product_id: str, art: dict) -> None:
-    stripe_post(f"products/{product_id}", product_fields(art))
+def update_product_metadata(product_id: str, art: dict, variant: str | None = None, frame_color: str | None = None) -> None:
+    stripe_post(f"products/{product_id}", product_fields(art, variant, frame_color))
 
 
-def payment_link_metadata_fields(art: dict, variant: str, config: dict, lookup_key: str) -> dict[str, str]:
+def payment_link_metadata_fields(
+    art: dict,
+    variant: str,
+    config: dict,
+    lookup_key: str,
+    frame_color: str | None = None,
+) -> dict[str, str]:
     fields = {
         "metadata[app]": stripe_metadata_value("square_project"),
         "metadata[kind]": stripe_metadata_value("artwork_order"),
@@ -342,8 +415,12 @@ def payment_link_metadata_fields(art: dict, variant: str, config: dict, lookup_k
         "metadata[variant]": stripe_metadata_value(variant),
         "metadata[lookup_key]": stripe_metadata_value(lookup_key),
         "metadata[order_reference_format]": stripe_metadata_value("art_<art_id>_variant_<variant>_frame_<frame_color>"),
-        "metadata[custom_field_mode]": stripe_metadata_value("frame_color" if variant == "framed" else "art_only"),
+        "metadata[custom_field_mode]": stripe_metadata_value("none"),
     }
+
+    if frame_color:
+        fields["metadata[frame_color]"] = stripe_metadata_value(frame_color)
+        fields["metadata[frame_color_label]"] = stripe_metadata_value(FRAME_COLORS.get(frame_color, frame_color))
 
     for key, value in config["metadata"].items():
         fields[f"metadata[{key}]"] = stripe_metadata_value(value)
@@ -351,23 +428,18 @@ def payment_link_metadata_fields(art: dict, variant: str, config: dict, lookup_k
     return fields
 
 
-def frame_color_custom_field() -> dict[str, str]:
-    fields = {
-        "custom_fields[0][key]": "frame_color",
-        "custom_fields[0][label][type]": "custom",
-        "custom_fields[0][label][custom]": "Frame color",
-        "custom_fields[0][type]": "dropdown",
-    }
-
-    for index, (value, label) in enumerate(FRAME_COLORS.items()):
-        fields[f"custom_fields[0][dropdown][options][{index}][label]"] = label
-        fields[f"custom_fields[0][dropdown][options][{index}][value]"] = value
-
-    return fields
-
-
-def update_payment_link_metadata(payment_link_id: str, art: dict, variant: str, config: dict, lookup_key: str) -> None:
-    stripe_post(f"payment_links/{payment_link_id}", payment_link_metadata_fields(art, variant, config, lookup_key))
+def update_payment_link_metadata(
+    payment_link_id: str,
+    art: dict,
+    variant: str,
+    config: dict,
+    lookup_key: str,
+    frame_color: str | None = None,
+) -> None:
+    stripe_post(
+        f"payment_links/{payment_link_id}",
+        payment_link_metadata_fields(art, variant, config, lookup_key, frame_color),
+    )
 
 
 def legacy_payment_links_from_env() -> dict[str, str]:
@@ -409,17 +481,48 @@ def payment_links_payload(artwork_links: dict[str, dict[str, str]], legacy_links
     return payload
 
 
-def lookup_key(config: dict, art_id: str) -> str:
-    return config["lookup_key_template"].format(art_id=art_id)
+def lookup_key(config: dict, art_id: str, frame_color: str | None = None) -> str:
+    return config["lookup_key_template"].format(
+        art_id=art_id,
+        frame_color=frame_color or "none",
+    )
 
 
-def payment_link_lookup_key(config: dict, art_id: str) -> str:
-    return config["payment_link_lookup_key_template"].format(art_id=art_id)
+def payment_link_lookup_key(config: dict, art_id: str, frame_color: str | None = None) -> str:
+    return config["payment_link_lookup_key_template"].format(
+        art_id=art_id,
+        frame_color=frame_color or "none",
+    )
+
+
+def limited_artwork_ids() -> list[str]:
+    ids = artwork_ids()
+    limit = int(os.environ.get("STRIPE_ARTWORK_LIMIT", "0") or "0")
+
+    if limit > 0:
+        ids = ids[:limit]
+
+    return ids
+
+
+def write_framed_previews(ids: list[str]) -> None:
+    for art_id in ids:
+        art = artwork_record(art_id)
+
+        for frame_color in FRAME_COLORS:
+            write_framed_preview_svg(art, frame_color)
 
 
 def main() -> None:
     load_env()
     env_payment_links = legacy_payment_links_from_env()
+
+    ids = limited_artwork_ids()
+
+    if enabled_env_flag("STRIPE_PREVIEWS_ONLY"):
+        write_framed_previews(ids)
+        print(f"Wrote framed Stripe previews for {len(ids)} artworks to {STRIPE_PREVIEW_DIR}.")
+        return
 
     secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
 
@@ -448,71 +551,69 @@ def main() -> None:
             "Set STRIPE_SECRET_KEY to create one Stripe product and payment links per artwork."
         )
 
-    ids = artwork_ids()
-    limit = int(os.environ.get("STRIPE_ARTWORK_LIMIT", "0") or "0")
-
-    if limit > 0:
-        ids = ids[:limit]
-
     print(f"Preparing Stripe products for {len(ids)} artworks.")
     links_by_lookup_key = payment_links_by_lookup_key()
     artwork_links: dict[str, dict[str, str]] = {}
 
     for index, art_id in enumerate(ids, start=1):
         art = artwork_record(art_id)
-        existing_prices = {
-            variant: find_price_by_lookup_key(lookup_key(config, art_id))
-            for variant, config in VARIANTS.items()
-        }
-        product_id = next((price["product"] for price in existing_prices.values() if price), "")
-
-        if product_id:
-            update_product_metadata(product_id, art)
-        else:
-            product = stripe_post("products", product_fields(art))
-            product_id = product["id"]
 
         artwork_links[art_id] = {}
+        last_product_id = ""
 
         for variant, config in VARIANTS.items():
-            price_lookup_key = lookup_key(config, art_id)
-            price = existing_prices[variant]
+            frame_colors = FRAME_COLORS.keys() if variant == "framed" else [None]
 
-            if not price:
-                price = stripe_post("prices", {
-                    "currency": "usd",
-                    "unit_amount": str(config["amount"]),
-                    "product": product_id,
-                    "nickname": config["nickname"],
-                    "lookup_key": price_lookup_key,
-                    **art_metadata(art, variant),
-                    **metadata_fields("metadata", config["metadata"]),
-                })
+            for frame_color in frame_colors:
+                if frame_color:
+                    write_framed_preview_svg(art, frame_color)
 
-            link_lookup_key = payment_link_lookup_key(config, art_id)
-            payment_link = links_by_lookup_key.get(link_lookup_key)
-            payment_link_price = payment_link_price_id(payment_link["id"]) if payment_link else ""
+                price_lookup_key = lookup_key(config, art_id, frame_color)
+                price = find_price_by_lookup_key(price_lookup_key)
+                product_id = price["product"] if price else ""
 
-            if payment_link and payment_link_price == price["id"]:
-                update_payment_link_metadata(payment_link["id"], art, variant, config, link_lookup_key)
-            else:
-                fields = {
-                    "line_items[0][price]": price["id"],
-                    "line_items[0][quantity]": "1",
-                    "shipping_address_collection[allowed_countries][0]": "US",
-                    "billing_address_collection": "auto",
-                    **payment_link_metadata_fields(art, variant, config, link_lookup_key),
-                }
+                if product_id:
+                    update_product_metadata(product_id, art, variant, frame_color)
+                else:
+                    product = stripe_post("products", product_fields(art, variant, frame_color))
+                    product_id = product["id"]
+                    last_product_id = product_id
 
-                if variant == "framed":
-                    fields.update(frame_color_custom_field())
+                if not price:
+                    price = stripe_post("prices", {
+                        "currency": "usd",
+                        "unit_amount": str(config["amount"]),
+                        "product": product_id,
+                        "nickname": config["nickname"],
+                        "lookup_key": price_lookup_key,
+                        **art_metadata(art, variant, frame_color),
+                        **metadata_fields("metadata", config["metadata"]),
+                    })
 
-                payment_link = stripe_post("payment_links", fields)
-                links_by_lookup_key[link_lookup_key] = payment_link
+                link_lookup_key = payment_link_lookup_key(config, art_id, frame_color)
+                payment_link = links_by_lookup_key.get(link_lookup_key)
+                payment_link_price = payment_link_price_id(payment_link["id"]) if payment_link else ""
 
-            artwork_links[art_id][variant] = payment_link["url"]
+                if payment_link and payment_link_price == price["id"]:
+                    update_payment_link_metadata(payment_link["id"], art, variant, config, link_lookup_key, frame_color)
+                else:
+                    fields = {
+                        "line_items[0][price]": price["id"],
+                        "line_items[0][quantity]": "1",
+                        "shipping_address_collection[allowed_countries][0]": "US",
+                        "billing_address_collection": "auto",
+                        **payment_link_metadata_fields(art, variant, config, link_lookup_key, frame_color),
+                    }
 
-        print(f"[{index}/{len(ids)}] {art_id} -> {product_id}")
+                    payment_link = stripe_post("payment_links", fields)
+                    links_by_lookup_key[link_lookup_key] = payment_link
+
+                if frame_color:
+                    artwork_links[art_id].setdefault(variant, {})[frame_color] = payment_link["url"]
+                else:
+                    artwork_links[art_id][variant] = payment_link["url"]
+
+        print(f"[{index}/{len(ids)}] {art_id} -> {last_product_id or 'updated'}")
 
     update_payment_links_js(payment_links_payload(artwork_links, real_legacy_payment_links(env_payment_links)))
     print(f"\nUpdated {PAYMENT_LINKS_PATH} with {len(artwork_links)} artwork link sets.")
