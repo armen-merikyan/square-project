@@ -170,8 +170,31 @@ def build_generate_command(payload: dict[str, Any]) -> list[str]:
     if bool(payload.get("noSeedLibrary")):
         command.append("--no-seed-library")
 
+    if bool(payload.get("skipDownstream")):
+        command.append("--skip-downstream")
+
     command.append(seed)
     return command
+
+
+def build_stripe_sync_command(payload: dict[str, Any]) -> list[str]:
+    artwork_ids = payload.get("artworkIds", [])
+    env_prefix: list[str] = []
+
+    if artwork_ids:
+        if not isinstance(artwork_ids, list):
+            raise ValueError("artworkIds must be a list.")
+
+        normalized_ids = []
+        for artwork_id in artwork_ids:
+            normalized = str(artwork_id).strip()
+            if not normalized or any(char not in "0123456789abcdef" for char in normalized.lower()):
+                raise ValueError("artworkIds must contain artwork hash IDs.")
+            normalized_ids.append(normalized)
+
+        env_prefix.append(f"STRIPE_ARTWORK_IDS={','.join(normalized_ids)}")
+
+    return ["/usr/bin/env", *env_prefix, sys.executable, "scripts/setup_stripe_shop.py"]
 
 
 def build_git_publish_command() -> list[str]:
@@ -332,6 +355,11 @@ class ArtJobHandler(BaseHTTPRequestHandler):
             if parsed.path == "/api/jobs/manifest":
                 command = [sys.executable, "scripts/build_gallery_manifest.py"]
                 job = start_job("build-manifest", command)
+                self.send_json({"job": job.public()}, HTTPStatus.CREATED)
+                return
+            if parsed.path == "/api/jobs/stripe":
+                command = build_stripe_sync_command(payload)
+                job = start_job("sync-stripe", command)
                 self.send_json({"job": job.public()}, HTTPStatus.CREATED)
                 return
             if parsed.path == "/api/jobs/git-push":
@@ -650,6 +678,7 @@ INDEX_HTML = f"""<!doctype html>
           <div class="actions">
             <button type="submit">Run Art Job</button>
             <button class="secondary" id="manifest-button" type="button">Rebuild Manifest</button>
+            <button class="secondary" id="stripe-button" type="button">Sync Stripe</button>
             <button class="secondary" id="git-push-button" type="button">Push to GitHub</button>
             <button class="secondary" id="run-all-button" type="button">Run All</button>
           </div>
@@ -669,6 +698,7 @@ INDEX_HTML = f"""<!doctype html>
     const errorEl = document.querySelector("#error");
     const form = document.querySelector("#generate-form");
     const manifestButton = document.querySelector("#manifest-button");
+    const stripeButton = document.querySelector("#stripe-button");
     const gitPushButton = document.querySelector("#git-push-button");
     const runAllButton = document.querySelector("#run-all-button");
     const randomSeedButton = document.querySelector("#random-seed-button");
@@ -767,8 +797,22 @@ INDEX_HTML = f"""<!doctype html>
       }}
     }}
 
-    async function startGenerateJob() {{
+    function createdArtworkIds(job) {{
+      const ids = new Set();
+      const pattern = /Created art\\/([0-9a-f]{{64}})\\.json\\b/gi;
+
+      for (const line of job.output || []) {{
+        for (const match of line.matchAll(pattern)) {{
+          ids.add(match[1]);
+        }}
+      }}
+
+      return Array.from(ids);
+    }}
+
+    async function startGenerateJob(overrides = {{}}) {{
       const payload = buildGeneratePayload();
+      Object.assign(payload, overrides);
       const data = await api("/api/jobs/generate", {{
         method: "POST",
         body: JSON.stringify(payload),
@@ -777,8 +821,8 @@ INDEX_HTML = f"""<!doctype html>
       return data.job;
     }}
 
-    async function startEmptyJob(path) {{
-      const data = await api(path, {{ method: "POST", body: "{{}}" }});
+    async function startEmptyJob(path, payload = {{}}) {{
+      const data = await api(path, {{ method: "POST", body: JSON.stringify(payload) }});
       await refreshJobs();
       return data.job;
     }}
@@ -820,6 +864,16 @@ INDEX_HTML = f"""<!doctype html>
       }}
     }});
 
+    stripeButton.addEventListener("click", async () => {{
+      errorEl.textContent = "";
+      try {{
+        await startEmptyJob("/api/jobs/stripe");
+        await refreshJobs();
+      }} catch (error) {{
+        errorEl.textContent = error.message;
+      }}
+    }});
+
     gitPushButton.addEventListener("click", async () => {{
       errorEl.textContent = "";
       try {{
@@ -835,12 +889,21 @@ INDEX_HTML = f"""<!doctype html>
       setControlsDisabled(true);
 
       try {{
-        const generateJob = await startGenerateJob();
-        await waitForJob(generateJob.id);
+        const generateJob = await startGenerateJob({{ skipDownstream: true }});
+        const completedGenerateJob = await waitForJob(generateJob.id);
+        const artworkIds = createdArtworkIds(completedGenerateJob);
 
-        errorEl.textContent = "Rebuilding manifest...";
+        if (!artworkIds.length) {{
+          throw new Error("Art job completed without creating new artwork IDs.");
+        }}
+
+        errorEl.textContent = "Rebuilding gallery and category bundles...";
         const manifestJob = await startEmptyJob("/api/jobs/manifest");
         await waitForJob(manifestJob.id);
+
+        errorEl.textContent = "Syncing Stripe products, previews, and payment links...";
+        const stripeJob = await startEmptyJob("/api/jobs/stripe", {{ artworkIds }});
+        await waitForJob(stripeJob.id);
 
         errorEl.textContent = "Pushing to GitHub...";
         const gitPushJob = await startEmptyJob("/api/jobs/git-push");
