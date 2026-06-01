@@ -1,0 +1,399 @@
+{
+  "id": "0550febd0455c3eb973c5d6e6c48c96d97009dde635ae04454195ac605a2989d",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 18; target batch count 200",
+  "title": "Control and Panic Interwoven",
+  "reasoning": "The emotional tone captures the tension between panic and control, where warm reds clash against cool blues to reflect chaos versus stability. The palette, 'rage_calm', incorporates aggressive red and calm pale blue, embodying the emotional extremes. The left section, utilizing radial patterns, evokes a sense of control, while the right, made up of stripes, represents panic. The hard edges create a split that intensifies the color collision, particularly at the center, where both emotional patterns visually clash, forming a narrative of struggle between order and disorder.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#00AAFF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#0077FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#0044FF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF2B00"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF7F00"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFCC33"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#00A9E0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#0088CC"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#0055AA"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#003388"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF7F33"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFFF66"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFFF99"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#00BBFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#0077FF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0044CC"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#0022AA"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF8000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CCFF33"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A3FF66"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#0055AA"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#002266"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#000044"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFC200"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#CCFF00"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#AAFF33"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#00BBFF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#0044AA"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#001111"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FF5900"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFA300"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D3D300"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00AAFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#002244"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000C00"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF3D00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF6600"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFF66"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D4D400"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#0099CC"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#002333"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000022"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FF4500"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FFA500"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFDA00"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#0047AB"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#002233"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00000B"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "panic": "stripes",
+      "control": "radial"
+    },
+    "edgeStyle": "right_weighted",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "bridge",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0550febd0455c3eb973c5d6e6c48c96d97009dde635ae04454195ac605a2989d",
+  "pixelHash": "0550febd0455c3eb973c5d6e6c48c96d97009dde635ae04454195ac605a2989d",
+  "jsonFile": "0550febd0455c3eb973c5d6e6c48c96d97009dde635ae04454195ac605a2989d.json",
+  "svgFile": "0550febd0455c3eb973c5d6e6c48c96d97009dde635ae04454195ac605a2989d.svg",
+  "createdAt": "2026-06-01T23:03:24.686420+00:00"
+}

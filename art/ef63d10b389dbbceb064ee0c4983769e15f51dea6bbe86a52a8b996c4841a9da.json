@@ -1,0 +1,399 @@
+{
+  "id": "ef63d10b389dbbceb064ee0c4983769e15f51dea6bbe86a52a8b996c4841a9da",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 109; target batch count 200",
+  "title": "Chaos and Order",
+  "reasoning": "The emotional tone explores the tension between panic and control, represented by contrasting color placements. The chosen palette of burnt orange, dark red, charcoal, and gold conveys a fiery intensity and depth, suggesting urgency and grounding simultaneously. The hard edges create a stark separation between the chaotic crosshatch pattern (representing panic) and the structured spark pattern (representing control), leading to an internal conflict portrayed through abrupt color changes and placements. Negative space was carefully maintained to allow breathing room within the chaos, embodying the tension of being pulled in multiple directions while still searching for order.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#7C4D00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFA000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F57C00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF5722"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#BF360C"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#A62A00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#902C00"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#7B1F00"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#673AB7"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#9575CD"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#BB86FC"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#EEE0E0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#9E9E9E"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#757575"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#4A148C"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6A1B9A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#8E24AA"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#AB47BC"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E91E63"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FF4081"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#F50057"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C51162"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFC107"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF9800"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF5722"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D84315"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C4A540"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#9E9E9E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#757575"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#1B5E20"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4CAF50"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#8BC34A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C8E6C9"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#DCEDC8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F1F8E9"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FAFAFA"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#263238"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#37474F"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#455A64"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#546E7A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#607D8B"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#78909C"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#90A4AE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF3D00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D50000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C62828"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D32F2F"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E57373"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#EF5350"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F44336"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#C62828"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFEE58"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FF9800"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFC107"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FF8F00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#EF6C00"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D84315"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#BF360C"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "panic": "crosshatch",
+      "control": "spark"
+    },
+    "edgeStyle": "hard_edges",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "heart_fragment",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ef63d10b389dbbceb064ee0c4983769e15f51dea6bbe86a52a8b996c4841a9da",
+  "pixelHash": "ef63d10b389dbbceb064ee0c4983769e15f51dea6bbe86a52a8b996c4841a9da",
+  "jsonFile": "ef63d10b389dbbceb064ee0c4983769e15f51dea6bbe86a52a8b996c4841a9da.json",
+  "svgFile": "ef63d10b389dbbceb064ee0c4983769e15f51dea6bbe86a52a8b996c4841a9da.svg",
+  "createdAt": "2026-06-01T23:04:25.728025+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "d96be2bdf6ea92c5dcac30596d8b93772e4faacac79183e2cbdbb13ded587b5f",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 103; target batch count 200",
+  "title": "Strife and Stability",
+  "reasoning": "The emotional tone juxtaposes a feeling of panic, represented through a checker pattern on the left, against a sense of control via mirror patterns on the right. The color palette, 'ancient_fire', incorporates burnt orange and dark red to express intensity and chaos, contrasted with charcoal and gold, which symbolize grounding and order. The primary collision revolves around the tension where chaotic stripes meet the structured mirrors, suggesting an unresolved inner conflict. The layout emphasizes the dichotomy between emotions through a vertical split, with a gradual transition from dense, chaotic textures to calmer, more orderly spaces, echoing the struggle between internal and external forces.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C65D34"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F76148"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#B02318"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#5E1915"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#B43422"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D1725E"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#6F3930"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#452C24"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E68249"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D49338"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B58423"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D0A24E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A75A7A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D9CAB8"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A28A5D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#A58B53"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#6A4E4E"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A53F3B"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#C8481A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7E2723"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#532B2F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E3C14A"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C7B2A6"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4A3D39"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#C45B16"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#BB3F09"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C17015"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F5C437"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#E1B775"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A78660"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#5E3B3A"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#4B4B4B"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4D3F3A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#9E091C"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#691616"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2E2818"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C13E12"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F1B140"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B29556"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E5C5A4"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D9A613"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#8F2A0B"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFB747"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#BB0E12"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#5E3641"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D45632"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#353535"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF7F24"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D94D22"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#AC2A16"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFEDAA"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A15304"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#594949"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3E2A2A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B5A18D"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#D9C34A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E2911E"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F6BF43"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#3B2F2F"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#7D1A13"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B7583A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#BB2A00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "panic": "checker",
+      "control": "mirror"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "tiny_plus",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d96be2bdf6ea92c5dcac30596d8b93772e4faacac79183e2cbdbb13ded587b5f",
+  "pixelHash": "d96be2bdf6ea92c5dcac30596d8b93772e4faacac79183e2cbdbb13ded587b5f",
+  "jsonFile": "d96be2bdf6ea92c5dcac30596d8b93772e4faacac79183e2cbdbb13ded587b5f.json",
+  "svgFile": "d96be2bdf6ea92c5dcac30596d8b93772e4faacac79183e2cbdbb13ded587b5f.svg",
+  "createdAt": "2026-06-01T23:04:24.187081+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "19cf9a188243c10842655a21b2dae40d5e6e4557a792fd2f300c6b913c70e848",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 15; target batch count 200",
+  "title": "Emotional Pulse",
+  "reasoning": "The artwork embodies a tension between panic and control through a play of dark and light tones. The gloomy palette of navy and black contrasts with sharp whites and dim cyans, creating a visual representation of emotional collision. The grid and crack patterns suggest structured chaos, with the center emphasized to highlight the dichotomy of feeling. The main contrast occurs in the center where dim cyan clashes against the deeper shadows, pulsating outward and drawing attention, while lighter hues echo the sense of release along the edges.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#003D5B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#005F87"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#007BB8"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#005F87"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#003D5B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#003D5B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#008CBA"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#007BB8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#00A9E0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#007BB8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#008CBA"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#003D5B"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#005F87"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#00B3E7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#00D8FF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#57C2E5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#00D8FF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#00B3E7"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#005F87"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#003D5B"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#007BB8"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#00E4FF"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#57C2E5"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#00E4FF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#007BB8"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#005F87"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#005F87"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#00B3E7"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#00D8FF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#57C2E5"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#00D8FF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#00B3E7"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#005F87"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#003D5B"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#003D5B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#008CBA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#007BB8"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#00A9E0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#007BB8"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#008CBA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#003D5B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#003D5B"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#005F87"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#007BB8"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#005F87"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#003D5B"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "panic": "crack",
+      "control": "grid"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "single_vs_many",
+    "shapeSeed": "mouth",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "19cf9a188243c10842655a21b2dae40d5e6e4557a792fd2f300c6b913c70e848",
+  "pixelHash": "19cf9a188243c10842655a21b2dae40d5e6e4557a792fd2f300c6b913c70e848",
+  "jsonFile": "19cf9a188243c10842655a21b2dae40d5e6e4557a792fd2f300c6b913c70e848.json",
+  "svgFile": "19cf9a188243c10842655a21b2dae40d5e6e4557a792fd2f300c6b913c70e848.svg",
+  "createdAt": "2026-06-01T23:03:24.070203+00:00"
+}

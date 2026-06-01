@@ -1,0 +1,399 @@
+{
+  "id": "a2f0ec1a21a468e7b4594017101b1662e9fe812f10b55f155035fcc25404155a",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 113; target batch count 200",
+  "title": "Chaos and Order",
+  "reasoning": "This artwork embodies the conflict between panic and control through a tensioned color palette of deep blacks and bright accents that evoke emotions of fear and hope. The arrangement opts for contrast, with darker colors in the center representing control, while brighter hues suggest radiating panic toward the edges. The radial pattern emanates outward, demonstrating a breaching sense of urgency against a solid center, encapsulating a pulse-like rhythm reflective of fluctuating emotions. This abstract form allows the viewer to sense the struggle without depicting specific objects or symbols.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#2D2D2D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#555555"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#777777"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#8A4D2B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#C6A200"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D9E6B1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#707070"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A04D2A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#EAE59B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B6FBB1"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#A9D5C3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#343434"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#585858"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#828282"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#D1B693"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E4D654"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D6E660"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F5F9F2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#777777"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#9A9A9A"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#EDE5B4"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E5C489"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A7E5AD"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#A0C6B8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#666666"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#999999"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B5B5B5"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B7B7B7"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F0F3E8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D8EBD0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#BEC8AD"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A1D3B9"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#777777"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#A8A8A8"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#C3C3C3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D7C6A1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E9E9C2"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C1E3B8"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B9DFE6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A4BCC8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D5E1C6"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#EAEAE3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E1B2B0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D0E0CD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#B0EFC4"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A2D9D2"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#999999"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E9E4D6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D5D8DA"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#BFF0C5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#B2E6D1"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#A8C3C5"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "pulse",
+    "patterns": {
+      "panic": "radial",
+      "control": "maze"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "square_frame",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a2f0ec1a21a468e7b4594017101b1662e9fe812f10b55f155035fcc25404155a",
+  "pixelHash": "a2f0ec1a21a468e7b4594017101b1662e9fe812f10b55f155035fcc25404155a",
+  "jsonFile": "a2f0ec1a21a468e7b4594017101b1662e9fe812f10b55f155035fcc25404155a.json",
+  "svgFile": "a2f0ec1a21a468e7b4594017101b1662e9fe812f10b55f155035fcc25404155a.svg",
+  "createdAt": "2026-06-01T23:04:27.469214+00:00"
+}

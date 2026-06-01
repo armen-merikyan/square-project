@@ -1,0 +1,399 @@
+{
+  "id": "0bbec0da07ce69222fc836466c1d89234f1e0046b49703b1d1e7f10f7b24b374",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 133; target batch count 200",
+  "title": "Controlled Chaos",
+  "reasoning": "This artwork embodies the struggle between panic and control. The color palette of deep navy and black contrasts with the bright dim cyan, suggesting an underlying tension. The layout showcases a jagged edge style that disrupts smoothness, symbolizing conflict. Control is expressed through radiating rings of dark colors converging toward the center, while lighter hues play around the edges, depicting chaos encroaching into the controlled space. The broken pixels create a sense of imperfection, reinforcing the idea of 'machine emotion' amid structured chaos.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#0E1F4B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1D2A4D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#2C354F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#3B4051"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A4B53"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#596A73"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A2C2C5"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B9D3D6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1E2632"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2D3141"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3C3D50"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#4B4B60"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#5A586F"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#6A6F8F"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#8FA5A5"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D0E3E3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#101820"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#283A5A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#3F4E78"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#51677D"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#648F90"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#8DB8B6"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B7D4D7"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E4F8F8"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#0A2831"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#0D3543"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#3A4E5D"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#647A8D"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7DA6B1"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#9BCECE"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B7E0E2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D3F6F7"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#191F28"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#192F38"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#223C4B"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#3B4E5D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#6C7F8D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#A0BFC1"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C8DFDF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E8F9F9"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#151617"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#2C2E36"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#43474D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#BACED3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#D0E4E0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B8C1C3"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A4B0B0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#9AB8B8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#070B0D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2C3234"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#4A5459"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#8D9DA3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B1C4C1"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C7D4D5"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#DCEBEB"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F1FDFE"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "panic": "ring",
+      "control": "ring"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "diamond",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0bbec0da07ce69222fc836466c1d89234f1e0046b49703b1d1e7f10f7b24b374",
+  "pixelHash": "0bbec0da07ce69222fc836466c1d89234f1e0046b49703b1d1e7f10f7b24b374",
+  "jsonFile": "0bbec0da07ce69222fc836466c1d89234f1e0046b49703b1d1e7f10f7b24b374.json",
+  "svgFile": "0bbec0da07ce69222fc836466c1d89234f1e0046b49703b1d1e7f10f7b24b374.svg",
+  "createdAt": "2026-06-01T23:04:41.275591+00:00"
+}

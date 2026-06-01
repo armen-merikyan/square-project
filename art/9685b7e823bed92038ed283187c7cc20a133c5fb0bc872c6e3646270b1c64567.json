@@ -1,0 +1,399 @@
+{
+  "id": "9685b7e823bed92038ed283187c7cc20a133c5fb0bc872c6e3646270b1c64567",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 179; target batch count 200",
+  "title": "Contradictory Waves",
+  "reasoning": "This composition captures the emotional tension between chaos and order through contrasting colors and patterns. The palette incorporates electric blue, magenta, and black to symbolize technology and emotion, creating a stark contrast between control (black) and panic (electric blue and magenta). The layout features pixels that descend from the top, signifying a release from control, while the grid pattern for panic suggests rigidity. The arrangement includes broken patterns to evoke imperfection and a sense of struggle. Key contrasts arise where sharp edges meet softer colors, emphasizing the conflict between these emotions.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0B0C0D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1E2122"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2B2D2F"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3C3F42"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#4D5053"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#5B5F62"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#6A6E72"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#707274"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#6882BF"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B55D8D"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#EE2B42"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#5A5D63"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3D4145"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B4B8BC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#A1A5A8"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#C4C6C9"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#DDDDDF"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A7A8A9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#585A5C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#1A1B1C"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#44484B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#282D30"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#B3B5B7"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFA600"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFE600"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FF9900"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#D7D9DB"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#9A9C9D"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B0B3B5"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E6E7E9"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#2D3337"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#1B1D1F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F6F8FA"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#7F7F80"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C0C3C5"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A4A7A8"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#8E9092"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#4B4C4E"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7A7C7D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#BA4D73"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FF4E00"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFDD00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E7E9EA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#3F4244"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#5A5C5E"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#9E9FA0"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#BFBFC0"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#555B5E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#5E6163"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3C3F42"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#2A2D30"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#1D1F21"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#4A4D50"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#8B8D8F"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#A1A3A5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FE4D6E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FD9876"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FF9C00"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFDA00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D0D3D5"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "panic": "grid",
+      "control": "frame"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "pair_of_pixels",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9685b7e823bed92038ed283187c7cc20a133c5fb0bc872c6e3646270b1c64567",
+  "pixelHash": "9685b7e823bed92038ed283187c7cc20a133c5fb0bc872c6e3646270b1c64567",
+  "jsonFile": "9685b7e823bed92038ed283187c7cc20a133c5fb0bc872c6e3646270b1c64567.json",
+  "svgFile": "9685b7e823bed92038ed283187c7cc20a133c5fb0bc872c6e3646270b1c64567.svg",
+  "createdAt": "2026-06-01T23:05:03.524874+00:00"
+}

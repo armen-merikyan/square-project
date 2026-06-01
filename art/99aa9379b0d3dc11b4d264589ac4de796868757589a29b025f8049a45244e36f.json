@@ -1,0 +1,399 @@
+{
+  "id": "99aa9379b0d3dc11b4d264589ac4de796868757589a29b025f8049a45244e36f",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 64; target batch count 200",
+  "title": "Order in Chaos",
+  "reasoning": "The emotional tone combines feelings of panic and control, illustrated by contrasting patterns: orderly stripes against chaotic pixel bleed. The palette of navy, black, white, and dim cyan emphasizes a lonely signal amid turmoil. The main collision of color occurs where structured lines of control intersect with blocks of unstructured chaos, creating a tension that feels almost tangible. The arrangement reflects a battle between calm and pressure, with negative space allowing the chaos to breathe.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#202020"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#303030"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#101010"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#202020"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#CCCCFF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#AAFFAA"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#CCCCFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#AAFFAA"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#CCCCFF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#CCCCFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#AAFFAA"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#202020"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#303030"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#AAAFFF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#202020"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#303030"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#202020"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#101010"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#EDEDFF"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#AAAAFF"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#202020"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#303030"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#AAAAFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#EDEDFF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#AAFFFF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#001010"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#AAFFFF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#EEDDE1"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#101010"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "panic": "rain",
+      "control": "frame"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "mouth",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "99aa9379b0d3dc11b4d264589ac4de796868757589a29b025f8049a45244e36f",
+  "pixelHash": "99aa9379b0d3dc11b4d264589ac4de796868757589a29b025f8049a45244e36f",
+  "jsonFile": "99aa9379b0d3dc11b4d264589ac4de796868757589a29b025f8049a45244e36f.json",
+  "svgFile": "99aa9379b0d3dc11b4d264589ac4de796868757589a29b025f8049a45244e36f.svg",
+  "createdAt": "2026-06-01T23:04:00.836140+00:00"
+}

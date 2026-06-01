@@ -1,0 +1,399 @@
+{
+  "id": "2551412989a35a2210445cc25ad4abcc0d98625e8e6ccd59542e27a9c056647e",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 27; target batch count 200",
+  "title": "Inner Turmoil",
+  "reasoning": "This composition reflects the emotional tension between 'panic' and 'control.' The palette 'broken_memory' was chosen for its muted yet warm tones, representing the fading clarity of control amidst chaos. The central dark mass disrupts the lighter perimeter, creating a collision of emotions. Stripes radiate outward, signifying panic's encroachment, while maintaining an echo of structured dots that symbolize control in the background. The arrangement also leaves a significant amount of negative space, illustrating the void when control is lost. Overall, the pixel arrangement captures the struggle between chaos and order, with jagged edges enhancing the feeling of unease.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#202020"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#303030"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#404040"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#505050"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#606060"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#707070"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#909090"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A5A5A5"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#C6C6C6"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#8A8A8A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B5B5B5"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#B5B5B5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#919191"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#8D8D8D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C2C2C2"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B7B7B7"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A8A8A8"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6F6F6F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#D6D6D6"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B4B4B4"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#A8A8A8"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#9C9C9C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#858585"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7B7B7B"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#5C5C5C"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#0C0C0C"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFFFF0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFAE0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E5E5E5"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#9A9A9A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#AFAFAF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#5D5D5D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#DADADA"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#C2B2B2"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8B8B8B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#6B6B6B"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "panic": "stripes",
+      "control": "dots"
+    },
+    "edgeStyle": "hard_edges",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "tear",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "2551412989a35a2210445cc25ad4abcc0d98625e8e6ccd59542e27a9c056647e",
+  "pixelHash": "2551412989a35a2210445cc25ad4abcc0d98625e8e6ccd59542e27a9c056647e",
+  "jsonFile": "2551412989a35a2210445cc25ad4abcc0d98625e8e6ccd59542e27a9c056647e.json",
+  "svgFile": "2551412989a35a2210445cc25ad4abcc0d98625e8e6ccd59542e27a9c056647e.svg",
+  "createdAt": "2026-06-01T23:03:47.602738+00:00"
+}

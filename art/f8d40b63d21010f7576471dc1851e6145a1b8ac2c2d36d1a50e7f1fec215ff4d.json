@@ -1,0 +1,399 @@
+{
+  "id": "f8d40b63d21010f7576471dc1851e6145a1b8ac2c2d36d1a50e7f1fec215ff4d",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 88; target batch count 200",
+  "title": "Center Tension",
+  "reasoning": "This piece explores the emotional interplay between panic and control. The palette, drawn from 'broken_memory', features muted tones like sepia and faded blue, suggesting a nostalgic burden. The sharp contrast between the left and right sides reinforces the tension, as the left represents control through structured noise, while the right embodies the chaotic target pattern of panic. The pixel bleed effect introduces intentional imperfections, enhancing the theme of inner conflict, where the organized edges confront the chaotic center.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#A27B57"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#AD9B8B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#73504E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#9A8F66"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#E2B235"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#B58038"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#4A3E38"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#6C4F43"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#D5CA97"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A69B7B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B9C3A7"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#4C8CA7"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#3A5454"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#213C43"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#343E32"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#7F7C74"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#C0A89C"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#CCB40E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#514741"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6A5D46"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#9CD6E7"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#389A99"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#7FA9C4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C3C3B0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#CBA1A5"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#8BCF95"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#586A62"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#9E8B8A"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#999F44"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#598867"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6D936D"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#2E5252"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#BFBF74"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#A9C2BD"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E9E2B1"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#810576"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#CFBF9E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4B3B3E"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#5F4D56"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7A989E"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#8D826B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#DEED8F"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B7AB99"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#9090F1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#ED8D2C"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D5B29E"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#292C31"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A5B46B"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#AB2760"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#92A7F9"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#4B4B4F"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#848687"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#6F6859"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E7B224"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#7D10A9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B7A27C"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#756C55"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#BFB5A8"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#8C9E9E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#CFCDAC"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D7ECDA"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#C2B7B6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#6590AB"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#4C6F72"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "panic": "target",
+      "control": "noise"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "door",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "f8d40b63d21010f7576471dc1851e6145a1b8ac2c2d36d1a50e7f1fec215ff4d",
+  "pixelHash": "f8d40b63d21010f7576471dc1851e6145a1b8ac2c2d36d1a50e7f1fec215ff4d",
+  "jsonFile": "f8d40b63d21010f7576471dc1851e6145a1b8ac2c2d36d1a50e7f1fec215ff4d.json",
+  "svgFile": "f8d40b63d21010f7576471dc1851e6145a1b8ac2c2d36d1a50e7f1fec215ff4d.svg",
+  "createdAt": "2026-06-01T23:04:13.313799+00:00"
+}

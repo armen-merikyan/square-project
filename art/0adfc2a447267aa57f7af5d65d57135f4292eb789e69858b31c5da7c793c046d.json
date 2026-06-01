@@ -1,0 +1,399 @@
+{
+  "id": "0adfc2a447267aa57f7af5d65d57135f4292eb789e69858b31c5da7c793c046d",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 43; target batch count 200",
+  "title": "Inward Echo",
+  "reasoning": "This artwork captures the emotional tension between panic, represented by darker colors that create a sense of pressure, and control, indicated by lighter, calm colors. The palette of sepia, tan, and faded blue is reminiscent of a broken memory, evoking nostalgia and unease. The main contrast and collision occur in the transition between the darker outer pixels and the lighter central pixels, illustrating the conflict between chaos and order. The layout reflects an inward movement from the edges, enhancing the feeling of encroaching pressure as the 'wall' shape seed is abstracted into a structured chaos, suggesting both confinement and expansiveness.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4B3C2A"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#7B6A5E"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#EAD2A2"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F9E2C6"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4B3C2A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5E5B4D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#7E7C66"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#2E2B28"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#C0B19C"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D4C3A8"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#4F4F4D"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A57C7A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B79973"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D1D1C6"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7E6C56"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3B3F33"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F7C6A6"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#C1A871"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#AA8C59"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#71736B"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B88466"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E2C3B5"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A88E78"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4C5437"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#B3AA91"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#8D846E"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#4A4C43"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#BDC0B0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F7D4C4"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#9A927C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#5F6A5D"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#3F3F40"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F2F2E8"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C1B8A5"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#6B4B3C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#8F7E63"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C6BA9C"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D0C4A0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E6E8DA"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5E4D4A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#A89F90"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#B8B1B5"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#6E7576"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F1E5D5"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B8B8A2"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#A8A3A1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#8F7C55"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#4A4A44"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#8A7C6C"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#C4B6A0"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#9C8C7F"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#E7D9CE"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E59575"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#4D4E3D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5A564E"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#2B2D28"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#BDF0E4"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#CCBEBE"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D0C7BE"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFE4"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#9B9A8A"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7F755A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3D3D34"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#0D0D0D"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "wave_vertical",
+    "patterns": {
+      "panic": "crack",
+      "control": "frame"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0adfc2a447267aa57f7af5d65d57135f4292eb789e69858b31c5da7c793c046d",
+  "pixelHash": "0adfc2a447267aa57f7af5d65d57135f4292eb789e69858b31c5da7c793c046d",
+  "jsonFile": "0adfc2a447267aa57f7af5d65d57135f4292eb789e69858b31c5da7c793c046d.json",
+  "svgFile": "0adfc2a447267aa57f7af5d65d57135f4292eb789e69858b31c5da7c793c046d.svg",
+  "createdAt": "2026-06-01T23:03:49.725778+00:00"
+}

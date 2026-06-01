@@ -1,0 +1,399 @@
+{
+  "id": "59a0a556f20b8043df0f6d713eef11c0c30ee3b4868eebb27dceb5bae654b5d4",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 58; target batch count 200",
+  "title": "Control & Chaos",
+  "reasoning": "This piece embodies the emotional tension between panic and control. The interplay of dark tones and pale accents reflects a struggle where the edges are contained yet the center bursts with energy, signifying inner chaos. The palette draws from stark contrasts: deep blacks symbolize control, while pale blues introduce a sense of unease. The arrangement embodies a 'split_screen' approach, with the upper left corner contrasting rigid structures against the chaotic lower right. Defects in pixel placement further enhance feelings of disruption, embodying the notion of 'pixel bleed', allowing negative space to coexist with density.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#BBBFFF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#555555"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#333344"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#BBBAAA"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#121314"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#888888"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#BBCCCC"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#999999"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#00BBFF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#AABBFF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#111111"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#BEAAEE"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#333355"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#CCDDDD"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#555555"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#444455"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#111100"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#333344"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#333333"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "panic": "split_screen",
+      "control": "maze"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "door",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "59a0a556f20b8043df0f6d713eef11c0c30ee3b4868eebb27dceb5bae654b5d4",
+  "pixelHash": "59a0a556f20b8043df0f6d713eef11c0c30ee3b4868eebb27dceb5bae654b5d4",
+  "jsonFile": "59a0a556f20b8043df0f6d713eef11c0c30ee3b4868eebb27dceb5bae654b5d4.json",
+  "svgFile": "59a0a556f20b8043df0f6d713eef11c0c30ee3b4868eebb27dceb5bae654b5d4.svg",
+  "createdAt": "2026-06-01T23:03:55.617773+00:00"
+}

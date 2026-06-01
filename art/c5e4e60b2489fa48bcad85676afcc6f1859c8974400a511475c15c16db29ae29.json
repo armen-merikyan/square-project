@@ -1,0 +1,399 @@
+{
+  "id": "c5e4e60b2489fa48bcad85676afcc6f1859c8974400a511475c15c16db29ae29",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 162; target batch count 200",
+  "title": "Pulse of Tension",
+  "reasoning": "This artwork captures the emotional collision between panic and control, using a warm color palette of reds and grays to evoke feelings of urgency and security. The central pixels form a structured checker pattern, suggesting the illusion of control, while the surrounding grey tones bleed into a chaotic crosshatch design representing panic. The contrast occurs sharply at the edges where the controlled forms meet the wild patterns, creating dynamic tension and a sense of unresolved motion, emblematic of the struggle depicted in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF5A5F"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#865A5A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#BE6F6F"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#F7C6D7"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F9AEB6"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FF8C8F"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF5A5F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#865A5A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#BE6F6F"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F7C6D7"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F9AEB6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FF8C8F"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFE3E7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F7C6D7"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A34D4D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FF5A5F"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A34D4D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#9B4B4B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F7C6D7"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E5C1C1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#BFBFBF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#8B2929"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A34D4D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F9AEB6"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#9B4B4B"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E5B2B2"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F7C6D7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF5A5F"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F9AEBA"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#EFB4C3"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#8B2929"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#AA2A2A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E5C1C1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FFC2C7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D6A4A4"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#AE4B4B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#C23D3D"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#AA2A2A"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "panic": "crosshatch",
+      "control": "checker"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "flame",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c5e4e60b2489fa48bcad85676afcc6f1859c8974400a511475c15c16db29ae29",
+  "pixelHash": "c5e4e60b2489fa48bcad85676afcc6f1859c8974400a511475c15c16db29ae29",
+  "jsonFile": "c5e4e60b2489fa48bcad85676afcc6f1859c8974400a511475c15c16db29ae29.json",
+  "svgFile": "c5e4e60b2489fa48bcad85676afcc6f1859c8974400a511475c15c16db29ae29.svg",
+  "createdAt": "2026-06-01T23:05:03.001205+00:00"
+}

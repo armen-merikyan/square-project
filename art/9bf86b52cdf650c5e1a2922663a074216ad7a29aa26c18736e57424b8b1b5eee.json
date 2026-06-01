@@ -1,0 +1,399 @@
+{
+  "id": "9bf86b52cdf650c5e1a2922663a074216ad7a29aa26c18736e57424b8b1b5eee",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 85; target batch count 200",
+  "title": "Crown of Shadows",
+  "reasoning": "This piece explores the tension between panic and control through a contrasting palette of dark maroon and gray, symbolizing depth and instability against a backdrop of rigid, structured pink and red. The inner diamond shape represents control, while the outer frames convey a sense of chaotic pressure. The arrangement evokes layers of displacement and noise, reinforcing the emotional collision between inner calm and outer turmoil. The 'broken dots' pattern suggests undercurrents of panic that seep through the controlled core, while the outer edges create a sense of boundaries being tested. The use of negative space enhances the feeling of anxiety by suggesting voids amidst clutter, forming an unresolved narrative of emotion and experience.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#B00022"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#DD4A28"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E8B1B0"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D7B4B5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#C3B0B1"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#AFA1A1"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#9B9A98"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#888B8B"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF6B7B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F3A8A0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D9C4C4"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#BB8A8A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#C8B2B2"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E6D6D6"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F2F2F2"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E8E5E5"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#4D1C24"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#7B4B52"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D8C3C2"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#E1B8B2"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B6BCE1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C6C7C6"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#0D0E0F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#1B2325"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#262D30"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#4D5460"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#737A8A"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6A7072"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#C9C8C8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#353535"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#474747"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#595959"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6C6C6C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#2B2B2B"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A5A5A5"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#2F292B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#342D32"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#3F3435"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#5B4B4F"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#7A5F65"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B3A8A0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#777777"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#999999"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#777777"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#333333"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "panic": "broken_dots",
+      "control": "target"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "single_vs_many",
+    "shapeSeed": "diamond",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9bf86b52cdf650c5e1a2922663a074216ad7a29aa26c18736e57424b8b1b5eee",
+  "pixelHash": "9bf86b52cdf650c5e1a2922663a074216ad7a29aa26c18736e57424b8b1b5eee",
+  "jsonFile": "9bf86b52cdf650c5e1a2922663a074216ad7a29aa26c18736e57424b8b1b5eee.json",
+  "svgFile": "9bf86b52cdf650c5e1a2922663a074216ad7a29aa26c18736e57424b8b1b5eee.svg",
+  "createdAt": "2026-06-01T23:04:09.540314+00:00"
+}

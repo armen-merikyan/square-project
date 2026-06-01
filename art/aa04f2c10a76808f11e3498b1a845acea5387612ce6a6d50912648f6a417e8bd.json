@@ -1,0 +1,399 @@
+{
+  "id": "aa04f2c10a76808f11e3498b1a845acea5387612ce6a6d50912648f6a417e8bd",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 39; target batch count 200",
+  "title": "Chaos and Order",
+  "reasoning": "The emotional tone of this piece explores the struggle between 'panic' and 'control', reflected in the chosen palette combining dark and light tones. The colors transition from deep blacks and violets, symbolizing a heavy, panicked state, while soft golds and pale greens represent a calm, controlled response. The main contrast exists at the center, where pale greens push against the dark corners, creating a sense of unease and struggle. The pattern evokes a push and pull between controlled structure (control) and chaotic bleed (panic), aligning with the center versus edges theme.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#2D0022"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4E4A5A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#AA9B64"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#21201B"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5E4924"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D4B850"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#8F6335"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#4A002F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#706A81"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D5C45E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#2C2629"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#7F4F32"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#C3BF58"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#A1684D"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#630041"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#8B7B94"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B2C95E"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#393D36"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#9A5823"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D8D63B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A9743F"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#870052"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#885D92"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B8C86B"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#4A4B29"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A3672A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#DAE83E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#AA7649"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#A82B6D"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#7B4A9E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C0C75C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#3C4E22"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B14429"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E4F850"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A4805E"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C03C7B"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#934658"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D2D766"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#484D3D"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BF5C2D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F1F861"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B19475"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#C45E8C"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#A58AB8"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D4D56D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#674D57"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C66D3D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F3FB69"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#BFAA81"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#777777"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D8999F"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C3BCC8"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#DFD76F"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#75B032"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D87D4B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F5FB75"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D1B493"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "panic": "rain",
+      "control": "flame"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "tiny_plus",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "aa04f2c10a76808f11e3498b1a845acea5387612ce6a6d50912648f6a417e8bd",
+  "pixelHash": "aa04f2c10a76808f11e3498b1a845acea5387612ce6a6d50912648f6a417e8bd",
+  "jsonFile": "aa04f2c10a76808f11e3498b1a845acea5387612ce6a6d50912648f6a417e8bd.json",
+  "svgFile": "aa04f2c10a76808f11e3498b1a845acea5387612ce6a6d50912648f6a417e8bd.svg",
+  "createdAt": "2026-06-01T23:03:47.950036+00:00"
+}

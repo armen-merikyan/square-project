@@ -1,0 +1,399 @@
+{
+  "id": "92acf843b4cac22b77dc1aa13ab734e98006c005c34997354aeef711780a4213",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 20; target batch count 200",
+  "title": "Pulse of Tension",
+  "reasoning": "The emotional tone reflects the struggle between panic and control, where warmer shades like burnt orange and gold evoke the heat of anxiety, while darker hues like charcoal and dark red anchor this feeling in a heavier emotional weight. The central 4x4 area embodies control with a structured split-screen pattern, surrounded by a chaotic, dotted external frame representing panic. This arrangement symbolizes the battle between outward chaos and an inner desire for stability, with contrasting light and dark pixels at the boundaries creating a visual tension that feels unresolved. The pattern\u2019s essence comes from the conflict defined by the seed, transforming anxiety into an abstract expression of emotional struggle.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#BF5B21"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#5A1F20"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#2A1416"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#060F0C"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A03D25"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#600E0D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#C2B5A4"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D8AA58"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#BFB77A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#E0C0A5"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#1A2C31"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#C1B5A0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7D2A29"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F65303"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F5DFA7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A62339"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#DA89A0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B03F21"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#454D56"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#4C5D69"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#6D847D"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#BF5B21"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#C40B3A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#A2B9B8"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#0C0F0D"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#2F3A3D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E3A89C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#9F7060"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#4B3535"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#EDD9D7"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#DFAC96"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C14E24"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D50000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#1B2A28"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F4DCC0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#4E5B5D"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#6A565A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#782424"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#879586"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FB7294"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B05749"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F1B34C"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A52F1F"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#BF1D20"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#C18D3B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#505960"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FF6F20"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#623E3B"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B03B21"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D1CFC8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#57A3A5"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFDF7D"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0E0E0E"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#700E00"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D36B7D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F2B94A"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFCA52"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#4F4B4C"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#5C2D2D"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#2D1730"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "burst",
+    "patterns": {
+      "panic": "dots",
+      "control": "split_screen"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "wave",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "92acf843b4cac22b77dc1aa13ab734e98006c005c34997354aeef711780a4213",
+  "pixelHash": "92acf843b4cac22b77dc1aa13ab734e98006c005c34997354aeef711780a4213",
+  "jsonFile": "92acf843b4cac22b77dc1aa13ab734e98006c005c34997354aeef711780a4213.json",
+  "svgFile": "92acf843b4cac22b77dc1aa13ab734e98006c005c34997354aeef711780a4213.svg",
+  "createdAt": "2026-06-01T23:03:25.412058+00:00"
+}

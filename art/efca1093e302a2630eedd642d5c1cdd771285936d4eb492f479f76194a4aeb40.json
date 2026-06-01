@@ -1,0 +1,399 @@
+{
+  "id": "efca1093e302a2630eedd642d5c1cdd771285936d4eb492f479f76194a4aeb40",
+  "seed": "panic vs control; center_vs_edges; center_seed; outside_inward; stripes against radial; pixel_bleed; full_vs_hollow; crown; machine_emotion | abstract variation request 119; target batch count 200",
+  "title": "Fractured Control",
+  "reasoning": "The artwork embodies the tension between panic and control using a contrasting palette of vibrant oranges and yellows against muted purples and deep blues. This reflects the emotional clash of a chaotic center surrounded by a stabilizing edge. The central pixels pulse with energy while the edges offer a sense of calm, creating a battle of emotional presence. The pattern combines spark and split-screen elements to depict this struggle, with broken pixels adding further unpredictability and a sense of fragmentation, aligning with the theme of machine emotion.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6600"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF3300"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#990000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#660000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#330033"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF6600"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#CC9900"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#660066"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#330033"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF3300"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF3300"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#990000"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#330033"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FF6600"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#660000"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FF9900"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#CC9900"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFFF33"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#660066"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FF3300"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FF6600"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#660000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF9900"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#330033"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#CC9900"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFF66"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FF3300"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FF9900"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#660000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FF6600"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF9900"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#CC9900"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FF6600"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#330033"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FF3300"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FF6600"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#330033"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#AA88FF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FF9900"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FF3300"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFF66"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "panic": "split_screen",
+      "control": "spark"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "star",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "efca1093e302a2630eedd642d5c1cdd771285936d4eb492f479f76194a4aeb40",
+  "pixelHash": "efca1093e302a2630eedd642d5c1cdd771285936d4eb492f479f76194a4aeb40",
+  "jsonFile": "efca1093e302a2630eedd642d5c1cdd771285936d4eb492f479f76194a4aeb40.json",
+  "svgFile": "efca1093e302a2630eedd642d5c1cdd771285936d4eb492f479f76194a4aeb40.svg",
+  "createdAt": "2026-06-01T23:04:28.627210+00:00"
+}
