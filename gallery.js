@@ -84,6 +84,7 @@ let selectedShopVariant = "print";
 let selectedFrameType = "black";
 let galleryLoadComplete = false;
 let galleryLoadToken = 0;
+let pageRenderToken = 0;
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -1089,6 +1090,28 @@ function renderCardImage(record) {
   return image;
 }
 
+function cachedFullArtworkRecord(record) {
+  if (record.pixels) {
+    return record;
+  }
+
+  const cachedRecord = fullArtworkCache.get(record.id);
+
+  if (!cachedRecord?.pixels) {
+    return null;
+  }
+
+  return {
+    ...record,
+    ...cachedRecord
+  };
+}
+
+function renderCardArtwork(record) {
+  const fullRecord = cachedFullArtworkRecord(record);
+  return fullRecord ? renderPixelArtwork(fullRecord) : renderCardImage(record);
+}
+
 function renderCard(record, index) {
   const card = document.createElement("article");
   card.className = "gallery-card";
@@ -1109,9 +1132,39 @@ function renderCard(record, index) {
   });
 
   meta.append(title);
-  card.append(renderCardImage(record), meta);
+  card.append(renderCardArtwork(record), meta);
 
   return card;
+}
+
+async function hydrateVisiblePixelArtwork(records, token) {
+  await Promise.all(records.map(async (record) => {
+    if (record.pixels || fullArtworkCache.has(record.id)) {
+      return;
+    }
+
+    try {
+      await fetchArtwork(record.id);
+    } catch {
+      // The image fallback remains clickable if the JSON cannot be fetched.
+    }
+  }));
+
+  if (token !== pageRenderToken) {
+    return;
+  }
+
+  records.forEach((record) => {
+    const card = artGrid.querySelector(`.gallery-card[data-id="${record.id}"]`);
+    const fallbackImage = card?.querySelector(".gallery-card-image");
+    const fullRecord = cachedFullArtworkRecord(record);
+
+    if (!card || !fallbackImage || !fullRecord) {
+      return;
+    }
+
+    fallbackImage.replaceWith(renderPixelArtwork(fullRecord));
+  });
 }
 
 function renderPagination(totalPages) {
@@ -1197,6 +1250,7 @@ function setGalleryUrlCategory(category) {
 }
 
 function renderCurrentPage() {
+  const token = ++pageRenderToken;
   const totalPages = Math.max(1, Math.ceil(filteredRecords.length / pageSize));
   currentPage = Math.min(Math.max(currentPage, 1), totalPages);
 
@@ -1220,6 +1274,7 @@ function renderCurrentPage() {
   }
 
   artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
+  hydrateVisiblePixelArtwork(pageRecords, token);
   renderPagination(totalPages);
 
   document.querySelectorAll(".gallery-card").forEach((card) => {

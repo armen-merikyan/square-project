@@ -8,6 +8,7 @@ import os
 import ssl
 import urllib.parse
 import urllib.request
+from base64 import b64encode
 from html import escape
 from pathlib import Path
 from urllib.error import HTTPError
@@ -26,6 +27,10 @@ STRIPE_PREVIEW_DIR = ROOT / "stripe-previews"
 MANIFEST_PATH = ART_DIR / "manifest.json"
 STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
 DEFAULT_SITE_URL = "https://mysquareart.com"
+FRAME_PREVIEW_STAGE_SIZE = 1500
+FRAME_PREVIEW_ART_X = FRAME_PREVIEW_STAGE_SIZE / 6
+FRAME_PREVIEW_ART_Y = FRAME_PREVIEW_STAGE_SIZE / 6
+FRAME_PREVIEW_ART_SIZE = FRAME_PREVIEW_STAGE_SIZE * (2 / 3)
 FRAME_COLORS = {
     "black": "Black",
     "white": "White",
@@ -33,6 +38,7 @@ FRAME_COLORS = {
     "brown": "Brown",
     "gold": "Gold",
 }
+FRAME_DATA_URI_CACHE: dict[str, str] = {}
 VARIANTS = {
     "print": {
         "nickname": "Square Project 8x8 Art Print",
@@ -315,17 +321,31 @@ def framed_preview_url(art_id: str, frame_color: str) -> str:
     return f"{site_url()}/stripe-previews/{art_id}_{frame_color}.svg"
 
 
+def frame_data_uri(frame_color: str) -> str:
+    cached_uri = FRAME_DATA_URI_CACHE.get(frame_color)
+
+    if cached_uri:
+        return cached_uri
+
+    frame_path = ROOT / "frames" / f"{frame_color}.jpg"
+    encoded_frame = b64encode(frame_path.read_bytes()).decode("ascii")
+    uri = f"data:image/jpeg;base64,{encoded_frame}"
+    FRAME_DATA_URI_CACHE[frame_color] = uri
+    return uri
+
+
 def write_framed_preview_svg(art: dict, frame_color: str) -> None:
     STRIPE_PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
 
-    stage_size = 1500
-    art_offset = 250
-    art_size = 1000
+    stage_size = FRAME_PREVIEW_STAGE_SIZE
+    art_x = FRAME_PREVIEW_ART_X
+    art_y = FRAME_PREVIEW_ART_Y
+    art_size = FRAME_PREVIEW_ART_SIZE
     cell_size = art_size / 8
-    frame_url = f"{site_url()}/frames/{frame_color}.jpg"
+    frame_uri = frame_data_uri(frame_color)
     rects = [
-        f'<rect x="{art_offset + int(pixel.get("x", 0)) * cell_size:g}" '
-        f'y="{art_offset + int(pixel.get("y", 0)) * cell_size:g}" '
+        f'<rect x="{art_x + int(pixel.get("x", 0)) * cell_size:g}" '
+        f'y="{art_y + int(pixel.get("y", 0)) * cell_size:g}" '
         f'width="{cell_size:g}" height="{cell_size:g}" '
         f'fill="{escape(str(pixel.get("color", "#FFFFFF")))}" />'
         for pixel in art["pixels"]
@@ -339,10 +359,11 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{stage_size}" height="{stage_size}" viewBox="0 0 {stage_size} {stage_size}" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">',
             f'  <title id="title">{title}</title>',
             f'  <desc id="desc">{desc}</desc>',
-            f'  <image href="{escape(frame_url)}" x="0" y="0" width="{stage_size}" height="{stage_size}" preserveAspectRatio="xMidYMid meet" />',
-            f'  <rect x="{art_offset}" y="{art_offset}" width="{art_size}" height="{art_size}" fill="#FFFFFF" />',
+            f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="#FFFFFF" />',
+            f'  <image href="{escape(frame_uri)}" x="0" y="0" width="{stage_size}" height="{stage_size}" preserveAspectRatio="xMidYMid meet" />',
+            f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="#FFFFFF" />',
             *[f"  {rect}" for rect in rects],
-            f'  <rect x="{art_offset}" y="{art_offset}" width="{art_size}" height="{art_size}" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="3" />',
+            f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="2" />',
             "</svg>",
             "",
         ]),
