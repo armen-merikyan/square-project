@@ -83,6 +83,7 @@ let colorSimilarityThreshold = Number(colorSimilarity.value);
 let selectedShopVariant = "print";
 let selectedFrameType = "black";
 let galleryLoadComplete = false;
+let galleryLoadToken = 0;
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -1227,6 +1228,7 @@ function rebuildGalleryIndexes({ renderFilters = true } = {}) {
 }
 
 async function loadGalleryCategory(category, { requestedId = "", updateUrl = true } = {}) {
+  const loadToken = ++galleryLoadToken;
   const startedAt = performance.now();
   activeCategory = category;
   galleryRecords = [];
@@ -1258,6 +1260,11 @@ async function loadGalleryCategory(category, { requestedId = "", updateUrl = tru
   });
 
   const records = await fetchCategoryRecords(category);
+
+  if (loadToken !== galleryLoadToken) {
+    return;
+  }
+
   galleryRecords = records.map(normalizeGalleryRecord);
   filteredRecords = galleryRecords;
   galleryCount.textContent = `${galleryRecords.length} / ${category.count}`;
@@ -1340,7 +1347,7 @@ galleryCategory.addEventListener("change", () => {
 
   if (category) {
     const url = new URL(window.location.href);
-    url.delete("art");
+    url.searchParams.delete("art");
     window.history.replaceState({}, "", url);
     loadGalleryCategory(category).catch((error) => {
       galleryCount.textContent = "Error";

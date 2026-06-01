@@ -1,6 +1,6 @@
-const GALLERY_MANIFEST_PATH = "art/manifest.json";
-const MANIFEST_CACHE_BUSTER = Date.now().toString(36);
-const HOMEPAGE_ARTWORK_LIMIT = 6;
+const HOMEPAGE_ARTWORK_IDS_PATH = "art/homepage-artwork-ids.json";
+const HOMEPAGE_ARTWORK_LIMIT = 40;
+const CAROUSEL_IMAGE_LOAD_RADIUS = 3;
 const fallbackArtworks = [
   "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22",
   "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
@@ -90,6 +90,18 @@ function artworkDetailUrl(index) {
   return `gallery.html?art=${encodeURIComponent(artworks[index])}`;
 }
 
+function sampleArtworks(ids, limit) {
+  const sample = [...ids];
+  const sampleSize = Math.min(limit, sample.length);
+
+  for (let index = 0; index < sampleSize; index += 1) {
+    const randomIndex = index + Math.floor(Math.random() * (sample.length - index));
+    [sample[index], sample[randomIndex]] = [sample[randomIndex], sample[index]];
+  }
+
+  return sample.slice(0, sampleSize);
+}
+
 async function loadArtwork(id) {
   const response = await fetch(`art/${id}.json`);
 
@@ -101,11 +113,10 @@ async function loadArtwork(id) {
 }
 
 async function loadArtworkIds() {
-  const manifestUrl = `${GALLERY_MANIFEST_PATH}?v=${MANIFEST_CACHE_BUSTER}`;
-  const response = await fetch(manifestUrl, { cache: "no-store" });
+  const response = await fetch(HOMEPAGE_ARTWORK_IDS_PATH);
 
   if (!response.ok) {
-    throw new Error("Could not load art manifest.");
+    throw new Error("Could not load homepage art manifest.");
   }
 
   const manifest = await response.json();
@@ -115,7 +126,7 @@ async function loadArtworkIds() {
     throw new Error("Art manifest does not include any artwork ids.");
   }
 
-  return ids;
+  return sampleArtworks(ids, HOMEPAGE_ARTWORK_LIMIT);
 }
 
 function createMetadataOverlay(data, index) {
@@ -176,9 +187,24 @@ function createArtworkReflection(image) {
   return reflection;
 }
 
+function loadSlideImages() {
+  [...coverflow.children].forEach((slide, slideIndex) => {
+    const offset = Math.abs(shortestOffset(slideIndex));
+
+    if (offset > CAROUSEL_IMAGE_LOAD_RADIUS) {
+      return;
+    }
+
+    slide.querySelectorAll("img[data-src]").forEach((image) => {
+      image.src = image.dataset.src;
+      image.removeAttribute("data-src");
+    });
+  });
+}
+
 async function renderCarousel() {
   try {
-    artworks = (await loadArtworkIds()).slice(0, HOMEPAGE_ARTWORK_LIMIT);
+    artworks = await loadArtworkIds();
   } catch (error) {
     console.warn(error);
     artworks = fallbackArtworks;
@@ -194,9 +220,10 @@ async function renderCarousel() {
     slide.tabIndex = 0;
 
     const image = document.createElement("img");
-    image.src = `art/${artworks[index]}.svg`;
+    image.dataset.src = `art/${artworks[index]}.svg`;
     image.alt = record.title ? `${record.title} square artwork` : "Square artwork";
     image.decoding = "async";
+    image.loading = index === 0 ? "eager" : "lazy";
 
     appendChildren(slide, [
       createArtworkFace(image),
@@ -286,6 +313,7 @@ function updateCarouselPositions(nextIndex = activeIndex) {
   });
 
   renderDots();
+  loadSlideImages();
   counter.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(artworks.length).padStart(2, "0")}`;
 }
 

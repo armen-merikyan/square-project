@@ -11,6 +11,7 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ART_DIR = PROJECT_ROOT / "art"
 MANIFEST_PATH = ART_DIR / "manifest.json"
+HOMEPAGE_ARTWORK_IDS_PATH = ART_DIR / "homepage-artwork-ids.json"
 CHUNK_DIR_NAME = "manifest-chunks"
 CATEGORY_DIR_NAME = "category-chunks"
 CHUNK_SIZE = 500
@@ -216,7 +217,8 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
     chunk_dir.mkdir(parents=True, exist_ok=True)
     category_dir.mkdir(parents=True, exist_ok=True)
 
-    json_ids = {path.stem for path in art_dir.glob("*.json") if path.name != manifest_path.name}
+    manifest_names = {manifest_path.name, HOMEPAGE_ARTWORK_IDS_PATH.name}
+    json_ids = {path.stem for path in art_dir.glob("*.json") if path.name not in manifest_names}
     svg_ids = {path.stem for path in art_dir.glob("*.svg")}
     artwork_ids = sorted(
         json_ids & svg_ids,
@@ -293,6 +295,10 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
         },
     }
     manifest_path.write_text(json.dumps(manifest, separators=(",", ":")) + "\n", encoding="utf-8")
+    HOMEPAGE_ARTWORK_IDS_PATH.write_text(
+        json.dumps({"artworkIds": artwork_ids, "count": len(artwork_ids)}, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
     return manifest
 
 
