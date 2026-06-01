@@ -1,0 +1,399 @@
+{
+  "id": "3003737fcf33177f43cdae51a2b4f3e3db4fa72f39b1f4ed0f16bf71a18fa5a6",
+  "seed": "collisions of emotion, contrast, pressure, quiet, rhythm, and release | abstract variation request 31; target batch count 100",
+  "title": "Tension and Release",
+  "reasoning": "The emotional tone captures the essence of collisions and contrasts between pressure and release. The chosen palette of navy, black, and dim cyan creates a deep, reflective atmosphere, while the white introduces a stark interruption, enhancing the sense of contrast. This plays into the outer border representing pressure (black and navy) and the inner 4x4 suggesting quiet rhythm (dim cyan and white). The 'frame_and_core' layout supports this juxtaposition, with a spiral counterclockwise flow to echo the dynamics of emotion. The pixel arrangement considers broken pixels, creating an impression of imperfection and emotional weight, emphasizing the core theme of duality.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#003A70"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#00509E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#007BFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#009AC1"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#00B8E1"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#002B6C"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#003A70"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#004080"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#005EB8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#007BFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#00B2C8"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#003A70"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#004080"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#004B89"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#005B9F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#007BFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D6E4F1"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#00509E"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#007BFF"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#00B8E1"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D6E4F1"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E1EBF4"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#F0F8FF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#007BFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#00B2C8"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D6E4F1"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#E8F6FD"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#F8FAFC"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#009AC1"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D6E4F1"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E1EBF4"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F0F8FF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F8FAFC"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#00B8E1"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D6E4F1"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#E8F6FD"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F8FAFC"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F0F8FF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#00C3E3"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E8F6FD"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F8FAFC"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F4F8FF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F0F8FF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "emptiness": "stripes",
+      "desire": "target"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "door",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "3003737fcf33177f43cdae51a2b4f3e3db4fa72f39b1f4ed0f16bf71a18fa5a6",
+  "pixelHash": "3003737fcf33177f43cdae51a2b4f3e3db4fa72f39b1f4ed0f16bf71a18fa5a6",
+  "jsonFile": "3003737fcf33177f43cdae51a2b4f3e3db4fa72f39b1f4ed0f16bf71a18fa5a6.json",
+  "svgFile": "3003737fcf33177f43cdae51a2b4f3e3db4fa72f39b1f4ed0f16bf71a18fa5a6.svg",
+  "createdAt": "2026-06-01T07:10:02.080767+00:00"
+}

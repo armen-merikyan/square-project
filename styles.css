@@ -588,6 +588,7 @@ footer p {
 }
 
 .gallery-panel {
+  width: 100%;
   min-width: 0;
 }
 
@@ -700,15 +701,6 @@ footer p {
   font-weight: 800;
 }
 
-.gallery-empty {
-  margin: 0;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 28px;
-  background: #fff;
-  color: var(--muted);
-}
-
 .art-inspector {
   width: min(1120px, calc(100vw - 32px));
   max-height: calc(100vh - 36px);
@@ -719,9 +711,25 @@ footer p {
   color: var(--ink);
 }
 
+.art-inspector:not([open]) {
+  display: none;
+}
+
 .art-inspector::backdrop {
   background: rgba(21, 21, 21, 0.62);
   backdrop-filter: blur(6px);
+}
+
+.art-inspector.is-fallback-open {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+}
+
+body.has-open-inspector {
+  overflow: hidden;
 }
 
 .inspector-frame {

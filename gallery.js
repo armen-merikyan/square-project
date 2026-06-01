@@ -152,9 +152,32 @@ function renderSwatches(colors) {
 }
 
 function closeInspector() {
-  if (artInspector.open) {
+  if (artInspector.open && typeof artInspector.close === "function") {
     artInspector.close();
+  } else {
+    artInspector.removeAttribute("open");
+    artInspector.classList.remove("is-fallback-open");
+    document.body.classList.remove("has-open-inspector");
   }
+}
+
+function openInspector() {
+  document.body.classList.add("has-open-inspector");
+
+  if (typeof artInspector.showModal === "function") {
+    if (!artInspector.open) {
+      try {
+        artInspector.showModal();
+      } catch {
+        artInspector.setAttribute("open", "");
+        artInspector.classList.add("is-fallback-open");
+      }
+    }
+    return;
+  }
+
+  artInspector.setAttribute("open", "");
+  artInspector.classList.add("is-fallback-open");
 }
 
 function renderInspector(record) {
@@ -235,9 +258,7 @@ function renderInspector(record) {
   frame.append(closeButton, image, content);
   artInspector.appendChild(frame);
 
-  if (!artInspector.open) {
-    artInspector.showModal();
-  }
+  openInspector();
 
   document.querySelectorAll(".gallery-card").forEach((card) => {
     const isSelected = card.dataset.id === selectedId;
@@ -364,6 +385,9 @@ artInspector.addEventListener("click", (event) => {
 });
 
 artInspector.addEventListener("close", () => {
+  document.body.classList.remove("has-open-inspector");
+  artInspector.classList.remove("is-fallback-open");
+
   if (previousFocus) {
     previousFocus.focus();
     previousFocus = null;
