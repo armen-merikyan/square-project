@@ -7,3 +7,6 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Generated Stripe preview images
+stripe-previews/
