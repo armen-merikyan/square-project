@@ -1152,7 +1152,8 @@ footer p {
   white-space: nowrap;
 }
 
-.gallery-search {
+.gallery-search,
+.gallery-category {
   display: grid;
   gap: 8px;
   margin-bottom: 18px;
@@ -1161,7 +1162,8 @@ footer p {
   font-weight: 900;
 }
 
-.gallery-search input {
+.gallery-search input,
+.gallery-category select {
   width: 100%;
   min-height: 46px;
   border: 1px solid rgba(21, 21, 21, 0.17);
@@ -1173,7 +1175,20 @@ footer p {
   font-weight: 700;
 }
 
-.gallery-search input:focus {
+.gallery-category select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+    linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 20px,
+    calc(100% - 12px) 20px;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.gallery-search input:focus,
+.gallery-category select:focus {
   outline: 2px solid rgba(37, 99, 235, 0.34);
   outline-offset: 2px;
 }

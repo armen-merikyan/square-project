@@ -44,6 +44,7 @@ const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
 const galleryCount = document.querySelector("#galleryCount");
 const gallerySearch = document.querySelector("#gallerySearch");
+const galleryCategory = document.querySelector("#galleryCategory");
 const galleryPagination = document.querySelector("#galleryPagination");
 const galleryLoading = document.querySelector("#galleryLoading");
 const galleryLoadingTitle = document.querySelector("#galleryLoadingTitle");
@@ -71,6 +72,8 @@ let colorToBucket = new Map();
 let precomputedColorBucketsByThreshold = {};
 let precomputedColorBucketTotalsByThreshold = {};
 let galleryTotalCount = 0;
+let galleryCategories = [];
+let activeCategory = null;
 let pageSize = PAGE_SIZE_OPTIONS[0];
 let currentPage = 1;
 let selectedId = "";
@@ -228,6 +231,22 @@ async function fetchArtworkChunk(chunk) {
 
   if (!response.ok) {
     throw new Error(`Unable to load ${chunk.path}`);
+  }
+
+  const data = await response.json();
+  return Array.isArray(data) ? data : data.records;
+}
+
+async function fetchCategoryRecords(category) {
+  if (!category?.path) {
+    return [];
+  }
+
+  const separator = category.path.includes("?") ? "&" : "?";
+  const response = await fetch(`${category.path}${separator}v=${MANIFEST_CACHE_BUSTER}`);
+
+  if (!response.ok) {
+    throw new Error(`Unable to load ${category.label || "gallery category"}.`);
   }
 
   const data = await response.json();
@@ -1107,6 +1126,37 @@ function renderPagination(totalPages) {
   }
 }
 
+function renderCategoryOptions() {
+  galleryCategory.replaceChildren();
+
+  galleryCategories.forEach((category) => {
+    const option = document.createElement("option");
+    option.value = category.id;
+    option.textContent = `${category.label} (${category.count})`;
+    option.selected = category.id === activeCategory?.id;
+
+    if (category.description) {
+      option.title = category.description;
+    }
+
+    galleryCategory.appendChild(option);
+  });
+}
+
+function categoryForArtworkId(artworkId) {
+  return galleryCategories.find((category) => Array.isArray(category.ids) && category.ids.includes(artworkId));
+}
+
+function setGalleryUrlCategory(category) {
+  if (!category) {
+    return;
+  }
+
+  const url = new URL(window.location.href);
+  url.searchParams.set("category", category.id);
+  window.history.replaceState({}, "", url);
+}
+
 function renderCurrentPage() {
   const totalPages = Math.max(1, Math.ceil(filteredRecords.length / pageSize));
   currentPage = Math.min(Math.max(currentPage, 1), totalPages);
@@ -1116,10 +1166,11 @@ function renderCurrentPage() {
   const query = gallerySearch.value.trim();
   const hasColorFilters = includedColorSeeds.size > 0 || excludedColorSeeds.size > 0;
   const loadingSuffix = galleryLoadComplete ? "" : " loaded";
+  const categoryLabel = activeCategory ? `${activeCategory.label} category` : "category";
 
   galleryCount.textContent = query || hasColorFilters
-    ? `${filteredRecords.length} of ${galleryRecords.length}${loadingSuffix} artworks`
-    : `${galleryRecords.length}${loadingSuffix} artworks`;
+    ? `${filteredRecords.length} of ${galleryRecords.length}${loadingSuffix} in ${categoryLabel}`
+    : `${galleryRecords.length}${loadingSuffix} in ${categoryLabel}`;
 
   if (pageRecords.length === 0) {
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
@@ -1175,122 +1226,53 @@ function rebuildGalleryIndexes({ renderFilters = true } = {}) {
   applyFilters({ renderFilters });
 }
 
-async function renderGallery() {
+async function loadGalleryCategory(category, { requestedId = "", updateUrl = true } = {}) {
   const startedAt = performance.now();
-  const requestedId = new URLSearchParams(window.location.search).get("art");
+  activeCategory = category;
+  galleryRecords = [];
+  filteredRecords = [];
+  colorBuckets = [];
+  colorToBucket = new Map();
+  includedColorSeeds.clear();
+  excludedColorSeeds.clear();
+  selectedId = "";
+  galleryLoadComplete = false;
+  currentPage = 1;
+  galleryCategory.disabled = true;
+  renderCategoryOptions();
+
+  if (updateUrl) {
+    setGalleryUrlCategory(category);
+  }
+
   galleryCount.textContent = "Loading";
   artGrid.replaceChildren();
   galleryPagination.replaceChildren();
+  closeInspector();
   updateGalleryLoading({
-    title: "Preparing the collection",
-    step: "Requesting the art manifest.",
-    startedAt
-  });
-
-  const manifest = await fetchGalleryManifest();
-  const artworkIds = Array.isArray(manifest) ? manifest : manifest.artworkIds;
-  precomputedColorBucketsByThreshold = !Array.isArray(manifest)
-    ? manifest.indexes?.colorBuckets || {}
-    : {};
-  precomputedColorBucketTotalsByThreshold = !Array.isArray(manifest)
-    ? manifest.indexes?.colorBucketTotals || {}
-    : {};
-
-  if (!Array.isArray(artworkIds) || artworkIds.length === 0) {
-    throw new Error("Art manifest does not include any artwork ids.");
-  }
-
-  galleryTotalCount = artworkIds.length;
-  galleryCount.textContent = `0 / ${artworkIds.length}`;
-  updateGalleryLoading({
-    title: "Loading artwork records",
-    step: `Found ${artworkIds.length} artworks. Loading metadata chunks.`,
+    title: "Loading category",
+    step: `Requesting ${category.label}.`,
     loaded: 0,
-    total: artworkIds.length,
+    total: category.count,
     startedAt
   });
 
-  let loadedArtworkCount = 0;
-  const chunks = !Array.isArray(manifest) && Array.isArray(manifest.chunks) ? manifest.chunks : [];
-
-  if (chunks.length > 0) {
-    for (const [chunkIndex, chunk] of chunks.entries()) {
-      const records = await fetchArtworkChunk(chunk);
-      const normalizedRecords = records.map(normalizeGalleryRecord);
-      galleryRecords.push(...normalizedRecords);
-      loadedArtworkCount += normalizedRecords.length;
-      galleryCount.textContent = `${loadedArtworkCount} / ${artworkIds.length}`;
-      updateGalleryLoading({
-        title: "Loading artwork records",
-        step: `Indexed chunk ${chunkIndex + 1} of ${chunks.length}.`,
-        loaded: loadedArtworkCount,
-        total: artworkIds.length,
-        startedAt
-      });
-
-      if (hasPrecomputedColorBuckets()) {
-        filteredRecords = galleryRecords;
-        renderCurrentPage();
-      } else if (chunkIndex === 0 || chunkIndex % CHUNK_RENDER_INTERVAL === 0 || chunkIndex === chunks.length - 1) {
-        rebuildGalleryIndexes({ renderFilters: true });
-      }
-
-      if (chunkIndex === 0) {
-        const requestedRecord = requestedId
-          ? galleryRecords.find((record) => record.id === requestedId)
-          : null;
-
-        if (requestedRecord) {
-          openGalleryRecord(requestedRecord).catch(console.warn);
-        } else if (requestedId && artworkIds.includes(requestedId)) {
-          fetchArtwork(requestedId)
-            .then((record) => openGalleryRecord(normalizeGalleryRecord(record)))
-            .catch(console.warn);
-        }
-      }
-
-      await yieldToBrowser();
-    }
-  } else {
-    const concurrency = 12;
-    let nextIndex = 0;
-    const loadNextRecord = async () => {
-      while (nextIndex < artworkIds.length) {
-        const id = artworkIds[nextIndex];
-        nextIndex += 1;
-        const record = normalizeGalleryRecord(await fetchArtwork(id));
-        galleryRecords.push(record);
-        loadedArtworkCount += 1;
-
-        if (loadedArtworkCount % 50 === 0 || loadedArtworkCount === artworkIds.length) {
-          galleryCount.textContent = `${loadedArtworkCount} / ${artworkIds.length}`;
-          updateGalleryLoading({
-            title: "Loading artwork records",
-            step: `Reading ${compactId(id)}.json and checking pixel data.`,
-            loaded: loadedArtworkCount,
-            total: artworkIds.length,
-            startedAt
-          });
-          rebuildGalleryIndexes({ renderFilters: loadedArtworkCount % 500 === 0 });
-          await yieldToBrowser();
-        }
-      }
-    };
-
-    await Promise.all(Array.from({ length: concurrency }, loadNextRecord));
-  }
-
+  const records = await fetchCategoryRecords(category);
+  galleryRecords = records.map(normalizeGalleryRecord);
+  filteredRecords = galleryRecords;
+  galleryCount.textContent = `${galleryRecords.length} / ${category.count}`;
   updateGalleryLoading({
-    title: "Building gallery tools",
-    step: "Indexing search text and color filters.",
-    loaded: artworkIds.length,
-    total: artworkIds.length,
+    title: "Loading category",
+    step: `${category.label} loaded. Building search and color filters.`,
+    loaded: galleryRecords.length,
+    total: category.count,
     startedAt
   });
 
   galleryLoadComplete = true;
   rebuildGalleryIndexes({ renderFilters: true });
   galleryLoading.hidden = true;
+  galleryCategory.disabled = false;
 
   const requestedRecord = requestedId
     ? galleryRecords.find((record) => record.id === requestedId)
@@ -1301,7 +1283,73 @@ async function renderGallery() {
   }
 }
 
+async function renderGallery() {
+  const startedAt = performance.now();
+  const params = new URLSearchParams(window.location.search);
+  const requestedId = params.get("art");
+  const requestedCategoryId = params.get("category");
+  galleryCount.textContent = "Loading";
+  artGrid.replaceChildren();
+  galleryPagination.replaceChildren();
+  updateGalleryLoading({
+    title: "Preparing the collection",
+    step: "Requesting the category index.",
+    startedAt
+  });
+
+  const manifest = await fetchGalleryManifest();
+  const artworkIds = Array.isArray(manifest) ? manifest : manifest.artworkIds;
+  precomputedColorBucketsByThreshold = {};
+  precomputedColorBucketTotalsByThreshold = {};
+
+  if (!Array.isArray(artworkIds) || artworkIds.length === 0) {
+    throw new Error("Art manifest does not include any artwork ids.");
+  }
+
+  galleryTotalCount = artworkIds.length;
+  galleryCategories = !Array.isArray(manifest) && Array.isArray(manifest.categories)
+    ? manifest.categories
+    : [];
+
+  if (galleryCategories.length === 0) {
+    const chunks = !Array.isArray(manifest) && Array.isArray(manifest.chunks) ? manifest.chunks : [];
+    galleryCategories = chunks.map((chunk, index) => ({
+      id: `chunk-${index}`,
+      label: `Group ${index + 1}`,
+      description: `${chunk.count} artworks`,
+      path: chunk.path,
+      count: chunk.count,
+      ids: artworkIds.slice(chunk.start, chunk.start + chunk.count)
+    }));
+  }
+
+  if (galleryCategories.length === 0) {
+    throw new Error("Art manifest does not include gallery categories.");
+  }
+
+  const requestedCategory = requestedId ? categoryForArtworkId(requestedId) : null;
+  const urlCategory = galleryCategories.find((category) => category.id === requestedCategoryId);
+  activeCategory = requestedCategory || urlCategory || galleryCategories[0];
+  renderCategoryOptions();
+  await loadGalleryCategory(activeCategory, { requestedId, updateUrl: !requestedId });
+}
+
 gallerySearch.addEventListener("input", applyFilters);
+galleryCategory.addEventListener("change", () => {
+  const category = galleryCategories.find((item) => item.id === galleryCategory.value);
+
+  if (category) {
+    const url = new URL(window.location.href);
+    url.delete("art");
+    window.history.replaceState({}, "", url);
+    loadGalleryCategory(category).catch((error) => {
+      galleryCount.textContent = "Error";
+      galleryLoading.hidden = true;
+      galleryCategory.disabled = false;
+      artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
+    });
+  }
+});
 colorSimilarity.addEventListener("input", () => {
   colorSimilarityThreshold = Number(colorSimilarity.value);
   updateSimilarityLabel();

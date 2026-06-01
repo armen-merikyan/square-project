@@ -12,7 +12,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ART_DIR = PROJECT_ROOT / "art"
 MANIFEST_PATH = ART_DIR / "manifest.json"
 CHUNK_DIR_NAME = "manifest-chunks"
+CATEGORY_DIR_NAME = "category-chunks"
 CHUNK_SIZE = 500
+CATEGORY_SIZE = 150
 REASONING_PREVIEW_LENGTH = 360
 COLOR_SIMILARITY_THRESHOLDS = list(range(0, 97, 8))
 COLOR_FILTER_RENDER_LIMIT = 600
@@ -203,11 +205,16 @@ def gallery_record(art_dir: Path, artwork_id: str) -> dict[str, Any]:
 def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFEST_PATH) -> dict[str, Any]:
     art_dir.mkdir(parents=True, exist_ok=True)
     chunk_dir = art_dir / CHUNK_DIR_NAME
+    category_dir = art_dir / CATEGORY_DIR_NAME
 
     if chunk_dir.exists():
         shutil.rmtree(chunk_dir)
 
+    if category_dir.exists():
+        shutil.rmtree(category_dir)
+
     chunk_dir.mkdir(parents=True, exist_ok=True)
+    category_dir.mkdir(parents=True, exist_ok=True)
 
     json_ids = {path.stem for path in art_dir.glob("*.json") if path.name != manifest_path.name}
     svg_ids = {path.stem for path in art_dir.glob("*.svg")}
@@ -220,6 +227,7 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
         reverse=True,
     )
     chunks = []
+    categories = []
     all_records = [gallery_record(art_dir, artwork_id) for artwork_id in artwork_ids]
     color_indexes: dict[str, list[dict[str, Any]]] = {}
     color_index_totals: dict[str, int] = {}
@@ -239,11 +247,45 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
             "start": start,
         })
 
+    title_sorted_records = sorted(
+        all_records,
+        key=lambda record: (
+            str(record.get("title", "")).casefold(),
+            str(record.get("id", "")),
+        ),
+    )
+    category_label_counts: dict[str, int] = {}
+
+    for category_index, start in enumerate(range(0, len(title_sorted_records), CATEGORY_SIZE)):
+        records = title_sorted_records[start:start + CATEGORY_SIZE]
+        category_path = category_dir / f"{category_index:05d}.json"
+        category_path.write_text(json.dumps({"records": records}, separators=(",", ":")) + "\n", encoding="utf-8")
+
+        first_title = str(records[0].get("title") or "Untitled")
+        last_title = str(records[-1].get("title") or "Untitled")
+        first_letter = next((character.upper() for character in first_title if character.isalnum()), "#")
+        last_letter = next((character.upper() for character in last_title if character.isalnum()), "#")
+        title_range = first_letter if first_letter == last_letter else f"{first_letter}-{last_letter}"
+        label_base = f"{title_range} titles"
+        category_label_counts[label_base] = category_label_counts.get(label_base, 0) + 1
+        label = label_base if category_label_counts[label_base] == 1 else f"{label_base}, part {category_label_counts[label_base]}"
+
+        categories.append({
+            "id": f"title-{category_index:03d}",
+            "label": label,
+            "description": f"{first_title} to {last_title}",
+            "path": f"art/{CATEGORY_DIR_NAME}/{category_path.name}",
+            "count": len(records),
+            "ids": [str(record.get("id", "")) for record in records],
+        })
+
     manifest = {
         "artworkIds": artwork_ids,
         "count": len(artwork_ids),
         "chunkSize": CHUNK_SIZE,
         "chunks": chunks,
+        "categorySize": CATEGORY_SIZE,
+        "categories": categories,
         "indexes": {
             "colorSimilarityThresholds": COLOR_SIMILARITY_THRESHOLDS,
             "colorBuckets": color_indexes,
