@@ -1,0 +1,407 @@
+{
+  "id": "46fff22574ab6c77e23525d6db0b5298b68122e5c6e209900cf8f7f64662d3e8",
+  "seed": "love vs betrayal; inside_vs_outside; empty_room; bottom_to_top; crosshatch against noise; burned_edges; sharp_vs_soft; pair_of_pixels; lonely_signal | abstract variation request 187; target batch count 200",
+  "title": "Echoes of Conflict",
+  "reasoning": "This piece explores the emotional tension between love and betrayal through contrasting colors: warm reds and soft pinks represent love, while dark grays and maroons symbolize betrayal. The layout of battling patterns, with flame-like warmth on one side and a maze of despair on the other, illustrates a conflict. Sharp edges create a sense of fracture, while broken pixels introduce imperfection, embodying the complexities of relationships. The chosen colors and patterns evoke feelings of either warmth or cold detachment, revealing an unresolved dialogue.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B22222"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B22222"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#808080"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B22222"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#AB4C1B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B22222"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B22222"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#B22222"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#808080"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#AB4C1B"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#B22222"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#AB4C1B"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFC0CB"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "love",
+      "betrayal"
+    ],
+    "emotionMoods": {
+      "love": [
+        "mirrored forms",
+        "paired shapes",
+        "warm colors"
+      ],
+      "betrayal": [
+        "broken heart shape",
+        "split symmetry",
+        "misaligned mirror"
+      ]
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "love": "flame",
+      "betrayal": "maze"
+    },
+    "edgeStyle": "hard_edges",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "single_pixel",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "46fff22574ab6c77e23525d6db0b5298b68122e5c6e209900cf8f7f64662d3e8",
+  "pixelHash": "46fff22574ab6c77e23525d6db0b5298b68122e5c6e209900cf8f7f64662d3e8",
+  "jsonFile": "46fff22574ab6c77e23525d6db0b5298b68122e5c6e209900cf8f7f64662d3e8.json",
+  "svgFile": "46fff22574ab6c77e23525d6db0b5298b68122e5c6e209900cf8f7f64662d3e8.svg",
+  "createdAt": "2026-06-01T21:45:54.682711+00:00"
+}

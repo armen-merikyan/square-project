@@ -1,0 +1,407 @@
+{
+  "id": "d50736cb1bf9f0c02a12001b71e5f77e50a758c70cdb2c5b158bf5b9f7c1ddcf",
+  "seed": "love vs betrayal; inside_vs_outside; empty_room; bottom_to_top; crosshatch against noise; burned_edges; sharp_vs_soft; pair_of_pixels; lonely_signal | abstract variation request 74; target batch count 200",
+  "title": "Echoes of Emotion",
+  "reasoning": "This piece explores the emotional tension between love and betrayal through a carefully curated palette of warm pinks and reds against cooler grays and dark maroon. The outer frame is defined by intense, warm colors symbolizing love, creating a sense of comfort and warmth, while the inner core introduces cooler tones that reflect betrayal and isolation. The contrast between the warm and cool colors allows an exploration of emotional collision, implying a struggle between connection and detachment. The bottom-to-top flow symbolizes the rising tension of unresolved feelings, and the deliberate placement of broken pixels creates visual dissonance, reflecting imperfections and heartache. The core features a noise pattern that subtly interrupts the warm outer frame, representing the confusion that arises from betrayal. Overall, the composition embodies a dance of emotions\u2014echoing the delicate balance between love's warmth and betrayal's chill.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF69B4"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF1493"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF67C3"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFB3D9"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FF6F91"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FF5F5F"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#808080"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#696969"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#474747"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#383838"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#8B0000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#800000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#9B1414"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF4500"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#DC143C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B22222"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C71585"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FA8072"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#685454"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#5B5B5B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6C6C6C"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#929292"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A5A5A5"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#730A1A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4E1F1F"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#370404"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2B2B2C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#202020"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#141414"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#0F0F0F"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#2A0000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#3B0000"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#4D0000"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#670606"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#810606"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BF2F2F"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B74545"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B25C5C"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#4D0000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#680000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#870D0D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#9B0000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C50000"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DE2E2F"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E94545"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FA4646"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F5F5DC"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E0FFFF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B0E0E6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#EE82EE"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FF00FF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "love",
+      "betrayal"
+    ],
+    "emotionMoods": {
+      "love": [
+        "warm colors",
+        "mirrored forms",
+        "paired shapes"
+      ],
+      "betrayal": [
+        "broken heart shape",
+        "split symmetry",
+        "misaligned mirror"
+      ]
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "bottom_to_top",
+    "patterns": {
+      "love": "noise",
+      "betrayal": "teeth"
+    },
+    "edgeStyle": "thin_outline",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "seed",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d50736cb1bf9f0c02a12001b71e5f77e50a758c70cdb2c5b158bf5b9f7c1ddcf",
+  "pixelHash": "d50736cb1bf9f0c02a12001b71e5f77e50a758c70cdb2c5b158bf5b9f7c1ddcf",
+  "jsonFile": "d50736cb1bf9f0c02a12001b71e5f77e50a758c70cdb2c5b158bf5b9f7c1ddcf.json",
+  "svgFile": "d50736cb1bf9f0c02a12001b71e5f77e50a758c70cdb2c5b158bf5b9f7c1ddcf.svg",
+  "createdAt": "2026-06-01T21:44:55.154029+00:00"
+}
