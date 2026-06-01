@@ -28,6 +28,16 @@ python3 scripts/dev_server.py
 
 Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
 
+## Local Art Job GUI
+
+Run the separate local art job server when you want a basic browser UI for generator scripts:
+
+```bash
+.venv/bin/python scripts/art_job_server.py
+```
+
+Then open `http://127.0.0.1:8010/`. This server is only a local control panel for running art jobs and viewing job output/status. It is not part of the public static website.
+
 ## Generate Pixel Art Locally
 
 The project includes a local Python script for design-time art generation. It asks OpenAI for structured 8 by 8 abstract pixel art data, validates the response, checks for duplicate pixel arrangements, and saves both the JSON record and SVG image in the `art/` directory.

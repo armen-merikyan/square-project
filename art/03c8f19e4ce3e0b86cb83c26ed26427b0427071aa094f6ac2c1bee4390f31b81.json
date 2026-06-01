@@ -1,0 +1,399 @@
+{
+  "id": "03c8f19e4ce3e0b86cb83c26ed26427b0427071aa094f6ac2c1bee4390f31b81",
+  "seed": "collisions of emotion, contrast, pressure, and release | abstract variation request 78; target batch count 200",
+  "title": "Tension in Motion",
+  "reasoning": "This artwork explores the emotional collision between 'emptiness' and 'desire.' The palette of deep reds and blacks contrasted with pale blue and white suggests a battle between overwhelming pressure and the yearning for calm. The arrow shape seed informs an upward and downward movement in the pixel arrangement, creating a sense of dynamic tension. Broken pixels introduce imperfection, symbolizing the jarring nature of unfulfilled desire amid a contrasting emptiness. The flow spirals counterclockwise, enhancing the emotional journey from dense clusters to open spaces, reflecting the push and pull of emotional release.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#4DFFD2"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#99FFD2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#CCFFF7"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#CC0000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF9999"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#B2F5E0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#80E0D9"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#4DD9D5"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#9E0000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF0000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF9900"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#4DFFB7"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B3FFCC"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E1FFFA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#CCFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#660000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#992222"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CC4444"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF6666"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D9FFFF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B2FFFF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8CFFFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#A3D9D9"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#330000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#550000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#770000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#CC9999"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D4F1F1"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A6E4E4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#80D7D7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#BBCCCC"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#999999"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#212121"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#323232"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#434343"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#545454"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#656565"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#767676"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#878787"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#989898"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "emptiness": "crack",
+      "desire": "mirror"
+    },
+    "edgeStyle": "right_weighted",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "arrow",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "03c8f19e4ce3e0b86cb83c26ed26427b0427071aa094f6ac2c1bee4390f31b81",
+  "pixelHash": "03c8f19e4ce3e0b86cb83c26ed26427b0427071aa094f6ac2c1bee4390f31b81",
+  "jsonFile": "03c8f19e4ce3e0b86cb83c26ed26427b0427071aa094f6ac2c1bee4390f31b81.json",
+  "svgFile": "03c8f19e4ce3e0b86cb83c26ed26427b0427071aa094f6ac2c1bee4390f31b81.svg",
+  "createdAt": "2026-06-01T09:13:32.751948+00:00"
+}
