@@ -1,0 +1,339 @@
+{
+  "emotions": [
+    "joy",
+    "grief",
+    "rage",
+    "calm",
+    "fear",
+    "hope",
+    "loneliness",
+    "love",
+    "envy",
+    "shame",
+    "pride",
+    "confusion",
+    "relief",
+    "panic",
+    "trust",
+    "betrayal",
+    "awe",
+    "emptiness",
+    "desire",
+    "defiance",
+    "nostalgia",
+    "curiosity",
+    "guilt",
+    "peace"
+  ],
+  "emotional_contrasts": [
+    ["joy", "grief"],
+    ["rage", "calm"],
+    ["fear", "hope"],
+    ["love", "betrayal"],
+    ["loneliness", "connection"],
+    ["panic", "control"],
+    ["shame", "pride"],
+    ["envy", "gratitude"],
+    ["confusion", "clarity"],
+    ["emptiness", "desire"],
+    ["trust", "suspicion"],
+    ["nostalgia", "progress"],
+    ["awe", "terror"],
+    ["defiance", "submission"],
+    ["relief", "dread"]
+  ],
+  "visual_moods": {
+    "joy": ["bright", "open", "rounded", "expanding", "spark-like"],
+    "grief": ["drooping", "heavy", "low", "fragmented", "blue-toned"],
+    "rage": ["sharp", "red", "explosive", "diagonal", "compressed"],
+    "calm": ["horizontal", "soft", "symmetrical", "low contrast", "spaced out"],
+    "fear": ["dark corners", "thin lines", "empty center", "jagged edges"],
+    "hope": ["rising", "small light", "center glow", "upward flow"],
+    "loneliness": ["single dot", "large negative space", "off-center"],
+    "love": ["paired shapes", "warm colors", "mirrored forms"],
+    "betrayal": ["split symmetry", "broken heart shape", "misaligned mirror"],
+    "confusion": ["overlapping paths", "broken grid", "false symmetry"]
+  },
+  "flows": [
+    "left_to_right",
+    "right_to_left",
+    "top_to_bottom",
+    "bottom_to_top",
+    "center_outward",
+    "outside_inward",
+    "spiral_clockwise",
+    "spiral_counterclockwise",
+    "diagonal_rise",
+    "diagonal_fall",
+    "wave_horizontal",
+    "wave_vertical",
+    "zigzag",
+    "scatter",
+    "collapse",
+    "burst",
+    "orbit",
+    "pulse",
+    "drip",
+    "climb"
+  ],
+  "pattern_types": [
+    "checker",
+    "stripes",
+    "dots",
+    "broken_dots",
+    "crosshatch",
+    "stairs",
+    "maze",
+    "frame",
+    "ring",
+    "target",
+    "split_screen",
+    "mirror",
+    "radial",
+    "noise",
+    "grid",
+    "crack",
+    "flame",
+    "rain",
+    "teeth",
+    "spark"
+  ],
+  "edge_styles": [
+    "soft_edges",
+    "hard_edges",
+    "jagged_edges",
+    "burned_edges",
+    "glowing_edges",
+    "broken_edges",
+    "pixel_bleed",
+    "thin_outline",
+    "thick_outline",
+    "no_outline",
+    "corner_heavy",
+    "center_heavy",
+    "top_weighted",
+    "bottom_weighted",
+    "left_weighted",
+    "right_weighted"
+  ],
+  "compositional_arguments": [
+    {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart.",
+      "good_for": ["calm_vs_panic", "control_vs_fear", "trust_vs_suspicion"]
+    },
+    {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass.",
+      "good_for": ["hope_vs_grief", "relief_vs_dread"]
+    },
+    {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels.",
+      "good_for": ["loneliness", "fear", "defiance"]
+    },
+    {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side.",
+      "good_for": ["betrayal", "confusion", "shame_vs_pride"]
+    },
+    {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other.",
+      "good_for": ["hope_vs_grief", "pride_vs_shame"]
+    },
+    {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection.",
+      "good_for": ["fear", "love", "loneliness", "trust"]
+    }
+  ],
+  "shape_seeds": [
+    "single_pixel",
+    "pair_of_pixels",
+    "line",
+    "broken_line",
+    "corner_block",
+    "tiny_cross",
+    "tiny_plus",
+    "diamond",
+    "square_frame",
+    "filled_square",
+    "half_square",
+    "stair_step",
+    "arrow",
+    "tiny_face",
+    "eye",
+    "mouth",
+    "tear",
+    "flame",
+    "wave",
+    "crack",
+    "door",
+    "window",
+    "crown",
+    "heart_fragment",
+    "seed",
+    "star",
+    "moon",
+    "hole",
+    "wall",
+    "bridge"
+  ],
+  "contrast_types": [
+    "warm_vs_cool",
+    "light_vs_dark",
+    "dense_vs_empty",
+    "sharp_vs_soft",
+    "centered_vs_off_center",
+    "symmetrical_vs_broken",
+    "rising_vs_falling",
+    "full_vs_hollow",
+    "single_vs_many",
+    "stable_vs_unstable",
+    "straight_vs_curved",
+    "open_vs_closed",
+    "safe_vs_threatened",
+    "hidden_vs_exposed"
+  ],
+  "color_palettes": [
+    {
+      "name": "joy_grief",
+      "colors": ["yellow", "orange", "deep_blue", "muted_purple"]
+    },
+    {
+      "name": "rage_calm",
+      "colors": ["red", "black", "pale_blue", "white"]
+    },
+    {
+      "name": "fear_hope",
+      "colors": ["black", "dark_violet", "soft_gold", "pale_green"]
+    },
+    {
+      "name": "love_betrayal",
+      "colors": ["pink", "red", "gray", "dark_maroon"]
+    },
+    {
+      "name": "lonely_signal",
+      "colors": ["navy", "black", "single_white", "dim_cyan"]
+    },
+    {
+      "name": "broken_memory",
+      "colors": ["sepia", "tan", "dust_gray", "faded_blue"]
+    },
+    {
+      "name": "machine_emotion",
+      "colors": ["lime", "black", "electric_blue", "magenta"]
+    },
+    {
+      "name": "ancient_fire",
+      "colors": ["burnt_orange", "dark_red", "charcoal", "gold"]
+    }
+  ],
+  "8x8_layout_templates": [
+    {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    }
+  ],
+  "random_generation_rules": [
+    "Pick 1 emotional contrast.",
+    "Pick 1 layout template.",
+    "Pick 1 flow.",
+    "Pick 1 pattern type for emotion A.",
+    "Pick 1 pattern type for emotion B.",
+    "Pick 1 edge style.",
+    "Pick 1 contrast type.",
+    "Pick 1 shape seed as the central object.",
+    "Apply 1 to 6 broken pixels to create imperfection.",
+    "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+  ],
+  "example_combinations": [
+    {
+      "title": "Tiny Hope Under Pressure",
+      "emotion_pair": ["fear", "hope"],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    {
+      "title": "Broken Love",
+      "emotion_pair": ["love", "betrayal"],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    {
+      "title": "Rage Entering Calm",
+      "emotion_pair": ["rage", "calm"],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    {
+      "title": "Lonely Signal",
+      "emotion_pair": ["loneliness", "connection"],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    {
+      "title": "Pride Falling Into Shame",
+      "emotion_pair": ["pride", "shame"],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    }
+  ]
+}

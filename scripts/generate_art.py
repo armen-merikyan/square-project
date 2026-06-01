@@ -17,6 +17,7 @@ import datetime as dt
 import hashlib
 import json
 import os
+import random
 import re
 import ssl
 import sys
@@ -32,6 +33,7 @@ from xml.sax.saxutils import escape
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ART_DIR = PROJECT_ROOT / "art"
 ENV_PATH = PROJECT_ROOT / ".env"
+SEED_LIBRARY_PATH = PROJECT_ROOT / "scripts" / "seed.json"
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
 REQUEST_TIMEOUT_SECONDS = 30
 MAX_ATTEMPTS = 3
@@ -56,6 +58,17 @@ def main() -> int:
         default=5,
         help="Number of OpenAI requests to run at the same time.",
     )
+    parser.add_argument(
+        "--seed-library",
+        type=Path,
+        default=SEED_LIBRARY_PATH,
+        help="JSON library of emotions, layouts, palettes, and pattern constraints.",
+    )
+    parser.add_argument(
+        "--no-seed-library",
+        action="store_true",
+        help="Use only the freeform text seed and skip scripts/seed.json art direction.",
+    )
     parser.add_argument("seed", nargs="+", help="Text seed to guide the generated pixel art.")
     args = parser.parse_args()
 
@@ -76,6 +89,14 @@ def main() -> int:
         return 1
 
     ART_DIR.mkdir(parents=True, exist_ok=True)
+
+    seed_library = None
+    if not args.no_seed_library:
+        seed_library = load_seed_library(args.seed_library)
+        if seed_library:
+            print(f"Loaded seed library: {args.seed_library}", flush=True)
+        else:
+            print(f"No seed library loaded from {args.seed_library}; using text seed only.", flush=True)
 
     existing_hashes = load_existing_hashes(ART_DIR)
     created = 0
@@ -108,6 +129,7 @@ def main() -> int:
                         api_key=api_key,
                         model=model,
                         seed_text=iteration_seed,
+                        seed_library=seed_library,
                         existing_hashes=existing_hashes,
                         hash_lock=hash_lock,
                     )
@@ -137,9 +159,11 @@ def generate_one(
     api_key: str,
     model: str,
     seed_text: str,
+    seed_library: dict[str, Any] | None,
     existing_hashes: set[str],
     hash_lock: Lock,
 ) -> bool:
+    generation_spec = build_generation_spec(seed_text, seed_library)
     generated = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
@@ -147,6 +171,7 @@ def generate_one(
                 api_key=api_key,
                 model=model,
                 seed_text=seed_text,
+                generation_spec=generation_spec,
                 requested_id="pending-content-key",
             )
             break
@@ -158,6 +183,8 @@ def generate_one(
     if generated is None:
         raise RuntimeError("OpenAI request did not return a response.")
     art = normalize_and_validate_art(generated, seed_text)
+    if generation_spec:
+        art["generationSpec"] = generation_spec
     art_key = hash_pixels(art["pixels"])
 
     with hash_lock:
@@ -202,7 +229,211 @@ def load_env(path: Path) -> dict[str, str]:
     return values
 
 
-def request_pixel_art(api_key: str, model: str, seed_text: str, requested_id: str) -> dict[str, Any]:
+def load_seed_library(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+
+    try:
+        library = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise ValueError(f"Seed library is not valid JSON: {path}") from error
+
+    if not isinstance(library, dict):
+        raise ValueError(f"Seed library must be a JSON object: {path}")
+
+    return library
+
+
+def build_generation_spec(seed_text: str, library: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not library:
+        return None
+
+    rng = random.Random(hashlib.sha256(seed_text.encode("utf-8")).hexdigest())
+    emotion_pair = choose_emotion_pair(rng, library, seed_text)
+    emotion_a = str(emotion_pair[0]) if len(emotion_pair) > 0 else "curiosity"
+    emotion_b = str(emotion_pair[1]) if len(emotion_pair) > 1 else "peace"
+    palette = choose_palette(rng, library, emotion_a, emotion_b)
+    composition = choose_composition(rng, library, emotion_a, emotion_b)
+
+    return {
+        "emotionPair": [emotion_a, emotion_b],
+        "emotionMoods": {
+            emotion_a: choose_many(rng, library.get("visual_moods", {}).get(emotion_a), 3),
+            emotion_b: choose_many(rng, library.get("visual_moods", {}).get(emotion_b), 3),
+        },
+        "layout": choose_named(rng, library.get("8x8_layout_templates")),
+        "flow": choose(rng, library.get("flows"), "center_outward"),
+        "patterns": {
+            emotion_a: choose(rng, library.get("pattern_types"), "grid"),
+            emotion_b: choose(rng, library.get("pattern_types"), "noise"),
+        },
+        "edgeStyle": choose(rng, library.get("edge_styles"), "hard_edges"),
+        "contrastType": choose(rng, library.get("contrast_types"), "light_vs_dark"),
+        "shapeSeed": choose(rng, library.get("shape_seeds"), "single_pixel"),
+        "composition": composition,
+        "palette": palette,
+        "referenceExample": choose_reference_example(rng, library, emotion_a, emotion_b),
+        "generationRules": [str(rule) for rule in library.get("random_generation_rules", [])],
+        "brokenPixels": rng.randint(1, 6),
+        "negativeSpaceRule": (
+            "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+        ),
+    }
+
+
+def choose_emotion_pair(rng: random.Random, library: dict[str, Any], seed_text: str) -> Any:
+    contrasts = library.get("emotional_contrasts")
+    if not isinstance(contrasts, list) or not contrasts:
+        return ["curiosity", "peace"]
+
+    seed_lower = seed_text.lower()
+    known_emotions = set(str(emotion).lower() for emotion in library.get("emotions", []))
+    for contrast in contrasts:
+        if isinstance(contrast, list):
+            known_emotions.update(str(emotion).lower() for emotion in contrast)
+
+    mentioned = {
+        emotion
+        for emotion in known_emotions
+        if re.search(rf"\b{re.escape(emotion)}\b", seed_lower)
+    }
+
+    if len(mentioned) >= 2:
+        exact_matches = [
+            contrast
+            for contrast in contrasts
+            if isinstance(contrast, list)
+            and len(contrast) >= 2
+            and {str(contrast[0]).lower(), str(contrast[1]).lower()} <= mentioned
+        ]
+        if exact_matches:
+            return rng.choice(exact_matches)
+
+    if mentioned:
+        partial_matches = [
+            contrast
+            for contrast in contrasts
+            if isinstance(contrast, list)
+            and any(str(emotion).lower() in mentioned for emotion in contrast)
+        ]
+        if partial_matches:
+            return rng.choice(partial_matches)
+
+    return choose(rng, contrasts, ["curiosity", "peace"])
+
+
+def choose(rng: random.Random, values: Any, fallback: Any) -> Any:
+    if isinstance(values, list) and values:
+        return rng.choice(values)
+    return fallback
+
+
+def choose_many(rng: random.Random, values: Any, count: int) -> list[str]:
+    if not isinstance(values, list) or not values:
+        return []
+    sample_size = min(count, len(values))
+    return [str(value) for value in rng.sample(values, sample_size)]
+
+
+def choose_named(rng: random.Random, values: Any) -> dict[str, str]:
+    value = choose(rng, values, {"name": "argument_grid", "description": "Two patterns fight for control."})
+    if isinstance(value, dict):
+        return {
+            "name": str(value.get("name") or "argument_grid"),
+            "description": str(value.get("description") or ""),
+        }
+    return {"name": str(value), "description": ""}
+
+
+def choose_palette(rng: random.Random, library: dict[str, Any], emotion_a: str, emotion_b: str) -> dict[str, Any]:
+    palettes = library.get("color_palettes")
+    if not isinstance(palettes, list) or not palettes:
+        return {"name": "model_selected", "colors": []}
+
+    pair_tokens = {emotion_a.lower(), emotion_b.lower()}
+    matching = []
+    for palette in palettes:
+        if not isinstance(palette, dict):
+            continue
+        name_tokens = set(str(palette.get("name", "")).lower().split("_"))
+        if pair_tokens & name_tokens:
+            matching.append(palette)
+
+    selected = rng.choice(matching or palettes)
+    return {
+        "name": str(selected.get("name") or "unnamed_palette"),
+        "colors": [str(color) for color in selected.get("colors", [])],
+    }
+
+
+def choose_composition(rng: random.Random, library: dict[str, Any], emotion_a: str, emotion_b: str) -> dict[str, Any]:
+    arguments = library.get("compositional_arguments")
+    if not isinstance(arguments, list) or not arguments:
+        return {"name": "emotion_vs_emotion", "idea": "Two emotional patterns compete inside the grid."}
+
+    pair_key = f"{emotion_a}_vs_{emotion_b}".lower()
+    reverse_pair_key = f"{emotion_b}_vs_{emotion_a}".lower()
+    matching = []
+    for argument in arguments:
+        if not isinstance(argument, dict):
+            continue
+        good_for = [str(value).lower() for value in argument.get("good_for", [])]
+        if pair_key in good_for or reverse_pair_key in good_for or emotion_a.lower() in good_for or emotion_b.lower() in good_for:
+            matching.append(argument)
+
+    selected = rng.choice(matching or arguments)
+    return {
+        "name": str(selected.get("name") or "emotion_vs_emotion"),
+        "idea": str(selected.get("idea") or "Two emotional patterns compete inside the grid."),
+    }
+
+
+def choose_reference_example(
+    rng: random.Random,
+    library: dict[str, Any],
+    emotion_a: str,
+    emotion_b: str,
+) -> dict[str, Any] | None:
+    examples = library.get("example_combinations")
+    if not isinstance(examples, list) or not examples:
+        return None
+
+    pair_tokens = {emotion_a.lower(), emotion_b.lower()}
+    matching = []
+    for example in examples:
+        if not isinstance(example, dict):
+            continue
+        example_pair = {str(emotion).lower() for emotion in example.get("emotion_pair", [])}
+        if pair_tokens & example_pair:
+            matching.append(example)
+
+    selected = rng.choice(matching or examples)
+    return {
+        "title": str(selected.get("title") or "Untitled reference"),
+        "emotionPair": [str(emotion) for emotion in selected.get("emotion_pair", [])],
+        "layout": str(selected.get("layout") or ""),
+        "flow": str(selected.get("flow") or ""),
+        "pattern": str(selected.get("pattern") or ""),
+        "edge": str(selected.get("edge") or ""),
+        "shape": str(selected.get("shape") or ""),
+        "palette": str(selected.get("palette") or ""),
+    }
+
+
+def generation_spec_text(spec: dict[str, Any] | None) -> str:
+    if not spec:
+        return "No local seed library constraints were provided."
+
+    return json.dumps(spec, indent=2, sort_keys=True)
+
+
+def request_pixel_art(
+    api_key: str,
+    model: str,
+    seed_text: str,
+    generation_spec: dict[str, Any] | None,
+    requested_id: str,
+) -> dict[str, Any]:
     payload = {
         "model": model,
         "input": [
@@ -234,6 +465,11 @@ def request_pixel_art(api_key: str, model: str, seed_text: str, requested_id: st
 Requested ID: {requested_id}
 
 Create an abstract 8x8 color composition. Before choosing pixels, translate the seed into emotional tone, pattern logic, contrast, and collisions of feeling. Do not treat the seed as an object to draw.
+
+Local seed library art direction:
+{generation_spec_text(generation_spec)}
+
+Use the local seed library art direction as concrete constraints for the composition: emotion pair, layout, flow, pattern types, edge style, contrast type, palette family, broken pixels, and negative space. The final square should still be abstract and should not draw a literal icon for the shape seed.
 
 If the seed contains concrete nouns, convert them into abstract qualities:
 - city becomes compression, glow, grid pressure, signal noise, or waking density

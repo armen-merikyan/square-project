@@ -52,6 +52,15 @@ Generate multiple unique variations from one seed:
 .venv/bin/python scripts/generate_art.py --count 40 "collisions of emotion, contrast, pressure, and release"
 ```
 
+By default, the generator also loads `scripts/seed.json` as a local art-direction library. For each request it deterministically samples an emotional contrast, 8 by 8 layout, flow, pattern pair, edge style, contrast type, shape seed, palette family, broken-pixel count, and negative-space rule. That structured brief is sent to the model and saved in each generated JSON file as `generationSpec`, which makes batches more varied and easier to audit.
+
+Use a different library or skip it:
+
+```bash
+.venv/bin/python scripts/generate_art.py --seed-library scripts/seed.json "fear becoming hope"
+.venv/bin/python scripts/generate_art.py --no-seed-library "fear becoming hope"
+```
+
 The script creates separate JSON and SVG files named after the artwork's pixel hash key:
 
 ```text

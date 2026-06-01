@@ -15,6 +15,11 @@ const prevButton = document.querySelector("#prevArtwork");
 
 let activeIndex = 0;
 let autoAdvanceId;
+let isAdvancing = false;
+let dragStartX = 0;
+let dragStartY = 0;
+let isDragging = false;
+let didDrag = false;
 
 function normalizeIndex(index) {
   return (index + artworks.length) % artworks.length;
@@ -102,9 +107,14 @@ async function renderCarousel() {
     image.decoding = "async";
 
     slide.append(image, createMetadataOverlay(record, index));
-    slide.addEventListener("click", () => {
+    slide.addEventListener("click", (event) => {
+      if (didDrag) {
+        event.preventDefault();
+        return;
+      }
+
       if (index !== activeIndex) {
-        setActive(index);
+        advanceTo(index);
         restartAutoAdvance();
       }
     });
@@ -116,7 +126,7 @@ async function renderCarousel() {
     dot.type = "button";
     dot.setAttribute("aria-label", `Show artwork ${index + 1}`);
     dot.addEventListener("click", () => {
-      setActive(index);
+      advanceTo(index);
       restartAutoAdvance();
     });
     dots.appendChild(dot);
@@ -134,10 +144,12 @@ function setActive(index) {
   slides.forEach((slide, slideIndex) => {
     const offset = shortestOffset(slideIndex);
     const absoluteOffset = Math.abs(offset);
-    const hidden = Math.abs(offset) > 1;
+    const direction = Math.sign(offset);
+    const hidden = Math.abs(offset) > 2;
 
     slide.style.setProperty("--offset", offset);
     slide.style.setProperty("--abs-offset", absoluteOffset);
+    slide.style.setProperty("--direction", direction);
     slide.dataset.offset = String(offset);
     slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
     slide.classList.toggle("is-active", slideIndex === activeIndex);
@@ -152,15 +164,28 @@ function setActive(index) {
   counter.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(artworks.length).padStart(2, "0")}`;
 }
 
+function advanceTo(index) {
+  if (isAdvancing) {
+    return;
+  }
+
+  isAdvancing = true;
+  setActive(index);
+  window.setTimeout(() => {
+    isAdvancing = false;
+  }, 620);
+}
+
 function nextArtwork() {
-  setActive(activeIndex + 1);
+  advanceTo(activeIndex + 1);
 }
 
 function previousArtwork() {
-  setActive(activeIndex - 1);
+  advanceTo(activeIndex - 1);
 }
 
 function startAutoAdvance() {
+  window.clearInterval(autoAdvanceId);
   autoAdvanceId = window.setInterval(nextArtwork, 4200);
 }
 
@@ -193,6 +218,49 @@ document.addEventListener("keydown", (event) => {
 
 coverflow.addEventListener("mouseenter", () => window.clearInterval(autoAdvanceId));
 coverflow.addEventListener("mouseleave", startAutoAdvance);
+
+coverflow.addEventListener("pointerdown", (event) => {
+  dragStartX = event.clientX;
+  dragStartY = event.clientY;
+  isDragging = true;
+  didDrag = false;
+  window.clearInterval(autoAdvanceId);
+  coverflow.setPointerCapture(event.pointerId);
+});
+
+coverflow.addEventListener("pointermove", (event) => {
+  if (!isDragging) {
+    return;
+  }
+
+  if (Math.abs(event.clientX - dragStartX) > 8 || Math.abs(event.clientY - dragStartY) > 8) {
+    didDrag = true;
+  }
+});
+
+coverflow.addEventListener("pointerup", (event) => {
+  if (!isDragging) {
+    return;
+  }
+
+  const dragX = event.clientX - dragStartX;
+  const dragY = event.clientY - dragStartY;
+  isDragging = false;
+
+  if (Math.abs(dragX) > 42 && Math.abs(dragX) > Math.abs(dragY)) {
+    dragX < 0 ? nextArtwork() : previousArtwork();
+  }
+
+  restartAutoAdvance();
+  window.setTimeout(() => {
+    didDrag = false;
+  }, 0);
+});
+
+coverflow.addEventListener("pointercancel", () => {
+  isDragging = false;
+  restartAutoAdvance();
+});
 
 renderCarousel().catch((error) => {
   coverflow.innerHTML = `<p class="carousel-error">${error.message}</p>`;

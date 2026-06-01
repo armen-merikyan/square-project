@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Square Project</title>
+    <meta
+      name="description"
+      content="Browse the Square Project image gallery and inspect each artwork's structured JSON metadata."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Square Project home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Square Project</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#data">Pixel Data</a>
+        <a href="index.html#identity">Identity</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-hero">
+        <div>
+          <p class="eyebrow">Complete collection</p>
+          <h1>Gallery of generated square worlds.</h1>
+        </div>
+        <p>
+          Select an image to inspect the artwork, its source JSON, color language, and generation
+          reasoning as a curated record.
+        </p>
+      </section>
+
+      <section class="gallery-workspace" aria-label="Artwork gallery">
+        <div class="gallery-panel">
+          <div class="gallery-toolbar">
+            <div>
+              <p class="eyebrow">Artwork index</p>
+              <h2>All squares</h2>
+            </div>
+            <output id="galleryCount" aria-live="polite">Loading</output>
+          </div>
+          <div class="art-grid" id="artGrid" aria-live="polite"></div>
+        </div>
+
+        <aside class="art-inspector" id="artInspector" aria-live="polite">
+          <p class="gallery-empty">Choose a square from the grid.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>Square Project. Digital squares, pixel worlds, and collectible 8 by 8 art.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
