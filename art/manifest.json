@@ -1081,5 +1081,23 @@
     "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
     "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22"
   ],
-  "count": 1080
+  "count": 1080,
+  "chunkSize": 500,
+  "chunks": [
+    {
+      "path": "art/manifest-chunks/00000.json",
+      "count": 500,
+      "start": 0
+    },
+    {
+      "path": "art/manifest-chunks/00001.json",
+      "count": 500,
+      "start": 500
+    },
+    {
+      "path": "art/manifest-chunks/00002.json",
+      "count": 80,
+      "start": 1000
+    }
+  ]
 }

@@ -60,6 +60,8 @@ const colorSimilarity = document.querySelector("#colorSimilarity");
 const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 
 const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
+const COLOR_FILTER_RENDER_LIMIT = 600;
+const CHUNK_RENDER_INTERVAL = 10;
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 let galleryRecords = [];
@@ -74,6 +76,8 @@ let colorFiltersVisible = true;
 let colorSimilarityThreshold = Number(colorSimilarity.value);
 let selectedShopVariant = "print";
 let selectedFrameType = "black";
+let galleryLoadComplete = false;
+const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
 
@@ -177,7 +181,7 @@ function recordSearchText(record) {
     .toLowerCase();
 }
 
-async function fetchArtworkIds() {
+async function fetchGalleryManifest() {
   const manifestUrl = `${GALLERY_MANIFEST_PATH}?v=${MANIFEST_CACHE_BUSTER}`;
   const response = await fetch(manifestUrl, { cache: "no-store" });
 
@@ -185,7 +189,11 @@ async function fetchArtworkIds() {
     throw new Error("Unable to load art manifest.");
   }
 
-  const manifest = await response.json();
+  return response.json();
+}
+
+async function fetchArtworkIds() {
+  const manifest = await fetchGalleryManifest();
   const ids = Array.isArray(manifest) ? manifest : manifest.artworkIds;
 
   if (!Array.isArray(ids) || ids.length === 0) {
@@ -196,13 +204,42 @@ async function fetchArtworkIds() {
 }
 
 async function fetchArtwork(id) {
+  if (fullArtworkCache.has(id)) {
+    return fullArtworkCache.get(id);
+  }
+
   const response = await fetch(`art/${id}.json`);
 
   if (!response.ok) {
     throw new Error(`Unable to load ${id}.json`);
   }
 
-  return response.json();
+  const record = await response.json();
+  fullArtworkCache.set(id, record);
+  return record;
+}
+
+async function fetchArtworkChunk(chunk) {
+  const separator = chunk.path.includes("?") ? "&" : "?";
+  const response = await fetch(`${chunk.path}${separator}v=${MANIFEST_CACHE_BUSTER}`);
+
+  if (!response.ok) {
+    throw new Error(`Unable to load ${chunk.path}`);
+  }
+
+  const data = await response.json();
+  return Array.isArray(data) ? data : data.records;
+}
+
+function yieldToBrowser() {
+  return new Promise((resolve) => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(resolve, { timeout: 120 });
+      return;
+    }
+
+    window.setTimeout(resolve, 0);
+  });
 }
 
 function makeMetric(label, value, options = {}) {
@@ -504,7 +541,7 @@ function colorUsage(records) {
   const usage = new Map();
 
   records.forEach((record) => {
-    record.colors.forEach((color) => {
+    (record.colors || []).forEach((color) => {
       usage.set(color, (usage.get(color) || 0) + 1);
     });
   });
@@ -514,17 +551,6 @@ function colorUsage(records) {
 
 function buildColorBuckets(records, threshold) {
   const buckets = [];
-  const colorRecordIndexes = new Map();
-
-  records.forEach((record, index) => {
-    record.colors.forEach((color) => {
-      if (!colorRecordIndexes.has(color)) {
-        colorRecordIndexes.set(color, new Set());
-      }
-
-      colorRecordIndexes.get(color).add(index);
-    });
-  });
 
   colorUsage(records).forEach(([color, count]) => {
     let closestBucket = null;
@@ -555,11 +581,27 @@ function buildColorBuckets(records, threshold) {
   buckets.forEach((bucket) => {
     bucket.colors.sort((a, b) => a.localeCompare(b));
     bucket.key = bucketKey(bucket.colors);
-    const recordIndexes = new Set();
-    bucket.colors.forEach((color) => {
-      colorRecordIndexes.get(color)?.forEach((index) => recordIndexes.add(index));
+    bucket.count = 0;
+  });
+
+  const colorToBucketKey = new Map();
+  buckets.forEach((bucket) => {
+    bucket.colors.forEach((color) => colorToBucketKey.set(color, bucket.key));
+  });
+
+  const bucketByKey = new Map(buckets.map((bucket) => [bucket.key, bucket]));
+  records.forEach((record) => {
+    const matchedBucketKeys = new Set();
+    (record.colors || []).forEach((color) => {
+      const key = colorToBucketKey.get(color);
+
+      if (key) {
+        matchedBucketKeys.add(key);
+      }
     });
-    bucket.count = recordIndexes.size;
+    matchedBucketKeys.forEach((key) => {
+      bucketByKey.get(key).count += 1;
+    });
   });
 
   buckets.sort((a, b) =>
@@ -695,7 +737,7 @@ async function copyTextToClipboard(text) {
 function renderColorFilters() {
   colorFilterList.replaceChildren();
 
-  colorBuckets.forEach((bucket) => {
+  colorBuckets.slice(0, COLOR_FILTER_RENDER_LIMIT).forEach((bucket) => {
     const state = colorFilterState(bucket.colors);
     const color = bucket.representative;
     const colorLabel = bucket.colors.length === 1
@@ -768,6 +810,13 @@ function renderColorFilters() {
     item.appendChild(swatch);
     colorFilterList.appendChild(item);
   });
+
+  if (colorBuckets.length > COLOR_FILTER_RENDER_LIMIT) {
+    const overflow = document.createElement("p");
+    overflow.className = "filter-overflow";
+    overflow.textContent = `${colorBuckets.length - COLOR_FILTER_RENDER_LIMIT} lower-frequency colors hidden. Search still covers every loaded artwork.`;
+    colorFilterList.appendChild(overflow);
+  }
 }
 
 function closeInspector() {
@@ -887,7 +936,23 @@ function setArtworkUrl(record) {
   window.history.replaceState({}, "", url);
 }
 
-function openGalleryRecord(record, { updateUrl = false } = {}) {
+async function getFullArtworkRecord(record) {
+  if (record.pixels) {
+    return record;
+  }
+
+  const fullRecord = await fetchArtwork(record.id);
+  const colors = fullRecord.colors || uniqueColors(fullRecord.pixels);
+  return {
+    ...record,
+    ...fullRecord,
+    colors,
+    colorSet: new Set(colors),
+    searchText: recordSearchText({ ...fullRecord, colors })
+  };
+}
+
+async function openGalleryRecord(record, { updateUrl = false } = {}) {
   const recordIndex = filteredRecords.findIndex((item) => item.id === record.id);
 
   if (recordIndex >= 0) {
@@ -899,11 +964,22 @@ function openGalleryRecord(record, { updateUrl = false } = {}) {
     setArtworkUrl(record);
   }
 
-  renderInspector(record);
+  const fullRecord = await getFullArtworkRecord(record);
+  renderInspector(fullRecord);
 
   const selectedCard = [...document.querySelectorAll(".gallery-card")]
     .find((card) => card.dataset.id === record.id);
   selectedCard?.scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
+function renderCardImage(record) {
+  const image = document.createElement("img");
+  image.className = "gallery-card-image";
+  image.src = `art/${record.id}.svg`;
+  image.alt = `${record.title || "Square artwork"} artwork`;
+  image.decoding = "async";
+  image.loading = "lazy";
+  return image;
 }
 
 function renderCard(record, index) {
@@ -919,10 +995,14 @@ function renderCard(record, index) {
   title.type = "button";
   title.textContent = record.title || `Square ${index + 1}`;
   title.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-  title.addEventListener("click", () => openGalleryRecord(record, { updateUrl: true }));
+  title.addEventListener("click", () => {
+    openGalleryRecord(record, { updateUrl: true }).catch((error) => {
+      artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
+    });
+  });
 
   meta.append(title);
-  card.append(renderPixelArtwork(record), meta);
+  card.append(renderCardImage(record), meta);
 
   return card;
 }
@@ -986,10 +1066,11 @@ function renderCurrentPage() {
   const pageRecords = filteredRecords.slice(start, start + pageSize);
   const query = gallerySearch.value.trim();
   const hasColorFilters = includedColorSeeds.size > 0 || excludedColorSeeds.size > 0;
+  const loadingSuffix = galleryLoadComplete ? "" : " loaded";
 
   galleryCount.textContent = query || hasColorFilters
-    ? `${filteredRecords.length} of ${galleryRecords.length} artworks`
-    : `${galleryRecords.length} artworks`;
+    ? `${filteredRecords.length} of ${galleryRecords.length}${loadingSuffix} artworks`
+    : `${galleryRecords.length}${loadingSuffix} artworks`;
 
   if (pageRecords.length === 0) {
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
@@ -1009,7 +1090,7 @@ function renderCurrentPage() {
   });
 }
 
-function applyFilters() {
+function applyFilters({ renderFilters = true } = {}) {
   const terms = gallerySearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const includedGroups = selectedColorGroups(includedColorSeeds);
   const excludedGroups = selectedColorGroups(excludedColorSeeds);
@@ -1021,12 +1102,33 @@ function applyFilters() {
     return matchesText && matchesIncluded && matchesExcluded;
   });
   currentPage = 1;
-  renderColorFilters();
+  if (renderFilters) {
+    renderColorFilters();
+  }
+
   renderCurrentPage();
+}
+
+function normalizeGalleryRecord(record) {
+  const colors = record.colors || uniqueColors(record.pixels);
+  const normalizedColors = colors.map(normalizeColor).filter(Boolean);
+
+  return {
+    ...record,
+    colors: normalizedColors,
+    colorSet: new Set(normalizedColors),
+    searchText: recordSearchText({ ...record, colors: normalizedColors })
+  };
+}
+
+function rebuildGalleryIndexes({ renderFilters = true } = {}) {
+  buildColorBuckets(galleryRecords, colorSimilarityThreshold);
+  applyFilters({ renderFilters });
 }
 
 async function renderGallery() {
   const startedAt = performance.now();
+  const requestedId = new URLSearchParams(window.location.search).get("art");
   galleryCount.textContent = "Loading";
   artGrid.replaceChildren();
   galleryPagination.replaceChildren();
@@ -1036,31 +1138,88 @@ async function renderGallery() {
     startedAt
   });
 
-  const artworkIds = await fetchArtworkIds();
+  const manifest = await fetchGalleryManifest();
+  const artworkIds = Array.isArray(manifest) ? manifest : manifest.artworkIds;
+
+  if (!Array.isArray(artworkIds) || artworkIds.length === 0) {
+    throw new Error("Art manifest does not include any artwork ids.");
+  }
+
   galleryCount.textContent = `0 / ${artworkIds.length}`;
   updateGalleryLoading({
     title: "Loading artwork records",
-    step: `Found ${artworkIds.length} artworks. Downloading metadata files.`,
+    step: `Found ${artworkIds.length} artworks. Loading metadata chunks.`,
     loaded: 0,
     total: artworkIds.length,
     startedAt
   });
 
   let loadedArtworkCount = 0;
-  const rawRecords = await Promise.all(artworkIds.map((id) =>
-    fetchArtwork(id).then((record) => {
-      loadedArtworkCount += 1;
+  const chunks = !Array.isArray(manifest) && Array.isArray(manifest.chunks) ? manifest.chunks : [];
+
+  if (chunks.length > 0) {
+    for (const [chunkIndex, chunk] of chunks.entries()) {
+      const records = await fetchArtworkChunk(chunk);
+      const normalizedRecords = records.map(normalizeGalleryRecord);
+      galleryRecords.push(...normalizedRecords);
+      loadedArtworkCount += normalizedRecords.length;
       galleryCount.textContent = `${loadedArtworkCount} / ${artworkIds.length}`;
       updateGalleryLoading({
         title: "Loading artwork records",
-        step: `Reading ${compactId(id)}.json and checking pixel data.`,
+        step: `Indexed chunk ${chunkIndex + 1} of ${chunks.length}.`,
         loaded: loadedArtworkCount,
         total: artworkIds.length,
         startedAt
       });
-      return record;
-    })
-  ));
+
+      if (chunkIndex === 0 || chunkIndex % CHUNK_RENDER_INTERVAL === 0 || chunkIndex === chunks.length - 1) {
+        rebuildGalleryIndexes({ renderFilters: true });
+      }
+
+      if (chunkIndex === 0) {
+        const requestedRecord = requestedId
+          ? galleryRecords.find((record) => record.id === requestedId)
+          : null;
+
+        if (requestedRecord) {
+          openGalleryRecord(requestedRecord).catch(console.warn);
+        } else if (requestedId && artworkIds.includes(requestedId)) {
+          fetchArtwork(requestedId)
+            .then((record) => openGalleryRecord(normalizeGalleryRecord(record)))
+            .catch(console.warn);
+        }
+      }
+
+      await yieldToBrowser();
+    }
+  } else {
+    const concurrency = 12;
+    let nextIndex = 0;
+    const loadNextRecord = async () => {
+      while (nextIndex < artworkIds.length) {
+        const id = artworkIds[nextIndex];
+        nextIndex += 1;
+        const record = normalizeGalleryRecord(await fetchArtwork(id));
+        galleryRecords.push(record);
+        loadedArtworkCount += 1;
+
+        if (loadedArtworkCount % 50 === 0 || loadedArtworkCount === artworkIds.length) {
+          galleryCount.textContent = `${loadedArtworkCount} / ${artworkIds.length}`;
+          updateGalleryLoading({
+            title: "Loading artwork records",
+            step: `Reading ${compactId(id)}.json and checking pixel data.`,
+            loaded: loadedArtworkCount,
+            total: artworkIds.length,
+            startedAt
+          });
+          rebuildGalleryIndexes({ renderFilters: loadedArtworkCount % 500 === 0 });
+          await yieldToBrowser();
+        }
+      }
+    };
+
+    await Promise.all(Array.from({ length: concurrency }, loadNextRecord));
+  }
 
   updateGalleryLoading({
     title: "Building gallery tools",
@@ -1070,22 +1229,10 @@ async function renderGallery() {
     startedAt
   });
 
-  galleryRecords = rawRecords.map((record) => {
-    const colors = uniqueColors(record.pixels);
-    return {
-      ...record,
-      colors,
-      colorSet: new Set(colors),
-      searchText: recordSearchText({ ...record, colors })
-    };
-  });
-  filteredRecords = galleryRecords;
-  buildColorBuckets(galleryRecords, colorSimilarityThreshold);
-  renderColorFilters();
-  renderCurrentPage();
+  galleryLoadComplete = true;
+  rebuildGalleryIndexes({ renderFilters: true });
   galleryLoading.hidden = true;
 
-  const requestedId = new URLSearchParams(window.location.search).get("art");
   const requestedRecord = requestedId
     ? galleryRecords.find((record) => record.id === requestedId)
     : null;

@@ -999,6 +999,15 @@ footer p {
   background: #fff1f1;
 }
 
+.filter-overflow {
+  grid-column: 1 / -1;
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .color-filter-swatch {
   position: relative;
   display: block;
@@ -1290,6 +1299,17 @@ footer p {
   border: 1px solid rgba(21, 21, 21, 0.1);
   border-radius: 5px;
   background: #fff;
+  image-rendering: pixelated;
+}
+
+.gallery-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(21, 21, 21, 0.1);
+  border-radius: 5px;
+  background: #fff;
+  object-fit: cover;
   image-rendering: pixelated;
 }
 
