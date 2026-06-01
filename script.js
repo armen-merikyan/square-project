@@ -15,6 +15,7 @@ const counter = document.querySelector("#carouselCounter");
 const nextButton = document.querySelector("#nextArtwork");
 const prevButton = document.querySelector("#prevArtwork");
 const DOT_RANGE = 2;
+const CAROUSEL_TRANSITION_MS = 900;
 
 let activeIndex = 0;
 let autoAdvanceId;
@@ -160,7 +161,6 @@ async function renderCarousel() {
     });
 
     coverflow.appendChild(slide);
-
   });
 
   setActive(0);
@@ -194,10 +194,16 @@ function setActive(index) {
     const absoluteOffset = Math.abs(offset);
     const direction = Math.sign(offset);
     const hidden = Math.abs(offset) > 2;
+    const displayOffset = hidden ? direction * 3 : offset;
+    const displayAbsoluteOffset = Math.abs(displayOffset);
+    const displayDirection = Math.sign(displayOffset);
 
     slide.style.setProperty("--offset", offset);
     slide.style.setProperty("--abs-offset", absoluteOffset);
     slide.style.setProperty("--direction", direction);
+    slide.style.setProperty("--display-offset", displayOffset);
+    slide.style.setProperty("--display-abs-offset", displayAbsoluteOffset);
+    slide.style.setProperty("--display-direction", displayDirection);
     slide.dataset.offset = String(offset);
     slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
     slide.classList.toggle("is-active", slideIndex === activeIndex);
@@ -217,7 +223,7 @@ function advanceTo(index) {
   setActive(index);
   window.setTimeout(() => {
     isAdvancing = false;
-  }, 620);
+  }, CAROUSEL_TRANSITION_MS);
 }
 
 function nextArtwork() {

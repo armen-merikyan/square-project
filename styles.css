@@ -86,7 +86,7 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
   gap: clamp(28px, 4vw, 52px);
   min-height: calc(100vh - 72px);
@@ -185,6 +185,7 @@ button:hover {
 }
 
 .art-carousel {
+  min-width: 0;
   width: 100%;
   justify-self: stretch;
   overflow: hidden;
@@ -227,9 +228,12 @@ button:hover {
 }
 
 .carousel-card {
-  --tilt: calc(var(--direction) * -62deg);
-  --cover-scale: calc(1.06 - (var(--abs-offset) * 0.045));
-  --cover-depth: calc(var(--abs-offset) * -72px);
+  --display-offset: 0;
+  --display-abs-offset: 0;
+  --display-direction: 0;
+  --tilt: calc(var(--display-direction) * -58deg);
+  --cover-scale: calc(1.07 - (var(--display-abs-offset) * 0.05));
+  --cover-depth: calc(var(--display-abs-offset) * -74px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -242,10 +246,10 @@ button:hover {
   background: #fff;
   box-shadow: 0 14px 34px rgba(21, 21, 21, 0.12);
   cursor: pointer;
-  opacity: calc(1 - (var(--abs-offset) * 0.11));
+  opacity: calc(1 - (var(--display-abs-offset) * 0.13));
   transform:
     translate(-50%, -50%)
-    translateX(calc(var(--offset) * var(--cover-slot)))
+    translateX(calc(var(--display-offset) * var(--cover-slot)))
     translateZ(var(--cover-depth))
     rotateY(var(--tilt))
     scale(var(--cover-scale));
@@ -254,13 +258,13 @@ button:hover {
   transition:
     border-color 180ms ease,
     box-shadow 180ms ease,
-    filter 220ms ease,
-    opacity 520ms ease,
-    transform 760ms cubic-bezier(0.18, 0.86, 0.22, 1);
+    filter 300ms ease,
+    opacity 700ms ease,
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-box-reflect: below 12px linear-gradient(transparent 62%, rgba(255, 255, 255, 0.22));
-  z-index: calc(20 - var(--abs-offset));
+  z-index: calc(20 - var(--display-abs-offset));
 }
 
 .carousel-card.is-hidden {
@@ -279,7 +283,7 @@ button:hover {
   filter: none;
   transform:
     translate(-50%, -50%)
-    translateX(calc(var(--offset) * var(--cover-slot)))
+    translateX(calc(var(--display-offset) * var(--cover-slot)))
     translateZ(54px)
     rotateY(0deg)
     scale(1.14);
@@ -335,6 +339,8 @@ button:hover {
 }
 
 .carousel-controls {
+  position: relative;
+  z-index: 30;
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr) 44px;
   min-height: 46px;
@@ -951,6 +957,11 @@ footer p {
     inset 999px 0 0 rgba(255, 255, 255, 0.38);
 }
 
+.gallery-card:has(.gallery-card-title:hover) .gallery-pixel,
+.gallery-card:has(.gallery-card-title:focus-visible) .gallery-pixel {
+  box-shadow: none;
+}
+
 .gallery-card-meta {
   display: grid;
   gap: 3px;
@@ -1268,7 +1279,7 @@ body.has-open-inspector {
   }
 
   .art-carousel {
-    justify-self: start;
+    justify-self: stretch;
   }
 
   .inspector-frame {
