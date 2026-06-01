@@ -108,59 +108,110 @@ function colorUsage(records) {
   return [...usage.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 
+function colorFilterState(color) {
+  if (includedColors.has(color)) {
+    return "on";
+  }
+
+  if (excludedColors.has(color)) {
+    return "off";
+  }
+
+  return "neutral";
+}
+
+function cycleColorFilter(color) {
+  const state = colorFilterState(color);
+
+  if (state === "neutral") {
+    includedColors.add(color);
+    return;
+  }
+
+  if (state === "on") {
+    includedColors.delete(color);
+    excludedColors.add(color);
+    return;
+  }
+
+  excludedColors.delete(color);
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const helper = document.createElement("textarea");
+  helper.value = text;
+  helper.setAttribute("readonly", "");
+  helper.style.position = "fixed";
+  helper.style.left = "-9999px";
+  document.body.appendChild(helper);
+  helper.select();
+  document.execCommand("copy");
+  helper.remove();
+}
+
 function renderColorFilters() {
   colorFilterList.replaceChildren();
 
   colorUsage(galleryRecords).forEach(([color, count]) => {
+    const state = colorFilterState(color);
     const item = document.createElement("div");
     item.className = "color-filter-item";
+    item.dataset.state = state;
+    item.tabIndex = 0;
+    item.setAttribute("role", "button");
+    item.setAttribute("aria-label", `${color}, ${count} artworks, ${state} filter`);
+    const toggleFilter = () => {
+      cycleColorFilter(color);
+      applyFilters();
+    };
+    item.addEventListener("click", toggleFilter);
+    item.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      toggleFilter();
+    });
 
     const swatch = document.createElement("span");
     swatch.className = "color-filter-swatch";
     swatch.style.background = color;
-    swatch.setAttribute("aria-hidden", "true");
+    swatch.setAttribute("aria-label", color);
 
-    const label = document.createElement("span");
-    label.className = "color-filter-label";
-    label.textContent = color;
+    const copyButton = document.createElement("button");
+    copyButton.className = "color-filter-copy";
+    copyButton.type = "button";
+    copyButton.title = `Copy ${color}`;
+    copyButton.setAttribute("aria-label", `Copy ${color}`);
+    copyButton.textContent = "Copy";
+    copyButton.addEventListener("click", async (event) => {
+      event.stopPropagation();
+
+      try {
+        await copyTextToClipboard(color);
+        copyButton.dataset.copied = "true";
+        copyButton.setAttribute("aria-label", `Copied ${color}`);
+        window.setTimeout(() => {
+          copyButton.dataset.copied = "false";
+          copyButton.setAttribute("aria-label", `Copy ${color}`);
+        }, 1100);
+      } catch {
+        copyButton.setAttribute("aria-label", `Unable to copy ${color}`);
+      }
+    });
+    swatch.appendChild(copyButton);
 
     const total = document.createElement("span");
     total.className = "color-filter-count";
-    total.textContent = String(count);
+    total.textContent = `${count} ${count === 1 ? "artwork" : "artworks"}`;
 
-    const include = document.createElement("button");
-    include.type = "button";
-    include.className = "color-filter-action";
-    include.textContent = "+";
-    include.setAttribute("aria-label", `Include ${color}`);
-    include.classList.toggle("is-active", includedColors.has(color));
-    include.addEventListener("click", () => {
-      if (includedColors.has(color)) {
-        includedColors.delete(color);
-      } else {
-        includedColors.add(color);
-        excludedColors.delete(color);
-      }
-      applyFilters();
-    });
-
-    const exclude = document.createElement("button");
-    exclude.type = "button";
-    exclude.className = "color-filter-action";
-    exclude.textContent = "-";
-    exclude.setAttribute("aria-label", `Exclude ${color}`);
-    exclude.classList.toggle("is-active", excludedColors.has(color));
-    exclude.addEventListener("click", () => {
-      if (excludedColors.has(color)) {
-        excludedColors.delete(color);
-      } else {
-        excludedColors.add(color);
-        includedColors.delete(color);
-      }
-      applyFilters();
-    });
-
-    item.append(swatch, label, total, include, exclude);
+    item.append(swatch, total);
     colorFilterList.appendChild(item);
   });
 }

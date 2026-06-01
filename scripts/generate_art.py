@@ -29,10 +29,11 @@ from threading import Lock
 from typing import Any
 from xml.sax.saxutils import escape
 
+from build_gallery_manifest import build_gallery_manifest
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ART_DIR = PROJECT_ROOT / "art"
-MANIFEST_PATH = ART_DIR / "manifest.json"
 ENV_PATH = PROJECT_ROOT / ".env"
 SEED_LIBRARY_PATH = PROJECT_ROOT / "scripts" / "seed.json"
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
@@ -106,55 +107,64 @@ def main() -> int:
     max_batch_failures = args.count * MAX_BATCH_FAILURES_MULTIPLIER
     hash_lock = Lock()
 
-    with ThreadPoolExecutor(max_workers=args.parallel) as executor:
-        while created < args.count:
-            remaining = args.count - created
-            futures = []
+    exit_code = 0
 
-            for _ in range(remaining):
-                generation_attempt += 1
-                iteration_seed = seed_text
-                if args.count > 1:
-                    iteration_seed = (
-                        f"{seed_text} | abstract variation request {generation_attempt}; "
-                        f"target batch count {args.count}"
-                    )
+    try:
+        with ThreadPoolExecutor(max_workers=args.parallel) as executor:
+            while created < args.count:
+                remaining = args.count - created
+                futures = []
 
-                print(
-                    f"Queueing request {generation_attempt} ({created}/{args.count} created)...",
-                    flush=True,
-                )
-                futures.append(
-                    executor.submit(
-                        generate_one,
-                        api_key=api_key,
-                        model=model,
-                        seed_text=iteration_seed,
-                        seed_library=seed_library,
-                        existing_hashes=existing_hashes,
-                        hash_lock=hash_lock,
-                    )
-                )
-
-            for future in as_completed(futures):
-                try:
-                    if future.result():
-                        created += 1
-                        print(f"Progress: {created}/{args.count} created.", flush=True)
-                except (RuntimeError, TimeoutError, urllib.error.URLError) as error:
-                    batch_failures += 1
-                    print(f"Generation failed: {error}", file=sys.stderr, flush=True)
-                    if batch_failures >= max_batch_failures:
-                        print(
-                            f"Stopped after {batch_failures} failed generation attempts.",
-                            file=sys.stderr,
-                            flush=True,
+                for _ in range(remaining):
+                    generation_attempt += 1
+                    iteration_seed = seed_text
+                    if args.count > 1:
+                        iteration_seed = (
+                            f"{seed_text} | abstract variation request {generation_attempt}; "
+                            f"target batch count {args.count}"
                         )
-                        return 1
 
-    print(f"Generated {created} unique artwork{'s' if created != 1 else ''}.", flush=True)
-    write_gallery_manifest(ART_DIR, MANIFEST_PATH)
-    return 0
+                    print(
+                        f"Queueing request {generation_attempt} ({created}/{args.count} created)...",
+                        flush=True,
+                    )
+                    futures.append(
+                        executor.submit(
+                            generate_one,
+                            api_key=api_key,
+                            model=model,
+                            seed_text=iteration_seed,
+                            seed_library=seed_library,
+                            existing_hashes=existing_hashes,
+                            hash_lock=hash_lock,
+                        )
+                    )
+
+                for future in as_completed(futures):
+                    try:
+                        if future.result():
+                            created += 1
+                            print(f"Progress: {created}/{args.count} created.", flush=True)
+                    except (RuntimeError, TimeoutError, urllib.error.URLError) as error:
+                        batch_failures += 1
+                        print(f"Generation failed: {error}", file=sys.stderr, flush=True)
+                        if batch_failures >= max_batch_failures:
+                            print(
+                                f"Stopped after {batch_failures} failed generation attempts.",
+                                file=sys.stderr,
+                                flush=True,
+                            )
+                            exit_code = 1
+                            return exit_code
+
+        print(f"Generated {created} unique artwork{'s' if created != 1 else ''}.", flush=True)
+        return exit_code
+    finally:
+        manifest = build_gallery_manifest()
+        print(
+            f"Updated art/manifest.json with {manifest['count']} artworks.",
+            flush=True,
+        )
 
 
 def generate_one(
@@ -212,21 +222,6 @@ def generate_one(
     print(f"Created {json_path.relative_to(PROJECT_ROOT)}", flush=True)
     print(f"Created {svg_path.relative_to(PROJECT_ROOT)}", flush=True)
     return True
-
-
-def write_gallery_manifest(art_dir: Path, manifest_path: Path) -> None:
-    json_ids = {path.stem for path in art_dir.glob("*.json") if path.name != manifest_path.name}
-    svg_ids = {path.stem for path in art_dir.glob("*.svg")}
-    artwork_ids = sorted(json_ids & svg_ids)
-    manifest = {
-        "artworkIds": artwork_ids,
-        "count": len(artwork_ids),
-    }
-    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    print(
-        f"Updated {manifest_path.relative_to(PROJECT_ROOT)} with {len(artwork_ids)} artworks.",
-        flush=True,
-    )
 
 
 def load_env(path: Path) -> dict[str, str]:
