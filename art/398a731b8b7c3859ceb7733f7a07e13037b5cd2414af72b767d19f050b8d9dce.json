@@ -1,0 +1,399 @@
+{
+  "id": "398a731b8b7c3859ceb7733f7a07e13037b5cd2414af72b767d19f050b8d9dce",
+  "seed": "nostalgia vs progress; rise_vs_fall; split_horizontal; drip; target against grid; bottom_weighted; full_vs_hollow; window; rage_calm | abstract variation request 51; target batch count 200",
+  "title": "Echoes of Time",
+  "reasoning": "This composition explores the tension between nostalgia and progress through color and pattern. The palette combines sepia tones and softer blues, invoking memories while also suggesting movement and new beginnings. The darker, fuller colors dominate the bottom half to convey weight and nostalgia, while lighter tones punctuate the upper half, representing the lightness of progress. The horizontal split adds to the feeling of divergence and convergence, creating a dialogue between two realities. The broken pixels introduce imperfections, enhancing the theme of memory's fragility and the notion of moving forward despite uncertainty.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#5B3E27"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#8A6A43"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#C8B09A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D3D9C6"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#9BBCC6"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#A5C6E3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#C9E1F2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#E1E4E9"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#5C4B3A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#6B5A4F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B5AEB1"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#CED2E4"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#BAC4D8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#A2C8DE"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFF8E6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F7F9FB"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#CDB59B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#E3D8C8"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFD97D"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#AEDD7C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#97C5A6"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#8FC57C"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#6C9B4A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4F7A32"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#9A7C61"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#BFA68A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E1CFC7"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D5E0E4"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B9C6D8"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#AEB8D2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D9D2D4"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E0D2C5"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D0B6A2"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#CDB09A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B8B4B2"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A6B2B5"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#BCE5ED"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#D1F0FF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#EFFFF0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#BCB09F"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E6E1D2"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E6D3B7"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFC76E"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FBFAAA"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D4E8B1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B7D4C1"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#DAECC7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#87755B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#C9BBA6"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E5D3D0"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F5E6E3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#CDE2E6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#ABD3E2"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#9CCBDE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F5F6F7"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#6A4A3A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#BBAE88"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D0D8C7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#EDE2D6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F5FAFB"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D0EAF5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#C0D8E9"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#E7E3E6"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "nostalgia",
+      "progress"
+    ],
+    "emotionMoods": {
+      "nostalgia": [],
+      "progress": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "nostalgia": "teeth",
+      "progress": "checker"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "pair_of_pixels",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "398a731b8b7c3859ceb7733f7a07e13037b5cd2414af72b767d19f050b8d9dce",
+  "pixelHash": "398a731b8b7c3859ceb7733f7a07e13037b5cd2414af72b767d19f050b8d9dce",
+  "jsonFile": "398a731b8b7c3859ceb7733f7a07e13037b5cd2414af72b767d19f050b8d9dce.json",
+  "svgFile": "398a731b8b7c3859ceb7733f7a07e13037b5cd2414af72b767d19f050b8d9dce.svg",
+  "createdAt": "2026-06-01T09:31:51.365846+00:00"
+}

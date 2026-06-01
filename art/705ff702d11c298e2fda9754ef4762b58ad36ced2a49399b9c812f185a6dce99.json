@@ -1,0 +1,399 @@
+{
+  "id": "705ff702d11c298e2fda9754ef4762b58ad36ced2a49399b9c812f185a6dce99",
+  "seed": "nostalgia vs progress; rise_vs_fall; split_horizontal; drip; target against grid; bottom_weighted; full_vs_hollow; window; rage_calm | abstract variation request 61; target batch count 200",
+  "title": "Contrast in Motion",
+  "reasoning": "This artwork delves into the emotional tension between nostalgia and progress. The palette of black, electric blue, and magenta echoes a mechanical emotion while imbalance is depicted through a split horizontal layout. Nostalgia manifests with a subtle checker pattern represented by blacks and dark blues, suggesting depth and introspection. In contrast, progress is symbolized by vibrant magentas and electric blues, embodying forward movement and tension. The placement of colors creates a push-pull dynamic, particularly in the center which acts both as a conflict zone and a focal point. The interaction between the structured grid and a bottom-weighted effect produces a sense of instability, emphasizing the differences between the calm of nostalgia and the chaos of progress.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1A1A2E"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#16213E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#0F3460"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00B2A9"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#E94560"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F9FBCB"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FBFAF6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#112D4E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3F72AF"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#61C0BF"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#6D28D9"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E8DAB2"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFCF9"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#4ECDC4"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#C7F9CC"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#F27C00"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F4D35E"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#F9F871"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D85D03"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFAF0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E3C9C0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F7B2A4"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F99157"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#EE3D3F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFC47A"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFD3B6"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#121212"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#8385A9"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#A3A4E8"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D9BF77"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F9B208"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFBF69"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#DAA520"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7C7B92"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D9114C"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F95725"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E50052"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFDDC1"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F7FBFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#072AC8"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#415A72"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#89CFF0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C4DFE1"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FAF3DD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#AEDD2B"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFC3A0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#9E9E9E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FAFAFA"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D1F2EB"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F7D245"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FBD68D"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "nostalgia",
+      "progress"
+    ],
+    "emotionMoods": {
+      "nostalgia": [],
+      "progress": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "nostalgia": "checker",
+      "progress": "stairs"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "heart_fragment",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "705ff702d11c298e2fda9754ef4762b58ad36ced2a49399b9c812f185a6dce99",
+  "pixelHash": "705ff702d11c298e2fda9754ef4762b58ad36ced2a49399b9c812f185a6dce99",
+  "jsonFile": "705ff702d11c298e2fda9754ef4762b58ad36ced2a49399b9c812f185a6dce99.json",
+  "svgFile": "705ff702d11c298e2fda9754ef4762b58ad36ced2a49399b9c812f185a6dce99.svg",
+  "createdAt": "2026-06-01T09:32:04.472924+00:00"
+}

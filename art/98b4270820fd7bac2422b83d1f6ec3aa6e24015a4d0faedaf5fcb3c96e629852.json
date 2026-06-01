@@ -1,0 +1,399 @@
+{
+  "id": "98b4270820fd7bac2422b83d1f6ec3aa6e24015a4d0faedaf5fcb3c96e629852",
+  "seed": "nostalgia vs progress; rise_vs_fall; split_horizontal; drip; target against grid; bottom_weighted; full_vs_hollow; window; rage_calm | abstract variation request 31; target batch count 200",
+  "title": "Order vs Chaos",
+  "reasoning": "This artwork explores the tension between nostalgia and progress through a structured grid pattern on the right and a chaotic crosshatch on the left. The use of black and shades of blue represents the depth of nostalgia, while the stark whites signal forward movement and clarity. The contrast arises from abrupt transitions at the center, illustrating the collision of emotional states. Broken pixels randomly disrupt the grid, signifying the imperfections in progress and the weight of nostalgia, embodying the story of duality.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#444444"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#555555"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#777777"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#999999"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#555555"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#777777"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#666666"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#999999"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#999999"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B0B0B0"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "nostalgia",
+      "progress"
+    ],
+    "emotionMoods": {
+      "nostalgia": [],
+      "progress": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "nostalgia": "crosshatch",
+      "progress": "grid"
+    },
+    "edgeStyle": "center_heavy",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "98b4270820fd7bac2422b83d1f6ec3aa6e24015a4d0faedaf5fcb3c96e629852",
+  "pixelHash": "98b4270820fd7bac2422b83d1f6ec3aa6e24015a4d0faedaf5fcb3c96e629852",
+  "jsonFile": "98b4270820fd7bac2422b83d1f6ec3aa6e24015a4d0faedaf5fcb3c96e629852.json",
+  "svgFile": "98b4270820fd7bac2422b83d1f6ec3aa6e24015a4d0faedaf5fcb3c96e629852.svg",
+  "createdAt": "2026-06-01T09:31:09.995227+00:00"
+}

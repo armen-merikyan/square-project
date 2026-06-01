@@ -1,4 +1,18 @@
 const GALLERY_MANIFEST_PATH = "art/manifest.json";
+const SHOP_VARIANTS = {
+  print: {
+    label: "Art print",
+    description: "8x8 print",
+    price: "$24",
+    button: "Order print"
+  },
+  framed: {
+    label: "Framed print",
+    description: "8x8 print in black upsimples frame",
+    price: "$39",
+    button: "Order framed print"
+  }
+};
 
 const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
@@ -32,6 +46,7 @@ let selectedId = "";
 let previousFocus = null;
 let colorFiltersVisible = true;
 let colorSimilarityThreshold = Number(colorSimilarity.value);
+let selectedShopVariant = "print";
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
 
@@ -250,6 +265,132 @@ function renderPixelArtwork(record) {
   }
 
   return artwork;
+}
+
+function renderArtworkImage(record) {
+  const image = document.createElement("img");
+  image.src = `art/${record.id}.svg`;
+  image.alt = `${record.title || "Square artwork"} artwork`;
+  image.decoding = "async";
+  return image;
+}
+
+function renderFramePreview(record) {
+  const preview = document.createElement("div");
+  preview.className = "frame-preview";
+  preview.dataset.variant = selectedShopVariant;
+
+  const printStage = document.createElement("div");
+  printStage.className = "print-preview-stage";
+  printStage.appendChild(renderArtworkImage(record));
+
+  const framedStage = document.createElement("div");
+  framedStage.className = "framed-preview-stage";
+
+  const framedArt = renderArtworkImage(record);
+  framedArt.className = "framed-artwork";
+
+  const frameImage = document.createElement("img");
+  frameImage.className = "frame-shell";
+  frameImage.src = "frame_8_x_8.png";
+  frameImage.alt = "";
+  frameImage.decoding = "async";
+  frameImage.setAttribute("aria-hidden", "true");
+
+  framedStage.append(framedArt, frameImage);
+  preview.append(printStage, framedStage);
+
+  return preview;
+}
+
+function formatShopStatus(message, tone = "neutral") {
+  return { message, tone };
+}
+
+async function startCheckout(record, variant, status) {
+  status.textContent = "Opening secure checkout.";
+  status.dataset.tone = "neutral";
+
+  try {
+    const response = await fetch("/api/create-checkout-session", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        artworkId: record.id,
+        variant
+      })
+    });
+    const payload = await response.json();
+
+    if (!response.ok) {
+      throw new Error(payload.error || "Checkout could not be started.");
+    }
+
+    window.location.href = payload.url;
+  } catch (error) {
+    const nextStatus = formatShopStatus(error.message, "error");
+    status.textContent = nextStatus.message;
+    status.dataset.tone = nextStatus.tone;
+  }
+}
+
+function renderOrderPanel(record, preview) {
+  const panel = document.createElement("section");
+  panel.className = "order-panel";
+  panel.setAttribute("aria-label", "Order artwork");
+
+  const heading = document.createElement("h3");
+  heading.textContent = "Order";
+
+  const options = document.createElement("div");
+  options.className = "order-options";
+
+  Object.entries(SHOP_VARIANTS).forEach(([variant, config]) => {
+    const option = document.createElement("button");
+    option.className = "order-option";
+    option.type = "button";
+    option.dataset.variant = variant;
+    option.setAttribute("aria-pressed", String(variant === selectedShopVariant));
+
+    const label = document.createElement("span");
+    label.textContent = config.label;
+
+    const detail = document.createElement("small");
+    detail.textContent = config.description;
+
+    const price = document.createElement("strong");
+    price.textContent = config.price;
+
+    option.append(label, detail, price);
+    option.addEventListener("click", () => {
+      selectedShopVariant = variant;
+      preview.dataset.variant = variant;
+      options.querySelectorAll(".order-option").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.variant === variant));
+      });
+      checkoutButton.textContent = SHOP_VARIANTS[variant].button;
+      status.textContent = "Ready for checkout.";
+      status.dataset.tone = "neutral";
+    });
+    options.appendChild(option);
+  });
+
+  const checkoutButton = document.createElement("button");
+  checkoutButton.className = "button primary checkout-button";
+  checkoutButton.type = "button";
+  checkoutButton.textContent = SHOP_VARIANTS[selectedShopVariant].button;
+
+  const status = document.createElement("p");
+  status.className = "checkout-status";
+  status.dataset.tone = "neutral";
+  status.textContent = "Ready for checkout.";
+
+  checkoutButton.addEventListener("click", () => startCheckout(record, selectedShopVariant, status));
+
+  panel.append(heading, options, checkoutButton, status);
+  return panel;
 }
 
 function colorUsage(records) {
@@ -570,10 +711,7 @@ function renderInspector(record) {
   closeButton.textContent = "X";
   closeButton.addEventListener("click", closeInspector);
 
-  const image = document.createElement("img");
-  image.src = `art/${record.id}.svg`;
-  image.alt = `${record.title || "Square artwork"} artwork`;
-  image.decoding = "async";
+  const preview = renderFramePreview(record);
 
   const content = document.createElement("div");
   content.className = "inspector-content";
@@ -617,13 +755,14 @@ function renderInspector(record) {
   content.append(
     heading,
     metrics,
+    renderOrderPanel(record, preview),
     reasoningLabel,
     reasoning,
     paletteLabel,
     renderSwatches(colors)
   );
 
-  frame.append(jsonLink, closeButton, image, content);
+  frame.append(jsonLink, closeButton, preview, content);
   artInspector.appendChild(frame);
 
   openInspector();

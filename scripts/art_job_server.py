@@ -305,6 +305,11 @@ class ArtJobHandler(BaseHTTPRequestHandler):
                 job = start_job("build-manifest", command)
                 self.send_json({"job": job.public()}, HTTPStatus.CREATED)
                 return
+            if parsed.path == "/api/jobs/git-push":
+                command = ["git", "push"]
+                job = start_job("git-push", command)
+                self.send_json({"job": job.public()}, HTTPStatus.CREATED)
+                return
         except ValueError as error:
             self.send_json({"error": str(error)}, HTTPStatus.BAD_REQUEST)
             return
@@ -616,6 +621,7 @@ INDEX_HTML = f"""<!doctype html>
           <div class="actions">
             <button type="submit">Run Art Job</button>
             <button class="secondary" id="manifest-button" type="button">Rebuild Manifest</button>
+            <button class="secondary" id="git-push-button" type="button">Push to GitHub</button>
           </div>
           <div class="error" id="error"></div>
         </form>
@@ -633,6 +639,7 @@ INDEX_HTML = f"""<!doctype html>
     const errorEl = document.querySelector("#error");
     const form = document.querySelector("#generate-form");
     const manifestButton = document.querySelector("#manifest-button");
+    const gitPushButton = document.querySelector("#git-push-button");
     const randomSeedButton = document.querySelector("#random-seed-button");
     const clearSeedButton = document.querySelector("#clear-seed-button");
     const seedEl = document.querySelector("#seed");
@@ -735,6 +742,16 @@ INDEX_HTML = f"""<!doctype html>
       errorEl.textContent = "";
       try {{
         await api("/api/jobs/manifest", {{ method: "POST", body: "{{}}" }});
+        await refreshJobs();
+      }} catch (error) {{
+        errorEl.textContent = error.message;
+      }}
+    }});
+
+    gitPushButton.addEventListener("click", async () => {{
+      errorEl.textContent = "";
+      try {{
+        await api("/api/jobs/git-push", {{ method: "POST", body: "{{}}" }});
         await refreshJobs();
       }} catch (error) {{
         errorEl.textContent = error.message;
