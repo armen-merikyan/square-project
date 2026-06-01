@@ -1,0 +1,399 @@
+{
+  "id": "47d580e81e4fde150989f9589be94d0275fd1c1a8cd5ab8c7c6242cb004186ca",
+  "seed": "envy vs gratitude; light_vs_weight; mirror_broken; zigzag; stairs against noise; center_heavy; centered_vs_off_center; seed; rage_calm | abstract variation request 44; target batch count 200",
+  "title": "Tension Between Shades",
+  "reasoning": "The emotional tone of 'envy vs gratitude' is conveyed through a palette of warm and cold tones, creating tension. The pattern uses a zigzag layout that transitions from density on one side (representing envy) to lighter segments on the other (representing gratitude). The collision of saturated reds and soft grays echoes the duality of these emotions, while broken pixels disrupt the flow, mirroring life\u2019s unpredictability and complexity. This patterned disarray captures the essence of centered vs off-center focus, drawing the eye around the canvas while maintaining a sense of visual balance.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C04735"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#D1A66D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#B7C9D9"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#AAB9C0"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#EAB8D1"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FCF1F4"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B39BC6"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#5A4E7A"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#AA3D28"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E5945A"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F9E6A3"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B9D4EA"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFDFD9"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E3B7C4"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7152B4"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#2A2A36"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#672C2C"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFC3DB"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F7E4D5"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C1DAE8"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E0C7AC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#6A2D3A"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A19D95"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C9BFFD"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A6B8D2"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#DA6E4D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B9D4D1"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B3A1A0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FAF4A2"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6B466C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8A6886"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F4C084"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#5E6460"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#A0454D"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#D3C2C6"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#BFD9DD"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B18F80"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F0D09C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFC8C2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#47304E"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C37C7D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7B97D6"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E2D4B3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#BA7E59"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F7C8A3"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#AA7B8D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#9C5B81"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B1455D"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F3E2A0"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#4B2B28"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D2B1B5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B0CCEA"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#855D6D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C7B7C4"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#9AAE9D"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#C0D5E1"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#D3C6E3"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#423B3B"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#BAE4C7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#A14F4D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#A0A4C7"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E5C3AA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F6E0B5"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B5C7D8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "envy",
+      "gratitude"
+    ],
+    "emotionMoods": {
+      "envy": [],
+      "gratitude": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "burst",
+    "patterns": {
+      "envy": "rain",
+      "gratitude": "teeth"
+    },
+    "edgeStyle": "center_heavy",
+    "contrastType": "centered_vs_off_center",
+    "shapeSeed": "pair_of_pixels",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "47d580e81e4fde150989f9589be94d0275fd1c1a8cd5ab8c7c6242cb004186ca",
+  "pixelHash": "47d580e81e4fde150989f9589be94d0275fd1c1a8cd5ab8c7c6242cb004186ca",
+  "jsonFile": "47d580e81e4fde150989f9589be94d0275fd1c1a8cd5ab8c7c6242cb004186ca.json",
+  "svgFile": "47d580e81e4fde150989f9589be94d0275fd1c1a8cd5ab8c7c6242cb004186ca.svg",
+  "createdAt": "2026-06-01T22:12:38.524033+00:00"
+}
