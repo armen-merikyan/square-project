@@ -651,6 +651,7 @@ INDEX_HTML = f"""<!doctype html>
             <button type="submit">Run Art Job</button>
             <button class="secondary" id="manifest-button" type="button">Rebuild Manifest</button>
             <button class="secondary" id="git-push-button" type="button">Push to GitHub</button>
+            <button class="secondary" id="run-all-button" type="button">Run All</button>
           </div>
           <div class="error" id="error"></div>
         </form>
@@ -669,9 +670,11 @@ INDEX_HTML = f"""<!doctype html>
     const form = document.querySelector("#generate-form");
     const manifestButton = document.querySelector("#manifest-button");
     const gitPushButton = document.querySelector("#git-push-button");
+    const runAllButton = document.querySelector("#run-all-button");
     const randomSeedButton = document.querySelector("#random-seed-button");
     const clearSeedButton = document.querySelector("#clear-seed-button");
     const seedEl = document.querySelector("#seed");
+    const actionButtons = Array.from(document.querySelectorAll("button"));
 
     async function api(path, options = {{}}) {{
       const response = await fetch(path, {{
@@ -730,22 +733,62 @@ INDEX_HTML = f"""<!doctype html>
       }}
     }}
 
-    form.addEventListener("submit", async event => {{
-      event.preventDefault();
-      errorEl.textContent = "";
-      const payload = {{
+    function buildGeneratePayload() {{
+      return {{
         seed: seedEl.value,
         useRandomSeed: !seedEl.value.trim(),
         count: document.querySelector("#count").value,
         parallel: document.querySelector("#parallel").value,
         noSeedLibrary: document.querySelector("#no-seed-library").checked,
       }};
+    }}
+
+    function setControlsDisabled(disabled) {{
+      actionButtons.forEach(button => {{
+        button.disabled = disabled;
+      }});
+    }}
+
+    function jobIsFinished(job) {{
+      return job.status === "completed" || job.status === "failed";
+    }}
+
+    async function waitForJob(jobId) {{
+      while (true) {{
+        const data = await api(`/api/jobs/${{encodeURIComponent(jobId)}}`);
+        renderJobs([data.job, ...(await api("/api/jobs")).jobs.filter(job => job.id !== jobId)]);
+        if (jobIsFinished(data.job)) {{
+          if (data.job.status !== "completed") {{
+            throw new Error(`${{data.job.kind}} failed. Check the job output for details.`);
+          }}
+          return data.job;
+        }}
+        await new Promise(resolve => window.setTimeout(resolve, 1500));
+      }}
+    }}
+
+    async function startGenerateJob() {{
+      const payload = buildGeneratePayload();
+      const data = await api("/api/jobs/generate", {{
+        method: "POST",
+        body: JSON.stringify(payload),
+      }});
+      await refreshJobs();
+      return data.job;
+    }}
+
+    async function startEmptyJob(path) {{
+      const data = await api(path, {{ method: "POST", body: "{{}}" }});
+      await refreshJobs();
+      return data.job;
+    }}
+
+    form.addEventListener("submit", async event => {{
+      event.preventDefault();
+      errorEl.textContent = "";
 
       try {{
-        await api("/api/jobs/generate", {{
-          method: "POST",
-          body: JSON.stringify(payload),
-        }});
+        await startGenerateJob();
         await refreshJobs();
       }} catch (error) {{
         errorEl.textContent = error.message;
@@ -770,7 +813,7 @@ INDEX_HTML = f"""<!doctype html>
     manifestButton.addEventListener("click", async () => {{
       errorEl.textContent = "";
       try {{
-        await api("/api/jobs/manifest", {{ method: "POST", body: "{{}}" }});
+        await startEmptyJob("/api/jobs/manifest");
         await refreshJobs();
       }} catch (error) {{
         errorEl.textContent = error.message;
@@ -780,10 +823,35 @@ INDEX_HTML = f"""<!doctype html>
     gitPushButton.addEventListener("click", async () => {{
       errorEl.textContent = "";
       try {{
-        await api("/api/jobs/git-push", {{ method: "POST", body: "{{}}" }});
+        await startEmptyJob("/api/jobs/git-push");
         await refreshJobs();
       }} catch (error) {{
         errorEl.textContent = error.message;
+      }}
+    }});
+
+    runAllButton.addEventListener("click", async () => {{
+      errorEl.textContent = "Running art job...";
+      setControlsDisabled(true);
+
+      try {{
+        const generateJob = await startGenerateJob();
+        await waitForJob(generateJob.id);
+
+        errorEl.textContent = "Rebuilding manifest...";
+        const manifestJob = await startEmptyJob("/api/jobs/manifest");
+        await waitForJob(manifestJob.id);
+
+        errorEl.textContent = "Pushing to GitHub...";
+        const gitPushJob = await startEmptyJob("/api/jobs/git-push");
+        await waitForJob(gitPushJob.id);
+
+        errorEl.textContent = "Run all completed.";
+        await refreshJobs();
+      }} catch (error) {{
+        errorEl.textContent = error.message;
+      }} finally {{
+        setControlsDisabled(false);
       }}
     }});
 
