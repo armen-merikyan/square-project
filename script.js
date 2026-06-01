@@ -17,6 +17,7 @@ const prevButton = document.querySelector("#prevArtwork");
 const pauseButton = document.querySelector("#pauseCarousel");
 const DOT_RANGE = 2;
 const CAROUSEL_TRANSITION_MS = 1080;
+const MAX_DRAG_PROGRESS = 1.18;
 
 let activeIndex = 0;
 let autoAdvanceId;
@@ -24,6 +25,7 @@ let isPaused = false;
 let isAdvancing = false;
 let dragStartX = 0;
 let dragStartY = 0;
+let dragProgress = 0;
 let isDragging = false;
 let didDrag = false;
 
@@ -133,6 +135,25 @@ function createMetadataOverlay(data, index) {
   return overlay;
 }
 
+function createArtworkFace(image) {
+  const face = document.createElement("div");
+  face.className = "cover-face";
+  face.appendChild(image);
+  return face;
+}
+
+function createArtworkReflection(image) {
+  const reflection = document.createElement("div");
+  reflection.className = "cover-reflection";
+  reflection.setAttribute("aria-hidden", "true");
+
+  const reflectedImage = image.cloneNode();
+  reflectedImage.alt = "";
+  reflection.appendChild(reflectedImage);
+
+  return reflection;
+}
+
 async function renderCarousel() {
   try {
     artworks = await loadArtworkIds();
@@ -155,7 +176,7 @@ async function renderCarousel() {
     image.alt = record.title ? `${record.title} square artwork` : "Square artwork";
     image.decoding = "async";
 
-    slide.append(image, createMetadataOverlay(record, index));
+    slide.append(createArtworkFace(image), createArtworkReflection(image), createMetadataOverlay(record, index));
     slide.addEventListener("click", (event) => {
       if (didDrag) {
         event.preventDefault();
@@ -188,7 +209,7 @@ async function renderCarousel() {
     coverflow.appendChild(slide);
   });
 
-  setActive(0);
+  updateCarouselPositions(0);
   startAutoAdvance();
 }
 
@@ -210,25 +231,27 @@ function renderDots() {
   });
 }
 
-function setActive(index) {
-  activeIndex = normalizeIndex(index);
+function updateCarouselPositions(nextIndex = activeIndex) {
+  activeIndex = normalizeIndex(nextIndex);
   const slides = [...coverflow.children];
 
   slides.forEach((slide, slideIndex) => {
     const offset = shortestOffset(slideIndex);
-    const absoluteOffset = Math.abs(offset);
-    const direction = Math.sign(offset);
-    const hidden = Math.abs(offset) > 2;
-    const displayOffset = hidden ? direction * 3 : offset;
+    const draggedOffset = offset + dragProgress;
+    const direction = Math.sign(draggedOffset || offset);
+    const hidden = Math.abs(draggedOffset) > 2.65;
+    const displayOffset = hidden ? direction * 3 : draggedOffset;
     const displayAbsoluteOffset = Math.abs(displayOffset);
     const displayDirection = Math.sign(displayOffset);
+    const normalizedProximity = Math.max(0, 1 - Math.min(displayAbsoluteOffset, 1));
 
     slide.style.setProperty("--offset", offset);
-    slide.style.setProperty("--abs-offset", absoluteOffset);
+    slide.style.setProperty("--abs-offset", Math.abs(offset));
     slide.style.setProperty("--direction", direction);
     slide.style.setProperty("--display-offset", displayOffset);
     slide.style.setProperty("--display-abs-offset", displayAbsoluteOffset);
     slide.style.setProperty("--display-direction", displayDirection);
+    slide.style.setProperty("--active-proximity", normalizedProximity.toFixed(3));
     slide.dataset.offset = String(offset);
     slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
     slide.classList.toggle("is-active", slideIndex === activeIndex);
@@ -246,7 +269,9 @@ function advanceTo(index) {
   }
 
   isAdvancing = true;
-  setActive(index);
+  dragProgress = 0;
+  coverflow.classList.remove("is-dragging");
+  updateCarouselPositions(index);
   window.setTimeout(() => {
     isAdvancing = false;
   }, CAROUSEL_TRANSITION_MS);
@@ -336,8 +361,10 @@ coverflow.addEventListener("mouseleave", () => {
 coverflow.addEventListener("pointerdown", (event) => {
   dragStartX = event.clientX;
   dragStartY = event.clientY;
+  dragProgress = 0;
   isDragging = true;
   didDrag = false;
+  coverflow.classList.add("is-dragging");
   window.clearInterval(autoAdvanceId);
   const captureTarget = event.target.closest(".carousel-card") || coverflow;
   captureTarget.setPointerCapture(event.pointerId);
@@ -348,9 +375,20 @@ coverflow.addEventListener("pointermove", (event) => {
     return;
   }
 
-  if (Math.abs(event.clientX - dragStartX) > 8 || Math.abs(event.clientY - dragStartY) > 8) {
+  const dragX = event.clientX - dragStartX;
+  const dragY = event.clientY - dragStartY;
+
+  if (Math.abs(dragX) > 8 || Math.abs(dragY) > 8) {
     didDrag = true;
   }
+
+  if (Math.abs(dragX) > Math.abs(dragY)) {
+    event.preventDefault();
+  }
+
+  const slotWidth = Number.parseFloat(getComputedStyle(coverflow).getPropertyValue("--cover-slot")) || 220;
+  dragProgress = Math.max(-MAX_DRAG_PROGRESS, Math.min(MAX_DRAG_PROGRESS, dragX / slotWidth));
+  updateCarouselPositions();
 });
 
 coverflow.addEventListener("pointerup", (event) => {
@@ -360,11 +398,15 @@ coverflow.addEventListener("pointerup", (event) => {
 
   const dragX = event.clientX - dragStartX;
   const dragY = event.clientY - dragStartY;
-  isDragging = false;
+  const targetIndex = Math.abs(dragX) > 42 && Math.abs(dragX) > Math.abs(dragY)
+    ? activeIndex + (dragX < 0 ? 1 : -1)
+    : activeIndex;
 
-  if (Math.abs(dragX) > 42 && Math.abs(dragX) > Math.abs(dragY)) {
-    dragX < 0 ? nextArtwork() : previousArtwork();
-  }
+  isDragging = false;
+  coverflow.classList.remove("is-dragging");
+
+  dragProgress = 0;
+  advanceTo(targetIndex);
 
   restartAutoAdvance();
   window.setTimeout(() => {
@@ -374,6 +416,9 @@ coverflow.addEventListener("pointerup", (event) => {
 
 coverflow.addEventListener("pointercancel", () => {
   isDragging = false;
+  dragProgress = 0;
+  coverflow.classList.remove("is-dragging");
+  updateCarouselPositions();
   restartAutoAdvance();
 });
 

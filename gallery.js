@@ -5,6 +5,12 @@ const artInspector = document.querySelector("#artInspector");
 const galleryCount = document.querySelector("#galleryCount");
 const gallerySearch = document.querySelector("#gallerySearch");
 const galleryPagination = document.querySelector("#galleryPagination");
+const galleryLoading = document.querySelector("#galleryLoading");
+const galleryLoadingTitle = document.querySelector("#galleryLoadingTitle");
+const galleryLoadingPercent = document.querySelector("#galleryLoadingPercent");
+const galleryLoadingProgress = document.querySelector("#galleryLoadingProgress");
+const galleryLoadingStep = document.querySelector("#galleryLoadingStep");
+const galleryLoadingTime = document.querySelector("#galleryLoadingTime");
 const colorFilterList = document.querySelector("#colorFilterList");
 const clearColorFilters = document.querySelector("#clearColorFilters");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
@@ -383,6 +389,44 @@ function updateSimilarityLabel() {
   colorSimilarityValue.textContent = threshold === 0 ? "Exact" : `+${threshold}`;
 }
 
+function formatRemainingTime(seconds) {
+  if (!Number.isFinite(seconds) || seconds <= 1) {
+    return "Less than a second remaining.";
+  }
+
+  const roundedSeconds = Math.ceil(seconds);
+
+  if (roundedSeconds < 60) {
+    return `About ${roundedSeconds} seconds remaining.`;
+  }
+
+  const minutes = Math.ceil(roundedSeconds / 60);
+  return `About ${minutes} minute${minutes === 1 ? "" : "s"} remaining.`;
+}
+
+function updateGalleryLoading({
+  title = "Preparing the collection",
+  step = "Starting gallery load.",
+  loaded = 0,
+  total = 0,
+  startedAt = performance.now()
+} = {}) {
+  const percent = total > 0 ? Math.round((loaded / total) * 100) : 0;
+  const elapsedSeconds = Math.max((performance.now() - startedAt) / 1000, 0);
+  const averageSeconds = loaded > 0 ? elapsedSeconds / loaded : null;
+  const remainingSeconds = averageSeconds === null ? null : averageSeconds * Math.max(total - loaded, 0);
+
+  galleryLoading.hidden = false;
+  galleryLoadingTitle.textContent = title;
+  galleryLoadingPercent.textContent = `${percent}%`;
+  galleryLoadingProgress.value = percent;
+  galleryLoadingProgress.textContent = `${percent}%`;
+  galleryLoadingStep.textContent = step;
+  galleryLoadingTime.textContent = total > 0 && loaded > 0
+    ? `${loaded} of ${total} records loaded. ${formatRemainingTime(remainingSeconds)}`
+    : "Estimating time remaining.";
+}
+
 async function copyTextToClipboard(text) {
   if (navigator.clipboard?.writeText) {
     await navigator.clipboard.writeText(text);
@@ -736,10 +780,51 @@ function applyFilters() {
 }
 
 async function renderGallery() {
+  const startedAt = performance.now();
   galleryCount.textContent = "Loading";
+  artGrid.replaceChildren();
+  galleryPagination.replaceChildren();
+  updateGalleryLoading({
+    title: "Preparing the collection",
+    step: "Requesting the art manifest.",
+    startedAt
+  });
 
   const artworkIds = await fetchArtworkIds();
-  galleryRecords = (await Promise.all(artworkIds.map(fetchArtwork))).map((record) => {
+  galleryCount.textContent = `0 / ${artworkIds.length}`;
+  updateGalleryLoading({
+    title: "Loading artwork records",
+    step: `Found ${artworkIds.length} artworks. Downloading metadata files.`,
+    loaded: 0,
+    total: artworkIds.length,
+    startedAt
+  });
+
+  let loadedArtworkCount = 0;
+  const rawRecords = await Promise.all(artworkIds.map((id) =>
+    fetchArtwork(id).then((record) => {
+      loadedArtworkCount += 1;
+      galleryCount.textContent = `${loadedArtworkCount} / ${artworkIds.length}`;
+      updateGalleryLoading({
+        title: "Loading artwork records",
+        step: `Reading ${compactId(id)}.json and checking pixel data.`,
+        loaded: loadedArtworkCount,
+        total: artworkIds.length,
+        startedAt
+      });
+      return record;
+    })
+  ));
+
+  updateGalleryLoading({
+    title: "Building gallery tools",
+    step: "Indexing search text and color filters.",
+    loaded: artworkIds.length,
+    total: artworkIds.length,
+    startedAt
+  });
+
+  galleryRecords = rawRecords.map((record) => {
     const colors = uniqueColors(record.pixels);
     return {
       ...record,
@@ -752,6 +837,7 @@ async function renderGallery() {
   buildColorBuckets(galleryRecords, colorSimilarityThreshold);
   renderColorFilters();
   renderCurrentPage();
+  galleryLoading.hidden = true;
 
   const requestedId = new URLSearchParams(window.location.search).get("art");
   const requestedRecord = requestedId
@@ -808,5 +894,6 @@ updateSimilarityLabel();
 
 renderGallery().catch((error) => {
   galleryCount.textContent = "Error";
+  galleryLoading.hidden = true;
   artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
 });

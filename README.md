@@ -18,6 +18,16 @@ This website is an art project exploring how much expression can fit inside a sq
 
 The goal is to build the largest square art collection in the world and create a recognizable home for digital square artworks.
 
+## Local Website Development
+
+Run the local dev server when editing HTML, CSS, JavaScript, or art JSON/SVG files:
+
+```bash
+python3 scripts/dev_server.py
+```
+
+Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
+
 ## Generate Pixel Art Locally
 
 The project includes a local Python script for design-time art generation. It asks OpenAI for structured 8 by 8 abstract pixel art data, validates the response, checks for duplicate pixel arrangements, and saves both the JSON record and SVG image in the `art/` directory.

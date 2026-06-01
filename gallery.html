@@ -89,6 +89,26 @@
               autocomplete="off"
             >
           </label>
+          <div
+            class="gallery-loading"
+            id="galleryLoading"
+            role="status"
+            aria-live="polite"
+            aria-labelledby="galleryLoadingTitle"
+          >
+            <div class="gallery-loading-heading">
+              <div>
+                <p class="eyebrow">Loading gallery</p>
+                <h3 id="galleryLoadingTitle">Preparing the collection</h3>
+              </div>
+              <output id="galleryLoadingPercent">0%</output>
+            </div>
+            <progress id="galleryLoadingProgress" value="0" max="100">0%</progress>
+            <div class="gallery-loading-details">
+              <span id="galleryLoadingStep">Requesting the art manifest.</span>
+              <span id="galleryLoadingTime">Estimating time remaining.</span>
+            </div>
+          </div>
           <div class="art-grid" id="artGrid" aria-live="polite"></div>
           <nav class="pagination" id="galleryPagination" aria-label="Gallery pagination"></nav>
         </div>
