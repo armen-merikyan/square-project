@@ -5,17 +5,18 @@ const SHOP_VARIANTS = {
     label: "Art print",
     description: "8x8 print",
     price: "$24",
-    button: "Order print"
+    button: "Order print",
+    paymentLinkKey: "print"
   },
   framed: {
     label: "Framed print",
     description: "8x8 print in black upsimples frame",
     price: "$39",
-    button: "Order framed print"
+    button: "Order framed print",
+    paymentLinkKey: "framed"
   }
 };
-const STRIPE_CHECKOUT_ENDPOINT = "/api/stripe/checkout";
-const DESIGN_TIME_HOSTS = new Set(["", "localhost", "127.0.0.1", "::1"]);
+const PAYMENT_LINKS = window.SQUARE_PROJECT_PAYMENT_LINKS || {};
 
 const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
@@ -312,21 +313,31 @@ function checkoutReference(record, variant) {
   return reference.slice(0, 200);
 }
 
-function isDesignTimeCheckout() {
-  return window.location.protocol === "file:" || DESIGN_TIME_HOSTS.has(window.location.hostname);
+function paymentLinkForVariant(variant) {
+  const variantConfig = SHOP_VARIANTS[variant];
+  return (variantConfig && PAYMENT_LINKS[variantConfig.paymentLinkKey] || "").trim();
 }
 
-function checkoutStatusForVariant() {
-  return isDesignTimeCheckout()
-    ? "Ready for local Stripe checkout."
-    : "Ready for Stripe checkout.";
+function paymentLinkUrl(record, variant) {
+  const url = new URL(paymentLinkForVariant(variant));
+  url.searchParams.set("client_reference_id", checkoutReference(record, variant));
+  url.searchParams.set("utm_source", "square_project");
+  url.searchParams.set("utm_medium", "gallery");
+  url.searchParams.set("utm_content", variant);
+  return url.toString();
 }
 
-function checkoutToneForVariant() {
-  return "neutral";
+function checkoutStatusForVariant(variant) {
+  return paymentLinkForVariant(variant)
+    ? "Ready for Stripe payment link."
+    : "Payment link is not configured.";
 }
 
-async function startCheckout(record, variant, status, checkoutButton) {
+function checkoutToneForVariant(variant) {
+  return paymentLinkForVariant(variant) ? "neutral" : "error";
+}
+
+function startCheckout(record, variant, status) {
   const variantConfig = SHOP_VARIANTS[variant];
 
   if (!variantConfig) {
@@ -335,35 +346,17 @@ async function startCheckout(record, variant, status, checkoutButton) {
     return;
   }
 
-  status.textContent = "Creating Stripe checkout.";
-  status.dataset.tone = "neutral";
-  checkoutButton.disabled = true;
-
   try {
-    const response = await fetch(STRIPE_CHECKOUT_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        artworkId: record.id,
-        variant,
-        clientReferenceId: checkoutReference(record, variant),
-        returnPath: `${window.location.pathname}${window.location.search}`
-      })
-    });
-    const payload = await response.json().catch(() => ({}));
-
-    if (!response.ok || !payload.url) {
-      throw new Error(payload.error || "Stripe checkout could not be created.");
+    if (!paymentLinkForVariant(variant)) {
+      throw new Error("Payment link is not configured.");
     }
 
-    status.textContent = "Opening Stripe checkout.";
-    window.location.href = payload.url;
+    status.textContent = "Opening Stripe payment link.";
+    status.dataset.tone = "neutral";
+    window.location.href = paymentLinkUrl(record, variant);
   } catch (error) {
     status.textContent = error.message;
     status.dataset.tone = "error";
-    checkoutButton.disabled = false;
   }
 }
 
@@ -404,6 +397,7 @@ function renderOrderPanel(record, preview) {
       checkoutButton.textContent = SHOP_VARIANTS[variant].button;
       status.textContent = checkoutStatusForVariant(variant);
       status.dataset.tone = checkoutToneForVariant(variant);
+      checkoutButton.disabled = !paymentLinkForVariant(variant);
     });
     options.appendChild(option);
   });
@@ -412,6 +406,7 @@ function renderOrderPanel(record, preview) {
   checkoutButton.className = "button primary checkout-button";
   checkoutButton.type = "button";
   checkoutButton.textContent = SHOP_VARIANTS[selectedShopVariant].button;
+  checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant);
 
   const status = document.createElement("p");
   status.className = "checkout-status";
@@ -420,7 +415,7 @@ function renderOrderPanel(record, preview) {
 
   checkoutButton.addEventListener(
     "click",
-    () => startCheckout(record, selectedShopVariant, status, checkoutButton),
+    () => startCheckout(record, selectedShopVariant, status),
   );
 
   panel.append(heading, options, checkoutButton, status);

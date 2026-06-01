@@ -4,13 +4,10 @@
 from __future__ import annotations
 
 import argparse
-import json
 import mimetypes
 import os
 import time
 import urllib.parse
-import urllib.request
-from urllib.error import HTTPError, URLError
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -29,26 +26,7 @@ IGNORED_DIRECTORIES = {
     "__pycache__",
 }
 LIVE_RELOAD_PATH = "/__live-reload"
-STRIPE_CHECKOUT_PATH = "/api/stripe/checkout"
 POLL_INTERVAL_SECONDS = 0.5
-ARTWORK_ID_LENGTH = 64
-
-SHOP_VARIANTS = {
-    "print": {
-        "label": "Art print",
-        "description": "8x8 print",
-        "amount": 2400,
-        "price_env": "STRIPE_PRINT_PRICE_ID",
-        "framed": "false",
-    },
-    "framed": {
-        "label": "Framed print",
-        "description": "8x8 print in black upsimples frame",
-        "amount": 3900,
-        "price_env": "STRIPE_FRAMED_PRICE_ID",
-        "framed": "true",
-    },
-}
 
 
 LIVE_RELOAD_SNIPPET = """
@@ -108,64 +86,6 @@ def load_local_env(root: Path) -> None:
             os.environ[key] = value
 
 
-def is_valid_artwork_id(artwork_id: str) -> bool:
-    return (
-        len(artwork_id) == ARTWORK_ID_LENGTH
-        and all(character in "0123456789abcdef" for character in artwork_id)
-    )
-
-
-def build_return_url(origin: str, return_path: str, checkout_status: str) -> str:
-    parsed = urllib.parse.urlsplit(return_path or "/gallery.html")
-    path = parsed.path if parsed.path.startswith("/") else "/gallery.html"
-
-    if path.startswith("//"):
-        path = "/gallery.html"
-
-    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
-    query = [(key, value) for key, value in query if key != "checkout"]
-    query.append(("checkout", checkout_status))
-    return urllib.parse.urlunsplit((
-        origin,
-        path,
-        urllib.parse.urlencode(query),
-        "",
-        "",
-    ))
-
-
-def stripe_post(path: str, fields: dict[str, str]) -> dict:
-    secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
-
-    if not secret_key:
-        raise RuntimeError("Set STRIPE_SECRET_KEY in .env before creating checkout.")
-
-    payload = urllib.parse.urlencode(fields).encode("utf-8")
-    request = urllib.request.Request(
-        f"https://api.stripe.com/v1/{path.lstrip('/')}",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {secret_key}",
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        method="POST",
-    )
-
-    try:
-        with urllib.request.urlopen(request, timeout=20) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except HTTPError as error:
-        try:
-            payload = json.loads(error.read().decode("utf-8"))
-            message = payload.get("error", {}).get("message")
-        except (json.JSONDecodeError, UnicodeDecodeError):
-            message = None
-
-        raise RuntimeError(message or f"Stripe returned HTTP {error.code}.") from error
-    except URLError as error:
-        raise RuntimeError(f"Could not reach Stripe: {error.reason}") from error
-
-
 class DevServerHandler(SimpleHTTPRequestHandler):
     server_version = "SquareDevServer/1.0"
 
@@ -187,19 +107,6 @@ class DevServerHandler(SimpleHTTPRequestHandler):
             return
 
         super().do_GET()
-
-    def do_POST(self):
-        parsed_path = urllib.parse.urlsplit(self.path)
-
-        if parsed_path.path == STRIPE_CHECKOUT_PATH:
-            self.create_stripe_checkout()
-            return
-
-        if parsed_path.path.startswith("/api/"):
-            self.send_json(HTTPStatus.NOT_FOUND, {"error": "API endpoint not found."})
-            return
-
-        self.send_error(HTTPStatus.NOT_FOUND, "Not found")
 
     def is_html_request(self, request_path: str) -> bool:
         translated = Path(self.translate_path(request_path))
@@ -257,92 +164,6 @@ class DevServerHandler(SimpleHTTPRequestHandler):
                     self.wfile.flush()
         except (BrokenPipeError, ConnectionResetError):
             return
-
-    def read_json_body(self) -> dict:
-        try:
-            content_length = int(self.headers.get("Content-Length", "0"))
-        except ValueError:
-            content_length = 0
-
-        if content_length <= 0 or content_length > 8192:
-            raise ValueError("Invalid request body.")
-
-        try:
-            return json.loads(self.rfile.read(content_length).decode("utf-8"))
-        except (json.JSONDecodeError, UnicodeDecodeError) as error:
-            raise ValueError("Request body must be JSON.") from error
-
-    def send_json(self, status: HTTPStatus, payload: dict) -> None:
-        body = json.dumps(payload).encode("utf-8")
-        self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-    def create_stripe_checkout(self) -> None:
-        try:
-            payload = self.read_json_body()
-            artwork_id = str(payload.get("artworkId", "")).strip()
-            variant_key = str(payload.get("variant", "")).strip()
-
-            if not is_valid_artwork_id(artwork_id):
-                raise ValueError("Invalid artwork id.")
-
-            art_file = Path(self.directory) / "art" / f"{artwork_id}.json"
-
-            if not art_file.is_file():
-                raise ValueError("Artwork record was not found.")
-
-            variant = SHOP_VARIANTS.get(variant_key)
-
-            if not variant:
-                raise ValueError("Invalid checkout variant.")
-
-            host = self.headers.get("Host", "127.0.0.1:8000")
-            origin = f"http://{host}"
-            return_path = str(payload.get("returnPath", "/gallery.html"))
-            client_reference_id = str(
-                payload.get("clientReferenceId", f"{artwork_id}_{variant_key}")
-            )[:200]
-            price_id = os.environ.get(variant["price_env"], "").strip()
-            product_id = os.environ.get("STRIPE_ART_PRODUCT_ID", "").strip()
-
-            fields = {
-                "mode": "payment",
-                "client_reference_id": client_reference_id,
-                "success_url": build_return_url(origin, return_path, "success"),
-                "cancel_url": build_return_url(origin, return_path, "cancelled"),
-                "line_items[0][quantity]": "1",
-                "metadata[artwork_id]": artwork_id,
-                "metadata[variant]": variant_key,
-                "metadata[framed]": variant["framed"],
-                "payment_intent_data[metadata][artwork_id]": artwork_id,
-                "payment_intent_data[metadata][variant]": variant_key,
-                "payment_intent_data[metadata][framed]": variant["framed"],
-                "shipping_address_collection[allowed_countries][0]": "US",
-                "billing_address_collection": "auto",
-            }
-
-            if price_id:
-                fields["line_items[0][price]"] = price_id
-            elif product_id:
-                fields.update({
-                    "line_items[0][price_data][currency]": "usd",
-                    "line_items[0][price_data][product]": product_id,
-                    "line_items[0][price_data][unit_amount]": str(variant["amount"]),
-                })
-            else:
-                raise RuntimeError(
-                    "Set STRIPE_ART_PRODUCT_ID or Stripe Price IDs in .env before checkout."
-                )
-
-            session = stripe_post("checkout/sessions", fields)
-            self.send_json(HTTPStatus.OK, {"url": session["url"], "id": session["id"]})
-        except ValueError as error:
-            self.send_json(HTTPStatus.BAD_REQUEST, {"error": str(error)})
-        except RuntimeError as error:
-            self.send_json(HTTPStatus.BAD_GATEWAY, {"error": str(error)})
 
     def guess_type(self, path):
         content_type, encoding = mimetypes.guess_type(path)

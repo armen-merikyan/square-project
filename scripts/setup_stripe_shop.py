@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create the reusable Stripe product and prices for Square Project checkout."""
+"""Create the reusable Stripe product, prices, and payment links for Square Project."""
 
 from __future__ import annotations
 
@@ -13,18 +13,23 @@ from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / ".env"
+PAYMENT_LINKS_PATH = ROOT / "payment-links.js"
 VARIANTS = {
     "print": {
         "nickname": "Square Project 8x8 Art Print",
         "amount": 2400,
         "lookup_key": "square_project_8x8_print",
         "env_key": "STRIPE_PRINT_PRICE_ID",
+        "payment_link_env_key": "STRIPE_PRINT_PAYMENT_LINK",
+        "payment_link_lookup_key": "square_project_8x8_print_payment_link",
     },
     "framed": {
         "nickname": "Square Project 8x8 Framed Print",
         "amount": 3900,
         "lookup_key": "square_project_8x8_framed",
         "env_key": "STRIPE_FRAMED_PRICE_ID",
+        "payment_link_env_key": "STRIPE_FRAMED_PAYMENT_LINK",
+        "payment_link_lookup_key": "square_project_8x8_framed_payment_link",
     },
 }
 
@@ -74,6 +79,14 @@ def update_env(updates: dict[str, str]) -> None:
             next_lines.append(f"{key}={value}")
 
     ENV_PATH.write_text("\n".join(next_lines) + "\n", encoding="utf-8")
+
+
+def update_payment_links_js(payment_links: dict[str, str]) -> None:
+    payload = json.dumps(payment_links, indent=2, sort_keys=True)
+    PAYMENT_LINKS_PATH.write_text(
+        f"window.SQUARE_PROJECT_PAYMENT_LINKS = {payload};\n",
+        encoding="utf-8",
+    )
 
 
 def stripe_post(path: str, fields: dict[str, str]) -> dict:
@@ -141,6 +154,19 @@ def find_price_by_lookup_key(lookup_key: str) -> dict | None:
     return data[0] if data else None
 
 
+def find_payment_link_by_lookup_key(lookup_key: str) -> dict | None:
+    payment_links = stripe_get("payment_links", {
+        "active": "true",
+        "limit": "100",
+    })
+
+    for payment_link in payment_links.get("data", []):
+        if payment_link.get("metadata", {}).get("lookup_key") == lookup_key:
+            return payment_link
+
+    return None
+
+
 def main() -> None:
     load_env()
     product_id = os.environ.get("STRIPE_ART_PRODUCT_ID", "").strip()
@@ -172,6 +198,7 @@ def main() -> None:
         print(f"Created product: {product_id}")
 
     created_prices = {}
+    created_payment_links = {}
 
     for variant, config in VARIANTS.items():
         existing_price = os.environ.get(config["env_key"], "").strip()
@@ -199,12 +226,45 @@ def main() -> None:
         created_prices[config["env_key"]] = price["id"]
         print(f"Created {variant} price: {price['id']}")
 
-    updates = {"STRIPE_ART_PRODUCT_ID": product_id, **created_prices}
+    for variant, config in VARIANTS.items():
+        existing_payment_link = os.environ.get(config["payment_link_env_key"], "").strip()
+
+        if existing_payment_link.startswith("https://buy.stripe.com/"):
+            created_payment_links[variant] = existing_payment_link
+            print(f"Using existing {variant} payment link: {existing_payment_link}")
+            continue
+
+        lookup_payment_link = find_payment_link_by_lookup_key(config["payment_link_lookup_key"])
+
+        if lookup_payment_link:
+            created_payment_links[variant] = lookup_payment_link["url"]
+            print(f"Using existing {variant} payment link: {lookup_payment_link['url']}")
+            continue
+
+        payment_link = stripe_post("payment_links", {
+            "line_items[0][price]": created_prices[config["env_key"]],
+            "line_items[0][quantity]": "1",
+            "metadata[app]": "square_project",
+            "metadata[variant]": variant,
+            "metadata[lookup_key]": config["payment_link_lookup_key"],
+            "shipping_address_collection[allowed_countries][0]": "US",
+            "billing_address_collection": "auto",
+        })
+        created_payment_links[variant] = payment_link["url"]
+        print(f"Created {variant} payment link: {payment_link['url']}")
+
+    payment_link_env_updates = {
+        VARIANTS[variant]["payment_link_env_key"]: url
+        for variant, url in created_payment_links.items()
+    }
+    updates = {"STRIPE_ART_PRODUCT_ID": product_id, **created_prices, **payment_link_env_updates}
     update_env(updates)
+    update_payment_links_js(created_payment_links)
 
     print(f"\nUpdated {ENV_PATH}:")
     for key, value in updates.items():
         print(f"{key}={value}")
+    print(f"\nUpdated {PAYMENT_LINKS_PATH}")
 
 
 if __name__ == "__main__":

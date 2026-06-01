@@ -28,35 +28,35 @@ python3 scripts/dev_server.py
 
 Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
 
-## Stripe Checkout
+## Stripe Payment Links
 
-Customer orders are created through Stripe Checkout. The browser sends the selected
-artwork id and order variant to the local/backend server, and the server creates a
-Checkout Session with the artwork details stored as Stripe metadata.
+Customer orders use two reusable Stripe Payment Links, matching the simple outbound
+link approach used by Kumquat product cards. The gallery opens the selected
+payment link directly instead of creating a Checkout Session through a backend.
 
-Create one reusable Stripe Product and two reusable Prices:
+Create one reusable Stripe Product, two reusable Prices, and two reusable Payment
+Links:
 
 - 8x8 art print, `$24`
 - 8x8 art print in the black upsimples 8x8 frame, `$39`
 
 With `STRIPE_SECRET_KEY` set in `.env`, this helper creates or reuses the product
-and prices, then writes the Stripe IDs back into `.env`:
+and prices, creates or reuses the payment links, writes the Stripe IDs and URLs
+back into `.env`, and updates `payment-links.js`:
 
 ```bash
 python3 scripts/setup_stripe_shop.py
 ```
 
-Run the local dev server for checkout testing:
+Run the local dev server for link testing:
 
 ```bash
 python3 scripts/dev_server.py
 ```
 
-The checkout route is `POST /api/stripe/checkout`. It stores `artwork_id`,
-`variant`, and `framed` on both the Checkout Session and PaymentIntent metadata.
-The `client_reference_id` format is `artworkId_variant`, for example
-`9005ff...634a_print`, so orders can be reconciled in Stripe without creating a
-separate product per artwork.
+The gallery appends `client_reference_id=artworkId_variant` to each payment link,
+for example `9005ff...634a_print`, so orders can be reconciled in Stripe without
+creating a separate product per artwork.
 
 ## Local Art Job GUI
 
