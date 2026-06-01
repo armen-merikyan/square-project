@@ -1326,6 +1326,7 @@ footer p {
   background: #fff;
   object-fit: cover;
   image-rendering: pixelated;
+  cursor: crosshair;
 }
 
 .gallery-pixel {

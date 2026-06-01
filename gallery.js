@@ -363,6 +363,30 @@ function renderArtworkImage(record) {
   return image;
 }
 
+function pixelColorAt(record, x, y) {
+  const match = (record.pixels || []).find((pixel) => pixel.x === x && pixel.y === y);
+  return match ? normalizeColor(match.color) : "";
+}
+
+async function filterByImagePixel(record, event) {
+  const target = event.currentTarget;
+  const width = record.size?.width || 8;
+  const height = record.size?.height || 8;
+  const rect = target.getBoundingClientRect();
+  const x = Math.min(width - 1, Math.max(0, Math.floor(((event.clientX - rect.left) / rect.width) * width)));
+  const y = Math.min(height - 1, Math.max(0, Math.floor(((event.clientY - rect.top) / rect.height) * height)));
+  const fullRecord = await getFullArtworkRecord(record);
+  const color = pixelColorAt(fullRecord, x, y);
+
+  if (!color) {
+    return;
+  }
+
+  const bucket = colorBucketForColor(color);
+  cycleColorFilter(bucket.colors, color);
+  applyFilters();
+}
+
 function renderFramePreview(record) {
   const preview = document.createElement("div");
   preview.className = "frame-preview";
@@ -1011,7 +1035,9 @@ async function getFullArtworkRecord(record) {
   }
 
   const fullRecord = await fetchArtwork(record.id);
-  const colors = fullRecord.colors || uniqueColors(fullRecord.pixels);
+  const colors = (fullRecord.colors || uniqueColors(fullRecord.pixels))
+    .map(normalizeColor)
+    .filter(Boolean);
   return {
     ...record,
     ...fullRecord,
@@ -1046,8 +1072,15 @@ function renderCardImage(record) {
   image.className = "gallery-card-image";
   image.src = `art/${record.id}.svg`;
   image.alt = `${record.title || "Square artwork"} artwork`;
+  image.title = "Click a pixel to filter by its color";
   image.decoding = "async";
   image.loading = "lazy";
+  image.addEventListener("click", (event) => {
+    event.stopPropagation();
+    filterByImagePixel(record, event).catch((error) => {
+      artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
+    });
+  });
   return image;
 }
 
