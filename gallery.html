@@ -37,7 +37,7 @@
       </section>
 
       <section class="gallery-workspace" aria-label="Artwork gallery">
-        <aside class="gallery-filters" aria-label="Gallery filters">
+        <aside class="gallery-filters" id="galleryFilters" aria-label="Gallery filters">
           <div class="filter-heading">
             <div>
               <p class="eyebrow">Filter menu</p>
@@ -55,7 +55,18 @@
               <p class="eyebrow">Artwork index</p>
               <h2>All squares</h2>
             </div>
-            <output id="galleryCount" aria-live="polite">Loading</output>
+            <div class="gallery-toolbar-actions">
+              <button
+                class="filter-toggle"
+                id="toggleColorFilters"
+                type="button"
+                aria-controls="galleryFilters"
+                aria-expanded="true"
+              >
+                Hide filters
+              </button>
+              <output id="galleryCount" aria-live="polite">Loading</output>
+            </div>
           </div>
           <label class="gallery-search">
             <span>Search by text</span>

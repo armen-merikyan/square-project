@@ -7,16 +7,65 @@ const gallerySearch = document.querySelector("#gallerySearch");
 const galleryPagination = document.querySelector("#galleryPagination");
 const colorFilterList = document.querySelector("#colorFilterList");
 const clearColorFilters = document.querySelector("#clearColorFilters");
+const galleryWorkspace = document.querySelector(".gallery-workspace");
+const galleryFilters = document.querySelector("#galleryFilters");
+const toggleColorFilters = document.querySelector("#toggleColorFilters");
 
 const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
+const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 let galleryRecords = [];
 let filteredRecords = [];
 let pageSize = PAGE_SIZE_OPTIONS[0];
 let currentPage = 1;
 let selectedId = "";
 let previousFocus = null;
+let colorFiltersVisible = true;
 const includedColors = new Set();
 const excludedColors = new Set();
+
+function readCookie(name) {
+  return document.cookie
+    .split("; ")
+    .find((cookie) => cookie.startsWith(`${name}=`))
+    ?.split("=")[1];
+}
+
+function savePreference(name, value) {
+  const encodedValue = encodeURIComponent(value);
+  document.cookie = `${name}=${encodedValue}; max-age=31536000; path=/; SameSite=Lax`;
+
+  try {
+    window.localStorage.setItem(name, value);
+  } catch {
+    // Ignore unavailable storage in restrictive browser modes.
+  }
+}
+
+function readPreference(name) {
+  const cookieValue = readCookie(name);
+
+  if (cookieValue) {
+    return decodeURIComponent(cookieValue);
+  }
+
+  try {
+    return window.localStorage.getItem(name);
+  } catch {
+    return null;
+  }
+}
+
+function setColorFiltersVisible(visible, shouldSave = true) {
+  colorFiltersVisible = visible;
+  galleryWorkspace.classList.toggle("filters-hidden", !visible);
+  galleryFilters.toggleAttribute("hidden", !visible);
+  toggleColorFilters.textContent = visible ? "Hide filters" : "Show filters";
+  toggleColorFilters.setAttribute("aria-expanded", String(visible));
+
+  if (shouldSave) {
+    savePreference(FILTER_VISIBILITY_COOKIE, visible ? "shown" : "hidden");
+  }
+}
 
 function compactId(id) {
   return `${id.slice(0, 10)}...${id.slice(-8)}`;
@@ -94,6 +143,44 @@ function renderSwatches(colors) {
   });
 
   return swatches;
+}
+
+function renderPixelArtwork(record) {
+  const width = record.size?.width || 8;
+  const height = record.size?.height || 8;
+  const pixelMap = new Map(
+    (record.pixels || []).map((pixel) => [
+      `${pixel.x}:${pixel.y}`,
+      normalizeColor(pixel.color)
+    ])
+  );
+  const artwork = document.createElement("div");
+  artwork.className = "gallery-pixel-art";
+  artwork.style.setProperty("--pixel-columns", width);
+  artwork.style.setProperty("--pixel-rows", height);
+  artwork.setAttribute("aria-label", `${record.title || "Square artwork"} color pixels`);
+
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      const color = pixelMap.get(`${x}:${y}`) || "#FFFFFF";
+      const state = colorFilterState(color);
+      const pixel = document.createElement("button");
+      pixel.className = "gallery-pixel";
+      pixel.type = "button";
+      pixel.dataset.filterState = state;
+      pixel.style.background = color;
+      pixel.title = `${color} filter ${state}`;
+      pixel.setAttribute("aria-label", `${color} pixel at ${x + 1}, ${y + 1}, ${state} filter`);
+      pixel.addEventListener("click", (event) => {
+        event.stopPropagation();
+        cycleColorFilter(color);
+        applyFilters();
+      });
+      artwork.appendChild(pixel);
+    }
+  }
+
+  return artwork;
 }
 
 function colorUsage(records) {
@@ -274,16 +361,16 @@ function renderInspector(record) {
   const content = document.createElement("div");
   content.className = "inspector-content";
 
-  const eyebrow = document.createElement("p");
-  eyebrow.className = "eyebrow";
-  eyebrow.textContent = "Selected square";
-
   const title = document.createElement("h2");
   title.textContent = record.title || "Untitled square";
 
   const seed = document.createElement("p");
   seed.className = "inspector-seed";
   seed.textContent = record.seed || "No seed recorded";
+
+  const heading = document.createElement("div");
+  heading.className = "inspector-heading";
+  heading.append(title, seed);
 
   const metrics = document.createElement("dl");
   metrics.className = "inspector-metrics";
@@ -311,18 +398,15 @@ function renderInspector(record) {
   jsonLink.textContent = "Download JSON";
 
   content.append(
-    eyebrow,
-    title,
-    seed,
+    heading,
     metrics,
     reasoningLabel,
     reasoning,
     paletteLabel,
-    renderSwatches(colors),
-    jsonLink
+    renderSwatches(colors)
   );
 
-  frame.append(closeButton, image, content);
+  frame.append(jsonLink, closeButton, image, content);
   artInspector.appendChild(frame);
 
   openInspector();
@@ -330,31 +414,27 @@ function renderInspector(record) {
   document.querySelectorAll(".gallery-card").forEach((card) => {
     const isSelected = card.dataset.id === selectedId;
     card.classList.toggle("is-selected", isSelected);
-    card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+    card.toggleAttribute("aria-current", isSelected);
   });
 }
 
 function renderCard(record, index) {
-  const card = document.createElement("button");
+  const card = document.createElement("article");
   card.className = "gallery-card";
-  card.type = "button";
   card.dataset.id = record.id;
-  card.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-
-  const image = document.createElement("img");
-  image.src = `art/${record.id}.svg`;
-  image.alt = "";
-  image.decoding = "async";
 
   const meta = document.createElement("span");
   meta.className = "gallery-card-meta";
 
-  const title = document.createElement("strong");
+  const title = document.createElement("button");
+  title.className = "gallery-card-title";
+  title.type = "button";
   title.textContent = record.title || `Square ${index + 1}`;
+  title.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
+  title.addEventListener("click", () => renderInspector(record));
 
   meta.append(title);
-  card.append(image, meta);
-  card.addEventListener("click", () => renderInspector(record));
+  card.append(renderPixelArtwork(record), meta);
 
   return card;
 }
@@ -437,7 +517,7 @@ function renderCurrentPage() {
   document.querySelectorAll(".gallery-card").forEach((card) => {
     const isSelected = card.dataset.id === selectedId;
     card.classList.toggle("is-selected", isSelected);
-    card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+    card.toggleAttribute("aria-current", isSelected);
   });
 }
 
@@ -473,6 +553,9 @@ async function renderGallery() {
 }
 
 gallerySearch.addEventListener("input", applyFilters);
+toggleColorFilters.addEventListener("click", () => {
+  setColorFiltersVisible(!colorFiltersVisible);
+});
 clearColorFilters.addEventListener("click", () => {
   includedColors.clear();
   excludedColors.clear();
@@ -494,6 +577,8 @@ artInspector.addEventListener("close", () => {
     previousFocus = null;
   }
 });
+
+setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
 
 renderGallery().catch((error) => {
   galleryCount.textContent = "Error";
