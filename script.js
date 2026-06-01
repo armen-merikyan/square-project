@@ -134,7 +134,7 @@ function setActive(index) {
   slides.forEach((slide, slideIndex) => {
     const offset = shortestOffset(slideIndex);
     const absoluteOffset = Math.abs(offset);
-    const hidden = Math.abs(offset) > 2;
+    const hidden = Math.abs(offset) > 1;
 
     slide.style.setProperty("--offset", offset);
     slide.style.setProperty("--abs-offset", absoluteOffset);

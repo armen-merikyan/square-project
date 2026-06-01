@@ -83,10 +83,10 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(310px, 0.95fr);
-  align-items: center;
-  gap: clamp(32px, 6vw, 90px);
+  align-items: end;
+  gap: clamp(32px, 5vw, 72px);
   min-height: calc(100vh - 72px);
-  padding: clamp(34px, 6vw, 80px) clamp(18px, 4vw, 56px) 44px;
+  padding: clamp(34px, 6vw, 72px) clamp(18px, 4vw, 56px) 44px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -181,10 +181,11 @@ button:hover {
 }
 
 .art-carousel {
-  width: min(100%, 660px);
-  justify-self: center;
+  grid-column: 1 / -1;
+  width: 100%;
+  justify-self: stretch;
   overflow: hidden;
-  padding: clamp(16px, 4vw, 28px);
+  padding: clamp(18px, 3vw, 34px);
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.88);
@@ -207,12 +208,12 @@ button:hover {
 }
 
 .coverflow {
-  --cover-size: clamp(86px, 18vw, 132px);
-  --cover-slot: clamp(130px, 22vw, 170px);
+  --cover-size: clamp(190px, 24vw, 340px);
+  --cover-slot: clamp(230px, 32vw, 420px);
   position: relative;
-  height: clamp(190px, 32vw, 280px);
-  margin: 18px 0 16px;
-  perspective: 900px;
+  height: clamp(300px, 36vw, 500px);
+  margin: clamp(18px, 3vw, 30px) 0 20px;
+  perspective: 1200px;
   transform-style: preserve-3d;
 }
 
@@ -590,9 +591,9 @@ footer p {
   }
 
   .coverflow {
-    --cover-size: 78px;
-    --cover-slot: 88px;
-    height: 180px;
+    --cover-size: clamp(150px, 55vw, 230px);
+    --cover-slot: clamp(170px, 62vw, 260px);
+    height: clamp(250px, 72vw, 340px);
     perspective: 700px;
   }
 
