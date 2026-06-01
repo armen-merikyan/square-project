@@ -207,59 +207,48 @@ button:hover {
 }
 
 .coverflow {
-  position: relative;
-  height: clamp(420px, 56vw, 600px);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(10px, 1.6vw, 16px);
+  align-items: start;
   margin: 18px 0 16px;
-  perspective: 1200px;
-  transform-style: preserve-3d;
 }
 
 .carousel-card {
-  --offset: 0;
-  --abs-offset: 0;
-  position: absolute;
-  inset: 0;
-  display: grid;
-  align-items: stretch;
+  position: relative;
+  display: block;
+  min-width: 0;
+  aspect-ratio: 1;
   overflow: hidden;
-  border: 1px solid rgba(21, 21, 21, 0.2);
+  border: 2px solid rgba(21, 21, 21, 0.14);
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 30px 80px rgba(21, 21, 21, 0.26);
+  box-shadow: 0 14px 34px rgba(21, 21, 21, 0.12);
   cursor: pointer;
-  opacity: max(0, calc(1 - (var(--abs-offset) * 0.28)));
-  transform:
-    translateX(calc(var(--offset) * 34%))
-    translateZ(calc((2 - var(--abs-offset)) * 34px))
-    rotateY(calc(var(--offset) * -42deg))
-    scale(calc(1 - (var(--abs-offset) * 0.12)));
-  transform-style: preserve-3d;
-  transition:
-    transform 760ms cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 520ms ease,
-    filter 520ms ease,
-    z-index 0ms linear 380ms;
-  z-index: calc(20 - var(--abs-offset));
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .carousel-card.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .carousel-card:not(.is-active) {
-  filter: saturate(0.8) brightness(0.86);
+  filter: none;
 }
 
-.carousel-card:not(.is-active) .art-overlay {
-  opacity: 0;
+.carousel-card:hover {
+  transform: translateY(-2px);
 }
 
 .carousel-card.is-active {
+  border-color: var(--ink);
+  box-shadow: 0 18px 42px rgba(21, 21, 21, 0.18);
   cursor: default;
 }
 
 .carousel-card img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -267,17 +256,7 @@ button:hover {
 }
 
 .art-overlay {
-  position: absolute;
-  inset: auto 14px 14px;
-  max-height: calc(100% - 28px);
-  overflow: auto;
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  border-radius: 8px;
-  padding: clamp(14px, 3vw, 22px);
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.82);
-  backdrop-filter: blur(8px) saturate(1.25);
+  display: none;
 }
 
 .art-overlay h2 {
@@ -591,21 +570,13 @@ footer p {
   }
 
   .coverflow {
-    height: 500px;
-    perspective: 850px;
+    grid-template-columns: repeat(6, minmax(84px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 6px;
   }
 
   .carousel-card {
-    transform:
-      translateX(calc(var(--offset) * 18%))
-      translateZ(calc((2 - var(--abs-offset)) * 20px))
-      rotateY(calc(var(--offset) * -28deg))
-      scale(calc(1 - (var(--abs-offset) * 0.1)));
-  }
-
-  .art-overlay {
-    inset: auto 10px 10px;
-    max-height: 62%;
+    min-width: 84px;
   }
 
   .art-details {
