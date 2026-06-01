@@ -1,0 +1,407 @@
+{
+  "id": "eb9469ddc2cc466ac04335386c6924811ee71260f59ea05d6a5d107c876d0999",
+  "seed": "rage vs calm; light_vs_weight; rising_signal; orbit; crack against mirror; center_heavy; open_vs_closed; tiny_face; lonely_signal | abstract variation request 78; target batch count 100",
+  "title": "Order in Chaos",
+  "reasoning": "This piece captures the tension between calm and rage, using a palette of intense reds and soft blues. The left side of the square features a chaotic radial pattern symbolizing rage, while the right embodies calm with dispersed dot patterns, creating a relaxed flow. The stark contrast between the bold fiery red and serene pale blue reflects the emotional turmoil and balance suggested by the seed. The drawn elements echo interference and weight, engaging the viewer in an emotional ebb and flow.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4C00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF3333"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF6666"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF9999"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF1F1F"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF5B5B"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF8D8D"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFC1C1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B2C9FF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#8CA1FF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#B22222"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D15555"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E67E7E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F3A1A1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B2C9FF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8CA1FF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F2D3D3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#D1E5E5"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#E6F2F2"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B2C9FF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#8CA1FF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D5D5D5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C4C4C4"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C1D4FF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D6E3FF"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D3E5FF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A0B0FF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#6C7CFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#6C7CFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "rage",
+      "calm"
+    ],
+    "emotionMoods": {
+      "rage": [
+        "red",
+        "explosive",
+        "sharp"
+      ],
+      "calm": [
+        "symmetrical",
+        "spaced out",
+        "soft"
+      ]
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "diagonal_rise",
+    "patterns": {
+      "rage": "radial",
+      "calm": "dots"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "crown",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "eb9469ddc2cc466ac04335386c6924811ee71260f59ea05d6a5d107c876d0999",
+  "pixelHash": "eb9469ddc2cc466ac04335386c6924811ee71260f59ea05d6a5d107c876d0999",
+  "jsonFile": "eb9469ddc2cc466ac04335386c6924811ee71260f59ea05d6a5d107c876d0999.json",
+  "svgFile": "eb9469ddc2cc466ac04335386c6924811ee71260f59ea05d6a5d107c876d0999.svg",
+  "createdAt": "2026-06-01T14:55:11.043297+00:00"
+}

@@ -1,0 +1,407 @@
+{
+  "id": "c49058b988a7e3c5b55dc42699fcacc20bc6543f605a4c47f91634fdd3e157d7",
+  "seed": "rage vs calm; light_vs_weight; rising_signal; orbit; crack against mirror; center_heavy; open_vs_closed; tiny_face; lonely_signal | abstract variation request 100; target batch count 100",
+  "title": "Duality in Motion",
+  "reasoning": "The emotional tone captures the tension between rage and calm, illustrated through the contrasting palette of deep reds and serene pale blues. This 8x8 pixel composition features an intentional imbalance created by sharp, jagged red pixels (representing rage) cutting through horizontal layers of calm, pale blue (indicating serenity), evoking a story of collision and resolution. The use of black represents a mirror-shard effect, enabling a visual echo of rage's sharpness against the cool tranquility of calm. The diagonal flow draws the viewer's eye across the canvas, suggesting movement\u2014a constant struggle between these two states, fluctuating through light and weight. The design utilizes a broken pattern to introduce imperfection, reflecting the subdued chaos within calmness and the unpredictable nature of rage.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF4444"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6666"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF8888"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFAAAA"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4444FF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6666FF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#8888FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#AAAAFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#909090"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#999999"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF3344"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF5566"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF7788"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF99AA"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#3344FF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5566FF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#7788FF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#99AAFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#909090"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#555555"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#777777"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#999999"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF2255"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF4455"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FF6675"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFA5A5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#2255FF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#4455FF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#6675FF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A5A5FF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#909090"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#808080"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "rage",
+      "calm"
+    ],
+    "emotionMoods": {
+      "rage": [
+        "red",
+        "sharp",
+        "diagonal"
+      ],
+      "calm": [
+        "spaced out",
+        "symmetrical",
+        "horizontal"
+      ]
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "rage": "rain",
+      "calm": "stairs"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "stair_step",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c49058b988a7e3c5b55dc42699fcacc20bc6543f605a4c47f91634fdd3e157d7",
+  "pixelHash": "c49058b988a7e3c5b55dc42699fcacc20bc6543f605a4c47f91634fdd3e157d7",
+  "jsonFile": "c49058b988a7e3c5b55dc42699fcacc20bc6543f605a4c47f91634fdd3e157d7.json",
+  "svgFile": "c49058b988a7e3c5b55dc42699fcacc20bc6543f605a4c47f91634fdd3e157d7.svg",
+  "createdAt": "2026-06-01T14:55:41.466962+00:00"
+}
