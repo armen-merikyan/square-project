@@ -5,18 +5,16 @@ const SHOP_VARIANTS = {
     label: "Art print",
     description: "8x8 print",
     price: "$24",
-    button: "Order print",
-    paymentLink: ""
+    button: "Order print"
   },
   framed: {
     label: "Framed print",
     description: "8x8 print in black upsimples frame",
     price: "$39",
-    button: "Order framed print",
-    paymentLink: ""
+    button: "Order framed print"
   }
 };
-const STRIPE_PAYMENT_LINK_HOST = "buy.stripe.com";
+const STRIPE_CHECKOUT_ENDPOINT = "/api/stripe/checkout";
 const DESIGN_TIME_HOSTS = new Set(["", "localhost", "127.0.0.1", "::1"]);
 
 const artGrid = document.querySelector("#artGrid");
@@ -309,72 +307,64 @@ function renderFramePreview(record) {
   return preview;
 }
 
-function configuredPaymentLink(variant) {
-  const link = SHOP_VARIANTS[variant]?.paymentLink || "";
-  return link.trim();
-}
-
-function isStripePaymentLink(url) {
-  try {
-    return new URL(url).hostname === STRIPE_PAYMENT_LINK_HOST;
-  } catch {
-    return false;
-  }
-}
-
 function checkoutReference(record, variant) {
   const reference = `${record.id}_${variant}`.replace(/[^a-zA-Z0-9_-]/g, "_");
   return reference.slice(0, 200);
-}
-
-function buildPaymentLinkUrl(record, variant) {
-  const paymentLink = configuredPaymentLink(variant);
-
-  if (!isStripePaymentLink(paymentLink)) {
-    return "";
-  }
-
-  const url = new URL(paymentLink);
-  url.searchParams.set("client_reference_id", checkoutReference(record, variant));
-  url.searchParams.set("utm_source", "square_project");
-  url.searchParams.set("utm_medium", "static_gallery");
-  url.searchParams.set("utm_campaign", "art_orders");
-  url.searchParams.set("utm_content", `${variant}_${record.id.slice(0, 32)}`);
-  return url.toString();
 }
 
 function isDesignTimeCheckout() {
   return window.location.protocol === "file:" || DESIGN_TIME_HOSTS.has(window.location.hostname);
 }
 
-function checkoutStatusForVariant(variant) {
-  if (configuredPaymentLink(variant)) {
-    return "Ready for Stripe checkout.";
-  }
-
+function checkoutStatusForVariant() {
   return isDesignTimeCheckout()
-    ? "Product configured for design preview."
-    : "Stripe Payment Link needs to be configured.";
+    ? "Ready for local Stripe checkout."
+    : "Ready for Stripe checkout.";
 }
 
-function checkoutToneForVariant(variant) {
-  return configuredPaymentLink(variant) || isDesignTimeCheckout() ? "neutral" : "error";
+function checkoutToneForVariant() {
+  return "neutral";
 }
 
-function startCheckout(record, variant, status) {
-  const checkoutUrl = buildPaymentLinkUrl(record, variant);
+async function startCheckout(record, variant, status, checkoutButton) {
+  const variantConfig = SHOP_VARIANTS[variant];
 
-  if (!checkoutUrl) {
-    status.textContent = isDesignTimeCheckout()
-      ? "Checkout is disabled in design preview."
-      : "Stripe Payment Link needs to be configured.";
-    status.dataset.tone = checkoutToneForVariant(variant);
+  if (!variantConfig) {
+    status.textContent = "Choose a valid order option.";
+    status.dataset.tone = "error";
     return;
   }
 
-  status.textContent = "Opening Stripe checkout.";
+  status.textContent = "Creating Stripe checkout.";
   status.dataset.tone = "neutral";
-  window.location.href = checkoutUrl;
+  checkoutButton.disabled = true;
+
+  try {
+    const response = await fetch(STRIPE_CHECKOUT_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        artworkId: record.id,
+        variant,
+        clientReferenceId: checkoutReference(record, variant),
+        returnPath: `${window.location.pathname}${window.location.search}`
+      })
+    });
+    const payload = await response.json().catch(() => ({}));
+
+    if (!response.ok || !payload.url) {
+      throw new Error(payload.error || "Stripe checkout could not be created.");
+    }
+
+    status.textContent = "Opening Stripe checkout.";
+    window.location.href = payload.url;
+  } catch (error) {
+    status.textContent = error.message;
+    status.dataset.tone = "error";
+    checkoutButton.disabled = false;
+  }
 }
 
 function renderOrderPanel(record, preview) {
@@ -428,7 +418,10 @@ function renderOrderPanel(record, preview) {
   status.dataset.tone = checkoutToneForVariant(selectedShopVariant);
   status.textContent = checkoutStatusForVariant(selectedShopVariant);
 
-  checkoutButton.addEventListener("click", () => startCheckout(record, selectedShopVariant, status));
+  checkoutButton.addEventListener(
+    "click",
+    () => startCheckout(record, selectedShopVariant, status, checkoutButton),
+  );
 
   panel.append(heading, options, checkoutButton, status);
   return panel;

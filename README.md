@@ -28,18 +28,43 @@ python3 scripts/dev_server.py
 
 Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
 
-## Stripe Payment Links
+## Stripe Checkout
 
-The public customer site is static. Customers order through Stripe Payment Links, so there is no customer-facing server route and no Stripe secret key in the website.
+Customer orders are created through Stripe Checkout. The browser sends the selected
+artwork id and order variant to the local/backend server, and the server creates a
+Checkout Session with the artwork details stored as Stripe metadata.
 
-Create two reusable Stripe Payment Links in Stripe Dashboard:
+Create one reusable Stripe Product and two reusable Prices:
 
-- 8x8 art print
-- 8x8 art print in the black upsimples 8x8 frame
+- 8x8 art print, `$24`
+- 8x8 art print in the black upsimples 8x8 frame, `$39`
 
-Then paste the public `https://buy.stripe.com/...` URLs into `SHOP_VARIANTS.print.paymentLink` and `SHOP_VARIANTS.framed.paymentLink` in `gallery.js`.
+With `STRIPE_SECRET_KEY` set in `.env`, this helper creates the product and
+prices:
 
-The static site appends `client_reference_id` and UTM parameters to the Payment Link URL before redirecting to Stripe. The reference format is `artworkId_variant`, for example `9005ff...634a_print`, so orders can be reconciled in Stripe without creating a checkout session on your own server.
+```bash
+python3 scripts/setup_stripe_shop.py
+```
+
+Copy the printed values into `.env`:
+
+```env
+STRIPE_ART_PRODUCT_ID=prod_...
+STRIPE_PRINT_PRICE_ID=price_...
+STRIPE_FRAMED_PRICE_ID=price_...
+```
+
+Run the local dev server for checkout testing:
+
+```bash
+python3 scripts/dev_server.py
+```
+
+The checkout route is `POST /api/stripe/checkout`. It stores `artwork_id`,
+`variant`, and `framed` on both the Checkout Session and PaymentIntent metadata.
+The `client_reference_id` format is `artworkId_variant`, for example
+`9005ff...634a_print`, so orders can be reconciled in Stripe without creating a
+separate product per artwork.
 
 ## Local Art Job GUI
 
