@@ -5,20 +5,29 @@ const artInspector = document.querySelector("#artInspector");
 const galleryCount = document.querySelector("#galleryCount");
 const gallerySearch = document.querySelector("#gallerySearch");
 const galleryPagination = document.querySelector("#galleryPagination");
+const colorFilterList = document.querySelector("#colorFilterList");
+const clearColorFilters = document.querySelector("#clearColorFilters");
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
 let galleryRecords = [];
 let filteredRecords = [];
+let pageSize = PAGE_SIZE_OPTIONS[0];
 let currentPage = 1;
 let selectedId = "";
 let previousFocus = null;
+const includedColors = new Set();
+const excludedColors = new Set();
 
 function compactId(id) {
   return `${id.slice(0, 10)}...${id.slice(-8)}`;
 }
 
 function uniqueColors(pixels = []) {
-  return [...new Set(pixels.map((pixel) => pixel.color).filter(Boolean))];
+  return [...new Set(pixels.map((pixel) => normalizeColor(pixel.color)).filter(Boolean))];
+}
+
+function normalizeColor(color = "") {
+  return color.trim().toUpperCase();
 }
 
 function recordSearchText(record) {
@@ -27,7 +36,7 @@ function recordSearchText(record) {
     record.title,
     record.seed,
     record.reasoning,
-    ...uniqueColors(record.pixels)
+    ...record.colors
   ]
     .filter(Boolean)
     .join(" ")
@@ -85,6 +94,75 @@ function renderSwatches(colors) {
   });
 
   return swatches;
+}
+
+function colorUsage(records) {
+  const usage = new Map();
+
+  records.forEach((record) => {
+    record.colors.forEach((color) => {
+      usage.set(color, (usage.get(color) || 0) + 1);
+    });
+  });
+
+  return [...usage.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
+function renderColorFilters() {
+  colorFilterList.replaceChildren();
+
+  colorUsage(galleryRecords).forEach(([color, count]) => {
+    const item = document.createElement("div");
+    item.className = "color-filter-item";
+
+    const swatch = document.createElement("span");
+    swatch.className = "color-filter-swatch";
+    swatch.style.background = color;
+    swatch.setAttribute("aria-hidden", "true");
+
+    const label = document.createElement("span");
+    label.className = "color-filter-label";
+    label.textContent = color;
+
+    const total = document.createElement("span");
+    total.className = "color-filter-count";
+    total.textContent = String(count);
+
+    const include = document.createElement("button");
+    include.type = "button";
+    include.className = "color-filter-action";
+    include.textContent = "+";
+    include.setAttribute("aria-label", `Include ${color}`);
+    include.classList.toggle("is-active", includedColors.has(color));
+    include.addEventListener("click", () => {
+      if (includedColors.has(color)) {
+        includedColors.delete(color);
+      } else {
+        includedColors.add(color);
+        excludedColors.delete(color);
+      }
+      applyFilters();
+    });
+
+    const exclude = document.createElement("button");
+    exclude.type = "button";
+    exclude.className = "color-filter-action";
+    exclude.textContent = "-";
+    exclude.setAttribute("aria-label", `Exclude ${color}`);
+    exclude.classList.toggle("is-active", excludedColors.has(color));
+    exclude.addEventListener("click", () => {
+      if (excludedColors.has(color)) {
+        excludedColors.delete(color);
+      } else {
+        excludedColors.add(color);
+        includedColors.delete(color);
+      }
+      applyFilters();
+    });
+
+    item.append(swatch, label, total, include, exclude);
+    colorFilterList.appendChild(item);
+  });
 }
 
 function closeInspector() {
@@ -221,10 +299,7 @@ function renderCard(record, index) {
   const title = document.createElement("strong");
   title.textContent = record.title || `Square ${index + 1}`;
 
-  const id = document.createElement("span");
-  id.textContent = compactId(record.id);
-
-  meta.append(title, id);
+  meta.append(title);
   card.append(image, meta);
   card.addEventListener("click", () => renderInspector(record));
 
@@ -233,10 +308,6 @@ function renderCard(record, index) {
 
 function renderPagination(totalPages) {
   galleryPagination.replaceChildren();
-
-  if (totalPages <= 1) {
-    return;
-  }
 
   const previous = document.createElement("button");
   previous.type = "button";
@@ -250,6 +321,26 @@ function renderPagination(totalPages) {
   const status = document.createElement("span");
   status.textContent = `Page ${currentPage} of ${totalPages}`;
 
+  const pageSizeLabel = document.createElement("label");
+  pageSizeLabel.className = "page-size-control";
+  pageSizeLabel.textContent = "Per page";
+
+  const pageSizeSelect = document.createElement("select");
+  pageSizeSelect.setAttribute("aria-label", "Artworks per page");
+  PAGE_SIZE_OPTIONS.forEach((option) => {
+    const optionElement = document.createElement("option");
+    optionElement.value = String(option);
+    optionElement.textContent = String(option);
+    optionElement.selected = option === pageSize;
+    pageSizeSelect.appendChild(optionElement);
+  });
+  pageSizeSelect.addEventListener("change", (event) => {
+    pageSize = Number(event.target.value);
+    currentPage = 1;
+    renderCurrentPage();
+  });
+  pageSizeLabel.appendChild(pageSizeSelect);
+
   const next = document.createElement("button");
   next.type = "button";
   next.textContent = "Next";
@@ -259,18 +350,23 @@ function renderPagination(totalPages) {
     renderCurrentPage();
   });
 
-  galleryPagination.append(previous, status, next);
+  if (totalPages > 1) {
+    galleryPagination.append(previous, status, next, pageSizeLabel);
+  } else {
+    galleryPagination.append(status, pageSizeLabel);
+  }
 }
 
 function renderCurrentPage() {
-  const totalPages = Math.max(1, Math.ceil(filteredRecords.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(filteredRecords.length / pageSize));
   currentPage = Math.min(Math.max(currentPage, 1), totalPages);
 
-  const start = (currentPage - 1) * PAGE_SIZE;
-  const pageRecords = filteredRecords.slice(start, start + PAGE_SIZE);
+  const start = (currentPage - 1) * pageSize;
+  const pageRecords = filteredRecords.slice(start, start + pageSize);
   const query = gallerySearch.value.trim();
+  const hasColorFilters = includedColors.size > 0 || excludedColors.size > 0;
 
-  galleryCount.textContent = query
+  galleryCount.textContent = query || hasColorFilters
     ? `${filteredRecords.length} of ${galleryRecords.length} artworks`
     : `${galleryRecords.length} artworks`;
 
@@ -292,12 +388,17 @@ function renderCurrentPage() {
   });
 }
 
-function applySearch() {
+function applyFilters() {
   const terms = gallerySearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  filteredRecords = terms.length
-    ? galleryRecords.filter((record) => terms.every((term) => record.searchText.includes(term)))
-    : galleryRecords;
+  filteredRecords = galleryRecords.filter((record) => {
+    const matchesText = terms.every((term) => record.searchText.includes(term));
+    const matchesIncluded = [...includedColors].every((color) => record.colors.includes(color));
+    const matchesExcluded = [...excludedColors].every((color) => !record.colors.includes(color));
+
+    return matchesText && matchesIncluded && matchesExcluded;
+  });
   currentPage = 1;
+  renderColorFilters();
   renderCurrentPage();
 }
 
@@ -305,15 +406,25 @@ async function renderGallery() {
   galleryCount.textContent = "Loading";
 
   const artworkIds = await fetchArtworkIds();
-  galleryRecords = (await Promise.all(artworkIds.map(fetchArtwork))).map((record) => ({
-    ...record,
-    searchText: recordSearchText(record)
-  }));
+  galleryRecords = (await Promise.all(artworkIds.map(fetchArtwork))).map((record) => {
+    const colors = uniqueColors(record.pixels);
+    return {
+      ...record,
+      colors,
+      searchText: recordSearchText({ ...record, colors })
+    };
+  });
   filteredRecords = galleryRecords;
+  renderColorFilters();
   renderCurrentPage();
 }
 
-gallerySearch.addEventListener("input", applySearch);
+gallerySearch.addEventListener("input", applyFilters);
+clearColorFilters.addEventListener("click", () => {
+  includedColors.clear();
+  excludedColors.clear();
+  applyFilters();
+});
 
 artInspector.addEventListener("click", (event) => {
   if (event.target === artInspector) {
