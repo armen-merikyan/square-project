@@ -46,6 +46,18 @@
             <button class="filter-clear" id="clearColorFilters" type="button">Clear</button>
           </div>
           <p class="filter-help">Click a color to cycle Neutral, On, and Off.</p>
+          <label class="color-similarity-control">
+            <span>Merge similar colors</span>
+            <input
+              id="colorSimilarity"
+              type="range"
+              min="0"
+              max="96"
+              step="8"
+              value="0"
+            >
+            <output id="colorSimilarityValue" for="colorSimilarity">Exact</output>
+          </label>
           <div class="color-filter-list" id="colorFilterList"></div>
         </aside>
 

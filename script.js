@@ -1,4 +1,5 @@
-const artworks = [
+const GALLERY_MANIFEST_PATH = "art/manifest.json";
+const fallbackArtworks = [
   "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22",
   "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
   "3900ac21442c473c57d622379bab5ce6abc31eab2d83ad1d8201d4665ec4c6a4",
@@ -6,6 +7,7 @@ const artworks = [
   "eea806d25b129b7789466507724f10b326e6a92f0b40619a060c7396f95e134d",
   "31a07d498056211fc208eff311d4a11666b9e4c030cdfe7aca71cf1df1eaae73"
 ];
+let artworks = fallbackArtworks;
 
 const coverflow = document.querySelector("#coverflow");
 const dots = document.querySelector("#carouselDots");
@@ -54,6 +56,23 @@ async function loadArtwork(id) {
   return response.json();
 }
 
+async function loadArtworkIds() {
+  const response = await fetch(GALLERY_MANIFEST_PATH);
+
+  if (!response.ok) {
+    throw new Error("Could not load art manifest.");
+  }
+
+  const manifest = await response.json();
+  const ids = Array.isArray(manifest) ? manifest : manifest.artworkIds;
+
+  if (!Array.isArray(ids) || ids.length === 0) {
+    throw new Error("Art manifest does not include any artwork ids.");
+  }
+
+  return ids;
+}
+
 function createMetadataOverlay(data, index) {
   const overlay = document.createElement("div");
   overlay.className = "art-overlay";
@@ -94,6 +113,13 @@ function createMetadataOverlay(data, index) {
 }
 
 async function renderCarousel() {
+  try {
+    artworks = await loadArtworkIds();
+  } catch (error) {
+    console.warn(error);
+    artworks = fallbackArtworks;
+  }
+
   const records = await Promise.all(artworks.map(loadArtwork));
 
   records.forEach((record, index) => {

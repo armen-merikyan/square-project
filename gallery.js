@@ -10,18 +10,24 @@ const clearColorFilters = document.querySelector("#clearColorFilters");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
 const galleryFilters = document.querySelector("#galleryFilters");
 const toggleColorFilters = document.querySelector("#toggleColorFilters");
+const colorSimilarity = document.querySelector("#colorSimilarity");
+const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 
 const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
+const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 let galleryRecords = [];
 let filteredRecords = [];
+let colorBuckets = [];
+let colorToBucket = new Map();
 let pageSize = PAGE_SIZE_OPTIONS[0];
 let currentPage = 1;
 let selectedId = "";
 let previousFocus = null;
 let colorFiltersVisible = true;
-const includedColors = new Set();
-const excludedColors = new Set();
+let colorSimilarityThreshold = Number(colorSimilarity.value);
+const includedColorSeeds = new Set();
+const excludedColorSeeds = new Set();
 
 function readCookie(name) {
   return document.cookie
@@ -68,7 +74,7 @@ function setColorFiltersVisible(visible, shouldSave = true) {
 }
 
 function compactId(id) {
-  return `${id.slice(0, 10)}...${id.slice(-8)}`;
+  return `${id.slice(0, 4)}...${id.slice(-4)}`;
 }
 
 function uniqueColors(pixels = []) {
@@ -77,6 +83,37 @@ function uniqueColors(pixels = []) {
 
 function normalizeColor(color = "") {
   return color.trim().toUpperCase();
+}
+
+function parseHexColor(color) {
+  const match = normalizeColor(color).match(/^#([0-9A-F]{6})$/);
+
+  if (!match) {
+    return null;
+  }
+
+  const value = match[1];
+
+  return {
+    r: Number.parseInt(value.slice(0, 2), 16),
+    g: Number.parseInt(value.slice(2, 4), 16),
+    b: Number.parseInt(value.slice(4, 6), 16)
+  };
+}
+
+function colorDistance(colorA, colorB) {
+  const rgbA = parseHexColor(colorA);
+  const rgbB = parseHexColor(colorB);
+
+  if (!rgbA || !rgbB) {
+    return colorA === colorB ? 0 : Number.POSITIVE_INFINITY;
+  }
+
+  return Math.hypot(rgbA.r - rgbB.r, rgbA.g - rgbB.g, rgbA.b - rgbB.b);
+}
+
+function bucketKey(colors) {
+  return colors.join("|");
 }
 
 function recordSearchText(record) {
@@ -119,13 +156,38 @@ async function fetchArtwork(id) {
   return response.json();
 }
 
-function makeMetric(label, value) {
+function makeMetric(label, value, options = {}) {
   const item = document.createElement("div");
   const term = document.createElement("dt");
   const description = document.createElement("dd");
 
   term.textContent = label;
-  description.textContent = value;
+
+  if (options.copyValue) {
+    const copyButton = document.createElement("button");
+    copyButton.className = "metric-copy";
+    copyButton.type = "button";
+    copyButton.textContent = value;
+    copyButton.title = `Copy ${options.copyValue}`;
+    copyButton.setAttribute("aria-label", `Copy ${label} ${options.copyValue}`);
+    copyButton.addEventListener("click", async () => {
+      try {
+        await copyTextToClipboard(options.copyValue);
+        copyButton.dataset.copied = "true";
+        copyButton.setAttribute("aria-label", `Copied ${label}`);
+        window.setTimeout(() => {
+          copyButton.dataset.copied = "false";
+          copyButton.setAttribute("aria-label", `Copy ${label} ${options.copyValue}`);
+        }, 1400);
+      } catch {
+        copyButton.setAttribute("aria-label", `Unable to copy ${label}`);
+      }
+    });
+    description.appendChild(copyButton);
+  } else {
+    description.textContent = value;
+  }
+
   item.append(term, description);
   return item;
 }
@@ -163,7 +225,8 @@ function renderPixelArtwork(record) {
   for (let y = 0; y < height; y += 1) {
     for (let x = 0; x < width; x += 1) {
       const color = pixelMap.get(`${x}:${y}`) || "#FFFFFF";
-      const state = colorFilterState(color);
+      const bucket = colorBucketForColor(color);
+      const state = colorFilterState(bucket.colors);
       const pixel = document.createElement("button");
       pixel.className = "gallery-pixel";
       pixel.type = "button";
@@ -173,7 +236,7 @@ function renderPixelArtwork(record) {
       pixel.setAttribute("aria-label", `${color} pixel at ${x + 1}, ${y + 1}, ${state} filter`);
       pixel.addEventListener("click", (event) => {
         event.stopPropagation();
-        cycleColorFilter(color);
+        cycleColorFilter(bucket.colors, color);
         applyFilters();
       });
       artwork.appendChild(pixel);
@@ -195,33 +258,129 @@ function colorUsage(records) {
   return [...usage.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 
-function colorFilterState(color) {
-  if (includedColors.has(color)) {
+function buildColorBuckets(records, threshold) {
+  const buckets = [];
+  const colorRecordIndexes = new Map();
+
+  records.forEach((record, index) => {
+    record.colors.forEach((color) => {
+      if (!colorRecordIndexes.has(color)) {
+        colorRecordIndexes.set(color, new Set());
+      }
+
+      colorRecordIndexes.get(color).add(index);
+    });
+  });
+
+  colorUsage(records).forEach(([color, count]) => {
+    let closestBucket = null;
+    let closestDistance = Number.POSITIVE_INFINITY;
+
+    buckets.forEach((bucket) => {
+      const distance = colorDistance(color, bucket.representative);
+
+      if (distance <= threshold && distance < closestDistance) {
+        closestBucket = bucket;
+        closestDistance = distance;
+      }
+    });
+
+    if (closestBucket) {
+      closestBucket.colors.push(color);
+      closestBucket.count += count;
+      return;
+    }
+
+    buckets.push({
+      representative: color,
+      colors: [color],
+      count
+    });
+  });
+
+  buckets.forEach((bucket) => {
+    bucket.colors.sort((a, b) => a.localeCompare(b));
+    bucket.key = bucketKey(bucket.colors);
+    const recordIndexes = new Set();
+    bucket.colors.forEach((color) => {
+      colorRecordIndexes.get(color)?.forEach((index) => recordIndexes.add(index));
+    });
+    bucket.count = recordIndexes.size;
+  });
+
+  buckets.sort((a, b) =>
+    b.count - a.count ||
+    b.colors.length - a.colors.length ||
+    a.representative.localeCompare(b.representative)
+  );
+
+  colorToBucket = new Map();
+  buckets.forEach((bucket) => {
+    bucket.colors.forEach((color) => {
+      colorToBucket.set(color, bucket);
+    });
+  });
+
+  colorBuckets = buckets;
+}
+
+function colorFilterState(colors) {
+  if (colors.some((color) => includedColorSeeds.has(color))) {
     return "on";
   }
 
-  if (excludedColors.has(color)) {
+  if (colors.some((color) => excludedColorSeeds.has(color))) {
     return "off";
   }
 
   return "neutral";
 }
 
-function cycleColorFilter(color) {
-  const state = colorFilterState(color);
+function cycleColorFilter(colors, seed = colors[0]) {
+  const state = colorFilterState(colors);
 
   if (state === "neutral") {
-    includedColors.add(color);
+    includedColorSeeds.add(seed);
+    colors.forEach((color) => excludedColorSeeds.delete(color));
     return;
   }
 
   if (state === "on") {
-    includedColors.delete(color);
-    excludedColors.add(color);
+    colors.forEach((color) => includedColorSeeds.delete(color));
+    excludedColorSeeds.add(seed);
     return;
   }
 
-  excludedColors.delete(color);
+  colors.forEach((color) => excludedColorSeeds.delete(color));
+}
+
+function colorBucketForColor(color) {
+  return colorToBucket.get(color) || {
+    key: color,
+    representative: color,
+    colors: [color],
+    count: 1
+  };
+}
+
+function selectedColorGroups(seeds) {
+  const groups = new Map();
+
+  seeds.forEach((seed) => {
+    const bucket = colorBucketForColor(seed);
+    groups.set(bucket.key, bucket.colors);
+  });
+
+  return [...groups.values()];
+}
+
+function colorGroupMatches(record, colors) {
+  return colors.some((color) => record.colorSet.has(color));
+}
+
+function updateSimilarityLabel() {
+  const threshold = Number(colorSimilarity.value);
+  colorSimilarityValue.textContent = threshold === 0 ? "Exact" : `+${threshold}`;
 }
 
 async function copyTextToClipboard(text) {
@@ -244,16 +403,20 @@ async function copyTextToClipboard(text) {
 function renderColorFilters() {
   colorFilterList.replaceChildren();
 
-  colorUsage(galleryRecords).forEach(([color, count]) => {
-    const state = colorFilterState(color);
+  colorBuckets.forEach((bucket) => {
+    const state = colorFilterState(bucket.colors);
+    const color = bucket.representative;
+    const colorLabel = bucket.colors.length === 1
+      ? color
+      : `${color} and ${bucket.colors.length - 1} similar colors`;
     const item = document.createElement("div");
     item.className = "color-filter-item";
     item.dataset.state = state;
     item.tabIndex = 0;
     item.setAttribute("role", "button");
-    item.setAttribute("aria-label", `${color}, ${count} artworks, ${state} filter`);
+    item.setAttribute("aria-label", `${colorLabel}, ${bucket.count} artworks, ${state} filter`);
     const toggleFilter = () => {
-      cycleColorFilter(color);
+      cycleColorFilter(bucket.colors, bucket.representative);
       applyFilters();
     };
     item.addEventListener("click", toggleFilter);
@@ -268,8 +431,10 @@ function renderColorFilters() {
 
     const swatch = document.createElement("span");
     swatch.className = "color-filter-swatch";
-    swatch.style.background = color;
-    swatch.setAttribute("aria-label", color);
+    swatch.style.background = bucket.colors.length === 1
+      ? color
+      : `linear-gradient(135deg, ${bucket.colors.slice(0, 6).join(", ")})`;
+    swatch.setAttribute("aria-label", colorLabel);
 
     const copyButton = document.createElement("button");
     copyButton.className = "color-filter-copy";
@@ -296,9 +461,17 @@ function renderColorFilters() {
 
     const total = document.createElement("span");
     total.className = "color-filter-count";
-    total.textContent = String(count);
+    total.textContent = String(bucket.count);
     total.setAttribute("aria-hidden", "true");
     swatch.appendChild(total);
+
+    if (bucket.colors.length > 1) {
+      const variations = document.createElement("span");
+      variations.className = "color-filter-variations";
+      variations.textContent = `+${bucket.colors.length - 1}`;
+      variations.setAttribute("aria-hidden", "true");
+      swatch.appendChild(variations);
+    }
 
     item.appendChild(swatch);
     colorFilterList.appendChild(item);
@@ -350,7 +523,7 @@ function renderInspector(record) {
   closeButton.className = "inspector-close";
   closeButton.type = "button";
   closeButton.setAttribute("aria-label", "Close artwork details");
-  closeButton.textContent = "Close";
+  closeButton.textContent = "X";
   closeButton.addEventListener("click", closeInspector);
 
   const image = document.createElement("img");
@@ -378,7 +551,7 @@ function renderInspector(record) {
     makeMetric("Grid", `${width} x ${height}`),
     makeMetric("Cells", String(record.pixels?.length || width * height)),
     makeMetric("Colors", String(colors.length)),
-    makeMetric("Record", compactId(record.id))
+    makeMetric("Record", compactId(record.id), { copyValue: record.id })
   );
 
   const reasoningLabel = document.createElement("h3");
@@ -497,7 +670,7 @@ function renderCurrentPage() {
   const start = (currentPage - 1) * pageSize;
   const pageRecords = filteredRecords.slice(start, start + pageSize);
   const query = gallerySearch.value.trim();
-  const hasColorFilters = includedColors.size > 0 || excludedColors.size > 0;
+  const hasColorFilters = includedColorSeeds.size > 0 || excludedColorSeeds.size > 0;
 
   galleryCount.textContent = query || hasColorFilters
     ? `${filteredRecords.length} of ${galleryRecords.length} artworks`
@@ -523,10 +696,12 @@ function renderCurrentPage() {
 
 function applyFilters() {
   const terms = gallerySearch.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const includedGroups = selectedColorGroups(includedColorSeeds);
+  const excludedGroups = selectedColorGroups(excludedColorSeeds);
   filteredRecords = galleryRecords.filter((record) => {
     const matchesText = terms.every((term) => record.searchText.includes(term));
-    const matchesIncluded = [...includedColors].every((color) => record.colors.includes(color));
-    const matchesExcluded = [...excludedColors].every((color) => !record.colors.includes(color));
+    const matchesIncluded = includedGroups.every((colors) => colorGroupMatches(record, colors));
+    const matchesExcluded = excludedGroups.every((colors) => !colorGroupMatches(record, colors));
 
     return matchesText && matchesIncluded && matchesExcluded;
   });
@@ -544,21 +719,30 @@ async function renderGallery() {
     return {
       ...record,
       colors,
+      colorSet: new Set(colors),
       searchText: recordSearchText({ ...record, colors })
     };
   });
   filteredRecords = galleryRecords;
+  buildColorBuckets(galleryRecords, colorSimilarityThreshold);
   renderColorFilters();
   renderCurrentPage();
 }
 
 gallerySearch.addEventListener("input", applyFilters);
+colorSimilarity.addEventListener("input", () => {
+  colorSimilarityThreshold = Number(colorSimilarity.value);
+  updateSimilarityLabel();
+  buildColorBuckets(galleryRecords, colorSimilarityThreshold);
+  savePreference(COLOR_SIMILARITY_COOKIE, String(colorSimilarityThreshold));
+  applyFilters();
+});
 toggleColorFilters.addEventListener("click", () => {
   setColorFiltersVisible(!colorFiltersVisible);
 });
 clearColorFilters.addEventListener("click", () => {
-  includedColors.clear();
-  excludedColors.clear();
+  includedColorSeeds.clear();
+  excludedColorSeeds.clear();
   applyFilters();
 });
 
@@ -579,6 +763,14 @@ artInspector.addEventListener("close", () => {
 });
 
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
+const savedSimilarity = Number(readPreference(COLOR_SIMILARITY_COOKIE));
+
+if (Number.isFinite(savedSimilarity)) {
+  colorSimilarity.value = String(savedSimilarity);
+  colorSimilarityThreshold = savedSimilarity;
+}
+
+updateSimilarityLabel();
 
 renderGallery().catch((error) => {
   galleryCount.textContent = "Error";
