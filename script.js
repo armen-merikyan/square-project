@@ -14,11 +14,13 @@ const dots = document.querySelector("#carouselDots");
 const counter = document.querySelector("#carouselCounter");
 const nextButton = document.querySelector("#nextArtwork");
 const prevButton = document.querySelector("#prevArtwork");
+const pauseButton = document.querySelector("#pauseCarousel");
 const DOT_RANGE = 2;
 const CAROUSEL_TRANSITION_MS = 1080;
 
 let activeIndex = 0;
 let autoAdvanceId;
+let isPaused = false;
 let isAdvancing = false;
 let dragStartX = 0;
 let dragStartY = 0;
@@ -59,6 +61,10 @@ function shortId(id) {
 
 function summarizeReasoning(reasoning = "") {
   return reasoning.length > 250 ? `${reasoning.slice(0, 247)}...` : reasoning;
+}
+
+function artworkDetailUrl(index) {
+  return `gallery.html?art=${encodeURIComponent(artworks[index])}`;
 }
 
 async function loadArtwork(id) {
@@ -141,6 +147,8 @@ async function renderCarousel() {
     const slide = document.createElement("article");
     slide.className = "carousel-card";
     slide.setAttribute("aria-label", record.title || `Artwork ${index + 1}`);
+    slide.setAttribute("role", "link");
+    slide.tabIndex = 0;
 
     const image = document.createElement("img");
     image.src = `art/${artworks[index]}.svg`;
@@ -157,7 +165,24 @@ async function renderCarousel() {
       if (index !== activeIndex) {
         advanceTo(index);
         restartAutoAdvance();
+        return;
       }
+
+      window.location.href = artworkDetailUrl(index);
+    });
+    slide.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      if (index === activeIndex) {
+        window.location.href = artworkDetailUrl(index);
+        return;
+      }
+
+      advanceTo(index);
+      restartAutoAdvance();
     });
 
     coverflow.appendChild(slide);
@@ -208,6 +233,7 @@ function setActive(index) {
     slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
     slide.classList.toggle("is-active", slideIndex === activeIndex);
     slide.classList.toggle("is-hidden", hidden);
+    slide.tabIndex = slideIndex === activeIndex ? 0 : -1;
   });
 
   renderDots();
@@ -235,12 +261,37 @@ function previousArtwork() {
 }
 
 function startAutoAdvance() {
+  if (isPaused) {
+    return;
+  }
+
   window.clearInterval(autoAdvanceId);
   autoAdvanceId = window.setInterval(nextArtwork, 4600);
 }
 
 function restartAutoAdvance() {
   window.clearInterval(autoAdvanceId);
+
+  if (!isPaused) {
+    startAutoAdvance();
+  }
+}
+
+function updatePauseButton() {
+  pauseButton.setAttribute("aria-label", isPaused ? "Resume carousel" : "Pause carousel");
+  pauseButton.setAttribute("aria-pressed", String(isPaused));
+  pauseButton.textContent = isPaused ? "▶" : "Ⅱ";
+}
+
+function pauseAutoAdvance() {
+  isPaused = true;
+  window.clearInterval(autoAdvanceId);
+  updatePauseButton();
+}
+
+function resumeAutoAdvance() {
+  isPaused = false;
+  updatePauseButton();
   startAutoAdvance();
 }
 
@@ -252,6 +303,15 @@ nextButton.addEventListener("click", () => {
 prevButton.addEventListener("click", () => {
   previousArtwork();
   restartAutoAdvance();
+});
+
+pauseButton.addEventListener("click", () => {
+  if (isPaused) {
+    resumeAutoAdvance();
+    return;
+  }
+
+  pauseAutoAdvance();
 });
 
 document.addEventListener("keydown", (event) => {
@@ -267,7 +327,11 @@ document.addEventListener("keydown", (event) => {
 });
 
 coverflow.addEventListener("mouseenter", () => window.clearInterval(autoAdvanceId));
-coverflow.addEventListener("mouseleave", startAutoAdvance);
+coverflow.addEventListener("mouseleave", () => {
+  if (!isPaused) {
+    startAutoAdvance();
+  }
+});
 
 coverflow.addEventListener("pointerdown", (event) => {
   dragStartX = event.clientX;
@@ -312,6 +376,7 @@ coverflow.addEventListener("pointercancel", () => {
   restartAutoAdvance();
 });
 
+updatePauseButton();
 renderCarousel().catch((error) => {
   coverflow.innerHTML = `<p class="carousel-error">${error.message}</p>`;
 });

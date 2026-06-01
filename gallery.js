@@ -591,6 +591,31 @@ function renderInspector(record) {
   });
 }
 
+function setArtworkUrl(record) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("art", record.id);
+  window.history.replaceState({}, "", url);
+}
+
+function openGalleryRecord(record, { updateUrl = false } = {}) {
+  const recordIndex = filteredRecords.findIndex((item) => item.id === record.id);
+
+  if (recordIndex >= 0) {
+    currentPage = Math.floor(recordIndex / pageSize) + 1;
+    renderCurrentPage();
+  }
+
+  if (updateUrl) {
+    setArtworkUrl(record);
+  }
+
+  renderInspector(record);
+
+  const selectedCard = [...document.querySelectorAll(".gallery-card")]
+    .find((card) => card.dataset.id === record.id);
+  selectedCard?.scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
 function renderCard(record, index) {
   const card = document.createElement("article");
   card.className = "gallery-card";
@@ -604,7 +629,7 @@ function renderCard(record, index) {
   title.type = "button";
   title.textContent = record.title || `Square ${index + 1}`;
   title.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-  title.addEventListener("click", () => renderInspector(record));
+  title.addEventListener("click", () => openGalleryRecord(record, { updateUrl: true }));
 
   meta.append(title);
   card.append(renderPixelArtwork(record), meta);
@@ -727,6 +752,15 @@ async function renderGallery() {
   buildColorBuckets(galleryRecords, colorSimilarityThreshold);
   renderColorFilters();
   renderCurrentPage();
+
+  const requestedId = new URLSearchParams(window.location.search).get("art");
+  const requestedRecord = requestedId
+    ? galleryRecords.find((record) => record.id === requestedId)
+    : null;
+
+  if (requestedRecord) {
+    openGalleryRecord(requestedRecord);
+  }
 }
 
 gallerySearch.addEventListener("input", applyFilters);

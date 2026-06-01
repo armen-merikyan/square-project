@@ -363,7 +363,6 @@ button:active {
 .carousel-card.is-active {
   border-color: var(--ink);
   box-shadow: 0 24px 58px rgba(21, 21, 21, 0.26);
-  cursor: default;
   filter: none;
   transform:
     translate(-50%, -50%)
@@ -430,7 +429,7 @@ button:active {
   position: relative;
   z-index: 30;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  grid-template-columns: 44px 44px minmax(0, 1fr) 44px;
   min-height: 46px;
 }
 
@@ -441,6 +440,10 @@ button:active {
   border-radius: 50%;
   font-size: 1.9rem;
   line-height: 1;
+}
+
+.carousel-pause {
+  font-size: 1rem;
 }
 
 .carousel-dots {
