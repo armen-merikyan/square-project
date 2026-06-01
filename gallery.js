@@ -17,6 +17,7 @@ const SHOP_VARIANTS = {
   }
 };
 const STRIPE_PAYMENT_LINK_HOST = "buy.stripe.com";
+const DESIGN_TIME_HOSTS = new Set(["", "localhost", "127.0.0.1", "::1"]);
 
 const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
@@ -342,18 +343,32 @@ function buildPaymentLinkUrl(record, variant) {
   return url.toString();
 }
 
+function isDesignTimeCheckout() {
+  return window.location.protocol === "file:" || DESIGN_TIME_HOSTS.has(window.location.hostname);
+}
+
 function checkoutStatusForVariant(variant) {
-  return configuredPaymentLink(variant)
-    ? "Ready for Stripe checkout."
+  if (configuredPaymentLink(variant)) {
+    return "Ready for Stripe checkout.";
+  }
+
+  return isDesignTimeCheckout()
+    ? "Product configured for design preview."
     : "Stripe Payment Link needs to be configured.";
+}
+
+function checkoutToneForVariant(variant) {
+  return configuredPaymentLink(variant) || isDesignTimeCheckout() ? "neutral" : "error";
 }
 
 function startCheckout(record, variant, status) {
   const checkoutUrl = buildPaymentLinkUrl(record, variant);
 
   if (!checkoutUrl) {
-    status.textContent = "Add the Stripe Payment Link URL for this option in gallery.js.";
-    status.dataset.tone = "error";
+    status.textContent = isDesignTimeCheckout()
+      ? "Checkout is disabled in design preview."
+      : "Stripe Payment Link needs to be configured.";
+    status.dataset.tone = checkoutToneForVariant(variant);
     return;
   }
 
@@ -398,7 +413,7 @@ function renderOrderPanel(record, preview) {
       });
       checkoutButton.textContent = SHOP_VARIANTS[variant].button;
       status.textContent = checkoutStatusForVariant(variant);
-      status.dataset.tone = configuredPaymentLink(variant) ? "neutral" : "error";
+      status.dataset.tone = checkoutToneForVariant(variant);
     });
     options.appendChild(option);
   });
@@ -410,7 +425,7 @@ function renderOrderPanel(record, preview) {
 
   const status = document.createElement("p");
   status.className = "checkout-status";
-  status.dataset.tone = configuredPaymentLink(selectedShopVariant) ? "neutral" : "error";
+  status.dataset.tone = checkoutToneForVariant(selectedShopVariant);
   status.textContent = checkoutStatusForVariant(selectedShopVariant);
 
   checkoutButton.addEventListener("click", () => startCheckout(record, selectedShopVariant, status));
