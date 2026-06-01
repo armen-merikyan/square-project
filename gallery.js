@@ -334,8 +334,9 @@ function renderFramePreview(record) {
 }
 
 function checkoutReference(record, variant, frameType = "") {
-  const framePart = variant === "framed" ? `_${frameType}` : "";
-  const reference = `${record.id}_${variant}${framePart}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+  const frameColor = variant === "framed" ? frameType : "none";
+  const reference = `art_${record.id}_variant_${variant}_frame_${frameColor}`
+    .replace(/[^a-zA-Z0-9_-]/g, "_");
   return reference.slice(0, 200);
 }
 

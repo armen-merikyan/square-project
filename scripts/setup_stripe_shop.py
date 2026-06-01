@@ -5,15 +5,22 @@ from __future__ import annotations
 
 import json
 import os
+import ssl
 import urllib.parse
 import urllib.request
 from pathlib import Path
 from urllib.error import HTTPError
 
+try:
+    import certifi
+except ImportError:  # pragma: no cover - script still works on systems with a valid CA store.
+    certifi = None
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / ".env"
 PAYMENT_LINKS_PATH = ROOT / "payment-links.js"
+STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
 VARIANTS = {
     "print": {
         "nickname": "Square Project 8x8 Art Print",
@@ -22,6 +29,11 @@ VARIANTS = {
         "env_key": "STRIPE_PRINT_PRICE_ID",
         "payment_link_env_key": "STRIPE_PRINT_PAYMENT_LINK",
         "payment_link_lookup_key": "square_project_8x8_print_payment_link",
+        "metadata": {
+            "variant": "print",
+            "image_area": "8x8",
+            "frame_size": "none",
+        },
     },
     "framed": {
         "nickname": "Square Project 12x12 Framed Print",
@@ -30,6 +42,12 @@ VARIANTS = {
         "env_key": "STRIPE_FRAMED_PRICE_ID",
         "payment_link_env_key": "STRIPE_FRAMED_PAYMENT_LINK",
         "payment_link_lookup_key": "square_project_12x12_framed_payment_link",
+        "metadata": {
+            "variant": "framed",
+            "image_area": "8x8",
+            "frame_size": "12x12",
+            "frame_colors": "black,white,natural,brown,gold",
+        },
     },
 }
 
@@ -116,7 +134,7 @@ def stripe_post(path: str, fields: dict[str, str]) -> dict:
     )
 
     try:
-        with urllib.request.urlopen(request, timeout=20) as response:
+        with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
             return json.loads(response.read().decode("utf-8"))
     except HTTPError as error:
         try:
@@ -142,7 +160,7 @@ def stripe_get(path: str, fields: dict[str, str]) -> dict:
     )
 
     try:
-        with urllib.request.urlopen(request, timeout=20) as response:
+        with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
             return json.loads(response.read().decode("utf-8"))
     except HTTPError as error:
         try:
@@ -165,16 +183,84 @@ def find_price_by_lookup_key(lookup_key: str) -> dict | None:
 
 
 def find_payment_link_by_lookup_key(lookup_key: str) -> dict | None:
-    payment_links = stripe_get("payment_links", {
-        "active": "true",
-        "limit": "100",
-    })
-
-    for payment_link in payment_links.get("data", []):
+    for payment_link in iter_payment_links():
         if payment_link.get("metadata", {}).get("lookup_key") == lookup_key:
             return payment_link
 
     return None
+
+
+def iter_payment_links():
+    starting_after = ""
+
+    while True:
+        fields = {
+            "active": "true",
+            "limit": "100",
+        }
+
+        if starting_after:
+            fields["starting_after"] = starting_after
+
+        payment_links = stripe_get("payment_links", fields)
+        data = payment_links.get("data", [])
+
+        yield from data
+
+        if not payment_links.get("has_more") or not data:
+            break
+
+        starting_after = data[-1]["id"]
+
+
+def find_payment_link_by_url(url: str) -> dict | None:
+    if not url:
+        return None
+
+    for payment_link in iter_payment_links():
+        if payment_link.get("url") == url:
+            return payment_link
+
+    return None
+
+
+def payment_link_price_id(payment_link_id: str) -> str:
+    line_items = stripe_get(f"payment_links/{payment_link_id}/line_items", {"limit": "1"})
+    data = line_items.get("data", [])
+
+    if not data:
+        return ""
+
+    return data[0].get("price", {}).get("id", "")
+
+
+def update_product_metadata(product_id: str) -> None:
+    stripe_post(f"products/{product_id}", {
+        "name": "Square Project 8x8 Art Order",
+        "description": (
+            "Square Project reusable catalog product for static-site orders. "
+            "Order identity is passed through Payment Link client_reference_id as "
+            "art_<art_id>_variant_<print|framed>_frame_<color|none>."
+        ),
+        "metadata[app]": "square_project",
+        "metadata[kind]": "art_order",
+        "metadata[site]": "mysquareart.com",
+        "metadata[order_reference_format]": "art_<art_id>_variant_<variant>_frame_<frame_color>",
+    })
+
+
+def update_payment_link_metadata(payment_link_id: str, variant: str, config: dict) -> None:
+    fields = {
+        "metadata[app]": "square_project",
+        "metadata[variant]": variant,
+        "metadata[lookup_key]": config["payment_link_lookup_key"],
+        "metadata[order_reference_format]": "art_<art_id>_variant_<variant>_frame_<frame_color>",
+    }
+
+    for key, value in config["metadata"].items():
+        fields[f"metadata[{key}]"] = value
+
+    stripe_post(f"payment_links/{payment_link_id}", fields)
 
 
 def main() -> None:
@@ -184,12 +270,16 @@ def main() -> None:
         for variant, config in VARIANTS.items()
     }
 
-    if all(is_real_payment_link(url) for url in env_payment_links.values()):
+    secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
+
+    if all(is_real_payment_link(url) for url in env_payment_links.values()) and not secret_key:
         update_payment_links_js(env_payment_links)
         print(f"Updated {PAYMENT_LINKS_PATH} from existing Stripe Payment Links in {ENV_PATH}.")
         return
 
-    if any(env_payment_links.values()):
+    if any(env_payment_links.values()) and not all(
+        is_real_payment_link(url) for url in env_payment_links.values()
+    ):
         invalid_keys = [
             config["payment_link_env_key"]
             for variant, config in VARIANTS.items()
@@ -200,7 +290,6 @@ def main() -> None:
             + ", ".join(invalid_keys)
         )
 
-    secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
     if not secret_key:
         raise SystemExit(
             "For this static site, add STRIPE_PRINT_PAYMENT_LINK and "
@@ -229,12 +318,20 @@ def main() -> None:
     else:
         product = stripe_post("products", {
             "name": "Square Project 8x8 Art Order",
-            "description": "Reusable product for Square Project 8x8 print and 12x12 framed print orders.",
+            "description": (
+                "Square Project reusable catalog product for static-site orders. "
+                "Order identity is passed through Payment Link client_reference_id as "
+                "art_<art_id>_variant_<print|framed>_frame_<color|none>."
+            ),
             "metadata[app]": "square_project",
             "metadata[kind]": "art_order",
+            "metadata[site]": "mysquareart.com",
+            "metadata[order_reference_format]": "art_<art_id>_variant_<variant>_frame_<frame_color>",
         })
         product_id = product["id"]
         print(f"Created product: {product_id}")
+
+    update_product_metadata(product_id)
 
     created_prices = {}
     created_payment_links = {}
@@ -260,9 +357,10 @@ def main() -> None:
             "product": product_id,
             "nickname": config["nickname"],
             "lookup_key": config["lookup_key"],
-            "metadata[variant]": variant,
-            "metadata[image_area]": "8x8",
-            "metadata[frame_size]": "12x12" if variant == "framed" else "none",
+            **{
+                f"metadata[{key}]": value
+                for key, value in config["metadata"].items()
+            },
         })
         created_prices[config["env_key"]] = price["id"]
         print(f"Created {variant} price: {price['id']}")
@@ -270,27 +368,40 @@ def main() -> None:
     for variant, config in VARIANTS.items():
         existing_payment_link = os.environ.get(config["payment_link_env_key"], "").strip()
 
-        if existing_payment_link.startswith("https://buy.stripe.com/"):
-            created_payment_links[variant] = existing_payment_link
-            print(f"Using existing {variant} payment link: {existing_payment_link}")
+        env_payment_link = find_payment_link_by_url(existing_payment_link)
+        env_price_id = payment_link_price_id(env_payment_link["id"]) if env_payment_link else ""
+        if env_payment_link and env_price_id == created_prices[config["env_key"]]:
+            update_payment_link_metadata(env_payment_link["id"], variant, config)
+            created_payment_links[variant] = env_payment_link["url"]
+            print(f"Using existing {variant} payment link: {env_payment_link['url']}")
             continue
 
         lookup_payment_link = find_payment_link_by_lookup_key(config["payment_link_lookup_key"])
+        lookup_price_id = (
+            payment_link_price_id(lookup_payment_link["id"]) if lookup_payment_link else ""
+        )
 
-        if lookup_payment_link:
+        if lookup_payment_link and lookup_price_id == created_prices[config["env_key"]]:
+            update_payment_link_metadata(lookup_payment_link["id"], variant, config)
             created_payment_links[variant] = lookup_payment_link["url"]
             print(f"Using existing {variant} payment link: {lookup_payment_link['url']}")
             continue
 
-        payment_link = stripe_post("payment_links", {
+        fields = {
             "line_items[0][price]": created_prices[config["env_key"]],
             "line_items[0][quantity]": "1",
             "metadata[app]": "square_project",
             "metadata[variant]": variant,
             "metadata[lookup_key]": config["payment_link_lookup_key"],
+            "metadata[order_reference_format]": "art_<art_id>_variant_<variant>_frame_<frame_color>",
             "shipping_address_collection[allowed_countries][0]": "US",
             "billing_address_collection": "auto",
-        })
+        }
+
+        for key, value in config["metadata"].items():
+            fields[f"metadata[{key}]"] = value
+
+        payment_link = stripe_post("payment_links", fields)
         created_payment_links[variant] = payment_link["url"]
         print(f"Created {variant} payment link: {payment_link['url']}")
 

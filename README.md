@@ -39,7 +39,8 @@ Create two reusable Stripe Payment Links in Stripe:
 - 8x8 art print, `$24`
 - 12x12 framed print with an 8x8 image area, `$39`
 
-Add the public `buy.stripe.com` URLs to `.env`:
+Add the public `buy.stripe.com` URLs, or your configured Stripe payment domain
+URLs, to `.env`:
 
 ```env
 STRIPE_PRINT_PAYMENT_LINK=https://buy.stripe.com/...
@@ -52,9 +53,9 @@ Then publish those URLs into the static browser config:
 python3 scripts/setup_stripe_shop.py
 ```
 
-`STRIPE_SECRET_KEY` is optional. If it is set and the payment-link URLs are not
-already in `.env`, the helper creates or reuses the product, prices, and payment
-links through the Stripe API.
+`STRIPE_SECRET_KEY` is optional. If it is set, the helper creates or reuses the
+Square Project product, prices, and matching payment links through the Stripe
+API, then writes their IDs and public URLs back to `.env`.
 
 Run the local dev server for link testing:
 
@@ -62,10 +63,11 @@ Run the local dev server for link testing:
 python3 scripts/dev_server.py
 ```
 
-The gallery appends `client_reference_id=artworkId_variant_frameType` to framed
-payment links, for example `9005ff...634a_framed_black`, so orders can be
-reconciled in Stripe without creating a separate product per artwork or frame
-color.
+The gallery appends a Stripe `client_reference_id` to every payment link in the
+format `art_<art_id>_variant_<print|framed>_frame_<color|none>`, for example
+`art_9005ff...634a_variant_framed_frame_black`. This keeps every order tied to
+the static-site artwork ID and selected frame color without creating a separate
+Stripe product for every artwork.
 
 ## Local Art Job GUI
 
