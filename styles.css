@@ -9,6 +9,8 @@
   --blue: #2563eb;
   --pink: #db2777;
   --shadow: 0 24px 70px rgba(21, 21, 21, 0.12);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 * {
@@ -21,7 +23,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    linear-gradient(135deg, rgba(249, 115, 22, 0.08), transparent 26%),
+    linear-gradient(315deg, rgba(37, 99, 235, 0.07), transparent 30%),
+    var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
@@ -45,6 +50,15 @@ a {
   border-bottom: 1px solid rgba(21, 21, 21, 0.09);
   background: rgba(251, 250, 247, 0.92);
   backdrop-filter: blur(16px);
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease;
+}
+
+.site-header:hover {
+  border-color: rgba(21, 21, 21, 0.15);
+  box-shadow: 0 10px 30px rgba(21, 21, 21, 0.06);
 }
 
 .brand {
@@ -61,6 +75,11 @@ a {
     linear-gradient(90deg, var(--orange) 50%, var(--blue) 0) top / 100% 50% no-repeat,
     linear-gradient(90deg, var(--green) 50%, var(--pink) 0) bottom / 100% 50% no-repeat;
   box-shadow: inset 0 0 0 1px rgba(21, 21, 21, 0.2);
+  transition: transform 460ms var(--ease-smooth);
+}
+
+.brand:hover .brand-mark {
+  transform: rotate(90deg) scale(1.08);
 }
 
 .site-header nav {
@@ -74,6 +93,30 @@ a {
 
 .site-header nav a:hover {
   color: var(--ink);
+}
+
+.site-header nav a {
+  position: relative;
+  transition: color 180ms ease;
+}
+
+.site-header nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 260ms var(--ease-smooth);
+}
+
+.site-header nav a:hover::after,
+.site-header nav a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .site-header nav a[aria-current="page"] {
@@ -92,10 +135,14 @@ main {
   min-height: calc(100vh - 72px);
   padding: clamp(24px, 4vw, 46px) clamp(18px, 4vw, 56px) 44px;
   border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(251, 250, 247, 0));
 }
 
 .hero-copy {
   max-width: 920px;
+  animation: hero-copy-enter 900ms 160ms var(--ease-out) both;
 }
 
 .eyebrow {
@@ -167,6 +214,12 @@ button {
   font: inherit;
   font-weight: 800;
   cursor: pointer;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 220ms ease,
+    color 180ms ease,
+    transform 220ms var(--ease-smooth);
 }
 
 .button.primary,
@@ -181,7 +234,13 @@ button {
 
 .button:hover,
 button:hover {
-  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(21, 21, 21, 0.12);
+  transform: translateY(-2px);
+}
+
+.button:active,
+button:active {
+  transform: translateY(0) scale(0.99);
 }
 
 .art-carousel {
@@ -194,6 +253,17 @@ button:hover {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.88);
   box-shadow: var(--shadow);
+  animation: carousel-enter 920ms var(--ease-out) both;
+  transition:
+    border-color 260ms ease,
+    box-shadow 340ms ease,
+    transform 340ms var(--ease-smooth);
+}
+
+.art-carousel:hover {
+  border-color: rgba(21, 21, 21, 0.2);
+  box-shadow: 0 30px 84px rgba(21, 21, 21, 0.16);
+  transform: translateY(-2px);
 }
 
 .carousel-topline,
@@ -221,6 +291,20 @@ button:hover {
   transform-style: preserve-3d;
   touch-action: pan-y;
   cursor: grab;
+  isolation: isolate;
+}
+
+.coverflow::before {
+  content: "";
+  position: absolute;
+  inset: 8% 10% auto;
+  height: 52%;
+  background: linear-gradient(90deg, rgba(249, 115, 22, 0.18), rgba(22, 163, 74, 0.12), rgba(37, 99, 235, 0.18));
+  filter: blur(34px);
+  opacity: 0.52;
+  transform: translateZ(-150px);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .coverflow:active {
@@ -257,10 +341,10 @@ button:hover {
   transform-style: preserve-3d;
   transition:
     border-color 180ms ease,
-    box-shadow 180ms ease,
-    filter 300ms ease,
-    opacity 700ms ease,
-    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow 260ms ease,
+    filter 420ms ease,
+    opacity 820ms var(--ease-smooth),
+    transform 1080ms var(--ease-smooth);
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-box-reflect: below 12px linear-gradient(transparent 62%, rgba(255, 255, 255, 0.22));
@@ -278,7 +362,7 @@ button:hover {
 
 .carousel-card.is-active {
   border-color: var(--ink);
-  box-shadow: 0 22px 52px rgba(21, 21, 21, 0.24);
+  box-shadow: 0 24px 58px rgba(21, 21, 21, 0.26);
   cursor: default;
   filter: none;
   transform:
@@ -287,6 +371,10 @@ button:hover {
     translateZ(54px)
     rotateY(0deg)
     scale(1.14);
+}
+
+.carousel-card.is-active img {
+  animation: active-art-pulse 3600ms ease-in-out infinite;
 }
 
 .carousel-card img {
@@ -373,11 +461,16 @@ button:hover {
   border-radius: 50%;
   padding: 0;
   background: rgba(21, 21, 21, 0.24);
+  transition:
+    background-color 180ms ease,
+    transform 220ms var(--ease-smooth),
+    width 220ms var(--ease-smooth);
 }
 
 .carousel-dot.is-active {
+  width: 24px;
   background: var(--ink);
-  transform: scale(1.25);
+  transform: scale(1);
 }
 
 .carousel-error {
@@ -459,11 +552,19 @@ dd {
   padding: clamp(56px, 9vw, 110px) clamp(18px, 4vw, 56px);
 }
 
+.intro,
+.process,
+.data-section,
+.identity {
+  position: relative;
+}
+
 .intro {
   display: grid;
   grid-template-columns: minmax(220px, 0.6fr) minmax(0, 1fr);
   gap: clamp(24px, 5vw, 80px);
   border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.26);
 }
 
 .intro p {
@@ -473,7 +574,9 @@ dd {
 }
 
 .process {
-  background: #f2f6ee;
+  background:
+    linear-gradient(135deg, rgba(22, 163, 74, 0.1), transparent 38%),
+    #f2f6ee;
   border-bottom: 1px solid var(--line);
 }
 
@@ -498,6 +601,17 @@ dd {
   border-radius: 8px;
   padding: 22px;
   background: rgba(255, 255, 255, 0.74);
+  transition:
+    border-color 220ms ease,
+    box-shadow 280ms ease,
+    transform 280ms var(--ease-smooth);
+}
+
+.steps article:hover,
+.identity-grid div:hover {
+  border-color: rgba(21, 21, 21, 0.28);
+  box-shadow: 0 18px 42px rgba(21, 21, 21, 0.1);
+  transform: translateY(-5px);
 }
 
 .steps span {
@@ -511,6 +625,14 @@ dd {
   color: #fff;
   font-size: 0.82rem;
   font-weight: 900;
+  transition:
+    background-color 220ms ease,
+    transform 320ms var(--ease-smooth);
+}
+
+.steps article:hover span {
+  background: var(--ink);
+  transform: rotate(4deg) scale(1.07);
 }
 
 .data-section {
@@ -519,6 +641,9 @@ dd {
   align-items: center;
   gap: clamp(28px, 5vw, 80px);
   border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(45deg, rgba(37, 99, 235, 0.08), transparent 36%),
+    rgba(255, 255, 255, 0.18);
 }
 
 .data-section p {
@@ -535,6 +660,15 @@ pre {
   background: #151515;
   color: #f8fafc;
   box-shadow: var(--shadow);
+  transform-origin: center;
+  transition:
+    box-shadow 300ms ease,
+    transform 300ms var(--ease-smooth);
+}
+
+pre:hover {
+  box-shadow: 0 30px 84px rgba(21, 21, 21, 0.18);
+  transform: translateY(-3px) rotate(-0.5deg);
 }
 
 code {
@@ -543,7 +677,9 @@ code {
 }
 
 .identity {
-  background: #f7f0f3;
+  background:
+    linear-gradient(135deg, rgba(219, 39, 119, 0.1), transparent 35%),
+    #f7f0f3;
 }
 
 .identity h2 {
@@ -561,6 +697,68 @@ footer {
   padding: 28px clamp(18px, 4vw, 56px);
   background: var(--ink);
   color: #fff;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 720ms ease,
+    transform 820ms var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(22px) scale(0.985);
+  transition:
+    opacity 620ms ease,
+    transform 760ms var(--ease-out);
+  transition-delay: calc(var(--reveal-index, 0) * 85ms);
+}
+
+.reveal-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@keyframes carousel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(26px) scale(0.975);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-copy-enter {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes active-art-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.025);
+  }
 }
 
 footer p {
@@ -1372,6 +1570,21 @@ body.has-open-inspector {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+  }
+
   .inspector-frame {
     animation: none;
   }

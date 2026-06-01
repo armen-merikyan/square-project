@@ -15,7 +15,7 @@ const counter = document.querySelector("#carouselCounter");
 const nextButton = document.querySelector("#nextArtwork");
 const prevButton = document.querySelector("#prevArtwork");
 const DOT_RANGE = 2;
-const CAROUSEL_TRANSITION_MS = 900;
+const CAROUSEL_TRANSITION_MS = 1080;
 
 let activeIndex = 0;
 let autoAdvanceId;
@@ -236,7 +236,7 @@ function previousArtwork() {
 
 function startAutoAdvance() {
   window.clearInterval(autoAdvanceId);
-  autoAdvanceId = window.setInterval(nextArtwork, 4200);
+  autoAdvanceId = window.setInterval(nextArtwork, 4600);
 }
 
 function restartAutoAdvance() {
@@ -315,3 +315,44 @@ coverflow.addEventListener("pointercancel", () => {
 renderCarousel().catch((error) => {
   coverflow.innerHTML = `<p class="carousel-error">${error.message}</p>`;
 });
+
+function setupPageReveals() {
+  const revealTargets = document.querySelectorAll(".intro, .section-heading, .data-section > div, .data-section pre, .identity > .eyebrow, .identity > h2");
+  const staggerTargets = document.querySelectorAll(".steps, .identity-grid");
+
+  revealTargets.forEach((element) => {
+    element.classList.add("reveal");
+  });
+
+  staggerTargets.forEach((element) => {
+    element.classList.add("reveal-stagger");
+    [...element.children].forEach((child, index) => {
+      child.style.setProperty("--reveal-index", index);
+    });
+  });
+
+  const animatedTargets = [...revealTargets, ...staggerTargets];
+
+  if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    animatedTargets.forEach((element) => element.classList.add("is-visible"));
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: "0px 0px -12% 0px",
+    threshold: 0.18
+  });
+
+  animatedTargets.forEach((element) => revealObserver.observe(element));
+}
+
+setupPageReveals();
