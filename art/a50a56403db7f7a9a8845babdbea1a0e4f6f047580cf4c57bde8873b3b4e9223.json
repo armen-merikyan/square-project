@@ -1,0 +1,399 @@
+{
+  "id": "a50a56403db7f7a9a8845babdbea1a0e4f6f047580cf4c57bde8873b3b4e9223",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 103; target batch count 200",
+  "title": "Ebb and Flow of Tension",
+  "reasoning": "The emotional tone captures the struggle between defiance and submission, visualized through contrasting colors that evoke tension. The selected palette of yellow, orange, deep blue, and muted purple creates a dialogue between warmth and coolness, enhancing the emotional complexity. The main collision occurs in the center, where the 'broken_line' shape is visually represented by the harsh division of dark versus light colors, creating a pressure point. The surrounding pattern echoes the themes of rain and rings, leading to a sense of cascading turmoil and emotional release within a structured pattern, while adhering to the 10% negative space rule.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F48FB1"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A148C"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#1565C0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#455A64"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFB300"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF9100"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#EF5350"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#90A4AE"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#1976D2"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#6A1B9A"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#37474F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF8F00"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF6F00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D32F2F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#263238"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#0D47A1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#546E7A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFC107"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF6F20"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B71C1C"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#78909C"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#0288D1"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#8E24AA"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#2E7D32"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFD740"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFAB40"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#EA5455"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B2DFDB"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#00695C"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#5D4037"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#4FC3F7"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFF59D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FF7043"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#C2185B"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#78909C"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#0D47A1"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#7B1FA2"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#455A64"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF6F00"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#BF360C"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B2DFDB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#0288D1"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3E2723"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#546E7A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFCA28"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FF9800"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C2185B"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#263238"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#C6FF00"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FF3D00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "spiral_clockwise",
+    "patterns": {
+      "defiance": "rain",
+      "submission": "ring"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "centered_vs_off_center",
+    "shapeSeed": "broken_line",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a50a56403db7f7a9a8845babdbea1a0e4f6f047580cf4c57bde8873b3b4e9223",
+  "pixelHash": "a50a56403db7f7a9a8845babdbea1a0e4f6f047580cf4c57bde8873b3b4e9223",
+  "jsonFile": "a50a56403db7f7a9a8845babdbea1a0e4f6f047580cf4c57bde8873b3b4e9223.json",
+  "svgFile": "a50a56403db7f7a9a8845babdbea1a0e4f6f047580cf4c57bde8873b3b4e9223.svg",
+  "createdAt": "2026-06-01T19:32:07.169559+00:00"
+}

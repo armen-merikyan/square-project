@@ -1,0 +1,399 @@
+{
+  "id": "45aeefc95c3dc6a0ec8536b4d4c8645e74b97463b105a7e14d613c8f94dd509e",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 36; target batch count 200",
+  "title": "Tension in Dynamics",
+  "reasoning": "The emotional tone encapsulates the struggle between defiance and submission, illustrated through a pattern that evokes falling pixels. The palette of deep reds and pale blue creates a stark contrast, with blacks grounding the composition while whites give it a sense of openness. The collision happens predominantly in the central rows, suggesting a 'protected' core amidst darker surroundings. This interplay reflects the tension of belonging versus isolation. With broken pixels introduced to suggest imperfection, the piece embodies the struggle between chaos and order, highlighting the ongoing battle of love, betrayal, and the weight of decisions.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#1D1E26"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#2D2E36"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#3C3D45"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#4B4C54"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5A5B63"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#686973"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#757686"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#828C98"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#EB4D57"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F95B64"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F96A78"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F97F89"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F48B91"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F28C94"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F29A99"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FBA3A6"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F4E0DB"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#E8C8C0"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#E1B5AC"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D49DA0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C68A93"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B47886"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A06679"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#8B4B6C"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#909090"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3B3C42"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4C4D53"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#3D3E44"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2E2F35"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#5F606D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#707175"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#7F8288"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#8C9096"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F43A36"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E85B59"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D94D55"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D72A32"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#C6343F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B73A44"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A6485D"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#9B546A"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F7F2E3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D9D4C2"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#B7AA9E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A09083"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#8E7A6D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#7C695A"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#6A5855"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#594743"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#3A4E65"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#3D5470"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#43B6C3"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#60AEC0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#8CB2D0"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A5C1DB"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D7E3EE"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "defiance": "ring",
+      "submission": "teeth"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "45aeefc95c3dc6a0ec8536b4d4c8645e74b97463b105a7e14d613c8f94dd509e",
+  "pixelHash": "45aeefc95c3dc6a0ec8536b4d4c8645e74b97463b105a7e14d613c8f94dd509e",
+  "jsonFile": "45aeefc95c3dc6a0ec8536b4d4c8645e74b97463b105a7e14d613c8f94dd509e.json",
+  "svgFile": "45aeefc95c3dc6a0ec8536b4d4c8645e74b97463b105a7e14d613c8f94dd509e.svg",
+  "createdAt": "2026-06-01T19:30:53.540447+00:00"
+}

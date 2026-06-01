@@ -1,0 +1,399 @@
+{
+  "id": "9ffe587c4091e40bea7ea57cc7b5b70b948354573196a152a60d696aadfe68a9",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 172; target batch count 200",
+  "title": "Tension Between Opposites",
+  "reasoning": "This artwork captures the emotional struggle between defiance and submission through a dynamic interplay of dark and light shades stemming from the chosen palette. The contrast of vibrant pinks and deep maroons represents passionate defiance clashing with subdued grays indicating submission. The layout spreads diagonally from the top left corner, embodying an invasion of defiance that pushes against a backdrop of stability. Broken pixels in the center serve as a representation of vulnerability amidst strength, while negative space at the edges invites contemplation, echoing the seed's themes of imbalance and emotional conflict.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C71585"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#ADADAD"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#8B0000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF69B4"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#505050"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#8B0000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E6E6FA"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C7172D"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5F9EA0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#8B0000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B22222"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#40164D"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E0FFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C71585"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#4682B4"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B22222"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#696969"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#8B0000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B22222"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#5F9EA0"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E6E6FA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#C71585"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#1E90FF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#4682B4"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#8B0000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#C71585"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B22222"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#B22222"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#C71585"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#6A5ACD"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#696969"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#C0C0C0"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "defiance": "flame",
+      "submission": "teeth"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9ffe587c4091e40bea7ea57cc7b5b70b948354573196a152a60d696aadfe68a9",
+  "pixelHash": "9ffe587c4091e40bea7ea57cc7b5b70b948354573196a152a60d696aadfe68a9",
+  "jsonFile": "9ffe587c4091e40bea7ea57cc7b5b70b948354573196a152a60d696aadfe68a9.json",
+  "svgFile": "9ffe587c4091e40bea7ea57cc7b5b70b948354573196a152a60d696aadfe68a9.svg",
+  "createdAt": "2026-06-01T19:33:05.515865+00:00"
+}

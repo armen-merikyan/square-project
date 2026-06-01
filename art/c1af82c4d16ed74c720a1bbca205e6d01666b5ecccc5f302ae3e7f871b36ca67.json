@@ -1,0 +1,399 @@
+{
+  "id": "c1af82c4d16ed74c720a1bbca205e6d01666b5ecccc5f302ae3e7f871b36ca67",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 182; target batch count 200",
+  "title": "Tension Between Opposites",
+  "reasoning": "This composition explores the emotional tension between defiance and submission through an arrangement that balances sharp and soft contrasts. The palette of pink, red, gray, and dark maroon reflects the themes of love and betrayal, creating an emotional backdrop. The left to right flow highlights a dynamic movement, where the pixels seem to fall and collide, suggesting weight and lightness vying for dominance. This tension is created in the central area, with denser colors creating a stark contrast against the surrounding lighter shades; the layout supports a 'center_seed' idea by focusing intensity in the middle while allowing space for breath in the edges, exemplifying the concept of open vs. closed dynamics. There are also broken pixels to introduce imperfection, echoing the real struggles within the emotional narrative of love and defiance.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C72C41"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#DA4A3D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E86A54"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D1B2C5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#A55774"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#7D1E35"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#5A003C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#35000B"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E8BACB"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D6B8CA"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B5A2BB"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A2A258"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#76745F"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4D4E52"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#1F1D21"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#151C22"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#C7B1D3"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#BB7CB6"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A74559"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7D2E41"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C1A4C8"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A88EA6"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#94001E"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4B0F18"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FAE4ED"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#DFB2B9"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C58A8C"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A25B68"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#890310"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5B0013"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#32000F"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#3A192A"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFBB99"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF9F77"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FF6633"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FF4C00"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D45F00"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A76F00"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E0C45B"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F4D69E"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFE6B0"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#BBF7A0"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#79B0A2"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#4C5C68"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#23473D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B2B695"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#5D90B3"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#DF5B37"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#9B2B2D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#9F145A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B75973"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#3E233B"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#208641"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#2B3C41"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3E556D"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#948DA0"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#C5E7D4"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#1C1D45"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#4D6A8A"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#1B1C1D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#292D2F"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#070809"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "defiance": "maze",
+      "submission": "frame"
+    },
+    "edgeStyle": "right_weighted",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "diamond",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c1af82c4d16ed74c720a1bbca205e6d01666b5ecccc5f302ae3e7f871b36ca67",
+  "pixelHash": "c1af82c4d16ed74c720a1bbca205e6d01666b5ecccc5f302ae3e7f871b36ca67",
+  "jsonFile": "c1af82c4d16ed74c720a1bbca205e6d01666b5ecccc5f302ae3e7f871b36ca67.json",
+  "svgFile": "c1af82c4d16ed74c720a1bbca205e6d01666b5ecccc5f302ae3e7f871b36ca67.svg",
+  "createdAt": "2026-06-01T19:33:14.854734+00:00"
+}

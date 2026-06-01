@@ -1,0 +1,399 @@
+{
+  "id": "76ef968837c0636f3d3793fac7638fa407a9579c934124c5f723dea621706139",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 195; target batch count 200",
+  "title": "Weight of Echo",
+  "reasoning": "This piece conveys the emotional struggle between defiance and submission through contrasting elements of heavy and soft tones. The palette features dominant blacks and dark violets representing weight and oppression, with soft gold and pale green providing contrasting lightness and hope. The arrangement suggests a \u2018bottom-weighted\u2019 layout, evoking the sense of grounding from below, while the uneven pixel placements echo themes of falling and instability. The collision between dense edges and open centers emphasizes the tension, revealing the complex dance between holding on and letting go.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2E0F2B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#634C86"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#990B20"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F7F3A9"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#1F1B24"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#493B68"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#C1A054"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#4F6E7D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1C111E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#73287B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F5E1B8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#E6AB6F"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#112D4E"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5A536B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F37056"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3E2B30"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1B0F25"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#45622E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#746663"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFEFC1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#634F6C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#3D4633"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E8CA97"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#2B1E25"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#4C2A36"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#B2C3CF"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#ECE9D8"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#DFCFC3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#83B5A5"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5D4853"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E04267"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#2E1F24"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#1F0D29"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B38CBA"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E9444E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C1D2BA"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#4E353E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8C6E91"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#F5D5B6"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5B3B2A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#252A39"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D7B8CA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFFCF1"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#8A9A2A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3A1A31"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#654A67"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F4ACD6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#4A3941"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#11252E"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D6BB8E"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFF4D6"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6C717E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#34735A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#A77B9F"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#2E3C43"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#8B686E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#298E2D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#13A498"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F9F9FF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#CAF3CA"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#401C24"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B7B6DC"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#5D225A"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#322626"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "defiance": "stairs",
+      "submission": "rain"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "crack",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "76ef968837c0636f3d3793fac7638fa407a9579c934124c5f723dea621706139",
+  "pixelHash": "76ef968837c0636f3d3793fac7638fa407a9579c934124c5f723dea621706139",
+  "jsonFile": "76ef968837c0636f3d3793fac7638fa407a9579c934124c5f723dea621706139.json",
+  "svgFile": "76ef968837c0636f3d3793fac7638fa407a9579c934124c5f723dea621706139.svg",
+  "createdAt": "2026-06-01T19:33:31.789174+00:00"
+}

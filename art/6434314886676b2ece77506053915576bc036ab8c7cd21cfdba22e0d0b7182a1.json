@@ -1,0 +1,399 @@
+{
+  "id": "6434314886676b2ece77506053915576bc036ab8c7cd21cfdba22e0d0b7182a1",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 73; target batch count 200",
+  "title": "Contrasting Echoes",
+  "reasoning": "The emotional tone reflects the tension between defiance and submission, using a 'lonely_signal' palette that juxtaposes deep navy and black with light dim cyan and white. The layout appears almost symmetric but subtly deviates, showcasing a mix of checkered patterns symbolizing defiance against maze-like formations indicative of submission. The density shifts from the top right towards bottom left creating a visual weight, while broken pixels introduce imperfection, symbolizing underlying complexity in emotions. The intersection of dense clusters and open spaces embodies the ongoing conflict within the narrative of love and betrayal.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#202020"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#909090"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#000080"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#6A6A6A"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#646464"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D8D8D8"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#777777"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#202020"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#202020"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#787878"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#545454"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#707070"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#909090"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D8D8D8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "defiance": "checker",
+      "submission": "maze"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "heart_fragment",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "6434314886676b2ece77506053915576bc036ab8c7cd21cfdba22e0d0b7182a1",
+  "pixelHash": "6434314886676b2ece77506053915576bc036ab8c7cd21cfdba22e0d0b7182a1",
+  "jsonFile": "6434314886676b2ece77506053915576bc036ab8c7cd21cfdba22e0d0b7182a1.json",
+  "svgFile": "6434314886676b2ece77506053915576bc036ab8c7cd21cfdba22e0d0b7182a1.svg",
+  "createdAt": "2026-06-01T19:31:34.296507+00:00"
+}

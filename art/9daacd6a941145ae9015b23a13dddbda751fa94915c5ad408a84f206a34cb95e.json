@@ -1,0 +1,399 @@
+{
+  "id": "9daacd6a941145ae9015b23a13dddbda751fa94915c5ad408a84f206a34cb95e",
+  "seed": "defiance vs submission; light_vs_weight; falling_pixels; left_to_right; noise against frame; bottom_weighted; open_vs_closed; half_square; love_betrayal | abstract variation request 184; target batch count 200",
+  "title": "Echoes of Tension",
+  "reasoning": "This piece explores the emotional duality of defiance versus submission. The contrast between the dark, grounding colors (black, dark violet) and the lighter, more ethereal hues (soft gold, pale green) creates a visual dialogue that reflects the push and pull of these emotions. The palette was chosen to embody the tension between fear and hope, with the dark shades weighing down the lighter ones, simulating a struggle. The layout adheres to the idea of corner invasion, diagonally spreading from the bottom left to create a sense of rising pressure. Broken pixels introduce an element of imperfection, representing the chaotic noise in the frame, while allowing for moments of quiet negative space, enhancing the abstract narrative of unresolved tension and emotional complexity.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#4B0082"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#4B0082"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#00FF7F"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4B0082"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [],
+      "submission": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "pulse",
+    "patterns": {
+      "defiance": "rain",
+      "submission": "ring"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "corner_block",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9daacd6a941145ae9015b23a13dddbda751fa94915c5ad408a84f206a34cb95e",
+  "pixelHash": "9daacd6a941145ae9015b23a13dddbda751fa94915c5ad408a84f206a34cb95e",
+  "jsonFile": "9daacd6a941145ae9015b23a13dddbda751fa94915c5ad408a84f206a34cb95e.json",
+  "svgFile": "9daacd6a941145ae9015b23a13dddbda751fa94915c5ad408a84f206a34cb95e.svg",
+  "createdAt": "2026-06-01T19:33:19.870701+00:00"
+}
