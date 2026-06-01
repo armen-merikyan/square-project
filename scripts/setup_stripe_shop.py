@@ -12,6 +12,7 @@ from urllib.error import HTTPError
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ENV_PATH = ROOT / ".env"
 VARIANTS = {
     "print": {
         "nickname": "Square Project 8x8 Art Print",
@@ -28,20 +29,51 @@ VARIANTS = {
 }
 
 
-def load_env() -> None:
-    env_path = ROOT / ".env"
+def clean_env_value(value: str) -> str:
+    return value.strip().strip("\"'")
 
-    if not env_path.is_file():
+
+def is_real_stripe_id(value: str, prefix: str) -> bool:
+    return value.startswith(prefix) and "_your" not in value and "your-" not in value
+
+
+def load_env() -> None:
+    if not ENV_PATH.is_file():
         return
 
-    for line in env_path.read_text(encoding="utf-8").splitlines():
+    for line in ENV_PATH.read_text(encoding="utf-8").splitlines():
         stripped = line.strip()
 
         if not stripped or stripped.startswith("#") or "=" not in stripped:
             continue
 
         key, value = stripped.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
+        os.environ.setdefault(key.strip(), clean_env_value(value))
+
+
+def update_env(updates: dict[str, str]) -> None:
+    lines = ENV_PATH.read_text(encoding="utf-8").splitlines() if ENV_PATH.is_file() else []
+    seen = set()
+    next_lines = []
+
+    for line in lines:
+        if "=" not in line or line.lstrip().startswith("#"):
+            next_lines.append(line)
+            continue
+
+        key = line.split("=", 1)[0].strip()
+
+        if key in updates:
+            next_lines.append(f"{key}={updates[key]}")
+            seen.add(key)
+        else:
+            next_lines.append(line)
+
+    for key, value in updates.items():
+        if key not in seen:
+            next_lines.append(f"{key}={value}")
+
+    ENV_PATH.write_text("\n".join(next_lines) + "\n", encoding="utf-8")
 
 
 def stripe_post(path: str, fields: dict[str, str]) -> dict:
@@ -112,6 +144,10 @@ def find_price_by_lookup_key(lookup_key: str) -> dict | None:
 def main() -> None:
     load_env()
     product_id = os.environ.get("STRIPE_ART_PRODUCT_ID", "").strip()
+
+    if not is_real_stripe_id(product_id, "prod_"):
+        product_id = ""
+
     existing_prices = {
         variant: find_price_by_lookup_key(config["lookup_key"])
         for variant, config in VARIANTS.items()
@@ -140,7 +176,7 @@ def main() -> None:
     for variant, config in VARIANTS.items():
         existing_price = os.environ.get(config["env_key"], "").strip()
 
-        if existing_price:
+        if is_real_stripe_id(existing_price, "price_"):
             created_prices[config["env_key"]] = existing_price
             print(f"Using existing {variant} price: {existing_price}")
             continue
@@ -163,11 +199,12 @@ def main() -> None:
         created_prices[config["env_key"]] = price["id"]
         print(f"Created {variant} price: {price['id']}")
 
-    print("\nAdd these to .env:")
-    print(f"STRIPE_ART_PRODUCT_ID={product_id}")
+    updates = {"STRIPE_ART_PRODUCT_ID": product_id, **created_prices}
+    update_env(updates)
 
-    for env_key, price_id in created_prices.items():
-        print(f"{env_key}={price_id}")
+    print(f"\nUpdated {ENV_PATH}:")
+    for key, value in updates.items():
+        print(f"{key}={value}")
 
 
 if __name__ == "__main__":

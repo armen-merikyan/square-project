@@ -39,19 +39,11 @@ Create one reusable Stripe Product and two reusable Prices:
 - 8x8 art print, `$24`
 - 8x8 art print in the black upsimples 8x8 frame, `$39`
 
-With `STRIPE_SECRET_KEY` set in `.env`, this helper creates the product and
-prices:
+With `STRIPE_SECRET_KEY` set in `.env`, this helper creates or reuses the product
+and prices, then writes the Stripe IDs back into `.env`:
 
 ```bash
 python3 scripts/setup_stripe_shop.py
-```
-
-Copy the printed values into `.env`:
-
-```env
-STRIPE_ART_PRODUCT_ID=prod_...
-STRIPE_PRINT_PRICE_ID=price_...
-STRIPE_FRAMED_PRICE_ID=price_...
 ```
 
 Run the local dev server for checkout testing:

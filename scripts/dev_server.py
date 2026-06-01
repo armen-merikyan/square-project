@@ -195,6 +195,10 @@ class DevServerHandler(SimpleHTTPRequestHandler):
             self.create_stripe_checkout()
             return
 
+        if parsed_path.path.startswith("/api/"):
+            self.send_json(HTTPStatus.NOT_FOUND, {"error": "API endpoint not found."})
+            return
+
         self.send_error(HTTPStatus.NOT_FOUND, "Not found")
 
     def is_html_request(self, request_path: str) -> bool:
