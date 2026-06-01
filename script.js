@@ -339,7 +339,8 @@ coverflow.addEventListener("pointerdown", (event) => {
   isDragging = true;
   didDrag = false;
   window.clearInterval(autoAdvanceId);
-  coverflow.setPointerCapture(event.pointerId);
+  const captureTarget = event.target.closest(".carousel-card") || coverflow;
+  captureTarget.setPointerCapture(event.pointerId);
 });
 
 coverflow.addEventListener("pointermove", (event) => {
