@@ -157,7 +157,9 @@ art/9f2c...a81d.svg
 Each JSON file includes the artwork key, matching JSON/SVG filenames, seed, title, abstract color reasoning, exact pixel coordinates, hex colors, and a pixel hash used to prevent duplicate arrangements across separate runs.
 
 The public gallery reads `art/manifest.json` instead of a manually maintained
-JavaScript list. The generator updates that manifest after each successful run.
+JavaScript list. The generator updates that manifest, gallery category chunks,
+color indexes, framed Stripe preview SVGs, and configured Stripe payment-link
+data after each successful run.
 If you add JSON/SVG artwork files directly to `art/`, rebuild the manifest:
 
 ```bash

@@ -6,12 +6,15 @@ from __future__ import annotations
 import json
 import os
 import ssl
+import time
 import urllib.parse
 import urllib.request
 from base64 import b64encode
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from html import escape
 from pathlib import Path
-from urllib.error import HTTPError
+from threading import Lock
+from urllib.error import HTTPError, URLError
 
 try:
     import certifi
@@ -25,6 +28,7 @@ PAYMENT_LINKS_PATH = ROOT / "payment-links.js"
 ART_DIR = ROOT / "art"
 STRIPE_PREVIEW_DIR = ROOT / "stripe-previews"
 MANIFEST_PATH = ART_DIR / "manifest.json"
+PAYMENT_LINKS_JS_PREFIX = "window.SQUARE_PROJECT_PAYMENT_LINKS = "
 STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
 DEFAULT_SITE_URL = "https://mysquareart.com"
 FRAME_PREVIEW_STAGE_SIZE = 1500
@@ -140,9 +144,40 @@ def enabled_env_flag(key: str) -> bool:
 def update_payment_links_js(payment_config: dict) -> None:
     payload = json.dumps(payment_config, indent=2, sort_keys=True)
     PAYMENT_LINKS_PATH.write_text(
-        f"window.SQUARE_PROJECT_PAYMENT_LINKS = {payload};\n",
+        f"{PAYMENT_LINKS_JS_PREFIX}{payload};\n",
         encoding="utf-8",
     )
+
+
+def existing_payment_links_payload() -> dict:
+    if not PAYMENT_LINKS_PATH.is_file():
+        return {}
+
+    text = PAYMENT_LINKS_PATH.read_text(encoding="utf-8").strip()
+    if not text.startswith(PAYMENT_LINKS_JS_PREFIX):
+        return {}
+
+    payload_text = text[len(PAYMENT_LINKS_JS_PREFIX):].strip()
+    if payload_text.endswith(";"):
+        payload_text = payload_text[:-1].strip()
+
+    try:
+        payload = json.loads(payload_text)
+    except json.JSONDecodeError:
+        return {}
+
+    return payload if isinstance(payload, dict) else {}
+
+
+def merged_payment_links_payload(
+    artwork_links: dict[str, dict[str, str]],
+    legacy_links: dict[str, str] | None = None,
+) -> dict:
+    existing_payload = existing_payment_links_payload()
+    existing_artworks = existing_payload.get("artworks")
+    merged_artworks = dict(existing_artworks) if isinstance(existing_artworks, dict) else {}
+    merged_artworks.update(artwork_links)
+    return payment_links_payload(merged_artworks, legacy_links)
 
 
 def stripe_post(path: str, fields: dict[str, str]) -> dict:
@@ -151,27 +186,39 @@ def stripe_post(path: str, fields: dict[str, str]) -> dict:
     if not secret_key:
         raise SystemExit("Set STRIPE_SECRET_KEY in .env before running this script.")
 
-    request = urllib.request.Request(
-        f"https://api.stripe.com/v1/{path.lstrip('/')}",
-        data=urllib.parse.urlencode(fields).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {secret_key}",
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        method="POST",
-    )
+    for attempt in range(5):
+        request = urllib.request.Request(
+            f"https://api.stripe.com/v1/{path.lstrip('/')}",
+            data=urllib.parse.urlencode(fields).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {secret_key}",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            method="POST",
+        )
 
-    try:
-        with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except HTTPError as error:
         try:
-            payload = json.loads(error.read().decode("utf-8"))
-            message = payload.get("error", {}).get("message")
-        except (json.JSONDecodeError, UnicodeDecodeError):
-            message = None
+            with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except HTTPError as error:
+            try:
+                payload = json.loads(error.read().decode("utf-8"))
+                message = payload.get("error", {}).get("message")
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                message = None
 
-        raise SystemExit(message or f"Stripe returned HTTP {error.code}.") from error
+            if error.code in {409, 429, 500, 502, 503, 504} and attempt < 4:
+                time.sleep(2 ** attempt)
+                continue
+
+            raise SystemExit(message or f"Stripe returned HTTP {error.code}.") from error
+        except URLError:
+            if attempt < 4:
+                time.sleep(2 ** attempt)
+                continue
+            raise
+
+    raise SystemExit("Stripe request failed after retries.")
 
 
 def stripe_get(path: str, fields: dict[str, str]) -> dict:
@@ -180,24 +227,36 @@ def stripe_get(path: str, fields: dict[str, str]) -> dict:
     if not secret_key:
         raise SystemExit("Set STRIPE_SECRET_KEY in .env before running this script.")
 
-    url = f"https://api.stripe.com/v1/{path.lstrip('/')}?{urllib.parse.urlencode(fields)}"
-    request = urllib.request.Request(
-        url,
-        headers={"Authorization": f"Bearer {secret_key}"},
-        method="GET",
-    )
+    for attempt in range(5):
+        url = f"https://api.stripe.com/v1/{path.lstrip('/')}?{urllib.parse.urlencode(fields)}"
+        request = urllib.request.Request(
+            url,
+            headers={"Authorization": f"Bearer {secret_key}"},
+            method="GET",
+        )
 
-    try:
-        with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except HTTPError as error:
         try:
-            payload = json.loads(error.read().decode("utf-8"))
-            message = payload.get("error", {}).get("message")
-        except (json.JSONDecodeError, UnicodeDecodeError):
-            message = None
+            with urllib.request.urlopen(request, timeout=20, context=STRIPE_CONTEXT) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except HTTPError as error:
+            try:
+                payload = json.loads(error.read().decode("utf-8"))
+                message = payload.get("error", {}).get("message")
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                message = None
 
-        raise SystemExit(message or f"Stripe returned HTTP {error.code}.") from error
+            if error.code in {409, 429, 500, 502, 503, 504} and attempt < 4:
+                time.sleep(2 ** attempt)
+                continue
+
+            raise SystemExit(message or f"Stripe returned HTTP {error.code}.") from error
+        except URLError:
+            if attempt < 4:
+                time.sleep(2 ** attempt)
+                continue
+            raise
+
+    raise SystemExit("Stripe request failed after retries.")
 
 
 def find_price_by_lookup_key(lookup_key: str) -> dict | None:
@@ -208,6 +267,41 @@ def find_price_by_lookup_key(lookup_key: str) -> dict | None:
     })
     data = prices.get("data", [])
     return data[0] if data else None
+
+
+def iter_prices():
+    starting_after = ""
+
+    while True:
+        fields = {
+            "active": "true",
+            "limit": "100",
+        }
+
+        if starting_after:
+            fields["starting_after"] = starting_after
+
+        prices = stripe_get("prices", fields)
+        data = prices.get("data", [])
+
+        yield from data
+
+        if not prices.get("has_more") or not data:
+            break
+
+        starting_after = data[-1]["id"]
+
+
+def prices_by_lookup_key() -> dict[str, dict]:
+    prices = {}
+
+    for price in iter_prices():
+        lookup_key = price.get("lookup_key")
+
+        if lookup_key:
+            prices[lookup_key] = price
+
+    return prices
 
 
 def payment_links_by_lookup_key() -> dict[str, dict]:
@@ -518,6 +612,16 @@ def payment_link_lookup_key(config: dict, art_id: str, frame_color: str | None =
 
 def limited_artwork_ids() -> list[str]:
     ids = artwork_ids()
+    selected_ids = [
+        value.strip()
+        for value in os.environ.get("STRIPE_ARTWORK_IDS", "").replace("\n", ",").split(",")
+        if value.strip()
+    ]
+
+    if selected_ids:
+        selected = set(selected_ids)
+        ids = [art_id for art_id in ids if art_id in selected]
+
     limit = int(os.environ.get("STRIPE_ARTWORK_LIMIT", "0") or "0")
 
     if limit > 0:
@@ -548,7 +652,7 @@ def main() -> None:
     secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
 
     if all(is_real_payment_link(url) for url in env_payment_links.values()) and not secret_key:
-        update_payment_links_js(env_payment_links)
+        update_payment_links_js(merged_payment_links_payload({}, env_payment_links))
         print(f"Updated {PAYMENT_LINKS_PATH} from existing Stripe Payment Links in {ENV_PATH}.")
         return
 
@@ -572,14 +676,16 @@ def main() -> None:
             "Set STRIPE_SECRET_KEY to create one Stripe product and payment links per artwork."
         )
 
-    print(f"Preparing Stripe products for {len(ids)} artworks.")
+    print(f"Preparing Stripe products for {len(ids)} artworks.", flush=True)
+    prices_by_lookup = prices_by_lookup_key()
     links_by_lookup_key = payment_links_by_lookup_key()
     artwork_links: dict[str, dict[str, str]] = {}
+    cache_lock = Lock()
+    worker_count = max(1, int(os.environ.get("STRIPE_WORKERS", "6") or "6"))
 
-    for index, art_id in enumerate(ids, start=1):
+    def process_artwork(art_id: str) -> tuple[str, dict[str, str], str]:
         art = artwork_record(art_id)
-
-        artwork_links[art_id] = {}
+        links: dict[str, str] = {}
         last_product_id = ""
 
         for variant, config in VARIANTS.items():
@@ -590,7 +696,9 @@ def main() -> None:
                     write_framed_preview_svg(art, frame_color)
 
                 price_lookup_key = lookup_key(config, art_id, frame_color)
-                price = find_price_by_lookup_key(price_lookup_key)
+                with cache_lock:
+                    price = prices_by_lookup.get(price_lookup_key)
+
                 product_id = price["product"] if price else ""
 
                 if product_id:
@@ -610,12 +718,14 @@ def main() -> None:
                         **art_metadata(art, variant, frame_color),
                         **metadata_fields("metadata", config["metadata"]),
                     })
+                    with cache_lock:
+                        prices_by_lookup[price_lookup_key] = price
 
                 link_lookup_key = payment_link_lookup_key(config, art_id, frame_color)
-                payment_link = links_by_lookup_key.get(link_lookup_key)
-                payment_link_price = payment_link_price_id(payment_link["id"]) if payment_link else ""
+                with cache_lock:
+                    payment_link = links_by_lookup_key.get(link_lookup_key)
 
-                if payment_link and payment_link_price == price["id"]:
+                if payment_link:
                     update_payment_link_metadata(payment_link["id"], art, variant, config, link_lookup_key, frame_color)
                 else:
                     fields = {
@@ -627,16 +737,25 @@ def main() -> None:
                     }
 
                     payment_link = stripe_post("payment_links", fields)
-                    links_by_lookup_key[link_lookup_key] = payment_link
+                    with cache_lock:
+                        links_by_lookup_key[link_lookup_key] = payment_link
 
                 if frame_color:
-                    artwork_links[art_id].setdefault(variant, {})[frame_color] = payment_link["url"]
+                    links.setdefault(variant, {})[frame_color] = payment_link["url"]
                 else:
-                    artwork_links[art_id][variant] = payment_link["url"]
+                    links[variant] = payment_link["url"]
 
-        print(f"[{index}/{len(ids)}] {art_id} -> {last_product_id or 'updated'}")
+        return art_id, links, last_product_id or "updated"
 
-    update_payment_links_js(payment_links_payload(artwork_links, real_legacy_payment_links(env_payment_links)))
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        futures = {executor.submit(process_artwork, art_id): art_id for art_id in ids}
+
+        for index, future in enumerate(as_completed(futures), start=1):
+            art_id, links, result = future.result()
+            artwork_links[art_id] = links
+            print(f"[{index}/{len(ids)}] {art_id} -> {result}", flush=True)
+
+    update_payment_links_js(merged_payment_links_payload(artwork_links, real_legacy_payment_links(env_payment_links)))
     print(f"\nUpdated {PAYMENT_LINKS_PATH} with {len(artwork_links)} artwork link sets.")
 
 

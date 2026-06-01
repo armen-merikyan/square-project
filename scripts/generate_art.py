@@ -30,6 +30,7 @@ from typing import Any
 from xml.sax.saxutils import escape
 
 from build_gallery_manifest import build_gallery_manifest
+import setup_stripe_shop
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -71,6 +72,11 @@ def main() -> int:
         action="store_true",
         help="Use only the freeform text seed and skip scripts/seed.json art direction.",
     )
+    parser.add_argument(
+        "--skip-downstream",
+        action="store_true",
+        help="Only write generated art files; skip gallery and Stripe downstream updates.",
+    )
     parser.add_argument("seed", nargs="+", help="Text seed to guide the generated pixel art.")
     args = parser.parse_args()
 
@@ -106,6 +112,7 @@ def main() -> int:
     generation_attempt = 0
     max_batch_failures = args.count * MAX_BATCH_FAILURES_MULTIPLIER
     hash_lock = Lock()
+    created_ids: list[str] = []
 
     exit_code = 0
 
@@ -142,8 +149,10 @@ def main() -> int:
 
                 for future in as_completed(futures):
                     try:
-                        if future.result():
+                        created_id = future.result()
+                        if created_id:
                             created += 1
+                            created_ids.append(created_id)
                             print(f"Progress: {created}/{args.count} created.", flush=True)
                     except (RuntimeError, TimeoutError, urllib.error.URLError) as error:
                         batch_failures += 1
@@ -160,11 +169,8 @@ def main() -> int:
         print(f"Generated {created} unique artwork{'s' if created != 1 else ''}.", flush=True)
         return exit_code
     finally:
-        manifest = build_gallery_manifest()
-        print(
-            f"Updated art/manifest.json with {manifest['count']} artworks.",
-            flush=True,
-        )
+        if not args.skip_downstream:
+            update_downstream(created_ids)
 
 
 def generate_one(
@@ -174,7 +180,7 @@ def generate_one(
     seed_library: dict[str, Any] | None,
     existing_hashes: set[str],
     hash_lock: Lock,
-) -> bool:
+) -> str:
     generation_spec = build_generation_spec(seed_text, seed_library)
     generated = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
@@ -203,7 +209,7 @@ def generate_one(
         if art_key in existing_hashes:
             print("Duplicate pixel arrangement detected. No files were written.", file=sys.stderr, flush=True)
             print(f"Seed: {seed_text}", file=sys.stderr, flush=True)
-            return False
+            return ""
         existing_hashes.add(art_key)
 
     art["id"] = art_key
@@ -221,7 +227,49 @@ def generate_one(
 
     print(f"Created {json_path.relative_to(PROJECT_ROOT)}", flush=True)
     print(f"Created {svg_path.relative_to(PROJECT_ROOT)}", flush=True)
-    return True
+    return art_key
+
+
+def update_downstream(created_ids: list[str]) -> None:
+    manifest = build_gallery_manifest()
+    print(
+        f"Updated art/manifest.json with {manifest['count']} artworks.",
+        flush=True,
+    )
+
+    if not created_ids:
+        print("No new artwork IDs to sync downstream.", flush=True)
+        return
+
+    setup_stripe_shop.load_env()
+    setup_stripe_shop.write_framed_previews(created_ids)
+    print(
+        f"Updated framed Stripe previews for {len(created_ids)} new artwork"
+        f"{'s' if len(created_ids) != 1 else ''}.",
+        flush=True,
+    )
+
+    env_payment_links = setup_stripe_shop.legacy_payment_links_from_env()
+    has_legacy_links = all(setup_stripe_shop.is_real_payment_link(url) for url in env_payment_links.values())
+    has_secret_key = bool(os.environ.get("STRIPE_SECRET_KEY", "").strip())
+
+    if not has_legacy_links and not has_secret_key:
+        print(
+            "Skipped Stripe payment-link sync because no valid legacy payment links "
+            "or STRIPE_SECRET_KEY are configured.",
+            flush=True,
+        )
+        return
+
+    previous_selection = os.environ.get("STRIPE_ARTWORK_IDS")
+    os.environ["STRIPE_ARTWORK_IDS"] = ",".join(created_ids)
+    try:
+        setup_stripe_shop.main()
+    finally:
+        if previous_selection is None:
+            os.environ.pop("STRIPE_ARTWORK_IDS", None)
+        else:
+            os.environ["STRIPE_ARTWORK_IDS"] = previous_selection
 
 
 def load_env(path: Path) -> dict[str, str]:

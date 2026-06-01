@@ -86,6 +86,7 @@ a {
 .site-header nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: clamp(14px, 3vw, 30px);
   color: var(--muted);
   font-size: 0.94rem;
@@ -778,9 +779,29 @@ code {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
   padding: 28px clamp(18px, 4vw, 56px);
   background: var(--ink);
   color: #fff;
+}
+
+footer a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .reveal {
@@ -847,6 +868,36 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.legal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 56px);
+}
+
+.legal-page h1 {
+  max-width: 780px;
+  margin-bottom: 28px;
+  font-size: clamp(3rem, 7vw, 6.4rem);
+}
+
+.legal-page h2 {
+  margin: 40px 0 10px;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+}
+
+.legal-page p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.legal-page a {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .gallery-hero {
@@ -1901,7 +1952,7 @@ body.has-open-inspector {
 
   .site-header nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .steps,
