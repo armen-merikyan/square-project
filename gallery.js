@@ -3,17 +3,39 @@ const MANIFEST_CACHE_BUSTER = Date.now().toString(36);
 const SHOP_VARIANTS = {
   print: {
     label: "Art print",
-    description: "8x8 print",
+    description: "8x8 art print",
     price: "$24",
     button: "Order print",
     paymentLinkKey: "print"
   },
   framed: {
-    label: "Framed print",
-    description: "8x8 print in black upsimples frame",
+    label: "12x12 framed print",
+    description: "8x8 image area with mat",
     price: "$39",
     button: "Order framed print",
     paymentLinkKey: "framed"
+  }
+};
+const FRAME_TYPES = {
+  black: {
+    label: "Black",
+    image: "frames/black.jpg"
+  },
+  white: {
+    label: "White",
+    image: "frames/white.jpg"
+  },
+  natural: {
+    label: "Natural",
+    image: "frames/natural.jpg"
+  },
+  brown: {
+    label: "Brown",
+    image: "frames/brown.jpg"
+  },
+  gold: {
+    label: "Gold",
+    image: "frames/gold.jpg"
   }
 };
 const PAYMENT_LINKS = window.SQUARE_PROJECT_PAYMENT_LINKS || {};
@@ -51,6 +73,7 @@ let previousFocus = null;
 let colorFiltersVisible = true;
 let colorSimilarityThreshold = Number(colorSimilarity.value);
 let selectedShopVariant = "print";
+let selectedFrameType = "black";
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
 
@@ -284,6 +307,7 @@ function renderFramePreview(record) {
   const preview = document.createElement("div");
   preview.className = "frame-preview";
   preview.dataset.variant = selectedShopVariant;
+  preview.dataset.frameType = selectedFrameType;
 
   const printStage = document.createElement("div");
   printStage.className = "print-preview-stage";
@@ -297,7 +321,7 @@ function renderFramePreview(record) {
 
   const frameImage = document.createElement("img");
   frameImage.className = "frame-shell";
-  frameImage.src = "frame_8_x_8.png";
+  frameImage.src = FRAME_TYPES[selectedFrameType].image;
   frameImage.alt = "";
   frameImage.decoding = "async";
   frameImage.setAttribute("aria-hidden", "true");
@@ -305,11 +329,13 @@ function renderFramePreview(record) {
   framedStage.append(framedArt, frameImage);
   preview.append(printStage, framedStage);
 
+  preview.frameImage = frameImage;
   return preview;
 }
 
-function checkoutReference(record, variant) {
-  const reference = `${record.id}_${variant}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+function checkoutReference(record, variant, frameType = "") {
+  const framePart = variant === "framed" ? `_${frameType}` : "";
+  const reference = `${record.id}_${variant}${framePart}`.replace(/[^a-zA-Z0-9_-]/g, "_");
   return reference.slice(0, 200);
 }
 
@@ -318,12 +344,13 @@ function paymentLinkForVariant(variant) {
   return (variantConfig && PAYMENT_LINKS[variantConfig.paymentLinkKey] || "").trim();
 }
 
-function paymentLinkUrl(record, variant) {
+function paymentLinkUrl(record, variant, frameType = selectedFrameType) {
   const url = new URL(paymentLinkForVariant(variant));
-  url.searchParams.set("client_reference_id", checkoutReference(record, variant));
+  url.searchParams.set("client_reference_id", checkoutReference(record, variant, frameType));
   url.searchParams.set("utm_source", "square_project");
   url.searchParams.set("utm_medium", "gallery");
   url.searchParams.set("utm_content", variant);
+  url.searchParams.set("utm_term", variant === "framed" ? frameType : "none");
   return url.toString();
 }
 
@@ -337,7 +364,7 @@ function checkoutToneForVariant(variant) {
   return paymentLinkForVariant(variant) ? "neutral" : "error";
 }
 
-function startCheckout(record, variant, status) {
+function startCheckout(record, variant, frameType, status) {
   const variantConfig = SHOP_VARIANTS[variant];
 
   if (!variantConfig) {
@@ -353,10 +380,18 @@ function startCheckout(record, variant, status) {
 
     status.textContent = "Opening Stripe payment link.";
     status.dataset.tone = "neutral";
-    window.location.href = paymentLinkUrl(record, variant);
+    window.location.href = paymentLinkUrl(record, variant, frameType);
   } catch (error) {
     status.textContent = error.message;
     status.dataset.tone = "error";
+  }
+}
+
+function updateFramePreview(preview, frameType) {
+  preview.dataset.frameType = frameType;
+
+  if (preview.frameImage) {
+    preview.frameImage.src = FRAME_TYPES[frameType].image;
   }
 }
 
@@ -370,6 +405,46 @@ function renderOrderPanel(record, preview) {
 
   const options = document.createElement("div");
   options.className = "order-options";
+
+  const frameChooser = document.createElement("div");
+  frameChooser.className = "frame-type-options";
+  frameChooser.hidden = selectedShopVariant !== "framed";
+
+  const frameChooserLabel = document.createElement("h4");
+  frameChooserLabel.textContent = "Frame type";
+
+  const frameButtons = document.createElement("div");
+  frameButtons.className = "frame-type-list";
+
+  Object.entries(FRAME_TYPES).forEach(([frameType, config]) => {
+    const frameButton = document.createElement("button");
+    frameButton.className = "frame-type-option";
+    frameButton.type = "button";
+    frameButton.dataset.frameType = frameType;
+    frameButton.setAttribute("aria-pressed", String(frameType === selectedFrameType));
+    frameButton.setAttribute("aria-label", `${config.label} frame`);
+
+    const swatch = document.createElement("span");
+    swatch.style.backgroundImage = `url("${config.image}")`;
+    swatch.setAttribute("aria-hidden", "true");
+
+    const label = document.createElement("strong");
+    label.textContent = config.label;
+
+    frameButton.append(swatch, label);
+    frameButton.addEventListener("click", () => {
+      selectedFrameType = frameType;
+      updateFramePreview(preview, frameType);
+      frameButtons.querySelectorAll(".frame-type-option").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.frameType === frameType));
+      });
+      status.textContent = checkoutStatusForVariant(selectedShopVariant);
+      status.dataset.tone = checkoutToneForVariant(selectedShopVariant);
+    });
+    frameButtons.appendChild(frameButton);
+  });
+
+  frameChooser.append(frameChooserLabel, frameButtons);
 
   Object.entries(SHOP_VARIANTS).forEach(([variant, config]) => {
     const option = document.createElement("button");
@@ -391,6 +466,8 @@ function renderOrderPanel(record, preview) {
     option.addEventListener("click", () => {
       selectedShopVariant = variant;
       preview.dataset.variant = variant;
+      updateFramePreview(preview, selectedFrameType);
+      frameChooser.hidden = variant !== "framed";
       options.querySelectorAll(".order-option").forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.variant === variant));
       });
@@ -415,10 +492,10 @@ function renderOrderPanel(record, preview) {
 
   checkoutButton.addEventListener(
     "click",
-    () => startCheckout(record, selectedShopVariant, status),
+    () => startCheckout(record, selectedShopVariant, selectedFrameType, status),
   );
 
-  panel.append(heading, options, checkoutButton, status);
+  panel.append(heading, options, frameChooser, checkoutButton, status);
   return panel;
 }
 

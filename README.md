@@ -38,7 +38,7 @@ Create one reusable Stripe Product, two reusable Prices, and two reusable Paymen
 Links:
 
 - 8x8 art print, `$24`
-- 8x8 art print in the black upsimples 8x8 frame, `$39`
+- 12x12 framed print with an 8x8 image area, `$39`
 
 With `STRIPE_SECRET_KEY` set in `.env`, this helper creates or reuses the product
 and prices, creates or reuses the payment links, writes the Stripe IDs and URLs
@@ -54,9 +54,10 @@ Run the local dev server for link testing:
 python3 scripts/dev_server.py
 ```
 
-The gallery appends `client_reference_id=artworkId_variant` to each payment link,
-for example `9005ff...634a_print`, so orders can be reconciled in Stripe without
-creating a separate product per artwork.
+The gallery appends `client_reference_id=artworkId_variant_frameType` to framed
+payment links, for example `9005ff...634a_framed_black`, so orders can be
+reconciled in Stripe without creating a separate product per artwork or frame
+color.
 
 ## Local Art Job GUI
 

@@ -24,12 +24,12 @@ VARIANTS = {
         "payment_link_lookup_key": "square_project_8x8_print_payment_link",
     },
     "framed": {
-        "nickname": "Square Project 8x8 Framed Print",
+        "nickname": "Square Project 12x12 Framed Print",
         "amount": 3900,
-        "lookup_key": "square_project_8x8_framed",
+        "lookup_key": "square_project_12x12_framed",
         "env_key": "STRIPE_FRAMED_PRICE_ID",
         "payment_link_env_key": "STRIPE_FRAMED_PAYMENT_LINK",
-        "payment_link_lookup_key": "square_project_8x8_framed_payment_link",
+        "payment_link_lookup_key": "square_project_12x12_framed_payment_link",
     },
 }
 
@@ -190,7 +190,7 @@ def main() -> None:
     else:
         product = stripe_post("products", {
             "name": "Square Project 8x8 Art Order",
-            "description": "Reusable product for Square Project 8x8 print orders.",
+            "description": "Reusable product for Square Project 8x8 print and 12x12 framed print orders.",
             "metadata[app]": "square_project",
             "metadata[kind]": "art_order",
         })
@@ -222,6 +222,8 @@ def main() -> None:
             "nickname": config["nickname"],
             "lookup_key": config["lookup_key"],
             "metadata[variant]": variant,
+            "metadata[image_area]": "8x8",
+            "metadata[frame_size]": "12x12" if variant == "framed" else "none",
         })
         created_prices[config["env_key"]] = price["id"]
         print(f"Created {variant} price: {price['id']}")
