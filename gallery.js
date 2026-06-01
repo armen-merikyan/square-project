@@ -19,23 +19,28 @@ const SHOP_VARIANTS = {
 const FRAME_TYPES = {
   black: {
     label: "Black",
-    image: "frames/black.jpg"
+    image: "frames/black.jpg",
+    swatch: "linear-gradient(135deg, #050505 0%, #242424 50%, #050505 100%)"
   },
   white: {
     label: "White",
-    image: "frames/white.jpg"
+    image: "frames/white.jpg",
+    swatch: "linear-gradient(135deg, #f7f7f4 0%, #ffffff 48%, #d9d9d5 100%)"
   },
   natural: {
     label: "Natural",
-    image: "frames/natural.jpg"
+    image: "frames/natural.jpg",
+    swatch: "linear-gradient(135deg, #d8b889 0%, #f1d9aa 45%, #b98c55 100%)"
   },
   brown: {
     label: "Brown",
-    image: "frames/brown.jpg"
+    image: "frames/brown.jpg",
+    swatch: "linear-gradient(135deg, #4a2816 0%, #7a4a28 50%, #2d170d 100%)"
   },
   gold: {
     label: "Gold",
-    image: "frames/gold.jpg"
+    image: "frames/gold.jpg",
+    swatch: "linear-gradient(135deg, #b88924 0%, #f2d36b 48%, #8d6518 100%)"
   }
 };
 const PAYMENT_LINKS = window.SQUARE_PROJECT_PAYMENT_LINKS || {};
@@ -569,7 +574,7 @@ function renderOrderPanel(record, preview) {
     frameButton.setAttribute("aria-label", `${config.label} frame`);
 
     const swatch = document.createElement("span");
-    swatch.style.backgroundImage = `url("${config.image}")`;
+    swatch.style.background = config.swatch;
     swatch.setAttribute("aria-hidden", "true");
 
     const label = document.createElement("strong");
