@@ -1222,21 +1222,61 @@ async function hydrateVisiblePixelArtwork(records, token) {
 function renderPagination(totalPages) {
   galleryPagination.replaceChildren();
 
+  const pageStart = (currentPage - 1) * pageSize + 1;
+  const pageEnd = Math.min(currentPage * pageSize, filteredRecords.length);
+
+  const summary = document.createElement("p");
+  summary.className = "pagination-summary";
+  summary.textContent = `Showing ${pageStart}-${pageEnd} of ${filteredRecords.length}`;
+
+  const controls = document.createElement("div");
+  controls.className = "pagination-controls";
+
   const previous = document.createElement("button");
   previous.type = "button";
-  previous.textContent = "Previous";
+  previous.className = "pagination-arrow";
+  previous.textContent = "Prev";
+  previous.setAttribute("aria-label", "Previous page");
   previous.disabled = currentPage === 1;
   previous.addEventListener("click", () => {
     currentPage -= 1;
     renderCurrentPage();
   });
 
-  const status = document.createElement("span");
-  status.textContent = `Page ${currentPage} of ${totalPages}`;
+  const pageNumbers = document.createElement("div");
+  pageNumbers.className = "pagination-pages";
+  pageNumbers.setAttribute("aria-label", `Page ${currentPage} of ${totalPages}`);
+
+  paginationItems(currentPage, totalPages).forEach((item) => {
+    if (item === "...") {
+      const ellipsis = document.createElement("span");
+      ellipsis.className = "pagination-ellipsis";
+      ellipsis.textContent = "...";
+      pageNumbers.appendChild(ellipsis);
+      return;
+    }
+
+    const pageButton = document.createElement("button");
+    pageButton.type = "button";
+    pageButton.className = "pagination-page";
+    pageButton.textContent = String(item);
+    pageButton.setAttribute("aria-label", `Page ${item}`);
+
+    if (item === currentPage) {
+      pageButton.setAttribute("aria-current", "page");
+    }
+
+    pageButton.addEventListener("click", () => {
+      currentPage = item;
+      renderCurrentPage();
+    });
+    pageNumbers.appendChild(pageButton);
+  });
 
   const pageSizeLabel = document.createElement("label");
   pageSizeLabel.className = "page-size-control";
-  pageSizeLabel.textContent = "Per page";
+  const pageSizeText = document.createElement("span");
+  pageSizeText.textContent = "Per page";
 
   const pageSizeSelect = document.createElement("select");
   pageSizeSelect.setAttribute("aria-label", "Artworks per page");
@@ -1252,11 +1292,13 @@ function renderPagination(totalPages) {
     currentPage = 1;
     renderCurrentPage();
   });
-  pageSizeLabel.appendChild(pageSizeSelect);
+  pageSizeLabel.append(pageSizeText, pageSizeSelect);
 
   const next = document.createElement("button");
   next.type = "button";
+  next.className = "pagination-arrow";
   next.textContent = "Next";
+  next.setAttribute("aria-label", "Next page");
   next.disabled = currentPage === totalPages;
   next.addEventListener("click", () => {
     currentPage += 1;
@@ -1264,10 +1306,36 @@ function renderPagination(totalPages) {
   });
 
   if (totalPages > 1) {
-    galleryPagination.append(previous, status, next, pageSizeLabel);
+    controls.append(previous, pageNumbers, next);
+    galleryPagination.append(summary, controls, pageSizeLabel);
   } else {
-    galleryPagination.append(status, pageSizeLabel);
+    galleryPagination.append(summary, pageSizeLabel);
   }
+}
+
+function paginationItems(page, totalPages) {
+  if (totalPages <= 7) {
+    return Array.from({ length: totalPages }, (_, index) => index + 1);
+  }
+
+  const items = [1];
+  const windowStart = Math.max(2, page - 1);
+  const windowEnd = Math.min(totalPages - 1, page + 1);
+
+  if (windowStart > 2) {
+    items.push("...");
+  }
+
+  for (let index = windowStart; index <= windowEnd; index += 1) {
+    items.push(index);
+  }
+
+  if (windowEnd < totalPages - 1) {
+    items.push("...");
+  }
+
+  items.push(totalPages);
+  return items;
 }
 
 function renderCategoryOptions() {
