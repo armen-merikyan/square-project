@@ -28,17 +28,18 @@ python3 scripts/dev_server.py
 
 Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reloads the browser tab whenever a watched file changes, so you do not need to clear browser history or cache while developing.
 
-## Stripe Checkout
+## Stripe Payment Links
 
-The gallery inspector lets customers order either an 8x8 print or the same print in the black upsimples 8x8 frame. Use two reusable Stripe Products/Prices in production, not one product per artwork:
+The public customer site is static. Customers order through Stripe Payment Links, so there is no customer-facing server route and no Stripe secret key in the website.
 
-```env
-STRIPE_SECRET_KEY=sk_test_your-stripe-secret-key-here
-STRIPE_PRINT_PRICE_ID=price_your-reusable-8x8-print-price
-STRIPE_FRAMED_PRINT_PRICE_ID=price_your-reusable-8x8-framed-print-price
-```
+Create two reusable Stripe Payment Links in Stripe Dashboard:
 
-The checkout API sends the selected artwork ID, title, size, fulfillment type, and frame choice as Stripe Checkout Session and PaymentIntent metadata. If the reusable Stripe price IDs are not configured, the local server falls back to `PRINT_AMOUNT_CENTS` and `FRAMED_PRINT_AMOUNT_CENTS` and creates an inline Checkout line item.
+- 8x8 art print
+- 8x8 art print in the black upsimples 8x8 frame
+
+Then paste the public `https://buy.stripe.com/...` URLs into `SHOP_VARIANTS.print.paymentLink` and `SHOP_VARIANTS.framed.paymentLink` in `gallery.js`.
+
+The static site appends `client_reference_id` and UTM parameters to the Payment Link URL before redirecting to Stripe. The reference format is `artworkId_variant`, for example `9005ff...634a_print`, so orders can be reconciled in Stripe without creating a checkout session on your own server.
 
 ## Local Art Job GUI
 

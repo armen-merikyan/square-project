@@ -4,12 +4,10 @@
 from __future__ import annotations
 
 import argparse
-import json
 import mimetypes
 import os
 import time
 import urllib.parse
-import urllib.request
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -29,23 +27,6 @@ IGNORED_DIRECTORIES = {
 }
 LIVE_RELOAD_PATH = "/__live-reload"
 POLL_INTERVAL_SECONDS = 0.5
-STRIPE_CHECKOUT_API_URL = "https://api.stripe.com/v1/checkout/sessions"
-DEFAULT_PRINT_AMOUNT_CENTS = 2400
-DEFAULT_FRAMED_AMOUNT_CENTS = 3900
-CHECKOUT_VARIANTS = {
-    "print": {
-        "label": "8x8 Art Print",
-        "price_env": "STRIPE_PRINT_PRICE_ID",
-        "amount_env": "PRINT_AMOUNT_CENTS",
-        "default_amount": DEFAULT_PRINT_AMOUNT_CENTS,
-    },
-    "framed": {
-        "label": "8x8 Art Print with Black Frame",
-        "price_env": "STRIPE_FRAMED_PRINT_PRICE_ID",
-        "amount_env": "FRAMED_PRINT_AMOUNT_CENTS",
-        "default_amount": DEFAULT_FRAMED_AMOUNT_CENTS,
-    },
-}
 
 
 LIVE_RELOAD_SNIPPET = """
@@ -82,19 +63,6 @@ def latest_mtime(root: Path) -> int:
 
 class DevServerHandler(SimpleHTTPRequestHandler):
     server_version = "SquareDevServer/1.0"
-
-    def do_POST(self):
-        parsed_path = urllib.parse.urlsplit(self.path)
-
-        if parsed_path.path == "/api/create-checkout-session":
-            self.create_checkout_session()
-            return
-
-        if parsed_path.path.startswith("/api/"):
-            self.send_json(HTTPStatus.NOT_FOUND, {"error": "API endpoint not found."})
-            return
-
-        self.send_error(HTTPStatus.NOT_FOUND, "API endpoint not found")
 
     def end_headers(self):
         self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
@@ -172,65 +140,6 @@ class DevServerHandler(SimpleHTTPRequestHandler):
         except (BrokenPipeError, ConnectionResetError):
             return
 
-    def read_json_body(self) -> dict:
-        content_length = int(self.headers.get("Content-Length", "0"))
-
-        if content_length <= 0:
-            return {}
-
-        body = self.rfile.read(content_length)
-        return json.loads(body.decode("utf-8"))
-
-    def send_json(self, status: HTTPStatus, payload: dict) -> None:
-        encoded = json.dumps(payload).encode("utf-8")
-        self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(encoded)))
-        self.end_headers()
-        self.wfile.write(encoded)
-
-    def create_checkout_session(self) -> None:
-        load_env_file(Path(self.directory) / ".env")
-        stripe_secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
-
-        if not stripe_secret_key or stripe_secret_key.startswith("sk_test_your"):
-            self.send_json(
-                HTTPStatus.SERVICE_UNAVAILABLE,
-                {"error": "Stripe is not configured. Set STRIPE_SECRET_KEY in .env."},
-            )
-            return
-
-        try:
-            payload = self.read_json_body()
-            checkout_payload = build_stripe_checkout_payload(Path(self.directory), payload, self.request_origin())
-            request = urllib.request.Request(
-                STRIPE_CHECKOUT_API_URL,
-                data=urllib.parse.urlencode(checkout_payload, doseq=True).encode("utf-8"),
-                headers={
-                    "Authorization": f"Bearer {stripe_secret_key}",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-                method="POST",
-            )
-
-            with urllib.request.urlopen(request, timeout=20) as response:
-                stripe_response = json.loads(response.read().decode("utf-8"))
-
-            self.send_json(HTTPStatus.OK, {"url": stripe_response["url"]})
-        except ValueError as error:
-            self.send_json(HTTPStatus.BAD_REQUEST, {"error": str(error)})
-        except urllib.error.HTTPError as error:
-            message = error.read().decode("utf-8")
-            self.send_json(HTTPStatus.BAD_GATEWAY, {"error": "Stripe rejected the checkout request.", "details": message})
-        except (OSError, json.JSONDecodeError, KeyError) as error:
-            self.send_json(HTTPStatus.INTERNAL_SERVER_ERROR, {"error": str(error)})
-
-    def request_origin(self) -> str:
-        host = self.headers.get("Host", "127.0.0.1:8000")
-        forwarded_proto = self.headers.get("X-Forwarded-Proto")
-        scheme = forwarded_proto or "http"
-        return f"{scheme}://{host}"
-
     def guess_type(self, path):
         content_type, encoding = mimetypes.guess_type(path)
 
@@ -245,101 +154,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--host", default="127.0.0.1", help="Host to bind. Defaults to 127.0.0.1.")
     parser.add_argument("--port", type=int, default=8000, help="Port to bind. Defaults to 8000.")
     return parser.parse_args()
-
-
-def load_env_file(env_path: Path) -> None:
-    if not env_path.is_file():
-        return
-
-    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-
-        key, value = line.split("=", 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-
-        if key and key not in os.environ:
-            os.environ[key] = value
-
-
-def build_stripe_checkout_payload(root: Path, payload: dict, origin: str) -> dict:
-    artwork_id = str(payload.get("artworkId", "")).strip()
-    variant = str(payload.get("variant", "")).strip()
-
-    if not artwork_id:
-        raise ValueError("Missing artworkId.")
-
-    if variant not in CHECKOUT_VARIANTS:
-        raise ValueError("Choose print or framed.")
-
-    artwork_path = root / "art" / f"{artwork_id}.json"
-
-    if not artwork_path.is_file():
-        raise ValueError("Artwork record was not found.")
-
-    record = json.loads(artwork_path.read_text(encoding="utf-8"))
-    if record.get("id") and record["id"] != artwork_id:
-        raise ValueError("Artwork record id does not match the requested id.")
-
-    title = str(record.get("title") or "Untitled square")[:180]
-    variant_config = CHECKOUT_VARIANTS[variant]
-    success_url = f"{origin}/gallery.html?art={urllib.parse.quote(artwork_id)}&checkout=success"
-    cancel_url = f"{origin}/gallery.html?art={urllib.parse.quote(artwork_id)}&checkout=cancelled"
-    metadata = {
-        "artwork_id": artwork_id,
-        "artwork_title": title[:120],
-        "fulfillment_type": variant,
-        "size": "8x8",
-        "frame": "upsimples 8x8 black frame" if variant == "framed" else "none",
-    }
-    checkout_payload = {
-        "mode": "payment",
-        "success_url": success_url,
-        "cancel_url": cancel_url,
-        "client_reference_id": artwork_id,
-        "shipping_address_collection[allowed_countries][0]": "US",
-        "metadata[artwork_id]": metadata["artwork_id"],
-        "metadata[artwork_title]": metadata["artwork_title"],
-        "metadata[fulfillment_type]": metadata["fulfillment_type"],
-        "metadata[size]": metadata["size"],
-        "metadata[frame]": metadata["frame"],
-        "payment_intent_data[metadata][artwork_id]": metadata["artwork_id"],
-        "payment_intent_data[metadata][artwork_title]": metadata["artwork_title"],
-        "payment_intent_data[metadata][fulfillment_type]": metadata["fulfillment_type"],
-        "payment_intent_data[metadata][size]": metadata["size"],
-        "payment_intent_data[metadata][frame]": metadata["frame"],
-        "line_items[0][quantity]": "1",
-    }
-    price_id = os.environ.get(variant_config["price_env"], "").strip()
-
-    if price_id:
-        checkout_payload["line_items[0][price]"] = price_id
-        return checkout_payload
-
-    amount = int(os.environ.get(variant_config["amount_env"], variant_config["default_amount"]))
-    product_name = f"Square Project {variant_config['label']}"
-    product_description = f"{title}. Artwork ID {artwork_id}."
-
-    checkout_payload.update({
-        "line_items[0][price_data][currency]": "usd",
-        "line_items[0][price_data][unit_amount]": str(amount),
-        "line_items[0][price_data][product_data][name]": product_name,
-        "line_items[0][price_data][product_data][description]": product_description[:500],
-        "line_items[0][price_data][product_data][metadata][artwork_id]": metadata["artwork_id"],
-        "line_items[0][price_data][product_data][metadata][fulfillment_type]": metadata["fulfillment_type"],
-        "line_items[0][price_data][product_data][metadata][size]": metadata["size"],
-        "line_items[0][price_data][product_data][metadata][frame]": metadata["frame"],
-    })
-
-    if not origin.startswith("http://127.0.0.1") and not origin.startswith("http://localhost"):
-        checkout_payload["line_items[0][price_data][product_data][images][0]"] = (
-            f"{origin}/art/{urllib.parse.quote(artwork_id)}.svg"
-        )
-
-    return checkout_payload
 
 
 def main() -> None:

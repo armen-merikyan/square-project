@@ -5,15 +5,18 @@ const SHOP_VARIANTS = {
     label: "Art print",
     description: "8x8 print",
     price: "$24",
-    button: "Order print"
+    button: "Order print",
+    paymentLink: ""
   },
   framed: {
     label: "Framed print",
     description: "8x8 print in black upsimples frame",
     price: "$39",
-    button: "Order framed print"
+    button: "Order framed print",
+    paymentLink: ""
   }
 };
+const STRIPE_PAYMENT_LINK_HOST = "buy.stripe.com";
 
 const artGrid = document.querySelector("#artGrid");
 const artInspector = document.querySelector("#artInspector");
@@ -305,57 +308,58 @@ function renderFramePreview(record) {
   return preview;
 }
 
-function formatShopStatus(message, tone = "neutral") {
-  return { message, tone };
+function configuredPaymentLink(variant) {
+  const link = SHOP_VARIANTS[variant]?.paymentLink || "";
+  return link.trim();
 }
 
-async function readCheckoutResponse(response) {
-  const contentType = response.headers.get("content-type") || "";
-
-  if (contentType.includes("application/json")) {
-    return response.json();
-  }
-
-  const responseText = await response.text();
-  const isHtmlResponse = responseText.trim().startsWith("<");
-
-  if (isHtmlResponse || response.status === 404) {
-    throw new Error(
-      "Checkout API is unavailable. Run the local dev server or deploy a backend route for /api/create-checkout-session."
-    );
-  }
-
-  throw new Error("Checkout returned an unexpected response.");
-}
-
-async function startCheckout(record, variant, status) {
-  status.textContent = "Opening secure checkout.";
-  status.dataset.tone = "neutral";
-
+function isStripePaymentLink(url) {
   try {
-    const response = await fetch("/api/create-checkout-session", {
-      method: "POST",
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        artworkId: record.id,
-        variant
-      })
-    });
-    const payload = await readCheckoutResponse(response);
-
-    if (!response.ok) {
-      throw new Error(payload.error || "Checkout could not be started.");
-    }
-
-    window.location.href = payload.url;
-  } catch (error) {
-    const nextStatus = formatShopStatus(error.message, "error");
-    status.textContent = nextStatus.message;
-    status.dataset.tone = nextStatus.tone;
+    return new URL(url).hostname === STRIPE_PAYMENT_LINK_HOST;
+  } catch {
+    return false;
   }
+}
+
+function checkoutReference(record, variant) {
+  const reference = `${record.id}_${variant}`.replace(/[^a-zA-Z0-9_-]/g, "_");
+  return reference.slice(0, 200);
+}
+
+function buildPaymentLinkUrl(record, variant) {
+  const paymentLink = configuredPaymentLink(variant);
+
+  if (!isStripePaymentLink(paymentLink)) {
+    return "";
+  }
+
+  const url = new URL(paymentLink);
+  url.searchParams.set("client_reference_id", checkoutReference(record, variant));
+  url.searchParams.set("utm_source", "square_project");
+  url.searchParams.set("utm_medium", "static_gallery");
+  url.searchParams.set("utm_campaign", "art_orders");
+  url.searchParams.set("utm_content", `${variant}_${record.id.slice(0, 32)}`);
+  return url.toString();
+}
+
+function checkoutStatusForVariant(variant) {
+  return configuredPaymentLink(variant)
+    ? "Ready for Stripe checkout."
+    : "Stripe Payment Link needs to be configured.";
+}
+
+function startCheckout(record, variant, status) {
+  const checkoutUrl = buildPaymentLinkUrl(record, variant);
+
+  if (!checkoutUrl) {
+    status.textContent = "Add the Stripe Payment Link URL for this option in gallery.js.";
+    status.dataset.tone = "error";
+    return;
+  }
+
+  status.textContent = "Opening Stripe checkout.";
+  status.dataset.tone = "neutral";
+  window.location.href = checkoutUrl;
 }
 
 function renderOrderPanel(record, preview) {
@@ -393,8 +397,8 @@ function renderOrderPanel(record, preview) {
         button.setAttribute("aria-pressed", String(button.dataset.variant === variant));
       });
       checkoutButton.textContent = SHOP_VARIANTS[variant].button;
-      status.textContent = "Ready for checkout.";
-      status.dataset.tone = "neutral";
+      status.textContent = checkoutStatusForVariant(variant);
+      status.dataset.tone = configuredPaymentLink(variant) ? "neutral" : "error";
     });
     options.appendChild(option);
   });
@@ -406,8 +410,8 @@ function renderOrderPanel(record, preview) {
 
   const status = document.createElement("p");
   status.className = "checkout-status";
-  status.dataset.tone = "neutral";
-  status.textContent = "Ready for checkout.";
+  status.dataset.tone = configuredPaymentLink(selectedShopVariant) ? "neutral" : "error";
+  status.textContent = checkoutStatusForVariant(selectedShopVariant);
 
   checkoutButton.addEventListener("click", () => startCheckout(record, selectedShopVariant, status));
 
