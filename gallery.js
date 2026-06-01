@@ -68,6 +68,9 @@ let galleryRecords = [];
 let filteredRecords = [];
 let colorBuckets = [];
 let colorToBucket = new Map();
+let precomputedColorBucketsByThreshold = {};
+let precomputedColorBucketTotalsByThreshold = {};
+let galleryTotalCount = 0;
 let pageSize = PAGE_SIZE_OPTIONS[0];
 let currentPage = 1;
 let selectedId = "";
@@ -377,13 +380,20 @@ function checkoutReference(record, variant, frameType = "") {
   return reference.slice(0, 200);
 }
 
-function paymentLinkForVariant(variant) {
+function paymentLinkForVariant(variant, record = null) {
   const variantConfig = SHOP_VARIANTS[variant];
+  const artworkLinks = record && PAYMENT_LINKS.artworks && PAYMENT_LINKS.artworks[record.id];
+  const artworkLink = artworkLinks && artworkLinks[variant];
+
+  if (artworkLink) {
+    return artworkLink.trim();
+  }
+
   return (variantConfig && PAYMENT_LINKS[variantConfig.paymentLinkKey] || "").trim();
 }
 
 function paymentLinkUrl(record, variant, frameType = selectedFrameType) {
-  const url = new URL(paymentLinkForVariant(variant));
+  const url = new URL(paymentLinkForVariant(variant, record));
   url.searchParams.set("client_reference_id", checkoutReference(record, variant, frameType));
   url.searchParams.set("utm_source", "square_project");
   url.searchParams.set("utm_medium", "gallery");
@@ -392,14 +402,14 @@ function paymentLinkUrl(record, variant, frameType = selectedFrameType) {
   return url.toString();
 }
 
-function checkoutStatusForVariant(variant) {
-  return paymentLinkForVariant(variant)
+function checkoutStatusForVariant(variant, record = null) {
+  return paymentLinkForVariant(variant, record)
     ? "Ready for Stripe payment link."
     : "Payment link is not configured.";
 }
 
-function checkoutToneForVariant(variant) {
-  return paymentLinkForVariant(variant) ? "neutral" : "error";
+function checkoutToneForVariant(variant, record = null) {
+  return paymentLinkForVariant(variant, record) ? "neutral" : "error";
 }
 
 function startCheckout(record, variant, frameType, status) {
@@ -412,7 +422,7 @@ function startCheckout(record, variant, frameType, status) {
   }
 
   try {
-    if (!paymentLinkForVariant(variant)) {
+    if (!paymentLinkForVariant(variant, record)) {
       throw new Error("Payment link is not configured.");
     }
 
@@ -476,8 +486,8 @@ function renderOrderPanel(record, preview) {
       frameButtons.querySelectorAll(".frame-type-option").forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.frameType === frameType));
       });
-      status.textContent = checkoutStatusForVariant(selectedShopVariant);
-      status.dataset.tone = checkoutToneForVariant(selectedShopVariant);
+      status.textContent = checkoutStatusForVariant(selectedShopVariant, record);
+      status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record);
     });
     frameButtons.appendChild(frameButton);
   });
@@ -510,9 +520,9 @@ function renderOrderPanel(record, preview) {
         button.setAttribute("aria-pressed", String(button.dataset.variant === variant));
       });
       checkoutButton.textContent = SHOP_VARIANTS[variant].button;
-      status.textContent = checkoutStatusForVariant(variant);
-      status.dataset.tone = checkoutToneForVariant(variant);
-      checkoutButton.disabled = !paymentLinkForVariant(variant);
+      status.textContent = checkoutStatusForVariant(variant, record);
+      status.dataset.tone = checkoutToneForVariant(variant, record);
+      checkoutButton.disabled = !paymentLinkForVariant(variant, record);
     });
     options.appendChild(option);
   });
@@ -521,12 +531,12 @@ function renderOrderPanel(record, preview) {
   checkoutButton.className = "button primary checkout-button";
   checkoutButton.type = "button";
   checkoutButton.textContent = SHOP_VARIANTS[selectedShopVariant].button;
-  checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant);
+  checkoutButton.disabled = !paymentLinkForVariant(selectedShopVariant, record);
 
   const status = document.createElement("p");
   status.className = "checkout-status";
-  status.dataset.tone = checkoutToneForVariant(selectedShopVariant);
-  status.textContent = checkoutStatusForVariant(selectedShopVariant);
+  status.dataset.tone = checkoutToneForVariant(selectedShopVariant, record);
+  status.textContent = checkoutStatusForVariant(selectedShopVariant, record);
 
   checkoutButton.addEventListener(
     "click",
@@ -550,6 +560,10 @@ function colorUsage(records) {
 }
 
 function buildColorBuckets(records, threshold) {
+  if (records.length === galleryTotalCount && usePrecomputedColorBuckets(threshold)) {
+    return;
+  }
+
   const buckets = [];
 
   colorUsage(records).forEach(([color, count]) => {
@@ -618,6 +632,40 @@ function buildColorBuckets(records, threshold) {
   });
 
   colorBuckets = buckets;
+}
+
+function setColorBucketLookup(buckets) {
+  colorToBucket = new Map();
+  buckets.forEach((bucket) => {
+    bucket.colors.forEach((color) => {
+      colorToBucket.set(color, bucket);
+    });
+  });
+
+  colorBuckets = buckets;
+}
+
+function usePrecomputedColorBuckets(threshold) {
+  const cachedBuckets = precomputedColorBucketsByThreshold[String(threshold)];
+
+  if (!Array.isArray(cachedBuckets)) {
+    return false;
+  }
+
+  setColorBucketLookup(cachedBuckets.map((bucket) => ({
+    ...bucket,
+    colors: Array.isArray(bucket.colors) ? bucket.colors : []
+  })));
+  return true;
+}
+
+function hasPrecomputedColorBuckets() {
+  return Object.keys(precomputedColorBucketsByThreshold).length > 0;
+}
+
+function colorBucketTotalCount() {
+  const cachedTotal = precomputedColorBucketTotalsByThreshold[String(colorSimilarityThreshold)];
+  return Number.isFinite(cachedTotal) ? cachedTotal : colorBuckets.length;
 }
 
 function colorFilterState(colors) {
@@ -736,6 +784,7 @@ async function copyTextToClipboard(text) {
 
 function renderColorFilters() {
   colorFilterList.replaceChildren();
+  const totalBucketCount = colorBucketTotalCount();
 
   colorBuckets.slice(0, COLOR_FILTER_RENDER_LIMIT).forEach((bucket) => {
     const state = colorFilterState(bucket.colors);
@@ -811,10 +860,10 @@ function renderColorFilters() {
     colorFilterList.appendChild(item);
   });
 
-  if (colorBuckets.length > COLOR_FILTER_RENDER_LIMIT) {
+  if (totalBucketCount > COLOR_FILTER_RENDER_LIMIT) {
     const overflow = document.createElement("p");
     overflow.className = "filter-overflow";
-    overflow.textContent = `${colorBuckets.length - COLOR_FILTER_RENDER_LIMIT} lower-frequency colors hidden. Search still covers every loaded artwork.`;
+    overflow.textContent = `${totalBucketCount - COLOR_FILTER_RENDER_LIMIT} lower-frequency colors hidden. Search still covers every loaded artwork.`;
     colorFilterList.appendChild(overflow);
   }
 }
@@ -1117,7 +1166,7 @@ function normalizeGalleryRecord(record) {
     ...record,
     colors: normalizedColors,
     colorSet: new Set(normalizedColors),
-    searchText: recordSearchText({ ...record, colors: normalizedColors })
+    searchText: record.searchText || recordSearchText({ ...record, colors: normalizedColors })
   };
 }
 
@@ -1140,11 +1189,18 @@ async function renderGallery() {
 
   const manifest = await fetchGalleryManifest();
   const artworkIds = Array.isArray(manifest) ? manifest : manifest.artworkIds;
+  precomputedColorBucketsByThreshold = !Array.isArray(manifest)
+    ? manifest.indexes?.colorBuckets || {}
+    : {};
+  precomputedColorBucketTotalsByThreshold = !Array.isArray(manifest)
+    ? manifest.indexes?.colorBucketTotals || {}
+    : {};
 
   if (!Array.isArray(artworkIds) || artworkIds.length === 0) {
     throw new Error("Art manifest does not include any artwork ids.");
   }
 
+  galleryTotalCount = artworkIds.length;
   galleryCount.textContent = `0 / ${artworkIds.length}`;
   updateGalleryLoading({
     title: "Loading artwork records",
@@ -1172,7 +1228,10 @@ async function renderGallery() {
         startedAt
       });
 
-      if (chunkIndex === 0 || chunkIndex % CHUNK_RENDER_INTERVAL === 0 || chunkIndex === chunks.length - 1) {
+      if (hasPrecomputedColorBuckets()) {
+        filteredRecords = galleryRecords;
+        renderCurrentPage();
+      } else if (chunkIndex === 0 || chunkIndex % CHUNK_RENDER_INTERVAL === 0 || chunkIndex === chunks.length - 1) {
         rebuildGalleryIndexes({ renderFilters: true });
       }
 

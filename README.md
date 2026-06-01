@@ -30,11 +30,11 @@ Then open `http://127.0.0.1:8000/`. The server sends no-cache headers and reload
 
 ## Stripe Payment Links
 
-Customer orders use two reusable Stripe Payment Links, matching the simple outbound
-link approach used by Kumquat product cards. The gallery opens the selected
-payment link directly instead of creating a Checkout Session through a backend.
+Customer orders use Stripe Payment Links, matching the simple outbound link
+approach used by Kumquat product cards. The gallery opens the selected payment
+link directly instead of creating a Checkout Session through a backend.
 
-Create two reusable Stripe Payment Links in Stripe:
+For a quick static setup, create two reusable Stripe Payment Links in Stripe:
 
 - 8x8 art print, `$24`
 - 12x12 framed print with an 8x8 image area, `$39`
@@ -54,8 +54,17 @@ python3 scripts/setup_stripe_shop.py
 ```
 
 `STRIPE_SECRET_KEY` is optional. If it is set, the helper creates or reuses the
-Square Project product, prices, and matching payment links through the Stripe
-API, then writes their IDs and public URLs back to `.env`.
+Stripe catalog through the Stripe API. The API mode creates one Stripe product
+per artwork, attaches the artwork SVG URL and metadata (`art_id`, title, seed,
+colors, JSON URL), creates separate print and framed prices, and writes a
+per-artwork payment-link map to `payment-links.js`.
+
+```env
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_SITE_URL=https://mysquareart.com
+```
+
+For API testing against a smaller batch, set `STRIPE_ARTWORK_LIMIT=10`.
 
 Run the local dev server for link testing:
 
@@ -63,11 +72,16 @@ Run the local dev server for link testing:
 python3 scripts/dev_server.py
 ```
 
-The gallery appends a Stripe `client_reference_id` to every payment link in the
-format `art_<art_id>_variant_<print|framed>_frame_<color|none>`, for example
-`art_9005ff...634a_variant_framed_frame_black`. This keeps every order tied to
-the static-site artwork ID and selected frame color without creating a separate
-Stripe product for every artwork.
+The gallery prefers `payment-links.js` entries in the form
+`artworks[art_id].print` and `artworks[art_id].framed`, then falls back to the
+legacy top-level reusable links. It appends a Stripe `client_reference_id` to
+every payment link in the format
+`art_<art_id>_variant_<print|framed>_frame_<color|none>`, for example
+`art_9005ff...634a_variant_framed_frame_black`.
+
+Framed Stripe links include a required `frame_color` dropdown with black, white,
+natural, brown, and gold options. The static site controls the price by choosing
+the art-only or framed payment link before sending the customer to Stripe.
 
 ## Local Art Job GUI
 

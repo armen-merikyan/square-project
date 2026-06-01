@@ -14,6 +14,12 @@ MANIFEST_PATH = ART_DIR / "manifest.json"
 CHUNK_DIR_NAME = "manifest-chunks"
 CHUNK_SIZE = 500
 REASONING_PREVIEW_LENGTH = 360
+COLOR_SIMILARITY_THRESHOLDS = list(range(0, 97, 8))
+COLOR_FILTER_RENDER_LIMIT = 600
+
+
+def normalize_color(color: Any) -> str:
+    return str(color or "").strip().upper()
 
 
 def unique_colors(pixels: list[dict[str, Any]]) -> list[str]:
@@ -21,7 +27,7 @@ def unique_colors(pixels: list[dict[str, Any]]) -> list[str]:
     seen: set[str] = set()
 
     for pixel in pixels:
-        color = str(pixel.get("color", "")).strip().upper()
+        color = normalize_color(pixel.get("color", ""))
 
         if color and color not in seen:
             seen.add(color)
@@ -30,20 +36,168 @@ def unique_colors(pixels: list[dict[str, Any]]) -> list[str]:
     return colors
 
 
+def record_search_text(record: dict[str, Any], colors: list[str]) -> str:
+    return " ".join(
+        str(value)
+        for value in [
+            record.get("id", ""),
+            record.get("title", ""),
+            record.get("seed", ""),
+            record.get("reasoning", ""),
+            *colors,
+        ]
+        if value
+    ).lower()
+
+
+def parse_hex_color(color: str) -> tuple[int, int, int] | None:
+    normalized = normalize_color(color)
+
+    if len(normalized) != 7 or not normalized.startswith("#"):
+        return None
+
+    try:
+        return (
+            int(normalized[1:3], 16),
+            int(normalized[3:5], 16),
+            int(normalized[5:7], 16),
+        )
+    except ValueError:
+        return None
+
+
+def color_distance(color_a: str, color_b: str) -> float:
+    rgb_a = parse_hex_color(color_a)
+    rgb_b = parse_hex_color(color_b)
+
+    if rgb_a is None or rgb_b is None:
+        return 0 if color_a == color_b else float("inf")
+
+    return sum((channel_a - channel_b) ** 2 for channel_a, channel_b in zip(rgb_a, rgb_b)) ** 0.5
+
+
+def color_usage(records: list[dict[str, Any]]) -> list[tuple[str, int]]:
+    usage: dict[str, int] = {}
+
+    for record in records:
+        for color in record.get("colors", []):
+            usage[color] = usage.get(color, 0) + 1
+
+    return sorted(usage.items(), key=lambda item: (-item[1], item[0]))
+
+
+def bucket_key(colors: list[str]) -> str:
+    return "|".join(colors)
+
+
+def build_color_buckets(records: list[dict[str, Any]], threshold: int) -> list[dict[str, Any]]:
+    buckets: list[dict[str, Any]] = []
+    representative_rgbs: list[tuple[int, int, int] | None] = []
+    bucket_grid: dict[tuple[int, int, int], list[int]] = {}
+    cell_size = max(threshold, 1)
+
+    for color, count in color_usage(records):
+        closest_bucket: dict[str, Any] | None = None
+        closest_distance = float("inf")
+        color_rgb = parse_hex_color(color)
+        candidate_indexes: list[int]
+
+        if color_rgb is None:
+            candidate_indexes = list(range(len(buckets)))
+        elif threshold == 0:
+            candidate_indexes = bucket_grid.get(color_rgb, [])
+        else:
+            cell = tuple(channel // cell_size for channel in color_rgb)
+            candidate_indexes = []
+
+            for red_offset in (-1, 0, 1):
+                for green_offset in (-1, 0, 1):
+                    for blue_offset in (-1, 0, 1):
+                        candidate_indexes.extend(bucket_grid.get((
+                            cell[0] + red_offset,
+                            cell[1] + green_offset,
+                            cell[2] + blue_offset,
+                        ), []))
+
+        for bucket_index in candidate_indexes:
+            representative_rgb = representative_rgbs[bucket_index]
+
+            if color_rgb is not None and representative_rgb is not None:
+                distance = sum(
+                    (channel_a - channel_b) ** 2
+                    for channel_a, channel_b in zip(color_rgb, representative_rgb)
+                ) ** 0.5
+            else:
+                distance = color_distance(color, buckets[bucket_index]["representative"])
+
+            if distance <= threshold and distance < closest_distance:
+                closest_bucket = buckets[bucket_index]
+                closest_distance = distance
+
+        if closest_bucket is not None:
+            closest_bucket["colors"].append(color)
+            closest_bucket["count"] += count
+            continue
+
+        buckets.append({
+            "representative": color,
+            "colors": [color],
+            "count": count,
+        })
+        representative_rgbs.append(color_rgb)
+
+        if color_rgb is not None:
+            grid_key = color_rgb if threshold == 0 else tuple(channel // cell_size for channel in color_rgb)
+            bucket_grid.setdefault(grid_key, []).append(len(buckets) - 1)
+
+    for bucket in buckets:
+        bucket["colors"].sort()
+        bucket["key"] = bucket_key(bucket["colors"])
+        bucket["count"] = 0
+
+    color_to_bucket_key: dict[str, str] = {}
+    for bucket in buckets:
+        for color in bucket["colors"]:
+            color_to_bucket_key[color] = bucket["key"]
+
+    bucket_by_key = {bucket["key"]: bucket for bucket in buckets}
+    for record in records:
+        matched_bucket_keys = {
+            color_to_bucket_key[color]
+            for color in record.get("colors", [])
+            if color in color_to_bucket_key
+        }
+
+        for key in matched_bucket_keys:
+            bucket_by_key[key]["count"] += 1
+
+    buckets.sort(
+        key=lambda bucket: (
+            -bucket["count"],
+            -len(bucket["colors"]),
+            bucket["representative"],
+        )
+    )
+    return buckets
+
+
 def gallery_record(art_dir: Path, artwork_id: str) -> dict[str, Any]:
     record_path = art_dir / f"{artwork_id}.json"
     record = json.loads(record_path.read_text(encoding="utf-8"))
     pixels = record.get("pixels") if isinstance(record.get("pixels"), list) else []
     reasoning = str(record.get("reasoning", ""))
-
-    return {
+    colors = unique_colors(pixels)
+    gallery_record_data = {
         "id": artwork_id,
         "title": record.get("title", ""),
         "seed": record.get("seed", ""),
         "reasoning": reasoning[:REASONING_PREVIEW_LENGTH],
         "size": record.get("size", {"width": 8, "height": 8}),
-        "colors": unique_colors(pixels),
+        "colors": colors,
     }
+    gallery_record_data["searchText"] = record_search_text(gallery_record_data, colors)
+
+    return gallery_record_data
 
 
 def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFEST_PATH) -> dict[str, Any]:
@@ -66,10 +220,17 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
         reverse=True,
     )
     chunks = []
+    all_records = [gallery_record(art_dir, artwork_id) for artwork_id in artwork_ids]
+    color_indexes: dict[str, list[dict[str, Any]]] = {}
+    color_index_totals: dict[str, int] = {}
+
+    for threshold in COLOR_SIMILARITY_THRESHOLDS:
+        buckets = build_color_buckets(all_records, threshold)
+        color_indexes[str(threshold)] = buckets[:COLOR_FILTER_RENDER_LIMIT]
+        color_index_totals[str(threshold)] = len(buckets)
 
     for chunk_index, start in enumerate(range(0, len(artwork_ids), CHUNK_SIZE)):
-        chunk_ids = artwork_ids[start:start + CHUNK_SIZE]
-        records = [gallery_record(art_dir, artwork_id) for artwork_id in chunk_ids]
+        records = all_records[start:start + CHUNK_SIZE]
         chunk_path = chunk_dir / f"{chunk_index:05d}.json"
         chunk_path.write_text(json.dumps({"records": records}, separators=(",", ":")) + "\n", encoding="utf-8")
         chunks.append({
@@ -83,8 +244,13 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
         "count": len(artwork_ids),
         "chunkSize": CHUNK_SIZE,
         "chunks": chunks,
+        "indexes": {
+            "colorSimilarityThresholds": COLOR_SIMILARITY_THRESHOLDS,
+            "colorBuckets": color_indexes,
+            "colorBucketTotals": color_index_totals,
+        },
     }
-    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, separators=(",", ":")) + "\n", encoding="utf-8")
     return manifest
 
 
