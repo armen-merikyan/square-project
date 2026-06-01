@@ -1,5 +1,6 @@
 const GALLERY_MANIFEST_PATH = "art/manifest.json";
 const MANIFEST_CACHE_BUSTER = Date.now().toString(36);
+const HOMEPAGE_ARTWORK_LIMIT = 6;
 const fallbackArtworks = [
   "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22",
   "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
@@ -66,6 +67,25 @@ function summarizeReasoning(reasoning = "") {
   return reasoning.length > 250 ? `${reasoning.slice(0, 247)}...` : reasoning;
 }
 
+function appendChildren(parent, children) {
+  children.forEach((child) => parent.appendChild(child));
+}
+
+function clearChildren(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
+function setBooleanAttribute(element, attribute, enabled) {
+  if (enabled) {
+    element.setAttribute(attribute, "");
+    return;
+  }
+
+  element.removeAttribute(attribute);
+}
+
 function artworkDetailUrl(index) {
   return `gallery.html?art=${encodeURIComponent(artworks[index])}`;
 }
@@ -114,8 +134,8 @@ function createMetadataOverlay(data, index) {
 
   const detailItems = [
     ["ID", shortId(data.id || artworks[index])],
-    ["Size", `${data.size?.width || 8} x ${data.size?.height || 8}`],
-    ["Cells", `${data.pixels?.length || 64}`]
+    ["Size", `${(data.size && data.size.width) || 8} x ${(data.size && data.size.height) || 8}`],
+    ["Cells", `${(data.pixels && data.pixels.length) || 64}`]
   ];
 
   detailItems.forEach(([label, value]) => {
@@ -125,7 +145,7 @@ function createMetadataOverlay(data, index) {
 
     term.textContent = label;
     description.textContent = value;
-    group.append(term, description);
+    appendChildren(group, [term, description]);
     details.appendChild(group);
   });
 
@@ -133,7 +153,7 @@ function createMetadataOverlay(data, index) {
   reasoning.className = "art-reasoning";
   reasoning.textContent = summarizeReasoning(data.reasoning);
 
-  overlay.append(title, seed, details, reasoning);
+  appendChildren(overlay, [title, seed, details, reasoning]);
   return overlay;
 }
 
@@ -158,7 +178,7 @@ function createArtworkReflection(image) {
 
 async function renderCarousel() {
   try {
-    artworks = await loadArtworkIds();
+    artworks = (await loadArtworkIds()).slice(0, HOMEPAGE_ARTWORK_LIMIT);
   } catch (error) {
     console.warn(error);
     artworks = fallbackArtworks;
@@ -178,7 +198,11 @@ async function renderCarousel() {
     image.alt = record.title ? `${record.title} square artwork` : "Square artwork";
     image.decoding = "async";
 
-    slide.append(createArtworkFace(image), createArtworkReflection(image), createMetadataOverlay(record, index));
+    appendChildren(slide, [
+      createArtworkFace(image),
+      createArtworkReflection(image),
+      createMetadataOverlay(record, index)
+    ]);
     slide.addEventListener("click", (event) => {
       if (didDrag) {
         event.preventDefault();
@@ -216,7 +240,7 @@ async function renderCarousel() {
 }
 
 function renderDots() {
-  dots.replaceChildren();
+  clearChildren(dots);
 
   visibleDotIndexes().forEach((dotIndex) => {
     const dot = document.createElement("button");
@@ -255,7 +279,7 @@ function updateCarouselPositions(nextIndex = activeIndex) {
     slide.style.setProperty("--display-direction", displayDirection);
     slide.style.setProperty("--active-proximity", normalizedProximity.toFixed(3));
     slide.dataset.offset = String(offset);
-    slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
+    setBooleanAttribute(slide, "aria-hidden", slideIndex !== activeIndex);
     slide.classList.toggle("is-active", slideIndex === activeIndex);
     slide.classList.toggle("is-hidden", hidden);
     slide.tabIndex = slideIndex === activeIndex ? 0 : -1;
@@ -369,7 +393,10 @@ coverflow.addEventListener("pointerdown", (event) => {
   coverflow.classList.add("is-dragging");
   window.clearInterval(autoAdvanceId);
   const captureTarget = event.target.closest(".carousel-card") || coverflow;
-  captureTarget.setPointerCapture(event.pointerId);
+
+  if (typeof captureTarget.setPointerCapture === "function") {
+    captureTarget.setPointerCapture(event.pointerId);
+  }
 });
 
 coverflow.addEventListener("pointermove", (event) => {
