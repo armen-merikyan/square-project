@@ -209,9 +209,11 @@ function renderColorFilters() {
 
     const total = document.createElement("span");
     total.className = "color-filter-count";
-    total.textContent = `${count} ${count === 1 ? "artwork" : "artworks"}`;
+    total.textContent = String(count);
+    total.setAttribute("aria-hidden", "true");
+    swatch.appendChild(total);
 
-    item.append(swatch, total);
+    item.appendChild(swatch);
     colorFilterList.appendChild(item);
   });
 }
