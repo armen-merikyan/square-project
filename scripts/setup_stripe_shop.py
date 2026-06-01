@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create the reusable Stripe product, prices, and payment links for Square Project."""
+"""Publish or create the Stripe payment links for Square Project."""
 
 from __future__ import annotations
 
@@ -40,6 +40,10 @@ def clean_env_value(value: str) -> str:
 
 def is_real_stripe_id(value: str, prefix: str) -> bool:
     return value.startswith(prefix) and "_your" not in value and "your-" not in value
+
+
+def is_real_payment_link(value: str) -> bool:
+    return value.startswith("https://buy.stripe.com/") and "your-" not in value
 
 
 def load_env() -> None:
@@ -169,6 +173,35 @@ def find_payment_link_by_lookup_key(lookup_key: str) -> dict | None:
 
 def main() -> None:
     load_env()
+    env_payment_links = {
+        variant: os.environ.get(config["payment_link_env_key"], "").strip()
+        for variant, config in VARIANTS.items()
+    }
+
+    if all(is_real_payment_link(url) for url in env_payment_links.values()):
+        update_payment_links_js(env_payment_links)
+        print(f"Updated {PAYMENT_LINKS_PATH} from existing Stripe Payment Links in {ENV_PATH}.")
+        return
+
+    if any(env_payment_links.values()):
+        invalid_keys = [
+            config["payment_link_env_key"]
+            for variant, config in VARIANTS.items()
+            if not is_real_payment_link(env_payment_links[variant])
+        ]
+        raise SystemExit(
+            "Fix these Stripe Payment Link values in .env before publishing: "
+            + ", ".join(invalid_keys)
+        )
+
+    secret_key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
+    if not secret_key:
+        raise SystemExit(
+            "For this static site, add STRIPE_PRINT_PAYMENT_LINK and "
+            "STRIPE_FRAMED_PAYMENT_LINK buy.stripe.com URLs to .env, then rerun this script. "
+            "STRIPE_SECRET_KEY is only needed if you want this script to create Stripe links."
+        )
+
     product_id = os.environ.get("STRIPE_ART_PRODUCT_ID", "").strip()
 
     if not is_real_stripe_id(product_id, "prod_"):

@@ -34,19 +34,27 @@ Customer orders use two reusable Stripe Payment Links, matching the simple outbo
 link approach used by Kumquat product cards. The gallery opens the selected
 payment link directly instead of creating a Checkout Session through a backend.
 
-Create one reusable Stripe Product, two reusable Prices, and two reusable Payment
-Links:
+Create two reusable Stripe Payment Links in Stripe:
 
 - 8x8 art print, `$24`
 - 12x12 framed print with an 8x8 image area, `$39`
 
-With `STRIPE_SECRET_KEY` set in `.env`, this helper creates or reuses the product
-and prices, creates or reuses the payment links, writes the Stripe IDs and URLs
-back into `.env`, and updates `payment-links.js`:
+Add the public `buy.stripe.com` URLs to `.env`:
+
+```env
+STRIPE_PRINT_PAYMENT_LINK=https://buy.stripe.com/...
+STRIPE_FRAMED_PAYMENT_LINK=https://buy.stripe.com/...
+```
+
+Then publish those URLs into the static browser config:
 
 ```bash
 python3 scripts/setup_stripe_shop.py
 ```
+
+`STRIPE_SECRET_KEY` is optional. If it is set and the payment-link URLs are not
+already in `.env`, the helper creates or reuses the product, prices, and payment
+links through the Stripe API.
 
 Run the local dev server for link testing:
 
