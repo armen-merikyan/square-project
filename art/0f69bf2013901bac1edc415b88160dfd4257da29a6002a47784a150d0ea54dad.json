@@ -1,0 +1,403 @@
+{
+  "id": "0f69bf2013901bac1edc415b88160dfd4257da29a6002a47784a150d0ea54dad",
+  "seed": "confusion vs clarity; symmetry_vs_break; falling_pixels; pulse; crosshatch against noise; thick_outline; symmetrical_vs_broken; tiny_face; rage_calm | abstract variation request 53; target batch count 200",
+  "title": "Echoes of Dichotomy",
+  "reasoning": "This composition embodies the emotional tension between confusion and clarity through contrasting color placements. The choice of a dark palette with shades of navy and black evokes depth and uncertainty, while subtle hints of dim cyan introduce moments of clarity breaking through. The crowding of darker pixels in the lower half represents confusion, while the light tones in the upper half suggest emergent clarity. Broken pixels throughout disrupt the patterns to signify the 'falling pixels' motif, while the jagged edges create a sense of tension and interruption, reflecting the emotional conflict within the seed. The layout reflects an argument between symmetrical and broken patterns, lending a rhythmic flow as colors pulse against one another.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#002D5B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#005B8A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#008FB1"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00B3D1"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#007A9C"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#005B7F"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#003B63"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#001A3B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#004A66"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#007F9E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#00B7D7"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#00A3C2"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#0096B3"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#007D94"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#004D6B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F1F7F7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#E3F2F4"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D5E3E3"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C7D5D6"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B4C7C9"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A7B5B7"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#9CA6A8"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#E6F1F4"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D0E3E9"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B2D5DD"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#94C7D1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#76BAC3"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#58AEB3"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#3FA0AB"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0E8DA0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#232A30"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#343D49"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#45505B"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#56676F"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#678C87"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#7DA2A2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F1F7F7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1C2836"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#293D47"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#364F5D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#475C6F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#587483"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#688C8C"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D1D1D1"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#121212"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFFFF0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D9E4E4"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#BCB2B2"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A39393"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#1F2D3A"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#3A4A5A"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FF0000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FF6F00"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#BFFF00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#7FFF00"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "overlapping paths",
+        "broken grid"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "drip",
+    "patterns": {
+      "confusion": "mirror",
+      "clarity": "grid"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0f69bf2013901bac1edc415b88160dfd4257da29a6002a47784a150d0ea54dad",
+  "pixelHash": "0f69bf2013901bac1edc415b88160dfd4257da29a6002a47784a150d0ea54dad",
+  "jsonFile": "0f69bf2013901bac1edc415b88160dfd4257da29a6002a47784a150d0ea54dad.json",
+  "svgFile": "0f69bf2013901bac1edc415b88160dfd4257da29a6002a47784a150d0ea54dad.svg",
+  "createdAt": "2026-06-01T21:58:41.503373+00:00"
+}

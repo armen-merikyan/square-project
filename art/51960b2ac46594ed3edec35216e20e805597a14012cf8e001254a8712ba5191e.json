@@ -1,0 +1,403 @@
+{
+  "id": "51960b2ac46594ed3edec35216e20e805597a14012cf8e001254a8712ba5191e",
+  "seed": "confusion vs clarity; symmetry_vs_break; falling_pixels; pulse; crosshatch against noise; thick_outline; symmetrical_vs_broken; tiny_face; rage_calm | abstract variation request 108; target batch count 200",
+  "title": "Dissonance in Harmony",
+  "reasoning": "This piece explores the emotional tension between clarity and confusion through a gradient of warmth and coolness. The palette combines muted purples and deep blues to suggest calmness, contrasted with vibrant oranges and yellows, symbolizing confusion and intensity. The composition follows a diagonal flow, beginning with dense clusters of vibrant colors to evoke chaos, transitioning into softer, cooler tones representing clarity. Broken pixels introduce an element of imperfection, emphasizing the fragility of balance, while the main contrast surfaces in the top-left corner, where warmth meets coolness. The overlapping radial pattern embodies the interaction between structured clarity and chaotic noise.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#F8C471"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F39C12"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D35400"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#A04000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A235A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#2980B9"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#1F618D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#6C3483"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#A04000"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D35400"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F39C12"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F8C471"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F4D03F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A04000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6C3483"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#4A235A"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#2980B9"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#3498DB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#85C1AE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C5E1A5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F8C471"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F39C12"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D35400"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#AAB7B8"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D6DBDF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F39C12"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C7D1D4"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#A04000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#4A235A"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#2980B9"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#1F618D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B7C9B3"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#5D6D7E"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D35400"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F39C12"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F8C471"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F4D03F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C5E1A5"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#85C1AE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#2980B9"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#6C3483"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#4A235A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A04000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D35400"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F39C12"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F8C471"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F4D03F"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C5E1A5"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#AAB7B8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7D3C98"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4A235A"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#1F618D"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "overlapping paths",
+        "broken grid",
+        "false symmetry"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "confusion": "radial",
+      "clarity": "teeth"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "51960b2ac46594ed3edec35216e20e805597a14012cf8e001254a8712ba5191e",
+  "pixelHash": "51960b2ac46594ed3edec35216e20e805597a14012cf8e001254a8712ba5191e",
+  "jsonFile": "51960b2ac46594ed3edec35216e20e805597a14012cf8e001254a8712ba5191e.json",
+  "svgFile": "51960b2ac46594ed3edec35216e20e805597a14012cf8e001254a8712ba5191e.svg",
+  "createdAt": "2026-06-01T21:59:19.486006+00:00"
+}

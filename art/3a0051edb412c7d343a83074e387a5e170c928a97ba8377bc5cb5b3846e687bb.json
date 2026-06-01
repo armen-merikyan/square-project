@@ -1,0 +1,403 @@
+{
+  "id": "3a0051edb412c7d343a83074e387a5e170c928a97ba8377bc5cb5b3846e687bb",
+  "seed": "confusion vs clarity; symmetry_vs_break; falling_pixels; pulse; crosshatch against noise; thick_outline; symmetrical_vs_broken; tiny_face; rage_calm | abstract variation request 47; target batch count 200",
+  "title": "Fractured Clarity",
+  "reasoning": "This piece embodies a dance between confusion and clarity, using a palette that juxtaposes vibrant colors against stark black. The vivid mix of lime and electric blue evokes energy and clarity, while the dense black serves to fragment that clarity, creating confusion. The layout reflects a fractured symmetry, where the outer grid represents the clear, structured side, while the inner chaos hints at emotional disruption. The broken pixel placements introduce intentional faults, drawing attention to imperfections, and encouraging the viewer to reflect on the interplay of emotions\u2014both serene and chaotic. The core grapples with a pulse of overlapping patterns, inspired by the seed's themes of division and intermingling of feelings.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#00FF00"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#00FF00"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#00FF00"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#00FF00"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00FF00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#00FF00"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#00FF00"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#00FF00"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00FF00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "false symmetry",
+        "broken grid",
+        "overlapping paths"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "confusion": "crack",
+      "clarity": "broken_dots"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "crack",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "3a0051edb412c7d343a83074e387a5e170c928a97ba8377bc5cb5b3846e687bb",
+  "pixelHash": "3a0051edb412c7d343a83074e387a5e170c928a97ba8377bc5cb5b3846e687bb",
+  "jsonFile": "3a0051edb412c7d343a83074e387a5e170c928a97ba8377bc5cb5b3846e687bb.json",
+  "svgFile": "3a0051edb412c7d343a83074e387a5e170c928a97ba8377bc5cb5b3846e687bb.svg",
+  "createdAt": "2026-06-01T21:58:23.839654+00:00"
+}

@@ -1,0 +1,403 @@
+{
+  "id": "019c7d0d1fd17c4b0bb5a81970378ce44c5edaac46683c1de21caba37f87391d",
+  "seed": "confusion vs clarity; symmetry_vs_break; falling_pixels; pulse; crosshatch against noise; thick_outline; symmetrical_vs_broken; tiny_face; rage_calm | abstract variation request 29; target batch count 200",
+  "title": "Tension in Flux",
+  "reasoning": "This composition explores the emotional duality of confusion and clarity through contrasting color arrangements. The use of a dark navy and deep black creates a moody foundation, representing confusion and chaos. Meanwhile, single white and dim cyan punctuate the piece, instilling moments of clarity amidst the turmoil. The left-to-right flow symbolizes a journey from chaos to calm, where the thick outlines intersect and diverge. Broken pixels are introduced as interruptions, amplifying the sense of imperfection and imbalance, creating a narrative of persistent tension. The resulting grid structure emphasizes the contrasting patterns\u2014split screen for confusion and radial for clarity\u2014capturing the essence of the emotional experience without becoming literal.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#141414"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#282828"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#323232"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#464646"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#505050"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#646464"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#6E6E6E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#78B9D1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#84C8E5"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#90D6F9"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#BBCCCC"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#AABBBB"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#99AAAA"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#88AAAA"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#77AAAA"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#6699AA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#5588AA"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#2B2B2B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#202020"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#161616"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#0C0C0C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#1B1B1B"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#2C2C2C"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#5F5F5F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6F6F6F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8F8F8F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#9F9F9F"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B0D6F9"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C0E1F2"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D0EAED"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E0F6E0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B1C5CC"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#A5B1B7"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#99AFAF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#848888"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E8E8E8"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B6B6B6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#9A9A9A"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#7D7D7D"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#262626"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#777777"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#999999"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#CCCCCC"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "confusion",
+      "clarity"
+    ],
+    "emotionMoods": {
+      "confusion": [
+        "broken grid",
+        "false symmetry",
+        "overlapping paths"
+      ],
+      "clarity": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "confusion": "split_screen",
+      "clarity": "radial"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "line",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "019c7d0d1fd17c4b0bb5a81970378ce44c5edaac46683c1de21caba37f87391d",
+  "pixelHash": "019c7d0d1fd17c4b0bb5a81970378ce44c5edaac46683c1de21caba37f87391d",
+  "jsonFile": "019c7d0d1fd17c4b0bb5a81970378ce44c5edaac46683c1de21caba37f87391d.json",
+  "svgFile": "019c7d0d1fd17c4b0bb5a81970378ce44c5edaac46683c1de21caba37f87391d.svg",
+  "createdAt": "2026-06-01T21:58:08.075733+00:00"
+}
