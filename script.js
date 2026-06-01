@@ -1,51 +1,199 @@
-const palettes = [
-  ["#151515", "#f97316", "#16a34a", "#2563eb", "#f8fafc"],
-  ["#0f172a", "#eab308", "#db2777", "#14b8a6", "#f1f5f9"],
-  ["#27272a", "#ef4444", "#22c55e", "#38bdf8", "#fafafa"],
-  ["#1f2937", "#f59e0b", "#84cc16", "#6366f1", "#fff7ed"]
+const artworks = [
+  "e798a510106039c62cd466e3a193df35e69817bbff017715141867686a309e22",
+  "9005ff72981281b13937fc309818c1c83d514385f6bd9736eda5e0e58c6b634a",
+  "3900ac21442c473c57d622379bab5ce6abc31eab2d83ad1d8201d4665ec4c6a4",
+  "c611632aa6aeb22700c282fae3b5f6f2bf85c9e74820701204f3ef199e17572c",
+  "eea806d25b129b7789466507724f10b326e6a92f0b40619a060c7396f95e134d",
+  "31a07d498056211fc208eff311d4a11666b9e4c030cdfe7aca71cf1df1eaae73"
 ];
 
-const pixelGrid = document.querySelector("#pixelGrid");
-const squareId = document.querySelector("#squareId");
-const regenerateButton = document.querySelector("#regenerateButton");
+const coverflow = document.querySelector("#coverflow");
+const dots = document.querySelector("#carouselDots");
+const counter = document.querySelector("#carouselCounter");
+const nextButton = document.querySelector("#nextArtwork");
+const prevButton = document.querySelector("#prevArtwork");
 
-let squareCount = 1;
+let activeIndex = 0;
+let autoAdvanceId;
 
-function createPixelColor(x, y, palette, seed) {
-  const center = Math.abs(3.5 - x) + Math.abs(3.5 - y);
-  const diagonal = x === y || x + y === 7;
-  const ring = x === 0 || y === 0 || x === 7 || y === 7;
-
-  if (diagonal) return palette[(seed + x + y) % palette.length];
-  if (ring) return palette[(seed + 1) % palette.length];
-  if (center < 3) return palette[(seed + 2 + x) % palette.length];
-  return palette[(seed + 3 + y) % palette.length];
+function normalizeIndex(index) {
+  return (index + artworks.length) % artworks.length;
 }
 
-function renderSquare() {
-  const seed = squareCount % palettes.length;
-  const palette = palettes[seed];
-  const fragment = document.createDocumentFragment();
+function shortestOffset(index) {
+  const rawOffset = index - activeIndex;
+  const wrappedOffset = rawOffset > artworks.length / 2
+    ? rawOffset - artworks.length
+    : rawOffset < -artworks.length / 2
+      ? rawOffset + artworks.length
+      : rawOffset;
 
-  pixelGrid.innerHTML = "";
+  return wrappedOffset;
+}
 
-  for (let y = 0; y < 8; y += 1) {
-    for (let x = 0; x < 8; x += 1) {
-      const pixel = document.createElement("span");
-      pixel.className = "pixel";
-      pixel.style.backgroundColor = createPixelColor(x, y, palette, seed);
-      pixel.title = `x:${x}, y:${y}`;
-      fragment.appendChild(pixel);
-    }
+function shortId(id) {
+  return `${id.slice(0, 8)}...${id.slice(-6)}`;
+}
+
+function summarizeReasoning(reasoning = "") {
+  return reasoning.length > 250 ? `${reasoning.slice(0, 247)}...` : reasoning;
+}
+
+async function loadArtwork(id) {
+  const response = await fetch(`art/${id}.json`);
+
+  if (!response.ok) {
+    throw new Error(`Could not load metadata for ${id}`);
   }
 
-  squareId.textContent = `SQ-08-${String(squareCount).padStart(4, "0")}`;
-  pixelGrid.appendChild(fragment);
+  return response.json();
 }
 
-regenerateButton.addEventListener("click", () => {
-  squareCount += 1;
-  renderSquare();
+function createMetadataOverlay(data, index) {
+  const overlay = document.createElement("div");
+  overlay.className = "art-overlay";
+
+  const title = document.createElement("h2");
+  title.textContent = data.title || `Square ${index + 1}`;
+
+  const seed = document.createElement("p");
+  seed.className = "art-seed";
+  seed.textContent = data.seed || "Generated square artwork";
+
+  const details = document.createElement("dl");
+  details.className = "art-details";
+
+  const detailItems = [
+    ["ID", shortId(data.id || artworks[index])],
+    ["Size", `${data.size?.width || 8} x ${data.size?.height || 8}`],
+    ["Cells", `${data.pixels?.length || 64}`]
+  ];
+
+  detailItems.forEach(([label, value]) => {
+    const group = document.createElement("div");
+    const term = document.createElement("dt");
+    const description = document.createElement("dd");
+
+    term.textContent = label;
+    description.textContent = value;
+    group.append(term, description);
+    details.appendChild(group);
+  });
+
+  const reasoning = document.createElement("p");
+  reasoning.className = "art-reasoning";
+  reasoning.textContent = summarizeReasoning(data.reasoning);
+
+  overlay.append(title, seed, details, reasoning);
+  return overlay;
+}
+
+async function renderCarousel() {
+  const records = await Promise.all(artworks.map(loadArtwork));
+
+  records.forEach((record, index) => {
+    const slide = document.createElement("article");
+    slide.className = "carousel-card";
+    slide.setAttribute("aria-label", record.title || `Artwork ${index + 1}`);
+
+    const image = document.createElement("img");
+    image.src = `art/${artworks[index]}.svg`;
+    image.alt = record.title ? `${record.title} square artwork` : "Square artwork";
+    image.decoding = "async";
+
+    slide.append(image, createMetadataOverlay(record, index));
+    slide.addEventListener("click", () => {
+      if (index !== activeIndex) {
+        setActive(index);
+        restartAutoAdvance();
+      }
+    });
+
+    coverflow.appendChild(slide);
+
+    const dot = document.createElement("button");
+    dot.className = "carousel-dot";
+    dot.type = "button";
+    dot.setAttribute("aria-label", `Show artwork ${index + 1}`);
+    dot.addEventListener("click", () => {
+      setActive(index);
+      restartAutoAdvance();
+    });
+    dots.appendChild(dot);
+  });
+
+  setActive(0);
+  startAutoAdvance();
+}
+
+function setActive(index) {
+  activeIndex = normalizeIndex(index);
+  const slides = [...coverflow.children];
+  const dotButtons = [...dots.children];
+
+  slides.forEach((slide, slideIndex) => {
+    const offset = shortestOffset(slideIndex);
+    const absoluteOffset = Math.abs(offset);
+    const hidden = Math.abs(offset) > 2;
+
+    slide.style.setProperty("--offset", offset);
+    slide.style.setProperty("--abs-offset", absoluteOffset);
+    slide.dataset.offset = String(offset);
+    slide.toggleAttribute("aria-hidden", slideIndex !== activeIndex);
+    slide.classList.toggle("is-active", slideIndex === activeIndex);
+    slide.classList.toggle("is-hidden", hidden);
+  });
+
+  dotButtons.forEach((dot, dotIndex) => {
+    dot.classList.toggle("is-active", dotIndex === activeIndex);
+    dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
+  });
+
+  counter.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(artworks.length).padStart(2, "0")}`;
+}
+
+function nextArtwork() {
+  setActive(activeIndex + 1);
+}
+
+function previousArtwork() {
+  setActive(activeIndex - 1);
+}
+
+function startAutoAdvance() {
+  autoAdvanceId = window.setInterval(nextArtwork, 4200);
+}
+
+function restartAutoAdvance() {
+  window.clearInterval(autoAdvanceId);
+  startAutoAdvance();
+}
+
+nextButton.addEventListener("click", () => {
+  nextArtwork();
+  restartAutoAdvance();
 });
 
-renderSquare();
+prevButton.addEventListener("click", () => {
+  previousArtwork();
+  restartAutoAdvance();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowRight") {
+    nextArtwork();
+    restartAutoAdvance();
+  }
+
+  if (event.key === "ArrowLeft") {
+    previousArtwork();
+    restartAutoAdvance();
+  }
+});
+
+coverflow.addEventListener("mouseenter", () => window.clearInterval(autoAdvanceId));
+coverflow.addEventListener("mouseleave", startAutoAdvance);
+
+renderCarousel().catch((error) => {
+  coverflow.innerHTML = `<p class="carousel-error">${error.message}</p>`;
+});

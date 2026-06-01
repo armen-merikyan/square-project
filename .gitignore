@@ -2,3 +2,8 @@
 .env
 .env.*
 !.env.example
+
+# Python local cache
+.venv/
+__pycache__/
+*.pyc
