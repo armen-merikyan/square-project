@@ -1,0 +1,399 @@
+{
+  "id": "a014c16e750e6e3b7546a79259e0573ab4b783be05eeb51073dc2750b18dd580",
+  "seed": "awe vs terror; order_vs_chaos; center_seed; wave_vertical; split_screen against broken_dots; soft_edges; stable_vs_unstable; tiny_plus; broken_memory | abstract variation request 4; target batch count 200",
+  "title": "Light vs Weight",
+  "reasoning": "This piece explores the emotional tension between awe and terror, depicting a struggle through contrasting light and heavy colors. The dark palette invokes feelings of terror, while the lighter hues symbolize awe. The layout splits the piece into two emotional halves, with the top representing awe through a split-screen pattern, highlighted with soft gold and pale green, while the bottom side channels terror through a chaotic crosshatch of darker tones. The broken pixels add an imperfection that reflects the instability of memory, enhancing the tension between the two emotions. The combination of orderly placements in the top half juxtaposed with the chaotic arrangement below illustrates the battle between order and chaos, inviting contemplation on how these feelings collide and coexist.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#49185B"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#49185B"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#80398B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#49185B"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#80398B"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#CD663E"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#49185B"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#80398B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CD663E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#C8DEAD"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFCC"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#300C2A"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#4B1E4B"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#8A1E36"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#4B1E4B"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#741E24"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#9F3F14"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#300C2A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#741E24"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#991E26"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#AA6F63"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#3A3A36"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#888888"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "awe",
+      "terror"
+    ],
+    "emotionMoods": {
+      "awe": [],
+      "terror": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "drip",
+    "patterns": {
+      "awe": "split_screen",
+      "terror": "crosshatch"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "crown",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a014c16e750e6e3b7546a79259e0573ab4b783be05eeb51073dc2750b18dd580",
+  "pixelHash": "a014c16e750e6e3b7546a79259e0573ab4b783be05eeb51073dc2750b18dd580",
+  "jsonFile": "a014c16e750e6e3b7546a79259e0573ab4b783be05eeb51073dc2750b18dd580.json",
+  "svgFile": "a014c16e750e6e3b7546a79259e0573ab4b783be05eeb51073dc2750b18dd580.svg",
+  "createdAt": "2026-06-02T20:52:25.163080+00:00"
+}

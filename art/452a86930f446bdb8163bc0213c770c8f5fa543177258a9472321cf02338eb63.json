@@ -1,0 +1,399 @@
+{
+  "id": "452a86930f446bdb8163bc0213c770c8f5fa543177258a9472321cf02338eb63",
+  "seed": "awe vs terror; order_vs_chaos; center_seed; wave_vertical; split_screen against broken_dots; soft_edges; stable_vs_unstable; tiny_plus; broken_memory | abstract variation request 10; target batch count 200",
+  "title": "Shadows of Splitting Waves",
+  "reasoning": "The emotional tone of awe versus terror informs a composition of contrast, where dark hues embody terror, contrasting with soft gold and pale green representing awe. The layout features descending pixels suggesting a flow from the center outward, yet the broken pixel edges introduce a sense of chaos within a generally ordered flow. The main collision occurs where the dark pixels encroach upon lighter areas, creating tension and instability within the calm. The palette reflects a spectrum from dark violet (chaos) to soft gold (hope), establishing a visual narrative about the fragile balance between order and disruption.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3B0E45"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#6A2C76"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#5C5E8A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#A49BC9"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D0D7E5"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#B7E1A8"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E5FFB1"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FAFA7A"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#3B0E45"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#372280"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3D4EA0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A3AECC"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B2D2E9"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E3F2D6"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F0F9B5"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFEBA"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#4C2E63"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#54367A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#614D90"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A2B4D5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C7D4E2"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E6FAF0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E9FFCE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#6A2266"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#8B3C88"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#262A4F"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A2BFD8"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D8E8F2"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F5FAC9"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFFFE4"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E0EFBE"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#5F1128"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#892052"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#2B4B77"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#8B9EBC"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D5E1E7"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#A2E3C4"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C9FFC3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#D9FFC5"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#1D0051"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1F0046"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#0B0442"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#8499B1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B9CBDA"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D2EDD5"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D9FFB9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FBFCAB"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#35184B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#49174E"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#597C9E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#8FA0B8"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C7D2D7"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DFEDD3"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E6FFD5"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F5FF98"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0F1F24"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#1F2935"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#263052"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#7089C8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#A0B9D5"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D1E9DE"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F4FFC8"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFE0"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "awe",
+      "terror"
+    ],
+    "emotionMoods": {
+      "awe": [],
+      "terror": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "awe": "rain",
+      "terror": "stairs"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "452a86930f446bdb8163bc0213c770c8f5fa543177258a9472321cf02338eb63",
+  "pixelHash": "452a86930f446bdb8163bc0213c770c8f5fa543177258a9472321cf02338eb63",
+  "jsonFile": "452a86930f446bdb8163bc0213c770c8f5fa543177258a9472321cf02338eb63.json",
+  "svgFile": "452a86930f446bdb8163bc0213c770c8f5fa543177258a9472321cf02338eb63.svg",
+  "createdAt": "2026-06-02T20:52:27.222607+00:00"
+}

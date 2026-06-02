@@ -1,0 +1,399 @@
+{
+  "id": "7b9a05e9944a505f301ded1d18eb82080690f28585a5bcd14676cde0aa25b1cf",
+  "seed": "awe vs terror; order_vs_chaos; center_seed; wave_vertical; split_screen against broken_dots; soft_edges; stable_vs_unstable; tiny_plus; broken_memory | abstract variation request 139; target batch count 200",
+  "title": "Duality of Waves",
+  "reasoning": "This artwork embodies the emotional tension of awe versus terror through a duality of color and pattern. The chosen palette combines deep blacks and vivid soft golds to represent the stark contrast between fear and hope. The structure incorporates an upward movement on one side and a downward cascade on the other, creating a dynamic interplay that mirrors the conflict between stability and instability. Broken pixels introduce an element of imperfection that aligns with the theme of broken memories reflected in the seed, while the rhythmic patterns of order (checker) and chaos (stairs) foster a visual narrative of rising tension and release.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#555555"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#505050"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#555555"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#707070"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#777777"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#666666"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#777777"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#111111"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#999999"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#909090"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#BFBF00"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#333333"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "awe",
+      "terror"
+    ],
+    "emotionMoods": {
+      "awe": [],
+      "terror": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "drip",
+    "patterns": {
+      "awe": "checker",
+      "terror": "stairs"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "door",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7b9a05e9944a505f301ded1d18eb82080690f28585a5bcd14676cde0aa25b1cf",
+  "pixelHash": "7b9a05e9944a505f301ded1d18eb82080690f28585a5bcd14676cde0aa25b1cf",
+  "jsonFile": "7b9a05e9944a505f301ded1d18eb82080690f28585a5bcd14676cde0aa25b1cf.json",
+  "svgFile": "7b9a05e9944a505f301ded1d18eb82080690f28585a5bcd14676cde0aa25b1cf.svg",
+  "createdAt": "2026-06-02T20:53:21.159797+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "5e53d4f27460d641ce9589bea0eb9818f0e05ee903da0d465183f5321a77ba73",
+  "seed": "awe vs terror; order_vs_chaos; center_seed; wave_vertical; split_screen against broken_dots; soft_edges; stable_vs_unstable; tiny_plus; broken_memory | abstract variation request 195; target batch count 200",
+  "title": "Fragmented Waves",
+  "reasoning": "This composition explores the tension between awe and terror through a contrasting palette of burnt orange, dark red, charcoal, and gold. The outer border in darker hues represents terror, encroaching upon the core's warmth, symbolizing awe. The zigzag flow creates a dynamic interaction, while broken pixels signify imperfection and memory. The center's stability contrasts against the chaotic edges, suggesting both a sense of safety and an underlying threat.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4E3B29"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#4B2C25"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#5F2E27"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6A2B23"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#7B3924"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C3883B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#CBAA69"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#ECD3B4"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#4E3B29"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#6C443C"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#7A4C38"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#5C2D25"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4C2820"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#DA8746"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#DFA97F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E6C6A8"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#5C2D25"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#9A5D5C"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#B35C45"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#AD4D46"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#EDAC57"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#EDC7A4"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#F1E4D8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F9F3EF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#6A2B23"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#9C6B61"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#AB8A7E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#E6B94B"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#E5D6EB"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F1D7BF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#F4E3D1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FAF6E4"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#7B3924"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#8D4741"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C34A38"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C3B79C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F3BF75"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#E0D6C5"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FAF7E5"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FCF7F1"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C3883B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E36E6E"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D84943"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#DBBA75"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#DCD9C5"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F2F2E8"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F4F4F4"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F7F7F7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#CBAA69"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#DFD3BF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#A9B0AE"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#DD8D5D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFD79B"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F5E6C6"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FAF0D5"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FCFBE4"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#ECD3B4"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F1E8DB"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#A1A6A5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D4C1C1"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#EDDAA1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F9F5EC"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FAF9F0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "awe",
+      "terror"
+    ],
+    "emotionMoods": {
+      "awe": [],
+      "terror": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "awe": "ring",
+      "terror": "crosshatch"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "window",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "5e53d4f27460d641ce9589bea0eb9818f0e05ee903da0d465183f5321a77ba73",
+  "pixelHash": "5e53d4f27460d641ce9589bea0eb9818f0e05ee903da0d465183f5321a77ba73",
+  "jsonFile": "5e53d4f27460d641ce9589bea0eb9818f0e05ee903da0d465183f5321a77ba73.json",
+  "svgFile": "5e53d4f27460d641ce9589bea0eb9818f0e05ee903da0d465183f5321a77ba73.svg",
+  "createdAt": "2026-06-02T20:53:54.034424+00:00"
+}

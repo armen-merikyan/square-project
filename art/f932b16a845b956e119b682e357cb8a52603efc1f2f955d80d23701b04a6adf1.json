@@ -1,0 +1,399 @@
+{
+  "id": "f932b16a845b956e119b682e357cb8a52603efc1f2f955d80d23701b04a6adf1",
+  "seed": "awe vs terror; order_vs_chaos; center_seed; wave_vertical; split_screen against broken_dots; soft_edges; stable_vs_unstable; tiny_plus; broken_memory | abstract variation request 193; target batch count 200",
+  "title": "Ebb and Flow of Emotion",
+  "reasoning": "The emotional tone reflects the tension between awe and terror; it utilizes a palette evoking love and betrayal to highlight the dichotomy between soft warmth and heavy darkness. The left side features subtle pinks and reds, embodying awe, while the right erupts in dark maroons and grays representing chaos and terror. The contrast is stark with soft edges on the left transitioning into jagged, fractured areas on the right, mirroring feelings of stability versus instability. The seed 'crown' indirectly suggests elevation, yet it contrasts with the turbulent chaos, creating a feeling of suspended vertigo.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFB3C1"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF4C4C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C04F76"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#7F2D3D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#581845"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#450D30"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#270B23"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F8D3B3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F53D49"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#DA617A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B91D3D"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#662B31"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#401919"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#27111D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#1B0A12"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFC3D7"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF9F9F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B87A90"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7E4B6C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#420A00"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#21130D"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#11040A"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#E2C4E3"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF5851"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6C505A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#2E0D15"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#5A292B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#680818"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#460A12"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#2F0D14"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FCEBF2"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFC9D0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FA5B57"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FF8181"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#DE424D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B82D30"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#9E2533"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7B1423"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFF0EA"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F26F73"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FF8999"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E03A27"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B72825"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#8F2A28"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#68191D"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#411916"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFE6E4"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF9BB5"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FA4774"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#CC3D46"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#AA3B31"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#812C32"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5C2316"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#341312"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFB3C1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F0524E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C62D35"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#9B2930"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#6E1C2C"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4B0D34"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#2E0B14"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "awe",
+      "terror"
+    ],
+    "emotionMoods": {
+      "awe": [],
+      "terror": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "awe": "split_screen",
+      "terror": "spark"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "crown",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "f932b16a845b956e119b682e357cb8a52603efc1f2f955d80d23701b04a6adf1",
+  "pixelHash": "f932b16a845b956e119b682e357cb8a52603efc1f2f955d80d23701b04a6adf1",
+  "jsonFile": "f932b16a845b956e119b682e357cb8a52603efc1f2f955d80d23701b04a6adf1.json",
+  "svgFile": "f932b16a845b956e119b682e357cb8a52603efc1f2f955d80d23701b04a6adf1.svg",
+  "createdAt": "2026-06-02T20:53:54.123518+00:00"
+}
