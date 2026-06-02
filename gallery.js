@@ -65,7 +65,7 @@ const galleryWorkspace = document.querySelector(".gallery-workspace");
 const galleryFilters = document.querySelector("#galleryFilters");
 const toggleColorFilters = document.querySelector("#toggleColorFilters");
 const galleryAutoplayToggle = document.querySelector("#galleryAutoplayToggle");
-const galleryAutoplaySpeedOptions = document.querySelectorAll("[data-autoplay-speed]");
+const galleryAutoplaySpeed = document.querySelector("#galleryAutoplaySpeed");
 const colorSimilarity = document.querySelector("#colorSimilarity");
 const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 
@@ -74,11 +74,14 @@ const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const AUTOPLAY_PAGE_TRANSITION = 180;
+const PAGE_TRANSITION_EXIT_MS = 360;
+const PAGE_TRANSITION_ENTER_MS = 620;
 const AUTOPLAY_SPEED_OPTIONS = {
   "1x": 9000,
   "2x": 6500,
   "3x": 3500
 };
+const AUTOPLAY_SPEED_VALUES = Object.keys(AUTOPLAY_SPEED_OPTIONS);
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
@@ -114,6 +117,7 @@ let allArtworkSentinel = null;
 let galleryAutoplayActive = false;
 let galleryAutoplayTimer = null;
 let galleryAutoplaySpeedValue = "1x";
+let renderedPage = 0;
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -225,11 +229,9 @@ function normalizeAutoplaySpeed(value) {
 
 function setGalleryAutoplaySpeed(value, shouldSave = true) {
   galleryAutoplaySpeedValue = normalizeAutoplaySpeed(value);
-  galleryAutoplaySpeedOptions.forEach((button) => {
-    const isActive = button.dataset.autoplaySpeed === galleryAutoplaySpeedValue;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
+  galleryAutoplaySpeed.textContent = galleryAutoplaySpeedValue;
+  galleryAutoplaySpeed.setAttribute("aria-label", `Automatic browsing speed: ${galleryAutoplaySpeedValue}`);
+  galleryAutoplaySpeed.title = `Automatic browsing speed: ${galleryAutoplaySpeedValue}`;
 
   if (shouldSave) {
     savePreference(GALLERY_AUTOPLAY_SPEED_COOKIE, galleryAutoplaySpeedValue);
@@ -242,6 +244,11 @@ function setGalleryAutoplaySpeed(value, shouldSave = true) {
 
 function galleryAutoplayInterval() {
   return AUTOPLAY_SPEED_OPTIONS[galleryAutoplaySpeedValue];
+}
+
+function nextGalleryAutoplaySpeed() {
+  const currentIndex = AUTOPLAY_SPEED_VALUES.indexOf(galleryAutoplaySpeedValue);
+  return AUTOPLAY_SPEED_VALUES[(currentIndex + 1) % AUTOPLAY_SPEED_VALUES.length];
 }
 
 function getTotalPages() {
@@ -261,9 +268,7 @@ function updateGalleryAutoplayControls(totalPages = getTotalPages()) {
     ? "Stop automatic page browsing"
     : "Play automatic page browsing";
 
-  galleryAutoplaySpeedOptions.forEach((button) => {
-    button.disabled = isDisabled;
-  });
+  galleryAutoplaySpeed.disabled = isDisabled;
 }
 
 function clearGalleryAutoplayTimer() {
@@ -317,6 +322,122 @@ function startGalleryAutoplay(totalPages = getTotalPages()) {
   galleryAutoplayActive = true;
   updateGalleryAutoplayControls(totalPages);
   scheduleGalleryAutoplay(totalPages);
+}
+
+function reducedMotionPreferred() {
+  return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+}
+
+function gridColumnCount() {
+  const columns = window.getComputedStyle(artGrid).gridTemplateColumns;
+  const count = columns.split(" ").filter(Boolean).length;
+  return Math.max(1, count || 1);
+}
+
+function setSnakeCardOrder(cards, direction = 1) {
+  const columnCount = gridColumnCount();
+
+  cards.forEach((card, index) => {
+    const row = Math.floor(index / columnCount);
+    const column = index % columnCount;
+    const snakeColumn = row % 2 === 0 ? column : columnCount - 1 - column;
+    const snakeOrder = row * columnCount + snakeColumn;
+
+    const orderedIndex = direction > 0 ? snakeOrder : cards.length - snakeOrder;
+
+    card.style.setProperty("--snake-order", String(orderedIndex));
+    card.style.setProperty("--snake-delay", `${Math.min(orderedIndex, 10) * 12}ms`);
+    card.style.setProperty("--snake-row", String(row));
+  });
+}
+
+function pageDirection(totalPages) {
+  if (!renderedPage) {
+    return 1;
+  }
+
+  if (renderedPage === totalPages && currentPage === 1) {
+    return 1;
+  }
+
+  if (renderedPage === 1 && currentPage === totalPages) {
+    return -1;
+  }
+
+  return currentPage >= renderedPage ? 1 : -1;
+}
+
+function clearPageTransitionClasses(cards) {
+  cards.forEach((card) => {
+    card.classList.remove("is-page-exiting", "is-page-entering");
+    card.style.removeProperty("--snake-order");
+    card.style.removeProperty("--snake-delay");
+    card.style.removeProperty("--snake-row");
+  });
+  artGrid.style.removeProperty("--page-enter-x");
+  artGrid.style.removeProperty("--page-enter-settle-x");
+  artGrid.style.removeProperty("--page-exit-x");
+  artGrid.style.removeProperty("--page-exit-half-x");
+}
+
+function updateSelectedCards() {
+  document.querySelectorAll(".gallery-card").forEach((card) => {
+    const isSelected = card.dataset.id === selectedId;
+    card.classList.toggle("is-selected", isSelected);
+    card.toggleAttribute("aria-current", isSelected);
+  });
+}
+
+function renderPageCards(pageRecords, start, token, totalPages) {
+  const direction = pageDirection(totalPages);
+  const hasExistingCards = artGrid.querySelector(".gallery-card");
+  const shouldAnimate = hasExistingCards && !reducedMotionPreferred();
+  const exitX = direction > 0 ? "-34px" : "34px";
+  const exitHalfX = direction > 0 ? "-15px" : "15px";
+  const enterX = direction > 0 ? "34px" : "-34px";
+  const enterSettleX = direction > 0 ? "-3px" : "3px";
+
+  const finishRender = () => {
+    if (token !== pageRenderToken) {
+      return;
+    }
+
+    artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
+    const newCards = [...artGrid.querySelectorAll(".gallery-card")];
+    renderedPage = currentPage;
+
+    if (shouldAnimate) {
+      artGrid.style.setProperty("--page-enter-x", enterX);
+      artGrid.style.setProperty("--page-enter-settle-x", enterSettleX);
+      artGrid.style.setProperty("--page-exit-x", exitX);
+      artGrid.style.setProperty("--page-exit-half-x", exitHalfX);
+      setSnakeCardOrder(newCards, direction);
+      newCards.forEach((card) => card.classList.add("is-page-entering"));
+      artGrid.classList.add("is-page-transitioning");
+      window.setTimeout(() => {
+        clearPageTransitionClasses(newCards);
+        artGrid.classList.remove("is-page-transitioning");
+      }, PAGE_TRANSITION_ENTER_MS);
+    }
+
+    hydrateVisiblePixelArtwork(pageRecords, token);
+    updateSelectedCards();
+  };
+
+  if (!shouldAnimate) {
+    finishRender();
+    return;
+  }
+
+  const oldCards = [...artGrid.querySelectorAll(".gallery-card")];
+  artGrid.style.setProperty("--page-enter-x", enterX);
+  artGrid.style.setProperty("--page-enter-settle-x", enterSettleX);
+  artGrid.style.setProperty("--page-exit-x", exitX);
+  artGrid.style.setProperty("--page-exit-half-x", exitHalfX);
+  setSnakeCardOrder(oldCards, direction);
+  artGrid.classList.add("is-page-transitioning");
+  oldCards.forEach((card) => card.classList.add("is-page-exiting"));
+  window.setTimeout(finishRender, PAGE_TRANSITION_EXIT_MS);
 }
 
 function stopAllArtworkObserver() {
@@ -1537,6 +1658,7 @@ function renderPagination(totalPages) {
 
     if (item === currentPage) {
       pageButton.setAttribute("aria-current", "page");
+      pageButton.disabled = true;
     }
 
     pageButton.addEventListener("click", () => {
@@ -1780,6 +1902,7 @@ function renderCurrentPage() {
   if (pageRecords.length === 0) {
     stopGalleryAutoplay();
     updateGalleryAutoplayControls(1);
+    renderedPage = 0;
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
     galleryPagination.replaceChildren();
     closeInspector();
@@ -1787,17 +1910,10 @@ function renderCurrentPage() {
     return;
   }
 
-  artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
-  hydrateVisiblePixelArtwork(pageRecords, token);
+  renderPageCards(pageRecords, start, token, totalPages);
   renderPagination(totalPages);
   updateGalleryAutoplayControls(totalPages);
   scheduleGalleryAutoplay(totalPages);
-
-  document.querySelectorAll(".gallery-card").forEach((card) => {
-    const isSelected = card.dataset.id === selectedId;
-    card.classList.toggle("is-selected", isSelected);
-    card.toggleAttribute("aria-current", isSelected);
-  });
 
   window.setTimeout(() => {
     artGrid.classList.remove("is-autoplay-advance");
@@ -2103,10 +2219,8 @@ galleryAutoplayToggle.addEventListener("click", () => {
 
   renderCurrentPage();
 });
-galleryAutoplaySpeedOptions.forEach((button) => {
-  button.addEventListener("click", () => {
-    setGalleryAutoplaySpeed(button.dataset.autoplaySpeed);
-  });
+galleryAutoplaySpeed.addEventListener("click", () => {
+  setGalleryAutoplaySpeed(nextGalleryAutoplaySpeed());
 });
 clearColorFilters.addEventListener("click", () => {
   includedColorSeeds.clear();

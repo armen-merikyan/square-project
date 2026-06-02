@@ -1398,7 +1398,7 @@ footer p {
 }
 
 .gallery-autoplay-toggle,
-.gallery-autoplay-speed-option {
+.gallery-autoplay-speed {
   height: 36px;
   min-height: 36px;
   border: 1px solid rgba(21, 21, 21, 0.14);
@@ -1447,50 +1447,26 @@ footer p {
 
 .gallery-autoplay-toggle:hover:not(:disabled),
 .gallery-autoplay-toggle:focus-visible,
-.gallery-autoplay-speed-option:hover:not(:disabled),
-.gallery-autoplay-speed-option:focus-visible {
+.gallery-autoplay-speed:hover:not(:disabled),
+.gallery-autoplay-speed:focus-visible {
   border-color: rgba(21, 21, 21, 0.35);
   background: #f8f8f5;
   transform: translateY(-1px);
 }
 
 .gallery-autoplay-toggle:disabled,
-.gallery-autoplay-speed-option:disabled {
+.gallery-autoplay-speed:disabled {
   cursor: not-allowed;
   opacity: 0.42;
   transform: none;
 }
 
 .gallery-autoplay-speed {
-  display: inline-flex;
-  align-items: center;
-  gap: 0;
-  overflow: hidden;
-  border: 1px solid rgba(21, 21, 21, 0.1);
-  border-radius: 7px;
-  color: var(--muted);
-  font-size: 0.68rem;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.gallery-autoplay-speed-option {
-  min-width: 42px;
-  border: 0;
-  border-radius: 0;
+  min-width: 46px;
   padding: 0 10px;
-  background: transparent;
-}
-
-.gallery-autoplay-speed-option + .gallery-autoplay-speed-option {
-  border-left: 1px solid rgba(21, 21, 21, 0.1);
-}
-
-.gallery-autoplay-speed-option.is-active {
   background: var(--ink);
   color: #fff;
+  line-height: 1;
 }
 
 .filter-toggle {
@@ -2555,6 +2531,11 @@ body.has-open-inspector {
   color: #fff;
 }
 
+.pagination-page[aria-current="page"]:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
 .pagination-arrow {
   min-width: 72px;
 }
@@ -2589,19 +2570,56 @@ body.has-open-inspector {
   transform: none;
 }
 
-.art-grid.is-autoplay-advance .gallery-card {
-  animation: gallery-page-card-enter 420ms var(--ease-smooth) both;
+.art-grid.is-page-transitioning {
+  contain: layout paint;
 }
 
-@keyframes gallery-page-card-enter {
+.gallery-card.is-page-exiting {
+  pointer-events: none;
+  animation: gallery-card-snake-exit 300ms var(--ease-smooth) both;
+  animation-delay: var(--snake-delay, 0ms);
+}
+
+.gallery-card.is-page-entering {
+  animation: gallery-card-snake-enter 560ms var(--ease-smooth) both;
+  animation-delay: calc(90ms + var(--snake-delay, 0ms));
+}
+
+.art-grid.is-autoplay-advance .gallery-card.is-page-entering {
+  animation-duration: 620ms;
+}
+
+@keyframes gallery-card-snake-exit {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  55% {
+    opacity: 0.78;
+    transform: translate3d(var(--page-exit-half-x, -15px), 10px, 0) scale(0.985);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--page-exit-x, -34px), 34px, 0) scale(0.94) rotate(1deg);
+  }
+}
+
+@keyframes gallery-card-snake-enter {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(0.985);
+    transform: translate3d(var(--page-enter-x, 34px), -16px, 0) scale(0.965);
+  }
+
+  62% {
+    opacity: 1;
+    transform: translate3d(var(--page-enter-settle-x, -3px), 4px, 0) scale(1.012);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -2617,7 +2635,8 @@ body.has-open-inspector {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .art-grid.is-autoplay-advance .gallery-card,
+  .gallery-card.is-page-exiting,
+  .gallery-card.is-page-entering,
   .gallery-autoplay-toggle.is-playing:not(:disabled) {
     animation: none;
   }

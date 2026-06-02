@@ -137,11 +137,16 @@
                     disabled
                   >
                   </button>
-                  <div class="gallery-autoplay-speed" role="group" aria-label="Automatic browsing speed">
-                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="1x" aria-pressed="true">1x</button>
-                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="2x" aria-pressed="false">2x</button>
-                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="3x" aria-pressed="false">3x</button>
-                  </div>
+                  <button
+                    class="gallery-autoplay-speed"
+                    id="galleryAutoplaySpeed"
+                    type="button"
+                    aria-label="Automatic browsing speed: 1x"
+                    title="Automatic browsing speed: 1x"
+                    disabled
+                  >
+                    1x
+                  </button>
                 </div>
                 <output id="galleryCount" class="visually-hidden" aria-live="polite">Loading</output>
               </div>
