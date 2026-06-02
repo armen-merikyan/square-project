@@ -1343,19 +1343,6 @@ footer p {
   text-align: right;
 }
 
-.gallery-heading-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  flex: 0 0 auto;
-  border: 1px solid rgba(37, 99, 235, 0.16);
-  border-radius: 8px;
-  background: rgba(37, 99, 235, 0.08);
-  color: var(--blue);
-}
-
-.gallery-heading-icon svg,
 .gallery-stat-icon,
 .gallery-control-icon {
   width: 1em;
@@ -2576,17 +2563,17 @@ body.has-open-inspector {
 
 .gallery-card.is-page-exiting {
   pointer-events: none;
-  animation: gallery-card-snake-exit 560ms var(--ease-smooth) both;
+  animation: gallery-card-snake-exit 760ms var(--ease-smooth) both;
   animation-delay: var(--snake-delay, 0ms);
 }
 
 .gallery-card.is-page-entering {
-  animation: gallery-card-snake-enter 760ms var(--ease-smooth) both;
-  animation-delay: calc(120ms + var(--snake-delay, 0ms));
+  animation: gallery-card-snake-enter 980ms var(--ease-smooth) both;
+  animation-delay: calc(180ms + var(--snake-delay, 0ms));
 }
 
 .art-grid.is-autoplay-advance .gallery-card.is-page-entering {
-  animation-duration: 860ms;
+  animation-duration: 1100ms;
 }
 
 @keyframes gallery-card-snake-exit {
