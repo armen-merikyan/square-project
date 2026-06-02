@@ -1,0 +1,407 @@
+{
+  "id": "5cb91aa240a860c95be3a90f8f900c28904f8e899f7c8e9194fb4820420cd444",
+  "seed": "joy vs grief; order_vs_chaos; center_seed; bottom_to_top; split_screen against rain; hard_edges; safe_vs_threatened; stair_step; machine_emotion | abstract variation request 59; target batch count 200",
+  "title": "Centering Emotion",
+  "reasoning": "The emotional tone explores the duality of joy and grief, embodied through color contrasts. The palette of bright yellows and oranges represents joy, while deep blues and muted purples evoke grief. This contrasting interplay creates a central tension where the brighter colors radiate outward, symbolizing joy's attempt to penetrate the layers of grief. The composition features a zigzag flow with hard edges to emphasize the collision between these feelings, while the layout allows for a protected center surrounded by chaotic patterns, enhancing the narrative of protection versus vulnerability. The placement of broken pixels adds imperfection, adhering to the seed's narrative of emotional complexity. Negative space is preserved to breathe life into the piece, reflecting moments of calm amidst emotional turmoil.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFAA00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFCC33"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF9933"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3333FF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6600CC"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#9900CC"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#2200AA"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFF33"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D6A40E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFA500"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF745C"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#0056A5"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#2A3D67"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#5A1F7A"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#470B4D"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FBCB00"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F69E00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFAA88"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A6B3E0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#3D5DA2"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#4A4A4A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#021B33"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFDF80"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFCA00"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFA500"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7B92D3"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#1A3D58"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#4D005D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFAD00"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFB700"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C2C2C2"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#4D4E72"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7ABAF9"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A4B4D4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A9B4C0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFD500"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFAB40"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#DDEEDD"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#6C7B6D"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#3478CC"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#CE6F8B"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFE400"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFC400"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FC7400"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#808080"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#349FB0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#0066CC"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#290B33"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFA300"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FF842B"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#595959"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7C3D9A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D200A6"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#A00073"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "bright",
+        "expanding",
+        "spark-like"
+      ],
+      "grief": [
+        "blue-toned",
+        "drooping",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "joy": "target",
+      "grief": "ring"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "hidden_vs_exposed",
+    "shapeSeed": "flame",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "5cb91aa240a860c95be3a90f8f900c28904f8e899f7c8e9194fb4820420cd444",
+  "pixelHash": "5cb91aa240a860c95be3a90f8f900c28904f8e899f7c8e9194fb4820420cd444",
+  "jsonFile": "5cb91aa240a860c95be3a90f8f900c28904f8e899f7c8e9194fb4820420cd444.json",
+  "svgFile": "5cb91aa240a860c95be3a90f8f900c28904f8e899f7c8e9194fb4820420cd444.svg",
+  "createdAt": "2026-06-02T01:12:39.994983+00:00"
+}

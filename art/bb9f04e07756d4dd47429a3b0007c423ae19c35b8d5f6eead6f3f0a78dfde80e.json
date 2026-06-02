@@ -1,0 +1,407 @@
+{
+  "id": "bb9f04e07756d4dd47429a3b0007c423ae19c35b8d5f6eead6f3f0a78dfde80e",
+  "seed": "joy vs grief; order_vs_chaos; center_seed; bottom_to_top; split_screen against rain; hard_edges; safe_vs_threatened; stair_step; machine_emotion | abstract variation request 48; target batch count 200",
+  "title": "Contrast of Joy and Grief",
+  "reasoning": "The emotional tone presents a duality of joy and grief, represented through a stark palette of warm yellows and oranges clashing against deep blues and purples. The outer edges embody the feeling of grief\u2014cold and muted\u2014a subtle reminder of sadness, while the inner pixels bring joyous spontaneity, creating a bubbling motion that feels like life amidst stillness. The decision for a split layout establishes an impactful contrast where joy vibrates against the dense weight of grief, evoking a sense of inner conflict. Broken pixels introduce deliberate imperfection, enhancing the emotional narrative of machine-like precision capturing human emotions. This structure embodies a stair-step movement, leading the eye upward, mirroring the struggle between feeling overwhelmed by grief and the hope that joy can bring, ultimately leaving space for contemplation.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFAA00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFB000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF9000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FF7300"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FF6A00"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#005BAC"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#003C8C"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#002D7D"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#002763"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#001B55"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#00103D"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000829"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFC700"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFD800"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFFE00"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFED00"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFE400"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFD600"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFAA00"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#003C8C"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#002B6B"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#00295A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#00307C"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#00263B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#002B6B"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#003F92"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#004BB2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFEB00"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFF300"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFE000"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFD600"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFC700"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFAA00"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#003850"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#003646"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#002928"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#001F2D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#001B28"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#001429"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000E1C"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000A18"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF9A00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF9000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFB100"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFAA00"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFA300"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FF9500"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FF7A00"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FF6600"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#003E7A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#002F62"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#001B5E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#002A50"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#00474D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#005840"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00776B"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#008A99"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "rounded",
+        "spark-like",
+        "expanding"
+      ],
+      "grief": [
+        "blue-toned",
+        "drooping",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "drip",
+    "patterns": {
+      "joy": "crack",
+      "grief": "target"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "single_pixel",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "bb9f04e07756d4dd47429a3b0007c423ae19c35b8d5f6eead6f3f0a78dfde80e",
+  "pixelHash": "bb9f04e07756d4dd47429a3b0007c423ae19c35b8d5f6eead6f3f0a78dfde80e",
+  "jsonFile": "bb9f04e07756d4dd47429a3b0007c423ae19c35b8d5f6eead6f3f0a78dfde80e.json",
+  "svgFile": "bb9f04e07756d4dd47429a3b0007c423ae19c35b8d5f6eead6f3f0a78dfde80e.svg",
+  "createdAt": "2026-06-02T01:12:33.867544+00:00"
+}

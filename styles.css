@@ -1577,6 +1577,94 @@ footer p {
   transform: none;
 }
 
+.gallery-card-quick-view {
+  justify-self: start;
+  min-height: 34px;
+  border-color: rgba(21, 21, 21, 0.14);
+  border-radius: 5px;
+  padding: 0 10px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: none;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.gallery-card-quick-view:hover,
+.gallery-card-quick-view:focus-visible {
+  background: var(--ink);
+  color: #fff;
+  transform: none;
+}
+
+.artwork-page {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 1fr);
+  min-height: calc(100vh - 72px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.artwork-page-preview {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: clamp(24px, 5vw, 76px);
+  background:
+    linear-gradient(45deg, rgba(21, 21, 21, 0.045) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(21, 21, 21, 0.045) 25%, transparent 25%),
+    #fff;
+  background-position: 0 0, 0 12px;
+  background-size: 24px 24px;
+}
+
+.artwork-page-preview img {
+  display: block;
+  width: min(100%, 620px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(21, 21, 21, 0.14);
+  background: #fff;
+  image-rendering: pixelated;
+  object-fit: contain;
+  box-shadow: 0 24px 70px rgba(21, 21, 21, 0.16);
+}
+
+.artwork-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(26px, 5vw, 76px);
+}
+
+.artwork-page-content h1 {
+  font-size: clamp(2.6rem, 6vw, 6.4rem);
+}
+
+.artwork-page-content h2 {
+  margin-top: 30px;
+  font-size: 0.86rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.artwork-page-content > p {
+  max-width: 76ch;
+  color: var(--muted);
+}
+
+.artwork-page-seed {
+  margin: 18px 0 0;
+  font-weight: 800;
+}
+
+.artwork-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
 .art-inspector {
   width: min(1180px, calc(100vw - 32px));
   max-height: calc(100vh - 36px);
@@ -2107,6 +2195,10 @@ body.has-open-inspector {
   .inspector-frame {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .artwork-page {
+    grid-template-columns: 1fr;
   }
 
   .frame-preview {

@@ -1,0 +1,407 @@
+{
+  "id": "7473a0f00692da04e2389c2c4972b8ab1eda2763162d04d59ce706c220bb1ce6",
+  "seed": "joy vs grief; order_vs_chaos; center_seed; bottom_to_top; split_screen against rain; hard_edges; safe_vs_threatened; stair_step; machine_emotion | abstract variation request 7; target batch count 200",
+  "title": "Rise vs Fall",
+  "reasoning": "This artwork embodies the emotional duality of joy and grief, represented through contrasting color placements and patterns. The palette, featuring vibrant yellows and oranges juxtaposed with muted blues and purples, encapsulates the tension between uplifting and heavy emotions. The \u2018falling_pixels\u2019 layout introduces a sense of descent, while the jagged edges suggest interruption against a smooth emotional gradient. The use of crosshatch and dot patterns reflects the chaotic rhythm of joy's bursts colliding with the heavy weight of grief, creating a layered interplay of dense clusters and quiet spaces.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFC107"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF9800"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF5722"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#673AB7"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#9C27B0"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#2196F3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#03A9F4"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#00BCD4"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFC107"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF9800"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF5722"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#673AB7"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#9C27B0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2196F3"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#03A9F4"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF9800"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF5722"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#BF360C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#6200EA"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#2196F3"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#03A9F4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#00BCD4"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF9800"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFC107"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF5722"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#9C27B0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#673AB7"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#2196F3"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1976D2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#9C27B0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF5722"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF9800"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFC107"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#2196F3"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#03A9F4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#009688"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#795548"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#5D4037"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#3E2723"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#00BCD4"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#03A9F4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#2196F3"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#1976D2"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#26C6DA"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#455A64"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#607D8B"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#78909C"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#CFD8DC"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#546E7A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#455A64"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#37474F"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#263238"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#212121"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#303F9F"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#3D5AFE"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "spark-like",
+        "open",
+        "expanding"
+      ],
+      "grief": [
+        "drooping",
+        "low",
+        "heavy"
+      ]
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "burst",
+    "patterns": {
+      "joy": "crosshatch",
+      "grief": "dots"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7473a0f00692da04e2389c2c4972b8ab1eda2763162d04d59ce706c220bb1ce6",
+  "pixelHash": "7473a0f00692da04e2389c2c4972b8ab1eda2763162d04d59ce706c220bb1ce6",
+  "jsonFile": "7473a0f00692da04e2389c2c4972b8ab1eda2763162d04d59ce706c220bb1ce6.json",
+  "svgFile": "7473a0f00692da04e2389c2c4972b8ab1eda2763162d04d59ce706c220bb1ce6.svg",
+  "createdAt": "2026-06-02T01:12:18.083378+00:00"
+}

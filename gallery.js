@@ -1255,18 +1255,24 @@ function renderCard(record, index) {
   const meta = document.createElement("span");
   meta.className = "gallery-card-meta";
 
-  const title = document.createElement("button");
+  const title = document.createElement("a");
   title.className = "gallery-card-title";
-  title.type = "button";
+  title.href = record.pagePath || `artwork/${record.id}/`;
   title.textContent = record.title || `Square ${index + 1}`;
-  title.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-  title.addEventListener("click", () => {
+  title.setAttribute("aria-label", `Open page for ${record.title || `artwork ${index + 1}`}`);
+
+  const quickView = document.createElement("button");
+  quickView.className = "gallery-card-quick-view";
+  quickView.type = "button";
+  quickView.textContent = "Quick view";
+  quickView.setAttribute("aria-label", `Quick view ${record.title || `artwork ${index + 1}`}`);
+  quickView.addEventListener("click", () => {
     openGalleryRecord(record, { updateUrl: true }).catch((error) => {
       artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
     });
   });
 
-  meta.append(title);
+  meta.append(title, quickView);
   card.append(renderCardArtwork(record), meta);
 
   return card;
@@ -1277,33 +1283,34 @@ function renderLightweightCard(record, index) {
   card.className = "gallery-card gallery-card-lightweight";
   card.dataset.id = record.id;
 
-  const imageButton = document.createElement("button");
-  imageButton.className = "gallery-card-image-button";
-  imageButton.type = "button";
-  imageButton.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-  imageButton.appendChild(renderArtworkImage(record));
-  imageButton.addEventListener("click", () => {
-    openGalleryRecord(record, { updateUrl: true }).catch((error) => {
-      artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
-    });
-  });
+  const imageLink = document.createElement("a");
+  imageLink.className = "gallery-card-image-button";
+  imageLink.href = record.pagePath || `artwork/${record.id}/`;
+  imageLink.setAttribute("aria-label", `Open page for ${record.title || `artwork ${index + 1}`}`);
+  imageLink.appendChild(renderArtworkImage(record));
 
   const meta = document.createElement("span");
   meta.className = "gallery-card-meta";
 
-  const title = document.createElement("button");
+  const title = document.createElement("a");
   title.className = "gallery-card-title";
-  title.type = "button";
+  title.href = record.pagePath || `artwork/${record.id}/`;
   title.textContent = record.title || `Square ${index + 1}`;
-  title.setAttribute("aria-label", `View details for ${record.title || `artwork ${index + 1}`}`);
-  title.addEventListener("click", () => {
+  title.setAttribute("aria-label", `Open page for ${record.title || `artwork ${index + 1}`}`);
+
+  const quickView = document.createElement("button");
+  quickView.className = "gallery-card-quick-view";
+  quickView.type = "button";
+  quickView.textContent = "Quick view";
+  quickView.setAttribute("aria-label", `Quick view ${record.title || `artwork ${index + 1}`}`);
+  quickView.addEventListener("click", () => {
     openGalleryRecord(record, { updateUrl: true }).catch((error) => {
       artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
     });
   });
 
-  meta.append(title);
-  card.append(imageButton, meta);
+  meta.append(title, quickView);
+  card.append(imageLink, meta);
 
   return card;
 }

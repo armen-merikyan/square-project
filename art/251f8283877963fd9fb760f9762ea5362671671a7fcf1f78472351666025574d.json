@@ -1,0 +1,407 @@
+{
+  "id": "251f8283877963fd9fb760f9762ea5362671671a7fcf1f78472351666025574d",
+  "seed": "joy vs grief; order_vs_chaos; center_seed; bottom_to_top; split_screen against rain; hard_edges; safe_vs_threatened; stair_step; machine_emotion | abstract variation request 174; target batch count 200",
+  "title": "Harmony and Discord",
+  "reasoning": "The artwork embodies the emotional contrast between joy (depicted in warm, brighter colors) and grief (represented with cooler, muted tones). The left half features radial patterns in warm yellows and oranges indicating joy's expanding nature, while the right side showcases fragmented, flame-like patterns in deep blue and muted purple reflecting grief's sharp fragmentation. The sharp vs soft contrast is manifested by the hard transitions between colors, while the flow of diagonal fall suggests an emotional descent. Broken pixels are added to disrupt the patterns slightly, embodying the imperfection and conflict between these emotions.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFDA44"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB03B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF9A1D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF8420"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFC400"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFAC0C"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFA600"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FF9227"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FAAD63"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F39B30"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F0862A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#E67F22"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#E87517"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#DD6132"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#DA4F3D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D55C2D"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E0DAF2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A52C58"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#AA73A1"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#9D4C78"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7E2A4B"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#694164"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#985679"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#B96B8B"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#93B2D5"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#47A0C7"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#57B4E4"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A3D9E5"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B3D9E5"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#3FA4D3"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#2A8EB3"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#446A9F"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#313131"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#4A4A4A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#666666"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#787878"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#949494"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A8A8A8"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#CCC9C9"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F2EFEF"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E8E9E8"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D9D8D8"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D2D1D1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#CCACAC"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C1B3B3"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#A4B8C6"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#6E87AA"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C3BEC9"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A7B2C3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#8ABFAD"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#6F98A1"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5C8B9A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#457B8B"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#A1D5E6"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#6FB8CF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#468FA5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#2A7A85"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#1E5A6E"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#00474A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#003D40"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#002D30"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "rounded",
+        "expanding",
+        "open"
+      ],
+      "grief": [
+        "blue-toned",
+        "fragmented",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "joy": "radial",
+      "grief": "flame"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "251f8283877963fd9fb760f9762ea5362671671a7fcf1f78472351666025574d",
+  "pixelHash": "251f8283877963fd9fb760f9762ea5362671671a7fcf1f78472351666025574d",
+  "jsonFile": "251f8283877963fd9fb760f9762ea5362671671a7fcf1f78472351666025574d.json",
+  "svgFile": "251f8283877963fd9fb760f9762ea5362671671a7fcf1f78472351666025574d.svg",
+  "createdAt": "2026-06-02T01:13:37.190833+00:00"
+}

@@ -1,0 +1,407 @@
+{
+  "id": "7189e692babc9e2a621d94f4617a816ded5b1a1bf551665f39805d422b11fd08",
+  "seed": "joy vs grief; order_vs_chaos; center_seed; bottom_to_top; split_screen against rain; hard_edges; safe_vs_threatened; stair_step; machine_emotion | abstract variation request 147; target batch count 200",
+  "title": "Convergence of Tension",
+  "reasoning": "This piece embodies the emotional dichotomy of joy and grief. The bright yellows and oranges at the center represent joy, with a ring pattern suggesting warmth and liveliness. In contrast, muted purples and deep blues mix at the edges, illustrated by a noise pattern that evokes the fragmented nature of grief. The tension lies in the clash between the vibrant center and the somber perimeter, symbolizing the struggle between hope and despair. As the pixels transition from bottom to top, the composition suggests a hopeful rise amid complex emotions, with hard edges enhancing the sense of conflict. Negative space is preserved to facilitate the emotional contrast, allowing the viewer to breathe amidst the chaos.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFBC00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F78F00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF6F00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#EB5A00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FD3A00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E02900"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#9B1E00"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#0050AF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#004591"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#003462"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#002A56"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#001F4F"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#00183F"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#001330"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#00101C"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFDD00"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFBA00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF9D00"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF8600"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FF7B00"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FF6700"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FF5D00"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FF4E00"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#00274F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#00305C"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#003665"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#00406F"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#004B7C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#005686"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#006699"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0079AB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFDF5E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFCE45"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FCB159"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FC9E3E"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FC8438"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FB691C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FB5E2D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FA47B2"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#001F60"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#001B5A"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#001B62"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#001C6C"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#001D77"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#001E7F"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#002F9B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#003BCD"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFEC78"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFDC5C"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFCA4E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FF8933"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FF7B2B"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FF5E27"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FF8000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFA200"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#003B51"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#003A67"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#00387D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#003688"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#00359F"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#0032B2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#002FC0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#001E8B"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "spark-like",
+        "bright",
+        "rounded"
+      ],
+      "grief": [
+        "drooping",
+        "fragmented",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "joy": "ring",
+      "grief": "noise"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "filled_square",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7189e692babc9e2a621d94f4617a816ded5b1a1bf551665f39805d422b11fd08",
+  "pixelHash": "7189e692babc9e2a621d94f4617a816ded5b1a1bf551665f39805d422b11fd08",
+  "jsonFile": "7189e692babc9e2a621d94f4617a816ded5b1a1bf551665f39805d422b11fd08.json",
+  "svgFile": "7189e692babc9e2a621d94f4617a816ded5b1a1bf551665f39805d422b11fd08.svg",
+  "createdAt": "2026-06-02T01:13:27.551154+00:00"
+}
