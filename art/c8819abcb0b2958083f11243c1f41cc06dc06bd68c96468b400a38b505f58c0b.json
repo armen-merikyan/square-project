@@ -1,0 +1,399 @@
+{
+  "id": "c8819abcb0b2958083f11243c1f41cc06dc06bd68c96468b400a38b505f58c0b",
+  "seed": "panic vs control; order_vs_chaos; argument_grid; zigzag; spark against target; burned_edges; symmetrical_vs_broken; hole; joy_grief | abstract variation request 140; target batch count 200",
+  "title": "Rise vs Fall",
+  "reasoning": "This artwork captures the tense dichotomy of panic and control through dense, jagged patterns versus softer gradients. The palette of black, dark violet, soft gold, and pale green suggests a clash of despair and hope. The main contrast lies in the checkerboard's chaos against the more controlled flame-like patterns, reflecting the push and pull of emotions as they rise and fall within the confines of the square. The edges are purposefully broken, implying the fragility of both states.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3E2A5B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#3A2E9F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6A61A7"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#BFA17E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#E0C8A0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E6E4D2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F4F1E6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#5C3F78"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2C1B4E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#5A6BCC"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F4D3B5"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#E5BF8C"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D2B48C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#DDE8A6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FCF3D3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#4C1939"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#BF3F3F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFC14C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B2A67E"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#ECE4B8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D8A24D"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F7EAB5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#4E004D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#892C54"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#EED3D1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F2C94C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C7B99E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A4D26B"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#C3E120"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#555555"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#8F5A7E"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C796A1"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#E3A25D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#996E39"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D2C316"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A5C8A4"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E4E8DF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7E8CA6"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B7C3D5"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F4E6B7"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E5BF9A"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BDC5B7"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C1D9E9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F8F7F5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#9F5763"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#BE6B78"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F6D1C6"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#EDD2A1"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D5D3C8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E7E2D4"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F5F2EB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#EDD5C9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E7B8BB"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFE5C7"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#E9E8E5"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E2E8E1"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F4F6F3"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FCFCFC"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "center_outward",
+    "patterns": {
+      "panic": "checker",
+      "control": "flame"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "tiny_plus",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c8819abcb0b2958083f11243c1f41cc06dc06bd68c96468b400a38b505f58c0b",
+  "pixelHash": "c8819abcb0b2958083f11243c1f41cc06dc06bd68c96468b400a38b505f58c0b",
+  "jsonFile": "c8819abcb0b2958083f11243c1f41cc06dc06bd68c96468b400a38b505f58c0b.json",
+  "svgFile": "c8819abcb0b2958083f11243c1f41cc06dc06bd68c96468b400a38b505f58c0b.svg",
+  "createdAt": "2026-06-01T23:56:00.629381+00:00"
+}

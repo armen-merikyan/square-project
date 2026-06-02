@@ -1,0 +1,399 @@
+{
+  "id": "895f8749feaf5224426b66acfa9404ae0e9fd0949282036d661a7047be1c076f",
+  "seed": "panic vs control; order_vs_chaos; argument_grid; zigzag; spark against target; burned_edges; symmetrical_vs_broken; hole; joy_grief | abstract variation request 29; target batch count 200",
+  "title": "Fractured Harmony",
+  "reasoning": "This piece embodies the tension between panic and control through stark contrasts and interrupted patterns. The chosen palette of yellows and muted purples signifies joy and grief, mirroring the emotional depth of the seed. The top half expresses a chaotic grid-like pattern, evoking a sense of overwhelming pressure, while the bottom half represents control, arranged in softer rings that provide a counterbalance. The jagged edges and broken pixels enhance the feeling of unpredictability against the desire for order, contributing to a narrative of fragmentation and cohesion within the abstract composition.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF4500"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#DB3E00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF6347"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFA07A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FF4500"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF6347"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFA07A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#DB3E00"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FF4500"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF6347"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#8A2BE2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#9370DB"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6610F2"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#8A2BE2"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#9370DB"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#6610F2"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#9370DB"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#8A2BE2"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#5B2A91"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#9370DB"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6610F2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#6610F2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#383838"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#585858"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#7B7B7B"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#383838"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#383838"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#585858"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#585858"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7B7B7B"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#585858"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#7B7B7B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#383838"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFDEAD"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFE4B5"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FAFAD2"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFE4C4"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFF8DC"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFDEAD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFE4B5"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FAFAD2"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFF0F5"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E6E6FA"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D8BFD8"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E0FFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#E6E6FA"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFF0F5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D8BFD8"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#DDA0DD"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "panic": "grid",
+      "control": "ring"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "895f8749feaf5224426b66acfa9404ae0e9fd0949282036d661a7047be1c076f",
+  "pixelHash": "895f8749feaf5224426b66acfa9404ae0e9fd0949282036d661a7047be1c076f",
+  "jsonFile": "895f8749feaf5224426b66acfa9404ae0e9fd0949282036d661a7047be1c076f.json",
+  "svgFile": "895f8749feaf5224426b66acfa9404ae0e9fd0949282036d661a7047be1c076f.svg",
+  "createdAt": "2026-06-01T23:55:03.507586+00:00"
+}
