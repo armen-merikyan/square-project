@@ -1,0 +1,407 @@
+{
+  "id": "a9d9281176a87adce89fe01446853dc2c28172db4bbebf1b98acfab8ea9adb90",
+  "seed": "joy vs grief; order_vs_chaos; split_horizontal; orbit; flame against stairs; no_outline; hidden_vs_exposed; wave; ancient_fire | abstract variation request 78; target batch count 80",
+  "title": "Emotion Collision",
+  "reasoning": "The emotional tone of the piece oscillates between joy and grief, utilizing the 'split_horizontal' layout. The upper half displays brighter, rounded hues symbolizing joy, using yellows and oranges that evoke warmth and brightness ('joy palette'). The lower portion employs deep blues and muted purples to express grief, embodying melancholy and depth. Contrast is established where the warm joyous colors meet the cooler, heavier tones, reminiscent of a wave oscillating between calm (joy) and turbulent (grief) emotions. This arrangement visually captures the tension and dynamism of navigating through these feelings, suggesting the collision and coexistence of joy against grief. The relatively balanced placement of colors alongside strategically broken pixels introduces an intentional imperfection, representing the complexity of human emotional experience. The layout maintains over 10% negative space to avoid overwhelming the viewer, encouraging reflection between the contrasting tones.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFDB58"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB300"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF6900"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF5800"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FF3D00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFA500"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#6A5ACD"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#483D8B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#363636"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#3242A4"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#2F1C6A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#2E2A7B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2F235D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#AA8CD8"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A5778D"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#9B5A5D"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7851A1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#80569B"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4B81A8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0A8F8C"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A6B400"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F3D92D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F8E232"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F5ED78"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FCF00E"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F1B24D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#ED6C00"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#F94F00"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4C2C2B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3A3235"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#4D7F82"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2E4B4A"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#1E7A8C"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#0A2634"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#2D4B4B"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5D4C39"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#757575"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#908C8C"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#A8A8DF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D9D9FF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D39D16"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C3B091"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D9C2B5"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C5D88A"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#A0D6E9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B8DE1A"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#181818"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#0C0C0C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#2B2B2B"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4D4D4D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#707070"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#848484"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B8B8B8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "rounded",
+        "bright",
+        "spark-like"
+      ],
+      "grief": [
+        "blue-toned",
+        "heavy",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "joy": "split_screen",
+      "grief": "mirror"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "mouth",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a9d9281176a87adce89fe01446853dc2c28172db4bbebf1b98acfab8ea9adb90",
+  "pixelHash": "a9d9281176a87adce89fe01446853dc2c28172db4bbebf1b98acfab8ea9adb90",
+  "jsonFile": "a9d9281176a87adce89fe01446853dc2c28172db4bbebf1b98acfab8ea9adb90.json",
+  "svgFile": "a9d9281176a87adce89fe01446853dc2c28172db4bbebf1b98acfab8ea9adb90.svg",
+  "createdAt": "2026-06-02T16:48:58.385558+00:00"
+}

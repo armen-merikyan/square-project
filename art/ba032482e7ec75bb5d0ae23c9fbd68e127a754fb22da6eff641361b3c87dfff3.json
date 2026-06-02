@@ -1,0 +1,407 @@
+{
+  "id": "ba032482e7ec75bb5d0ae23c9fbd68e127a754fb22da6eff641361b3c87dfff3",
+  "seed": "joy vs grief; order_vs_chaos; split_horizontal; orbit; flame against stairs; no_outline; hidden_vs_exposed; wave; ancient_fire | abstract variation request 62; target batch count 80",
+  "title": "Tension Between Light and Shadow",
+  "reasoning": "This piece embodies the emotional duality of joy and grief through a contrasting palette of warm and cool tones. The yellows and oranges signify the joy, radiating from the center, while the deep blue and muted purple create a surrounding sense of grief, portraying weight and depth. The main contrast occurs horizontally, with brighter colors pushing against darker hues, symbolizing the struggle between light and dark emotions. The maze pattern on the brighter half reflects complexity and expansion, while the frame in the darker half encases the emotions, hinting at confinement. The lack of literal shapes implies the overwhelming nature of these emotions without representing them directly.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF6600"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF3300"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00004D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000099"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#6633CC"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#800080"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFCC33"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFCC66"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFCC99"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#000066"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#003366"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#003399"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF9900"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFCC33"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF3300"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF6600"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#00004D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#000066"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#003366"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF6600"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF3300"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#ACACAC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FF3300"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF9900"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000066"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#000099"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#003366"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#003399"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#00004D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#000099"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#6633CC"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#800080"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#ACACAC"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#00004D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#000066"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#003366"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#003399"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#444444"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "rounded",
+        "expanding",
+        "open"
+      ],
+      "grief": [
+        "heavy",
+        "low",
+        "drooping"
+      ]
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "joy": "maze",
+      "grief": "frame"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "corner_block",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ba032482e7ec75bb5d0ae23c9fbd68e127a754fb22da6eff641361b3c87dfff3",
+  "pixelHash": "ba032482e7ec75bb5d0ae23c9fbd68e127a754fb22da6eff641361b3c87dfff3",
+  "jsonFile": "ba032482e7ec75bb5d0ae23c9fbd68e127a754fb22da6eff641361b3c87dfff3.json",
+  "svgFile": "ba032482e7ec75bb5d0ae23c9fbd68e127a754fb22da6eff641361b3c87dfff3.svg",
+  "createdAt": "2026-06-02T16:48:19.480927+00:00"
+}
