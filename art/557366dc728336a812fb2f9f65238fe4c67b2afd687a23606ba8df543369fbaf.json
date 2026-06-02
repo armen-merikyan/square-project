@@ -1,0 +1,399 @@
+{
+  "id": "557366dc728336a812fb2f9f65238fe4c67b2afd687a23606ba8df543369fbaf",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 192; target batch count 200",
+  "title": "Control Amidst Chaos",
+  "reasoning": "This artwork captures the tension between panic and control, with contrasting areas of dense noise evoking chaos and scattered specks signifying control. The color palette reflects these emotions\u2014dark maroon and shades of pink introduce warmth and depth while gray adds a stabilizing element amid the chaos. The layout is descending, creating a 'falling pixels' effect that symbolizes the weight of emotional turmoil. The central focus, represented through lighter splashes of color, interrupts the overwhelmingly dark surrounding pixels, emphasizing the fragile stability in a chaotic context.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#D77E86"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D77E86"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#3D3137"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#D77E86"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A48187"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D77E86"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A48187"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3D3137"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3D3137"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#6C4B73"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D7C6CB"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#3D3137"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3D3137"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6C4B73"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D77E86"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#3D3137"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D7C6CB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3D3137"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D7C6CB"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D77E86"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F3E6E8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#D7C6CB"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D77E86"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#3D3137"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D77E86"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F3E6E8"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A48187"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D7C6CB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A48187"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3D3137"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#4B3B41"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D77E86"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#3C2A3A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D77E86"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#B8BBA7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C5A3B6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F3E6E8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A48187"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3D3137"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#6C4B73"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "panic": "noise",
+      "control": "rain"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "crown",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "557366dc728336a812fb2f9f65238fe4c67b2afd687a23606ba8df543369fbaf",
+  "pixelHash": "557366dc728336a812fb2f9f65238fe4c67b2afd687a23606ba8df543369fbaf",
+  "jsonFile": "557366dc728336a812fb2f9f65238fe4c67b2afd687a23606ba8df543369fbaf.json",
+  "svgFile": "557366dc728336a812fb2f9f65238fe4c67b2afd687a23606ba8df543369fbaf.svg",
+  "createdAt": "2026-06-02T22:29:07.999240+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "027dc79853b6071f28c468a47eb4d3e4e5d9201955619b4a536090e55a4b9902",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 14; target batch count 200",
+  "title": "Tension of Orbiting Control",
+  "reasoning": "This artwork embodies the emotional dichotomy of 'panic vs control' through a structured yet chaotic arrangement of colors. The palette of navy, black, single white, and dim cyan elicits feelings of loneliness and isolation, evoking the emptiness described in the seed. The top four rows represent control with a pattern of 'noise,' characterized by a stable, dense layering of dark blues and blacks, symbolizing groundedness. In contrast, the bottom four rows express panic with a 'stairs' pattern, showcasing a lighter arrangement with an irregular jump in colors, which introduces visual chaos and turmoil. The interplay between the dark, stable upper section and the bright, disrupted lower section creates a vivid emotional tension, resonating with the idea of conflicting feelings within an empty room. Broken pixels are integrated subtly, suggesting imperfections that enhance the overall narrative without overshadowing the abstract concept.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#003A70"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#005F8C"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#007A9B"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#00A0B3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#5AEDD8"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#A7E6E1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#223C55"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#2E5066"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#3B8B88"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4CB0B9"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5AC9D9"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7BE4E9"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D6F7F8"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#2D2D2D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3A4D60"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#49809F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#68A1B7"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#5B878A"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#5AD6D5"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B5E7EA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E7FBFC"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3A6173"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#3C758A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#8EDBDB"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#70B2B8"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6CC6CE"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#94E2E6"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3B3B3B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3F4D63"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#7398A3"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A3D0D4"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#AFC9CB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C3DBDB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E0F1F1"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#CDCDCD"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#12A0A7"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#056C6D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#007172"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#007D7E"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#009B80"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#006C6C"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C5E5E2"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A6D3D0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#004D4D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#007D80"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#00939A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#009DA4"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#5DC7C3"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#8DE3E0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#B1E4E6"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#E2F1F1"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#5D5D5D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#5D9294"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#73C8C8"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#7ED8D7"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#92EAE8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#C2F8F9"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#A8D6D6"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F0F9F9"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "panic": "stairs",
+      "control": "noise"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "window",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "027dc79853b6071f28c468a47eb4d3e4e5d9201955619b4a536090e55a4b9902",
+  "pixelHash": "027dc79853b6071f28c468a47eb4d3e4e5d9201955619b4a536090e55a4b9902",
+  "jsonFile": "027dc79853b6071f28c468a47eb4d3e4e5d9201955619b4a536090e55a4b9902.json",
+  "svgFile": "027dc79853b6071f28c468a47eb4d3e4e5d9201955619b4a536090e55a4b9902.svg",
+  "createdAt": "2026-06-02T22:27:00.918858+00:00"
+}

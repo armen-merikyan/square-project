@@ -1,0 +1,399 @@
+{
+  "id": "cb7088b8ee26c99c3877214eab4008805089f245036387bdf483db086b001dd8",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 99; target batch count 200",
+  "title": "Center vs Edges",
+  "reasoning": "The emotional tension of panic contrasted with the stability of control is expressed through a palette that evokes a sense of ancient warmth. The burnt orange and dark red signify the chaos and underlying fear of panic, while charcoal provides a grounding stability. Gold appears as a spark in the pattern, representing moments of clarity or hope amidst the turmoil. The layout is designed to ascend, suggesting a rising signal of hope against the weight of anxiety. Broken pixels introduce imperfections, complementing the theme of 'stable vs unstable,' reinforcing the narrative of push and pull between feelings of control and chaos.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#5A3E0E"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#E65C00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#A24700"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D4AF37"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5D2B00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#3C0D00"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F8C74D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#2B333E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#751B00"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D43517"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B57724"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F1A74E"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#1E2530"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#4F232F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#5C5E6F"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A65531"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#2A3C4E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#442F36"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#80534D"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFB83E"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#3C3F42"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#9F5F4A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#3C2B2C"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#1B1F1F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FC9E45"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B00C00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#E67A00"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#AA8B4B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#1D262E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E5D26B"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#572311"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#5A8B00"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#EDB657"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E45600"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B2662D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F7E6D9"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#47505D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#945D3C"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5B3D27"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B60000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C2A87D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B9CDFF"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#E7C0A1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#2D292C"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FBFBFB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#703721"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D4D2C5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#BE3F3F"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D7C56D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#6B6D2B"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F4BF0E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#CC9220"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#2B3B4D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#BF9C82"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#5E3B29"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#2B1500"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFD5A2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#A29788"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#5E5A6D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F5CC30"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7C5B3E"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#0A0E0F"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "panic": "maze",
+      "control": "flame"
+    },
+    "edgeStyle": "right_weighted",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "line",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "cb7088b8ee26c99c3877214eab4008805089f245036387bdf483db086b001dd8",
+  "pixelHash": "cb7088b8ee26c99c3877214eab4008805089f245036387bdf483db086b001dd8",
+  "jsonFile": "cb7088b8ee26c99c3877214eab4008805089f245036387bdf483db086b001dd8.json",
+  "svgFile": "cb7088b8ee26c99c3877214eab4008805089f245036387bdf483db086b001dd8.svg",
+  "createdAt": "2026-06-02T22:28:08.296041+00:00"
+}

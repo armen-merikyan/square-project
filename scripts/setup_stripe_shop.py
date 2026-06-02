@@ -33,6 +33,7 @@ MANIFEST_PATH = ART_DIR / "manifest.json"
 PAYMENT_LINKS_JS_PREFIX = "window.SQUARE_PROJECT_PAYMENT_LINKS = "
 STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
 STRIPE_SYNC_CACHE_VERSION = 1
+STRIPE_METADATA_SCHEMA_VERSION = 2
 DEFAULT_SITE_URL = "https://mysquareart.com"
 FRAME_PREVIEW_STAGE_SIZE = 1500
 FRAME_PREVIEW_ART_X = FRAME_PREVIEW_STAGE_SIZE / 6
@@ -205,6 +206,7 @@ def stripe_sync_signature() -> dict:
         }
 
     return {
+        "metadata_schema_version": STRIPE_METADATA_SCHEMA_VERSION,
         "site_url": site_url(),
         "frame_colors": FRAME_COLORS,
         "variants": variant_signature,
@@ -253,7 +255,12 @@ def changed_artwork_ids(ids: list[str], cache: dict, sync_signature: dict) -> tu
         entry = cached_artworks.get(art_id) if isinstance(cached_artworks, dict) else None
         links = entry.get("links") if isinstance(entry, dict) else None
 
-        if isinstance(entry, dict) and valid_cached_links(links):
+        if (
+            isinstance(entry, dict)
+            and entry.get("signature") == signature
+            and entry.get("source") != "payment-links.js"
+            and valid_cached_links(links)
+        ):
             cached_links[art_id] = links
         else:
             changed_ids.append(art_id)
@@ -643,31 +650,69 @@ def image_url_for_variant(art: dict, variant: str | None = None, frame_color: st
     return art["image_url"]
 
 
-def art_metadata(art: dict, variant: str | None = None, frame_color: str | None = None) -> dict[str, str]:
-    image_url = image_url_for_variant(art, variant, frame_color)
+def fulfillment_id(art: dict, variant: str | None = None, frame_color: str | None = None) -> str:
+    return f"art_{art['id']}_variant_{variant or 'unknown'}_frame_{frame_color or 'none'}"
+
+
+def fulfillment_metadata_values(
+    art: dict,
+    variant: str | None = None,
+    frame_color: str | None = None,
+    product_id: str | None = None,
+    price_id: str | None = None,
+) -> dict[str, str]:
     metadata = {
-        "metadata[app]": stripe_metadata_value("square_project"),
-        "metadata[kind]": stripe_metadata_value("artwork"),
-        "metadata[site]": stripe_metadata_value(site_url()),
-        "metadata[art_id]": stripe_metadata_value(art["id"]),
-        "metadata[art_title]": stripe_metadata_value(art["title"]),
-        "metadata[art_seed]": stripe_metadata_value(art["seed"]),
-        "metadata[art_colors]": stripe_metadata_value(",".join(art["colors"])),
-        "metadata[art_image_url]": stripe_metadata_value(image_url),
-        "metadata[art_json_url]": stripe_metadata_value(art["json_url"]),
+        "app": "square_project",
+        "kind": "artwork",
+        "site": site_url(),
+        "art_id": art["id"],
+        "art_title": art["title"],
+        "art_seed": art["seed"],
+        "art_colors": ",".join(art["colors"]),
+        "art_image_url": image_url_for_variant(art, variant, frame_color),
+        "art_json_url": art["json_url"],
+        "variant": variant or "",
+        "frame_color": frame_color or "none",
+        "frame_color_label": FRAME_COLORS.get(frame_color or "", "None"),
+        "fulfillment_id": fulfillment_id(art, variant, frame_color),
     }
 
-    if variant:
-        metadata["metadata[variant]"] = stripe_metadata_value(variant)
+    if product_id:
+        metadata["stripe_product_id"] = product_id
 
-    if frame_color:
-        metadata["metadata[frame_color]"] = stripe_metadata_value(frame_color)
-        metadata["metadata[frame_color_label]"] = stripe_metadata_value(FRAME_COLORS.get(frame_color, frame_color))
+    if price_id:
+        metadata["stripe_price_id"] = price_id
 
     return metadata
 
 
-def product_fields(art: dict, variant: str | None = None, frame_color: str | None = None) -> dict[str, str]:
+def prefixed_metadata_fields(prefix: str, metadata: dict[str, str]) -> dict[str, str]:
+    return {
+        f"{prefix}[{key}]": stripe_metadata_value(value)
+        for key, value in metadata.items()
+        if value != ""
+    }
+
+
+def art_metadata(
+    art: dict,
+    variant: str | None = None,
+    frame_color: str | None = None,
+    product_id: str | None = None,
+    price_id: str | None = None,
+) -> dict[str, str]:
+    image_url = image_url_for_variant(art, variant, frame_color)
+    metadata = fulfillment_metadata_values(art, variant, frame_color, product_id, price_id)
+    metadata["art_image_url"] = image_url
+    return prefixed_metadata_fields("metadata", metadata)
+
+
+def product_fields(
+    art: dict,
+    variant: str | None = None,
+    frame_color: str | None = None,
+    product_id: str | None = None,
+) -> dict[str, str]:
     description = art["reasoning"][:480] or f"Square Project artwork {art['id']}."
     name = art["title"][:250]
 
@@ -678,12 +723,26 @@ def product_fields(art: dict, variant: str | None = None, frame_color: str | Non
         "name": name,
         "description": description,
         "images[0]": image_url_for_variant(art, variant, frame_color),
-        **art_metadata(art, variant, frame_color),
+        **art_metadata(art, variant, frame_color, product_id),
     }
 
 
 def update_product_metadata(product_id: str, art: dict, variant: str | None = None, frame_color: str | None = None) -> None:
-    stripe_post(f"products/{product_id}", product_fields(art, variant, frame_color))
+    stripe_post(f"products/{product_id}", product_fields(art, variant, frame_color, product_id))
+
+
+def update_price_metadata(
+    price_id: str,
+    art: dict,
+    variant: str,
+    config: dict,
+    product_id: str,
+    frame_color: str | None = None,
+) -> None:
+    stripe_post(f"prices/{price_id}", {
+        **art_metadata(art, variant, frame_color, product_id, price_id),
+        **metadata_fields("metadata", config["metadata"]),
+    })
 
 
 def payment_link_metadata_fields(
@@ -691,27 +750,25 @@ def payment_link_metadata_fields(
     variant: str,
     config: dict,
     lookup_key: str,
+    product_id: str,
+    price_id: str,
     frame_color: str | None = None,
 ) -> dict[str, str]:
-    fields = {
-        "metadata[app]": stripe_metadata_value("square_project"),
-        "metadata[kind]": stripe_metadata_value("artwork_order"),
-        "metadata[art_id]": stripe_metadata_value(art["id"]),
-        "metadata[art_title]": stripe_metadata_value(art["title"]),
-        "metadata[variant]": stripe_metadata_value(variant),
-        "metadata[lookup_key]": stripe_metadata_value(lookup_key),
-        "metadata[order_reference_format]": stripe_metadata_value("art_<art_id>_variant_<variant>_frame_<frame_color>"),
-        "metadata[custom_field_mode]": stripe_metadata_value("none"),
-    }
-
-    if frame_color:
-        fields["metadata[frame_color]"] = stripe_metadata_value(frame_color)
-        fields["metadata[frame_color_label]"] = stripe_metadata_value(FRAME_COLORS.get(frame_color, frame_color))
+    metadata = fulfillment_metadata_values(art, variant, frame_color, product_id, price_id)
+    metadata.update({
+        "kind": "artwork_order",
+        "lookup_key": lookup_key,
+        "order_reference_format": "art_<art_id>_variant_<variant>_frame_<frame_color>",
+        "custom_field_mode": "none",
+    })
 
     for key, value in config["metadata"].items():
-        fields[f"metadata[{key}]"] = stripe_metadata_value(value)
+        metadata[key] = value
 
-    return fields
+    return {
+        **prefixed_metadata_fields("metadata", metadata),
+        **prefixed_metadata_fields("payment_intent_data[metadata]", metadata),
+    }
 
 
 def update_payment_link_metadata(
@@ -720,11 +777,13 @@ def update_payment_link_metadata(
     variant: str,
     config: dict,
     lookup_key: str,
+    product_id: str,
+    price_id: str,
     frame_color: str | None = None,
 ) -> None:
     stripe_post(
         f"payment_links/{payment_link_id}",
-        payment_link_metadata_fields(art, variant, config, lookup_key, frame_color),
+        payment_link_metadata_fields(art, variant, config, lookup_key, product_id, price_id, frame_color),
     )
 
 
@@ -916,6 +975,7 @@ def main() -> None:
                     product = stripe_post("products", product_fields(art, variant, frame_color))
                     product_id = product["id"]
                     last_product_id = product_id
+                    update_product_metadata(product_id, art, variant, frame_color)
 
                 if not price:
                     price = stripe_post("prices", {
@@ -924,25 +984,45 @@ def main() -> None:
                         "product": product_id,
                         "nickname": config["nickname"],
                         "lookup_key": price_lookup_key,
-                        **art_metadata(art, variant, frame_color),
+                        **art_metadata(art, variant, frame_color, product_id),
                         **metadata_fields("metadata", config["metadata"]),
                     })
                     with cache_lock:
                         prices_by_lookup[price_lookup_key] = price
+                    update_price_metadata(price["id"], art, variant, config, product_id, frame_color)
+                else:
+                    update_price_metadata(price["id"], art, variant, config, product_id, frame_color)
 
                 link_lookup_key = payment_link_lookup_key(config, art_id, frame_color)
                 with cache_lock:
                     payment_link = links_by_lookup_key.get(link_lookup_key)
 
                 if payment_link:
-                    update_payment_link_metadata(payment_link["id"], art, variant, config, link_lookup_key, frame_color)
+                    update_payment_link_metadata(
+                        payment_link["id"],
+                        art,
+                        variant,
+                        config,
+                        link_lookup_key,
+                        product_id,
+                        price["id"],
+                        frame_color,
+                    )
                 else:
                     fields = {
                         "line_items[0][price]": price["id"],
                         "line_items[0][quantity]": "1",
                         "shipping_address_collection[allowed_countries][0]": "US",
                         "billing_address_collection": "auto",
-                        **payment_link_metadata_fields(art, variant, config, link_lookup_key, frame_color),
+                        **payment_link_metadata_fields(
+                            art,
+                            variant,
+                            config,
+                            link_lookup_key,
+                            product_id,
+                            price["id"],
+                            frame_color,
+                        ),
                     }
 
                     payment_link = stripe_post("payment_links", fields)

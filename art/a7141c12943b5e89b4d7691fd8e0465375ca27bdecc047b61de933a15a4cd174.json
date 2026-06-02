@@ -1,0 +1,399 @@
+{
+  "id": "a7141c12943b5e89b4d7691fd8e0465375ca27bdecc047b61de933a15a4cd174",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 120; target batch count 200",
+  "title": "Balance in Chaos",
+  "reasoning": "This composition embodies the nuances of panic and control, merging a vibrant palette representing warmth and optimism with cool, muted tones that convey stability and weight. The central 4x4 area is filled with a burst of striated colors, suggesting movement and conflict, while the outer borders maintain a calmer, more uniform tone, creating a frame for the chaos within. The combination of structured stripes against scattered broken pixels reflects the tension of trying to maintain control amid disruption.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFA500"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#CED2D2"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#555555"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F5DEB3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#B22222"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#404040"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#333333"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFFACD"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#DAA520"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#777777"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFF0F5"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#DA70D6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#656565"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF6347"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF4500"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#7B7B7B"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#888888"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFE4B5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#32CD32"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF4500"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFA07A"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F5FFFA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#696969"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#777777"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#222222"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "burst",
+    "patterns": {
+      "panic": "stripes",
+      "control": "target"
+    },
+    "edgeStyle": "center_heavy",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "line",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a7141c12943b5e89b4d7691fd8e0465375ca27bdecc047b61de933a15a4cd174",
+  "pixelHash": "a7141c12943b5e89b4d7691fd8e0465375ca27bdecc047b61de933a15a4cd174",
+  "jsonFile": "a7141c12943b5e89b4d7691fd8e0465375ca27bdecc047b61de933a15a4cd174.json",
+  "svgFile": "a7141c12943b5e89b4d7691fd8e0465375ca27bdecc047b61de933a15a4cd174.svg",
+  "createdAt": "2026-06-02T22:28:17.001349+00:00"
+}

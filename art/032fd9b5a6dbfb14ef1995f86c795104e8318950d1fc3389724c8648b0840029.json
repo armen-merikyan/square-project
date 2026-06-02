@@ -1,0 +1,399 @@
+{
+  "id": "032fd9b5a6dbfb14ef1995f86c795104e8318950d1fc3389724c8648b0840029",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 116; target batch count 200",
+  "title": "Tension in the Void",
+  "reasoning": "This abstract composition captures the emotional struggle between panic and control, expressed through contrasting color choices and placements. The bright yellows and oranges signify sparks of activity and moments of clarity, while the deep blues and muted purples embody the weight of uncertainty and solitude in an empty space. The diagonal flow draws the eye from the bright disposition of activity to the darker areas, emphasizing the instability and tension within the piece. Each color block is arranged to create an unease and dynamism, as if light is struggling against the heavy dark masses, symbolizing internal confrontations and emotional echoes throughout the layout. The use of broken pixels introduces imperfections, adding to the chaotic element of panic within an overwhelming void of control, matching the seed's themes.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#F5AB00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F58B00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F56A00"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#567B9A"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#2B3346"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#1E2234"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#272728"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#383838"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFF300"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F2C94C"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#2B3445"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#3F3A44"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4A5762"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3E4E6D"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#404B6B"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#303530"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E95E27"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#8B4D88"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#7C6D9A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#518329"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#283535"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4D2B5C"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#497078"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#33475E"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFC5A0"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FA801C"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6F56F9"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#4F5E78"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#292A2F"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#1B1C1E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#111D22"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0D141E"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFF0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#DEF3FF"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#300B0F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6F9BBF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#44828D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#475053"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#545E64"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#373843"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FCFCFD"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#EBEBEC"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D8D9DC"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C9E0F0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E0EAEF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#A8C4DB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#ADD9E1"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#3D6769"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF6347"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#DA70D6"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#303C42"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#54544A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#4B4F4D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5B5F5C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3F434B"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E1E1E1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C2C2C2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#999999"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#E8E8E8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#B9B9B9"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#ABABAB"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "panic": "spark",
+      "control": "frame"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "half_square",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "032fd9b5a6dbfb14ef1995f86c795104e8318950d1fc3389724c8648b0840029",
+  "pixelHash": "032fd9b5a6dbfb14ef1995f86c795104e8318950d1fc3389724c8648b0840029",
+  "jsonFile": "032fd9b5a6dbfb14ef1995f86c795104e8318950d1fc3389724c8648b0840029.json",
+  "svgFile": "032fd9b5a6dbfb14ef1995f86c795104e8318950d1fc3389724c8648b0840029.svg",
+  "createdAt": "2026-06-02T22:28:17.515728+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "c04080fe2b7ecac4beb575caa7df0f58a154d252b089cf62f8344484f337a24a",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 193; target batch count 200",
+  "title": "Tension Between Light and Dark",
+  "reasoning": "This artwork conveys the duality of 'panic' and 'control' through contrasting warmer and cooler tones. The palette combines gentle pinks with more assertive reds, set against a gray background, to evoke both emotion and restraint. The energetic 'flame' pattern on one side, symbolizing chaos, clashes with the more structured 'ring' pattern representing control. A few broken pixels create a sense of imperfection, emphasizing the struggle between these emotions within the canvas's composition. The layout allows for a visual argument, with negative space balancing the intense colors, guiding the eye through a narrative of emotional labor and unresolved tension.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF3D4E"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D8BBA7"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#A17768"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF9B87"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#A35961"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF4C3B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#A17768"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B2636C"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#E39CA8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#8B0000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D6D6D6"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFB1B3"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A30000"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A17768"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#C8C8C8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF3D4E"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D8BBA7"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D6D6D6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFB1B3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#C8C8C8"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF9B87"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF4C3B"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A35961"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C8C8C8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A30000"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B2636C"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#BB8B90"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D8BBA7"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A17768"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FF4C3B"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A30000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E39CA8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFB1B3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C8C8C8"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A30000"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#B2636C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D6D6D6"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FF9B87"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FF3D4E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8B0000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#A17768"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#E39CA8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "scatter",
+    "patterns": {
+      "panic": "ring",
+      "control": "flame"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "star",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c04080fe2b7ecac4beb575caa7df0f58a154d252b089cf62f8344484f337a24a",
+  "pixelHash": "c04080fe2b7ecac4beb575caa7df0f58a154d252b089cf62f8344484f337a24a",
+  "jsonFile": "c04080fe2b7ecac4beb575caa7df0f58a154d252b089cf62f8344484f337a24a.json",
+  "svgFile": "c04080fe2b7ecac4beb575caa7df0f58a154d252b089cf62f8344484f337a24a.svg",
+  "createdAt": "2026-06-02T22:29:14.756393+00:00"
+}

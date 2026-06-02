@@ -1,0 +1,399 @@
+{
+  "id": "b9649e9c9e65b70e5bf31e140b0119306e7c73366b741b56c6d9cd7b6ebb1b50",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 41; target batch count 200",
+  "title": "Echo of Tension",
+  "reasoning": "This piece captures the emotional contrast between panic and control through an alternating pattern of chaotic rain and structured checker, reflecting the underlying tension of the seed. The color palette, 'broken_memory', focuses on sepia and faded tones to evoke nostalgia and instability, suggesting an empty room caught between safety and anxiety. The main collision occurs in the middle of the piece, where the orderly checker pattern intersects with the erratic rain pattern, representing the struggle between feeling grounded and lost.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#6A4E4D"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#9E6B6A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#C0A67C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#E0D9C1"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#E3E6C6"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#94A8B8"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#3F5768"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#8A7968"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#B5A68D"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C2BCA0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D0C4B9"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#AAB7AE"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#697C9A"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2F465A"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#0F2C33"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#6A4E4D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#9E6B6A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#C0A67C"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#E0D9C1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E3E6C6"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#94A8B8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#3F5768"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#8A7968"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#B5A68D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C2BCA0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D0C4B9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#AAB7AE"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#697C9A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#2F465A"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0F2C33"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#AAB7AE"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#E3E6C6"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C0A67C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6A4E4D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D0C4B9"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F2E6C3"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B5A68D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#9E6B6A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#3F5768"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#94A8B8"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#7C8A9A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F4F4F4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E0D9C1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C0A67C"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#6A4E4D"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#9E6B6A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D0C4B9"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#8A7968"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F4F4F4"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E3E6C6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#AAB7AE"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#697C9A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3F5768"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#2A2A2A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#2F465A"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#0F2C33"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#3F5768"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#6A4E4D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8A7968"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D0C4B9"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B5A68D"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "panic": "rain",
+      "control": "checker"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "crown",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "b9649e9c9e65b70e5bf31e140b0119306e7c73366b741b56c6d9cd7b6ebb1b50",
+  "pixelHash": "b9649e9c9e65b70e5bf31e140b0119306e7c73366b741b56c6d9cd7b6ebb1b50",
+  "jsonFile": "b9649e9c9e65b70e5bf31e140b0119306e7c73366b741b56c6d9cd7b6ebb1b50.json",
+  "svgFile": "b9649e9c9e65b70e5bf31e140b0119306e7c73366b741b56c6d9cd7b6ebb1b50.svg",
+  "createdAt": "2026-06-02T22:27:23.851722+00:00"
+}

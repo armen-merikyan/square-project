@@ -1,0 +1,399 @@
+{
+  "id": "e23bec532e59e2a1b4d02f942d529719982c620652dff385dc9e159f960fe317",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 28; target batch count 200",
+  "title": "Weight of Emotion",
+  "reasoning": "This composition conveys a tension between control and panic, highlighted by the clash of a dense dark palette against a few vibrant accents. The colors reflect the 'love_betrayal' theme, with dark maroon and gray representing heavy emotions, while pink and red provide sharp contrast. The layout descends like raindrops, creating an unsettling flow that encapsulates the feelings of instability and weight. The broken pixel elements introduce irregularity, emphasizing the theme of disruption within control.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2D0F19"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#4A192C"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#831A3D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6E0E2C"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#2A2D31"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#2E1A2A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FAF8F2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D67A8A"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#212C31"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#23303A"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#4D869A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#5E5A66"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F1D7DB"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#CC4D5F"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#521D28"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D47A85"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A66A8A"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#78476A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6D4A3D"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F0A2BB"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D7CCDB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#2E1A2A"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#1B1B1B"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#390A16"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#A33C51"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#A86D84"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B55C72"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#474B4C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5B1734"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#D0C6C8"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E1B1B8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4B0F2B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3B0E1B"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#9A3F55"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A54B66"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#7E5C6E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#2C1B22"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#DBB1B5"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFF8FB"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#0A3D39"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#191C1E"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#AB7A8D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#BC788D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#2C2B2A"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E3C3CD"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FAF4F7"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A54A58"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#42726B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#7D2D35"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#2B2D2C"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#2C267D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FC9CA6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#5A1F26"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F9E7E9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#D2B3BB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#1B0C12"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D13651"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E8A2A7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#954356"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4A2D3C"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D3B7B5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F7E7E6"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#4C3B3B"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "panic": "noise",
+      "control": "checker"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "e23bec532e59e2a1b4d02f942d529719982c620652dff385dc9e159f960fe317",
+  "pixelHash": "e23bec532e59e2a1b4d02f942d529719982c620652dff385dc9e159f960fe317",
+  "jsonFile": "e23bec532e59e2a1b4d02f942d529719982c620652dff385dc9e159f960fe317.json",
+  "svgFile": "e23bec532e59e2a1b4d02f942d529719982c620652dff385dc9e159f960fe317.svg",
+  "createdAt": "2026-06-02T22:27:12.752912+00:00"
+}

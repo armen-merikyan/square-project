@@ -1,0 +1,399 @@
+{
+  "id": "7e9e6327f9b786e3ebfa92a4668ef4d453c91f7f1a2af880e6adf983db7e8f88",
+  "seed": "panic vs control; inside_vs_outside; empty_room; orbit; spark against broken_dots; top_weighted; stable_vs_unstable; arrow; love_betrayal | abstract variation request 44; target batch count 200",
+  "title": "Tension in Orbit",
+  "reasoning": "This composition embodies the emotional conflict of panic versus control through a palette that balances warm yellows and oranges against deep blues and muted purples. The placement of the bright colors in the top left resonates with 'control,' suggesting warmth and intention, while the deep blue and muted tones symbolize the 'panic' spilling from the corners, creating an unstable sense of space. The mixture of crack patterns representing control and split-screen patterns representing panic highlights the duality inherent in the seed themes. There are jagged edges and broken pixels to enhance the feeling of interruption and imperfection, creating a rhythm of tension that resonates throughout.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFA500"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#800080"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFA500"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#0000FF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000080"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#800080"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFA500"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#0000FF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#000080"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFFFE0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0000FF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF69B4"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#808080"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#0000FF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#800080"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFF8DC"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFA500"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFD700"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFB6C1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#800080"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#0000FF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFFFE0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#ADFF2F"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#00FA9A"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#000080"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#800080"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFA500"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#0000FF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFEFD5"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#0000FF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#ADD8E6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFD700"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#800080"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#20B2AA"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FAF0E6"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFE0"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000080"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#800080"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFA500"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFD700"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "panic",
+      "control"
+    ],
+    "emotionMoods": {
+      "panic": [],
+      "control": []
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "panic": "split_screen",
+      "control": "crack"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "single_vs_many",
+    "shapeSeed": "tiny_cross",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7e9e6327f9b786e3ebfa92a4668ef4d453c91f7f1a2af880e6adf983db7e8f88",
+  "pixelHash": "7e9e6327f9b786e3ebfa92a4668ef4d453c91f7f1a2af880e6adf983db7e8f88",
+  "jsonFile": "7e9e6327f9b786e3ebfa92a4668ef4d453c91f7f1a2af880e6adf983db7e8f88.json",
+  "svgFile": "7e9e6327f9b786e3ebfa92a4668ef4d453c91f7f1a2af880e6adf983db7e8f88.svg",
+  "createdAt": "2026-06-02T22:27:28.566121+00:00"
+}
