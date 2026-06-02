@@ -74,6 +74,7 @@ const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
+const GALLERY_PAGE_SIZE_COOKIE = "square_gallery_page_size";
 const ALL_ARTWORK_CATEGORY_ID = "all-artwork";
 let galleryRecords = [];
 let filteredRecords = [];
@@ -141,8 +142,11 @@ function setColorFiltersVisible(visible, shouldSave = true) {
   colorFiltersVisible = visible;
   galleryWorkspace.classList.toggle("filters-hidden", !visible);
   galleryFilters.toggleAttribute("hidden", !visible);
-  toggleColorFilters.textContent = visible ? "Hide filters" : "Show filters";
+  toggleColorFilters.classList.toggle("filter-toggle-visible", visible);
+  toggleColorFilters.classList.toggle("filter-toggle-hidden", !visible);
   toggleColorFilters.setAttribute("aria-expanded", String(visible));
+  toggleColorFilters.setAttribute("aria-label", visible ? "Hide color filters" : "Show color filters");
+  toggleColorFilters.title = visible ? "Hide color filters" : "Show color filters";
 
   if (shouldSave) {
     savePreference(FILTER_VISIBILITY_COOKIE, visible ? "shown" : "hidden");
@@ -187,6 +191,19 @@ function setGalleryImageSize(value, shouldSave = true) {
 
   if (shouldSave) {
     savePreference(GALLERY_IMAGE_SIZE_COOKIE, String(galleryImageSizeValue));
+  }
+}
+
+function normalizePageSize(value) {
+  const normalized = Number(value);
+  return PAGE_SIZE_OPTIONS.includes(normalized) ? normalized : PAGE_SIZE_OPTIONS[0];
+}
+
+function setPageSize(value, shouldSave = true) {
+  pageSize = normalizePageSize(value);
+
+  if (shouldSave) {
+    savePreference(GALLERY_PAGE_SIZE_COOKIE, String(pageSize));
   }
 }
 
@@ -1432,7 +1449,7 @@ function renderPagination(totalPages) {
     pageSizeSelect.appendChild(optionElement);
   });
   pageSizeSelect.addEventListener("change", (event) => {
-    pageSize = Number(event.target.value);
+    setPageSize(event.target.value);
     currentPage = 1;
     renderCurrentPage();
   });
@@ -1973,6 +1990,7 @@ artInspector.addEventListener("close", () => {
 
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
 setGalleryImageSize(readPreference(GALLERY_IMAGE_SIZE_COOKIE) || galleryImageSize.value, false);
+setPageSize(readPreference(GALLERY_PAGE_SIZE_COOKIE), false);
 const savedSimilarity = Number(readPreference(COLOR_SIMILARITY_COOKIE));
 
 if (Number.isFinite(savedSimilarity)) {
