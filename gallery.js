@@ -64,9 +64,8 @@ const clearColorFilters = document.querySelector("#clearColorFilters");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
 const galleryFilters = document.querySelector("#galleryFilters");
 const toggleColorFilters = document.querySelector("#toggleColorFilters");
-const galleryAutoplayPlay = document.querySelector("#galleryAutoplayPlay");
-const galleryAutoplayStop = document.querySelector("#galleryAutoplayStop");
-const galleryAutoplaySpeed = document.querySelector("#galleryAutoplaySpeed");
+const galleryAutoplayToggle = document.querySelector("#galleryAutoplayToggle");
+const galleryAutoplaySpeedOptions = document.querySelectorAll("[data-autoplay-speed]");
 const colorSimilarity = document.querySelector("#colorSimilarity");
 const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 
@@ -76,9 +75,9 @@ const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const AUTOPLAY_PAGE_TRANSITION = 180;
 const AUTOPLAY_SPEED_OPTIONS = {
-  slow: 9000,
-  normal: 6500,
-  fast: 3500
+  "1x": 9000,
+  "2x": 6500,
+  "3x": 3500
 };
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
@@ -114,7 +113,7 @@ let allArtworkObserver = null;
 let allArtworkSentinel = null;
 let galleryAutoplayActive = false;
 let galleryAutoplayTimer = null;
-let galleryAutoplaySpeedValue = "normal";
+let galleryAutoplaySpeedValue = "1x";
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -221,12 +220,16 @@ function setPageSize(value, shouldSave = true) {
 }
 
 function normalizeAutoplaySpeed(value) {
-  return Object.hasOwn(AUTOPLAY_SPEED_OPTIONS, value) ? value : "normal";
+  return Object.hasOwn(AUTOPLAY_SPEED_OPTIONS, value) ? value : "1x";
 }
 
 function setGalleryAutoplaySpeed(value, shouldSave = true) {
   galleryAutoplaySpeedValue = normalizeAutoplaySpeed(value);
-  galleryAutoplaySpeed.value = galleryAutoplaySpeedValue;
+  galleryAutoplaySpeedOptions.forEach((button) => {
+    const isActive = button.dataset.autoplaySpeed === galleryAutoplaySpeedValue;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
 
   if (shouldSave) {
     savePreference(GALLERY_AUTOPLAY_SPEED_COOKIE, galleryAutoplaySpeedValue);
@@ -246,9 +249,21 @@ function getTotalPages() {
 }
 
 function updateGalleryAutoplayControls(totalPages = getTotalPages()) {
-  galleryAutoplayPlay.disabled = galleryAutoplayActive || totalPages <= 1;
-  galleryAutoplayStop.disabled = !galleryAutoplayActive;
-  galleryAutoplaySpeed.disabled = totalPages <= 1;
+  const isDisabled = totalPages <= 1;
+  galleryAutoplayToggle.disabled = isDisabled;
+  galleryAutoplayToggle.classList.toggle("is-playing", galleryAutoplayActive);
+  galleryAutoplayToggle.setAttribute("aria-pressed", String(galleryAutoplayActive));
+  galleryAutoplayToggle.setAttribute(
+    "aria-label",
+    galleryAutoplayActive ? "Stop automatic page browsing" : "Play automatic page browsing"
+  );
+  galleryAutoplayToggle.title = galleryAutoplayActive
+    ? "Stop automatic page browsing"
+    : "Play automatic page browsing";
+
+  galleryAutoplaySpeedOptions.forEach((button) => {
+    button.disabled = isDisabled;
+  });
 }
 
 function clearGalleryAutoplayTimer() {
@@ -2079,16 +2094,19 @@ colorSimilarity.addEventListener("input", () => {
 toggleColorFilters.addEventListener("click", () => {
   setColorFiltersVisible(!colorFiltersVisible);
 });
-galleryAutoplayPlay.addEventListener("click", () => {
-  startGalleryAutoplay();
+galleryAutoplayToggle.addEventListener("click", () => {
+  if (galleryAutoplayActive) {
+    stopGalleryAutoplay();
+  } else {
+    startGalleryAutoplay();
+  }
+
   renderCurrentPage();
 });
-galleryAutoplayStop.addEventListener("click", () => {
-  stopGalleryAutoplay();
-  renderCurrentPage();
-});
-galleryAutoplaySpeed.addEventListener("change", () => {
-  setGalleryAutoplaySpeed(galleryAutoplaySpeed.value);
+galleryAutoplaySpeedOptions.forEach((button) => {
+  button.addEventListener("click", () => {
+    setGalleryAutoplaySpeed(button.dataset.autoplaySpeed);
+  });
 });
 clearColorFilters.addEventListener("click", () => {
   includedColorSeeds.clear();
@@ -2115,7 +2133,7 @@ artInspector.addEventListener("close", () => {
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
 setGalleryImageSize(readPreference(GALLERY_IMAGE_SIZE_COOKIE) || galleryImageSize.value, false);
 setPageSize(readPreference(GALLERY_PAGE_SIZE_COOKIE), false);
-setGalleryAutoplaySpeed(readPreference(GALLERY_AUTOPLAY_SPEED_COOKIE) || galleryAutoplaySpeed.value, false);
+setGalleryAutoplaySpeed(readPreference(GALLERY_AUTOPLAY_SPEED_COOKIE), false);
 const savedSimilarity = Number(readPreference(COLOR_SIMILARITY_COOKIE));
 
 if (Number.isFinite(savedSimilarity)) {

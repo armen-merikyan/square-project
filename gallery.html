@@ -128,31 +128,20 @@
                 </button>
                 <div class="gallery-autoplay" aria-label="Automatic page browsing">
                   <button
-                    class="gallery-autoplay-button gallery-autoplay-play"
-                    id="galleryAutoplayPlay"
+                    class="gallery-autoplay-toggle"
+                    id="galleryAutoplayToggle"
                     type="button"
                     aria-label="Play automatic page browsing"
+                    aria-pressed="false"
+                    title="Play automatic page browsing"
                     disabled
                   >
-                    Play
                   </button>
-                  <button
-                    class="gallery-autoplay-button gallery-autoplay-stop"
-                    id="galleryAutoplayStop"
-                    type="button"
-                    aria-label="Stop automatic page browsing"
-                    disabled
-                  >
-                    Stop
-                  </button>
-                  <label class="gallery-autoplay-speed">
-                    <span>Speed</span>
-                    <select id="galleryAutoplaySpeed" aria-label="Automatic browsing speed">
-                      <option value="slow">Slow</option>
-                      <option value="normal" selected>Normal</option>
-                      <option value="fast">Fast</option>
-                    </select>
-                  </label>
+                  <div class="gallery-autoplay-speed" role="group" aria-label="Automatic browsing speed">
+                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="1x" aria-pressed="true">1x</button>
+                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="2x" aria-pressed="false">2x</button>
+                    <button class="gallery-autoplay-speed-option" type="button" data-autoplay-speed="3x" aria-pressed="false">3x</button>
+                  </div>
                 </div>
                 <output id="galleryCount" class="visually-hidden" aria-live="polite">Loading</output>
               </div>
