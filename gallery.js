@@ -71,6 +71,8 @@ const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
 const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
+const AUTOPLAY_PAGE_INTERVAL = 4200;
+const AUTOPLAY_PAGE_TRANSITION = 180;
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
@@ -102,6 +104,8 @@ let allArtworkNextCategoryIndex = 0;
 let allArtworkLoading = false;
 let allArtworkObserver = null;
 let allArtworkSentinel = null;
+let galleryAutoplayActive = false;
+let galleryAutoplayTimer = null;
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -205,6 +209,61 @@ function setPageSize(value, shouldSave = true) {
   if (shouldSave) {
     savePreference(GALLERY_PAGE_SIZE_COOKIE, String(pageSize));
   }
+}
+
+function getTotalPages() {
+  return Math.max(1, Math.ceil(filteredRecords.length / pageSize));
+}
+
+function clearGalleryAutoplayTimer() {
+  if (galleryAutoplayTimer) {
+    window.clearTimeout(galleryAutoplayTimer);
+    galleryAutoplayTimer = null;
+  }
+}
+
+function stopGalleryAutoplay() {
+  galleryAutoplayActive = false;
+  clearGalleryAutoplayTimer();
+  artGrid.classList.remove("is-autoplay-advance");
+}
+
+function scheduleGalleryAutoplay(totalPages = getTotalPages()) {
+  clearGalleryAutoplayTimer();
+
+  if (!galleryAutoplayActive || totalPages <= 1) {
+    return;
+  }
+
+  galleryAutoplayTimer = window.setTimeout(() => {
+    const latestTotalPages = getTotalPages();
+
+    if (!galleryAutoplayActive || latestTotalPages <= 1) {
+      stopGalleryAutoplay();
+      renderCurrentPage();
+      return;
+    }
+
+    artGrid.classList.add("is-autoplay-advance");
+    window.setTimeout(() => {
+      if (!galleryAutoplayActive) {
+        return;
+      }
+
+      currentPage = currentPage >= latestTotalPages ? 1 : currentPage + 1;
+      renderCurrentPage();
+    }, AUTOPLAY_PAGE_TRANSITION);
+  }, AUTOPLAY_PAGE_INTERVAL);
+}
+
+function startGalleryAutoplay(totalPages = getTotalPages()) {
+  if (totalPages <= 1) {
+    stopGalleryAutoplay();
+    return;
+  }
+
+  galleryAutoplayActive = true;
+  scheduleGalleryAutoplay(totalPages);
 }
 
 function stopAllArtworkObserver() {
@@ -1455,6 +1514,34 @@ function renderPagination(totalPages) {
   });
   pageSizeLabel.append(pageSizeText, pageSizeSelect);
 
+  const autoplayControls = document.createElement("div");
+  autoplayControls.className = "pagination-autoplay";
+  autoplayControls.setAttribute("aria-label", "Automatic page browsing");
+
+  const playButton = document.createElement("button");
+  playButton.type = "button";
+  playButton.className = "pagination-autoplay-button pagination-autoplay-play";
+  playButton.textContent = "Play";
+  playButton.setAttribute("aria-label", "Play automatic page browsing");
+  playButton.disabled = galleryAutoplayActive || totalPages <= 1;
+  playButton.addEventListener("click", () => {
+    startGalleryAutoplay(totalPages);
+    renderCurrentPage();
+  });
+
+  const stopButton = document.createElement("button");
+  stopButton.type = "button";
+  stopButton.className = "pagination-autoplay-button pagination-autoplay-stop";
+  stopButton.textContent = "Stop";
+  stopButton.setAttribute("aria-label", "Stop automatic page browsing");
+  stopButton.disabled = !galleryAutoplayActive;
+  stopButton.addEventListener("click", () => {
+    stopGalleryAutoplay();
+    renderCurrentPage();
+  });
+
+  autoplayControls.append(playButton, stopButton);
+
   const next = document.createElement("button");
   next.type = "button";
   next.className = "pagination-arrow";
@@ -1468,9 +1555,9 @@ function renderPagination(totalPages) {
 
   if (totalPages > 1) {
     controls.append(previous, pageNumbers, next);
-    galleryPagination.append(summary, controls, pageSizeLabel);
+    galleryPagination.append(summary, controls, autoplayControls, pageSizeLabel);
   } else {
-    galleryPagination.append(summary, pageSizeLabel);
+    galleryPagination.append(summary, autoplayControls, pageSizeLabel);
   }
 }
 
@@ -1650,6 +1737,10 @@ function renderCurrentPage() {
   const totalPages = Math.max(1, Math.ceil(filteredRecords.length / pageSize));
   currentPage = Math.min(Math.max(currentPage, 1), totalPages);
 
+  if (totalPages <= 1 && galleryAutoplayActive) {
+    stopGalleryAutoplay();
+  }
+
   const start = (currentPage - 1) * pageSize;
   const pageRecords = filteredRecords.slice(start, start + pageSize);
   const query = gallerySearch.value.trim();
@@ -1662,6 +1753,7 @@ function renderCurrentPage() {
     : `${galleryRecords.length}${loadingSuffix} in ${categoryLabel}`;
 
   if (pageRecords.length === 0) {
+    stopGalleryAutoplay();
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
     galleryPagination.replaceChildren();
     closeInspector();
@@ -1672,12 +1764,17 @@ function renderCurrentPage() {
   artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
   hydrateVisiblePixelArtwork(pageRecords, token);
   renderPagination(totalPages);
+  scheduleGalleryAutoplay(totalPages);
 
   document.querySelectorAll(".gallery-card").forEach((card) => {
     const isSelected = card.dataset.id === selectedId;
     card.classList.toggle("is-selected", isSelected);
     card.toggleAttribute("aria-current", isSelected);
   });
+
+  window.setTimeout(() => {
+    artGrid.classList.remove("is-autoplay-advance");
+  }, AUTOPLAY_PAGE_TRANSITION + 260);
 }
 
 function applyFilters({ renderFilters = true } = {}) {
@@ -1723,6 +1820,7 @@ async function loadGalleryCategory(category, { requestedId = "", updateUrl = tru
 
   const loadToken = ++galleryLoadToken;
   const startedAt = performance.now();
+  stopGalleryAutoplay();
   allArtworkMode = false;
   resetAllArtworkModeState();
   setAnalysisControlsEnabled(true);
@@ -1789,6 +1887,7 @@ async function loadGalleryCategory(category, { requestedId = "", updateUrl = tru
 async function loadAllArtwork({ requestedId = "", updateUrl = true } = {}) {
   const loadToken = ++galleryLoadToken;
   const startedAt = performance.now();
+  stopGalleryAutoplay();
   allArtworkMode = false;
   resetAllArtworkModeState();
   setAnalysisControlsEnabled(true);
