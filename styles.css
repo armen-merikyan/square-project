@@ -984,8 +984,7 @@ footer p {
 }
 
 .gallery-filters {
-  position: sticky;
-  top: 92px;
+  position: static;
   align-self: start;
   min-width: 0;
   border: 1px solid rgba(21, 21, 21, 0.13);
