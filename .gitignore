@@ -10,3 +10,6 @@ __pycache__/
 
 # Generated Stripe preview images
 stripe-previews/
+
+# Local Stripe delta-sync cache
+.stripe-sync-cache.json

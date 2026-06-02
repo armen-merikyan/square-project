@@ -60,6 +60,12 @@ URL and metadata (`art_id`, title, seed, colors, JSON URL, frame color), creates
 matching prices and payment links, and writes a per-artwork payment-link map to
 `payment-links.js`.
 
+API mode keeps a local `.stripe-sync-cache.json` with the processed artwork
+file signatures and generated payment links. Repeat runs only sync new or
+changed artworks; unchanged artworks are copied from the cache into
+`payment-links.js` without updating Stripe. Delete `.stripe-sync-cache.json` to
+force a full Stripe resync.
+
 ```env
 STRIPE_SECRET_KEY=sk_test_...
 STRIPE_SITE_URL=https://mysquareart.com

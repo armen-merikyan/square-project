@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import os
 import ssl
+import tempfile
 import time
 import urllib.parse
 import urllib.request
@@ -25,11 +26,13 @@ except ImportError:  # pragma: no cover - script still works on systems with a v
 ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = ROOT / ".env"
 PAYMENT_LINKS_PATH = ROOT / "payment-links.js"
+STRIPE_SYNC_CACHE_PATH = ROOT / ".stripe-sync-cache.json"
 ART_DIR = ROOT / "art"
 STRIPE_PREVIEW_DIR = ROOT / "stripe-previews"
 MANIFEST_PATH = ART_DIR / "manifest.json"
 PAYMENT_LINKS_JS_PREFIX = "window.SQUARE_PROJECT_PAYMENT_LINKS = "
 STRIPE_CONTEXT = ssl.create_default_context(cafile=certifi.where()) if certifi else None
+STRIPE_SYNC_CACHE_VERSION = 1
 DEFAULT_SITE_URL = "https://mysquareart.com"
 FRAME_PREVIEW_STAGE_SIZE = 1500
 FRAME_PREVIEW_ART_X = FRAME_PREVIEW_STAGE_SIZE / 6
@@ -147,6 +150,115 @@ def update_payment_links_js(payment_config: dict) -> None:
         f"{PAYMENT_LINKS_JS_PREFIX}{payload};\n",
         encoding="utf-8",
     )
+
+
+def load_stripe_sync_cache() -> dict:
+    if not STRIPE_SYNC_CACHE_PATH.is_file():
+        return {"version": STRIPE_SYNC_CACHE_VERSION, "artworks": {}}
+
+    try:
+        payload = json.loads(STRIPE_SYNC_CACHE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"version": STRIPE_SYNC_CACHE_VERSION, "artworks": {}}
+
+    if not isinstance(payload, dict) or payload.get("version") != STRIPE_SYNC_CACHE_VERSION:
+        return {"version": STRIPE_SYNC_CACHE_VERSION, "artworks": {}}
+
+    artworks = payload.get("artworks")
+    if not isinstance(artworks, dict):
+        payload["artworks"] = {}
+
+    return payload
+
+
+def save_stripe_sync_cache(cache: dict) -> None:
+    cache["version"] = STRIPE_SYNC_CACHE_VERSION
+    cache.setdefault("artworks", {})
+
+    payload = json.dumps(cache, indent=2, sort_keys=True)
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=ROOT, delete=False) as temp_file:
+        temp_file.write(payload)
+        temp_file.write("\n")
+        temp_path = Path(temp_file.name)
+
+    temp_path.replace(STRIPE_SYNC_CACHE_PATH)
+
+
+def file_signature(path: Path) -> dict[str, int | str]:
+    stat = path.stat()
+    return {
+        "path": path.relative_to(ROOT).as_posix(),
+        "size": stat.st_size,
+        "mtime_ns": stat.st_mtime_ns,
+    }
+
+
+def stripe_sync_signature() -> dict:
+    variant_signature = {}
+
+    for variant, config in VARIANTS.items():
+        variant_signature[variant] = {
+            "amount": config["amount"],
+            "lookup_key_template": config["lookup_key_template"],
+            "payment_link_lookup_key_template": config["payment_link_lookup_key_template"],
+            "metadata": config["metadata"],
+        }
+
+    return {
+        "site_url": site_url(),
+        "frame_colors": FRAME_COLORS,
+        "variants": variant_signature,
+    }
+
+
+def artwork_sync_signature(art_id: str, sync_signature: dict) -> dict | None:
+    json_path = ART_DIR / f"{art_id}.json"
+    svg_path = ART_DIR / f"{art_id}.svg"
+
+    if not json_path.is_file() or not svg_path.is_file():
+        return None
+
+    return {
+        "sync": sync_signature,
+        "json": file_signature(json_path),
+        "svg": file_signature(svg_path),
+    }
+
+
+def valid_cached_links(links: object) -> bool:
+    if not isinstance(links, dict) or not is_real_payment_link(str(links.get("print", ""))):
+        return False
+
+    framed = links.get("framed")
+    if not isinstance(framed, dict):
+        return False
+
+    return all(is_real_payment_link(str(framed.get(frame_color, ""))) for frame_color in FRAME_COLORS)
+
+
+def changed_artwork_ids(ids: list[str], cache: dict, sync_signature: dict) -> tuple[list[str], dict[str, dict[str, str]], dict[str, dict]]:
+    cached_artworks = cache.get("artworks") if isinstance(cache.get("artworks"), dict) else {}
+    changed_ids: list[str] = []
+    cached_links: dict[str, dict[str, str]] = {}
+    signatures: dict[str, dict] = {}
+
+    for art_id in ids:
+        signature = artwork_sync_signature(art_id, sync_signature)
+
+        if signature is None:
+            changed_ids.append(art_id)
+            continue
+
+        signatures[art_id] = signature
+        entry = cached_artworks.get(art_id) if isinstance(cached_artworks, dict) else None
+        links = entry.get("links") if isinstance(entry, dict) else None
+
+        if isinstance(entry, dict) and entry.get("signature") == signature and valid_cached_links(links):
+            cached_links[art_id] = links
+        else:
+            changed_ids.append(art_id)
+
+    return changed_ids, cached_links, signatures
 
 
 def existing_payment_links_payload() -> dict:
@@ -701,16 +813,33 @@ def main() -> None:
             "Set STRIPE_SECRET_KEY to create one Stripe product and payment links per artwork."
         )
 
-    print(f"Preparing Stripe products for {len(ids)} artworks.", flush=True)
+    sync_signature = stripe_sync_signature()
+    sync_cache = load_stripe_sync_cache()
+    changed_ids, cached_artwork_links, art_signatures = changed_artwork_ids(ids, sync_cache, sync_signature)
+
+    print(
+        f"Preparing Stripe products for {len(changed_ids)} changed artworks "
+        f"({len(cached_artwork_links)} cached, {len(ids)} selected).",
+        flush=True,
+    )
+
+    if not changed_ids:
+        update_payment_links_js(
+            merged_payment_links_payload(cached_artwork_links, real_legacy_payment_links(env_payment_links))
+        )
+        save_stripe_sync_cache(sync_cache)
+        print(f"No Stripe changes needed. Updated {PAYMENT_LINKS_PATH} from {STRIPE_SYNC_CACHE_PATH}.")
+        return
+
     if enabled_env_flag("STRIPE_PRICE_LOOKUP_ON_MISS"):
         prices_by_lookup = {}
     elif enabled_env_flag("STRIPE_SCOPED_PRICE_LOOKUP"):
-        prices_by_lookup = scoped_prices_by_lookup_key(ids)
+        prices_by_lookup = scoped_prices_by_lookup_key(changed_ids)
     else:
         prices_by_lookup = prices_by_lookup_key()
 
     links_by_lookup_key = {} if enabled_env_flag("STRIPE_SKIP_PAYMENT_LINK_PRELOAD") else payment_links_by_lookup_key()
-    artwork_links: dict[str, dict[str, str]] = {}
+    artwork_links: dict[str, dict[str, str]] = dict(cached_artwork_links)
     cache_lock = Lock()
     worker_count = max(1, int(os.environ.get("STRIPE_WORKERS", "6") or "6"))
 
@@ -786,14 +915,21 @@ def main() -> None:
         return art_id, links, last_product_id or "updated"
 
     with ThreadPoolExecutor(max_workers=worker_count) as executor:
-        futures = {executor.submit(process_artwork, art_id): art_id for art_id in ids}
+        futures = {executor.submit(process_artwork, art_id): art_id for art_id in changed_ids}
 
         for index, future in enumerate(as_completed(futures), start=1):
             art_id, links, result = future.result()
-            artwork_links[art_id] = links
-            print(f"[{index}/{len(ids)}] {art_id} -> {result}", flush=True)
+            with cache_lock:
+                artwork_links[art_id] = links
+                sync_cache.setdefault("artworks", {})[art_id] = {
+                    "signature": art_signatures.get(art_id) or artwork_sync_signature(art_id, sync_signature),
+                    "links": links,
+                    "synced_at": int(time.time()),
+                }
+            print(f"[{index}/{len(changed_ids)}] {art_id} -> {result}", flush=True)
 
     update_payment_links_js(merged_payment_links_payload(artwork_links, real_legacy_payment_links(env_payment_links)))
+    save_stripe_sync_cache(sync_cache)
     print(f"\nUpdated {PAYMENT_LINKS_PATH} with {len(artwork_links)} artwork link sets.")
 
 
