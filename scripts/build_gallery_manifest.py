@@ -377,6 +377,12 @@ def render_artwork_page(record: dict[str, Any], colors: list[str], base_url: str
         <a href="../../index.html#identity">Identity</a>
         <a href="../../terms.html">Terms</a>
         <a href="../../privacy.html">Privacy</a>
+        <a class="social-link" href="https://x.com/mysquareart" target="_blank" rel="me noopener" aria-label="Follow Square Project on X at @mysquareart">
+          <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M18.9 2h3.1l-6.8 7.8 8 12.2h-6.3l-4.9-7.1-5.6 7.1H2.3l7.3-8.4L2 2h6.5l4.4 6.5L18.9 2Zm-1.1 18h1.7L7.5 3.9H5.7L17.8 20Z"></path>
+          </svg>
+          <span>@mysquareart</span>
+        </a>
       </nav>
     </header>
 

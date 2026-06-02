@@ -157,6 +157,19 @@ a {
   transition: color 180ms ease;
 }
 
+.site-header nav a.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.x-icon {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
 .site-header nav a::after {
   content: "";
   position: absolute;
