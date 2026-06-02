@@ -1,0 +1,399 @@
+{
+  "id": "a99b19949d2e7841ed3797782980c3cd424ac0f22c754f169423bb99fface00f",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 181; target batch count 200",
+  "title": "Clash of Tension",
+  "reasoning": "The emotional tone evokes a struggle between dread and relief, represented through a stark contrast in color choices. The palette of deep blacks, electric blues, and magentas communicates a spectrum of emotion\u2014from heavy dread to fleeting relief. The symmetrical layout clashes with interrupted patterns of colors creating a push-pull effect, while negative space enhances the feeling of emptiness, symbolizing an empty room. The zigzag flow introduces unease, as the orderly shapes break and collide with darker tones, embodying the duality of hope and despair.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2B2B2B"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#4A4A4A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#6E6E6E"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#8B8B8B"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#151515"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#7F00FF"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#5800A2"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A00038"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D5005E"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#0E0E0E"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#00FFFF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#DC143C"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#AA00FF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#002AFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#212121"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF4500"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B0E0E6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#696969"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FEFFED"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4F4F4F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#7CFC00"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#008080"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#2F4F4F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A0522D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B8860B"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#696969"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#6495ED"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FF69B4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#696969"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#6495ED"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B22222"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#87CEFA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#32CD32"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D2691E"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#7FFF00"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FF00FF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F08080"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#2E8B57"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8B0000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#ADFF2F"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D8BFD8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "relief": "mirror",
+      "dread": "checker"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "bridge",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "machine_emotion",
+      "colors": [
+        "lime",
+        "black",
+        "electric_blue",
+        "magenta"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a99b19949d2e7841ed3797782980c3cd424ac0f22c754f169423bb99fface00f",
+  "pixelHash": "a99b19949d2e7841ed3797782980c3cd424ac0f22c754f169423bb99fface00f",
+  "jsonFile": "a99b19949d2e7841ed3797782980c3cd424ac0f22c754f169423bb99fface00f.json",
+  "svgFile": "a99b19949d2e7841ed3797782980c3cd424ac0f22c754f169423bb99fface00f.svg",
+  "createdAt": "2026-06-02T22:08:12.137021+00:00"
+}

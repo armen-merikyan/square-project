@@ -1,0 +1,399 @@
+{
+  "id": "8a35b3eb4bf0df5318d562500cc8e74046e06fb5d59394f8f899a3b0b12b969c",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 139; target batch count 200",
+  "title": "Tension Between Light and Shadow",
+  "reasoning": "This piece embodies the emotional tension between relief and dread, contrasting light against a dark mass. The color palette of vibrant yellows and oranges against muted purples and deep blues reflects this dynamic, emphasizing the struggle between brightness (relief) and weight (dread). The layout adopts a central seed surrounded by pressure patterns to evoke a small symbol battling against oppressive darkness. Broken pixels introduce imperfection, enhancing the emotional resonance of the piece. The flow from top to bottom mirrors the descent of pressure, while maintaining at least 10% negative space to signify quiet amidst chaos.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#F8E2B2"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFB74D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E6A54A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3B3D6A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#2C2643"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#1C1B36"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#151524"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F8E2B2"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFCE91"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFB700"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A56F91"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#585CC7"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3D3C61"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#232442"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#0E0E20"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F8E2B2"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFB74D"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFAB00"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#5F5090"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4A4D3B"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#353228"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#272626"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F5D5A8"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFC07A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF8C2A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#3B3D6A"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#2C2643"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#1C1B36"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#151524"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E1B7E9"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#BB6C63"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FAE6A5"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B59DB3"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4A4D3B"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#353228"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#272626"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F0DD5B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFB740"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A56F91"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#585CC7"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#3D3C61"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#232442"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#0E0E20"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F8E2B2"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFBA5E"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFAD00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#3B3D6A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#2C2643"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#1C1B36"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#151524"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#E1B7E9"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#BB6C63"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FAE6A5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#6D5A95"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#5F5090"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#4A4D3B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#353228"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#272626"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "relief": "rain",
+      "dread": "target"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "crack",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "8a35b3eb4bf0df5318d562500cc8e74046e06fb5d59394f8f899a3b0b12b969c",
+  "pixelHash": "8a35b3eb4bf0df5318d562500cc8e74046e06fb5d59394f8f899a3b0b12b969c",
+  "jsonFile": "8a35b3eb4bf0df5318d562500cc8e74046e06fb5d59394f8f899a3b0b12b969c.json",
+  "svgFile": "8a35b3eb4bf0df5318d562500cc8e74046e06fb5d59394f8f899a3b0b12b969c.svg",
+  "createdAt": "2026-06-02T22:07:51.751553+00:00"
+}

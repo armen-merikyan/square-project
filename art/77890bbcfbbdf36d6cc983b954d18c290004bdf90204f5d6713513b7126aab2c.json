@@ -1,0 +1,399 @@
+{
+  "id": "77890bbcfbbdf36d6cc983b954d18c290004bdf90204f5d6713513b7126aab2c",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 55; target batch count 200",
+  "title": "Weight of Balance",
+  "reasoning": "The composition captures the emotional tension between relief and dread through contrasting colors and symmetrical imperfection. The dark colors symbolize dread while the bright ones represent relief, creating a dialogue of emotional collision. The chosen palette\u2014burnt orange, dark red, charcoal, and gold\u2014contrasts warmth and heaviness. The patterns reflect a mix of radial relief amidst dotted dread, emulating a sense of pressure and lightness that echoes the theme of symmetry versus break. The central block of warm colors emerges against darker surroundings, emphasizing a fragile balance.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#5C3D1F"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#7A442F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#9E5724"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#78321D"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5B2A1D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#7E3832"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#5C1E1E"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#A4551C"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#632A16"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#1F2326"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#5C3D1F"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#3E2723"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#1F1B1B"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#7A442F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#6D2922"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#4C3C3B"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#2D1014"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4B2B2E"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#878787"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#5B2A1D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#5C1E1E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#4C4646"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#4F3537"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFCC80"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#9E5724"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#450C0C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#262626"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#1D1D1D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#5C1E1E"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#7CEC9A"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#5C3D1F"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#2C2F2F"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#2E1F1D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A4551C"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3B2434"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#7E3832"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A4785B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#911C14"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#4C3C3B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#1D1D1D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#65312D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#99805E"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#4E3F3F"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#6D2525"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#7A442F"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#5C1E1E"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#5C1E1E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D5A66A"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#3B2726"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#603029"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFCC80"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "spiral_clockwise",
+    "patterns": {
+      "relief": "radial",
+      "dread": "dots"
+    },
+    "edgeStyle": "center_heavy",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "half_square",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "77890bbcfbbdf36d6cc983b954d18c290004bdf90204f5d6713513b7126aab2c",
+  "pixelHash": "77890bbcfbbdf36d6cc983b954d18c290004bdf90204f5d6713513b7126aab2c",
+  "jsonFile": "77890bbcfbbdf36d6cc983b954d18c290004bdf90204f5d6713513b7126aab2c.json",
+  "svgFile": "77890bbcfbbdf36d6cc983b954d18c290004bdf90204f5d6713513b7126aab2c.svg",
+  "createdAt": "2026-06-02T22:06:56.722879+00:00"
+}

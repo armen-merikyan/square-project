@@ -1,0 +1,399 @@
+{
+  "id": "43c36508012b849683b9e9db5683492ca9e078353f5484056f64430fdb8a4852",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 91; target batch count 200",
+  "title": "Light vs Weight",
+  "reasoning": "The emotional tone derived from the seed suggests a contrast embodied in the palette, with deep burnt oranges and dark reds counterbalanced by lighter tones. The composition plays with symmetry and brokenness, utilizing a top-weighted edge style that captures a sense of descent. The collisions occur in the arrangement of dark masses versus patches of light, representing relief fighting against dread. This interplay creates a dynamic visual tension, reflecting the essence of the seed's exploration of emotional contrasts.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3C241B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3E250A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#582D1F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2C0E0A"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#1D0A08"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#495C0D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D89B15"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#D5C3A8"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#2F1513"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#C15700"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#E3AB4A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#3D1F17"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFDDCC"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#CCFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#6E4C3E"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#A29F92"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#5A3C2D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#452B1C"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#694632"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#BFAF92"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F9E5B5"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#7A6A49"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A13D32"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#846C60"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A94A2A"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F5C346"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#A10B07"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#C19477"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#2C1E1A"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FCF44A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#540000"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#D3A08C"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4E4B4A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#AD2B43"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#3B4E47"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#6B4F0A"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E6B52E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8F6A4F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#BB1B0D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F4741F"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#34191B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#CEB7A1"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D0AE76"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#5C2853"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#8E795A"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#1C161B"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#7A7D7E"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E1A625"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#3D3A39"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#A86A3D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C73226"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F4C23C"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E9950A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#BAC9B5"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#9F434C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A24A41"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#850F10"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F8E360"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#9A1A1D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E4B16D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#69C7A1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#C06B3E"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#1F0D11"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B89F8A"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "bottom_to_top",
+    "patterns": {
+      "relief": "teeth",
+      "dread": "frame"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "43c36508012b849683b9e9db5683492ca9e078353f5484056f64430fdb8a4852",
+  "pixelHash": "43c36508012b849683b9e9db5683492ca9e078353f5484056f64430fdb8a4852",
+  "jsonFile": "43c36508012b849683b9e9db5683492ca9e078353f5484056f64430fdb8a4852.json",
+  "svgFile": "43c36508012b849683b9e9db5683492ca9e078353f5484056f64430fdb8a4852.svg",
+  "createdAt": "2026-06-02T22:07:21.670427+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "311e4f6ada4c7813740a6681d13c0a7ca98b4fa56a660f22a788541674b5ef42",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 30; target batch count 200",
+  "title": "Tensioned Asymmetry",
+  "reasoning": "This artwork embodies the emotional tension between relief and dread through a dramatic contrast of dark and bright colors. The palette features black and dark violet to convey weight and depth, while soft gold and pale green introduce moments of light against the darker backdrop. The flow from top to bottom emphasizes a sense of gravity, with dashes of brightness that disrupt this flow subtly, reflecting the conflict described in the seed. The patterns clash\u2014crosshatches from relief weave through the maze-like structures representing dread, creating a complex interplay on the canvas. The asymmetry brings out the broken edges, symbolizing how the two emotions coexist yet remain unresolved.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#0CDA6A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#4B0082"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#0CDA6A"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#4B0082"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#4B0082"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#0CDA6A"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#0CDA6A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#4B0082"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#4B0082"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#4B0082"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#333333"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#0CDA6A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#4B0082"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#4B0082"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4B0082"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "drip",
+    "patterns": {
+      "relief": "crosshatch",
+      "dread": "maze"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "straight_vs_curved",
+    "shapeSeed": "window",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "311e4f6ada4c7813740a6681d13c0a7ca98b4fa56a660f22a788541674b5ef42",
+  "pixelHash": "311e4f6ada4c7813740a6681d13c0a7ca98b4fa56a660f22a788541674b5ef42",
+  "jsonFile": "311e4f6ada4c7813740a6681d13c0a7ca98b4fa56a660f22a788541674b5ef42.json",
+  "svgFile": "311e4f6ada4c7813740a6681d13c0a7ca98b4fa56a660f22a788541674b5ef42.svg",
+  "createdAt": "2026-06-02T22:06:41.920904+00:00"
+}

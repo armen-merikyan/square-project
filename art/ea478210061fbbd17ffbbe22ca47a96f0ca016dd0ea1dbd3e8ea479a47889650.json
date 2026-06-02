@@ -1,0 +1,399 @@
+{
+  "id": "ea478210061fbbd17ffbbe22ca47a96f0ca016dd0ea1dbd3e8ea479a47889650",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 196; target batch count 200",
+  "title": "Contrasting Shadows",
+  "reasoning": "This composition embodies the emotional tension of 'relief vs dread' through a stark division of light and dark colors. The palette, inspired by 'broken memory,' utilizes sepia tones that invoke nostalgia and dustiness alongside faded blues representing calm. The collision occurs through the broken pixel arrangement, creating jagged edges and an imbalance that reflects the struggle between relief and tension. The pattern alternates between symmetry and disruptive elements, highlighting the psychological push and pull central to the seed's emotional narrative.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3B2A25"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#4E3B30"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#7F6B5A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#A89B87"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#E1DAE6"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#4C4D3D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#BEB09D"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F1F3EB"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#C0B8A3"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D8CFC6"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#E2D7D0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F1F3F0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B3B0A1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#8D8543"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#7F8DAB"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A67C69"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FFE1BD"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#C5A9B7"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7D819A"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A4B1B0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B3A1BB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#AA8D97"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#DBD4D5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F8F2EB"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#E5D8C7"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#BEA5A3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#C2B182"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A2B8C5"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6B6E6F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6D4D4D"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B8BFA8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#847D72"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#E0C6B3"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C4D0D5"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D2AC8F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A7B9C6"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#B9ABAC"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C4C8B2"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#EAE4DB"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B7B7C5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#807C6B"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#C9B58D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C5D1D4"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#7D898F"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#9CA2A7"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D8D4D8"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F2E8F5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#6C564D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F6F2DA"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#9FB0B0"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A9A098"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#85756F"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#4E4E4F"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D9C3C1"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#E7E9EA"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F6E6C7"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#B5A89D"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#AE9987"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D7C9BA"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4B4D55"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#6E6562"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#9A8F8E"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D1DBE1"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "relief": "target",
+      "dread": "stripes"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "star",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ea478210061fbbd17ffbbe22ca47a96f0ca016dd0ea1dbd3e8ea479a47889650",
+  "pixelHash": "ea478210061fbbd17ffbbe22ca47a96f0ca016dd0ea1dbd3e8ea479a47889650",
+  "jsonFile": "ea478210061fbbd17ffbbe22ca47a96f0ca016dd0ea1dbd3e8ea479a47889650.json",
+  "svgFile": "ea478210061fbbd17ffbbe22ca47a96f0ca016dd0ea1dbd3e8ea479a47889650.svg",
+  "createdAt": "2026-06-02T22:08:23.936810+00:00"
+}

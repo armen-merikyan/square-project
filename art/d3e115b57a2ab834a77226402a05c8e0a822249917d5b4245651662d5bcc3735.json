@@ -1,0 +1,399 @@
+{
+  "id": "d3e115b57a2ab834a77226402a05c8e0a822249917d5b4245651662d5bcc3735",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 197; target batch count 200",
+  "title": "Tension Between Light and Dark",
+  "reasoning": "This piece encapsulates the emotional struggle of relief battling dread through the interplay of dark and light colors. The selected palette of deep blacks juxtaposed with pale blues creates a visceral contrast, emphasizing emotional collision. The 'grid' pattern representing relief is subtly interrupted by jagged edges and broken pixels, embodying the disarray of dread. 'Top_weighted' layout directs the viewer\u2019s gaze downward, giving weight to the darker hues and a sense of looming pressure, while amidst the quiet of the negative space, pockets of light emerge to signify fleeting moments of calm. The arrangement reflects the constant balance between dread and the search for relief, with color choices chosen to evoke contemplation and depth.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1E1E1E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2E2E2E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3D3D3D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5A5A5A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C1C1C1"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#A5A5A5"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#8C8C8C"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#707070"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#545454"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#D8D8D8"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C1C1C1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#9C9C9C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#444444"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#1A1A1A"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#2F2F2F"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#3E3E3E"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#4A4A4A"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5C5C5C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#7C7C7C"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D2D2D2"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#BFBCBC"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A8A8A8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#9C9C9C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#8B8B8B"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7C7C7C"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#101010"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#202020"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#303030"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#404040"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#505050"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#606060"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#707070"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#E6E6E6"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#CFCFCF"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BEBEBE"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#ABABAB"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#999999"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#777777"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#777777"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "relief": "grid",
+      "dread": "split_screen"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "crack",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d3e115b57a2ab834a77226402a05c8e0a822249917d5b4245651662d5bcc3735",
+  "pixelHash": "d3e115b57a2ab834a77226402a05c8e0a822249917d5b4245651662d5bcc3735",
+  "jsonFile": "d3e115b57a2ab834a77226402a05c8e0a822249917d5b4245651662d5bcc3735.json",
+  "svgFile": "d3e115b57a2ab834a77226402a05c8e0a822249917d5b4245651662d5bcc3735.svg",
+  "createdAt": "2026-06-02T22:08:21.556962+00:00"
+}

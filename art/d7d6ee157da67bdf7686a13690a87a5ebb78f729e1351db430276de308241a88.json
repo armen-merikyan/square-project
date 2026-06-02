@@ -1,0 +1,399 @@
+{
+  "id": "d7d6ee157da67bdf7686a13690a87a5ebb78f729e1351db430276de308241a88",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 200; target batch count 200",
+  "title": "Symmetry in Dissonance",
+  "reasoning": "This piece explores the emotional tension between relief and dread. The left side, representing relief, utilizes lighter tones of burnt orange and gold to evoke warmth and lightness, fighting against the darker, heavier colors of dark red and charcoal on the right, embodying dread and pressure. The layout features a vertical split, with a gradual flow from light to dark, signifying the emotional shift. Broken pixels introduce an element of imperfection, enhancing the overall dissonance. The contrasting edges create a sense of conflict and interruption, while maintaining negative space to suggest emptiness or 'the void' within the emotional narrative.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#A65E2E"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#EAB373"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFC34D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#D7C89B"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#BF6A3B"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#7C4A3D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#3B2D2C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#BF4B00"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A69C71"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D6C0A8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#4B4A23"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFEA73"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F9C52B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B05234"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3A1D1E"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#4F3B26"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#2A1C19"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#E55F3A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#570D12"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#9A5F57"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#C47C4A"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C0AD67"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E67641"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#D56B35"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#BF3C29"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E9C6A0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#C3C9A5"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#4E614C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#1C2E35"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B93524"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#4C1E1D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#A05E3A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C77B35"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F9C76C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#2A1E1B"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#8C3B2D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#6A3B2C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E7B143"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#425C68"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E3A86D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C9C9C9"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A87344"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#253533"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#525F5E"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#E5C7B1"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#E6CBD3"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#6E4F55"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#999B3B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#7A7B7D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#879C85"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#7D4C1D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#4F4545"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DAB87E"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5E3E30"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3A3B3E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#B0974D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D5B865"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#49332C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#3D3A1B"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#1E212D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A8C8A4"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#C5B9A8"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "relief": "mirror",
+      "dread": "rain"
+    },
+    "edgeStyle": "broken_edges",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "wall",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d7d6ee157da67bdf7686a13690a87a5ebb78f729e1351db430276de308241a88",
+  "pixelHash": "d7d6ee157da67bdf7686a13690a87a5ebb78f729e1351db430276de308241a88",
+  "jsonFile": "d7d6ee157da67bdf7686a13690a87a5ebb78f729e1351db430276de308241a88.json",
+  "svgFile": "d7d6ee157da67bdf7686a13690a87a5ebb78f729e1351db430276de308241a88.svg",
+  "createdAt": "2026-06-02T22:08:30.365815+00:00"
+}

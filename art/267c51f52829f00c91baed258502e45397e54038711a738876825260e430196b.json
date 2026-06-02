@@ -1,0 +1,399 @@
+{
+  "id": "267c51f52829f00c91baed258502e45397e54038711a738876825260e430196b",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 180; target batch count 200",
+  "title": "Weights of Emotion",
+  "reasoning": "This composition embodies the tension between relief and dread through a deliberate color separation. The palette, derived from a 'broken memory' theme, utilizes muted sepia and faded blue to reflect the complexity of emotions. The left side is dense with darker tones representing dread, while the right offers lighter colors suggesting relief. This contrast creates a visual echo of emotional conflict, with a subtle 'rain' pattern on the relief side interrupted by 'split screen' motifs of dread, telling a story of struggle amidst calm. Each pixel's placement is intentional, fostering an impression of imperfection that resonates with the seed's themes of broken symmetry and pressure.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#5C4E4A"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#AFAF9C"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#6B486A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#8D7B6D"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A8D73"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C4B5A4"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E0D1B1"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#5F4B3A"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#7A6B68"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#DAC7C4"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#8CBAA6"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3E8E7F"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F4E1D6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E9D8D1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#3E3530"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#1D1E2D"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A9B7A5"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6A707C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#BDC7C6"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A0AFA5"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D6E1DE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F0F9F8"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3E372D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#2D2325"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#8D828C"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B4A8B3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#CEDDCE"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#BDC8C1"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E8E4D8"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F2F8F7"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#6E5E5B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3B3C41"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#A0A28C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#3D6B54"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D3E3DD"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C9BFAD"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E7E4D5"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F7F8F6"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#7B5A51"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#6D6469"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B75A68"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFA07A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#DAE8D7"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#EFE5E4"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F6F4E9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F7F4F7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#635B5A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#522E31"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D6C0B8"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C9B2A8"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E7E2D9"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F1E4D8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D4E1DE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F8F6F5"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#341F23"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D6D8C6"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C6A38A"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B08F8B"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#9BB8A4"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F3F1EA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F9FAF7"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "relief": "rain",
+      "dread": "split_screen"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "267c51f52829f00c91baed258502e45397e54038711a738876825260e430196b",
+  "pixelHash": "267c51f52829f00c91baed258502e45397e54038711a738876825260e430196b",
+  "jsonFile": "267c51f52829f00c91baed258502e45397e54038711a738876825260e430196b.json",
+  "svgFile": "267c51f52829f00c91baed258502e45397e54038711a738876825260e430196b.svg",
+  "createdAt": "2026-06-02T22:08:13.365883+00:00"
+}

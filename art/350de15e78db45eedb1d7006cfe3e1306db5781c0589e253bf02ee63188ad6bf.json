@@ -1,0 +1,399 @@
+{
+  "id": "350de15e78db45eedb1d7006cfe3e1306db5781c0589e253bf02ee63188ad6bf",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 153; target batch count 200",
+  "title": "Contrasting Descent",
+  "reasoning": "The emotional tone captures a tension between relief and dread, represented through colors that juxtapose warmth with coolness. The palette of pink, red, gray, and dark maroon signifies a struggle between comfort and unease. The primary collision occurs in the top two rows where the dark tones dominate, evoking feelings of weight and dread, which gradually give way to lighter colors below, suggesting a descent towards relief, mimicking the layered density of thoughts in an empty room. The arrangement follows a top-to-bottom flow, where the colors cascade like raindrops, with soft edges creating a sense of flow rather than abruptness. The broken pixels are scattered to introduce imperfection and emphasize the fragility of the emotional state.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4B1F2C"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#4E2332"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#A44A5D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6E3A47"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4B4B4D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#2A2A2D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#1F1F22"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#2E2E2D"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#4C1F2E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#AA2A3C"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B44256"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#7E3A52"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4A3139"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3C343C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFCCCB"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E8B1BD"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F9C6D1"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D9BEC1"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#EBE0E5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F5E8E9"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFE4E1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFFAFA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFCAD4"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F5D5DB"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F7E9ED"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#EAE3E4"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F5F0F2"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FAF4F5"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#DBB3BC"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#EED6DB"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#EFEAEB"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FDF8F9"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FBF9FA"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B48BA5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C982B6"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFF1F3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF90B7"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFD4DC"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFD3DD"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFF4F8"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F5E0E6"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "relief": "ring",
+      "dread": "radial"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "centered_vs_off_center",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "love_betrayal",
+      "colors": [
+        "pink",
+        "red",
+        "gray",
+        "dark_maroon"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "350de15e78db45eedb1d7006cfe3e1306db5781c0589e253bf02ee63188ad6bf",
+  "pixelHash": "350de15e78db45eedb1d7006cfe3e1306db5781c0589e253bf02ee63188ad6bf",
+  "jsonFile": "350de15e78db45eedb1d7006cfe3e1306db5781c0589e253bf02ee63188ad6bf.json",
+  "svgFile": "350de15e78db45eedb1d7006cfe3e1306db5781c0589e253bf02ee63188ad6bf.svg",
+  "createdAt": "2026-06-02T22:07:58.004768+00:00"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "7dbe4e8f89483c74cd457758609dc691cafc52f7a666e93b98c981253d30b772",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 66; target batch count 200",
+  "title": "Echoes of Balance",
+  "reasoning": "This composition captures the emotional tension between relief and dread through a contrasting palette of deep shadows and soft highlights. The colors shift from dark violet encapsulating dread to pale green suggesting relief, with a pattern of maze and target motifs creating a dynamic conflict. The broken pixels introduce imperfections, echoing the theme of uneven emotional landscapes. The flow from top to bottom mirrors the weight of dread pressing down, while the bright accents punctuate the darkness with glimpses of hope.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2E0C2B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3A0E37"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4A2A4D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7D4E8E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5B9E4A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#BAC95D"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E3D67A"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F0EAD6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1B1B1B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3E1D3B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#634658"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#4C7E8B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B9C49D"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#9BDA82"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E8EDD4"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F5F8F0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#4D3D50"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#501F36"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#4F254B"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#851F57"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A14C10"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#760507"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B8C6C8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C2D3B0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#262626"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#1D1531"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#9F6B61"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#4C6A79"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C1D2B5"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F3EA74"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E1D5B9"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F4F7E0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#0F0F0F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4B2C35"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#7A1B52"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#941D31"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A06E2D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C3AA94"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C7D5B0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E7E9E7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#1D1D1D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#31313C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#4B666F"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#7B8C76"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#C2C8B6"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#DBD2B4"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F0EBE4"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#212121"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#271D3D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#5E3C55"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#8F5C6D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#ECBC3D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#B2D339"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#DFE4B9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F8FAEA"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0A0A0A"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#1B1B2C"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#362147"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#4A2C3D"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#6C375E"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#9B8A6C"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#DBE7D5"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F5F7F6"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "relief": "target",
+      "dread": "maze"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7dbe4e8f89483c74cd457758609dc691cafc52f7a666e93b98c981253d30b772",
+  "pixelHash": "7dbe4e8f89483c74cd457758609dc691cafc52f7a666e93b98c981253d30b772",
+  "jsonFile": "7dbe4e8f89483c74cd457758609dc691cafc52f7a666e93b98c981253d30b772.json",
+  "svgFile": "7dbe4e8f89483c74cd457758609dc691cafc52f7a666e93b98c981253d30b772.svg",
+  "createdAt": "2026-06-02T22:07:08.055941+00:00"
+}

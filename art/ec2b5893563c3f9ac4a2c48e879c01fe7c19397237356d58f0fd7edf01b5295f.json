@@ -1,0 +1,399 @@
+{
+  "id": "ec2b5893563c3f9ac4a2c48e879c01fe7c19397237356d58f0fd7edf01b5295f",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 44; target batch count 200",
+  "title": "Tension of Duality",
+  "reasoning": "The emotional tone juxtaposes relief against dread, creating a visual tension through the palette of burnt orange, dark red, charcoal, and gold. The top weight of dark colors embodies dread, while the lighter colors represent flickers of relief. The asymmetric layout emphasizes a tension between order (grid) and chaos (checker) while allowing for negative space, embodying the concept of an empty room's emotional weight. The colliding elements create a rhythm that speaks to fluctuation\u2014thus capturing the essence of the seed in a meticulously abstract pattern.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#3A2A14"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#742B10"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B1A08"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#A7562E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#A24D24"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C18E29"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#C47A37"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B85035"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1D1D1D"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#8C2C12"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#E5AA86"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#6A391D"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B35C3A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#704031"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D7A46B"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#B34E0E"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#330F09"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#6E4A37"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C7BB8E"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#845D3E"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#842E1D"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#DCA83D"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F0C190"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#2E1A12"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#804A2D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#B86347"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF8F3A"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D2624E"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#9D2D2C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#BF6F39"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F7A440"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4E3B30"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B1C78D"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B58F66"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A42D18"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A87752"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FBDEB1"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C23019"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C03A20"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#866B60"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A97F68"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D5C9AB"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#5B463B"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D08128"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D8C368"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F2E8F0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#3D2C27"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B56D54"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C6B266"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFE6B1"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#561F1B"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F3C2AA"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F77F2A"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#EA5A1E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#191919"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#45332E"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#74341D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E8C9A8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#4E2E29"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A15C3B"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D57228"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D1BB7E"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "relief": "grid",
+      "dread": "checker"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "flame",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "ec2b5893563c3f9ac4a2c48e879c01fe7c19397237356d58f0fd7edf01b5295f",
+  "pixelHash": "ec2b5893563c3f9ac4a2c48e879c01fe7c19397237356d58f0fd7edf01b5295f",
+  "jsonFile": "ec2b5893563c3f9ac4a2c48e879c01fe7c19397237356d58f0fd7edf01b5295f.json",
+  "svgFile": "ec2b5893563c3f9ac4a2c48e879c01fe7c19397237356d58f0fd7edf01b5295f.svg",
+  "createdAt": "2026-06-02T22:06:51.832094+00:00"
+}

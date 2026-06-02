@@ -1,0 +1,399 @@
+{
+  "id": "30fd21f1eefbe11b12a2f0a5ad9eca5fe480a7ccc4a78c7db5643050de7c1d4a",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 176; target batch count 200",
+  "title": "Weight of Echo",
+  "reasoning": "The emotional tone oscillates between the oppressive dread represented by darker shades and the fleeting relief depicted by lighter colors. The palette of sepia, tan, dust gray, and faded blue illustrates broken memory and provides a nostalgic yet heavy atmosphere. The contrast between dense dark blocks and fragmented lighter patterns creates tension and unease, reflecting the seed's themes of symmetry versus break and layering weight. The rule of falling pixels emphasizes a sense of descent and gravity, encapsulating the emotional struggle of raising memories intertwined with feelings of despair.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4B3D3B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3F2C2A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#713B2A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C1A15A"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D7C4B2"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#E2C9B0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D6BD9B"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#C1A78C"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#393B39"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#5C2F2A"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#8A3D2E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#BF9058"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D4C5B1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#DAE2B7"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E7DBBC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E3CEB2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#23261A"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#422F2C"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#674B3A"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#0F151F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E5C9B0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E3B0A0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D6C2AA"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#EBF3E0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3B2A2A"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#7C4938"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#462B2D"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#5A7751"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#95A85B"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#B9B89D"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E3E4C1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E1ECC9"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#4F4046"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#77422E"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B37155"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D2C4B0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E7E1D4"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#E5C0A8"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#CDA87E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#CEBDA8"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#372424"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#503336"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E3AC73"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D7C4A8"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#BCB9A4"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D6D0BF"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F0E9D2"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F4EAD8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#0E181D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3A4C3A"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#61A8A1"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#ABBF9E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#E2DAB2"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D5C5A0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#C1AA8C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#C6BCA2"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#1D1F1F"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#423A35"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#66322F"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#975A64"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F6D3B5"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E9B2A0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D6C2A5"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#BDC5B3"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "drip",
+    "patterns": {
+      "relief": "checker",
+      "dread": "maze"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "corner_block",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "30fd21f1eefbe11b12a2f0a5ad9eca5fe480a7ccc4a78c7db5643050de7c1d4a",
+  "pixelHash": "30fd21f1eefbe11b12a2f0a5ad9eca5fe480a7ccc4a78c7db5643050de7c1d4a",
+  "jsonFile": "30fd21f1eefbe11b12a2f0a5ad9eca5fe480a7ccc4a78c7db5643050de7c1d4a.json",
+  "svgFile": "30fd21f1eefbe11b12a2f0a5ad9eca5fe480a7ccc4a78c7db5643050de7c1d4a.svg",
+  "createdAt": "2026-06-02T22:08:13.367085+00:00"
+}

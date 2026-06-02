@@ -1,0 +1,399 @@
+{
+  "id": "2c319432fc6a28d385c2164dcc3e2c53ad9bd6dc69bac93332f97072d0363238",
+  "seed": "relief vs dread; symmetry_vs_break; empty_room; top_to_bottom; stairs against crack; top_weighted; symmetrical_vs_broken; corner_block; rage_calm | abstract variation request 96; target batch count 200",
+  "title": "Weight of Relief",
+  "reasoning": "This composition embodies the emotional dichotomy of relief and dread. The palette 'broken_memory' utilizes earthy and muted tones like sepia and dust_gray to evoke a sense of weight and nostalgia. The pattern contrasts sharply with lighter blue accents breaking the heavier borders, illustrating relief amidst the pressing sensation of dread. The deliberate arrangement of darker colors in the corners frames the lighter core, symbolizing the tension between an empty room and the emotional pressure it can invoke, resulting in an unresolved interplay of calm and rage.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#7C4B3A"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#8B6A4E"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#978B75"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#6D7C9D"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#87A8C4"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6A7C9B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A7C1D4"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#C6E2E4"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#6B4D38"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#7A5B4B"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#9A7C6E"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#615A92"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#88C0D8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5E759E"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#D4E2E3"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#C1D4D9"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#5A4A37"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#755B46"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A07B5F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B4A1B1"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#BAC2D0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#3E4D71"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D1E3E6"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C3D2D3"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3A3529"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#5E4C3E"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#8F7B65"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#BEC4C9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A1B2C0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#4C6772"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B2C1C3"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B3D1D2"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#3B322C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4C3A31"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#7F5D4A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A9B2B9"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D8E1E2"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#2C404F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A2B3C0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#CFE2E0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#2D2C25"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#3E3B30"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A78F67"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#B7BFD2"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#C3D1D3"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#556879"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B3C3C6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D9E5E3"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#2B2923"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3B3A32"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#A58C5E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C9D2D3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D5D8D9"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#657B8D"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#A4C5C7"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A8D5D4"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#262625"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#2D2B2C"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#9C7952"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C2D8D2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D2DBD8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#445B71"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#8CBBBF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#5BCED8"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [],
+      "dread": []
+    },
+    "layout": {
+      "name": "frame_and_core",
+      "description": "Outer border represents one feeling, inner 4x4 represents another."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "relief": "maze",
+      "dread": "flame"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "square_frame",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "2c319432fc6a28d385c2164dcc3e2c53ad9bd6dc69bac93332f97072d0363238",
+  "pixelHash": "2c319432fc6a28d385c2164dcc3e2c53ad9bd6dc69bac93332f97072d0363238",
+  "jsonFile": "2c319432fc6a28d385c2164dcc3e2c53ad9bd6dc69bac93332f97072d0363238.json",
+  "svgFile": "2c319432fc6a28d385c2164dcc3e2c53ad9bd6dc69bac93332f97072d0363238.svg",
+  "createdAt": "2026-06-02T22:07:25.454120+00:00"
+}
