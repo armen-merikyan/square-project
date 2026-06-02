@@ -253,7 +253,7 @@ def changed_artwork_ids(ids: list[str], cache: dict, sync_signature: dict) -> tu
         entry = cached_artworks.get(art_id) if isinstance(cached_artworks, dict) else None
         links = entry.get("links") if isinstance(entry, dict) else None
 
-        if isinstance(entry, dict) and entry.get("signature") == signature and valid_cached_links(links):
+        if isinstance(entry, dict) and valid_cached_links(links):
             cached_links[art_id] = links
         else:
             changed_ids.append(art_id)
@@ -279,6 +279,40 @@ def existing_payment_links_payload() -> dict:
         return {}
 
     return payload if isinstance(payload, dict) else {}
+
+
+def hydrate_cache_from_payment_links(cache: dict, ids: list[str], sync_signature: dict) -> dict[str, dict[str, str]]:
+    existing_artworks = existing_payment_links_payload().get("artworks")
+
+    if not isinstance(existing_artworks, dict):
+        return {}
+
+    cached_artworks = cache.setdefault("artworks", {})
+    if not isinstance(cached_artworks, dict):
+        cached_artworks = {}
+        cache["artworks"] = cached_artworks
+
+    restored_links: dict[str, dict[str, str]] = {}
+    restored_at = int(time.time())
+
+    for art_id in ids:
+        if isinstance(cached_artworks.get(art_id), dict) and valid_cached_links(cached_artworks[art_id].get("links")):
+            continue
+
+        links = existing_artworks.get(art_id)
+
+        if not valid_cached_links(links):
+            continue
+
+        cached_artworks[art_id] = {
+            "signature": artwork_sync_signature(art_id, sync_signature),
+            "links": links,
+            "synced_at": restored_at,
+            "source": "payment-links.js",
+        }
+        restored_links[art_id] = links
+
+    return restored_links
 
 
 def merged_payment_links_payload(
@@ -815,7 +849,15 @@ def main() -> None:
 
     sync_signature = stripe_sync_signature()
     sync_cache = load_stripe_sync_cache()
+    restored_cache_links = hydrate_cache_from_payment_links(sync_cache, ids, sync_signature)
     changed_ids, cached_artwork_links, art_signatures = changed_artwork_ids(ids, sync_cache, sync_signature)
+
+    if restored_cache_links:
+        save_stripe_sync_cache(sync_cache)
+        print(
+            f"Restored {len(restored_cache_links)} cached artwork link sets from {PAYMENT_LINKS_PATH}.",
+            flush=True,
+        )
 
     print(
         f"Preparing Stripe products for {len(changed_ids)} changed artworks "
