@@ -33,6 +33,16 @@ body {
   line-height: 1.5;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -1207,7 +1217,7 @@ footer p {
   position: relative;
   display: grid;
   grid-template-areas: "heading stats controls actions";
-  grid-template-columns: minmax(150px, 0.65fr) minmax(360px, 1.6fr) minmax(340px, 1.2fr) max-content;
+  grid-template-columns: minmax(150px, 0.65fr) minmax(360px, 1.7fr) minmax(360px, 1.25fr) max-content;
   align-items: center;
   gap: 12px;
   margin-bottom: 18px;
@@ -1320,29 +1330,6 @@ footer p {
   background: rgba(37, 99, 235, 0.12);
   box-shadow: 0 8px 18px rgba(37, 99, 235, 0.1);
   transform: translateY(-1px);
-}
-
-.gallery-toolbar output {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  border: 1px solid rgba(21, 21, 21, 0.17);
-  border-radius: 999px;
-  padding: 9px 12px;
-  background: #fff;
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 900;
-  white-space: nowrap;
-}
-
-.gallery-toolbar output::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.12);
 }
 
 .gallery-stats {
@@ -1551,13 +1538,9 @@ footer p {
     justify-content: stretch;
   }
 
-  .filter-toggle,
-  .gallery-toolbar output {
+  .filter-toggle {
     justify-content: center;
     flex: 1 1 auto;
-  }
-
-  .filter-toggle {
     min-width: 112px;
     white-space: nowrap;
   }
