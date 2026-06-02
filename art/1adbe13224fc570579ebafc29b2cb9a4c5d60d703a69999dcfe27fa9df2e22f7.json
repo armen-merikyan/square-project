@@ -1,0 +1,399 @@
+{
+  "id": "1adbe13224fc570579ebafc29b2cb9a4c5d60d703a69999dcfe27fa9df2e22f7",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 111; target batch count 200",
+  "title": "Echoes of Emptiness and Desire",
+  "reasoning": "This work embodies the emotional interplay between emptiness and desire, captured through a palette of warm red tones contrasting with cool blues and blacks. The center glows warmly, representing desire, while the edges soften into a cool emptiness, creating a dynamic tension. The composition follows a spiral counterclockwise flow, suggesting a rise and fall. The intentional placement of darker colors along the edges provides a sense of confinement, while the vibrant center suggests a beacon of hope amidst isolation, reflecting the chaos and longing hinted at in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF5733"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4C33"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF7D33"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF8D33"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFAB33"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFB733"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFCE33"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFD733"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFCE33"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFC033"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFB733"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF8A33"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FF7D33"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FF5733"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF5050"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FF4C4C"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A8D8E6"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A6D8E6"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A2D0D8"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#98C4D8"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#81B7C8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#5CA5B8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4FA2BF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#4B9CC9"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#468EB4"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#4C84B2"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#3A7DBE"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#2C6AB6"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#2A5AB8"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#1E4CA2"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1B4EBC"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#1C2C3F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#1D2A3F"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#1D243E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#1D1E3D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#1E1B3B"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#1F182C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#241C2C"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#322B32"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#322030"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#412830"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#422D2D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#4D303B"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#51353A"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#6D4740"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#7A5B54"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#865D54"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#B63E4D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B5665D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C88632"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D89C2C"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#C58B3C"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#C22D24"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F25D1F"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FA641F"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#DE3D25"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E1231F"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#EA0C23"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FF6F22"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F34D2A"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D43D33"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#D74062"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B53E71"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "emptiness": "target",
+      "desire": "spark"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "filled_square",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "1adbe13224fc570579ebafc29b2cb9a4c5d60d703a69999dcfe27fa9df2e22f7",
+  "pixelHash": "1adbe13224fc570579ebafc29b2cb9a4c5d60d703a69999dcfe27fa9df2e22f7",
+  "jsonFile": "1adbe13224fc570579ebafc29b2cb9a4c5d60d703a69999dcfe27fa9df2e22f7.json",
+  "svgFile": "1adbe13224fc570579ebafc29b2cb9a4c5d60d703a69999dcfe27fa9df2e22f7.svg",
+  "createdAt": "2026-06-02T04:59:02.109844+00:00"
+}

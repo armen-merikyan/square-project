@@ -1,0 +1,399 @@
+{
+  "id": "db4b0d3dc60234d46a2e9d655953be4ff71d4dd09bab2243ccd6d29e286eba40",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 172; target batch count 200",
+  "title": "Tension of Presence",
+  "reasoning": "The emotional tone captures the struggle between emptiness and desire. The chosen palette features contrasting warm (red) and cool (pale_blue) tones, embodying the pull of desire against the backdrop of emptiness. The layout emphasizes a central seed shape surrounded by jagged edges that visually represent pressure and noise. The density of the red stripes suggests desire breaking through the surrounding emptiness symbolized by the cooler colors. Broken pixels add paradoxical imperfections, enhancing the tension without depicting recognizable forms.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF3333"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF6666"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF9999"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FAFAFA"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF4444"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF7777"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F3F3F3"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C0D0D0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#88B0B0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#79A0A0"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#EBEBEB"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF5555"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF8888"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#90B0B0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#77A0A0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#66A0A0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E9E9E9"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF6666"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF9999"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B0D0D0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#90C0C0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#77B0B0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#6AA0A0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E8E8E8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FF7777"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFAAAA"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#88A0A0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#6A9797"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E7E7E7"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FF8888"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFBBBB"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E6E6E6"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#99A0A0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#649797"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E6E6E6"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FF9999"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A2A2A2"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#95A0A0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#62A0A0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#E5E5E5"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFAAAA"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFDDDD"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#EFEFEF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#AFAFAF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8F7F7F"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#61A0A0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#E4E4E4"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "burst",
+    "patterns": {
+      "emptiness": "ring",
+      "desire": "stripes"
+    },
+    "edgeStyle": "jagged_edges",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "seed",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "db4b0d3dc60234d46a2e9d655953be4ff71d4dd09bab2243ccd6d29e286eba40",
+  "pixelHash": "db4b0d3dc60234d46a2e9d655953be4ff71d4dd09bab2243ccd6d29e286eba40",
+  "jsonFile": "db4b0d3dc60234d46a2e9d655953be4ff71d4dd09bab2243ccd6d29e286eba40.json",
+  "svgFile": "db4b0d3dc60234d46a2e9d655953be4ff71d4dd09bab2243ccd6d29e286eba40.svg",
+  "createdAt": "2026-06-02T04:59:48.124860+00:00"
+}

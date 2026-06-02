@@ -1,0 +1,399 @@
+{
+  "id": "e6249e91c98490d642e65a3b254453947e4c5c92d62192b8cebbd2c6e35a0aed",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 198; target batch count 200",
+  "title": "Emotional Collision",
+  "reasoning": "This piece explores the tension between emptiness and desire, using a palette of warm reds and cool blues to represent these conflicting feelings. The mirror layout introduces symmetry with deliberate imperfections, embodying the imperfections of desire amidst feelings of emptiness. The sharp vs. soft contrast emphasizes collisions between the hard edges of wanting and the soft void of absence. Central to the design is the interaction of colors that lead the eye horizontally, signifying a movement from left to right that mirrors life's ebb and flow. Each row creates a rhythm of varying intensity, evoking emotion and unease.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF5733"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF8D5B"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFAB8A"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFCCB3"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#EEFFFF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A7C6ED"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#8FBFDC"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2F2F2F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#454545"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#606060"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#757575"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#8A8A8A"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B5B5B5"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFC300"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#DAF7A6"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF5733"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C70039"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#900C3F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#581845"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C70000"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FF5733"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#C7C7C7"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#AFAFAF"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#8F8F8F"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#707070"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#545454"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#383838"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1B1B1B"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#005A8B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#007BFF"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#009CFF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#00DFFF"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#79E5FF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B3F0FF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#E6FFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#281D1D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#2C2323"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#322D2D"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#373737"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#3B3B3B"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#3E3E3E"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#424242"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#474747"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#B88C96"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#C8B6C6"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E0BBD4"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F3D4D6"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFF2F7"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F8F8F8"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FF5733"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFC300"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#DAF7A6"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#00FFD1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#00FF84"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00FF5E"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#00FF21"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "mirror_broken",
+      "description": "Left and right sides almost mirror, but 2 to 5 pixels are wrong."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "emptiness": "stripes",
+      "desire": "frame"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "single_pixel",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "e6249e91c98490d642e65a3b254453947e4c5c92d62192b8cebbd2c6e35a0aed",
+  "pixelHash": "e6249e91c98490d642e65a3b254453947e4c5c92d62192b8cebbd2c6e35a0aed",
+  "jsonFile": "e6249e91c98490d642e65a3b254453947e4c5c92d62192b8cebbd2c6e35a0aed.json",
+  "svgFile": "e6249e91c98490d642e65a3b254453947e4c5c92d62192b8cebbd2c6e35a0aed.svg",
+  "createdAt": "2026-06-02T05:00:08.139068+00:00"
+}

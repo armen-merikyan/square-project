@@ -1,0 +1,399 @@
+{
+  "id": "e394f036c19d54809c9efb5ad5e9b275f248f3a6039247703d8bb368e9e1ea1e",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 32; target batch count 200",
+  "title": "Echo of Desire",
+  "reasoning": "The emotional tone captures the struggle between emptiness and desire, reflecting a tension that rises through the composition. The chosen palette of deep blacks, muted violets, soft golds, and pale greens evokes feelings of longing and quietness against the backdrop of hope. There\u2019s a sharp contrast between the dark and cool tones versus the warm golden hues, suggesting moments of aspiration and the pressure of unfulfilled dreams. The placements create a rhythm of upward movement that invokes rising signals of desire, while also incorporating imperfections through broken pixels to symbolize the jagged journey of seeking fulfillment amidst loneliness.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1D1F2B"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#383B49"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#545468"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#6B7A9C"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C6B62A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#BACD43"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#A1D31B"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1D1F2B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3B3E51"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#606277"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#9B8F2A"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#B7C27D"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E0D8A1"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B5C9C6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#AEDD88"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#383B49"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#606277"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A1B2C2"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D9CBA5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFE6B9"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFC07A"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#AAB7A4"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C7D5A5"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#545468"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#A1B2C2"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C4D8D0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F6ED7C"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F1C94C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E4B036"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#C8DCC4"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E7E9B1"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#6B7A9C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#A1B2C2"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F1C94C"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F9F7E0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E1C621"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#5E8D38"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#93C1BB"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C2DA44"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C6B62A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E1C621"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F6ED7C"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F6E5A3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#FFEEB2"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F4C770"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#AEC3B6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E7E7B1"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#BACD43"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B7C27D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E0D8A1"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F9F7E0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FCF5D6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#D7E5D4"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#A7C3BA"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#DAE2B7"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#A1D31B"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#C6B62A"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D9CBA5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#FCF5D6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#B2C2AF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A7C3BA"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#B9D0B6"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#DBDB68"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "diagonal_fall",
+    "patterns": {
+      "emptiness": "grid",
+      "desire": "grid"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "sharp_vs_soft",
+    "shapeSeed": "door",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "e394f036c19d54809c9efb5ad5e9b275f248f3a6039247703d8bb368e9e1ea1e",
+  "pixelHash": "e394f036c19d54809c9efb5ad5e9b275f248f3a6039247703d8bb368e9e1ea1e",
+  "jsonFile": "e394f036c19d54809c9efb5ad5e9b275f248f3a6039247703d8bb368e9e1ea1e.json",
+  "svgFile": "e394f036c19d54809c9efb5ad5e9b275f248f3a6039247703d8bb368e9e1ea1e.svg",
+  "createdAt": "2026-06-02T04:58:17.289501+00:00"
+}

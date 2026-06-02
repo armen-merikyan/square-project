@@ -1,0 +1,399 @@
+{
+  "id": "4964815cf4df014e10a005190c794aa4ea1fa28b9875cb34993d4b8909847a0c",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 72; target batch count 200",
+  "title": "Ebb and Flow",
+  "reasoning": "This piece captures the emotional tension of emptiness versus desire through layered, contrasting colors. The dark navy and black symbolize the feeling of emptiness, while the lighter, cooler tones of dim cyan create a sense of distant hope. The rising layout echoes the desire to ascend out of loneliness, while the irregular pixels introduce an element of disruption, representing the struggle between these two emotions. The piece oscillates between dense, warm areas and cooler spaces, creating a rhythmic pattern of push and pull, embodying the seed's themes of rising and falling.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#101820"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1B2631"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#34495E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#1B2631"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#34495E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#2D3E50"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#34495E"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#99AAB5"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#1B2631"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#101820"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#99AAB5"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#34495E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#2D3E50"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#34495E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#101820"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#2D3E50"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#2D3E50"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#34495E"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#99AAB5"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1B2631"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#34495E"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#101820"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#101820"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#9BA4A9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#EAEAEA"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#2D3E50"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "diagonal_rise",
+    "patterns": {
+      "emptiness": "target",
+      "desire": "broken_dots"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "4964815cf4df014e10a005190c794aa4ea1fa28b9875cb34993d4b8909847a0c",
+  "pixelHash": "4964815cf4df014e10a005190c794aa4ea1fa28b9875cb34993d4b8909847a0c",
+  "jsonFile": "4964815cf4df014e10a005190c794aa4ea1fa28b9875cb34993d4b8909847a0c.json",
+  "svgFile": "4964815cf4df014e10a005190c794aa4ea1fa28b9875cb34993d4b8909847a0c.svg",
+  "createdAt": "2026-06-02T04:58:43.743493+00:00"
+}

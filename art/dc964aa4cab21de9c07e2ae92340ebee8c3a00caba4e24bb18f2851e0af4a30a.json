@@ -1,0 +1,399 @@
+{
+  "id": "dc964aa4cab21de9c07e2ae92340ebee8c3a00caba4e24bb18f2851e0af4a30a",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 27; target batch count 200",
+  "title": "Echoing Desires",
+  "reasoning": "This composition reflects the interplay between emptiness and desire. The top half represents a longing for warmth and connection through varied shades of red, while the bottom half embodies emptiness and coldness through a spectrum of blacks and pale blues. The dense patterns of warmth collide against the sparse, fragmented pixels below, embodying the tension of \u2018rise versus fall.\u2019 The choice of colors creates a visual noise, suggesting a struggle, amplifying the emotional landscape derived from the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF7F7F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFB2B2"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFCCCC"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FF9999"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FF3333"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FF1A1A"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#AA0000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E60000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFB3B3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF6666"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF3333"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#CC0000"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#B30000"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#990000"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#800000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#666666"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#666666"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#999999"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#999999"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#777777"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#777777"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#888888"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#999999"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#999999"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BBBBBB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#DDDDDD"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "collapse",
+    "patterns": {
+      "emptiness": "stairs",
+      "desire": "target"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "single_pixel",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "dc964aa4cab21de9c07e2ae92340ebee8c3a00caba4e24bb18f2851e0af4a30a",
+  "pixelHash": "dc964aa4cab21de9c07e2ae92340ebee8c3a00caba4e24bb18f2851e0af4a30a",
+  "jsonFile": "dc964aa4cab21de9c07e2ae92340ebee8c3a00caba4e24bb18f2851e0af4a30a.json",
+  "svgFile": "dc964aa4cab21de9c07e2ae92340ebee8c3a00caba4e24bb18f2851e0af4a30a.svg",
+  "createdAt": "2026-06-02T04:58:10.169156+00:00"
+}

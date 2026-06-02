@@ -1,0 +1,399 @@
+{
+  "id": "38f2deef4f4f8f0f9557a8d76e876661b9a141d985b289fe137f2aa27f106073",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 34; target batch count 200",
+  "title": "Eclipsed Signals",
+  "reasoning": "This artwork embodies the emotional tension between emptiness and desire through a contrasting palette of warm reds and cool blues, with black representing the overarching void. The upper part of the composition utilizes a checker pattern to depict desire, while the lower half breaks into a mirror-like distortion, embodying emptiness. The asymmetrical arrangement represents a rise and fall, with hints of noise disrupting the expected flow, symbolizing the inner conflict expressed in the seed. The broken edges create an imperfection that reflects the 'burned' aspect, adding depth to the feelings of fragmentation and longing.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4D00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF9900"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFCC00"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#0099FF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#004DFF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#0000FF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FF4D4D"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF9933"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFEC00"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#CCFFD9"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#33CCFF"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3399CC"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#3366FF"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#0033CC"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#330000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#663300"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#996600"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#CC9900"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFCC66"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#66CCFF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#0066CC"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#660000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#993300"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CC6600"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FF9900"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#CCFF99"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#33CCFF"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#0099FF"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#3366CC"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#333333"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#999999"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#001F00"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#003F00"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#005F00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#007F00"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#009F00"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#00BF00"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#00DF00"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#00FF00"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#666666"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#888888"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "emptiness": "mirror",
+      "desire": "checker"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "light_vs_dark",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "38f2deef4f4f8f0f9557a8d76e876661b9a141d985b289fe137f2aa27f106073",
+  "pixelHash": "38f2deef4f4f8f0f9557a8d76e876661b9a141d985b289fe137f2aa27f106073",
+  "jsonFile": "38f2deef4f4f8f0f9557a8d76e876661b9a141d985b289fe137f2aa27f106073.json",
+  "svgFile": "38f2deef4f4f8f0f9557a8d76e876661b9a141d985b289fe137f2aa27f106073.svg",
+  "createdAt": "2026-06-02T04:58:12.495246+00:00"
+}

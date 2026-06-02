@@ -1,0 +1,399 @@
+{
+  "id": "94a75c6cad8e637ae4ed08704e15d936ad3c8cfc4c2a01830bd67b60c3153399",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 154; target batch count 200",
+  "title": "Echoes of Desire",
+  "reasoning": "The emotional tone embodies a tension between emptiness and desire, represented by a warm color palette of burnt orange and gold contrasting against deep charcoal and dark red. The layout presents an argument grid where the warm 'desire' pattern frames the cooler 'emptiness' layout. Collisions of colors occur in jagged transitions across the canvas, suggesting both the intensity of yearning and the weight of absence. The pattern creates a sense of rising movement, echoing the feelings of desire that punctuate the quieter, emptier areas. Broken pixels enhance authenticity, revealing flaws inherent in the human experience of longing.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#7C4D00"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF6F00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#455A64"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#B71C1C"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#C9F5D0"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#607D8B"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F57F17"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFAB40"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#CFD8DC"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FF7043"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#455A64"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D32F2F"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FF5252"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#4FC3F7"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF5722"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#BF360C"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C8E6C9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#263238"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FF9100"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#757575"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFEB3B"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FF9800"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FFC107"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B0BEC5"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#DD2C00"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6D4C41"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FF1433"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E57373"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#BF360C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF5722"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#81D4FA"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFCCBC"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B2FF59"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#FFD740"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FF8B00"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#795548"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#37474F"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D32F2F"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FF5252"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#D7CCC8"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#9E9E9E"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F06292"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#1E88E5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#455A64"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFAB40"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FF8F00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#CFD8DC"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#37474F"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FF4081"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FF1744"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#BDBDBD"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#D32F2F"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFC107"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C8E6C9"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#009688"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#B2FF59"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#757575"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#7B1FA2"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "spiral_counterclockwise",
+    "patterns": {
+      "emptiness": "stairs",
+      "desire": "frame"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "filled_square",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "94a75c6cad8e637ae4ed08704e15d936ad3c8cfc4c2a01830bd67b60c3153399",
+  "pixelHash": "94a75c6cad8e637ae4ed08704e15d936ad3c8cfc4c2a01830bd67b60c3153399",
+  "jsonFile": "94a75c6cad8e637ae4ed08704e15d936ad3c8cfc4c2a01830bd67b60c3153399.json",
+  "svgFile": "94a75c6cad8e637ae4ed08704e15d936ad3c8cfc4c2a01830bd67b60c3153399.svg",
+  "createdAt": "2026-06-02T04:59:47.623326+00:00"
+}

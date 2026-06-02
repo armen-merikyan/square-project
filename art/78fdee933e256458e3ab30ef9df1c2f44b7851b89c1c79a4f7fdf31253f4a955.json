@@ -1,0 +1,399 @@
+{
+  "id": "78fdee933e256458e3ab30ef9df1c2f44b7851b89c1c79a4f7fdf31253f4a955",
+  "seed": "emptiness vs desire; rise_vs_fall; rising_signal; left_to_right; noise against radial; burned_edges; warm_vs_cool; heart_fragment; lonely_signal | abstract variation request 165; target batch count 200",
+  "title": "Signal Fracture",
+  "reasoning": "This composition reflects the emotional tension between emptiness and desire through a contrasting color palette of deep navy and cool dim cyan against stark blacks and hints of white. The top half symbolizes desire with fragmented patterns mimicking frames, while the bottom embodies emptiness through a staircase pattern that conveys a descent or loss. The central collision zone merges the two concepts, with broken pixels introducing an imperfection that underscores a fractured heart signal, enhancing the raw emotional undercurrent. The layout, split horizontally, accentuates the dual nature of the themes, inviting the viewer to experience the rise and fall of emotional states.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#0A1A2D"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1E3B5D"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#2E5D87"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4D8AA8"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#4BA7A5"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#66B0B2"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B8E2E7"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#0E2440"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#1F3E70"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#335B91"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A8D1D1"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#5CC2A0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#B7E1DB"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#0D0D0D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#959BBA"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#3A5B78"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7D9BB8"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#8FD4E0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B3D3DA"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A0C8C9"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#E5F0F1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#0F0F0F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#212F4D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#4B668F"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#8BB5C9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#73C5DA"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#A4E1E2"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#F1FCFC"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FAFAFA"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#1C1C1C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B1BFD0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#4A678E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#347B9D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A6D5E0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8BDBD7"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C0E6E3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#101010"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1A2D45"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#4F6F92"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#B8D3E4"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#6DC9D3"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#9BD8DB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#B6E9E7"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#0C0C0C"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#1E3B5D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#2E5D87"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#67C9DB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A5F0ED"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#94E1DD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#B6E1E0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#2C2C2C"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#515151"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#3C4E68"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#76A1B8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#B7D8E6"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#A5E0DB"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#B4E7E0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#E5E5E5"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "emptiness",
+      "desire"
+    ],
+    "emotionMoods": {
+      "emptiness": [],
+      "desire": []
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "wave_horizontal",
+    "patterns": {
+      "emptiness": "stairs",
+      "desire": "frame"
+    },
+    "edgeStyle": "no_outline",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "filled_square",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "78fdee933e256458e3ab30ef9df1c2f44b7851b89c1c79a4f7fdf31253f4a955",
+  "pixelHash": "78fdee933e256458e3ab30ef9df1c2f44b7851b89c1c79a4f7fdf31253f4a955",
+  "jsonFile": "78fdee933e256458e3ab30ef9df1c2f44b7851b89c1c79a4f7fdf31253f4a955.json",
+  "svgFile": "78fdee933e256458e3ab30ef9df1c2f44b7851b89c1c79a4f7fdf31253f4a955.svg",
+  "createdAt": "2026-06-02T04:59:53.621621+00:00"
+}
