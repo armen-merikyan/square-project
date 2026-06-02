@@ -1913,7 +1913,7 @@ async function renderGallery() {
   const requestedCategory = requestedId && !isAllArtworkCategory(urlCategory)
     ? categoryForArtworkId(requestedId)
     : null;
-  activeCategory = requestedCategory || urlCategory || galleryCategories[0];
+  activeCategory = requestedCategory || urlCategory || allArtworkCategory();
   renderCategoryOptions();
   await loadGalleryCategory(activeCategory, { requestedId, updateUrl: !requestedId });
 }

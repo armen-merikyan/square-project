@@ -1308,6 +1308,10 @@ footer p {
   font-weight: 900;
 }
 
+.gallery-category[hidden] {
+  display: none;
+}
+
 .gallery-search input,
 .gallery-category select,
 .gallery-size input {
