@@ -50,6 +50,7 @@ const artInspector = document.querySelector("#artInspector");
 const galleryCount = document.querySelector("#galleryCount");
 const gallerySearch = document.querySelector("#gallerySearch");
 const galleryCategory = document.querySelector("#galleryCategory");
+const galleryImageSize = document.querySelector("#galleryImageSize");
 const galleryPagination = document.querySelector("#galleryPagination");
 const galleryLoading = document.querySelector("#galleryLoading");
 const galleryLoadingTitle = document.querySelector("#galleryLoadingTitle");
@@ -71,6 +72,7 @@ const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
+const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
 const ALL_ARTWORK_CATEGORY_ID = "all-artwork";
 let galleryRecords = [];
 let filteredRecords = [];
@@ -87,6 +89,7 @@ let selectedId = "";
 let previousFocus = null;
 let colorFiltersVisible = true;
 let colorSimilarityThreshold = Number(colorSimilarity.value);
+let galleryImageSizeValue = Number(galleryImageSize.value);
 let selectedShopVariant = "print";
 let selectedFrameType = "black";
 let galleryLoadComplete = false;
@@ -158,6 +161,28 @@ function setAnalysisControlsEnabled(enabled) {
     setColorFiltersVisible(false, false);
   } else {
     setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
+  }
+}
+
+function clampGalleryImageSize(value) {
+  const min = Number(galleryImageSize.min);
+  const max = Number(galleryImageSize.max);
+  const normalized = Number(value);
+
+  if (!Number.isFinite(normalized)) {
+    return Number(galleryImageSize.defaultValue);
+  }
+
+  return Math.min(Math.max(normalized, min), max);
+}
+
+function setGalleryImageSize(value, shouldSave = true) {
+  galleryImageSizeValue = clampGalleryImageSize(value);
+  galleryImageSize.value = String(galleryImageSizeValue);
+  artGrid.style.setProperty("--gallery-card-min", `${galleryImageSizeValue}px`);
+
+  if (shouldSave) {
+    savePreference(GALLERY_IMAGE_SIZE_COOKIE, String(galleryImageSizeValue));
   }
 }
 
@@ -1823,6 +1848,9 @@ async function renderGallery() {
 }
 
 gallerySearch.addEventListener("input", applyFilters);
+galleryImageSize.addEventListener("input", () => {
+  setGalleryImageSize(galleryImageSize.value);
+});
 galleryCategory.addEventListener("change", () => {
   const category = galleryCategory.value === ALL_ARTWORK_CATEGORY_ID
     ? allArtworkCategory()
@@ -1873,6 +1901,7 @@ artInspector.addEventListener("close", () => {
 });
 
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
+setGalleryImageSize(readPreference(GALLERY_IMAGE_SIZE_COOKIE) || galleryImageSize.value, false);
 const savedSimilarity = Number(readPreference(COLOR_SIMILARITY_COOKIE));
 
 if (Number.isFinite(savedSimilarity)) {
