@@ -71,9 +71,21 @@
               <p class="eyebrow">Filter menu</p>
               <h2>Colors</h2>
             </div>
-            <button class="filter-clear" id="clearColorFilters" type="button">Clear</button>
+            <div class="filter-actions">
+              <button
+                class="filter-info"
+                type="button"
+                aria-label="Color filter help"
+                aria-describedby="filterHelpPopover"
+              >
+                ?
+              </button>
+              <span class="filter-help-popover" id="filterHelpPopover" role="tooltip">
+                Click a color to cycle Neutral, On, and Off.
+              </span>
+              <button class="filter-clear" id="clearColorFilters" type="button">Clear</button>
+            </div>
           </div>
-          <p class="filter-help">Click a color to cycle Neutral, On, and Off.</p>
           <label class="color-similarity-control">
             <span>Merge similar colors</span>
             <input
