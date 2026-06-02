@@ -126,6 +126,34 @@
                   title="Hide color filters"
                 >
                 </button>
+                <div class="gallery-autoplay" aria-label="Automatic page browsing">
+                  <button
+                    class="gallery-autoplay-button gallery-autoplay-play"
+                    id="galleryAutoplayPlay"
+                    type="button"
+                    aria-label="Play automatic page browsing"
+                    disabled
+                  >
+                    Play
+                  </button>
+                  <button
+                    class="gallery-autoplay-button gallery-autoplay-stop"
+                    id="galleryAutoplayStop"
+                    type="button"
+                    aria-label="Stop automatic page browsing"
+                    disabled
+                  >
+                    Stop
+                  </button>
+                  <label class="gallery-autoplay-speed">
+                    <span>Speed</span>
+                    <select id="galleryAutoplaySpeed" aria-label="Automatic browsing speed">
+                      <option value="slow">Slow</option>
+                      <option value="normal" selected>Normal</option>
+                      <option value="fast">Fast</option>
+                    </select>
+                  </label>
+                </div>
                 <output id="galleryCount" class="visually-hidden" aria-live="polite">Loading</output>
               </div>
             </div>

@@ -64,6 +64,9 @@ const clearColorFilters = document.querySelector("#clearColorFilters");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
 const galleryFilters = document.querySelector("#galleryFilters");
 const toggleColorFilters = document.querySelector("#toggleColorFilters");
+const galleryAutoplayPlay = document.querySelector("#galleryAutoplayPlay");
+const galleryAutoplayStop = document.querySelector("#galleryAutoplayStop");
+const galleryAutoplaySpeed = document.querySelector("#galleryAutoplaySpeed");
 const colorSimilarity = document.querySelector("#colorSimilarity");
 const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 
@@ -71,12 +74,17 @@ const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
 const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
-const AUTOPLAY_PAGE_INTERVAL = 4200;
 const AUTOPLAY_PAGE_TRANSITION = 180;
+const AUTOPLAY_SPEED_OPTIONS = {
+  slow: 9000,
+  normal: 6500,
+  fast: 3500
+};
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
 const GALLERY_PAGE_SIZE_COOKIE = "square_gallery_page_size";
+const GALLERY_AUTOPLAY_SPEED_COOKIE = "square_gallery_autoplay_speed";
 const ALL_ARTWORK_CATEGORY_ID = "all-artwork";
 let galleryRecords = [];
 let filteredRecords = [];
@@ -106,6 +114,7 @@ let allArtworkObserver = null;
 let allArtworkSentinel = null;
 let galleryAutoplayActive = false;
 let galleryAutoplayTimer = null;
+let galleryAutoplaySpeedValue = "normal";
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -211,8 +220,35 @@ function setPageSize(value, shouldSave = true) {
   }
 }
 
+function normalizeAutoplaySpeed(value) {
+  return Object.hasOwn(AUTOPLAY_SPEED_OPTIONS, value) ? value : "normal";
+}
+
+function setGalleryAutoplaySpeed(value, shouldSave = true) {
+  galleryAutoplaySpeedValue = normalizeAutoplaySpeed(value);
+  galleryAutoplaySpeed.value = galleryAutoplaySpeedValue;
+
+  if (shouldSave) {
+    savePreference(GALLERY_AUTOPLAY_SPEED_COOKIE, galleryAutoplaySpeedValue);
+  }
+
+  if (galleryAutoplayActive) {
+    scheduleGalleryAutoplay();
+  }
+}
+
+function galleryAutoplayInterval() {
+  return AUTOPLAY_SPEED_OPTIONS[galleryAutoplaySpeedValue];
+}
+
 function getTotalPages() {
   return Math.max(1, Math.ceil(filteredRecords.length / pageSize));
+}
+
+function updateGalleryAutoplayControls(totalPages = getTotalPages()) {
+  galleryAutoplayPlay.disabled = galleryAutoplayActive || totalPages <= 1;
+  galleryAutoplayStop.disabled = !galleryAutoplayActive;
+  galleryAutoplaySpeed.disabled = totalPages <= 1;
 }
 
 function clearGalleryAutoplayTimer() {
@@ -226,6 +262,7 @@ function stopGalleryAutoplay() {
   galleryAutoplayActive = false;
   clearGalleryAutoplayTimer();
   artGrid.classList.remove("is-autoplay-advance");
+  updateGalleryAutoplayControls();
 }
 
 function scheduleGalleryAutoplay(totalPages = getTotalPages()) {
@@ -253,7 +290,7 @@ function scheduleGalleryAutoplay(totalPages = getTotalPages()) {
       currentPage = currentPage >= latestTotalPages ? 1 : currentPage + 1;
       renderCurrentPage();
     }, AUTOPLAY_PAGE_TRANSITION);
-  }, AUTOPLAY_PAGE_INTERVAL);
+  }, galleryAutoplayInterval());
 }
 
 function startGalleryAutoplay(totalPages = getTotalPages()) {
@@ -263,6 +300,7 @@ function startGalleryAutoplay(totalPages = getTotalPages()) {
   }
 
   galleryAutoplayActive = true;
+  updateGalleryAutoplayControls(totalPages);
   scheduleGalleryAutoplay(totalPages);
 }
 
@@ -1514,34 +1552,6 @@ function renderPagination(totalPages) {
   });
   pageSizeLabel.append(pageSizeText, pageSizeSelect);
 
-  const autoplayControls = document.createElement("div");
-  autoplayControls.className = "pagination-autoplay";
-  autoplayControls.setAttribute("aria-label", "Automatic page browsing");
-
-  const playButton = document.createElement("button");
-  playButton.type = "button";
-  playButton.className = "pagination-autoplay-button pagination-autoplay-play";
-  playButton.textContent = "Play";
-  playButton.setAttribute("aria-label", "Play automatic page browsing");
-  playButton.disabled = galleryAutoplayActive || totalPages <= 1;
-  playButton.addEventListener("click", () => {
-    startGalleryAutoplay(totalPages);
-    renderCurrentPage();
-  });
-
-  const stopButton = document.createElement("button");
-  stopButton.type = "button";
-  stopButton.className = "pagination-autoplay-button pagination-autoplay-stop";
-  stopButton.textContent = "Stop";
-  stopButton.setAttribute("aria-label", "Stop automatic page browsing");
-  stopButton.disabled = !galleryAutoplayActive;
-  stopButton.addEventListener("click", () => {
-    stopGalleryAutoplay();
-    renderCurrentPage();
-  });
-
-  autoplayControls.append(playButton, stopButton);
-
   const next = document.createElement("button");
   next.type = "button";
   next.className = "pagination-arrow";
@@ -1555,9 +1565,9 @@ function renderPagination(totalPages) {
 
   if (totalPages > 1) {
     controls.append(previous, pageNumbers, next);
-    galleryPagination.append(summary, controls, autoplayControls, pageSizeLabel);
+    galleryPagination.append(summary, controls, pageSizeLabel);
   } else {
-    galleryPagination.append(summary, autoplayControls, pageSizeLabel);
+    galleryPagination.append(summary, pageSizeLabel);
   }
 }
 
@@ -1754,6 +1764,7 @@ function renderCurrentPage() {
 
   if (pageRecords.length === 0) {
     stopGalleryAutoplay();
+    updateGalleryAutoplayControls(1);
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
     galleryPagination.replaceChildren();
     closeInspector();
@@ -1764,6 +1775,7 @@ function renderCurrentPage() {
   artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
   hydrateVisiblePixelArtwork(pageRecords, token);
   renderPagination(totalPages);
+  updateGalleryAutoplayControls(totalPages);
   scheduleGalleryAutoplay(totalPages);
 
   document.querySelectorAll(".gallery-card").forEach((card) => {
@@ -1844,6 +1856,7 @@ async function loadGalleryCategory(category, { requestedId = "", updateUrl = tru
   galleryCount.textContent = "Loading";
   artGrid.replaceChildren();
   galleryPagination.replaceChildren();
+  updateGalleryAutoplayControls(1);
   closeInspector();
   updateGalleryLoading({
     title: "Loading category",
@@ -1911,6 +1924,7 @@ async function loadAllArtwork({ requestedId = "", updateUrl = true } = {}) {
   galleryCount.textContent = "Loading";
   artGrid.replaceChildren();
   galleryPagination.replaceChildren();
+  updateGalleryAutoplayControls(1);
   closeInspector();
   updateGalleryLoading({
     title: "Loading all artwork",
@@ -2065,6 +2079,17 @@ colorSimilarity.addEventListener("input", () => {
 toggleColorFilters.addEventListener("click", () => {
   setColorFiltersVisible(!colorFiltersVisible);
 });
+galleryAutoplayPlay.addEventListener("click", () => {
+  startGalleryAutoplay();
+  renderCurrentPage();
+});
+galleryAutoplayStop.addEventListener("click", () => {
+  stopGalleryAutoplay();
+  renderCurrentPage();
+});
+galleryAutoplaySpeed.addEventListener("change", () => {
+  setGalleryAutoplaySpeed(galleryAutoplaySpeed.value);
+});
 clearColorFilters.addEventListener("click", () => {
   includedColorSeeds.clear();
   excludedColorSeeds.clear();
@@ -2090,6 +2115,7 @@ artInspector.addEventListener("close", () => {
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
 setGalleryImageSize(readPreference(GALLERY_IMAGE_SIZE_COOKIE) || galleryImageSize.value, false);
 setPageSize(readPreference(GALLERY_PAGE_SIZE_COOKIE), false);
+setGalleryAutoplaySpeed(readPreference(GALLERY_AUTOPLAY_SPEED_COOKIE) || galleryAutoplaySpeed.value, false);
 const savedSimilarity = Number(readPreference(COLOR_SIMILARITY_COOKIE));
 
 if (Number.isFinite(savedSimilarity)) {
