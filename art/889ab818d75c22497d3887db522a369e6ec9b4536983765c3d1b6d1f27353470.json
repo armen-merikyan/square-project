@@ -1,0 +1,407 @@
+{
+  "id": "889ab818d75c22497d3887db522a369e6ec9b4536983765c3d1b6d1f27353470",
+  "seed": "fear vs hope; inside_vs_outside; rising_signal; zigzag; rain against broken_dots; corner_heavy; sharp_vs_soft; single_pixel; fear_hope | abstract variation request 120; target batch count 200",
+  "title": "Waves of Emotion",
+  "reasoning": "This composition captures the emotional tension between fear and hope through a carefully selected palette and structure. The darker shades symbolize fear's grip, with a jagged edge suggesting sharpness and tension. In contrast, the lighter tones of soft gold and pale green represent hope and rising signals. The arrangement creates a dense outer layer that gradually gives way to a more open, lighter core, reflecting the push and pull of inside versus outside. The broken pixels introduce an imperfect quality, mirroring the struggle inherent in the emotions depicted.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#1A0B1F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4B0C7A"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7A7B97"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#3E4B6E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#8C6F23"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B0B914"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#E4DFA1"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1F1C2B"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#283D47"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#431A5A"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#726A91"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A87318"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#C4CF6C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E9EBBB"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F8F3E1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#212D3D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#267E93"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#B877E7"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#DFB92C"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#EFE6A9"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E9C394"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E1B293"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#D1B1A0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#4F4E4D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3F6F89"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#6F4C92"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#9A7B4D"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C5BF8D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E8E1C7"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#D7D362"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B1D1C9"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#2F2F2F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#484848"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#7878A6"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F0D59D"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#E4A92A"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#A8C7F0"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B5D6C3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C3D4E3"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#606060"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#7A7D82"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#A8A4B7"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D6C0D4"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#EFBB3E"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B8C8D4"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#E7CFC8"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#E9D1C7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#7A7A7A"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D5D5D5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F4F0E0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D0B6C0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#8DBF98"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#95C4E7"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A9D9E6"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D1D5D9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#EBF8E1"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#E6E7E8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#CECED6"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B7B9C0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#A2A3AD"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#88A7BB"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "fear",
+      "hope"
+    ],
+    "emotionMoods": {
+      "fear": [
+        "empty center",
+        "thin lines",
+        "dark corners"
+      ],
+      "hope": [
+        "rising",
+        "upward flow",
+        "small light"
+      ]
+    },
+    "layout": {
+      "name": "empty_room",
+      "description": "Mostly empty space with one meaningful object off-center."
+    },
+    "flow": "spiral_clockwise",
+    "patterns": {
+      "fear": "teeth",
+      "hope": "crack"
+    },
+    "edgeStyle": "thick_outline",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "889ab818d75c22497d3887db522a369e6ec9b4536983765c3d1b6d1f27353470",
+  "pixelHash": "889ab818d75c22497d3887db522a369e6ec9b4536983765c3d1b6d1f27353470",
+  "jsonFile": "889ab818d75c22497d3887db522a369e6ec9b4536983765c3d1b6d1f27353470.json",
+  "svgFile": "889ab818d75c22497d3887db522a369e6ec9b4536983765c3d1b6d1f27353470.svg",
+  "createdAt": "2026-06-02T13:42:12.175445+00:00"
+}

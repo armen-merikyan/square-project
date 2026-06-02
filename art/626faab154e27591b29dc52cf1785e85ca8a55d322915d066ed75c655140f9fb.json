@@ -1,0 +1,407 @@
+{
+  "id": "626faab154e27591b29dc52cf1785e85ca8a55d322915d066ed75c655140f9fb",
+  "seed": "fear vs hope; inside_vs_outside; rising_signal; zigzag; rain against broken_dots; corner_heavy; sharp_vs_soft; single_pixel; fear_hope | abstract variation request 12; target batch count 200",
+  "title": "Tension Between Light and Shadow",
+  "reasoning": "This abstract piece explores the emotional tension between fear and hope. The palette, consisting of black, dark violet, soft gold, and pale green, juxtaposes dark, heavy colors against lighter, more hopeful tones. The layout suggests a falling pixel effect, with colors arranged in a zigzag flow that creates dynamic motion while also evoking the idea of rain. The primary contrast occurs where the soft gold and pale green, representing hope, interfuse with the deep black and dark violet, capturing the conflict between uplifting and oppressive feelings. The edges are more pronounced, creating a jagged appearance that hints at fear, while the central focus remains lighter to symbolize hope emerging from despair. The arrangement emphasizes both negative space and broken pixels, suggesting imperfections in the emotional landscape, enhancing the overall abstract narrative.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#004D00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#19233C"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#007A33"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFC300"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFC300"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FF9F00"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#004D00"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FFC300"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#004D00"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FFC300"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF9F00"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#007A33"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FF9F00"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#0E1A1A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#004D00"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FFC300"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#222222"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF9F00"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFC300"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#7F3A2A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#19233C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#003300"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFC300"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#7F3A2A"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#1A0E24"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#6B4C90"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D4CDAA"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#004D00"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "fear",
+      "hope"
+    ],
+    "emotionMoods": {
+      "fear": [
+        "empty center",
+        "jagged edges",
+        "thin lines"
+      ],
+      "hope": [
+        "center glow",
+        "rising",
+        "upward flow"
+      ]
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "fear": "spark",
+      "hope": "rain"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "stair_step",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "626faab154e27591b29dc52cf1785e85ca8a55d322915d066ed75c655140f9fb",
+  "pixelHash": "626faab154e27591b29dc52cf1785e85ca8a55d322915d066ed75c655140f9fb",
+  "jsonFile": "626faab154e27591b29dc52cf1785e85ca8a55d322915d066ed75c655140f9fb.json",
+  "svgFile": "626faab154e27591b29dc52cf1785e85ca8a55d322915d066ed75c655140f9fb.svg",
+  "createdAt": "2026-06-02T13:40:56.817109+00:00"
+}

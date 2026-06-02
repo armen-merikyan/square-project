@@ -1,0 +1,407 @@
+{
+  "id": "4b386bc7d44f0057b9cf1fb3cfc49e6c7cb7b9018c8c37942e7837817c1ad359",
+  "seed": "fear vs hope; inside_vs_outside; rising_signal; zigzag; rain against broken_dots; corner_heavy; sharp_vs_soft; single_pixel; fear_hope | abstract variation request 182; target batch count 200",
+  "title": "Collision of Light and Shadow",
+  "reasoning": "This pixel composition embodies the tension between fear and hope. The palette, featuring deep blacks and dark violets contrasted by soft gold and pale green, represents the heavy corners of fear battling against the light of hope. The placement of darker colors in the edges reflects fear's grip, while the brighter central pixels symbolize hope's emergence. The sharp vs. soft theme is echoed by the jagged edges of dark shades against smooth, luminous accents, suggesting a struggle within a defined space, as emotions collide and blend within the grid.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#3F003F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#AAAAAA"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3F003F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3F0051"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#511A51"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#444444"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7F7F5C"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#B7D390"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#113E4B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3F0051"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFDA44"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFF3A4"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#AAEEBB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#8B6D3D"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#3A2E2D"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3F001F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#3F003F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8BE3D0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#590E5C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3F003F"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF7F24"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B7D3D1"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#222222"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#AAEEBB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#8B6D3D"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#111C3A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#5C4B3A"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B3C932"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#3F003F"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#AAEEBB"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#3F001F"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FFDA65"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#5D4B5A"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#8BE3D0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3F003F"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#590E5C"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFF3A4"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#8BE3D0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "fear",
+      "hope"
+    ],
+    "emotionMoods": {
+      "fear": [
+        "dark corners",
+        "thin lines",
+        "empty center"
+      ],
+      "hope": [
+        "small light",
+        "rising",
+        "upward flow"
+      ]
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "diagonal_rise",
+    "patterns": {
+      "fear": "crack",
+      "hope": "split_screen"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "symmetrical_vs_broken",
+    "shapeSeed": "half_square",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Tiny Hope Under Pressure",
+      "emotionPair": [
+        "fear",
+        "hope"
+      ],
+      "layout": "center_seed",
+      "flow": "outside_inward",
+      "pattern": "dark frame with single bright center pixel",
+      "edge": "jagged_edges",
+      "shape": "seed",
+      "palette": "fear_hope"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "4b386bc7d44f0057b9cf1fb3cfc49e6c7cb7b9018c8c37942e7837817c1ad359",
+  "pixelHash": "4b386bc7d44f0057b9cf1fb3cfc49e6c7cb7b9018c8c37942e7837817c1ad359",
+  "jsonFile": "4b386bc7d44f0057b9cf1fb3cfc49e6c7cb7b9018c8c37942e7837817c1ad359.json",
+  "svgFile": "4b386bc7d44f0057b9cf1fb3cfc49e6c7cb7b9018c8c37942e7837817c1ad359.svg",
+  "createdAt": "2026-06-02T13:42:40.220435+00:00"
+}
