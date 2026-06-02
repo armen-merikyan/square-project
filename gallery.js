@@ -74,8 +74,8 @@ const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const AUTOPLAY_PAGE_TRANSITION = 180;
-const PAGE_TRANSITION_EXIT_MS = 360;
-const PAGE_TRANSITION_ENTER_MS = 620;
+const PAGE_TRANSITION_EXIT_MS = 820;
+const PAGE_TRANSITION_ENTER_MS = 1220;
 const AUTOPLAY_SPEED_OPTIONS = {
   "1x": 9000,
   "2x": 6500,
@@ -346,7 +346,7 @@ function setSnakeCardOrder(cards, direction = 1) {
     const orderedIndex = direction > 0 ? snakeOrder : cards.length - snakeOrder;
 
     card.style.setProperty("--snake-order", String(orderedIndex));
-    card.style.setProperty("--snake-delay", `${Math.min(orderedIndex, 10) * 12}ms`);
+    card.style.setProperty("--snake-delay", `${Math.min(orderedIndex, 12) * 20}ms`);
     card.style.setProperty("--snake-row", String(row));
   });
 }
@@ -392,10 +392,10 @@ function renderPageCards(pageRecords, start, token, totalPages) {
   const direction = pageDirection(totalPages);
   const hasExistingCards = artGrid.querySelector(".gallery-card");
   const shouldAnimate = hasExistingCards && !reducedMotionPreferred();
-  const exitX = direction > 0 ? "-34px" : "34px";
-  const exitHalfX = direction > 0 ? "-15px" : "15px";
-  const enterX = direction > 0 ? "34px" : "-34px";
-  const enterSettleX = direction > 0 ? "-3px" : "3px";
+  const exitX = direction > 0 ? "-54px" : "54px";
+  const exitHalfX = direction > 0 ? "-24px" : "24px";
+  const enterX = direction > 0 ? "54px" : "-54px";
+  const enterSettleX = direction > 0 ? "-5px" : "5px";
 
   const finishRender = () => {
     if (token !== pageRenderToken) {

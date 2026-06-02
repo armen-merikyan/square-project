@@ -2576,17 +2576,17 @@ body.has-open-inspector {
 
 .gallery-card.is-page-exiting {
   pointer-events: none;
-  animation: gallery-card-snake-exit 300ms var(--ease-smooth) both;
+  animation: gallery-card-snake-exit 560ms var(--ease-smooth) both;
   animation-delay: var(--snake-delay, 0ms);
 }
 
 .gallery-card.is-page-entering {
-  animation: gallery-card-snake-enter 560ms var(--ease-smooth) both;
-  animation-delay: calc(90ms + var(--snake-delay, 0ms));
+  animation: gallery-card-snake-enter 760ms var(--ease-smooth) both;
+  animation-delay: calc(120ms + var(--snake-delay, 0ms));
 }
 
 .art-grid.is-autoplay-advance .gallery-card.is-page-entering {
-  animation-duration: 620ms;
+  animation-duration: 860ms;
 }
 
 @keyframes gallery-card-snake-exit {
