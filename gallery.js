@@ -70,6 +70,7 @@ const colorSimilarityValue = document.querySelector("#colorSimilarityValue");
 const PAGE_SIZE_OPTIONS = [24, 48, 72, 96];
 const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
+const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
@@ -211,7 +212,7 @@ function allArtworkCategory() {
   return {
     id: ALL_ARTWORK_CATEGORY_ID,
     label: "All artwork",
-    description: "Loads lightweight cards as you scroll",
+    description: "Loads every category and builds full search and color filters",
     count: galleryTotalCount
   };
 }
@@ -386,6 +387,20 @@ async function fetchCategoryRecords(category) {
 
   const data = await response.json();
   return Array.isArray(data) ? data : data.records;
+}
+
+async function mapInParallelBatches(items, batchSize, mapper) {
+  const results = new Array(items.length);
+
+  for (let start = 0; start < items.length; start += batchSize) {
+    const batch = items.slice(start, start + batchSize);
+    const batchResults = await Promise.all(batch.map((item, batchIndex) => mapper(item, start + batchIndex)));
+    batchResults.forEach((result, batchIndex) => {
+      results[start + batchIndex] = result;
+    });
+  }
+
+  return results;
 }
 
 function yieldToBrowser() {
@@ -1757,9 +1772,9 @@ async function loadGalleryCategory(category, { requestedId = "", updateUrl = tru
 async function loadAllArtwork({ requestedId = "", updateUrl = true } = {}) {
   const loadToken = ++galleryLoadToken;
   const startedAt = performance.now();
-  allArtworkMode = true;
+  allArtworkMode = false;
   resetAllArtworkModeState();
-  setAnalysisControlsEnabled(false, { searchEnabled: true });
+  setAnalysisControlsEnabled(true);
   activeCategory = allArtworkCategory();
   galleryRecords = [];
   filteredRecords = [];
@@ -1783,20 +1798,56 @@ async function loadAllArtwork({ requestedId = "", updateUrl = true } = {}) {
   closeInspector();
   updateGalleryLoading({
     title: "Loading all artwork",
-    step: "Requesting the first artwork group.",
+    step: `Requesting ${galleryCategories.length} artwork groups in parallel.`,
     loaded: 0,
     total: galleryTotalCount,
     startedAt
   });
 
-  await loadNextAllArtworkCategory(loadToken);
+  let loadedArtworkCount = 0;
+  const loadedCategoryRecords = await mapInParallelBatches(
+    galleryCategories,
+    ALL_ARTWORK_PARALLEL_BATCH_SIZE,
+    async (category, index) => {
+      const records = await fetchCategoryRecords(category);
+      loadedArtworkCount += records.length;
 
-  if (loadToken !== galleryLoadToken || !allArtworkMode) {
+      if (loadToken === galleryLoadToken) {
+        updateGalleryLoading({
+          title: "Loading all artwork",
+          step: `${category.label} loaded. Merging artwork groups.`,
+          loaded: Math.min(galleryTotalCount, loadedArtworkCount),
+          total: galleryTotalCount,
+          startedAt
+        });
+      }
+
+      return { index, records };
+    }
+  );
+
+  if (loadToken !== galleryLoadToken) {
     return;
   }
 
+  galleryRecords = loadedCategoryRecords
+    .sort((a, b) => a.index - b.index)
+    .flatMap(({ records }) => records)
+    .map(normalizeGalleryRecord);
+  filteredRecords = galleryRecords;
+  galleryCount.textContent = `${galleryRecords.length} / ${galleryTotalCount}`;
+  updateGalleryLoading({
+    title: "Loading all artwork",
+    step: "All artwork loaded. Building search and color filters.",
+    loaded: galleryRecords.length,
+    total: galleryTotalCount,
+    startedAt
+  });
+
+  galleryLoadComplete = true;
+  rebuildGalleryIndexes({ renderFilters: true });
+  galleryLoading.hidden = true;
   galleryCategory.disabled = false;
-  startAllArtworkObserver(loadToken);
 
   if (requestedId) {
     const requestedRecord = galleryRecords.find((record) => record.id === requestedId);
@@ -1823,8 +1874,12 @@ async function renderGallery() {
 
   const manifest = await fetchGalleryManifest();
   const artworkIds = Array.isArray(manifest) ? manifest : manifest.artworkIds;
-  precomputedColorBucketsByThreshold = {};
-  precomputedColorBucketTotalsByThreshold = {};
+  precomputedColorBucketsByThreshold = !Array.isArray(manifest) && manifest.indexes?.colorBuckets
+    ? manifest.indexes.colorBuckets
+    : {};
+  precomputedColorBucketTotalsByThreshold = !Array.isArray(manifest) && manifest.indexes?.colorBucketTotals
+    ? manifest.indexes.colorBucketTotals
+    : {};
 
   if (!Array.isArray(artworkIds) || artworkIds.length === 0) {
     throw new Error("Art manifest does not include any artwork ids.");
