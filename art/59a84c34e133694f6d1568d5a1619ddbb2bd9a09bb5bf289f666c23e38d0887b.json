@@ -1,0 +1,403 @@
+{
+  "id": "59a84c34e133694f6d1568d5a1619ddbb2bd9a09bb5bf289f666c23e38d0887b",
+  "seed": "loneliness vs connection; light_vs_weight; corner_invasion; right_to_left; flame against broken_dots; left_weighted; full_vs_hollow; single_pixel; broken_memory | abstract variation request 90; target batch count 200",
+  "title": "Echoes of Separation",
+  "reasoning": "The emotional tone of this artwork captures a juxtaposition between loneliness and connection, employing a palette influenced by the warmth of 'ancient fire'. The left side of the composition utilizes a ring pattern, suggesting isolation through dark reds and charcoal, creating a heavy, somber mood. The right side contrasts this with a checker pattern in burnt orange and gold, evoking warmth and connection, creating a visual dialogue between the two emotions. The layout emphasizes a split vertical arrangement that reflects the inner conflict of feeling both weight and lightness. The placement of a few broken pixels enhances the sensation of fragmentation in memory and experience, while negative spaces maintain a sense of solitude amidst the patterns.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4E1B0C"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#5A2311"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#6D2B16"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#3C0901"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FCAF00"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFEA00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFA300"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFC20E"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#6A3229"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#7A3F27"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#857B4C"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#691C30"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F46245"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFC107"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#FFD54F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F6E7A3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#3E2223"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A45B4D"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#3A1B1D"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#5D2D33"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FF6F20"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFCB6B"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFD59B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FCED90"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#2C1F1A"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#751B17"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#92685B"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#832F3C"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F6633D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFC449"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFEDD5"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F3E09D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#5C4840"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#AD8B5D"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#BF7666"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#3B2D2F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F32D27"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F3752F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFC93C"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#FFF0CA"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#3D3030"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#CA8A8C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E7B6A4"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#1B0D0E"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#E94E42"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#FFB400"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F6D2A0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F5E3C5"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#271D1D"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#66575D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#CD3C3A"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#7A4343"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F1A800"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFE600"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F4E1B1"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FEF6D8"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#5B4444"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#772D2D"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F27B43"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D13B3B"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#FFAB23"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FDDAA6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFF4E7"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FDF9F4"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "loneliness",
+      "connection"
+    ],
+    "emotionMoods": {
+      "loneliness": [
+        "single dot",
+        "large negative space",
+        "off-center"
+      ],
+      "connection": []
+    },
+    "layout": {
+      "name": "split_vertical",
+      "description": "Left 4 columns are emotion A, right 4 columns are emotion B."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "loneliness": "ring",
+      "connection": "checker"
+    },
+    "edgeStyle": "thin_outline",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "line",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "ancient_fire",
+      "colors": [
+        "burnt_orange",
+        "dark_red",
+        "charcoal",
+        "gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "59a84c34e133694f6d1568d5a1619ddbb2bd9a09bb5bf289f666c23e38d0887b",
+  "pixelHash": "59a84c34e133694f6d1568d5a1619ddbb2bd9a09bb5bf289f666c23e38d0887b",
+  "jsonFile": "59a84c34e133694f6d1568d5a1619ddbb2bd9a09bb5bf289f666c23e38d0887b.json",
+  "svgFile": "59a84c34e133694f6d1568d5a1619ddbb2bd9a09bb5bf289f666c23e38d0887b.svg",
+  "createdAt": "2026-06-02T05:17:57.160173+00:00"
+}

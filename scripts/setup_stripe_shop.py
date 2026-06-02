@@ -316,6 +316,31 @@ def payment_links_by_lookup_key() -> dict[str, dict]:
     return links
 
 
+def expected_price_lookup_keys(ids: list[str]) -> set[str]:
+    keys: set[str] = set()
+
+    for art_id in ids:
+        for variant, config in VARIANTS.items():
+            frame_colors = FRAME_COLORS.keys() if variant == "framed" else [None]
+
+            for frame_color in frame_colors:
+                keys.add(lookup_key(config, art_id, frame_color))
+
+    return keys
+
+
+def scoped_prices_by_lookup_key(ids: list[str]) -> dict[str, dict]:
+    prices: dict[str, dict] = {}
+
+    for key in sorted(expected_price_lookup_keys(ids)):
+        price = find_price_by_lookup_key(key)
+
+        if price:
+            prices[key] = price
+
+    return prices
+
+
 def iter_payment_links():
     starting_after = ""
 
@@ -677,8 +702,14 @@ def main() -> None:
         )
 
     print(f"Preparing Stripe products for {len(ids)} artworks.", flush=True)
-    prices_by_lookup = prices_by_lookup_key()
-    links_by_lookup_key = payment_links_by_lookup_key()
+    if enabled_env_flag("STRIPE_PRICE_LOOKUP_ON_MISS"):
+        prices_by_lookup = {}
+    elif enabled_env_flag("STRIPE_SCOPED_PRICE_LOOKUP"):
+        prices_by_lookup = scoped_prices_by_lookup_key(ids)
+    else:
+        prices_by_lookup = prices_by_lookup_key()
+
+    links_by_lookup_key = {} if enabled_env_flag("STRIPE_SKIP_PAYMENT_LINK_PRELOAD") else payment_links_by_lookup_key()
     artwork_links: dict[str, dict[str, str]] = {}
     cache_lock = Lock()
     worker_count = max(1, int(os.environ.get("STRIPE_WORKERS", "6") or "6"))
@@ -698,6 +729,13 @@ def main() -> None:
                 price_lookup_key = lookup_key(config, art_id, frame_color)
                 with cache_lock:
                     price = prices_by_lookup.get(price_lookup_key)
+
+                if not price and enabled_env_flag("STRIPE_PRICE_LOOKUP_ON_MISS"):
+                    price = find_price_by_lookup_key(price_lookup_key)
+
+                    if price:
+                        with cache_lock:
+                            prices_by_lookup[price_lookup_key] = price
 
                 product_id = price["product"] if price else ""
 

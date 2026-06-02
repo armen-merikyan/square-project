@@ -1,0 +1,403 @@
+{
+  "id": "a268a1ca0f313a1a7a60c0f4fbd0b3a7e96d10f81670810a520c288bac652037",
+  "seed": "loneliness vs connection; light_vs_weight; corner_invasion; right_to_left; flame against broken_dots; left_weighted; full_vs_hollow; single_pixel; broken_memory | abstract variation request 69; target batch count 200",
+  "title": "Fleeting Connections",
+  "reasoning": "This artwork captures the tension between loneliness and connection through a blend of muted grays and warm sepia tones. The sparse arrangement reflects loneliness, with large negative spaces emphasizing isolation, while occasional bursts of warmth suggest fleeting moments of connection. The layout flows upward, signaling hope and escape, with pixels concentrated in the central column to create a protected core under attack from the edges, embodying the emotional conflict. Broken pixels evoke the fragility of memory, enhancing the contrast between full and hollow experiences.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#5A4E1D"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#C0B48A"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E3D8B5"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#B4A16C"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D8CBAF"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#A68B5B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#6F5A39"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#84776E"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#D3D4D6"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A8A9CC"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#E0CDB7"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#B9B6A6"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#9C8A7A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D0C5B0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E0DAD1"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#B7B2A0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#AFAF70"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#D9C78F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F1E9C8"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#C9B9A6"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#B5A48E"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E2D1B6"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#D3D9C5"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#D7BFA6"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#A5C1C3"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#B0A289"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CCC2B9"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#E9E4DA"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#BFAB88"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#946B4D"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#EAD2AC"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#7B6B53"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#9F9D7A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#C4B898"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F6F4E4"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#DBD3BF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#CFCFB9"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D8CBBF"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#A6A3B6"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7D6F66"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E3E1C5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#A5B2AA"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#BDBEBA"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#7E8C74"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#EDD2A5"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B4A59F"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A59BA7"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D2B48C"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D1D7D8"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#C9C4C9"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E4B29D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C8A78E"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A8B4C6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E0C9B0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#BFBF9C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#E2D6C4"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#B4B1C0"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#B4C2D9"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C2BEC6"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C1B9A8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#5C4D3D"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#8D8E8F"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#EBE5D3"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D4D0BA"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "loneliness",
+      "connection"
+    ],
+    "emotionMoods": {
+      "loneliness": [
+        "single dot",
+        "off-center",
+        "large negative space"
+      ],
+      "connection": []
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "loneliness": "noise",
+      "connection": "ring"
+    },
+    "edgeStyle": "pixel_bleed",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "eye",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "broken_memory",
+      "colors": [
+        "sepia",
+        "tan",
+        "dust_gray",
+        "faded_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a268a1ca0f313a1a7a60c0f4fbd0b3a7e96d10f81670810a520c288bac652037",
+  "pixelHash": "a268a1ca0f313a1a7a60c0f4fbd0b3a7e96d10f81670810a520c288bac652037",
+  "jsonFile": "a268a1ca0f313a1a7a60c0f4fbd0b3a7e96d10f81670810a520c288bac652037.json",
+  "svgFile": "a268a1ca0f313a1a7a60c0f4fbd0b3a7e96d10f81670810a520c288bac652037.svg",
+  "createdAt": "2026-06-02T05:17:44.112063+00:00"
+}

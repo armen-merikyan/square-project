@@ -1,0 +1,403 @@
+{
+  "id": "34ef72c25af9a7a64aa67b29ef00ecb54eac9f1a672f7eda971f8f159bb3c0fd",
+  "seed": "loneliness vs connection; light_vs_weight; corner_invasion; right_to_left; flame against broken_dots; left_weighted; full_vs_hollow; single_pixel; broken_memory | abstract variation request 4; target batch count 200",
+  "title": "Echoes of Isolation",
+  "reasoning": "The emotional tone of this piece reflects the struggle between loneliness and connection, manifesting as a dense concentration of dark colors that suggests weight, contrasted with softer hues symbolizing hope and connection. The palette combines deep blacks and dark violets representing loneliness with touches of soft gold and pale green that feel vibrant against the weight, creating an echo of connection amidst the void. The layout features descending pixels to emphasize a rain-like flow from the top, representing tears or falling ash, evoking the weight of broken memories. The dominant left-weighted design introduces imbalance, capturing the feeling of corner invasion and the tension between fullness and hollowness. Broken pixels introduce imperfection, reminding us that connections may be fragile and scattered, enhancing the story of lonely echoes in a world filled with noise.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#161B2E"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#222D5C"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#3A455C"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#241A3E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#4A3E5E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#6B5870"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#9F9BC9"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#C2C7E6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1B1E2D"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#253D6F"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#3E5870"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#4D5B84"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#726995"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#A689B0"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E1D8D3"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F5F2E5"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#0C0D14"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#3A3F61"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#5E6889"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#6A7E9B"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#8399C7"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#B0C3E6"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E7E9F6"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#1A1E2A"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3D456F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#41587B"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A089B2"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D2D7E0"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#F4F4F4"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#D1C9D4"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B6A6B9"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#0D0D0E"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#3D4E61"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#577D89"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#8E9FBB"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C1C7E8"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#EAE8FB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#F2F1F7"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F8F8F8"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#151621"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#313D4D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#455B73"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#6D7F9F"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B7C7DB"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#DBE1EB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F4F7FA"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1E2128"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2B3E54"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#468CBA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#6E9FC5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B2C5DB"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E1F2F7"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0D1117"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#2F3946"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#586579"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#7D9BB4"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#C1D2E1"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F0F6F9"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "loneliness",
+      "connection"
+    ],
+    "emotionMoods": {
+      "loneliness": [
+        "large negative space",
+        "single dot",
+        "off-center"
+      ],
+      "connection": []
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "diagonal_rise",
+    "patterns": {
+      "loneliness": "frame",
+      "connection": "noise"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "crack",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "fear_hope",
+      "colors": [
+        "black",
+        "dark_violet",
+        "soft_gold",
+        "pale_green"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "34ef72c25af9a7a64aa67b29ef00ecb54eac9f1a672f7eda971f8f159bb3c0fd",
+  "pixelHash": "34ef72c25af9a7a64aa67b29ef00ecb54eac9f1a672f7eda971f8f159bb3c0fd",
+  "jsonFile": "34ef72c25af9a7a64aa67b29ef00ecb54eac9f1a672f7eda971f8f159bb3c0fd.json",
+  "svgFile": "34ef72c25af9a7a64aa67b29ef00ecb54eac9f1a672f7eda971f8f159bb3c0fd.svg",
+  "createdAt": "2026-06-02T05:17:26.411057+00:00"
+}
