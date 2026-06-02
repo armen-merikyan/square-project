@@ -1,0 +1,407 @@
+{
+  "id": "c0dc5f8d888d0572d41e7da92217cbc6403beaa66ed1162f784939495c7972b7",
+  "seed": "joy vs grief; order_vs_chaos; rising_signal; zigzag; checker against spark; burned_edges; centered_vs_off_center; bridge; machine_emotion | abstract variation request 170; target batch count 200",
+  "title": "Spectrum of Emotion",
+  "reasoning": "This piece visually encapsulates the emotional tension between joy and grief. The palette, featuring warm yellows and oranges juxtaposed with deeper blues and muted purples, mirrors the vibrancy of joy clashing with the sorrow of grief. The top half showcases a structured pattern resembling 'spark' to represent joy, employing bright colors that radiate and expand, while the bottom half displays a fragmented 'frame' pattern in cooler tones indicative of grief. The transition from structured to chaotic across the rows illustrates the constant interplay between these emotions, and is highlighted by the burned edges\u2014implying that while joy often shines, grief can leave behind traces of profound impact. Broken pixels add imperfection to the piece, reinforcing the complexity of human emotions. The negative space is maintained to allow an echo of both emotional states, creating a balanced composition despite the visual tension.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFA500"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF4500"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FFFFE0"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#FFE4B5"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFDAB9"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFEFD5"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFF8DC"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#ADD8E6"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#87CEFA"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4682B4"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4169E1"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#00008B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B0E0E6"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#778899"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#708090"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#2F4F4F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#1E90FF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#00BFFF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#00CED1"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#4682B4"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#5F9EA0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#20B2AA"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#98FB98"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#90EE90"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#32CD32"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#ADFF2F"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#7FFF00"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#483D8B"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#2E0854"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#4B0082"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#8A2BE2"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#9370DB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#BA55D3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#DA70D6"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#DCDCDC"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F8F8FF"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#696969"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#101010"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#303030"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#505050"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#707070"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#909090"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F8F8F8"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#909090"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "expanding",
+        "spark-like",
+        "open"
+      ],
+      "grief": [
+        "blue-toned",
+        "drooping",
+        "low"
+      ]
+    },
+    "layout": {
+      "name": "split_horizontal",
+      "description": "Top 4 rows are emotion A, bottom 4 rows are emotion B."
+    },
+    "flow": "orbit",
+    "patterns": {
+      "joy": "spark",
+      "grief": "frame"
+    },
+    "edgeStyle": "burned_edges",
+    "contrastType": "warm_vs_cool",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Pride Falling Into Shame",
+      "emotionPair": [
+        "pride",
+        "shame"
+      ],
+      "layout": "split_horizontal",
+      "flow": "top_to_bottom",
+      "pattern": "crown shape dissolving into dark stair steps",
+      "edge": "pixel_bleed",
+      "shape": "crown",
+      "palette": "broken_memory"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "c0dc5f8d888d0572d41e7da92217cbc6403beaa66ed1162f784939495c7972b7",
+  "pixelHash": "c0dc5f8d888d0572d41e7da92217cbc6403beaa66ed1162f784939495c7972b7",
+  "jsonFile": "c0dc5f8d888d0572d41e7da92217cbc6403beaa66ed1162f784939495c7972b7.json",
+  "svgFile": "c0dc5f8d888d0572d41e7da92217cbc6403beaa66ed1162f784939495c7972b7.svg",
+  "createdAt": "2026-06-02T20:32:54.503128+00:00"
+}

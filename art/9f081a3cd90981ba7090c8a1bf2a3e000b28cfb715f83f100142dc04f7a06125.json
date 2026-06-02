@@ -1,0 +1,407 @@
+{
+  "id": "9f081a3cd90981ba7090c8a1bf2a3e000b28cfb715f83f100142dc04f7a06125",
+  "seed": "joy vs grief; order_vs_chaos; rising_signal; zigzag; checker against spark; burned_edges; centered_vs_off_center; bridge; machine_emotion | abstract variation request 131; target batch count 200",
+  "title": "Echo of Emotion",
+  "reasoning": "This piece embodies the struggle between joy and grief, combining a vibrant color palette of yellows and oranges representing joy with muted purples and deep blues suggesting grief. The light, spark-like colors are positioned in a zigzag pattern to introduce a sense of rhythmic disorder, reflecting chaos against a backdrop of darker hues that create tension. By centralizing the brighter colors and allowing them to bleed into the muted tones, the arrangement signifies a bridge between contrasting emotions, presenting a balance yet retaining an element of collision. The broken pixels throughout the piece mimic imperfections in human emotion, while strategic use of negative space enhances the feeling of unresolved tension between joy and grief.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#F5D300"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F58F00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F5C200"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#B8A600"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5D5C9A"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#3C4A97"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#475D8F"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#8E7CBB"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F4E04D"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F4A300"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F4B966"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#9C7A9E"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#525785"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3B4C81"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2D3F6E"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#5C3E86"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F5EAB4"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F5DBA8"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F5E0C9"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#A282B3"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#57547C"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#6B5E8E"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#6F8B9C"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#8F5FA6"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F4DD6C"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F2D851"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F1C332"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#9D6B8B"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#4D3C65"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#6A4B8E"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8B4E7E"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#AD4D9F"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F5D891"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F4C65C"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F5BA7A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#784C94"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#454B74"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#6E468D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#3F3A60"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#9A4B85"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#D0B300"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#EA8C00"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F1D100"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C5B0D0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#7E7B9E"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#434D71"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#507DA6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#B80F77"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#F9EA48"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F2D890"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F7B034"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#76A8C5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#3B5C7D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#404F50"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3E8A9F"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#70244D"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F2D222"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F4A700"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F3E88C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#A35B97"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#5B499A"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#2D3F5D"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#4B8B93"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#B50D56"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "spark-like",
+        "rounded",
+        "bright"
+      ],
+      "grief": [
+        "low",
+        "drooping",
+        "fragmented"
+      ]
+    },
+    "layout": {
+      "name": "center_seed",
+      "description": "A small central symbol is surrounded by pattern pressure."
+    },
+    "flow": "left_to_right",
+    "patterns": {
+      "joy": "ring",
+      "grief": "radial"
+    },
+    "edgeStyle": "corner_heavy",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "line",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Lonely Signal",
+      "emotionPair": [
+        "loneliness",
+        "connection"
+      ],
+      "layout": "empty_room",
+      "flow": "pulse",
+      "pattern": "single bright dot with faint surrounding echo",
+      "edge": "soft_edges",
+      "shape": "single_pixel",
+      "palette": "lonely_signal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9f081a3cd90981ba7090c8a1bf2a3e000b28cfb715f83f100142dc04f7a06125",
+  "pixelHash": "9f081a3cd90981ba7090c8a1bf2a3e000b28cfb715f83f100142dc04f7a06125",
+  "jsonFile": "9f081a3cd90981ba7090c8a1bf2a3e000b28cfb715f83f100142dc04f7a06125.json",
+  "svgFile": "9f081a3cd90981ba7090c8a1bf2a3e000b28cfb715f83f100142dc04f7a06125.svg",
+  "createdAt": "2026-06-02T20:32:34.458087+00:00"
+}

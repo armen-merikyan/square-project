@@ -1,0 +1,407 @@
+{
+  "id": "3e94f8337b55830327680a5f79faefe3e646e8c19d342f95f77dfb414d15c0b5",
+  "seed": "joy vs grief; order_vs_chaos; rising_signal; zigzag; checker against spark; burned_edges; centered_vs_off_center; bridge; machine_emotion | abstract variation request 111; target batch count 200",
+  "title": "Tension Between Light and Shadow",
+  "reasoning": "This artwork captures the emotional duality of joy and grief through a contrast in color and pattern. The palette consists of vibrant yellows and oranges juxtaposed against muted purples and deep blues, illustrating the clash between buoyancy and heaviness. The layout employs a falling pixels pattern to evoke a sensation of sorrow entwined with moments of fleeting joy. The zigzag pattern of joy clashes with the flame-like grief, while the bottom-weighted edge emphasizes a heaviness in the lower half. The occasional broken pixels introduce imperfection, reflecting the chaotic nature of emotions and enhancing the interplay between the vibrant and subdued hues.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF4500"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF6347"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#800080"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#483D8B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFDEAD"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFC0CB"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#6A5ACD"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4682B4"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#483D8B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#4B0082"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF6347"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FFD700"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#FFDEAD"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFFACD"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B0C4DE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFFACD"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#FF6347"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#7B68EE"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#ADFF2F"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#9ACD32"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#556B2F"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#808080"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFDEAD"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF4500"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FF6347"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#BA55D3"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#9370DB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8A2BE2"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#6A5ACD"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#708090"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFA07A"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFD700"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFE4B5"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#EEE8AA"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#DDA0DD"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#9370DB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#483D8B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFD700"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#FF6347"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#ADFF2F"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#32CD32"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#00FF00"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3CB371"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#778899"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#E6E6FA"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D8BFD8"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D3D3D3"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#A9A9A9"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#696969"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#101010"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "joy",
+      "grief"
+    ],
+    "emotionMoods": {
+      "joy": [
+        "spark-like",
+        "bright",
+        "open"
+      ],
+      "grief": [
+        "low",
+        "heavy",
+        "drooping"
+      ]
+    },
+    "layout": {
+      "name": "falling_pixels",
+      "description": "Pixels descend from the top like rain, ash, or tears."
+    },
+    "flow": "spiral_clockwise",
+    "patterns": {
+      "joy": "stairs",
+      "grief": "flame"
+    },
+    "edgeStyle": "bottom_weighted",
+    "contrastType": "rising_vs_falling",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "joy_grief",
+      "colors": [
+        "yellow",
+        "orange",
+        "deep_blue",
+        "muted_purple"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "3e94f8337b55830327680a5f79faefe3e646e8c19d342f95f77dfb414d15c0b5",
+  "pixelHash": "3e94f8337b55830327680a5f79faefe3e646e8c19d342f95f77dfb414d15c0b5",
+  "jsonFile": "3e94f8337b55830327680a5f79faefe3e646e8c19d342f95f77dfb414d15c0b5.json",
+  "svgFile": "3e94f8337b55830327680a5f79faefe3e646e8c19d342f95f77dfb414d15c0b5.svg",
+  "createdAt": "2026-06-02T20:32:17.295969+00:00"
+}
