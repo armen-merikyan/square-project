@@ -148,15 +148,18 @@ function setColorFiltersVisible(visible, shouldSave = true) {
   }
 }
 
-function setAnalysisControlsEnabled(enabled) {
-  gallerySearch.disabled = !enabled;
+function setAnalysisControlsEnabled(enabled, { searchEnabled = enabled } = {}) {
+  gallerySearch.disabled = !searchEnabled;
   colorSimilarity.disabled = !enabled;
   clearColorFilters.disabled = !enabled;
   toggleColorFilters.disabled = !enabled;
   galleryWorkspace.classList.toggle("is-lightweight-browse", !enabled);
 
-  if (!enabled) {
+  if (!searchEnabled) {
     gallerySearch.value = "";
+  }
+
+  if (!enabled) {
     colorFilterList.replaceChildren();
     setColorFiltersVisible(false, false);
   } else {
@@ -1499,7 +1502,9 @@ function normalizeLightweightRecord(record) {
   return {
     id: record.id,
     title: record.title || compactId(record.id),
-    path: record.path
+    path: record.path,
+    pagePath: record.pagePath,
+    searchText: record.searchText || recordSearchText(record)
   };
 }
 
@@ -1548,8 +1553,12 @@ async function loadNextAllArtworkCategory(loadToken) {
     const startIndex = galleryRecords.length;
     const lightRecords = records.map(normalizeLightweightRecord);
     galleryRecords.push(...lightRecords);
-    filteredRecords = galleryRecords;
-    artGrid.append(...lightRecords.map((record, index) => renderLightweightCard(record, startIndex + index)));
+    if (gallerySearch.value.trim()) {
+      applyFilters({ renderFilters: false });
+    } else {
+      filteredRecords = galleryRecords;
+      artGrid.append(...lightRecords.map((record, index) => renderLightweightCard(record, startIndex + index)));
+    }
     allArtworkNextCategoryIndex += 1;
     galleryLoadComplete = galleryRecords.length >= galleryTotalCount || allArtworkNextCategoryIndex >= galleryCategories.length;
     renderAllArtworkStatus();
@@ -1750,7 +1759,7 @@ async function loadAllArtwork({ requestedId = "", updateUrl = true } = {}) {
   const startedAt = performance.now();
   allArtworkMode = true;
   resetAllArtworkModeState();
-  setAnalysisControlsEnabled(false);
+  setAnalysisControlsEnabled(false, { searchEnabled: true });
   activeCategory = allArtworkCategory();
   galleryRecords = [];
   filteredRecords = [];
