@@ -1,0 +1,416 @@
+{
+  "id": "b14e2e7abd10835845e689b9a344e40bea8feb391c81512fd9ebd79e8a3ed7de",
+  "seed": "trust vs suspicion; signal_vs_noise; split_vertical; diagonal_fall; stairs against ash_field; pressure_border; soft_glow_vs_hard_shadow; line; resilience_fragility | abstract variation request 61; target batch count 500",
+  "title": "Tension in Balance",
+  "reasoning": "The emotional tone explores the dichotomy between trust and suspicion, utilizing a palette that reflects relief and dread. The soft mint and faded gold suggest hope and warmth, contrasting sharply with storm gray and near black, which embody unease and pressure. The layout emphasizes a diagonal argument, with trust (grid) forming a pattern across the left and suspicion (constellation) pressuring from the right, leading to an intense collision in the center. This interplay of colors and patterns echoes the complex nature of the emotional themes presented in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C4E1D8"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#A2C8E1"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#9DACBB"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7A8A9C"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#5A5C5E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#383C44"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#2A2E33"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#1B1F25"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#B8E6C1"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A4D4E2"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#7E9AB4"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#5B677B"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#4D4D4D"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#39404B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2B2D33"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#15181B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E1EDDB"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#C0E8F0"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A5AEC1"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#7C8A9A"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#535C68"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#404548"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#292B30"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#101417"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#DCE6C4"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#A9D3E5"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#7FA4C5"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#586B87"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#777D89"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#4D4F52"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#3B3D41"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#202324"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E1C8AF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B7B1C8"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#A19CA8"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#7F7B8F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#5A585D"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#434343"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#252B2E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#101417"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E8E2D5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C7C3D1"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#B0B9C3"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A3AFAE"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#7D9C65"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#545D6B"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#2F353E"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#171C23"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#B3E2DF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#A6BECF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#B2C3D5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#A8B1B6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#586058"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3E4344"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#25282C"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#D6E4B0"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#CCDAEB"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#B7C6D5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#9FA5B8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#A6A8A7"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#797C7A"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3D4143"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#1D2125"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "trust",
+      "suspicion"
+    ],
+    "emotionMoods": {
+      "trust": [
+        "open bridge",
+        "unbroken path",
+        "stable base"
+      ],
+      "suspicion": [
+        "blocked passage",
+        "uneven reflection",
+        "watching gaps"
+      ]
+    },
+    "layout": {
+      "name": "diagonal_argument",
+      "description": "Emotion A occupies one diagonal wedge while emotion B presses against the opposite wedge."
+    },
+    "flow": "bottom_to_top",
+    "patterns": {
+      "trust": "grid",
+      "suspicion": "constellation"
+    },
+    "edgeStyle": "left_weighted",
+    "contrastType": "safe_vs_threatened",
+    "shapeSeed": "horizon",
+    "composition": {
+      "name": "inside_vs_outside",
+      "idea": "A small inner shape is surrounded by pressure, noise, or protection."
+    },
+    "palette": {
+      "name": "relief_dread",
+      "colors": [
+        "pale_mint",
+        "soft_sky",
+        "storm_gray",
+        "near_black",
+        "faded_gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Signal Inside Noise",
+      "emotionPair": [
+        "signal",
+        "noise"
+      ],
+      "layout": "argument_grid",
+      "flow": "flicker",
+      "pattern": "one readable green path repeatedly interrupted by magenta static",
+      "edge": "edge_static",
+      "shape": "signal_dot",
+      "palette": "signal_noise"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "b14e2e7abd10835845e689b9a344e40bea8feb391c81512fd9ebd79e8a3ed7de",
+  "pixelHash": "b14e2e7abd10835845e689b9a344e40bea8feb391c81512fd9ebd79e8a3ed7de",
+  "jsonFile": "b14e2e7abd10835845e689b9a344e40bea8feb391c81512fd9ebd79e8a3ed7de.json",
+  "svgFile": "b14e2e7abd10835845e689b9a344e40bea8feb391c81512fd9ebd79e8a3ed7de.svg",
+  "createdAt": "2026-06-03T15:21:38.186545+00:00"
+}

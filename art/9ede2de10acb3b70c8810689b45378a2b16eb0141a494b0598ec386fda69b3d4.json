@@ -1,0 +1,416 @@
+{
+  "id": "9ede2de10acb3b70c8810689b45378a2b16eb0141a494b0598ec386fda69b3d4",
+  "seed": "trust vs suspicion; signal_vs_noise; split_vertical; diagonal_fall; stairs against ash_field; pressure_border; soft_glow_vs_hard_shadow; line; resilience_fragility | abstract variation request 496; target batch count 500",
+  "title": "Veil of Echoes",
+  "reasoning": "This artwork captures the emotional interplay between trust and suspicion, represented by contrasting colors: warm muted creams suggest trust, while deep blackened plums evoke suspicion. The dominant use of cream (63% coverage) creates a soft glow interspersed with harsh blackened accents (13% coverage) that signify disruptions and echoes. The pattern of 'stairs' reflects the rising tension and layered unpredictability, while the 'rain' motif suggests a gentle persistence that seeks to pierce through noise. Overall, the contrasting colors and patterns converge in the center, creating a quiet boundary that symbolizes resilience amid the friction of suspicion.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#CCDBCC"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#BCA1B6"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#C0B2A0"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#E9D9D9"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D8A643"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F0ECF9"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#8F5F74"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#59383C"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F9F7F7"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D8BA94"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#BB6F6C"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F4D7C0"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#C9B6A0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#8C444B"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#724153"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#3C5C66"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F4F0E1"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#7E5E6E"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D5B865"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#CB8E9F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F1F0EC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#5D5658"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#372F35"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#054F66"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#F8E2B7"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#A85152"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D4B070"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FAEBC6"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C6B69C"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#908B89"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#5D5B63"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0F4C55"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#E9DDC5"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#6A3755"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B55337"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#F7F2E0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B7B7A7"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#4D464C"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#272E36"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#23364D"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F2E6E0"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#4C3F52"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#948C8A"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#D9C8B3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B2B3A8"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#7B5B77"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#5A474D"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#3E5A61"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D8CEC6"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#B59F76"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F0FEEB"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#E2D4B3"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#8B5D66"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#665A61"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#3F2B36"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#012E42"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#EAE4D5"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F2F2F2"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#CC8E4C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#D6D5D2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#7F4D60"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#333F48"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#09161B"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "trust",
+      "suspicion"
+    ],
+    "emotionMoods": {
+      "trust": [
+        "open bridge",
+        "soft enclosure",
+        "balanced warmth"
+      ],
+      "suspicion": [
+        "dark sliver",
+        "blocked passage",
+        "offset doubles"
+      ]
+    },
+    "layout": {
+      "name": "halo_void",
+      "description": "A hollow center is ringed by light, shadow, or static."
+    },
+    "flow": "sweep",
+    "patterns": {
+      "trust": "rain",
+      "suspicion": "stairs"
+    },
+    "edgeStyle": "inset_outline",
+    "contrastType": "pressure_vs_release",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "signal_vs_noise",
+      "idea": "One readable pulse tries to survive inside static, interference, and false echoes."
+    },
+    "palette": {
+      "name": "hunger_restraint",
+      "colors": [
+        "red_oxide",
+        "blackened_plum",
+        "muted_cream",
+        "iron_gray",
+        "small_orange"
+      ]
+    },
+    "referenceExample": {
+      "title": "Desire Held Back",
+      "emotionPair": [
+        "desire",
+        "restraint"
+      ],
+      "layout": "threshold",
+      "flow": "advance",
+      "pattern": "warm saturated pull stopped by a cool sealed boundary",
+      "edge": "sealed_edges",
+      "shape": "wall",
+      "palette": "desire_emptiness"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "9ede2de10acb3b70c8810689b45378a2b16eb0141a494b0598ec386fda69b3d4",
+  "pixelHash": "9ede2de10acb3b70c8810689b45378a2b16eb0141a494b0598ec386fda69b3d4",
+  "jsonFile": "9ede2de10acb3b70c8810689b45378a2b16eb0141a494b0598ec386fda69b3d4.json",
+  "svgFile": "9ede2de10acb3b70c8810689b45378a2b16eb0141a494b0598ec386fda69b3d4.svg",
+  "createdAt": "2026-06-03T15:23:04.407398+00:00"
+}

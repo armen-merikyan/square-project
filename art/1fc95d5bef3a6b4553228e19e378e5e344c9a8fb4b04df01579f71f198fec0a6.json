@@ -1,0 +1,416 @@
+{
+  "id": "1fc95d5bef3a6b4553228e19e378e5e344c9a8fb4b04df01579f71f198fec0a6",
+  "seed": "trust vs suspicion; signal_vs_noise; split_vertical; diagonal_fall; stairs against ash_field; pressure_border; soft_glow_vs_hard_shadow; line; resilience_fragility | abstract variation request 24; target batch count 500",
+  "title": "Order vs Chaos",
+  "reasoning": "The emotional tone reflects the tension between trust and suspicion, where warm hues on one side blend seamlessly with chaotic, dense gray patterns on the other. The palette of off-white and faint peach suggests a balanced warmth contrasted against the dark navy, embodying the undercurrents of suspicion. The main collision occurs on the left side, where the \u2018maze\u2019 of trust abruptly meets the \u2018flood\u2019 pattern of suspicion, creating a visual narrative of overlapping tensions and unresolved emotions. The fragmented pixels introduce a sense of imperfection and erosion, reflecting the fragile borders between these opposing sentiments. This composition captures the nuances of emotional complexity inherent in the seed text, ensuring an abstract yet impactful arrangement.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F8F0D5"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D6D3C6"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#BFB3B4"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#66676B"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#3D3E42"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#1E1E22"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F6E8D3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#3C3D3D"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#606060"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4F4F50"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2D2D2D"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#1C1C1E"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#F5E4D7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#DDDDCB"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#B5B5B5"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#666A69"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#333333"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#4B4B4D"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F4D3D3"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#D3C6D3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B3B3B3"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#7D7D7D"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#484D4F"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#262829"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#111111"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#EAD8C0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C6B6B4"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#A0A0A0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#6B6B6E"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#8B8B8D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#28282D"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F6D9D9"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D1C8C4"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#ADADAD"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#646465"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#4A4A4D"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#2C2D2C"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#191919"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F4E5D3"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C3C4C7"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#B3B3B5"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#908F90"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3B3C3C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#222222"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#0F0F0F"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F1F1F1"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#B2B2B2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#8B8B8B"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#636363"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#1A1A1A"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "trust",
+      "suspicion"
+    ],
+    "emotionMoods": {
+      "trust": [
+        "balanced warmth",
+        "soft enclosure",
+        "stable base"
+      ],
+      "suspicion": [
+        "uneven reflection",
+        "dark sliver",
+        "watching gaps"
+      ]
+    },
+    "layout": {
+      "name": "pressure_corner",
+      "description": "One corner is overfilled and the rest of the square reacts with spreading marks."
+    },
+    "flow": "edge_crawl",
+    "patterns": {
+      "trust": "maze",
+      "suspicion": "flood"
+    },
+    "edgeStyle": "eroded_edges",
+    "contrastType": "repair_vs_damage",
+    "shapeSeed": "horizon",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "quiet_pressure",
+      "colors": [
+        "off_white",
+        "dust_gray",
+        "compressed_red",
+        "dark_navy",
+        "faint_peach"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "1fc95d5bef3a6b4553228e19e378e5e344c9a8fb4b04df01579f71f198fec0a6",
+  "pixelHash": "1fc95d5bef3a6b4553228e19e378e5e344c9a8fb4b04df01579f71f198fec0a6",
+  "jsonFile": "1fc95d5bef3a6b4553228e19e378e5e344c9a8fb4b04df01579f71f198fec0a6.json",
+  "svgFile": "1fc95d5bef3a6b4553228e19e378e5e344c9a8fb4b04df01579f71f198fec0a6.svg",
+  "createdAt": "2026-06-03T15:21:33.875602+00:00"
+}

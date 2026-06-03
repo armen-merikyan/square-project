@@ -1,0 +1,416 @@
+{
+  "id": "49892b9143f6d794239913e1e17b0e91e6c9b32aee8655d5515ec0eb90e8555b",
+  "seed": "trust vs suspicion; signal_vs_noise; split_vertical; diagonal_fall; stairs against ash_field; pressure_border; soft_glow_vs_hard_shadow; line; resilience_fragility | abstract variation request 403; target batch count 500",
+  "title": "Order vs Chaos",
+  "reasoning": "The emotional tone centers on the tension between trust and suspicion, depicted through a contrasting palette of serene and urgent colors. The cool blues symbolize trust, creating a calm base, while the alarm red cuts through as a burst of suspicion, creating interruption. The layout follows a spiral pressure, reflecting a central collision where the chaos of suspicion meets the order of trust. This pattern allows for a visual representation of resilience and fragility through the irregularities of the chosen shapes, while broken pixels introduce intentional imperfections, embodying life's disruptions. The arrangement creates a rhythmic flow emphasizing both comfort and anxiety.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#EE5252"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#EE5252"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#EE5252"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#EE5252"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#EE5252"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#EE5252"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#EE5252"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#A1DBDB"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#EEEEEE"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#EEEEEE"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "trust",
+      "suspicion"
+    ],
+    "emotionMoods": {
+      "trust": [
+        "stable base",
+        "balanced warmth",
+        "unbroken path"
+      ],
+      "suspicion": [
+        "watching gaps",
+        "dark sliver",
+        "blocked passage"
+      ]
+    },
+    "layout": {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    "flow": "settle",
+    "patterns": {
+      "trust": "rain",
+      "suspicion": "barcode"
+    },
+    "edgeStyle": "inset_outline",
+    "contrastType": "open_vs_closed",
+    "shapeSeed": "island",
+    "composition": {
+      "name": "order_vs_chaos",
+      "idea": "One side follows a clean pattern while the other breaks apart."
+    },
+    "palette": {
+      "name": "serenity_urgency",
+      "colors": [
+        "pale_aqua",
+        "mist_gray",
+        "alarm_red",
+        "ink_blue",
+        "clear_white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Signal Inside Noise",
+      "emotionPair": [
+        "signal",
+        "noise"
+      ],
+      "layout": "argument_grid",
+      "flow": "flicker",
+      "pattern": "one readable green path repeatedly interrupted by magenta static",
+      "edge": "edge_static",
+      "shape": "signal_dot",
+      "palette": "signal_noise"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "49892b9143f6d794239913e1e17b0e91e6c9b32aee8655d5515ec0eb90e8555b",
+  "pixelHash": "49892b9143f6d794239913e1e17b0e91e6c9b32aee8655d5515ec0eb90e8555b",
+  "jsonFile": "49892b9143f6d794239913e1e17b0e91e6c9b32aee8655d5515ec0eb90e8555b.json",
+  "svgFile": "49892b9143f6d794239913e1e17b0e91e6c9b32aee8655d5515ec0eb90e8555b.svg",
+  "createdAt": "2026-06-03T15:22:46.546172+00:00"
+}
