@@ -17,6 +17,15 @@ MANIFEST_PATH = ART_DIR / "manifest.json"
 HOMEPAGE_ARTWORK_IDS_PATH = ART_DIR / "homepage-artwork-ids.json"
 SITEMAP_PATH = PROJECT_ROOT / "sitemap.xml"
 DEFAULT_SITE_URL = "https://mysquareart.com"
+GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSFZJ7PBH2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SSFZJ7PBH2');
+    </script>"""
 CHUNK_DIR_NAME = "manifest-chunks"
 CATEGORY_DIR_NAME = "category-chunks"
 CHUNK_SIZE = 500
@@ -351,6 +360,7 @@ def render_artwork_page(record: dict[str, Any], colors: list[str], base_url: str
     <meta name="twitter:description" content="{escape(description, quote=True)}">
     <meta name="twitter:image" content="{escape(image_url, quote=True)}">
     <script type="application/ld+json">{artwork_json_ld(record, colors, base_url)}</script>
+{GOOGLE_TAG}
     <link rel="stylesheet" href="../../styles.css?v=20260601-art-pages">
   </head>
   <body>

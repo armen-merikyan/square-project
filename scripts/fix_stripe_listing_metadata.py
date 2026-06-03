@@ -10,6 +10,8 @@ PaymentIntent metadata so fulfillment fields are visible in Stripe.
 from __future__ import annotations
 
 import argparse
+import urllib.parse
+import urllib.request
 import json
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -123,14 +125,50 @@ def iter_configured_listings(artwork_links: dict[str, dict]) -> list[dict[str, s
 
 def payment_links_by_url() -> dict[str, dict]:
     links: dict[str, dict] = {}
+    starting_after = ""
+    page = 0
 
-    for payment_link in shop.iter_payment_links():
-        url = payment_link.get("url")
+    while True:
+        page += 1
+        fields = {
+            "active": "true",
+            "limit": "100",
+        }
 
-        if url:
-            links[str(url)] = payment_link
+        if starting_after:
+            fields["starting_after"] = starting_after
+
+        print(f"Loading Stripe Payment Link page {page}...", flush=True)
+        payment_links = stripe_get_with_timeout("payment_links", fields, timeout=10)
+        data = payment_links.get("data", [])
+
+        for payment_link in data:
+            url = payment_link.get("url")
+
+            if url:
+                links[str(url)] = payment_link
+
+        print(f"Loaded page {page}: {len(data)} links ({len(links)} total).", flush=True)
+
+        if not payment_links.get("has_more") or not data:
+            break
+
+        starting_after = data[-1]["id"]
 
     return links
+
+
+def stripe_get_with_timeout(path: str, fields: dict[str, str], timeout: int = 10) -> dict:
+    secret_key = shop.os.environ.get("STRIPE_SECRET_KEY", "").strip()
+    url = f"https://api.stripe.com/v1/{path.lstrip('/')}?{urllib.parse.urlencode(fields)}"
+    request = urllib.request.Request(
+        url,
+        headers={"Authorization": f"Bearer {secret_key}"},
+        method="GET",
+    )
+
+    with urllib.request.urlopen(request, timeout=timeout, context=shop.STRIPE_CONTEXT) as response:
+        return json.loads(response.read().decode("utf-8"))
 
 
 def payment_link_line_item_refs(payment_link_id: str) -> tuple[str, str]:
