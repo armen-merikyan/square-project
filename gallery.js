@@ -61,6 +61,7 @@ const galleryLoadingTime = document.querySelector("#galleryLoadingTime");
 const galleryStats = document.querySelector("#galleryStats");
 const colorFilterList = document.querySelector("#colorFilterList");
 const clearColorFilters = document.querySelector("#clearColorFilters");
+const toggleFilterOutlines = document.querySelector("#toggleFilterOutlines");
 const galleryWorkspace = document.querySelector(".gallery-workspace");
 const galleryFilters = document.querySelector("#galleryFilters");
 const toggleColorFilters = document.querySelector("#toggleColorFilters");
@@ -83,6 +84,7 @@ const AUTOPLAY_SPEED_OPTIONS = {
 };
 const AUTOPLAY_SPEED_VALUES = Object.keys(AUTOPLAY_SPEED_OPTIONS);
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
+const FILTER_OUTLINES_COOKIE = "square_filter_outlines";
 const COLOR_SIMILARITY_COOKIE = "square_color_similarity";
 const GALLERY_IMAGE_SIZE_COOKIE = "square_gallery_image_size";
 const GALLERY_PAGE_SIZE_COOKIE = "square_gallery_page_size";
@@ -102,6 +104,7 @@ let currentPage = 1;
 let selectedId = "";
 let previousFocus = null;
 let colorFiltersVisible = true;
+let filterOutlinesVisible = true;
 let colorSimilarityThreshold = Number(colorSimilarity.value);
 let galleryImageSizeValue = Number(galleryImageSize.value);
 let selectedShopVariant = "print";
@@ -168,10 +171,27 @@ function setColorFiltersVisible(visible, shouldSave = true) {
   }
 }
 
+function setFilterOutlinesVisible(visible, shouldSave = true) {
+  filterOutlinesVisible = visible;
+  galleryWorkspace.classList.toggle("filter-outlines-hidden", !visible);
+  galleryWorkspace.classList.toggle("filter-outlines-visible", visible);
+  toggleFilterOutlines.setAttribute("aria-pressed", String(visible));
+  toggleFilterOutlines.setAttribute(
+    "aria-label",
+    visible ? "Hide filtered pixel outlines" : "Show filtered pixel outlines"
+  );
+  toggleFilterOutlines.title = visible ? "Hide filtered pixel outlines" : "Show filtered pixel outlines";
+
+  if (shouldSave) {
+    savePreference(FILTER_OUTLINES_COOKIE, visible ? "shown" : "hidden");
+  }
+}
+
 function setAnalysisControlsEnabled(enabled, { searchEnabled = enabled } = {}) {
   gallerySearch.disabled = !searchEnabled;
   colorSimilarity.disabled = !enabled;
   clearColorFilters.disabled = !enabled;
+  toggleFilterOutlines.disabled = !enabled;
   toggleColorFilters.disabled = !enabled;
   galleryWorkspace.classList.toggle("is-lightweight-browse", !enabled);
 
@@ -184,6 +204,7 @@ function setAnalysisControlsEnabled(enabled, { searchEnabled = enabled } = {}) {
     setColorFiltersVisible(false, false);
   } else {
     setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
+    setFilterOutlinesVisible(readPreference(FILTER_OUTLINES_COOKIE) !== "hidden", false);
   }
 }
 
@@ -2146,6 +2167,9 @@ colorSimilarity.addEventListener("input", () => {
 toggleColorFilters.addEventListener("click", () => {
   setColorFiltersVisible(!colorFiltersVisible);
 });
+toggleFilterOutlines.addEventListener("click", () => {
+  setFilterOutlinesVisible(!filterOutlinesVisible);
+});
 galleryAutoplayToggle.addEventListener("click", () => {
   if (galleryAutoplayActive) {
     stopGalleryAutoplay();
@@ -2181,6 +2205,7 @@ artInspector.addEventListener("close", () => {
 });
 
 setColorFiltersVisible(readPreference(FILTER_VISIBILITY_COOKIE) !== "hidden", false);
+setFilterOutlinesVisible(readPreference(FILTER_OUTLINES_COOKIE) !== "hidden", false);
 setGalleryImageSize(readPreference(GALLERY_IMAGE_SIZE_COOKIE) || galleryImageSize.value, false);
 setPageSize(readPreference(GALLERY_PAGE_SIZE_COOKIE), false);
 setGalleryAutoplaySpeed(readPreference(GALLERY_AUTOPLAY_SPEED_COOKIE), false);
