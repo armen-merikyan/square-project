@@ -2559,54 +2559,52 @@ body.has-open-inspector {
 
 .art-grid.is-page-transitioning {
   contain: layout paint;
+  perspective: 1200px;
 }
 
 .gallery-card.is-page-exiting {
   pointer-events: none;
-  animation: gallery-card-snake-exit 760ms var(--ease-smooth) both;
-  animation-delay: var(--snake-delay, 0ms);
+  animation: gallery-card-flip-out 360ms ease-in both;
+  backface-visibility: hidden;
+  transform-origin: center center;
 }
 
 .gallery-card.is-page-entering {
-  animation: gallery-card-snake-enter 980ms var(--ease-smooth) both;
-  animation-delay: calc(180ms + var(--snake-delay, 0ms));
+  animation: gallery-card-flip-in 520ms var(--ease-smooth) both;
+  backface-visibility: hidden;
+  transform-origin: center center;
 }
 
 .art-grid.is-autoplay-advance .gallery-card.is-page-entering {
-  animation-duration: 1100ms;
+  animation-duration: 520ms;
 }
 
-@keyframes gallery-card-snake-exit {
+@keyframes gallery-card-flip-out {
   0% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-
-  55% {
-    opacity: 0.78;
-    transform: translate3d(var(--page-exit-half-x, -15px), 10px, 0) scale(0.985);
+    transform: rotateY(0deg) scale(1);
   }
 
   100% {
-    opacity: 0;
-    transform: translate3d(var(--page-exit-x, -34px), 34px, 0) scale(0.94) rotate(1deg);
+    opacity: 0.04;
+    transform: rotateY(90deg) scale(0.98);
   }
 }
 
-@keyframes gallery-card-snake-enter {
+@keyframes gallery-card-flip-in {
   from {
-    opacity: 0;
-    transform: translate3d(var(--page-enter-x, 34px), -16px, 0) scale(0.965);
+    opacity: 0.04;
+    transform: rotateY(-90deg) scale(0.98);
   }
 
-  62% {
+  70% {
     opacity: 1;
-    transform: translate3d(var(--page-enter-settle-x, -3px), 4px, 0) scale(1.012);
+    transform: rotateY(8deg) scale(1);
   }
 
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: rotateY(0deg) scale(1);
   }
 }
 

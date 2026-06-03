@@ -74,8 +74,8 @@ const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const AUTOPLAY_PAGE_TRANSITION = 180;
-const PAGE_TRANSITION_EXIT_MS = 1200;
-const PAGE_TRANSITION_ENTER_MS = 1750;
+const PAGE_FLIP_SWAP_MS = 360;
+const PAGE_FLIP_ENTER_MS = 520;
 const AUTOPLAY_SPEED_OPTIONS = {
   "1x": 9000,
   "2x": 6500,
@@ -117,7 +117,6 @@ let allArtworkSentinel = null;
 let galleryAutoplayActive = false;
 let galleryAutoplayTimer = null;
 let galleryAutoplaySpeedValue = "1x";
-let renderedPage = 0;
 const fullArtworkCache = new Map();
 const includedColorSeeds = new Set();
 const excludedColorSeeds = new Set();
@@ -328,56 +327,10 @@ function reducedMotionPreferred() {
   return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 }
 
-function gridColumnCount() {
-  const columns = window.getComputedStyle(artGrid).gridTemplateColumns;
-  const count = columns.split(" ").filter(Boolean).length;
-  return Math.max(1, count || 1);
-}
-
-function setSnakeCardOrder(cards, direction = 1) {
-  const columnCount = gridColumnCount();
-
-  cards.forEach((card, index) => {
-    const row = Math.floor(index / columnCount);
-    const column = index % columnCount;
-    const snakeColumn = row % 2 === 0 ? column : columnCount - 1 - column;
-    const snakeOrder = row * columnCount + snakeColumn;
-
-    const orderedIndex = direction > 0 ? snakeOrder : cards.length - snakeOrder;
-
-    card.style.setProperty("--snake-order", String(orderedIndex));
-    card.style.setProperty("--snake-delay", `${Math.min(orderedIndex, 14) * 32}ms`);
-    card.style.setProperty("--snake-row", String(row));
-  });
-}
-
-function pageDirection(totalPages) {
-  if (!renderedPage) {
-    return 1;
-  }
-
-  if (renderedPage === totalPages && currentPage === 1) {
-    return 1;
-  }
-
-  if (renderedPage === 1 && currentPage === totalPages) {
-    return -1;
-  }
-
-  return currentPage >= renderedPage ? 1 : -1;
-}
-
 function clearPageTransitionClasses(cards) {
   cards.forEach((card) => {
     card.classList.remove("is-page-exiting", "is-page-entering");
-    card.style.removeProperty("--snake-order");
-    card.style.removeProperty("--snake-delay");
-    card.style.removeProperty("--snake-row");
   });
-  artGrid.style.removeProperty("--page-enter-x");
-  artGrid.style.removeProperty("--page-enter-settle-x");
-  artGrid.style.removeProperty("--page-exit-x");
-  artGrid.style.removeProperty("--page-exit-half-x");
 }
 
 function updateSelectedCards() {
@@ -388,14 +341,9 @@ function updateSelectedCards() {
   });
 }
 
-function renderPageCards(pageRecords, start, token, totalPages) {
-  const direction = pageDirection(totalPages);
+function renderPageCards(pageRecords, start, token) {
   const hasExistingCards = artGrid.querySelector(".gallery-card");
   const shouldAnimate = hasExistingCards && !reducedMotionPreferred();
-  const exitX = direction > 0 ? "-72px" : "72px";
-  const exitHalfX = direction > 0 ? "-32px" : "32px";
-  const enterX = direction > 0 ? "72px" : "-72px";
-  const enterSettleX = direction > 0 ? "-7px" : "7px";
 
   const finishRender = () => {
     if (token !== pageRenderToken) {
@@ -404,20 +352,14 @@ function renderPageCards(pageRecords, start, token, totalPages) {
 
     artGrid.replaceChildren(...pageRecords.map((record, index) => renderCard(record, start + index)));
     const newCards = [...artGrid.querySelectorAll(".gallery-card")];
-    renderedPage = currentPage;
 
     if (shouldAnimate) {
-      artGrid.style.setProperty("--page-enter-x", enterX);
-      artGrid.style.setProperty("--page-enter-settle-x", enterSettleX);
-      artGrid.style.setProperty("--page-exit-x", exitX);
-      artGrid.style.setProperty("--page-exit-half-x", exitHalfX);
-      setSnakeCardOrder(newCards, direction);
       newCards.forEach((card) => card.classList.add("is-page-entering"));
       artGrid.classList.add("is-page-transitioning");
       window.setTimeout(() => {
         clearPageTransitionClasses(newCards);
         artGrid.classList.remove("is-page-transitioning");
-      }, PAGE_TRANSITION_ENTER_MS);
+      }, PAGE_FLIP_ENTER_MS);
     }
 
     hydrateVisiblePixelArtwork(pageRecords, token);
@@ -430,14 +372,9 @@ function renderPageCards(pageRecords, start, token, totalPages) {
   }
 
   const oldCards = [...artGrid.querySelectorAll(".gallery-card")];
-  artGrid.style.setProperty("--page-enter-x", enterX);
-  artGrid.style.setProperty("--page-enter-settle-x", enterSettleX);
-  artGrid.style.setProperty("--page-exit-x", exitX);
-  artGrid.style.setProperty("--page-exit-half-x", exitHalfX);
-  setSnakeCardOrder(oldCards, direction);
   artGrid.classList.add("is-page-transitioning");
   oldCards.forEach((card) => card.classList.add("is-page-exiting"));
-  window.setTimeout(finishRender, PAGE_TRANSITION_EXIT_MS);
+  window.setTimeout(finishRender, PAGE_FLIP_SWAP_MS);
 }
 
 function stopAllArtworkObserver() {
@@ -1902,7 +1839,6 @@ function renderCurrentPage() {
   if (pageRecords.length === 0) {
     stopGalleryAutoplay();
     updateGalleryAutoplayControls(1);
-    renderedPage = 0;
     artGrid.innerHTML = `<p class="carousel-error">No artworks match your search.</p>`;
     galleryPagination.replaceChildren();
     closeInspector();
@@ -1910,7 +1846,7 @@ function renderCurrentPage() {
     return;
   }
 
-  renderPageCards(pageRecords, start, token, totalPages);
+  renderPageCards(pageRecords, start, token);
   renderPagination(totalPages);
   updateGalleryAutoplayControls(totalPages);
   scheduleGalleryAutoplay(totalPages);
