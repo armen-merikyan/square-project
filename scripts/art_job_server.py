@@ -27,8 +27,10 @@ DEFAULT_HOST = "127.0.0.1"
 DEFAULT_PORT = 8010
 MAX_LOG_LINES = 400
 MAX_SEED_LENGTH = 500
-MAX_COUNT = 200
-MAX_PARALLEL = 20
+DEFAULT_COUNT = 500
+DEFAULT_PARALLEL = 50
+MAX_COUNT = 500
+MAX_PARALLEL = 50
 SEED_LIBRARY_PATH = PROJECT_ROOT / "scripts" / "seed.json"
 
 
@@ -155,8 +157,8 @@ def build_generate_command(payload: dict[str, Any]) -> list[str]:
     if len(seed) > MAX_SEED_LENGTH:
         raise ValueError(f"Seed must be {MAX_SEED_LENGTH} characters or fewer.")
 
-    count = parse_bounded_int(payload.get("count", 1), "count", 1, MAX_COUNT)
-    parallel = parse_bounded_int(payload.get("parallel", 5), "parallel", 1, MAX_PARALLEL)
+    count = parse_bounded_int(payload.get("count", DEFAULT_COUNT), "count", 1, MAX_COUNT)
+    parallel = parse_bounded_int(payload.get("parallel", DEFAULT_PARALLEL), "parallel", 1, MAX_PARALLEL)
 
     command = [
         sys.executable,
@@ -664,11 +666,11 @@ INDEX_HTML = f"""<!doctype html>
           <div class="row">
             <label>
               Count
-              <input id="count" type="number" min="1" max="{MAX_COUNT}" value="1" required>
+              <input id="count" type="number" min="1" max="{MAX_COUNT}" value="{DEFAULT_COUNT}" required>
             </label>
             <label>
               Parallel
-              <input id="parallel" type="number" min="1" max="{MAX_PARALLEL}" value="5" required>
+              <input id="parallel" type="number" min="1" max="{MAX_PARALLEL}" value="{DEFAULT_PARALLEL}" required>
             </label>
           </div>
           <label class="checkbox">

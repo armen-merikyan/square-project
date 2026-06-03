@@ -1,0 +1,415 @@
+{
+  "id": "5e2eb4a932ba5267f01a1e50568c9a0c2f2aa2ed37fb2680b741849e6398cba4",
+  "seed": "signal vs noise; exposure_vs_shelter; corner_invasion; center_pulse; islands against echo; lit_edges; memory_vs_erasure; ladder | abstract variation request 297; target batch count 500",
+  "title": "Echoing Pulses",
+  "reasoning": "The artwork captures the tension between the clarity of signal and the chaos of noise, embodying the emotional tone of interference with clearly defined sections of calm and disruption. The chosen palette of navy, black, and dim cyan reflects loneliness and the quiet edge of clarity amidst the noise. The main collision occurs centrally, where structured 'stepwell' patterns of signal overlap with the scattered 'ripple' patterns of noise, creating an abstract notion of memory challenged by erasure. Broken pixels throughout signify disruptions, inviting a layered sense of legacy and impermanence.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#001122"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#001122"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#002244"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#003366"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#003366"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#003366"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#001122"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#002244"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#003366"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#004488"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#005599"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#005599"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#005599"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#001122"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#002244"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#003366"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#004488"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#005599"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#0066AA"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0077BB"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#005599"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#001122"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#002244"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#003366"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#0077BB"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#0088CC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#0099DD"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#0099DD"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#0088CC"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#002244"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#003366"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#004488"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#0088CC"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#0099DD"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#00AADD"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#00AADD"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#0099DD"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#003366"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#004488"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#005599"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#0099DD"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#00AADD"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#00AADD"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#004488"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#005599"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#0066AA"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#00AADD"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#005599"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#0066AA"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#0077BB"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#00CCFF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#00BBEE"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "signal",
+      "noise"
+    ],
+    "emotionMoods": {
+      "signal": [
+        "clear accent",
+        "single channel",
+        "readable rhythm"
+      ],
+      "noise": [
+        "interference field",
+        "false echoes",
+        "static scatter"
+      ]
+    },
+    "layout": {
+      "name": "open_gate",
+      "description": "A frame or wall opens on one side, letting a contrasting flow enter."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "signal": "stepwell",
+      "noise": "ripple"
+    },
+    "edgeStyle": "cut_edges",
+    "contrastType": "arrival_vs_departure",
+    "shapeSeed": "hole",
+    "composition": {
+      "name": "signal_vs_noise",
+      "idea": "One readable pulse tries to survive inside static, interference, and false echoes."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Signal Inside Noise",
+      "emotionPair": [
+        "signal",
+        "noise"
+      ],
+      "layout": "argument_grid",
+      "flow": "flicker",
+      "pattern": "one readable green path repeatedly interrupted by magenta static",
+      "edge": "edge_static",
+      "shape": "signal_dot",
+      "palette": "signal_noise"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "5e2eb4a932ba5267f01a1e50568c9a0c2f2aa2ed37fb2680b741849e6398cba4",
+  "pixelHash": "5e2eb4a932ba5267f01a1e50568c9a0c2f2aa2ed37fb2680b741849e6398cba4",
+  "jsonFile": "5e2eb4a932ba5267f01a1e50568c9a0c2f2aa2ed37fb2680b741849e6398cba4.json",
+  "svgFile": "5e2eb4a932ba5267f01a1e50568c9a0c2f2aa2ed37fb2680b741849e6398cba4.svg",
+  "createdAt": "2026-06-03T12:05:47.026456+00:00"
+}

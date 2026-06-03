@@ -58,7 +58,7 @@ def main() -> int:
         "-p",
         "--parallel",
         type=int,
-        default=5,
+        default=50,
         help="Number of OpenAI requests to run at the same time.",
     )
     parser.add_argument(
