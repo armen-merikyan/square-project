@@ -1,0 +1,416 @@
+{
+  "id": "1ac6721c5008b792577e60bcf8c07902a073991bc8b29db985824fd23babdf89",
+  "seed": "quiet vs pressure; symmetry_vs_break; diagonal_argument; counterflow; shatter against tide; hard_edges; sharp_vs_soft; island; clarity_confusion | abstract variation request 110; target batch count 500",
+  "title": "Pressure vs. Release",
+  "reasoning": "This composition captures the emotional tension between 'quiet' and 'pressure.' The palette is intentionally chosen to reflect that dichotomy: soft off-white and faint peach evoke calmness, while dark navy and compressed red introduce a sense of weight and urgency. The main contrast arises from the tight clustering of dark hues at one edge against the spacious lighter colors, creating a visual collision that mirrors the emotional push and pull described in the seed. The spiral layout and broken edges enhance areas of tension while allowing for moments of reprieve, evoking the story of pressure that gently gives way to quiet clarity.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#F4E2D4"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D6D2D1"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#B0B3A8"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#A0A3A7"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#8A8C91"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#5A6A78"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#3F4554"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#E0B1B9"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F0E3E2"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#B7C9D6"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#374A50"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#1E1F22"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#4A585C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#7F7C7C"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#1A1F1D"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#B0C4D6"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#1C2833"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#37474F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D8A8A9"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#E3E1E1"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#CADBDB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#B9B7B7"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#EDEDED"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#D0C7B5"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D9483D"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#57322B"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D1B2B1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D9E3E9"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#3E5550"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B0B3B7"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#E1EAED"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#EBE0D3"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#8F9B99"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#D8BFD1"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#B28789"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A2B3B5"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#2A353D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#1A2123"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#707B7D"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#2F4F4F"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#EDC4B3"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#E09A88"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#5D7A76"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A3C0C0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D9DBD6"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F0E6DE"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#ADBFBA"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#B6B3A3"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#A49985"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#2A2D32"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#E5A99F"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#1E242A"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#A6B3B2"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#737F83"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#404B4E"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#A8B7BB"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#DBD2C8"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#C2A59E"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#5C2D45"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#2A1E1F"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#7D8B93"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#B8C7C7"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#D7D1CE"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "quiet",
+      "pressure"
+    ],
+    "emotionMoods": {
+      "quiet": [
+        "soft horizon",
+        "low pulse",
+        "wide pause"
+      ],
+      "pressure": [
+        "weighted border",
+        "tight center",
+        "dark push"
+      ]
+    },
+    "layout": {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    "flow": "edge_crawl",
+    "patterns": {
+      "quiet": "grid",
+      "pressure": "rain"
+    },
+    "edgeStyle": "lit_edges",
+    "contrastType": "soft_glow_vs_hard_shadow",
+    "shapeSeed": "beacon",
+    "composition": {
+      "name": "pressure_vs_release",
+      "idea": "Dense pixels collect at one edge and loosen into air across the square."
+    },
+    "palette": {
+      "name": "quiet_pressure",
+      "colors": [
+        "off_white",
+        "dust_gray",
+        "compressed_red",
+        "dark_navy",
+        "faint_peach"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "1ac6721c5008b792577e60bcf8c07902a073991bc8b29db985824fd23babdf89",
+  "pixelHash": "1ac6721c5008b792577e60bcf8c07902a073991bc8b29db985824fd23babdf89",
+  "jsonFile": "1ac6721c5008b792577e60bcf8c07902a073991bc8b29db985824fd23babdf89.json",
+  "svgFile": "1ac6721c5008b792577e60bcf8c07902a073991bc8b29db985824fd23babdf89.svg",
+  "createdAt": "2026-06-03T21:26:43.850387+00:00"
+}

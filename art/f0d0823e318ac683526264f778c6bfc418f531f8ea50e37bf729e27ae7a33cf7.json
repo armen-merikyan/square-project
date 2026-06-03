@@ -1,0 +1,416 @@
+{
+  "id": "f0d0823e318ac683526264f778c6bfc418f531f8ea50e37bf729e27ae7a33cf7",
+  "seed": "quiet vs pressure; symmetry_vs_break; diagonal_argument; counterflow; shatter against tide; hard_edges; sharp_vs_soft; island; clarity_confusion | abstract variation request 176; target batch count 500",
+  "title": "Pressure and Release",
+  "reasoning": "The emotional tone of this piece balances moments of tight pressure against expansive quietness. The colors reflect this duality, with deep navy (#001F3F) and compressed red (#FF4136) representing pressure, while muted off-white (#F6F6F6) and faint peach (#FFD7A1) encapsulate the quiet. The layout employs a threshold that sharpens the collision of these emotions, where dense clusters of red interrupt the serene space of pale colors. The hard edges juxtapose soft elements, reflecting the tension suggested by the seed. The result is a visual conversation between chaos and calm, inviting the viewer to explore the nuances of feeling.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF4136"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FF4136"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#FF4136"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FF4136"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FF4136"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFD7A1"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F6F6F6"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#F6F6F6"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "quiet",
+      "pressure"
+    ],
+    "emotionMoods": {
+      "quiet": [
+        "low pulse",
+        "still negative space",
+        "soft horizon"
+      ],
+      "pressure": [
+        "tight center",
+        "compressed density",
+        "crowded path"
+      ]
+    },
+    "layout": {
+      "name": "threshold",
+      "description": "The canvas is divided by a passage or seam where the two emotions meet."
+    },
+    "flow": "braid",
+    "patterns": {
+      "quiet": "split_screen",
+      "pressure": "islands"
+    },
+    "edgeStyle": "halo_border",
+    "contrastType": "repair_vs_damage",
+    "shapeSeed": "vessel",
+    "composition": {
+      "name": "pressure_vs_release",
+      "idea": "Dense pixels collect at one edge and loosen into air across the square."
+    },
+    "palette": {
+      "name": "quiet_pressure",
+      "colors": [
+        "off_white",
+        "dust_gray",
+        "compressed_red",
+        "dark_navy",
+        "faint_peach"
+      ]
+    },
+    "referenceExample": {
+      "title": "Rage Entering Calm",
+      "emotionPair": [
+        "rage",
+        "calm"
+      ],
+      "layout": "corner_invasion",
+      "flow": "diagonal_rise",
+      "pattern": "red jagged pixels cutting into blue horizontal bands",
+      "edge": "hard_edges",
+      "shape": "flame",
+      "palette": "rage_calm"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "f0d0823e318ac683526264f778c6bfc418f531f8ea50e37bf729e27ae7a33cf7",
+  "pixelHash": "f0d0823e318ac683526264f778c6bfc418f531f8ea50e37bf729e27ae7a33cf7",
+  "jsonFile": "f0d0823e318ac683526264f778c6bfc418f531f8ea50e37bf729e27ae7a33cf7.json",
+  "svgFile": "f0d0823e318ac683526264f778c6bfc418f531f8ea50e37bf729e27ae7a33cf7.svg",
+  "createdAt": "2026-06-03T21:26:56.932356+00:00"
+}
