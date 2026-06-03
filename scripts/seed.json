@@ -7,23 +7,72 @@
     "fear",
     "hope",
     "loneliness",
+    "connection",
     "love",
     "envy",
+    "gratitude",
     "shame",
     "pride",
     "confusion",
+    "clarity",
     "relief",
     "panic",
+    "control",
     "trust",
+    "suspicion",
     "betrayal",
     "awe",
+    "terror",
     "emptiness",
     "desire",
     "defiance",
+    "submission",
     "nostalgia",
+    "progress",
     "curiosity",
     "guilt",
-    "peace"
+    "peace",
+    "dread",
+    "tenderness",
+    "resilience",
+    "melancholy",
+    "wonder",
+    "restlessness",
+    "acceptance",
+    "longing",
+    "resolve",
+    "vulnerability",
+    "serenity",
+    "urgency",
+    "forgiveness",
+    "alienation",
+    "belonging",
+    "fragility",
+    "strength",
+    "euphoria",
+    "weariness",
+    "intimacy",
+    "distance",
+    "reverence",
+    "doubt",
+    "certainty",
+    "hunger",
+    "restraint",
+    "mourning",
+    "renewal",
+    "surrender",
+    "memory",
+    "erasure",
+    "quiet",
+    "pressure",
+    "signal",
+    "noise",
+    "spark",
+    "ash",
+    "safety",
+    "exposure",
+    "softness",
+    "severity"
   ],
   "emotional_contrasts": [
     ["joy", "grief"],
@@ -40,19 +89,107 @@
     ["nostalgia", "progress"],
     ["awe", "terror"],
     ["defiance", "submission"],
-    ["relief", "dread"]
+    ["relief", "dread"],
+    ["tenderness", "rage"],
+    ["resilience", "fragility"],
+    ["melancholy", "wonder"],
+    ["restlessness", "peace"],
+    ["acceptance", "defiance"],
+    ["longing", "resolve"],
+    ["vulnerability", "strength"],
+    ["serenity", "urgency"],
+    ["guilt", "forgiveness"],
+    ["alienation", "belonging"],
+    ["euphoria", "weariness"],
+    ["intimacy", "distance"],
+    ["reverence", "doubt"],
+    ["certainty", "curiosity"],
+    ["hunger", "restraint"],
+    ["mourning", "renewal"],
+    ["desire", "restraint"],
+    ["hope", "dread"],
+    ["control", "surrender"],
+    ["memory", "erasure"],
+    ["quiet", "pressure"],
+    ["signal", "noise"],
+    ["spark", "ash"],
+    ["safety", "exposure"],
+    ["softness", "severity"]
   ],
   "visual_moods": {
-    "joy": ["bright", "open", "rounded", "expanding", "spark-like"],
-    "grief": ["drooping", "heavy", "low", "fragmented", "blue-toned"],
-    "rage": ["sharp", "red", "explosive", "diagonal", "compressed"],
-    "calm": ["horizontal", "soft", "symmetrical", "low contrast", "spaced out"],
-    "fear": ["dark corners", "thin lines", "empty center", "jagged edges"],
-    "hope": ["rising", "small light", "center glow", "upward flow"],
-    "loneliness": ["single dot", "large negative space", "off-center"],
-    "love": ["paired shapes", "warm colors", "mirrored forms"],
-    "betrayal": ["split symmetry", "broken heart shape", "misaligned mirror"],
-    "confusion": ["overlapping paths", "broken grid", "false symmetry"]
+    "joy": ["bright", "open", "rounded", "expanding", "spark-like", "buoyant", "high contrast accents"],
+    "grief": ["drooping", "heavy", "low", "fragmented", "blue-toned", "slow", "weighted corners"],
+    "rage": ["sharp", "red", "explosive", "diagonal", "compressed", "hot center", "ruptured symmetry"],
+    "calm": ["horizontal", "soft", "symmetrical", "low contrast", "spaced out", "even breathing", "quiet edges"],
+    "fear": ["dark corners", "thin lines", "empty center", "jagged edges", "small highlights", "tight spacing"],
+    "hope": ["rising", "small light", "center glow", "upward flow", "pale warmth", "protected opening"],
+    "loneliness": ["single dot", "large negative space", "off-center", "thin echo", "cool distance", "quiet void"],
+    "connection": ["bridged gaps", "paired pulses", "shared border", "interlocking rhythm", "warm crossing"],
+    "love": ["paired shapes", "warm colors", "mirrored forms", "soft contact", "held center", "gentle repetition"],
+    "envy": ["acid accent", "side glance", "compressed green", "uneven doubling", "hungry outline"],
+    "gratitude": ["gold flecks", "open center", "soft radiance", "balanced clusters", "quiet abundance"],
+    "shame": ["lowered mass", "hidden center", "muted heat", "inward fold", "small blocked glow"],
+    "pride": ["vertical lift", "crown-like rhythm", "high center", "clear outline", "warm height"],
+    "confusion": ["overlapping paths", "broken grid", "false symmetry", "misread signals", "forking routes"],
+    "clarity": ["clean divisions", "crisp center", "ordered spacing", "bright channel", "resolved axis"],
+    "relief": ["exhale spacing", "soft release", "opening edge", "cool return", "loosened density"],
+    "panic": ["rapid marks", "crowded edges", "broken diagonals", "strobing contrast", "tight spiral"],
+    "control": ["measured grid", "contained pressure", "straight channels", "locked border", "even cadence"],
+    "trust": ["stable base", "open bridge", "soft enclosure", "balanced warmth", "unbroken path"],
+    "suspicion": ["offset doubles", "dark sliver", "blocked passage", "uneven reflection", "watching gaps"],
+    "betrayal": ["split symmetry", "broken heart shape", "misaligned mirror", "sudden dark cut", "corrupted pairing"],
+    "awe": ["vast opening", "tiny bright event", "vertical silence", "halo pressure", "cool depth"],
+    "terror": ["black mass", "clawed edges", "swallowed center", "stark interruption", "sharp descent"],
+    "emptiness": ["hollow field", "low saturation", "large blank area", "faint perimeter", "distant mark"],
+    "desire": ["warm pull", "center heat", "reaching diagonals", "saturated pulse", "gathered glow"],
+    "defiance": ["upward block", "hard interruption", "unmoved center", "angular resistance", "bright refusal"],
+    "submission": ["lowered axis", "soft collapse", "receding contrast", "enclosed field", "downward fold"],
+    "nostalgia": ["faded warmth", "sepia haze", "soft repetition", "missing square", "blurred border"],
+    "progress": ["forward steps", "clean rise", "fresh highlight", "modular rhythm", "cleared path"],
+    "curiosity": ["small openings", "questioning paths", "odd accent", "search pattern", "unresolved corner"],
+    "guilt": ["dark residue", "off-center weight", "stained edge", "repeating return", "small hot mark"],
+    "peace": ["wide spacing", "gentle balance", "pale field", "quiet symmetry", "low pulse"],
+    "dread": ["slow shadow", "heavy top", "closing border", "dim warning", "inevitable descent"],
+    "tenderness": ["soft contact", "rounded pressure", "low warmth", "gentle overlap", "protected smallness"],
+    "resilience": ["repaired break", "rising blocks", "strong center", "scar rhythm", "held brightness"],
+    "melancholy": ["muted blue", "soft fall", "late light", "distant rhythm", "weighted silence"],
+    "wonder": ["unexpected glow", "open dark", "tiny constellation", "floating contrast", "expanded center"],
+    "restlessness": ["resting place denied", "stuttered line", "uneven pulse", "wandering accents", "unsettled border"],
+    "acceptance": ["soft landing", "resolved imbalance", "warm quiet", "settled edge", "held negative space"],
+    "longing": ["reaching gap", "distant warmth", "thin bridge", "unfinished approach", "stretched diagonal"],
+    "resolve": ["firm axis", "locked shape", "steady rise", "clear boundary", "compressed strength"],
+    "vulnerability": ["exposed center", "thin shell", "pale interior", "soft break", "unshielded light"],
+    "serenity": ["air between marks", "even horizon", "muted balance", "slow wave", "clear field"],
+    "urgency": ["hot signal", "fast diagonal", "alarm contrast", "compressed route", "repeating strike"],
+    "forgiveness": ["soft repair", "warm return", "opened border", "mended symmetry", "lightened residue"],
+    "alienation": ["isolated cluster", "cold offset", "broken bridge", "empty middle", "misfit rhythm"],
+    "belonging": ["joined pattern", "shared cadence", "nested warmth", "filled gap", "welcoming frame"],
+    "fragility": ["thin structure", "pale break", "near collapse", "small hinge", "delicate spacing"],
+    "strength": ["dense base", "clear blocks", "stable center", "thick edge", "rooted contrast"],
+    "euphoria": ["bursting color", "high saturation", "expanding sparks", "overfull center", "dancing imbalance"],
+    "weariness": ["faded repetition", "slumped rows", "low contrast", "drained corners", "slow drift"],
+    "intimacy": ["close pair", "shared glow", "small enclosure", "warm overlap", "quiet contact"],
+    "distance": ["wide gap", "cool field", "separated islands", "thin horizon", "faint echo"],
+    "reverence": ["vertical quiet", "held glow", "ordered stillness", "dark surround", "small sacred center"],
+    "doubt": ["broken path", "soft contradiction", "uneven signal", "misaligned center", "faint retreat"],
+    "certainty": ["clean axis", "solid block", "direct route", "single pulse", "firm boundary"],
+    "hunger": ["pulling edges", "red hollow", "tight orbit", "consuming center", "reaching marks"],
+    "restraint": ["held border", "muted heat", "limited marks", "contained pulse", "locked negative space"],
+    "mourning": ["black veil", "low glow", "slow descent", "muted memory", "heavy quiet"],
+    "renewal": ["fresh green", "opened crack", "rising light", "repaired grid", "early warmth"],
+    "surrender": ["soft yielding", "opened edge", "lowered contrast", "released center", "gentle descent"],
+    "memory": ["faded repetition", "echoed blocks", "warm residue", "missing pixels", "soft return"],
+    "erasure": ["scrubbed field", "vanishing marks", "pale interruption", "broken record", "lost edge"],
+    "quiet": ["wide pause", "muted field", "low pulse", "soft horizon", "still negative space"],
+    "pressure": ["compressed density", "weighted border", "tight center", "dark push", "crowded path"],
+    "signal": ["clean pulse", "bright route", "single channel", "readable rhythm", "clear accent"],
+    "noise": ["static scatter", "false echoes", "random sparks", "interference field", "broken cadence"],
+    "spark": ["small ignition", "hot accent", "sudden brightness", "scattered light", "quick burst"],
+    "ash": ["soft residue", "gray fall", "burnt quiet", "settled dust", "faded heat"],
+    "safety": ["warm enclosure", "stable frame", "soft barrier", "protected center", "gentle weight"],
+    "exposure": ["open center", "thin shelter", "bright vulnerability", "uncovered edge", "wide air"],
+    "softness": ["feathered contact", "powder colors", "rounded pressure", "slow blend", "gentle edge"],
+    "severity": ["hard cut", "dark rule", "sharp contrast", "strict axis", "cold boundary"]
   },
   "flows": [
     "left_to_right",
@@ -74,7 +211,27 @@
     "orbit",
     "pulse",
     "drip",
-    "climb"
+    "climb",
+    "echo_left",
+    "echo_right",
+    "inward_spiral",
+    "outward_spiral",
+    "cross_current",
+    "counterflow",
+    "flicker",
+    "stutter_step",
+    "slow_sink",
+    "quick_rise",
+    "edge_crawl",
+    "center_pulse",
+    "corner_to_corner",
+    "sweep",
+    "braid",
+    "fracture",
+    "settle",
+    "tilt",
+    "recede",
+    "advance"
   ],
   "pattern_types": [
     "checker",
@@ -96,7 +253,38 @@
     "flame",
     "rain",
     "teeth",
-    "spark"
+    "spark",
+    "static",
+    "echo",
+    "ripple",
+    "ladder",
+    "hinge",
+    "veil",
+    "stack",
+    "fault_line",
+    "constellation",
+    "patchwork",
+    "threshold",
+    "braid",
+    "barcode",
+    "pulse_marks",
+    "islands",
+    "channels",
+    "scar",
+    "ash_field",
+    "halo",
+    "shatter",
+    "flood",
+    "thread",
+    "stepwell",
+    "glitch",
+    "tide",
+    "lattice",
+    "embers",
+    "negative_cross",
+    "broken_frame",
+    "pressure_band",
+    "quiet_field"
   ],
   "edge_styles": [
     "soft_edges",
@@ -114,38 +302,98 @@
     "top_weighted",
     "bottom_weighted",
     "left_weighted",
-    "right_weighted"
+    "right_weighted",
+    "feathered_edges",
+    "cut_edges",
+    "shadowed_edges",
+    "lit_edges",
+    "eroded_edges",
+    "sealed_edges",
+    "open_corners",
+    "closed_corners",
+    "uneven_border",
+    "halo_border",
+    "pressure_border",
+    "receding_edges",
+    "inset_outline",
+    "double_outline",
+    "edge_static",
+    "corner_sparks",
+    "faded_border",
+    "blocked_edge",
+    "porous_edge",
+    "weighted_diagonal"
   ],
   "compositional_arguments": [
     {
       "name": "order_vs_chaos",
       "idea": "One side follows a clean pattern while the other breaks apart.",
-      "good_for": ["calm_vs_panic", "control_vs_fear", "trust_vs_suspicion"]
+      "good_for": ["calm_vs_panic", "control_vs_fear", "trust_vs_suspicion", "clarity_vs_confusion", "certainty_vs_doubt"]
     },
     {
       "name": "light_vs_weight",
       "idea": "A small bright shape fights against a heavy dark mass.",
-      "good_for": ["hope_vs_grief", "relief_vs_dread"]
+      "good_for": ["hope_vs_grief", "relief_vs_dread", "wonder_vs_melancholy", "renewal_vs_mourning"]
     },
     {
       "name": "center_vs_edges",
       "idea": "The center is protected or attacked by the surrounding pixels.",
-      "good_for": ["loneliness", "fear", "defiance"]
+      "good_for": ["loneliness", "fear", "defiance", "vulnerability", "reverence"]
     },
     {
       "name": "symmetry_vs_break",
       "idea": "A nearly mirrored image has one wrong or corrupted side.",
-      "good_for": ["betrayal", "confusion", "shame_vs_pride"]
+      "good_for": ["betrayal", "confusion", "shame_vs_pride", "trust_vs_suspicion", "memory_vs_erasure"]
     },
     {
       "name": "rise_vs_fall",
       "idea": "Pixels move upward on one side and downward on the other.",
-      "good_for": ["hope_vs_grief", "pride_vs_shame"]
+      "good_for": ["hope_vs_grief", "pride_vs_shame", "renewal_vs_mourning", "progress_vs_nostalgia"]
     },
     {
       "name": "inside_vs_outside",
       "idea": "A small inner shape is surrounded by pressure, noise, or protection.",
-      "good_for": ["fear", "love", "loneliness", "trust"]
+      "good_for": ["fear", "love", "loneliness", "trust", "intimacy_vs_distance"]
+    },
+    {
+      "name": "signal_vs_noise",
+      "idea": "One readable pulse tries to survive inside static, interference, and false echoes.",
+      "good_for": ["connection_vs_alienation", "clarity_vs_confusion", "signal_vs_noise", "trust_vs_suspicion"]
+    },
+    {
+      "name": "repair_vs_damage",
+      "idea": "Broken bands are visibly patched by warmer or steadier pixels.",
+      "good_for": ["guilt_vs_forgiveness", "resilience_vs_fragility", "renewal_vs_mourning"]
+    },
+    {
+      "name": "hunger_vs_restraint",
+      "idea": "A saturated pull reaches toward a locked border that refuses expansion.",
+      "good_for": ["hunger_vs_restraint", "desire_vs_restraint", "emptiness_vs_desire"]
+    },
+    {
+      "name": "near_vs_far",
+      "idea": "Close paired marks are separated from distant echoes by a wide quiet field.",
+      "good_for": ["intimacy_vs_distance", "longing_vs_resolve", "loneliness_vs_connection"]
+    },
+    {
+      "name": "pressure_vs_release",
+      "idea": "Dense pixels collect at one edge and loosen into air across the square.",
+      "good_for": ["quiet_vs_pressure", "serenity_vs_urgency", "relief_vs_dread", "panic_vs_control"]
+    },
+    {
+      "name": "memory_vs_motion",
+      "idea": "Faded repeated marks are interrupted by a cleaner advancing path.",
+      "good_for": ["nostalgia_vs_progress", "memory_vs_erasure", "melancholy_vs_wonder"]
+    },
+    {
+      "name": "exposure_vs_shelter",
+      "idea": "A pale exposed center is either protected by a frame or left open to incoming marks.",
+      "good_for": ["vulnerability_vs_strength", "safety_vs_exposure", "fear_vs_hope"]
+    },
+    {
+      "name": "overflow_vs_containment",
+      "idea": "Bright or hot marks exceed a boundary while cooler marks try to contain them.",
+      "good_for": ["euphoria_vs_weariness", "rage_vs_calm", "desire_vs_restraint"]
     }
   ],
   "shape_seeds": [
@@ -178,7 +426,39 @@
     "moon",
     "hole",
     "wall",
-    "bridge"
+    "bridge",
+    "hinge",
+    "thread",
+    "knot",
+    "scar",
+    "halo",
+    "anchor",
+    "beacon",
+    "root",
+    "shell",
+    "veil",
+    "spark_gap",
+    "fold",
+    "keyhole",
+    "threshold",
+    "pillar",
+    "well",
+    "wound",
+    "patch",
+    "island",
+    "channel",
+    "hook",
+    "vessel",
+    "compass",
+    "echo_mark",
+    "fault",
+    "cage",
+    "ladder",
+    "ember",
+    "horizon",
+    "signal_dot",
+    "pressure_block",
+    "quiet_block"
   ],
   "contrast_types": [
     "warm_vs_cool",
@@ -194,7 +474,25 @@
     "straight_vs_curved",
     "open_vs_closed",
     "safe_vs_threatened",
-    "hidden_vs_exposed"
+    "hidden_vs_exposed",
+    "saturated_vs_muted",
+    "near_vs_far",
+    "loud_vs_quiet",
+    "fast_vs_slow",
+    "ordered_vs_disrupted",
+    "contained_vs_overflowing",
+    "soft_glow_vs_hard_shadow",
+    "scarred_vs_smooth",
+    "thin_vs_heavy",
+    "fragmented_vs_whole",
+    "still_vs_moving",
+    "known_vs_unknown",
+    "protected_vs_invaded",
+    "memory_vs_erasure",
+    "signal_vs_noise",
+    "pressure_vs_release",
+    "repair_vs_damage",
+    "arrival_vs_departure"
   ],
   "color_palettes": [
     {
@@ -228,6 +526,74 @@
     {
       "name": "ancient_fire",
       "colors": ["burnt_orange", "dark_red", "charcoal", "gold"]
+    },
+    {
+      "name": "connection_alienation",
+      "colors": ["warm_coral", "soft_amber", "cold_slate", "blue_black", "signal_cyan"]
+    },
+    {
+      "name": "gratitude_envy",
+      "colors": ["ripe_green", "acid_green", "honey_gold", "deep_olive", "cream"]
+    },
+    {
+      "name": "clarity_confusion",
+      "colors": ["clean_white", "ice_blue", "ink_black", "violet_gray", "warning_orange"]
+    },
+    {
+      "name": "relief_dread",
+      "colors": ["pale_mint", "soft_sky", "storm_gray", "near_black", "faded_gold"]
+    },
+    {
+      "name": "awe_terror",
+      "colors": ["cosmic_indigo", "void_black", "star_white", "cold_gold", "deep_teal"]
+    },
+    {
+      "name": "desire_emptiness",
+      "colors": ["hot_coral", "blood_orange", "dust_pink", "charcoal", "hollow_blue"]
+    },
+    {
+      "name": "resilience_fragility",
+      "colors": ["moss_green", "bone_white", "rust", "stone_gray", "small_gold"]
+    },
+    {
+      "name": "melancholy_wonder",
+      "colors": ["rain_blue", "lavender_gray", "moon_white", "soft_cyan", "muted_plum"]
+    },
+    {
+      "name": "serenity_urgency",
+      "colors": ["pale_aqua", "mist_gray", "alarm_red", "ink_blue", "clear_white"]
+    },
+    {
+      "name": "guilt_forgiveness",
+      "colors": ["stain_brown", "ash_gray", "warm_ivory", "soft_gold", "deep_wine"]
+    },
+    {
+      "name": "intimacy_distance",
+      "colors": ["rose_clay", "warm_shadow", "cool_blue", "distant_lilac", "lamp_gold"]
+    },
+    {
+      "name": "hunger_restraint",
+      "colors": ["red_oxide", "blackened_plum", "muted_cream", "iron_gray", "small_orange"]
+    },
+    {
+      "name": "mourning_renewal",
+      "colors": ["mourning_black", "deep_blue", "new_leaf", "pale_yellow", "stone"]
+    },
+    {
+      "name": "quiet_pressure",
+      "colors": ["off_white", "dust_gray", "compressed_red", "dark_navy", "faint_peach"]
+    },
+    {
+      "name": "softness_severity",
+      "colors": ["powder_pink", "warm_white", "carbon_black", "steel_gray", "sharp_crimson"]
+    },
+    {
+      "name": "signal_noise",
+      "colors": ["signal_green", "electric_blue", "dead_black", "static_gray", "hot_magenta"]
+    },
+    {
+      "name": "safety_exposure",
+      "colors": ["shelter_green", "warm_brown", "pale_skin", "cold_white", "open_blue"]
     }
   ],
   "8x8_layout_templates": [
@@ -270,6 +636,70 @@
     {
       "name": "argument_grid",
       "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    {
+      "name": "diagonal_argument",
+      "description": "Emotion A occupies one diagonal wedge while emotion B presses against the opposite wedge."
+    },
+    {
+      "name": "island_and_sea",
+      "description": "A small dense island sits inside a larger field of quieter pixels."
+    },
+    {
+      "name": "broken_frame",
+      "description": "A border nearly encloses the square but has deliberate breaks where emotion leaks through."
+    },
+    {
+      "name": "two_pulses",
+      "description": "Two small centers pulse toward or away from each other across negative space."
+    },
+    {
+      "name": "pressure_corner",
+      "description": "One corner is overfilled and the rest of the square reacts with spreading marks."
+    },
+    {
+      "name": "quiet_channel",
+      "description": "A narrow negative-space path cuts through dense pattern pressure."
+    },
+    {
+      "name": "stacked_bands",
+      "description": "Rows behave like emotional strata, shifting density and temperature from band to band."
+    },
+    {
+      "name": "threshold",
+      "description": "The canvas is divided by a passage or seam where the two emotions meet."
+    },
+    {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    {
+      "name": "scattered_repair",
+      "description": "Broken marks are patched by brighter pixels that form an incomplete repair path."
+    },
+    {
+      "name": "halo_void",
+      "description": "A hollow center is ringed by light, shadow, or static."
+    },
+    {
+      "name": "cross_current",
+      "description": "Horizontal and vertical movements collide, creating a tense crossing in the middle."
+    },
+    {
+      "name": "eroded_symmetry",
+      "description": "A symmetric plan is worn away at the edges and corners."
+    },
+    {
+      "name": "last_light",
+      "description": "Most of the square is dim, but one small bright cluster remains active."
+    },
+    {
+      "name": "overfilled_center",
+      "description": "The center is dense and saturated while the border struggles to contain it."
+    },
+    {
+      "name": "open_gate",
+      "description": "A frame or wall opens on one side, letting a contrasting flow enter."
     }
   ],
   "random_generation_rules": [
@@ -282,7 +712,15 @@
     "Pick 1 contrast type.",
     "Pick 1 shape seed as the central object.",
     "Apply 1 to 6 broken pixels to create imperfection.",
-    "Leave at least 10 percent negative space unless the mood is panic, rage, or chaos."
+    "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+    "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+    "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+    "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+    "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+    "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+    "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+    "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+    "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
   ],
   "example_combinations": [
     {
@@ -334,6 +772,116 @@
       "edge": "pixel_bleed",
       "shape": "crown",
       "palette": "broken_memory"
+    },
+    {
+      "title": "Static Around a Bridge",
+      "emotion_pair": ["alienation", "belonging"],
+      "layout": "quiet_channel",
+      "flow": "cross_current",
+      "pattern": "cold broken islands interrupted by a warm connecting channel",
+      "edge": "porous_edge",
+      "shape": "bridge",
+      "palette": "connection_alienation"
+    },
+    {
+      "title": "Repair After Guilt",
+      "emotion_pair": ["guilt", "forgiveness"],
+      "layout": "scattered_repair",
+      "flow": "settle",
+      "pattern": "dark residue patched by small ivory and gold marks",
+      "edge": "eroded_edges",
+      "shape": "patch",
+      "palette": "guilt_forgiveness"
+    },
+    {
+      "title": "Dread Releasing",
+      "emotion_pair": ["relief", "dread"],
+      "layout": "pressure_corner",
+      "flow": "slow_sink",
+      "pattern": "heavy top corner loosens into pale open space",
+      "edge": "shadowed_edges",
+      "shape": "hole",
+      "palette": "relief_dread"
+    },
+    {
+      "title": "Resilient Scar",
+      "emotion_pair": ["resilience", "fragility"],
+      "layout": "broken_frame",
+      "flow": "quick_rise",
+      "pattern": "thin broken structure crossed by a repaired vertical path",
+      "edge": "sealed_edges",
+      "shape": "scar",
+      "palette": "resilience_fragility"
+    },
+    {
+      "title": "Awe at the Edge",
+      "emotion_pair": ["awe", "terror"],
+      "layout": "halo_void",
+      "flow": "center_pulse",
+      "pattern": "black hollow center surrounded by cold gold and star-white pressure",
+      "edge": "halo_border",
+      "shape": "halo",
+      "palette": "awe_terror"
+    },
+    {
+      "title": "Held Hunger",
+      "emotion_pair": ["hunger", "restraint"],
+      "layout": "overfilled_center",
+      "flow": "outside_inward",
+      "pattern": "red orbit presses against a muted locked border",
+      "edge": "pressure_border",
+      "shape": "cage",
+      "palette": "hunger_restraint"
+    },
+    {
+      "title": "Wonder Through Rain",
+      "emotion_pair": ["melancholy", "wonder"],
+      "layout": "last_light",
+      "flow": "drip",
+      "pattern": "muted blue rain field interrupted by a small floating glow",
+      "edge": "faded_border",
+      "shape": "star",
+      "palette": "melancholy_wonder"
+    },
+    {
+      "title": "Urgency Crossing Serenity",
+      "emotion_pair": ["serenity", "urgency"],
+      "layout": "cross_current",
+      "flow": "corner_to_corner",
+      "pattern": "quiet aqua field struck by a fast red diagonal",
+      "edge": "weighted_diagonal",
+      "shape": "arrow",
+      "palette": "serenity_urgency"
+    },
+    {
+      "title": "Mourning Opens",
+      "emotion_pair": ["mourning", "renewal"],
+      "layout": "open_gate",
+      "flow": "bottom_to_top",
+      "pattern": "dark veil splits where green and pale yellow marks climb through",
+      "edge": "blocked_edge",
+      "shape": "threshold",
+      "palette": "mourning_renewal"
+    },
+    {
+      "title": "Desire Held Back",
+      "emotion_pair": ["desire", "restraint"],
+      "layout": "threshold",
+      "flow": "advance",
+      "pattern": "warm saturated pull stopped by a cool sealed boundary",
+      "edge": "sealed_edges",
+      "shape": "wall",
+      "palette": "desire_emptiness"
+    },
+    {
+      "title": "Signal Inside Noise",
+      "emotion_pair": ["signal", "noise"],
+      "layout": "argument_grid",
+      "flow": "flicker",
+      "pattern": "one readable green path repeatedly interrupted by magenta static",
+      "edge": "edge_static",
+      "shape": "signal_dot",
+      "palette": "signal_noise"
     }
   ]
 }
