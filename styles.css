@@ -2620,14 +2620,14 @@ body.has-open-inspector {
 }
 
 .gallery-card.is-page-entering {
-  animation: gallery-card-flip-in 400ms var(--ease-smooth) both;
+  animation: gallery-card-flip-in 420ms var(--ease-smooth) both;
   animation-delay: var(--page-flip-delay, 0ms);
   backface-visibility: hidden;
   transform-origin: center center;
 }
 
 .art-grid.is-autoplay-advance .gallery-card.is-page-entering {
-  animation-duration: 400ms;
+  animation-duration: 420ms;
 }
 
 @keyframes gallery-card-flip-out {

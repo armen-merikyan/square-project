@@ -75,10 +75,10 @@ const COLOR_FILTER_RENDER_LIMIT = 600;
 const CHUNK_RENDER_INTERVAL = 10;
 const ALL_ARTWORK_PARALLEL_BATCH_SIZE = 6;
 const AUTOPLAY_PAGE_TRANSITION = 180;
-const PAGE_FLIP_TOTAL_MS = 1420;
 const PAGE_FLIP_SWAP_MS = 180;
-const PAGE_FLIP_EXIT_STAGGER_MS = 120;
-const PAGE_FLIP_ENTER_STAGGER_MS = 1020;
+const PAGE_FLIP_EXIT_DURATION_MS = 180;
+const PAGE_FLIP_ENTER_DURATION_MS = 420;
+const PAGE_FLIP_ENTER_STEP_MS = 180;
 const AUTOPLAY_SPEED_OPTIONS = {
   "1x": 9000,
   "2x": 6500,
@@ -357,13 +357,14 @@ function clearPageTransitionClasses(cards) {
   });
 }
 
-function applyPageTransitionOrder(cards, staggerMs) {
-  const lastIndex = Math.max(cards.length - 1, 1);
-
+function applyPageTransitionOrder(cards, stepMs) {
   cards.forEach((card, index) => {
-    const delay = Math.round((staggerMs * index) / lastIndex);
-    card.style.setProperty("--page-flip-delay", `${delay}ms`);
+    card.style.setProperty("--page-flip-delay", `${index * stepMs}ms`);
   });
+}
+
+function pageTransitionDuration(cards, stepMs, animationMs) {
+  return (Math.max(cards.length - 1, 0) * stepMs) + animationMs;
 }
 
 function updateSelectedCards() {
@@ -387,13 +388,13 @@ function renderPageCards(pageRecords, start, token) {
     const newCards = [...artGrid.querySelectorAll(".gallery-card")];
 
     if (shouldAnimate) {
-      applyPageTransitionOrder(newCards, PAGE_FLIP_ENTER_STAGGER_MS);
+      applyPageTransitionOrder(newCards, PAGE_FLIP_ENTER_STEP_MS);
       newCards.forEach((card) => card.classList.add("is-page-entering"));
       artGrid.classList.add("is-page-transitioning");
       window.setTimeout(() => {
         clearPageTransitionClasses(newCards);
         artGrid.classList.remove("is-page-transitioning");
-      }, PAGE_FLIP_TOTAL_MS - PAGE_FLIP_SWAP_MS);
+      }, pageTransitionDuration(newCards, PAGE_FLIP_ENTER_STEP_MS, PAGE_FLIP_ENTER_DURATION_MS));
     }
 
     hydrateVisiblePixelArtwork(pageRecords, token);
@@ -407,7 +408,6 @@ function renderPageCards(pageRecords, start, token) {
 
   const oldCards = [...artGrid.querySelectorAll(".gallery-card")];
   artGrid.classList.add("is-page-transitioning");
-  applyPageTransitionOrder(oldCards, PAGE_FLIP_EXIT_STAGGER_MS);
   oldCards.forEach((card) => card.classList.add("is-page-exiting"));
   window.setTimeout(finishRender, PAGE_FLIP_SWAP_MS);
 }
