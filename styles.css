@@ -2613,19 +2613,21 @@ body.has-open-inspector {
 
 .gallery-card.is-page-exiting {
   pointer-events: none;
-  animation: gallery-card-flip-out 360ms ease-in both;
+  animation: gallery-card-flip-out 300ms ease-in both;
+  animation-delay: var(--page-flip-delay, 0ms);
   backface-visibility: hidden;
   transform-origin: center center;
 }
 
 .gallery-card.is-page-entering {
-  animation: gallery-card-flip-in 520ms var(--ease-smooth) both;
+  animation: gallery-card-flip-in 560ms var(--ease-smooth) both;
+  animation-delay: var(--page-flip-delay, 0ms);
   backface-visibility: hidden;
   transform-origin: center center;
 }
 
 .art-grid.is-autoplay-advance .gallery-card.is-page-entering {
-  animation-duration: 520ms;
+  animation-duration: 560ms;
 }
 
 @keyframes gallery-card-flip-out {
