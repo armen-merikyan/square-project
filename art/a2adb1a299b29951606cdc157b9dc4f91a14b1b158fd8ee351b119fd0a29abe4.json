@@ -1,0 +1,416 @@
+{
+  "id": "a2adb1a299b29951606cdc157b9dc4f91a14b1b158fd8ee351b119fd0a29abe4",
+  "seed": "vulnerability vs strength; symmetry_vs_break; cross_current; braid; flood against stack; pressure_border; fast_vs_slow; tiny_face; desire_emptiness | abstract variation request 21; target batch count 500",
+  "title": "Exposure vs Shelter",
+  "reasoning": "The artwork captures the emotional tensions between vulnerability and strength. The palette choice of cosmic indigo and void black represents deep, meditative spaces that create an aura of protection, while accents of cold gold and star white highlight areas of exposure. The collision occurs in the center, where the pattern shifts from a dense barcode of strength to an open stack of vulnerability, illustrating a conflict between stability and fragility. This dynamic interplay evokes a sense of flowing tension\u2014reflecting the source seed's themes of strength vs. vulnerability.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000080"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#002E54"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#003953"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#004B87"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#007B9E"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#009DA5"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#1D1E22"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3D5B76"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#4F87A0"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#6C9B51"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#A6CA22"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D7E3C7"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#F3F6F7"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#EAF4D3"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#F7F8E7"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#E0E1F5"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#CFD2E0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#BACFE4"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#AAB3E0"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#88B8C7"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#59B4C1"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#1B7A83"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#161616"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#4C5B62"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#8A99A6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#A7B0B0"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#BAC7CC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#D1D2D4"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#E4E6E7"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F0F1F1"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#0D1B2A"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#005C8A"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#007E94"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#009D9C"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#00B2A6"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#06C8B2"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#78E0D1"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#B9F6E1"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#192F5D"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#1F3F5D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#2F5972"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#468A82"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#5EB9B7"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#77DFDE"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#A1EAF3"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#D3FAF8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#FFFF00"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFFF4D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D6FF00"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#96FF3D"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#5CFF6B"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#10FF92"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#19FFC9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#20FFF6"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#111111"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#222222"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#333333"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#444444"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#555555"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#666666"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#777777"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "vulnerability",
+      "strength"
+    ],
+    "emotionMoods": {
+      "vulnerability": [
+        "unshielded light",
+        "pale interior",
+        "exposed center"
+      ],
+      "strength": [
+        "stable center",
+        "clear blocks",
+        "dense base"
+      ]
+    },
+    "layout": {
+      "name": "corner_invasion",
+      "description": "One emotion starts in a corner and spreads diagonally."
+    },
+    "flow": "cross_current",
+    "patterns": {
+      "vulnerability": "stack",
+      "strength": "barcode"
+    },
+    "edgeStyle": "soft_edges",
+    "contrastType": "protected_vs_invaded",
+    "shapeSeed": "horizon",
+    "composition": {
+      "name": "exposure_vs_shelter",
+      "idea": "A pale exposed center is either protected by a frame or left open to incoming marks."
+    },
+    "palette": {
+      "name": "awe_terror",
+      "colors": [
+        "cosmic_indigo",
+        "void_black",
+        "star_white",
+        "cold_gold",
+        "deep_teal"
+      ]
+    },
+    "referenceExample": {
+      "title": "Mourning Opens",
+      "emotionPair": [
+        "mourning",
+        "renewal"
+      ],
+      "layout": "open_gate",
+      "flow": "bottom_to_top",
+      "pattern": "dark veil splits where green and pale yellow marks climb through",
+      "edge": "blocked_edge",
+      "shape": "threshold",
+      "palette": "mourning_renewal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "a2adb1a299b29951606cdc157b9dc4f91a14b1b158fd8ee351b119fd0a29abe4",
+  "pixelHash": "a2adb1a299b29951606cdc157b9dc4f91a14b1b158fd8ee351b119fd0a29abe4",
+  "jsonFile": "a2adb1a299b29951606cdc157b9dc4f91a14b1b158fd8ee351b119fd0a29abe4.json",
+  "svgFile": "a2adb1a299b29951606cdc157b9dc4f91a14b1b158fd8ee351b119fd0a29abe4.svg",
+  "createdAt": "2026-06-03T15:45:14.174248+00:00"
+}

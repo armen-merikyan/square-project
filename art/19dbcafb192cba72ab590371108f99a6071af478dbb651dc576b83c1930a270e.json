@@ -1,0 +1,416 @@
+{
+  "id": "19dbcafb192cba72ab590371108f99a6071af478dbb651dc576b83c1930a270e",
+  "seed": "control vs surrender; overflow_vs_containment; overfilled_center; stutter_step; hinge against negative_cross; thick_outline; pressure_vs_release; compass; lonely_signal | abstract variation request 374; target batch count 500",
+  "title": "Echo of the Hinge",
+  "reasoning": "This piece explores the duality of control and surrender, manifesting as a tension-filled rise from a dark base to lighter hues above. The palette of cosmic indigo, cold gold, and deep teal symbolizes the struggle between the heavy weight of containment (void black) and the shimmering hope of release (star white). The distributed patterns of echo and target create colliding trajectories, where the center bursts with pressure, while edges softly open, suggesting the ongoing internal conflict. Broken pixels introduce intentional disruptions, enhancing the narrative of imperfect balance between control and surrender.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#0052CC"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#001F3F"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#0052CC"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#001F3F"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#0052CC"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#003B5C"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#003B5C"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#003B5C"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#002A34"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#003B5C"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#0052CC"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#003B5C"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#001F3F"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#003B5C"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#003B5C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#0052CC"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#003B5C"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#001F3F"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#0052CC"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#0052CC"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#0052CC"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#003B5C"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#0052CC"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#0052CC"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#0052CC"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#0052CC"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#001F3F"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#000000"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "control",
+      "surrender"
+    ],
+    "emotionMoods": {
+      "control": [
+        "locked border",
+        "measured grid",
+        "even cadence"
+      ],
+      "surrender": [
+        "lowered contrast",
+        "gentle descent",
+        "opened edge"
+      ]
+    },
+    "layout": {
+      "name": "rising_signal",
+      "description": "Pixels climb upward from bottom to top like hope or escape."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "control": "echo",
+      "surrender": "target"
+    },
+    "edgeStyle": "hard_edges",
+    "contrastType": "dense_vs_empty",
+    "shapeSeed": "hinge",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "awe_terror",
+      "colors": [
+        "cosmic_indigo",
+        "void_black",
+        "star_white",
+        "cold_gold",
+        "deep_teal"
+      ]
+    },
+    "referenceExample": {
+      "title": "Urgency Crossing Serenity",
+      "emotionPair": [
+        "serenity",
+        "urgency"
+      ],
+      "layout": "cross_current",
+      "flow": "corner_to_corner",
+      "pattern": "quiet aqua field struck by a fast red diagonal",
+      "edge": "weighted_diagonal",
+      "shape": "arrow",
+      "palette": "serenity_urgency"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "19dbcafb192cba72ab590371108f99a6071af478dbb651dc576b83c1930a270e",
+  "pixelHash": "19dbcafb192cba72ab590371108f99a6071af478dbb651dc576b83c1930a270e",
+  "jsonFile": "19dbcafb192cba72ab590371108f99a6071af478dbb651dc576b83c1930a270e.json",
+  "svgFile": "19dbcafb192cba72ab590371108f99a6071af478dbb651dc576b83c1930a270e.svg",
+  "createdAt": "2026-06-03T17:31:40.926421+00:00"
+}

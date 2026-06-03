@@ -1,0 +1,416 @@
+{
+  "id": "d70be9a772a29bff06c3edd8d30302dc64bbb470ed12b767b1474325838ccba2",
+  "seed": "control vs surrender; overflow_vs_containment; overfilled_center; stutter_step; hinge against negative_cross; thick_outline; pressure_vs_release; compass; lonely_signal | abstract variation request 369; target batch count 500",
+  "title": "Memory and Motion",
+  "reasoning": "This artwork represents the tension between 'control' and 'surrender'. The warm, muted tones signify nostalgia (guilt), while the cooler, brighter accents indicate lightness and potential release (forgiveness). The color palette creates a layered depth; the dark hues signify containment, while the gold and ivory suggest a soft yielding. The primary collision occurs in the center, where desaturated colors of guilt meet the vibrant touch of forgiveness, symbolizing an emotional threshold. The use of broken pixels introduces intentional disruptions, echoing the theme of imperfect memory entwined with motion.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#4B3D3A"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#7C6372"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#D6C4AA"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F3E7E3"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#D1B1A5"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#5B4B4A"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#EECC96"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#B6947A"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#937C6D"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#D6C0AB"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F1E4D4"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#EBE2E1"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FFD5A0"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#AC9280"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#746462"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#5D3F3B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#5B3D3D"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#856C6D"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#B0A99F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#F1E7EC"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#D1BFB4"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A29F93"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#6B484B"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#3D2D2C"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#715B55"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#9F8F7F"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#F2EEEC"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F8EDE4"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D8A88E"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#7D4C4A"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#363535"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1F1D1D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#A68B75"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#CFC4B0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E9D1C2"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#CC8E76"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#F3DDB6"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#E0B2AA"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#4E3E3E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#3E2A2A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E1C4B4"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F3C5A8"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#EBD6CF"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#CDA08D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#CBE1F2"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#4A3B3B"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#2F2323"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#1A1414"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#5D3B39"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#4C2E2D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#E9CDB6"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F3E2CF"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F7DDBC"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#CAB09F"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#7C4C4C"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#2D1F1F"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#4C3938"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#877267"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E1BDB2"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F7E7D5"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D1E4D7"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#5F4F4F"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3B2626"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#0F0F0F"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "control",
+      "surrender"
+    ],
+    "emotionMoods": {
+      "control": [
+        "contained pressure",
+        "locked border",
+        "straight channels"
+      ],
+      "surrender": [
+        "gentle descent",
+        "soft yielding",
+        "released center"
+      ]
+    },
+    "layout": {
+      "name": "threshold",
+      "description": "The canvas is divided by a passage or seam where the two emotions meet."
+    },
+    "flow": "outward_spiral",
+    "patterns": {
+      "control": "static",
+      "surrender": "veil"
+    },
+    "edgeStyle": "feathered_edges",
+    "contrastType": "centered_vs_off_center",
+    "shapeSeed": "cage",
+    "composition": {
+      "name": "memory_vs_motion",
+      "idea": "Faded repeated marks are interrupted by a cleaner advancing path."
+    },
+    "palette": {
+      "name": "guilt_forgiveness",
+      "colors": [
+        "stain_brown",
+        "ash_gray",
+        "warm_ivory",
+        "soft_gold",
+        "deep_wine"
+      ]
+    },
+    "referenceExample": {
+      "title": "Repair After Guilt",
+      "emotionPair": [
+        "guilt",
+        "forgiveness"
+      ],
+      "layout": "scattered_repair",
+      "flow": "settle",
+      "pattern": "dark residue patched by small ivory and gold marks",
+      "edge": "eroded_edges",
+      "shape": "patch",
+      "palette": "guilt_forgiveness"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "d70be9a772a29bff06c3edd8d30302dc64bbb470ed12b767b1474325838ccba2",
+  "pixelHash": "d70be9a772a29bff06c3edd8d30302dc64bbb470ed12b767b1474325838ccba2",
+  "jsonFile": "d70be9a772a29bff06c3edd8d30302dc64bbb470ed12b767b1474325838ccba2.json",
+  "svgFile": "d70be9a772a29bff06c3edd8d30302dc64bbb470ed12b767b1474325838ccba2.svg",
+  "createdAt": "2026-06-03T17:31:44.229303+00:00"
+}

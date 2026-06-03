@@ -1,0 +1,416 @@
+{
+  "id": "0f635450af1bf48daffd3820a2fb196a05b294d0fd3e59c797443c893eaf1dea",
+  "seed": "control vs surrender; overflow_vs_containment; overfilled_center; stutter_step; hinge against negative_cross; thick_outline; pressure_vs_release; compass; lonely_signal | abstract variation request 182; target batch count 500",
+  "title": "Eroded Boundaries",
+  "reasoning": "This artwork captures the tension between control and surrender, realized through a saturated central field that contrasts against muted edges. The palette of quiet pressure\u2014off white and dust gray\u2014provides a subdued backdrop, highlighting the dense red and navy center where control feels 'overfilled'. The main collision occurs at the center where the grid pattern representing control collides with areas of shatter reflecting surrender, creating a visual echo of conflict. The intentional broken pixels introduce imperfection, symbolizing the struggle within the dichotomy, while maintaining a necessary negative space that reinforces the concept of restraint.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D02836"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#D02836"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#F0E68C"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D02836"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#D02836"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#D02836"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#D02836"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#D02836"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#D02836"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D02836"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D02836"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#B0B0B0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#F0F0F0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D02836"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D02836"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#C0C0C0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F5F5F5"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "control",
+      "surrender"
+    ],
+    "emotionMoods": {
+      "control": [
+        "even cadence",
+        "straight channels",
+        "locked border"
+      ],
+      "surrender": [
+        "lowered contrast",
+        "soft yielding",
+        "opened edge"
+      ]
+    },
+    "layout": {
+      "name": "eroded_symmetry",
+      "description": "A symmetric plan is worn away at the edges and corners."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "control": "grid",
+      "surrender": "shatter"
+    },
+    "edgeStyle": "glowing_edges",
+    "contrastType": "full_vs_hollow",
+    "shapeSeed": "seed",
+    "composition": {
+      "name": "hunger_vs_restraint",
+      "idea": "A saturated pull reaches toward a locked border that refuses expansion."
+    },
+    "palette": {
+      "name": "quiet_pressure",
+      "colors": [
+        "off_white",
+        "dust_gray",
+        "compressed_red",
+        "dark_navy",
+        "faint_peach"
+      ]
+    },
+    "referenceExample": {
+      "title": "Resilient Scar",
+      "emotionPair": [
+        "resilience",
+        "fragility"
+      ],
+      "layout": "broken_frame",
+      "flow": "quick_rise",
+      "pattern": "thin broken structure crossed by a repaired vertical path",
+      "edge": "sealed_edges",
+      "shape": "scar",
+      "palette": "resilience_fragility"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 2,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "0f635450af1bf48daffd3820a2fb196a05b294d0fd3e59c797443c893eaf1dea",
+  "pixelHash": "0f635450af1bf48daffd3820a2fb196a05b294d0fd3e59c797443c893eaf1dea",
+  "jsonFile": "0f635450af1bf48daffd3820a2fb196a05b294d0fd3e59c797443c893eaf1dea.json",
+  "svgFile": "0f635450af1bf48daffd3820a2fb196a05b294d0fd3e59c797443c893eaf1dea.svg",
+  "createdAt": "2026-06-03T17:31:08.411774+00:00"
+}

@@ -1,0 +1,415 @@
+{
+  "id": "7dd8184b7f5ba7ab0c64206da47bb44f8f89498048c5008060d4100ee535b347",
+  "seed": "control vs surrender; overflow_vs_containment; overfilled_center; stutter_step; hinge against negative_cross; thick_outline; pressure_vs_release; compass; lonely_signal | abstract variation request 187; target batch count 500",
+  "title": "Dynamic Tension",
+  "reasoning": "This composition plays with the emotional tension between control and surrender by utilizing a palette that evokes calm (pale blue, white) against stronger, darker hues (red, black). The central part of the grid is dominated by deeper colors representing control, with lighter colors spilling from the edges, suggesting a slow surrender. The crosshatch and scar patterns collide in the center, creating a visual 'hinging' effect that embodies pressure and release. By introducing 4 broken pixels, the composition adds imperfection and an echo of disruption, magnifying the emotional conflict represented by the contrasting colors.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FF0000"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#FF0000"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#FF0000"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#FF0000"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#FF0000"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#FF0000"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FF0000"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#FF0000"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#C4D0E8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "control",
+      "surrender"
+    ],
+    "emotionMoods": {
+      "control": [
+        "measured grid",
+        "straight channels",
+        "contained pressure"
+      ],
+      "surrender": [
+        "lowered contrast",
+        "gentle descent",
+        "soft yielding"
+      ]
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "top_to_bottom",
+    "patterns": {
+      "control": "crosshatch",
+      "surrender": "scar"
+    },
+    "edgeStyle": "halo_border",
+    "contrastType": "fragmented_vs_whole",
+    "shapeSeed": "beacon",
+    "composition": {
+      "name": "symmetry_vs_break",
+      "idea": "A nearly mirrored image has one wrong or corrupted side."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Static Around a Bridge",
+      "emotionPair": [
+        "alienation",
+        "belonging"
+      ],
+      "layout": "quiet_channel",
+      "flow": "cross_current",
+      "pattern": "cold broken islands interrupted by a warm connecting channel",
+      "edge": "porous_edge",
+      "shape": "bridge",
+      "palette": "connection_alienation"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7dd8184b7f5ba7ab0c64206da47bb44f8f89498048c5008060d4100ee535b347",
+  "pixelHash": "7dd8184b7f5ba7ab0c64206da47bb44f8f89498048c5008060d4100ee535b347",
+  "jsonFile": "7dd8184b7f5ba7ab0c64206da47bb44f8f89498048c5008060d4100ee535b347.json",
+  "svgFile": "7dd8184b7f5ba7ab0c64206da47bb44f8f89498048c5008060d4100ee535b347.svg",
+  "createdAt": "2026-06-03T17:31:07.170509+00:00"
+}

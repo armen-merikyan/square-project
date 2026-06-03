@@ -1,0 +1,415 @@
+{
+  "id": "5693aba75569efdf1346d03e539829bbbd285f8baa7b0a4e45296908ea8079da",
+  "seed": "control vs surrender; overflow_vs_containment; overfilled_center; stutter_step; hinge against negative_cross; thick_outline; pressure_vs_release; compass; lonely_signal | abstract variation request 61; target batch count 500",
+  "title": "Hinge of Balance",
+  "reasoning": "This piece embodies the emotional tension between control and surrender through a palette of deep reds and soft blues, symbolizing the heat of struggle against the coolness of yielding. The central clash occurs with a burst of intense color, depicting the overwhelming pressure in contrast to calm borders, marking a clear interruption in the flow of serenity and chaos. The stair-step pattern suggests movement between levels of pressure, while the uneven distribution creates a sense of dynamic tension, reflective of the stutter-step struggle portrayed in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#C72C41"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#D64B55"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#E86270"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#F17F8E"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#F7B2C0"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D5E4F3"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#A2C6E5"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#C6C7D6"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F6F8FB"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#FFE4BF"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#FFDC98"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FFB17C"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#FF8A47"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E17A43"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#A86533"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#563026"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E94830"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#D45B27"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#A84B20"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#5B3C22"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#4C3B3F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#395B50"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#289689"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#9DC9BE"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3A3D41"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#505254"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#2E3233"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#C5D3DB"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#E6E9ED"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#F2F5F7"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F8C9C9"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#F9D0D0"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#F0E2E2"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D3D6DF"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#A7BAC4"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7C9EBB"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#4D7B92"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#315968"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#AB3F6C"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E57285"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F5A3B0"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F4BEC3"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#DDE6ED"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#79BCC9"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#5FA4AD"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#0A3A57"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#EBA052"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#F3C08D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D5C891"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#BAC07A"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#B7B863"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#A3D6B1"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E6F9D4"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F8F8D4"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#112533"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#2E3C4A"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#7A848D"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#ACB2B9"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D4D7D8"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#FDFDFE"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#FCFCFC"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "control",
+      "surrender"
+    ],
+    "emotionMoods": {
+      "control": [
+        "even cadence",
+        "straight channels",
+        "measured grid"
+      ],
+      "surrender": [
+        "opened edge",
+        "soft yielding",
+        "lowered contrast"
+      ]
+    },
+    "layout": {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    "flow": "outside_inward",
+    "patterns": {
+      "control": "embers",
+      "surrender": "channels"
+    },
+    "edgeStyle": "feathered_edges",
+    "contrastType": "arrival_vs_departure",
+    "shapeSeed": "stair_step",
+    "composition": {
+      "name": "rise_vs_fall",
+      "idea": "Pixels move upward on one side and downward on the other."
+    },
+    "palette": {
+      "name": "rage_calm",
+      "colors": [
+        "red",
+        "black",
+        "pale_blue",
+        "white"
+      ]
+    },
+    "referenceExample": {
+      "title": "Held Hunger",
+      "emotionPair": [
+        "hunger",
+        "restraint"
+      ],
+      "layout": "overfilled_center",
+      "flow": "outside_inward",
+      "pattern": "red orbit presses against a muted locked border",
+      "edge": "pressure_border",
+      "shape": "cage",
+      "palette": "hunger_restraint"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 5,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "5693aba75569efdf1346d03e539829bbbd285f8baa7b0a4e45296908ea8079da",
+  "pixelHash": "5693aba75569efdf1346d03e539829bbbd285f8baa7b0a4e45296908ea8079da",
+  "jsonFile": "5693aba75569efdf1346d03e539829bbbd285f8baa7b0a4e45296908ea8079da.json",
+  "svgFile": "5693aba75569efdf1346d03e539829bbbd285f8baa7b0a4e45296908ea8079da.svg",
+  "createdAt": "2026-06-03T17:30:44.312400+00:00"
+}
