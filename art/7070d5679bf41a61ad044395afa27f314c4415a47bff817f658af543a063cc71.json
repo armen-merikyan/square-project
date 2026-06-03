@@ -1,0 +1,416 @@
+{
+  "id": "7070d5679bf41a61ad044395afa27f314c4415a47bff817f658af543a063cc71",
+  "seed": "relief vs dread; order_vs_chaos; pressure_corner; spiral_counterclockwise; crosshatch against frame; no_outline; full_vs_hollow; broken_line; ancient_fire | abstract variation request 23; target batch count 200",
+  "title": "Tension in Balance",
+  "reasoning": "This piece explores the emotional tension between dread and relief, using a palette that embodies muted tones with bright accent colors to suggest a struggle between density and openness. The predominant storm gray occupies the top left, denoting dread, while the pale mint moves toward the bottom right, symbolizing relief. The collision occurs predominantly in the center, where the braided relief pattern meets the noisy dread pattern, creating a visual dialogue of pressure versus release. The broken pixels impart a feeling of imperfection and volatility, reinforcing the theme. Negative space is preserved to allow the colors to breathe, establishing areas of calm amidst the dense moments.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#2E303E"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#3B3E45"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#4A505E"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#7B7F90"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#B5C1B5"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#D5E3D5"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#F3F9F4"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F4F7F8"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#2C2C3E"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#3A3843"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#474A55"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#737B88"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#AEB8A8"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#D6E7DE"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#EDFAEE"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#F0F4F2"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#272930"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#343C46"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#424B57"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#676D7F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#A4B6A4"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D7E8DF"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#E7F4E6"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#F7FBF8"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#1B1E29"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#2D3333"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#3D4858"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#5B6474"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A1B0A4"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#C5D3C4"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#EAF6E9"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#F8F9FB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#1C232B"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#3C3E4E"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#515566"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#C1D9B7"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#DEE7E1"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#EBF6E7"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#F9FBFB"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#0D0F12"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#13191D"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#1B1C24"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#505E5D"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#BDC5B3"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#D2E5DB"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#E0F9E9"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#F8FCFB"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#1F242B"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#22282D"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#2D333D"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#7A9A9B"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#BEC1B3"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#DCEDDD"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#E7F4E9"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#F8FCFB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#2B2D2E"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#373A41"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#414649"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#616B7B"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#BEC8B5"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D9EAE2"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#F2FAEB"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#FFFFFF"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "relief",
+      "dread"
+    ],
+    "emotionMoods": {
+      "relief": [
+        "loosened density",
+        "cool return",
+        "exhale spacing"
+      ],
+      "dread": [
+        "heavy top",
+        "inevitable descent",
+        "slow shadow"
+      ]
+    },
+    "layout": {
+      "name": "eroded_symmetry",
+      "description": "A symmetric plan is worn away at the edges and corners."
+    },
+    "flow": "zigzag",
+    "patterns": {
+      "relief": "braid",
+      "dread": "noise"
+    },
+    "edgeStyle": "lit_edges",
+    "contrastType": "signal_vs_noise",
+    "shapeSeed": "root",
+    "composition": {
+      "name": "pressure_vs_release",
+      "idea": "Dense pixels collect at one edge and loosen into air across the square."
+    },
+    "palette": {
+      "name": "relief_dread",
+      "colors": [
+        "pale_mint",
+        "soft_sky",
+        "storm_gray",
+        "near_black",
+        "faded_gold"
+      ]
+    },
+    "referenceExample": {
+      "title": "Dread Releasing",
+      "emotionPair": [
+        "relief",
+        "dread"
+      ],
+      "layout": "pressure_corner",
+      "flow": "slow_sink",
+      "pattern": "heavy top corner loosens into pale open space",
+      "edge": "shadowed_edges",
+      "shape": "hole",
+      "palette": "relief_dread"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "7070d5679bf41a61ad044395afa27f314c4415a47bff817f658af543a063cc71",
+  "pixelHash": "7070d5679bf41a61ad044395afa27f314c4415a47bff817f658af543a063cc71",
+  "jsonFile": "7070d5679bf41a61ad044395afa27f314c4415a47bff817f658af543a063cc71.json",
+  "svgFile": "7070d5679bf41a61ad044395afa27f314c4415a47bff817f658af543a063cc71.svg",
+  "createdAt": "2026-06-03T01:20:09.183880+00:00"
+}
