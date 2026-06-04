@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Repair Stripe Product image URLs for existing Square Project listings.
 
-This script uses the existing listings in payment-links.js, resolves each
-listing to its Stripe Price by lookup key, then updates the related Product
+This script is the single Stripe image repair path. It uses the listings in
+payment-links.js, resolves each listing to its Stripe Price by lookup key,
+generates framed preview SVGs when needed, and updates the related Product
 images array to the expected artwork or framed preview URL.
 """
 
@@ -53,9 +54,16 @@ def parse_args() -> argparse.Namespace:
         help="Check each expected image URL is publicly reachable before updating Stripe.",
     )
     parser.add_argument(
-        "--framed-previews",
-        action="store_true",
-        help="Use frame-specific preview URLs for framed products instead of plain artwork fallback.",
+        "--variant",
+        choices=("all", "print", "framed"),
+        default="all",
+        help="Listing variant to repair. Defaults to all.",
+    )
+    parser.add_argument(
+        "--art-id",
+        action="append",
+        default=[],
+        help="Artwork ID to repair. Can be passed more than once. Defaults to all configured artwork.",
     )
     return parser.parse_args()
 
@@ -111,14 +119,21 @@ def listing_key(art_id: str, variant: str, frame_color: str | None) -> str:
     return shop.fulfillment_id({"id": art_id}, variant, frame_color)
 
 
-def iter_configured_listings(artwork_links: dict[str, dict]) -> list[dict[str, str]]:
+def iter_configured_listings(
+    artwork_links: dict[str, dict],
+    variant_filter: str = "all",
+    art_ids: set[str] | None = None,
+) -> list[dict[str, str]]:
     listings: list[dict[str, str]] = []
 
     for art_id in sorted(artwork_links):
+        if art_ids and art_id not in art_ids:
+            continue
+
         links = artwork_links[art_id]
         print_url = str(links.get("print") or "").strip()
 
-        if shop.is_real_payment_link(print_url):
+        if variant_filter in {"all", "print"} and shop.is_real_payment_link(print_url):
             listings.append({
                 "art_id": art_id,
                 "variant": "print",
@@ -128,7 +143,7 @@ def iter_configured_listings(artwork_links: dict[str, dict]) -> list[dict[str, s
             })
 
         framed_links = links.get("framed")
-        if isinstance(framed_links, dict):
+        if variant_filter in {"all", "framed"} and isinstance(framed_links, dict):
             for frame_color in shop.FRAME_COLORS:
                 framed_url = str(framed_links.get(frame_color) or "").strip()
 
@@ -169,7 +184,6 @@ def update_product_image(
     listing: dict[str, str],
     dry_run: bool,
     check_urls: bool,
-    framed_previews: bool,
 ) -> tuple[str, str]:
     frame_color = listing["frame_color"] or None
     variant = listing["variant"]
@@ -192,24 +206,15 @@ def update_product_image(
 
     expected_image_url = shop.image_url_for_variant(art, variant, frame_color)
 
-    if check_urls and variant == "framed" and not framed_previews:
-        expected_image_url = art["image_url"]
-
     if check_urls and not image_url_is_reachable(expected_image_url):
-        fallback_image_url = art["image_url"]
+        return listing["key"], f"image URL not reachable: {expected_image_url}"
 
-        if fallback_image_url != expected_image_url and image_url_is_reachable(fallback_image_url):
-            expected_image_url = fallback_image_url
-        else:
-            return listing["key"], f"image URL not reachable: {expected_image_url}"
+    product = shop.stripe_get(f"products/{product_id}", {})
+    current_images = product.get("images")
+    current_first_image = current_images[0] if isinstance(current_images, list) and current_images else ""
 
-    if variant != "framed":
-        product = shop.stripe_get(f"products/{product_id}", {})
-        current_images = product.get("images")
-        current_first_image = current_images[0] if isinstance(current_images, list) and current_images else ""
-
-        if current_first_image == expected_image_url:
-            return listing["key"], "already correct"
+    if current_first_image == expected_image_url:
+        return listing["key"], "already correct"
 
     if dry_run:
         return listing["key"], f"would update {product_id}"
@@ -229,7 +234,8 @@ def main() -> None:
         raise SystemExit("Set STRIPE_SECRET_KEY in .env before running this script.")
 
     artwork_links = configured_artwork_links()
-    listings = iter_configured_listings(artwork_links)
+    art_ids = {str(art_id).strip() for art_id in args.art_id if str(art_id).strip()}
+    listings = iter_configured_listings(artwork_links, args.variant, art_ids)
     state = load_state(args.restart or args.dry_run)
     completed = state.setdefault("completed", {})
 
@@ -261,7 +267,6 @@ def main() -> None:
                 listing,
                 args.dry_run,
                 args.check_urls,
-                args.framed_previews,
             ): listing
             for listing in listings
         }

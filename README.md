@@ -107,10 +107,12 @@ to `stripe-previews/` and sends those URLs to Stripe as the framed product
 images.
 
 If existing Stripe checkout pages stop showing product images, repair the
-Product image URLs without recreating products, prices, or Payment Links:
+Product image URLs without recreating products, prices, or Payment Links. This
+single repair script also writes framed preview SVGs to `stripe-previews/` and
+uses those URLs for framed products:
 
 ```bash
-python3 scripts/fix_stripe_product_images.py --restart --check-urls
+python3 scripts/fix_stripe_product_images.py --restart --check-urls --workers 16
 ```
 
 For a small non-writing check first:
@@ -119,18 +121,16 @@ For a small non-writing check first:
 python3 scripts/fix_stripe_product_images.py --dry-run --limit 10 --check-urls
 ```
 
-For framed checkout images, generate and deploy the frame-specific preview SVGs
-first:
+To repair only framed checkout images:
 
 ```bash
-python3 scripts/generate_stripe_framed_previews.py --workers 16
+python3 scripts/fix_stripe_product_images.py --variant framed --restart --check-urls --workers 16
 ```
 
-After `https://mysquareart.com/stripe-previews/<art_id>_<frame>.svg` URLs return
-`200`, update Stripe framed Products back to those frame-specific images:
+To target one artwork:
 
 ```bash
-python3 scripts/update_stripe_framed_product_images.py --restart --workers 16
+python3 scripts/fix_stripe_product_images.py --art-id 888c6076574a5f17a4186b2eb25dbef6b6d818e9cec3ae36f0c1cd10ef7d274f --variant framed --restart --check-urls
 ```
 
 ## Local Art Job GUI

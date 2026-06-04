@@ -39,6 +39,7 @@ FRAME_PREVIEW_STAGE_SIZE = 1500
 FRAME_PREVIEW_ART_X = FRAME_PREVIEW_STAGE_SIZE / 6
 FRAME_PREVIEW_ART_Y = FRAME_PREVIEW_STAGE_SIZE / 6
 FRAME_PREVIEW_ART_SIZE = FRAME_PREVIEW_STAGE_SIZE * (2 / 3)
+STRIPE_PREVIEW_CACHE_VERSION = "20260604-vector-frame"
 FRAME_COLORS = {
     "black": "Black",
     "white": "White",
@@ -590,7 +591,7 @@ def framed_preview_path(art_id: str, frame_color: str) -> Path:
 
 
 def framed_preview_url(art_id: str, frame_color: str) -> str:
-    return f"{site_url()}/stripe-previews/{art_id}_{frame_color}.svg"
+    return f"{site_url()}/stripe-previews/{art_id}_{frame_color}.svg?v={STRIPE_PREVIEW_CACHE_VERSION}"
 
 
 def frame_data_uri(frame_color: str) -> str:
@@ -614,7 +615,16 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
     art_y = FRAME_PREVIEW_ART_Y
     art_size = FRAME_PREVIEW_ART_SIZE
     cell_size = art_size / 8
-    frame_uri = f"{site_url()}/frames/{frame_color}.jpg"
+    frame_palette = {
+        "black": ("#111111", "#343434", "#050505", "#6A6A6A"),
+        "white": ("#F8F8F5", "#FFFFFF", "#D5D5CF", "#BEBEB8"),
+        "natural": ("#D8C190", "#F0DDAA", "#B39155", "#8F6F35"),
+        "brown": ("#70401F", "#9A6840", "#3F2413", "#C18A55"),
+        "gold": ("#CBA642", "#F1D676", "#8B6A1D", "#FFF0A3"),
+    }
+    frame_dark, frame_mid, frame_shadow, frame_highlight = frame_palette[frame_color]
+    frame_width = 120
+    mat_inset = frame_width
     rects = [
         f'<rect x="{art_x + int(pixel.get("x", 0)) * cell_size:g}" '
         f'y="{art_y + int(pixel.get("y", 0)) * cell_size:g}" '
@@ -631,9 +641,22 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{stage_size}" height="{stage_size}" viewBox="0 0 {stage_size} {stage_size}" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">',
             f'  <title id="title">{title}</title>',
             f'  <desc id="desc">{desc}</desc>',
+            "  <defs>",
+            f'    <linearGradient id="frameFace" x1="0" y1="0" x2="1" y2="1">',
+            f'      <stop offset="0" stop-color="{frame_highlight}" />',
+            f'      <stop offset="0.32" stop-color="{frame_mid}" />',
+            f'      <stop offset="0.68" stop-color="{frame_dark}" />',
+            f'      <stop offset="1" stop-color="{frame_shadow}" />',
+            "    </linearGradient>",
+            '    <filter id="artShadow" x="-10%" y="-10%" width="120%" height="120%">',
+            '      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.24" />',
+            "    </filter>",
+            "  </defs>",
             f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="#FFFFFF" />',
-            f'  <image href="{escape(frame_uri)}" x="0" y="0" width="{stage_size}" height="{stage_size}" preserveAspectRatio="xMidYMid meet" />',
-            f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="#FFFFFF" />',
+            f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="url(#frameFace)" />',
+            f'  <rect x="{frame_width:g}" y="{frame_width:g}" width="{stage_size - frame_width * 2:g}" height="{stage_size - frame_width * 2:g}" fill="#F8F7F3" />',
+            f'  <rect x="{mat_inset:g}" y="{mat_inset:g}" width="{stage_size - mat_inset * 2:g}" height="{stage_size - mat_inset * 2:g}" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="10" />',
+            f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="#FFFFFF" filter="url(#artShadow)" />',
             *[f"  {rect}" for rect in rects],
             f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="2" />',
             "</svg>",
