@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+# Avoid duplicate gallery inspector URLs; canonical artwork pages are in the sitemap.
+Disallow: /*?art=
+Disallow: /*?*art=
+
+# Internal JSON/chunk data is fetched by the app but should not be indexed as pages.
+Disallow: /art/*.json$
+Disallow: /art/manifest-chunks/
+Disallow: /art/category-chunks/
+
 Sitemap: https://mysquareart.com/sitemap.xml

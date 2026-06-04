@@ -16,6 +16,7 @@ ARTWORK_PAGE_DIR = PROJECT_ROOT / "artwork"
 MANIFEST_PATH = ART_DIR / "manifest.json"
 HOMEPAGE_ARTWORK_IDS_PATH = ART_DIR / "homepage-artwork-ids.json"
 SITEMAP_PATH = PROJECT_ROOT / "sitemap.xml"
+ROBOTS_PATH = PROJECT_ROOT / "robots.txt"
 DEFAULT_SITE_URL = "https://mysquareart.com"
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSFZJ7PBH2"></script>
@@ -449,13 +450,13 @@ def render_artwork_page(record: dict[str, Any], colors: list[str], base_url: str
 """
 
 
-def build_artwork_pages(records: list[dict[str, Any]], art_dir: Path, page_dir: Path = ARTWORK_PAGE_DIR) -> list[str]:
+def build_artwork_pages(records: list[dict[str, Any]], art_dir: Path, page_dir: Path = ARTWORK_PAGE_DIR) -> list[dict[str, str]]:
     if page_dir.exists():
         shutil.rmtree(page_dir)
 
     page_dir.mkdir(parents=True, exist_ok=True)
     base_url = site_url().rstrip("/")
-    urls: list[str] = []
+    entries: list[dict[str, str]] = []
 
     for record in records:
         artwork_id = str(record.get("id", ""))
@@ -465,28 +466,98 @@ def build_artwork_pages(records: list[dict[str, Any]], art_dir: Path, page_dir: 
         target_dir = page_dir / artwork_id
         target_dir.mkdir(parents=True, exist_ok=True)
         target_dir.joinpath("index.html").write_text(render_artwork_page(source, colors, base_url), encoding="utf-8")
-        urls.append(f"{base_url}/artwork/{artwork_id}/")
+        entries.append({
+            "loc": f"{base_url}/artwork/{artwork_id}/",
+            "image": f"{base_url}/art/{artwork_id}.svg",
+            "title": text_preview(source.get("title") or record.get("title") or artwork_id, 140),
+        })
 
-    return urls
+    return entries
 
 
-def write_sitemap(artwork_urls: list[str], base_url: str) -> None:
-    today = datetime.now(timezone.utc).date().isoformat()
-    static_urls = [
-        f"{base_url}/",
-        f"{base_url}/gallery.html",
-        f"{base_url}/terms.html",
-        f"{base_url}/privacy.html",
+def sitemap_url_entry(
+    loc: str,
+    lastmod: str,
+    changefreq: str,
+    priority: str,
+    image: str | None = None,
+    image_title: str | None = None,
+) -> str:
+    lines = [
+        "  <url>",
+        f"    <loc>{escape(loc, quote=True)}</loc>",
+        f"    <lastmod>{lastmod}</lastmod>",
+        f"    <changefreq>{changefreq}</changefreq>",
+        f"    <priority>{priority}</priority>",
     ]
-    url_entries = "\n".join(
-        f"  <url><loc>{escape(url)}</loc><lastmod>{today}</lastmod></url>"
-        for url in [*static_urls, *artwork_urls]
+
+    if image:
+        lines.extend([
+            "    <image:image>",
+            f"      <image:loc>{escape(image, quote=True)}</image:loc>",
+        ])
+
+        if image_title:
+            lines.append(f"      <image:title>{escape(image_title, quote=True)}</image:title>")
+
+        lines.append("    </image:image>")
+
+    lines.append("  </url>")
+    return "\n".join(lines)
+
+
+def write_sitemap(artwork_entries: list[dict[str, str]], base_url: str) -> None:
+    today = datetime.now(timezone.utc).date().isoformat()
+    static_entries = [
+        {"loc": f"{base_url}/", "changefreq": "weekly", "priority": "1.0"},
+        {"loc": f"{base_url}/gallery.html", "changefreq": "daily", "priority": "0.9"},
+        {"loc": f"{base_url}/terms.html", "changefreq": "yearly", "priority": "0.3"},
+        {"loc": f"{base_url}/privacy.html", "changefreq": "yearly", "priority": "0.3"},
+    ]
+    url_entries = [
+        sitemap_url_entry(entry["loc"], today, entry["changefreq"], entry["priority"])
+        for entry in static_entries
+    ]
+    url_entries.extend(
+        sitemap_url_entry(
+            entry["loc"],
+            today,
+            "monthly",
+            "0.6",
+            image=entry.get("image"),
+            image_title=entry.get("title"),
+        )
+        for entry in artwork_entries
     )
+    sitemap_body = "\n".join(url_entries)
     SITEMAP_PATH.write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
-        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{url_entries}\n"
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        f'        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+        f"{sitemap_body}\n"
         f"</urlset>\n",
+        encoding="utf-8",
+    )
+
+
+def write_robots_txt(base_url: str) -> None:
+    ROBOTS_PATH.write_text(
+        "\n".join([
+            "User-agent: *",
+            "Allow: /",
+            "",
+            "# Avoid duplicate gallery inspector URLs; canonical artwork pages are in the sitemap.",
+            "Disallow: /*?art=",
+            "Disallow: /*?*art=",
+            "",
+            "# Internal JSON/chunk data is fetched by the app but should not be indexed as pages.",
+            "Disallow: /art/*.json$",
+            "Disallow: /art/manifest-chunks/",
+            "Disallow: /art/category-chunks/",
+            "",
+            f"Sitemap: {base_url}/sitemap.xml",
+            "",
+        ]),
         encoding="utf-8",
     )
 
@@ -587,8 +658,10 @@ def build_gallery_manifest(art_dir: Path = ART_DIR, manifest_path: Path = MANIFE
         json.dumps({"artworkIds": artwork_ids, "count": len(artwork_ids)}, separators=(",", ":")) + "\n",
         encoding="utf-8",
     )
-    artwork_urls = build_artwork_pages(all_records, art_dir)
-    write_sitemap(artwork_urls, site_url().rstrip("/"))
+    base_url = site_url().rstrip("/")
+    artwork_entries = build_artwork_pages(all_records, art_dir)
+    write_sitemap(artwork_entries, base_url)
+    write_robots_txt(base_url)
     return manifest
 
 
