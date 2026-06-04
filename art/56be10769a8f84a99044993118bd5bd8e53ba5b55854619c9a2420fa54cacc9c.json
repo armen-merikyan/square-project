@@ -1,0 +1,416 @@
+{
+  "id": "56be10769a8f84a99044993118bd5bd8e53ba5b55854619c9a2420fa54cacc9c",
+  "seed": "defiance vs submission; order_vs_chaos; quiet_channel; diagonal_rise; pulse_marks against glitch; uneven_border; open_vs_closed; threshold; | abstract variation request 429; target batch count 500",
+  "title": "Edge of Defiance",
+  "reasoning": "This piece evokes a state of tension between defiance and submission through its contrasting palette. The bright coral and blood orange create a sense of vibrant pressure at the edges, while the deep charcoal and hollow blue form a subdued, quiet center. The asymmetrical arrangement disrupts the order, echoing the struggle between chaos and control. The collision of hues occurs primarily in the corners, emphasizing the 'open vs closed' motif suggested by the seed, while broken pixels introduce intentional imperfections to reflect the unpredictability of emotional states. The layout centers on a hollow core, reinforcing the idea of confinement amidst vibrant defiance.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#FF3B30"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#BFBFBF"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#FFD700"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#F1C40F"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#F39C12"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#E67E22"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#D4E157"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#AAB7C8"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#2980B9"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#1ABC9C"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#FF3B30"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#34495E"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#F39C12"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#2C3E50"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#2ECC71"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#2980B9"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#BFBFBF"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#1ABC9C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#FF3B30"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#F1C40F"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#2ECC71"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#E67E22"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#ECF0F1"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#FF6F61"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#E74C3C"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#FF8C00"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#C0392B"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#34495E"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#7F8C8D"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D5DBDB"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#2980B9"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#D4E157"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FF3B30"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#1ABC9C"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#F39C12"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#F1C40F"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#BDC3C7"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#F39C12"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#D9D9D9"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#34495E"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#3A3A3A"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#7F8C8D"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "defiance",
+      "submission"
+    ],
+    "emotionMoods": {
+      "defiance": [
+        "angular resistance",
+        "bright refusal",
+        "unmoved center"
+      ],
+      "submission": [
+        "enclosed field",
+        "receding contrast",
+        "downward fold"
+      ]
+    },
+    "layout": {
+      "name": "halo_void",
+      "description": "A hollow center is ringed by light, shadow, or static."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "defiance": "hinge",
+      "submission": "hinge"
+    },
+    "edgeStyle": "open_corners",
+    "contrastType": "thin_vs_heavy",
+    "shapeSeed": "star",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "desire_emptiness",
+      "colors": [
+        "hot_coral",
+        "blood_orange",
+        "dust_pink",
+        "charcoal",
+        "hollow_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Awe at the Edge",
+      "emotionPair": [
+        "awe",
+        "terror"
+      ],
+      "layout": "halo_void",
+      "flow": "center_pulse",
+      "pattern": "black hollow center surrounded by cold gold and star-white pressure",
+      "edge": "halo_border",
+      "shape": "halo",
+      "palette": "awe_terror"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 1,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "56be10769a8f84a99044993118bd5bd8e53ba5b55854619c9a2420fa54cacc9c",
+  "pixelHash": "56be10769a8f84a99044993118bd5bd8e53ba5b55854619c9a2420fa54cacc9c",
+  "jsonFile": "56be10769a8f84a99044993118bd5bd8e53ba5b55854619c9a2420fa54cacc9c.json",
+  "svgFile": "56be10769a8f84a99044993118bd5bd8e53ba5b55854619c9a2420fa54cacc9c.svg",
+  "createdAt": "2026-06-04T12:49:18.485697+00:00"
+}
