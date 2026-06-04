@@ -121,6 +121,12 @@ For a small non-writing check first:
 python3 scripts/fix_stripe_product_images.py --dry-run --limit 10 --check-urls
 ```
 
+To regenerate all framed preview SVG assets before updating Stripe:
+
+```bash
+python3 scripts/fix_stripe_product_images.py --variant framed --generate-previews-only --workers 16
+```
+
 To repair only framed checkout images:
 
 ```bash
