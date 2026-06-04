@@ -79,9 +79,10 @@ const PAGE_FLIP_EXIT_DURATION_MS = 180;
 const PAGE_FLIP_ENTER_DURATION_MS = 420;
 const PAGE_FLIP_CARD_STEP_MS = 180;
 const AUTOPLAY_SPEED_OPTIONS = {
-  "1x": 9000,
-  "2x": 6500,
-  "3x": 3500
+  "0.5x": 14000,
+  "1x": 11000,
+  "2x": 8000,
+  "3x": 5000
 };
 const AUTOPLAY_SPEED_VALUES = Object.keys(AUTOPLAY_SPEED_OPTIONS);
 const FILTER_VISIBILITY_COOKIE = "square_color_filters";
