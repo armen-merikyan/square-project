@@ -614,7 +614,7 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
     art_y = FRAME_PREVIEW_ART_Y
     art_size = FRAME_PREVIEW_ART_SIZE
     cell_size = art_size / 8
-    frame_uri = frame_data_uri(frame_color)
+    frame_uri = f"{site_url()}/frames/{frame_color}.jpg"
     rects = [
         f'<rect x="{art_x + int(pixel.get("x", 0)) * cell_size:g}" '
         f'y="{art_y + int(pixel.get("y", 0)) * cell_size:g}" '

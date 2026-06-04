@@ -106,6 +106,33 @@ once on the gallery page. The setup script writes matching framed preview SVGs
 to `stripe-previews/` and sends those URLs to Stripe as the framed product
 images.
 
+If existing Stripe checkout pages stop showing product images, repair the
+Product image URLs without recreating products, prices, or Payment Links:
+
+```bash
+python3 scripts/fix_stripe_product_images.py --restart --check-urls
+```
+
+For a small non-writing check first:
+
+```bash
+python3 scripts/fix_stripe_product_images.py --dry-run --limit 10 --check-urls
+```
+
+For framed checkout images, generate and deploy the frame-specific preview SVGs
+first:
+
+```bash
+python3 scripts/generate_stripe_framed_previews.py --workers 16
+```
+
+After `https://mysquareart.com/stripe-previews/<art_id>_<frame>.svg` URLs return
+`200`, update Stripe framed Products back to those frame-specific images:
+
+```bash
+python3 scripts/update_stripe_framed_product_images.py --restart --workers 16
+```
+
 ## Local Art Job GUI
 
 Run the separate local art job server when you want a basic browser UI for generator scripts:
