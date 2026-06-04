@@ -11,9 +11,6 @@ __pycache__/
 # macOS filesystem metadata
 .DS_Store
 
-# Generated local Stripe preview images
-stripe-previews/
-
 # Local Stripe delta-sync cache
 .stripe-sync-cache.json
 .stripe-listing-metadata-fix.json
