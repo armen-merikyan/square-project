@@ -1,0 +1,415 @@
+{
+  "id": "64cefbd0175b8190cdb6b5003ae20ea7a6e3e49fce9223c17885e63850ab07a6",
+  "seed": "restlessness vs peace; memory_vs_motion; diagonal_argument; edge_crawl; flame against shatter; closed_corners; light_vs_dark; patch; signal_noise | abstract variation request 469; target batch count 500",
+  "title": "Dynamic Tension",
+  "reasoning": "This artwork embodies the tension between restlessness and peace, utilizing the colors navy and dim cyan to represent peace, and black to symbolize restlessness. The 8x8 grid alternates between calm blue tones and dark areas, where interruptions are created through the 'thread' and 'rain' patterns. The dark colors dominate, suggesting the weight of restlessness while the lighter patches of dim cyan provide moments of calmness. The central collision occurs where the dark contrasts meet the lighter shades, suggesting a push and pull of emotions. The overall composition echoes a quiet chaos, reminiscent of the emotional turmoil explored in the seed.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#001F3F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#005B88"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#00697D"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#008B8B"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#005A92"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#00246C"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#001F3F"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#003E69"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#004B78"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#005C87"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#007D97"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#0095A1"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#006A8C"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#5F5F5F"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#9F9F9F"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#BFBFBF"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#E0E0E0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#CCCCCC"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B8B8B8"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#A1A1A1"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#8B8B8B"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#757575"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#606060"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#000000"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#1F1F1F"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#3F3F3F"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#5F5F5F"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#7F7F7F"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#5B5B5B"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#555555"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#545454"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#525252"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#515151"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#505050"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#4F4F4F"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#4E4E4E"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#E8E8E8"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F2F2F2"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#FFFFFF"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F2F2F2"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#E8E8E8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#D0D0D0"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#000000"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#2C2C2C"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#3C3C3C"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#4C4C4C"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#5C5C5C"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#6C6C6C"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#7C7C7C"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#8C8C8C"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "restlessness",
+      "peace"
+    ],
+    "emotionMoods": {
+      "restlessness": [
+        "wandering accents",
+        "stuttered line",
+        "uneven pulse"
+      ],
+      "peace": [
+        "wide spacing",
+        "quiet symmetry",
+        "low pulse"
+      ]
+    },
+    "layout": {
+      "name": "argument_grid",
+      "description": "Two patterns fight for control of the 8x8 canvas."
+    },
+    "flow": "right_to_left",
+    "patterns": {
+      "restlessness": "thread",
+      "peace": "rain"
+    },
+    "edgeStyle": "porous_edge",
+    "contrastType": "fragmented_vs_whole",
+    "shapeSeed": "moon",
+    "composition": {
+      "name": "light_vs_weight",
+      "idea": "A small bright shape fights against a heavy dark mass."
+    },
+    "palette": {
+      "name": "lonely_signal",
+      "colors": [
+        "navy",
+        "black",
+        "single_white",
+        "dim_cyan"
+      ]
+    },
+    "referenceExample": {
+      "title": "Broken Love",
+      "emotionPair": [
+        "love",
+        "betrayal"
+      ],
+      "layout": "mirror_broken",
+      "flow": "split_screen",
+      "pattern": "paired shapes with one side corrupted",
+      "edge": "broken_edges",
+      "shape": "heart_fragment",
+      "palette": "love_betrayal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 4,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "64cefbd0175b8190cdb6b5003ae20ea7a6e3e49fce9223c17885e63850ab07a6",
+  "pixelHash": "64cefbd0175b8190cdb6b5003ae20ea7a6e3e49fce9223c17885e63850ab07a6",
+  "jsonFile": "64cefbd0175b8190cdb6b5003ae20ea7a6e3e49fce9223c17885e63850ab07a6.json",
+  "svgFile": "64cefbd0175b8190cdb6b5003ae20ea7a6e3e49fce9223c17885e63850ab07a6.svg",
+  "createdAt": "2026-06-04T00:31:44.696453+00:00"
+}
