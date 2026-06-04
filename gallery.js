@@ -1517,6 +1517,24 @@ function renderCardArtwork(record) {
   return fullRecord ? renderPixelArtwork(fullRecord) : renderCardImage(record);
 }
 
+function renderViewIcon() {
+  const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  icon.setAttribute("viewBox", "0 0 24 24");
+  icon.setAttribute("aria-hidden", "true");
+  icon.setAttribute("focusable", "false");
+
+  const eye = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  eye.setAttribute("d", "M2.1 12s3.6-6.5 9.9-6.5S21.9 12 21.9 12s-3.6 6.5-9.9 6.5S2.1 12 2.1 12Z");
+
+  const pupil = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  pupil.setAttribute("cx", "12");
+  pupil.setAttribute("cy", "12");
+  pupil.setAttribute("r", "3");
+
+  icon.append(eye, pupil);
+  return icon;
+}
+
 function renderCard(record, index) {
   const card = document.createElement("article");
   card.className = "gallery-card";
@@ -1534,8 +1552,9 @@ function renderCard(record, index) {
   const quickView = document.createElement("button");
   quickView.className = "gallery-card-quick-view";
   quickView.type = "button";
-  quickView.textContent = "Quick view";
-  quickView.setAttribute("aria-label", `Quick view ${record.title || `artwork ${index + 1}`}`);
+  quickView.title = "View";
+  quickView.appendChild(renderViewIcon());
+  quickView.setAttribute("aria-label", `View ${record.title || `artwork ${index + 1}`}`);
   quickView.addEventListener("click", () => {
     openGalleryRecord(record, { updateUrl: true }).catch((error) => {
       artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
@@ -1571,8 +1590,9 @@ function renderLightweightCard(record, index) {
   const quickView = document.createElement("button");
   quickView.className = "gallery-card-quick-view";
   quickView.type = "button";
-  quickView.textContent = "Quick view";
-  quickView.setAttribute("aria-label", `Quick view ${record.title || `artwork ${index + 1}`}`);
+  quickView.title = "View";
+  quickView.appendChild(renderViewIcon());
+  quickView.setAttribute("aria-label", `View ${record.title || `artwork ${index + 1}`}`);
   quickView.addEventListener("click", () => {
     openGalleryRecord(record, { updateUrl: true }).catch((error) => {
       artGrid.innerHTML = `<p class="carousel-error">${error.message}</p>`;
