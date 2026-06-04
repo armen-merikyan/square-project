@@ -1,5 +1,7 @@
 # Square Project
 
+<!-- build trigger: 2026-06-03T19:32:46-0700 -->
+
 Square Project is an art website dedicated to digital square art. The collection is built around simple pixel-based compositions, with the most popular format being an 8 by 8 pixel square.
 
 The project presents these small digital squares as collectible visual worlds. Each square is minimal in size, but treated as its own complete artwork, pattern, or tiny environment.
