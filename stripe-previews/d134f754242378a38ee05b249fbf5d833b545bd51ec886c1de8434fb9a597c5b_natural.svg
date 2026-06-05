@@ -3,17 +3,22 @@
   <desc id="desc">Square Project artwork previewed in a natural frame.</desc>
   <defs>
     <linearGradient id="frameFace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8F6F35" />
-      <stop offset="0.32" stop-color="#F0DDAA" />
-      <stop offset="0.68" stop-color="#D8C190" />
-      <stop offset="1" stop-color="#B39155" />
+      <stop offset="0" stop-color="#FFF1D7" />
+      <stop offset="0.32" stop-color="#E8D4B7" />
+      <stop offset="0.68" stop-color="#C2A17B" />
+      <stop offset="1" stop-color="#8D6F50" />
     </linearGradient>
+    <pattern id="naturalGrain" patternUnits="userSpaceOnUse" width="180" height="48">
+      <path d="M0 12 C48 2 92 24 180 10" fill="none" stroke="#8D6F50" stroke-opacity="0.22" stroke-width="5" />
+      <path d="M0 34 C62 44 118 22 180 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" />
+    </pattern>
     <filter id="artShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.24" />
     </filter>
   </defs>
   <rect x="0" y="0" width="1500" height="1500" fill="#FFFFFF" />
   <rect x="0" y="0" width="1500" height="1500" fill="url(#frameFace)" />
+  <rect x="0" y="0" width="1500" height="1500" fill="url(#naturalGrain)" />
   <rect x="120" y="120" width="1260" height="1260" fill="#F8F7F3" />
   <rect x="120" y="120" width="1260" height="1260" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="10" />
   <rect x="250" y="250" width="1000" height="1000" fill="#FFFFFF" filter="url(#artShadow)" />

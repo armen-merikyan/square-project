@@ -39,7 +39,7 @@ FRAME_PREVIEW_STAGE_SIZE = 1500
 FRAME_PREVIEW_ART_X = FRAME_PREVIEW_STAGE_SIZE / 6
 FRAME_PREVIEW_ART_Y = FRAME_PREVIEW_STAGE_SIZE / 6
 FRAME_PREVIEW_ART_SIZE = FRAME_PREVIEW_STAGE_SIZE * (2 / 3)
-STRIPE_PREVIEW_CACHE_VERSION = "20260604-vector-frame"
+STRIPE_PREVIEW_CACHE_VERSION = "20260605-natural-frame"
 FRAME_COLORS = {
     "black": "Black",
     "white": "White",
@@ -618,7 +618,7 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
     frame_palette = {
         "black": ("#111111", "#343434", "#050505", "#6A6A6A"),
         "white": ("#F8F8F5", "#FFFFFF", "#D5D5CF", "#BEBEB8"),
-        "natural": ("#D8C190", "#F0DDAA", "#B39155", "#8F6F35"),
+        "natural": ("#C2A17B", "#E8D4B7", "#8D6F50", "#FFF1D7"),
         "brown": ("#70401F", "#9A6840", "#3F2413", "#C18A55"),
         "gold": ("#CBA642", "#F1D676", "#8B6A1D", "#FFF0A3"),
     }
@@ -648,12 +648,21 @@ def write_framed_preview_svg(art: dict, frame_color: str) -> None:
             f'      <stop offset="0.68" stop-color="{frame_dark}" />',
             f'      <stop offset="1" stop-color="{frame_shadow}" />',
             "    </linearGradient>",
+            *((
+                '    <pattern id="naturalGrain" patternUnits="userSpaceOnUse" width="180" height="48">',
+                '      <path d="M0 12 C48 2 92 24 180 10" fill="none" stroke="#8D6F50" stroke-opacity="0.22" stroke-width="5" />',
+                '      <path d="M0 34 C62 44 118 22 180 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" />',
+                "    </pattern>",
+            ) if frame_color == "natural" else ()),
             '    <filter id="artShadow" x="-10%" y="-10%" width="120%" height="120%">',
             '      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.24" />',
             "    </filter>",
             "  </defs>",
             f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="#FFFFFF" />',
             f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="url(#frameFace)" />',
+            *((
+                f'  <rect x="0" y="0" width="{stage_size}" height="{stage_size}" fill="url(#naturalGrain)" />',
+            ) if frame_color == "natural" else ()),
             f'  <rect x="{frame_width:g}" y="{frame_width:g}" width="{stage_size - frame_width * 2:g}" height="{stage_size - frame_width * 2:g}" fill="#F8F7F3" />',
             f'  <rect x="{mat_inset:g}" y="{mat_inset:g}" width="{stage_size - mat_inset * 2:g}" height="{stage_size - mat_inset * 2:g}" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="10" />',
             f'  <rect x="{art_x:g}" y="{art_y:g}" width="{art_size:g}" height="{art_size:g}" fill="#FFFFFF" filter="url(#artShadow)" />',
