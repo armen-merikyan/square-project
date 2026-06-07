@@ -1,0 +1,416 @@
+{
+  "id": "deead2525170b01e8cb5ceba4a90d618539511039d6f932556f3067dacabf124",
+  "seed": "vulnerability vs strength; light_vs_weight; mirror_broken; sweep; constellation against tide; closed_corners; thin_vs_heavy; horizon; safety_exposure | abstract variation request 247; target batch count 500",
+  "title": "Exposure and Shelter",
+  "reasoning": "The emotional tone reflects the push and pull between vulnerability and strength, with a soft pale center representing exposure and darker edges suggesting shelter. The palette features muted greens and browns paired with light and cold colors to illustrate safety(fresh green) versus exposure (cold white). The main contrast collides in the center, where the light colors break into denser, darker hues, illustrating the tension between safety and the risk of the unknown. The spiral pressure layout reflects the swirling conflict between these emotional states, leaving intentional spaces to evoke feelings of disconnection and openness.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#D4CFCF"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#8FA2A9"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F1E7D7"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#C4B8A6"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#B2D7C9"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#F0F1F5"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#1B2D24"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#A9B0A3"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#B3C7B7"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#F3D3C3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C9B6A7"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#D9E2E1"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#7A9B8A"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#E1E5E6"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#3A5B52"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#E7E1C7"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#E0BCB5"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#BFD3D7"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#F7F2E4"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D3DFD0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#C4BCA9"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#A7C1B7"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#5C7470"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#B2C3BF"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#BAE0D8"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#F2E9D1"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#E6D7C1"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#B4B3B8"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#007A61"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#D8D0C0"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#7F8C7C"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#B8D2CB"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#C7B2A2"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#B4DFD6"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#C8BDB7"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#E8E1E2"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#B8CEBB"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#D0D3D2"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#2E4D4E"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#A5C2C4"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#E2D2C5"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#B7C3B6"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#F4EFE2"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#A0C6BD"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#F4F2F3"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#B1C1C0"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#49605B"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#C8BFB7"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D9E2D2"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#BEC6BB"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#F3E8D7"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#D1D4D9"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#7F918D"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#BFD4B0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#95B19F"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#C3C6CB"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#A0B6A0"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#D8E3DE"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#E2D4BA"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#C6C1BA"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#9BBF99"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#DFE1E0"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#BAC0BC"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#7A8B8B"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "vulnerability",
+      "strength"
+    ],
+    "emotionMoods": {
+      "vulnerability": [
+        "soft break",
+        "unshielded light",
+        "pale interior"
+      ],
+      "strength": [
+        "dense base",
+        "stable center",
+        "clear blocks"
+      ]
+    },
+    "layout": {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    "flow": "burst",
+    "patterns": {
+      "vulnerability": "veil",
+      "strength": "ladder"
+    },
+    "edgeStyle": "top_weighted",
+    "contrastType": "near_vs_far",
+    "shapeSeed": "half_square",
+    "composition": {
+      "name": "exposure_vs_shelter",
+      "idea": "A pale exposed center is either protected by a frame or left open to incoming marks."
+    },
+    "palette": {
+      "name": "safety_exposure",
+      "colors": [
+        "shelter_green",
+        "warm_brown",
+        "pale_skin",
+        "cold_white",
+        "open_blue"
+      ]
+    },
+    "referenceExample": {
+      "title": "Static Around a Bridge",
+      "emotionPair": [
+        "alienation",
+        "belonging"
+      ],
+      "layout": "quiet_channel",
+      "flow": "cross_current",
+      "pattern": "cold broken islands interrupted by a warm connecting channel",
+      "edge": "porous_edge",
+      "shape": "bridge",
+      "palette": "connection_alienation"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 3,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "deead2525170b01e8cb5ceba4a90d618539511039d6f932556f3067dacabf124",
+  "pixelHash": "deead2525170b01e8cb5ceba4a90d618539511039d6f932556f3067dacabf124",
+  "jsonFile": "deead2525170b01e8cb5ceba4a90d618539511039d6f932556f3067dacabf124.json",
+  "svgFile": "deead2525170b01e8cb5ceba4a90d618539511039d6f932556f3067dacabf124.svg",
+  "createdAt": "2026-06-07T02:34:12.228720+00:00"
+}

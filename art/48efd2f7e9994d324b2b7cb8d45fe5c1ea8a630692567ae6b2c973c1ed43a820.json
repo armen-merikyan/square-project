@@ -1,0 +1,416 @@
+{
+  "id": "48efd2f7e9994d324b2b7cb8d45fe5c1ea8a630692567ae6b2c973c1ed43a820",
+  "seed": "vulnerability vs strength; light_vs_weight; mirror_broken; sweep; constellation against tide; closed_corners; thin_vs_heavy; horizon; safety_exposure | abstract variation request 236; target batch count 500",
+  "title": "Caught in the Balance",
+  "reasoning": "This composition explores the emotional tension between vulnerability and strength, highlighting the fragile nature of existence against an ominous background. The palette of 'hunger_restraint' evokes a depth of feeling\u2014rich reds represent strength and determination, while muted creams signal vulnerability and fleeting moments of calm. The central broken dot pattern signifies strength, while the subtle ring patterns radiate vulnerability, creating a striking contrast in the center. The collision occurs centrally but is disrupted by the edges, which suggest a dark invocation of closed corners reflecting a constant tension. Overall, the abstract pattern serves as a visual representation of navigating emotions, where moments of safety coalesce with existential exposure.",
+  "size": {
+    "width": 8,
+    "height": 8
+  },
+  "pixels": [
+    {
+      "x": 0,
+      "y": 0,
+      "color": "#6F4F4B"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "color": "#2F1C2F"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "color": "#F3E5AB"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "color": "#4B3D3C"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "color": "#F25F3E"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "color": "#3B2E45"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "color": "#B6BB61"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "color": "#4E4C62"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "color": "#2D233E"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "color": "#C0B6A9"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "color": "#FEDD79"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "color": "#DA6A4E"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "color": "#3C4B46"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "color": "#1A181F"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "color": "#8A6D5B"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "color": "#C2A89B"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "color": "#D0D8C2"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "color": "#FFBFAE"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "color": "#D43A2D"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "color": "#7A7D7D"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "color": "#E1C554"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "color": "#A9A0B0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "color": "#9B6B55"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "color": "#6A6B78"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "color": "#3B2B30"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "color": "#EA4B2E"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "color": "#F3E8E1"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "color": "#F6B040"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "color": "#5E4B3C"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "color": "#8D8A7B"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "color": "#1F151D"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "color": "#8C7D6D"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "color": "#274037"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "color": "#CBE5B3"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "color": "#D5BDA2"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "color": "#462E44"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "color": "#F5DB9A"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "color": "#946951"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "color": "#2C3738"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "color": "#B6C6AA"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "color": "#DFD2B6"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "color": "#D05239"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "color": "#F9DA8A"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "color": "#A85247"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "color": "#2E0C0C"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "color": "#4E4F53"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "color": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "color": "#D2C3B6"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "color": "#883A3E"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "color": "#C1B7A5"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "color": "#F2C9AC"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "color": "#F6F7F9"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "color": "#3B3B3B"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "color": "#5B3810"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "color": "#4D2B23"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "color": "#6C5F4D"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "color": "#537A7B"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "color": "#EFDFE4"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "color": "#BA2E1E"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "color": "#8E5F52"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "color": "#D0A6B8"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "color": "#AEAEAF"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "color": "#2F171E"
+    }
+  ],
+  "generationSpec": {
+    "emotionPair": [
+      "vulnerability",
+      "strength"
+    ],
+    "emotionMoods": {
+      "vulnerability": [
+        "pale interior",
+        "soft break",
+        "unshielded light"
+      ],
+      "strength": [
+        "rooted contrast",
+        "dense base",
+        "stable center"
+      ]
+    },
+    "layout": {
+      "name": "spiral_pressure",
+      "description": "Marks coil toward or away from a small off-center point."
+    },
+    "flow": "corner_to_corner",
+    "patterns": {
+      "vulnerability": "ring",
+      "strength": "broken_dots"
+    },
+    "edgeStyle": "closed_corners",
+    "contrastType": "stable_vs_unstable",
+    "shapeSeed": "ember",
+    "composition": {
+      "name": "center_vs_edges",
+      "idea": "The center is protected or attacked by the surrounding pixels."
+    },
+    "palette": {
+      "name": "hunger_restraint",
+      "colors": [
+        "red_oxide",
+        "blackened_plum",
+        "muted_cream",
+        "iron_gray",
+        "small_orange"
+      ]
+    },
+    "referenceExample": {
+      "title": "Mourning Opens",
+      "emotionPair": [
+        "mourning",
+        "renewal"
+      ],
+      "layout": "open_gate",
+      "flow": "bottom_to_top",
+      "pattern": "dark veil splits where green and pale yellow marks climb through",
+      "edge": "blocked_edge",
+      "shape": "threshold",
+      "palette": "mourning_renewal"
+    },
+    "generationRules": [
+      "Pick 1 emotional contrast.",
+      "Pick 1 layout template.",
+      "Pick 1 flow.",
+      "Pick 1 pattern type for emotion A.",
+      "Pick 1 pattern type for emotion B.",
+      "Pick 1 edge style.",
+      "Pick 1 contrast type.",
+      "Pick 1 shape seed as the central object.",
+      "Apply 1 to 6 broken pixels to create imperfection.",
+      "Leave at least 10 percent negative space unless the mood is panic, rage, urgency, euphoria, or pressure.",
+      "Use the shape seed as an abstract organizing metaphor, not as a literal icon.",
+      "Make the two selected pattern types visibly collide, overlap, interrupt, or trade space.",
+      "Prefer 4 to 8 distinct hex colors, with at least one quiet field color and one accent color.",
+      "Keep the 8x8 grid readable at thumbnail size by preserving clear large-scale structure.",
+      "Let one emotion dominate 55 to 70 percent of the square unless the selected layout demands balance.",
+      "Use broken pixels as intentional disruptions, scars, repairs, leaks, or false echoes.",
+      "Avoid perfectly even distribution unless the chosen composition is control, serenity, clarity, or certainty.",
+      "Give the main collision a location: center, edge, corner, diagonal, border, or channel."
+    ],
+    "brokenPixels": 6,
+    "negativeSpaceRule": "Leave at least 10 percent negative space unless the chosen emotional tone needs dense pressure."
+  },
+  "key": "48efd2f7e9994d324b2b7cb8d45fe5c1ea8a630692567ae6b2c973c1ed43a820",
+  "pixelHash": "48efd2f7e9994d324b2b7cb8d45fe5c1ea8a630692567ae6b2c973c1ed43a820",
+  "jsonFile": "48efd2f7e9994d324b2b7cb8d45fe5c1ea8a630692567ae6b2c973c1ed43a820.json",
+  "svgFile": "48efd2f7e9994d324b2b7cb8d45fe5c1ea8a630692567ae6b2c973c1ed43a820.svg",
+  "createdAt": "2026-06-07T02:34:11.786220+00:00"
+}
