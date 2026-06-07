@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1500" viewBox="0 0 1500 1500" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">
+  <title id="title">Between Longing and Resolve in Natural frame</title>
+  <desc id="desc">Square Project artwork previewed in a natural frame.</desc>
+  <defs>
+    <linearGradient id="frameFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1D7" />
+      <stop offset="0.32" stop-color="#E8D4B7" />
+      <stop offset="0.68" stop-color="#C2A17B" />
+      <stop offset="1" stop-color="#8D6F50" />
+    </linearGradient>
+    <pattern id="naturalGrain" patternUnits="userSpaceOnUse" width="180" height="48">
+      <path d="M0 12 C48 2 92 24 180 10" fill="none" stroke="#8D6F50" stroke-opacity="0.22" stroke-width="5" />
+      <path d="M0 34 C62 44 118 22 180 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="4" />
+    </pattern>
+    <filter id="artShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.24" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1500" height="1500" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1500" height="1500" fill="url(#frameFace)" />
+  <rect x="0" y="0" width="1500" height="1500" fill="url(#naturalGrain)" />
+  <rect x="120" y="120" width="1260" height="1260" fill="#F8F7F3" />
+  <rect x="120" y="120" width="1260" height="1260" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="10" />
+  <rect x="250" y="250" width="1000" height="1000" fill="#FFFFFF" filter="url(#artShadow)" />
+  <rect x="250" y="250" width="125" height="125" fill="#D0886B" />
+  <rect x="375" y="250" width="125" height="125" fill="#C2A077" />
+  <rect x="500" y="250" width="125" height="125" fill="#EBB0A0" />
+  <rect x="625" y="250" width="125" height="125" fill="#A69C8A" />
+  <rect x="750" y="250" width="125" height="125" fill="#F2D3C5" />
+  <rect x="875" y="250" width="125" height="125" fill="#BA9F8D" />
+  <rect x="1000" y="250" width="125" height="125" fill="#D1B7A7" />
+  <rect x="1125" y="250" width="125" height="125" fill="#E4C5B0" />
+  <rect x="250" y="375" width="125" height="125" fill="#B07D5C" />
+  <rect x="375" y="375" width="125" height="125" fill="#C59174" />
+  <rect x="500" y="375" width="125" height="125" fill="#B9A16A" />
+  <rect x="625" y="375" width="125" height="125" fill="#7C9BB5" />
+  <rect x="750" y="375" width="125" height="125" fill="#A8C5E2" />
+  <rect x="875" y="375" width="125" height="125" fill="#A0B0C4" />
+  <rect x="1000" y="375" width="125" height="125" fill="#D7E3E4" />
+  <rect x="1125" y="375" width="125" height="125" fill="#B9C9D9" />
+  <rect x="250" y="500" width="125" height="125" fill="#C7A29A" />
+  <rect x="375" y="500" width="125" height="125" fill="#E8C8B9" />
+  <rect x="500" y="500" width="125" height="125" fill="#F2E1D8" />
+  <rect x="625" y="500" width="125" height="125" fill="#5988B2" />
+  <rect x="750" y="500" width="125" height="125" fill="#A6C5E0" />
+  <rect x="875" y="500" width="125" height="125" fill="#D2B2A3" />
+  <rect x="1000" y="500" width="125" height="125" fill="#B4A086" />
+  <rect x="1125" y="500" width="125" height="125" fill="#EADCD6" />
+  <rect x="250" y="625" width="125" height="125" fill="#FDDED1" />
+  <rect x="375" y="625" width="125" height="125" fill="#D88863" />
+  <rect x="500" y="625" width="125" height="125" fill="#ECD8C1" />
+  <rect x="625" y="625" width="125" height="125" fill="#AFCFBE" />
+  <rect x="750" y="625" width="125" height="125" fill="#7D977A" />
+  <rect x="875" y="625" width="125" height="125" fill="#A1B5B1" />
+  <rect x="1000" y="625" width="125" height="125" fill="#86A4A8" />
+  <rect x="1125" y="625" width="125" height="125" fill="#3D253D" />
+  <rect x="250" y="750" width="125" height="125" fill="#8E7A67" />
+  <rect x="375" y="750" width="125" height="125" fill="#B2A388" />
+  <rect x="500" y="750" width="125" height="125" fill="#D5C0B1" />
+  <rect x="625" y="750" width="125" height="125" fill="#C8A593" />
+  <rect x="750" y="750" width="125" height="125" fill="#AEC8B8" />
+  <rect x="875" y="750" width="125" height="125" fill="#CDAF9F" />
+  <rect x="1000" y="750" width="125" height="125" fill="#E0D8C0" />
+  <rect x="1125" y="750" width="125" height="125" fill="#8FA2B5" />
+  <rect x="250" y="875" width="125" height="125" fill="#AFA895" />
+  <rect x="375" y="875" width="125" height="125" fill="#A48561" />
+  <rect x="500" y="875" width="125" height="125" fill="#F2C4B0" />
+  <rect x="625" y="875" width="125" height="125" fill="#D4C0B6" />
+  <rect x="750" y="875" width="125" height="125" fill="#C4D0DA" />
+  <rect x="875" y="875" width="125" height="125" fill="#A1A765" />
+  <rect x="1000" y="875" width="125" height="125" fill="#788A9B" />
+  <rect x="1125" y="875" width="125" height="125" fill="#BDA0BF" />
+  <rect x="250" y="1000" width="125" height="125" fill="#88B3A0" />
+  <rect x="375" y="1000" width="125" height="125" fill="#A2C7D4" />
+  <rect x="500" y="1000" width="125" height="125" fill="#E9D5C6" />
+  <rect x="625" y="1000" width="125" height="125" fill="#BA8689" />
+  <rect x="750" y="1000" width="125" height="125" fill="#BEC9C0" />
+  <rect x="875" y="1000" width="125" height="125" fill="#A39EAD" />
+  <rect x="1000" y="1000" width="125" height="125" fill="#D8C7A4" />
+  <rect x="1125" y="1000" width="125" height="125" fill="#4E6571" />
+  <rect x="250" y="1125" width="125" height="125" fill="#A05E4D" />
+  <rect x="375" y="1125" width="125" height="125" fill="#BDBA9C" />
+  <rect x="500" y="1125" width="125" height="125" fill="#FFC1A7" />
+  <rect x="625" y="1125" width="125" height="125" fill="#978783" />
+  <rect x="750" y="1125" width="125" height="125" fill="#A1A3A7" />
+  <rect x="875" y="1125" width="125" height="125" fill="#BCCBCA" />
+  <rect x="1000" y="1125" width="125" height="125" fill="#DA9581" />
+  <rect x="1125" y="1125" width="125" height="125" fill="#F0573C" />
+  <rect x="250" y="250" width="1000" height="1000" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="2" />
+</svg>
