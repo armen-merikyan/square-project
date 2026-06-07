@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1500" viewBox="0 0 1500 1500" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">
+  <title id="title">Threshold of Contrast in Gold frame</title>
+  <desc id="desc">Square Project artwork previewed in a gold frame.</desc>
+  <defs>
+    <linearGradient id="frameFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0A3" />
+      <stop offset="0.32" stop-color="#F1D676" />
+      <stop offset="0.68" stop-color="#CBA642" />
+      <stop offset="1" stop-color="#8B6A1D" />
+    </linearGradient>
+    <filter id="artShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.24" />
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1500" height="1500" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1500" height="1500" fill="url(#frameFace)" />
+  <rect x="120" y="120" width="1260" height="1260" fill="#F8F7F3" />
+  <rect x="120" y="120" width="1260" height="1260" fill="none" stroke="#000000" stroke-opacity="0.14" stroke-width="10" />
+  <rect x="250" y="250" width="1000" height="1000" fill="#FFFFFF" filter="url(#artShadow)" />
+  <rect x="250" y="250" width="125" height="125" fill="#FFFFFF" />
+  <rect x="375" y="250" width="125" height="125" fill="#F6D2D6" />
+  <rect x="500" y="250" width="125" height="125" fill="#F4B7C1" />
+  <rect x="625" y="250" width="125" height="125" fill="#F1A2B4" />
+  <rect x="750" y="250" width="125" height="125" fill="#BEC4CC" />
+  <rect x="875" y="250" width="125" height="125" fill="#7A7D9A" />
+  <rect x="1000" y="250" width="125" height="125" fill="#44454D" />
+  <rect x="1125" y="250" width="125" height="125" fill="#111D2C" />
+  <rect x="250" y="375" width="125" height="125" fill="#F6D2D6" />
+  <rect x="375" y="375" width="125" height="125" fill="#F4B7C1" />
+  <rect x="500" y="375" width="125" height="125" fill="#F1A2B4" />
+  <rect x="625" y="375" width="125" height="125" fill="#BEC4CC" />
+  <rect x="750" y="375" width="125" height="125" fill="#7A7D9A" />
+  <rect x="875" y="375" width="125" height="125" fill="#44454D" />
+  <rect x="1000" y="375" width="125" height="125" fill="#222D3D" />
+  <rect x="1125" y="375" width="125" height="125" fill="#000000" />
+  <rect x="250" y="500" width="125" height="125" fill="#F1A2B4" />
+  <rect x="375" y="500" width="125" height="125" fill="#BEC4CC" />
+  <rect x="500" y="500" width="125" height="125" fill="#7A7D9A" />
+  <rect x="625" y="500" width="125" height="125" fill="#44454D" />
+  <rect x="750" y="500" width="125" height="125" fill="#222D3D" />
+  <rect x="875" y="500" width="125" height="125" fill="#111D2C" />
+  <rect x="1000" y="500" width="125" height="125" fill="#333A24" />
+  <rect x="1125" y="500" width="125" height="125" fill="#111D2C" />
+  <rect x="250" y="625" width="125" height="125" fill="#BEC4CC" />
+  <rect x="375" y="625" width="125" height="125" fill="#7A7D9A" />
+  <rect x="500" y="625" width="125" height="125" fill="#44454D" />
+  <rect x="625" y="625" width="125" height="125" fill="#222D3D" />
+  <rect x="750" y="625" width="125" height="125" fill="#111D2C" />
+  <rect x="875" y="625" width="125" height="125" fill="#333A24" />
+  <rect x="1000" y="625" width="125" height="125" fill="#DDE6E3" />
+  <rect x="1125" y="625" width="125" height="125" fill="#FFFFFF" />
+  <rect x="250" y="750" width="125" height="125" fill="#7A7D9A" />
+  <rect x="375" y="750" width="125" height="125" fill="#44454D" />
+  <rect x="500" y="750" width="125" height="125" fill="#222D3D" />
+  <rect x="625" y="750" width="125" height="125" fill="#111D2C" />
+  <rect x="750" y="750" width="125" height="125" fill="#333A24" />
+  <rect x="875" y="750" width="125" height="125" fill="#D7D9D6" />
+  <rect x="1000" y="750" width="125" height="125" fill="#B0B4B2" />
+  <rect x="1125" y="750" width="125" height="125" fill="#000000" />
+  <rect x="250" y="875" width="125" height="125" fill="#44454D" />
+  <rect x="375" y="875" width="125" height="125" fill="#222D3D" />
+  <rect x="500" y="875" width="125" height="125" fill="#111D2C" />
+  <rect x="625" y="875" width="125" height="125" fill="#333A24" />
+  <rect x="750" y="875" width="125" height="125" fill="#D7D9D6" />
+  <rect x="875" y="875" width="125" height="125" fill="#B0B4B2" />
+  <rect x="1000" y="875" width="125" height="125" fill="#F1A2B4" />
+  <rect x="1125" y="875" width="125" height="125" fill="#F4B7C1" />
+  <rect x="250" y="1000" width="125" height="125" fill="#222D3D" />
+  <rect x="375" y="1000" width="125" height="125" fill="#111D2C" />
+  <rect x="500" y="1000" width="125" height="125" fill="#333A24" />
+  <rect x="625" y="1000" width="125" height="125" fill="#D7D9D6" />
+  <rect x="750" y="1000" width="125" height="125" fill="#B0B4B2" />
+  <rect x="875" y="1000" width="125" height="125" fill="#F1A2B4" />
+  <rect x="1000" y="1000" width="125" height="125" fill="#F6D2D6" />
+  <rect x="1125" y="1000" width="125" height="125" fill="#FFFFFF" />
+  <rect x="250" y="1125" width="125" height="125" fill="#111D2C" />
+  <rect x="375" y="1125" width="125" height="125" fill="#333A24" />
+  <rect x="500" y="1125" width="125" height="125" fill="#D7D9D6" />
+  <rect x="625" y="1125" width="125" height="125" fill="#B0B4B2" />
+  <rect x="750" y="1125" width="125" height="125" fill="#F1A2B4" />
+  <rect x="875" y="1125" width="125" height="125" fill="#F6D2D6" />
+  <rect x="1000" y="1125" width="125" height="125" fill="#F4B7C1" />
+  <rect x="1125" y="1125" width="125" height="125" fill="#000000" />
+  <rect x="250" y="250" width="1000" height="1000" fill="none" stroke="#151515" stroke-opacity="0.16" stroke-width="2" />
+</svg>
